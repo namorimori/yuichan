@@ -1,0 +1,156 @@
+Use the standard library
+This is how to get_closest_vowel of word:
+   Remember that length is word's length
+   Remember that result is []
+   When length is less than 3, then:
+      The answer is result
+   End when
+   Remember that i is diff of length and 2
+   Remember that found is 0
+   Do this 1000 times:
+      When found is 0, then:
+         When i is more than 0, then:
+            Remember that char is item i in word
+            Remember that is_curr_vowel is 0
+            When char is 97, then:
+               Remember that is_curr_vowel is 1
+            End when
+            When char is 101, then:
+               Remember that is_curr_vowel is 1
+            End when
+            When char is 105, then:
+               Remember that is_curr_vowel is 1
+            End when
+            When char is 111, then:
+               Remember that is_curr_vowel is 1
+            End when
+            When char is 117, then:
+               Remember that is_curr_vowel is 1
+            End when
+            When char is 65, then:
+               Remember that is_curr_vowel is 1
+            End when
+            When char is 69, then:
+               Remember that is_curr_vowel is 1
+            End when
+            When char is 73, then:
+               Remember that is_curr_vowel is 1
+            End when
+            When char is 79, then:
+               Remember that is_curr_vowel is 1
+            End when
+            When char is 85, then:
+               Remember that is_curr_vowel is 1
+            End when
+            When is_curr_vowel is 1, then:
+               Remember that prev_idx is diff of i and 1
+               Remember that next_idx is sum of i and 1
+               Remember that prev is item prev_idx in word
+               Remember that next is item next_idx in word
+               Remember that prev_vowel is 0
+               When prev is 97, then:
+                  Remember that prev_vowel is 1
+               End when
+               When prev is 101, then:
+                  Remember that prev_vowel is 1
+               End when
+               When prev is 105, then:
+                  Remember that prev_vowel is 1
+               End when
+               When prev is 111, then:
+                  Remember that prev_vowel is 1
+               End when
+               When prev is 117, then:
+                  Remember that prev_vowel is 1
+               End when
+               When prev is 65, then:
+                  Remember that prev_vowel is 1
+               End when
+               When prev is 69, then:
+                  Remember that prev_vowel is 1
+               End when
+               When prev is 73, then:
+                  Remember that prev_vowel is 1
+               End when
+               When prev is 79, then:
+                  Remember that prev_vowel is 1
+               End when
+               When prev is 85, then:
+                  Remember that prev_vowel is 1
+               End when
+               Remember that next_vowel is 0
+               When next is 97, then:
+                  Remember that next_vowel is 1
+               End when
+               When next is 101, then:
+                  Remember that next_vowel is 1
+               End when
+               When next is 105, then:
+                  Remember that next_vowel is 1
+               End when
+               When next is 111, then:
+                  Remember that next_vowel is 1
+               End when
+               When next is 117, then:
+                  Remember that next_vowel is 1
+               End when
+               When next is 65, then:
+                  Remember that next_vowel is 1
+               End when
+               When next is 69, then:
+                  Remember that next_vowel is 1
+               End when
+               When next is 73, then:
+                  Remember that next_vowel is 1
+               End when
+               When next is 79, then:
+                  Remember that next_vowel is 1
+               End when
+               When next is 85, then:
+                  Remember that next_vowel is 1
+               End when
+               Remember that both_consonants is 0
+               When prev_vowel is 0, then:
+                  When next_vowel is 0, then:
+                     Remember that both_consonants is 1
+                  End when
+               End when
+               When both_consonants is 1, then:
+                  Add result to char
+                  Remember that found is 1
+               End when
+            End when
+            Decrease i
+         End when
+      End when
+   End do
+   The answer is result
+Now you know
+>>> get_closest_vowel of [121, 111, 103, 117, 114, 116] 
+[117]
+>>> get_closest_vowel of "yogurt" 
+"u"
+>>> get_closest_vowel of "full" 
+"u"
+>>> get_closest_vowel of "easy" 
+""
+>>> get_closest_vowel of "eAsy" 
+""
+>>> get_closest_vowel of "ali" 
+""
+>>> get_closest_vowel of "bad" 
+"a"
+>>> get_closest_vowel of "most" 
+"o"
+>>> get_closest_vowel of "ab" 
+""
+>>> get_closest_vowel of "ba" 
+""
+>>> get_closest_vowel of "quick" 
+""
+>>> get_closest_vowel of "anime" 
+"i"
+>>> get_closest_vowel of "Asia" 
+""
+>>> get_closest_vowel of "Above" 
+"o"

@@ -1,0 +1,11 @@
+Use the standard library
+use standard
+
+define intersperse of xs and delimiter as
+  if xs is [] then
+    []
+  else
+    let first be item 0 of xs
+    let rest be drop 1 from xs
+    let tail be map each x in rest to [delimiter, x]
+    first :: concat tail

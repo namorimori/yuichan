@@ -1,0 +1,14 @@
+>>> count_upper of "aBCdEf" 
+1
+>>> count_upper of "abcdefg" 
+0
+>>> count_upper of "dBBE" 
+0
+>>> count_upper of "B" 
+0
+>>> count_upper of "U" 
+1
+>>> count_upper of "" 
+0
+>>> count_upper of "EEEE" 
+2

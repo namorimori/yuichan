@@ -1,0 +1,13 @@
+Use the standard library
+This is how to reverse_delete of s and c:
+   Remember that result is []
+   Remember that i is 0
+   Do this s's length times:
+      Remember that ch is item i in s
+      When ch is not in c, then:
+         Add result to ch
+      End when
+      Increase i
+   End do
+   The answer is [result, 0]
+Now you know

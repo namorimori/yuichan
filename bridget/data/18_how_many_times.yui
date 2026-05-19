@@ -1,0 +1,42 @@
+Use the standard library
+This is how to how_many_times of string and substring:
+   Remember that string_length is string's length
+   Remember that substring_length is substring's length
+   Remember that count is 0
+   When substring_length is more than 0, then:
+      Remember that limit is sum of (diff of string_length and substring_length) and 1
+      Remember that i is 0
+      Do this limit times:
+         Remember that match is 1
+         Remember that j is 0
+         Do this substring_length times:
+            Remember that idx is sum of i and j
+            When idx is less than string_length, then:
+               When item idx in string is not item j in substring, then:
+                  Remember that match is 0
+               End when
+            End when
+            Increase j
+         End do
+         When match is 1, then:
+            Increase count
+         End when
+         Increase i
+      End do
+   End when
+   The answer is count
+Now you know
+>>> how_many_times of "" and "a" 
+0
+>>> how_many_times of "aaa" and "a" 
+3
+>>> how_many_times of "aaaa" and "aa" 
+3
+>>> how_many_times of "" and "x" 
+0
+>>> how_many_times of "xyxyxyx" and "x" 
+4
+>>> how_many_times of "cacacacac" and "cac" 
+4
+>>> how_many_times of "john doe" and "john" 
+1

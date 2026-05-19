@@ -1,0 +1,12 @@
+>>> 施環紋檢於「xyzw」與「xyw」
+0
+>>> 施環紋檢於「yello」與「ell」
+1
+>>> 施環紋檢於「whattup」與「ptut」
+0
+>>> 施環紋檢於「efef」與「fee」
+1
+>>> 施環紋檢於「abab」與「aabb」
+0
+>>> 施環紋檢於「winemtt」與「tinem」
+1

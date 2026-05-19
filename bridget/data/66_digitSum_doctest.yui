@@ -1,0 +1,16 @@
+>>> digitSum of "" 
+0
+>>> digitSum of "abAB" 
+131
+>>> digitSum of "abcCd" 
+67
+>>> digitSum of "helloE" 
+69
+>>> digitSum of "woArBld" 
+131
+>>> digitSum of "aAaaaXa" 
+153
+>>> digitSum of " How are yOu?" 
+151
+>>> digitSum of "You arE Very Smart" 
+327

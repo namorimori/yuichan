@@ -1,0 +1,21 @@
+Use the standard library
+This is how to mean_absolute_deviation of numbers:
+   Remember that n is numbers's length
+   Remember that total is tofloat of 0
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in numbers
+      Remember that total is sum of total and x
+      Increase i
+   End do
+   Remember that mean is quotient of total and (tofloat of n)
+   Remember that sum_dev is tofloat of 0
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in numbers
+      Remember that dev is abs of (diff of x and mean)
+      Remember that sum_dev is sum of sum_dev and dev
+      Increase i
+   End do
+   The answer is quotient of sum_dev and (tofloat of n)
+Now you know

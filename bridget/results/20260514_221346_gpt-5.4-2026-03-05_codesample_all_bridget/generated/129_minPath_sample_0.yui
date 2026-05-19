@@ -1,0 +1,46 @@
+Use the standard library
+This is how to minPath of grid and k:
+   Remember that rows is grid's length
+   Remember that prev is []
+   Remember that j is 0
+   Do this rows times:
+      Add prev to item 0 in item j in grid
+      Increase j
+   End do
+
+   Remember that step is 1
+   Do this k times:
+      When step is more than k, then:
+         Leave the loop
+      End when
+
+      Remember that curr is []
+      Remember that i is 0
+      Do this rows times:
+         Remember that best is item i in prev
+
+         When i is more than 0, then:
+            Remember that up is item (diff of i and 1) in prev
+            When up is less than best, then:
+               Remember that best is up
+            End when
+         End when
+
+         When i is less than (diff of rows and 1), then:
+            Remember that down is item (sum of i and 1) in prev
+            When down is less than best, then:
+               Remember that best is down
+            End when
+         End when
+
+         Remember that val is sum of best and item step in item i in grid
+         Add curr to val
+         Increase i
+      End do
+
+      Remember that prev is curr
+      Increase step
+   End do
+
+   The answer is prev
+Now you know

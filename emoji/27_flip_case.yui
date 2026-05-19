@@ -1,0 +1,36 @@
+🧩 flip_case(string) 👉
+   長さ ⬅️ 📐 string
+   結果 ⬅️ []
+   i ⬅️ 0
+   🌀 長さ 👉
+      文字 ⬅️ string[i]
+      新文字 ⬅️ 文字
+      ❓ 文字 📉⚖️ 65 👉
+         ❓ 文字 📈⚖️ 90 👉
+            新文字 ⬅️ 文字
+            🌀 32 👉
+               新文字 ⬆️
+            🔚
+         🔚
+      🔚
+      ❓ 文字 📉⚖️ 97 👉
+         ❓ 文字 📈⚖️ 122 👉
+            新文字 ⬅️ 文字
+            🌀 32 👉
+               新文字 ⬇️
+            🔚
+         🔚
+      🔚
+      結果 🧲 新文字
+      i ⬆️
+   🔚
+   ✅ 結果
+🔚
+>>> flip_case("Hello") 
+"hELLO"
+>>> flip_case("") 
+""
+>>> flip_case("Hello!") 
+"hELLO!"
+>>> flip_case("These violent delights have violent ends") 
+"tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS"

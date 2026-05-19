@@ -1,0 +1,43 @@
+Use the standard library
+This is how to will_it_fly of q and w:
+   Remember that length is q's length
+   Remember that total is sum of q
+   Remember that result is 1
+   When total is more than w, then:
+      Remember that result is 0
+   End when
+   When result is 1, then:
+      Remember that i is 0
+      Remember that j is diff of length and 1
+      Do this length times:
+         When i is less than j, then:
+            When item i in q is not item j in q, then:
+               Remember that result is 0
+            End when
+         End when
+         Increase i
+         Decrease j
+      End do
+   End when
+   The answer is result
+Now you know
+>>> will_it_fly of [1, 2] and 5 
+0
+>>> will_it_fly of [3, 2, 3] and 1 
+0
+>>> will_it_fly of [3, 2, 3] and 9 
+1
+>>> will_it_fly of [3] and 5 
+1
+>>> will_it_fly of [3, 2, 3] and 9 
+1
+>>> will_it_fly of [1, 2] and 5 
+0
+>>> will_it_fly of [3] and 5 
+1
+>>> will_it_fly of [3, 2, 3] and 1 
+0
+>>> will_it_fly of [1, 2, 3] and 6 
+0
+>>> will_it_fly of [5] and 5 
+1

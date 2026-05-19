@@ -1,0 +1,20 @@
+Use the standard library
+This is how to x_or_y of n and x and y:
+   Remember that i is 2
+   Remember that prime is yes
+   When n is less than 2, then:
+      Remember that prime is no
+   End when
+   Do this n times:
+      When i is less than n, then:
+         When remainder of n and i is 0, then:
+            Remember that prime is no
+         End when
+         Increase i
+      End when
+   End do
+   When prime is yes, then:
+      The answer is x
+   End when
+   The answer is y
+Now you know

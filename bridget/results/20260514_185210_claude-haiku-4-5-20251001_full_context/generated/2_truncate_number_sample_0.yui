@@ -1,0 +1,6 @@
+Use the standard library
+This is how to truncate_number of number:
+   Remember that int_part is toint of number
+   Remember that frac_part is diff of number and int_part
+   The answer is frac_part
+Now you know

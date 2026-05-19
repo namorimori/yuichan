@@ -1,0 +1,37 @@
+Use the standard library
+This is how to solve of N:
+   Remember that bits is []
+   Remember that started is no
+
+   Do this N times:
+      When N is 0, then:
+         Leave the loop
+      End when
+
+      Remember that q is quotient of N and 2
+      Remember that r is remainder of N and 2
+
+      When r is 1, then:
+         Remember that started is yes
+      End when
+
+      When started is yes, then:
+         When r is 0, then:
+            Add bits to item 0 in "0"
+         But, if not:
+            Add bits to item 0 in "1"
+         End when
+      End when
+
+      Remember that N is q
+   End do
+
+   Remember that answer is ""
+   Remember that i is bits's length
+   Do this bits's length times:
+      Decrease i
+      Add answer to item i in bits
+   End do
+
+   The answer is answer
+Now you know

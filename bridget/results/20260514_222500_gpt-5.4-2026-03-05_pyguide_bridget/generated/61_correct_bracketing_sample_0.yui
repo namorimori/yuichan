@@ -1,0 +1,30 @@
+Use the standard library
+This is how to correct_bracketing of brackets:
+   Remember that depth is 0
+   Remember that i is 0
+   Do this brackets's length times:
+      When item i in brackets is item 0 in "(", then:
+         Increase depth
+      But, if not:
+         When item i in brackets is item 0 in ")", then:
+            Decrease depth
+            When depth is less than 0, then:
+               The answer is 0
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   When depth is 0, then:
+      The answer is 1
+   But, if not:
+      The answer is 0
+   End when
+Now you know
+
+>>> correct_bracketing of "("
+0
+>>> correct_bracketing of "()"
+1
+>>> correct_bracketing of "(()())"
+1

@@ -1,0 +1,52 @@
+Use the standard library
+This is how to sort_even of l:
+   Remember that length is l's length
+   Remember that even_elements is []
+   Remember that odd_elements is []
+   Remember that i is 0
+   Do this length times:
+      Remember that remainder_val is remainder of i and 2
+      When remainder_val is 0, then:
+         Add even_elements to item i in l
+      But, if not:
+         Add odd_elements to item i in l
+      End when
+      Increase i
+   End do
+   Remember that even_length is even_elements's length
+   Do this even_length times:
+      Remember that i is 0
+      Remember that limit is diff of even_length and 1
+      Do this limit times:
+         Remember that next_idx is sum of i and 1
+         When item i in even_elements is more than item next_idx in even_elements, then:
+            Remember that temp is item i in even_elements
+            Remember that item i in even_elements is item next_idx in even_elements
+            Remember that item next_idx in even_elements is temp
+         End when
+         Increase i
+      End do
+   End do
+   Remember that result is []
+   Remember that even_length is even_elements's length
+   Remember that odd_length is odd_elements's length
+   Remember that i is 0
+   Do this even_length times:
+      Add result to item i in even_elements
+      When i is less than odd_length, then:
+         Add result to item i in odd_elements
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> sort_even of [1, 2, 3] 
+[1, 2, 3]
+>>> sort_even of [5, 6, 3, 4] 
+[3, 6, 5, 4]
+>>> sort_even of [1, 2, 3] 
+[1, 2, 3]
+>>> sort_even of [5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10] 
+[-10, 3, -5, 2, -3, 3, 5, 0, 9, 1, 123]
+>>> sort_even of [5, 8, -12, 4, 23, 2, 3, 11, 12, -10] 
+[-12, 8, 3, 4, 5, 2, 12, 11, 23, -10]

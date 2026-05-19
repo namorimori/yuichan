@@ -1,0 +1,17 @@
+Use the standard library
+This is how to decimal_to_binary of decimal:
+   When decimal is 0, then:
+      The answer is "db0db"
+   End when
+   Remember that n is decimal
+   Remember that result is ""
+   Do this 1000 times:
+      When n is 0, then:
+         Leave the loop
+      End when
+      Remember that bit is remainder of n and 2
+      Remember that result is "{bit}{result}"
+      Remember that n is quotient of n and 2
+   End do
+   The answer is toarray of "db{result}db"
+Now you know

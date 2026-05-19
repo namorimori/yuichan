@@ -1,0 +1,16 @@
+>>> split_words of "Hello world!" 
+["Hello", "world!"]
+>>> split_words of "Hello,world!" 
+["Hello", "world!"]
+>>> split_words of "Hello world,!" 
+["Hello", "world,!"]
+>>> split_words of "Hello,Hello,world !" 
+["Hello,Hello,world", "!"]
+>>> split_words of "abcdef" 
+3
+>>> split_words of "aaabb" 
+2
+>>> split_words of "aaaBb" 
+1
+>>> split_words of "" 
+0

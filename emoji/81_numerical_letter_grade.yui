@@ -1,0 +1,88 @@
+🗝️ 📚
+🧩 numerical_letter_grade(grades) 👉
+   length ⬅️ 📐 grades
+   result ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      gpa ⬅️ grades[i]
+      letter ⬅️ []
+      ❓ gpa ⚖️ 4.000000 👉
+         letter ⬅️ [65, 43]
+      🔚
+      ❗ 👉
+         ❓ gpa 📉 3.700000 👉
+            letter ⬅️ [65]
+         🔚
+         ❗ 👉
+            ❓ gpa 📉 3.300000 👉
+               letter ⬅️ [65, 45]
+            🔚
+            ❗ 👉
+               ❓ gpa 📉 3.000000 👉
+                  letter ⬅️ [66, 43]
+               🔚
+               ❗ 👉
+                  ❓ gpa 📉 2.700000 👉
+                     letter ⬅️ [66]
+                  🔚
+                  ❗ 👉
+                     ❓ gpa 📉 2.300000 👉
+                        letter ⬅️ [66, 45]
+                     🔚
+                     ❗ 👉
+                        ❓ gpa 📉 2.000000 👉
+                           letter ⬅️ [67, 43]
+                        🔚
+                        ❗ 👉
+                           ❓ gpa 📉 1.700000 👉
+                              letter ⬅️ [67]
+                           🔚
+                           ❗ 👉
+                              ❓ gpa 📉 1.300000 👉
+                                 letter ⬅️ [67, 45]
+                              🔚
+                              ❗ 👉
+                                 ❓ gpa 📉 1.000000 👉
+                                    letter ⬅️ [68, 43]
+                                 🔚
+                                 ❗ 👉
+                                    ❓ gpa 📉 0.700000 👉
+                                       letter ⬅️ [68]
+                                    🔚
+                                    ❗ 👉
+                                       ❓ gpa 📉 0.000000 👉
+                                          letter ⬅️ [68, 45]
+                                       🔚
+                                       ❗ 👉
+                                          letter ⬅️ [69]
+                                       🔚
+                                    🔚
+                                 🔚
+                              🔚
+                           🔚
+                        🔚
+                     🔚
+                  🔚
+               🔚
+            🔚
+         🔚
+      🔚
+      result 🧲 letter
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> numerical_letter_grade([4.000000, 3.000000, 2.000000]) 
+[[65, 43], [66], [67]]
+>>> numerical_letter_grade([4.000000, 3, 1.700000, 2, 3.500000]) 
+["A+", "B", "C-", "C", "A-"]
+>>> numerical_letter_grade([1.200000]) 
+["D+"]
+>>> numerical_letter_grade([0.500000]) 
+["D-"]
+>>> numerical_letter_grade([0.000000]) 
+["E"]
+>>> numerical_letter_grade([1, 0.300000, 1.500000, 2.800000, 3.300000]) 
+["D", "D-", "C-", "B", "B+"]
+>>> numerical_letter_grade([0, 0.700000]) 
+["E", "D-"]

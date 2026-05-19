@@ -1,0 +1,41 @@
+Use the standard library
+This is how to separate_paren_groups of paren_string:
+   Remember that arr is paren_string
+   When isstring of paren_string, then:
+      Remember that arr is toarray of paren_string
+   End when
+   Remember that result is []
+   Remember that current is []
+   Remember that depth is 0
+   Remember that i is 0
+   Do this arr's length times:
+      Remember that code is item i in arr
+      When code is 32, then:
+         When depth is 0, then:
+            When current's length is more than 0, then:
+               Add result to current
+               Remember that current is []
+            End when
+         But, if not:
+            Add current to code
+         End when
+      But, if not:
+         Add current to code
+         When code is 40, then:
+            Increase depth
+         End when
+         When code is 41, then:
+            Decrease depth
+            When depth is 0, then:
+               Add result to current
+               Remember that current is []
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   When current's length is more than 0, then:
+      Add result to current
+   End when
+   The answer is result
+Now you know

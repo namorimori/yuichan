@@ -1,0 +1,18 @@
+>>> triangle_area of 3 and 4 and 5 
+6.000000
+>>> triangle_area of 1 and 2 and 10 
+-1
+>>> triangle_area of 4 and 8 and 5 
+8.180000
+>>> triangle_area of 2 and 2 and 2 
+1.730000
+>>> triangle_area of 1 and 2 and 3 
+-1
+>>> triangle_area of 10 and 5 and 7 
+16.250000
+>>> triangle_area of 2 and 6 and 3 
+-1
+>>> triangle_area of 1 and 1 and 1 
+0.430000
+>>> triangle_area of 2 and 2 and 10 
+-1

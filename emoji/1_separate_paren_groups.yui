@@ -1,0 +1,35 @@
+🗝️ 📚
+🧩 separate_paren_groups(paren_string) 👉
+   length ⬅️ 📐 paren_string
+   result ⬅️ []
+   current_string ⬅️ []
+   current_depth ⬅️ 0
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ paren_string[i]
+      ❓ char ⚖️ 40 👉
+         current_depth ⬆️
+         current_string 🧲 char
+      🔚
+      ❓ char ⚖️ 41 👉
+         current_depth ⬇️
+         current_string 🧲 char
+         ❓ current_depth ⚖️ 0 👉
+            result 🧲 current_string
+            current_string ⬅️ []
+         🔚
+      🔚
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> separate_paren_groups([40, 32, 41, 32, 40, 40, 32, 41, 41, 32, 40, 40, 32, 41, 40, 32, 41, 41]) 
+[[40, 41], [40, 40, 41, 41], [40, 40, 41, 40, 41, 41]]
+>>> separate_paren_groups("(()()) ((())) () ((())()())") 
+["(()())", "((()))", "()", "((())()())"]
+>>> separate_paren_groups("() (()) ((())) (((())))") 
+["()", "(())", "((()))", "(((())))"]
+>>> separate_paren_groups("(()(())((())))") 
+["(()(())((())))"]
+>>> separate_paren_groups("( ) (( )) (( )( ))") 
+["()", "(())", "(()())"]

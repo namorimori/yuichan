@@ -1,0 +1,20 @@
+>>> find_max of ["name", "of", "string"] 
+"string"
+>>> find_max of ["name", "enam", "game"] 
+"enam"
+>>> find_max of ["aaaaaaa", "bb", "cc"] 
+"aaaaaaa"
+>>> find_max of ["abc", "cba"] 
+"abc"
+>>> find_max of ["play", "this", "game", "of", "footbott"] 
+"footbott"
+>>> find_max of ["we", "are", "gonna", "rock"] 
+"gonna"
+>>> find_max of ["we", "are", "a", "mad", "nation"] 
+"nation"
+>>> find_max of ["this", "is", "a", "prrk"] 
+"this"
+>>> find_max of ["b"] 
+"b"
+>>> find_max of ["play", "play", "play"] 
+"play"

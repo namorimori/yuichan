@@ -1,0 +1,18 @@
+Use the standard library
+This is how to rounded_avg of n and m:
+  Remember that avg is quotient of sum of n and m and 2
+  Remember that bits is "0b"
+  Remember that place is 1
+  Do this avg times:
+    When remainder of quotient of avg and place and 2 is 1, then:
+      Remember that bits is "{bits}1"
+    But, if not:
+      Remember that bits is "{bits}0"
+    End when
+    Remember that place is product of place and 2
+    When place is more than avg, then:
+      Leave the loop
+    End when
+  End do
+  The answer is bits
+Now you know

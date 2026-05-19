@@ -1,0 +1,7 @@
+Use the standard library
+This is how to fib4 of n:
+   When n is less than 4, then:
+      The answer is n
+   End when
+   The answer is sum of (fib4 of (diff of n and 1)) and (fib4 of (diff of n and 2))
+Now you know

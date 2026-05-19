@@ -1,0 +1,25 @@
+Use the standard library
+This is how to will_it_fly of q and w:
+  Remember that total is 0
+  Remember that i is 0
+  Do this q's length times:
+    Increase total by item i in q
+    Increase i
+  End do
+  When total is more than w, then:
+    The answer is 0
+  End when
+  Remember that left is 0
+  Remember that right is diff of q's length and 1
+  Do this q's length times:
+    When left is at least right, then:
+      Leave the loop
+    End when
+    When item left in q is not item right in q, then:
+      The answer is 0
+    End when
+    Increase left
+    Decrease right
+  End do
+  The answer is 1
+Now you know

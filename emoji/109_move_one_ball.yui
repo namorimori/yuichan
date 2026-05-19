@@ -1,0 +1,48 @@
+🗝️ 📚
+🧩 move_one_ball(arr) 👉
+   length ⬅️ 📐 arr
+   result ⬅️ 1
+   ❓ length ⚖️ 0 👉
+      ✅ result
+   🔚
+   min_val ⬅️ arr[0]
+   min_idx ⬅️ 0
+   i ⬅️ 0
+   🌀 length 👉
+      ❓ arr[i] 📈 min_val 👉
+         min_val ⬅️ arr[i]
+         min_idx ⬅️ i
+      🔚
+      i ⬆️
+   🔚
+   rotated ⬅️ []
+   i ⬅️ min_idx
+   🌀 length 👉
+      idx ⬅️ 剰余(i, length)
+      rotated 🧲 arr[idx]
+      i ⬆️
+   🔚
+   i ⬅️ 1
+   🌀 差(length, 1) 👉
+      prev ⬅️ 差(i, 1)
+      ❓ rotated[prev] 📉 rotated[i] 👉
+         result ⬅️ 0
+      🔚
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> move_one_ball([3, 4, 5, 1, 2]) 
+1
+>>> move_one_ball([3, 5, 4, 1, 2]) 
+0
+>>> move_one_ball([3, 4, 5, 1, 2]) 
+1
+>>> move_one_ball([3, 5, 10, 1, 2]) 
+1
+>>> move_one_ball([4, 3, 1, 2]) 
+0
+>>> move_one_ball([3, 5, 4, 1, 2]) 
+0
+>>> move_one_ball([]) 
+1

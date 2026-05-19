@@ -1,0 +1,35 @@
+🗝️ 📚
+🧩 filter_by_prefix(strings, prefix) 👉
+   num_strings ⬅️ 📐 strings
+   prefix_len ⬅️ 📐 prefix
+   result ⬅️ []
+   i ⬅️ 0
+   🌀 num_strings 👉
+      string ⬅️ strings[i]
+      string_len ⬅️ 📐 string
+      has_prefix ⬅️ 0
+      ❓ string_len 📉⚖️ prefix_len 👉
+         has_prefix ⬅️ 1
+         j ⬅️ 0
+         🌀 prefix_len 👉
+            ❓ string[j] 🚫⚖️ prefix[j] 👉
+               has_prefix ⬅️ 0
+            🔚
+            j ⬆️
+         🔚
+      🔚
+      ❓ has_prefix ⚖️ 1 👉
+         result 🧲 string
+      🔚
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> filter_by_prefix([], [97]) 
+[]
+>>> filter_by_prefix([[97, 98, 99], [98, 99, 100], [99, 100, 101], [97, 114, 114, 97, 121]], [97]) 
+[[97, 98, 99], [97, 114, 114, 97, 121]]
+>>> filter_by_prefix([], "john") 
+[]
+>>> filter_by_prefix(["xxx", "asd", "xxy", "john doe", "xxxAAA", "xxx"], "xxx") 
+["xxx", "xxxAAA", "xxx"]

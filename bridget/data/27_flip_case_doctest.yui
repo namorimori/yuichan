@@ -1,0 +1,6 @@
+>>> flip_case of "" 
+""
+>>> flip_case of "Hello!" 
+"hELLO!"
+>>> flip_case of "These violent delights have violent ends" 
+"tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS"

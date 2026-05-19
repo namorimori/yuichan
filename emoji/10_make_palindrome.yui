@@ -1,0 +1,61 @@
+🗝️ 📚
+🧩 make_palindrome(string) 👉
+   長さ ⬅️ 📐 string
+   結果 ⬅️ []
+   ❓ 長さ ⚖️ 0 👉
+      ✅ 結果
+   🔚
+   開始位置 ⬅️ 長さ
+   i ⬅️ 0
+   🌀 長さ 👉
+      残り長さ ⬅️ 差(長さ, i)
+      回文フラグ ⬅️ 1
+      j ⬅️ 0
+      🌀 残り長さ 👉
+         ❓ j 📈 残り長さ 👉
+            左 ⬅️ 和(i, j)
+            右 ⬅️ 差(差(長さ, 1), j)
+            ❓ 左 📈 右 👉
+               ❓ string[左] 🚫⚖️ string[右] 👉
+                  回文フラグ ⬅️ 0
+               🔚
+            🔚
+         🔚
+         j ⬆️
+      🔚
+      ❓ 回文フラグ ⚖️ 1 👉
+         ❓ 開始位置 ⚖️ 長さ 👉
+            開始位置 ⬅️ i
+         🔚
+      🔚
+      i ⬆️
+   🔚
+   i ⬅️ 0
+   🌀 長さ 👉
+      結果 🧲 string[i]
+      i ⬆️
+   🔚
+   i ⬅️ 0
+   🌀 開始位置 👉
+      インデックス ⬅️ 差(開始位置, 和(i, 1))
+      結果 🧲 string[インデックス]
+      i ⬆️
+   🔚
+   ✅ 結果
+🔚
+>>> make_palindrome("") 
+""
+>>> make_palindrome("cat") 
+"catac"
+>>> make_palindrome("cata") 
+"catac"
+>>> make_palindrome("") 
+""
+>>> make_palindrome("x") 
+"x"
+>>> make_palindrome("xyz") 
+"xyzyx"
+>>> make_palindrome("xyx") 
+"xyx"
+>>> make_palindrome("jerry") 
+"jerryrrej"

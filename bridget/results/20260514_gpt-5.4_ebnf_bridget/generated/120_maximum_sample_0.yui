@@ -1,0 +1,54 @@
+Use the standard library
+This is how to maximum of arr and k:
+  Remember that result is []
+  Remember that n is arr's length
+  Do this n times:
+    Remember that best_index is 0
+    Remember that best_value is item 0 in arr
+    Remember that j is 1
+    Do this n times:
+      When j is less than arr's length, then:
+        When item j in arr is more than best_value, then:
+          Remember that best_value is item j in arr
+          Remember that best_index is j
+        End when
+        Increase j by 1
+      But, if not:
+        Leave the loop
+      End when
+    End do
+    Add result to best_value
+    Remember that item best_index in arr is -1000000000
+  End do
+  Remember that trimmed is []
+  Remember that i is 0
+  Do this n times:
+    When i is less than k, then:
+      Add trimmed to item i in result
+      Increase i by 1
+    But, if not:
+      Leave the loop
+    End when
+  End do
+  Remember that out is []
+  Remember that m is trimmed's length
+  Do this m times:
+    Remember that smallest_index is 0
+    Remember that smallest_value is item 0 in trimmed
+    Remember that j is 1
+    Do this m times:
+      When j is less than trimmed's length, then:
+        When item j in trimmed is less than smallest_value, then:
+          Remember that smallest_value is item j in trimmed
+          Remember that smallest_index is j
+        End when
+        Increase j by 1
+      But, if not:
+        Leave the loop
+      End when
+    End do
+    Add out to smallest_value
+    Remember that item smallest_index in trimmed is 1000000000
+  End do
+  The answer is out
+Now you know

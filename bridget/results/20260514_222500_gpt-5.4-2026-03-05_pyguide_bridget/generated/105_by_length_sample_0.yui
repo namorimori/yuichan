@@ -1,0 +1,61 @@
+Use the standard library
+This is how to by_length of arr:
+   Remember that result is []
+   Remember that i is 0
+   Do this arr's length times:
+      Remember that n is item i in arr
+      When n is 0, then:
+         Add result to "Zero"
+      But, if not:
+         When n is 1, then:
+            Add result to "One"
+         But, if not:
+            When n is 2, then:
+               Add result to "Two"
+            But, if not:
+               When n is 3, then:
+                  Add result to "Three"
+               But, if not:
+                  When n is 4, then:
+                     Add result to "Four"
+                  But, if not:
+                     When n is 5, then:
+                        Add result to "Five"
+                     But, if not:
+                        When n is 6, then:
+                           Add result to "Six"
+                        But, if not:
+                           When n is 7, then:
+                              Add result to "Seven"
+                           But, if not:
+                              When n is 8, then:
+                                 Add result to "Eight"
+                              But, if not:
+                                 When n is 9, then:
+                                    Add result to "Nine"
+                                 But, if not:
+                                    Add result to tostring of n
+                                 End when
+                              End when
+                           End when
+                        End when
+                     End when
+                  End when
+               End when
+            End when
+         End when
+      End when
+      Increase i
+   End do
+
+   Remember that filtered is []
+   Remember that j is 0
+   Do this result's length times:
+      Remember that word is item j in result
+      When word's length is item j in arr, then:
+         Add filtered to word
+      End when
+      Increase j
+   End do
+   The answer is filtered
+Now you know

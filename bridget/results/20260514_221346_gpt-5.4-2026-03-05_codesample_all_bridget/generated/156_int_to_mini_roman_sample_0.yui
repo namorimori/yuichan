@@ -1,0 +1,50 @@
+Use the standard library
+This is how to int_to_mini_roman of number:
+   Remember that n is number
+   Remember that result is ""
+   Do this quotient of n and 100 times:
+      Add result to "c"
+   End do
+   Remember that n is remainder of n and 100
+   When n is at least 90, then:
+      Add result to "xc"
+      Remember that n is diff of n and 90
+   But, if not:
+      When n is at least 50, then:
+         Add result to "l"
+         Remember that n is diff of n and 50
+      End when
+      When n is at least 40, then:
+         Add result to "xl"
+         Remember that n is diff of n and 40
+      End when
+      Do this quotient of n and 10 times:
+         Add result to "x"
+      End do
+      Remember that n is remainder of n and 10
+   End when
+   When n is 9, then:
+      Add result to "ix"
+      Remember that n is 0
+   But, if not:
+      When n is at least 5, then:
+         Add result to "v"
+         Remember that n is diff of n and 5
+      End when
+      When n is 4, then:
+         Add result to "iv"
+         Remember that n is 0
+      But, if not:
+         Do this n times:
+            Add result to "i"
+         End do
+      End when
+   End when
+   The answer is result
+Now you know
+>>> int_to_mini_roman of 19
+"xix"
+>>> toarray of (int_to_mini_roman of 19)
+[120, 105, 120]
+>>> int_to_mini_roman of 152
+"clii"

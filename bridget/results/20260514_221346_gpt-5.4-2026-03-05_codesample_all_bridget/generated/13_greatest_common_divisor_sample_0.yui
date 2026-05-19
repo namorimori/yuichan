@@ -1,0 +1,20 @@
+Use the standard library
+This is how to greatest_common_divisor of a and b:
+   Remember that x is abs of a
+   Remember that y is abs of b
+   Do this 1000 times:
+      When y is 0, then:
+         Leave the loop
+      End when
+      Remember that r is remainder of x and y
+      Remember that x is y
+      Remember that y is r
+   End do
+   The answer is x
+Now you know
+>>> greatest_common_divisor of 3 and 5
+1
+>>> greatest_common_divisor of 25 and 15
+5
+>>> greatest_common_divisor of 3 and 7
+1

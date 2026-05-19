@@ -1,0 +1,10 @@
+Use the standard library
+This is how to max_element of l:
+  Remember that m is item 0 in l
+  Do this l's length times:
+    When item i in l is more than m, then:
+      Remember that m is item i in l
+    End when
+  End do
+  The answer is m
+Now you know

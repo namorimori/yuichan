@@ -1,0 +1,78 @@
+Use the standard library
+This is how to is_nested of string:
+   Remember that length is string's length
+   Remember that opening is []
+   Remember that closing is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in string
+      When char is 91, then:
+         Add opening to i
+      But, if not:
+         Add closing to i
+      End when
+      Increase i
+   End do
+   Remember that close_len is closing's length
+   Remember that reversed_closing is []
+   Remember that i is 0
+   Do this close_len times:
+      Remember that idx is diff of (diff of close_len and i) and 1
+      Add reversed_closing to item idx in closing
+      Increase i
+   End do
+   Remember that cnt is 0
+   Remember that open_len is opening's length
+   Remember that i is 0
+   Remember that j is 0
+   Do this open_len times:
+      When j is less than close_len, then:
+         Remember that open_idx is item i in opening
+         Remember that close_idx is item j in reversed_closing
+         When open_idx is less than close_idx, then:
+            Increase cnt
+            Increase j
+         End when
+      End when
+      Increase i
+   End do
+   Remember that result is 0
+   When cnt is at most 2, then:
+      Remember that result is 1
+   End when
+   The answer is result
+Now you know
+>>> is_nested of [91, 91, 93, 93] 
+1
+>>> is_nested of [93, 93, 93, 93, 93, 93, 91, 91, 91, 91, 91, 93] 
+0
+>>> is_nested of [93, 93] 
+0
+>>> is_nested of "[[]]" 
+1
+>>> is_nested of "[]]]]]]][[[[[]" 
+0
+>>> is_nested of "[][]" 
+0
+>>> is_nested of "[]" 
+0
+>>> is_nested of "[[[[]]]]" 
+1
+>>> is_nested of "[]]]]]]]]]]" 
+0
+>>> is_nested of "[][][[]]" 
+1
+>>> is_nested of "[[]" 
+0
+>>> is_nested of "[]]" 
+0
+>>> is_nested of "[[]][[" 
+1
+>>> is_nested of "[[][]]" 
+1
+>>> is_nested of "" 
+0
+>>> is_nested of "[[[[[[[[" 
+0
+>>> is_nested of "]]]]]]]]" 
+0

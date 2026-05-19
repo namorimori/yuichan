@@ -1,0 +1,133 @@
+Nav rem vaz
+Dum histogram(test):
+   Kem length par test @kez
+   Nev length paz 0 ger:
+      Kem result par []
+      Dup vem result
+   Dam nev
+   Kem words par []
+   Kem current_word par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par test[i]
+      Nev char paz 32 ger:
+         Kem word_len par current_word @kez
+         Nev word_len pep 0 ger:
+            Mev words naz current_word
+            Kem current_word par []
+         Dam nev
+      Zum:
+         Mev current_word naz char
+      Dam nev
+      Rav i
+   Dam mup
+   Kem word_len par current_word @kez
+   Nev word_len pep 0 ger:
+      Mev words naz current_word
+   Dam nev
+   Kem words_len par words @kez
+   Kem max_count par 0
+   Kem i par 0
+   Mup dum words_len pag:
+      Kem word par words[i]
+      Kem count par 0
+      Kem j par 0
+      Mup dum words_len pag:
+         Kem other_word par words[j]
+         Kem word_len par word @kez
+         Kem other_len par other_word @kez
+         Kem same par 0
+         Nev word_len paz other_len ger:
+            Kem all_match par 1
+            Kem k par 0
+            Mup dum word_len pag:
+               Nev word[k] paz other_word[k] ger:
+                  Mup nek
+               Zum:
+                  Kem all_match par 0
+               Dam nev
+               Rav k
+            Dam mup
+            Kem same par all_match
+         Dam nev
+         Nev same paz 1 ger:
+            Rav count
+         Dam nev
+         Rav j
+      Dam mup
+      Nev count pep max_count ger:
+         Kem max_count par count
+      Dam nev
+      Rav i
+   Dam mup
+   Kem result par []
+   Nev max_count pep 0 ger:
+      Kem i par 0
+      Mup dum words_len pag:
+         Kem word par words[i]
+         Kem count par 0
+         Kem j par 0
+         Mup dum words_len pag:
+            Kem other_word par words[j]
+            Kem word_len par word @kez
+            Kem other_len par other_word @kez
+            Kem same par 0
+            Nev word_len paz other_len ger:
+               Kem all_match par 1
+               Kem k par 0
+               Mup dum word_len pag:
+                  Nev word[k] paz other_word[k] ger:
+                     Mup nek
+                  Zum:
+                     Kem all_match par 0
+                  Dam nev
+                  Rav k
+               Dam mup
+               Kem same par all_match
+            Dam nev
+            Nev same paz 1 ger:
+               Rav count
+            Dam nev
+            Rav j
+         Dam mup
+         Nev count paz max_count ger:
+            Kem already_added par 0
+            Kem result_len par result @kez
+            Kem m par 0
+            Mup dum result_len pag:
+               Kem result_word par result[m][0]
+               Kem word_len par word @kez
+               Kem result_word_len par result_word @kez
+               Kem same par 0
+               Nev word_len paz result_word_len ger:
+                  Kem all_match par 1
+                  Kem k par 0
+                  Mup dum word_len pag:
+                     Nev word[k] paz result_word[k] ger:
+                        Mup nek
+                     Zum:
+                        Kem all_match par 0
+                     Dam nev
+                     Rav k
+                  Dam mup
+                  Kem same par all_match
+               Dam nev
+               Nev same paz 1 ger:
+                  Kem already_added par 1
+               Dam nev
+               Rav m
+            Dam mup
+            Nev already_added paz 0 ger:
+               Kem entry par []
+               Mev entry naz word
+               Mev entry naz max_count
+               Mev result naz entry
+            Dam nev
+         Dam nev
+         Rav i
+      Dam mup
+   Dam nev
+   Dup vem result
+Pam dum
+>>> histogram("") 
+[]

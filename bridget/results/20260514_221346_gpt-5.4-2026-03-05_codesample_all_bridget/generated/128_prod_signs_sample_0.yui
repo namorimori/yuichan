@@ -1,0 +1,21 @@
+Use the standard library
+This is how to prod_signs of arr:
+   Remember that n is arr's length
+   When n is 0, then:
+      The answer is []
+   End when
+   Remember that product is 1
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in arr
+      When x is 0, then:
+         The answer is [0]
+      End when
+      When x is less than 0, then:
+         Remember that product is diff of 0 and product
+      End when
+      Increase i
+   End do
+   Remember that result is diff of 0 and (product of 9 and product)
+   The answer is [result]
+Now you know

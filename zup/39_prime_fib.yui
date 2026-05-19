@@ -1,0 +1,71 @@
+Nav rem vaz
+Dum prime_fib(n):
+   Kem f0 par 0
+   Kem f1 par 1
+   Kem カウント par 0
+   Kem 結果 par 0
+   Mup dum 1000 pag:
+      Nev カウント dup n ger:
+         Kem 次 par 和(f0, f1)
+         Kem f0 par f1
+         Kem f1 par 次
+         Kem 素数フラグ par 1
+         Nev 次 dup 2 ger:
+            Kem 素数フラグ par 0
+         Dam nev
+         Nev 次 paz 2 ger:
+            Kem 素数フラグ par 1
+         Dam nev
+         Nev 次 pep 2 ger:
+            Kem i par 2
+            Mup dum 10000 pag:
+               Kem i_squared par 積(i, i)
+               Nev i_squared dur 次 ger:
+                  Kem 余り par 剰余(次, i)
+                  Nev 余り paz 0 ger:
+                     Kem 素数フラグ par 0
+                  Dam nev
+                  Rav i
+               Dam nev
+            Dam mup
+         Dam nev
+         Nev 素数フラグ paz 1 ger:
+            Rav カウント
+            Nev カウント paz n ger:
+               Kem 結果 par 次
+            Dam nev
+         Dam nev
+      Dam nev
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> prime_fib(1) 
+2
+>>> prime_fib(2) 
+3
+>>> prime_fib(3) 
+5
+>>> prime_fib(4) 
+13
+>>> prime_fib(5) 
+89
+>>> prime_fib(1) 
+2
+>>> prime_fib(2) 
+3
+>>> prime_fib(3) 
+5
+>>> prime_fib(4) 
+13
+>>> prime_fib(5) 
+89
+>>> prime_fib(6) 
+233
+>>> prime_fib(7) 
+1597
+>>> prime_fib(8) 
+28657
+>>> prime_fib(9) 
+514229
+>>> prime_fib(10) 
+433494437

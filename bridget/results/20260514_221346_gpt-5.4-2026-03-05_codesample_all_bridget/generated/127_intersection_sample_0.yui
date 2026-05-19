@@ -1,0 +1,13 @@
+Use the standard library
+This is how to intersection of interval1 and interval2:
+   Remember that a1 is item 0 in interval1
+   Remember that b1 is item 1 in interval1
+   Remember that a2 is item 0 in interval2
+   Remember that b2 is item 1 in interval2
+   Remember that left is max of a1 and a2
+   Remember that right is min of b1 and b2
+   When left is at most right, then:
+      The answer is "NO"
+   End when
+   The answer is "YES"
+Now you know

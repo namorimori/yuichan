@@ -1,0 +1,267 @@
+Nav rem vaz
+Dum string_to_md5(text):
+   Kem text_len par text @kez
+   Nev text_len paz 0 ger:
+      Kem result par []
+      Dup vem result
+   Dam nev
+   Kem K par [
+      3614090360,
+      3905402710,
+      606105819,
+      3250441966,
+      4118548399,
+      1200080426,
+      2821735955,
+      4249261313,
+      1770035416,
+      2336552879,
+      4294925233,
+      2304563134,
+      1804603682,
+      4254626195,
+      2792965006,
+      1236535329,
+      4129170786,
+      3225465664,
+      643717713,
+      3921069994,
+      3593408605,
+      38016083,
+      3634488961,
+      3889429448,
+      568446438,
+      3275163606,
+      4107603335,
+      1163531501,
+      2850285829,
+      4243563512,
+      1735328473,
+      2368359562,
+      4294588738,
+      2272392833,
+      1839030562,
+      4259657740,
+      2763975236,
+      1272893353,
+      4139469664,
+      3200236656,
+      681279174,
+      3936430074,
+      3572445317,
+      76029189,
+      3654602809,
+      3873151461,
+      530742520,
+      3299628645,
+      4096336452,
+      1126891415,
+      2878612391,
+      4237533241,
+      1700485571,
+      2399980690,
+      4293915773,
+      2240044497,
+      1873313359,
+      4264355552,
+      2734768916,
+      1309151649,
+      4149444226,
+      3174756917,
+      718787259,
+      3951481745
+   ]
+   Kem s par [
+      7,
+      12,
+      17,
+      22,
+      7,
+      12,
+      17,
+      22,
+      7,
+      12,
+      17,
+      22,
+      7,
+      12,
+      17,
+      22,
+      5,
+      9,
+      14,
+      20,
+      5,
+      9,
+      14,
+      20,
+      5,
+      9,
+      14,
+      20,
+      5,
+      9,
+      14,
+      20,
+      4,
+      11,
+      16,
+      23,
+      4,
+      11,
+      16,
+      23,
+      4,
+      11,
+      16,
+      23,
+      4,
+      11,
+      16,
+      23,
+      6,
+      10,
+      15,
+      21,
+      6,
+      10,
+      15,
+      21,
+      6,
+      10,
+      15,
+      21,
+      6,
+      10,
+      15,
+      21
+   ]
+   Kem a0 par 1732584193
+   Kem b0 par 4023233417
+   Kem c0 par 2562383102
+   Kem d0 par 271733878
+   Kem msg_len_bits par 積(text_len, 8)
+   Kem padded par []
+   Kem i par 0
+   Mup dum text_len pag:
+      Mev padded naz text[i]
+      Rav i
+   Dam mup
+   Mev padded naz 128
+   Kem current_len par 和(text_len, 1)
+   Kem target_len par 積(商(和(current_len, 63), 64), 64)
+   Kem target_len par 差(target_len, 8)
+   Kem i par current_len
+   Mup dum 1000 pag:
+      Nev i dup target_len ger:
+         Mev padded naz 0
+         Rav i
+      Dam nev
+   Dam mup
+   Mev padded naz 剰余(msg_len_bits, 256)
+   Mev padded naz 剰余(商(msg_len_bits, 256), 256)
+   Mev padded naz 剰余(商(msg_len_bits, 65536), 256)
+   Mev padded naz 剰余(商(msg_len_bits, 16777216), 256)
+   Mev padded naz 0
+   Mev padded naz 0
+   Mev padded naz 0
+   Mev padded naz 0
+   Kem padded_len par padded @kez
+   Kem num_blocks par 商(padded_len, 64)
+   Kem block_idx par 0
+   Mup dum num_blocks pag:
+      Kem M par []
+      Kem word_idx par 0
+      Mup dum 16 pag:
+         Kem offset par 和(積(block_idx, 64), 積(word_idx, 4))
+         Kem byte0 par padded[offset]
+         Kem byte1 par padded[和(offset, 1)]
+         Kem byte2 par padded[和(offset, 2)]
+         Kem byte3 par padded[和(offset, 3)]
+         Kem word par byte0
+         Kem word par 和(word, 剰余(左シフト(byte1, 8), 4294967296))
+         Kem word par 和(word, 剰余(左シフト(byte2, 16), 4294967296))
+         Kem word par 和(word, 剰余(左シフト(byte3, 24), 4294967296))
+         Kem word par 剰余(word, 4294967296)
+         Mev M naz word
+         Rav word_idx
+      Dam mup
+      Kem A par a0
+      Kem B par b0
+      Kem C par c0
+      Kem D par d0
+      Kem i par 0
+      Mup dum 64 pag:
+         Kem F par 0
+         Kem g par 0
+         Nev i dup 16 ger:
+            Kem not_B par 剰余(ビット反転(B), 4294967296)
+            Kem F par 剰余(論理和(剰余(論理積(B, C), 4294967296), 剰余(論理積(not_B, D), 4294967296)), 4294967296)
+            Kem g par i
+         Zum:
+            Nev i dup 32 ger:
+               Kem not_D par 剰余(ビット反転(D), 4294967296)
+               Kem F par 剰余(論理和(剰余(論理積(D, B), 4294967296), 剰余(論理積(not_D, C), 4294967296)), 4294967296)
+               Kem g par 剰余(和(積(5, i), 1), 16)
+            Zum:
+               Nev i dup 48 ger:
+                  Kem F par 剰余(排他的論理和(B, 剰余(排他的論理和(C, D), 4294967296)), 4294967296)
+                  Kem g par 剰余(和(積(3, i), 5), 16)
+               Zum:
+                  Kem not_D par 剰余(ビット反転(D), 4294967296)
+                  Kem F par 剰余(排他的論理和(C, 剰余(論理和(B, not_D), 4294967296)), 4294967296)
+                  Kem g par 剰余(積(7, i), 16)
+               Dam nev
+            Dam nev
+         Dam nev
+         Kem F par 和(F, A)
+         Kem F par 和(F, K[i])
+         Kem F par 和(F, M[g])
+         Kem F par 剰余(F, 4294967296)
+         Kem shift_amount par s[i]
+         Kem left_part par 剰余(左シフト(F, shift_amount), 4294967296)
+         Kem right_part par 右シフト(F, 差(32, shift_amount))
+         Kem F par 剰余(論理和(left_part, right_part), 4294967296)
+         Kem F par 和(F, B)
+         Kem F par 剰余(F, 4294967296)
+         Kem A par D
+         Kem D par C
+         Kem C par B
+         Kem B par F
+         Rav i
+      Dam mup
+      Kem a0 par 剰余(和(a0, A), 4294967296)
+      Kem b0 par 剰余(和(b0, B), 4294967296)
+      Kem c0 par 剰余(和(c0, C), 4294967296)
+      Kem d0 par 剰余(和(d0, D), 4294967296)
+      Rav block_idx
+   Dam mup
+   Kem hex_chars par [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 97, 98, 99, 100, 101, 102]
+   Kem result par []
+   Kem values par [a0, b0, c0, d0]
+   Kem v_idx par 0
+   Mup dum 4 pag:
+      Kem val par values[v_idx]
+      Kem byte_idx par 0
+      Mup dum 4 pag:
+         Kem byte par 剰余(val, 256)
+         Kem val par 商(val, 256)
+         Kem low par 剰余(byte, 16)
+         Kem high par 商(byte, 16)
+         Mev result naz hex_chars[high]
+         Mev result naz hex_chars[low]
+         Rav byte_idx
+      Dam mup
+      Rav v_idx
+   Dam mup
+   Dup vem result
+Pam dum
+>>> string_to_md5("") 
+[]
+>>> string_to_md5("Hello world") 
+"3e25960a79dbc69b674cd4ec67a72c62"
+>>> string_to_md5("A B C") 
+"0ef78513b0cb8cef12743f5aeb35f888"
+>>> string_to_md5("password") 
+"5f4dcc3b5aa765d61d8327deb882cf99"

@@ -1,0 +1,51 @@
+🗝️ 📚
+🧩 is_bored(S) 👉
+   length ⬅️ 📐 S
+   count ⬅️ 0
+   sentence_start ⬅️ 1
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ S[i]
+      ❓ sentence_start ⚖️ 1 👉
+         ❓ char ⚖️ 32 👉
+            💤
+         🔚
+         ❗ 👉
+            ❓ char ⚖️ 73 👉
+               ❓ i 📈 差(length, 1) 👉
+                  next_char ⬅️ S[和(i, 1)]
+                  ❓ next_char ⚖️ 32 👉
+                     count ⬆️
+                  🔚
+               🔚
+            🔚
+            sentence_start ⬅️ 0
+         🔚
+      🔚
+      ❓ char ⚖️ 46 👉
+         sentence_start ⬅️ 1
+      🔚
+      ❓ char ⚖️ 63 👉
+         sentence_start ⬅️ 1
+      🔚
+      ❓ char ⚖️ 33 👉
+         sentence_start ⬅️ 1
+      🔚
+      i ⬆️
+   🔚
+   ✅ count
+🔚
+>>> is_bored([72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100]) 
+0
+>>> is_bored("Hello world") 
+0
+>>> is_bored("Is the sky blue?") 
+0
+>>> is_bored("I love It !") 
+1
+>>> is_bored("bIt") 
+0
+>>> is_bored("I feel good today. I will be productive. will kill It") 
+2
+>>> is_bored("You and I are going for a walk") 
+0

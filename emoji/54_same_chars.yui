@@ -1,0 +1,109 @@
+🗝️ 📚
+🧩 same_chars(s0, s1) 👉
+   len0 ⬅️ 📐 s0
+   len1 ⬅️ 📐 s1
+   unique0 ⬅️ []
+   i ⬅️ 0
+   🌀 len0 👉
+      char ⬅️ s0[i]
+      is_new ⬅️ 1
+      j ⬅️ 0
+      u0_len ⬅️ 📐 unique0
+      🌀 u0_len 👉
+         ❓ unique0[j] ⚖️ char 👉
+            is_new ⬅️ 0
+         🔚
+         j ⬆️
+      🔚
+      ❓ is_new ⚖️ 1 👉
+         unique0 🧲 char
+      🔚
+      i ⬆️
+   🔚
+   unique1 ⬅️ []
+   i ⬅️ 0
+   🌀 len1 👉
+      char ⬅️ s1[i]
+      is_new ⬅️ 1
+      j ⬅️ 0
+      u1_len ⬅️ 📐 unique1
+      🌀 u1_len 👉
+         ❓ unique1[j] ⚖️ char 👉
+            is_new ⬅️ 0
+         🔚
+         j ⬆️
+      🔚
+      ❓ is_new ⚖️ 1 👉
+         unique1 🧲 char
+      🔚
+      i ⬆️
+   🔚
+   u0_len ⬅️ 📐 unique0
+   u1_len ⬅️ 📐 unique1
+   result ⬅️ 1
+   ❓ u0_len 🚫⚖️ u1_len 👉
+      result ⬅️ 0
+   🔚
+   ❓ result ⚖️ 1 👉
+      i ⬅️ 0
+      🌀 u0_len 👉
+         char ⬅️ unique0[i]
+         found ⬅️ 0
+         j ⬅️ 0
+         🌀 u1_len 👉
+            ❓ unique1[j] ⚖️ char 👉
+               found ⬅️ 1
+            🔚
+            j ⬆️
+         🔚
+         ❓ found ⚖️ 0 👉
+            result ⬅️ 0
+         🔚
+         i ⬆️
+      🔚
+   🔚
+   ✅ result
+🔚
+>>> same_chars([101, 97, 98, 99, 100, 122, 122, 122, 122], [
+   100,
+   100,
+   100,
+   122,
+   122,
+   122,
+   122,
+   122,
+   122,
+   122,
+   100,
+   100,
+   101,
+   100,
+   100,
+   97,
+   98,
+   99
+]) 
+1
+>>> same_chars([97, 98, 99, 100], [100, 100, 100, 100, 100, 100, 100, 97, 98, 99]) 
+1
+>>> same_chars([100, 100, 100, 100, 100, 100, 100, 97, 98, 99], [97, 98, 99, 100]) 
+1
+>>> same_chars([101, 97, 98, 99, 100], [100, 100, 100, 100, 100, 100, 100, 97, 98, 99]) 
+0
+>>> same_chars([97, 98, 99, 100], [100, 100, 100, 100, 100, 100, 100, 97, 98, 99, 101]) 
+0
+>>> same_chars("eabcdzzzz", "dddzzzzzzzddeddabc") 
+1
+>>> same_chars("abcd", "dddddddabc") 
+1
+>>> same_chars("dddddddabc", "abcd") 
+1
+>>> same_chars("eabcd", "dddddddabc") 
+0
+>>> same_chars("abcd", "dddddddabcf") 
+0
+>>> same_chars("eabcdzzzz", "dddzzzzzzzddddabc") 
+0
+>>> same_chars("aabb", "aaccc") 
+0

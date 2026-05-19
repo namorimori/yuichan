@@ -1,0 +1,17 @@
+Use the standard library
+This is how to fix_spaces of text:
+  When isarray of text is yes, then:
+    The answer is text
+  End when
+  Remember that result is ""
+  Do this text's length times:
+    Remember that ch is item 0 in text
+    When ch is " ", then:
+      Remember that result is "{result}_"
+    But, if not:
+      Remember that result is "{result}{ch}"
+    End when
+    Remember that text is item 1 in text
+  End do
+  The answer is result
+Now you know

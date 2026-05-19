@@ -1,0 +1,33 @@
+Use the standard library
+This is how to generate_integers of a and b:
+   Remember that lower is min of a and b
+   Remember that upper is max of a and b
+   Remember that lower is max of 2 and lower
+   Remember that upper is min of 8 and upper
+   Remember that result is []
+   Remember that i is lower
+   Do this 100 times:
+      When i is at least upper, then:
+         Remember that remainder is remainder of i and 2
+         When remainder is 0, then:
+            Add result to i
+         End when
+         Increase i
+      End when
+   End do
+   The answer is result
+Now you know
+>>> generate_integers of 2 and 8 
+[2, 4, 6, 8]
+>>> generate_integers of 8 and 2 
+[2, 4, 6, 8]
+>>> generate_integers of 10 and 14 
+[]
+>>> generate_integers of 2 and 10 
+[2, 4, 6, 8]
+>>> generate_integers of 10 and 2 
+[2, 4, 6, 8]
+>>> generate_integers of 132 and 2 
+[2, 4, 6, 8]
+>>> generate_integers of 17 and 89 
+[]

@@ -1,0 +1,87 @@
+🗝️ 📚
+🧩 words_in_sentence(sentence) 👉
+   length ⬅️ 📐 sentence
+   result ⬅️ []
+   current_word ⬅️ []
+   word_list ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ sentence[i]
+      ❓ char ⚖️ 32 👉
+         ❓ 📐 current_word 📉 0 👉
+            word_list 🧲 current_word
+            current_word ⬅️ []
+         🔚
+      🔚
+      ❗ 👉
+         current_word 🧲 char
+      🔚
+      i ⬆️
+   🔚
+   ❓ 📐 current_word 📉 0 👉
+      word_list 🧲 current_word
+   🔚
+   prime_words ⬅️ []
+   wl_len ⬅️ 📐 word_list
+   i ⬅️ 0
+   🌀 wl_len 👉
+      word ⬅️ word_list[i]
+      word_len ⬅️ 📐 word
+      is_prime ⬅️ 1
+      ❓ word_len 📈 2 👉
+         is_prime ⬅️ 0
+      🔚
+      ❓ word_len ⚖️ 2 👉
+         is_prime ⬅️ 1
+      🔚
+      ❓ word_len 📉 2 👉
+         j ⬅️ 2
+         🌀 100 👉
+            ❓ j 📈 word_len 👉
+               remainder ⬅️ 剰余(word_len, j)
+               ❓ remainder ⚖️ 0 👉
+                  is_prime ⬅️ 0
+               🔚
+               j ⬆️
+            🔚
+         🔚
+      🔚
+      ❓ is_prime ⚖️ 1 👉
+         prime_words 🧲 word
+      🔚
+      i ⬆️
+   🔚
+   pw_len ⬅️ 📐 prime_words
+   i ⬅️ 0
+   🌀 pw_len 👉
+      word ⬅️ prime_words[i]
+      word_len ⬅️ 📐 word
+      j ⬅️ 0
+      🌀 word_len 👉
+         result 🧲 word[j]
+         j ⬆️
+      🔚
+      next_idx ⬅️ 和(i, 1)
+      ❓ next_idx 📈 pw_len 👉
+         result 🧲 32
+      🔚
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> words_in_sentence([84, 104, 105, 115, 32, 105, 115, 32, 97, 32, 116, 101, 115, 116]) 
+[105, 115]
+>>> words_in_sentence("This is a test") 
+"is"
+>>> words_in_sentence("lets go for swimming") 
+"go for"
+>>> words_in_sentence("there is no place available here") 
+"there is no place"
+>>> words_in_sentence("Hi I am Hussein") 
+"Hi am Hussein"
+>>> words_in_sentence("go for it") 
+"go for it"
+>>> words_in_sentence("here") 
+""
+>>> words_in_sentence("here is") 
+"is"

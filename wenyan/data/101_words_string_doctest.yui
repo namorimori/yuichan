@@ -1,0 +1,12 @@
+>>> 施詞分於「Hi, my name is John」
+[「Hi」,「my」,「name」,「is」,「John」]
+>>> 施詞分於「One, two, three, four, five, six」
+[「One」,「two」,「three」,「four」,「five」,「six」]
+>>> 施詞分於「Hi, my name」
+[「Hi」,「my」,「name」]
+>>> 施詞分於「One,, two, three, four, five, six,」
+[「One」,「two」,「three」,「four」,「five」,「six」]
+>>> 施詞分於「」
+[]
+>>> 施詞分於「ahmed     , gamal」
+[「ahmed」,「gamal」]

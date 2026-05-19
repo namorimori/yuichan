@@ -1,0 +1,52 @@
+Use the standard library
+This is how to anti_shuffle of s:
+   Remember that n is s's length
+   Remember that result is []
+   Remember that i is 0
+   Do this n times:
+      Add result to item i in s
+      Increase i
+   End do
+   Remember that start is 0
+   Do this n times:
+      When start is at least n, then:
+         Leave the loop
+      End when
+      Remember that stop is start
+      Do this n times:
+         When stop is at least n, then:
+            Leave the loop
+         End when
+         Remember that c is item stop in result
+         When c is 32, then:
+            Leave the loop
+         End when
+         Increase stop
+      End do
+      Remember that len is diff of stop and start
+      Remember that a is start
+      Do this len times:
+         Remember that best is a
+         Remember that j is sum of a and 1
+         Remember that remain is diff of stop and j
+         Do this remain times:
+            When item j in result is less than item best in result, then:
+               Remember that best is j
+            End when
+            Increase j
+         End do
+         When best is not a, then:
+            Remember that tmp is item a in result
+            Remember that item a in result is item best in result
+            Remember that item best in result is tmp
+         End when
+         Increase a
+      End do
+      When stop is at least n, then:
+         Remember that start is n
+      But, if not:
+         Remember that start is sum of stop and 1
+      End when
+   End do
+   The answer is result
+Now you know

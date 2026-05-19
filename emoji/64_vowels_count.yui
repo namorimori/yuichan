@@ -1,0 +1,73 @@
+🗝️ 📚
+🧩 vowels_count(s) 👉
+   length ⬅️ 📐 s
+   count ⬅️ 0
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ s[i]
+      is_vowel ⬅️ 0
+      ❓ char ⚖️ 97 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ char ⚖️ 101 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ char ⚖️ 105 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ char ⚖️ 111 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ char ⚖️ 117 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ char ⚖️ 65 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ char ⚖️ 69 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ char ⚖️ 73 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ char ⚖️ 79 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ char ⚖️ 85 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ is_vowel ⚖️ 1 👉
+         count ⬆️
+      🔚
+      i ⬆️
+   🔚
+   ❓ length 📉 0 👉
+      last_idx ⬅️ 差(length, 1)
+      last_char ⬅️ s[last_idx]
+      ❓ last_char ⚖️ 121 👉
+         count ⬆️
+      🔚
+      ❓ last_char ⚖️ 89 👉
+         count ⬆️
+      🔚
+   🔚
+   ✅ count
+🔚
+>>> vowels_count([97, 98, 99, 100, 101]) 
+2
+>>> vowels_count([65, 67, 69, 68, 89]) 
+3
+>>> vowels_count("abcde") 
+2
+>>> vowels_count("Alone") 
+3
+>>> vowels_count("key") 
+2
+>>> vowels_count("bye") 
+1
+>>> vowels_count("keY") 
+2
+>>> vowels_count("bYe") 
+1
+>>> vowels_count("ACEDY") 
+3

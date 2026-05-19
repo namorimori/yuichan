@@ -1,0 +1,31 @@
+Use the standard library
+This is how to separate_paren_groups of paren_string:
+   Remember that groups is []
+   Remember that current is ""
+   Remember that depth is 0
+   Remember that n is paren_string's length
+   Remember that i is 0
+   Do this n times:
+      Remember that c is item i in paren_string
+      When c is 40, then:
+         Add current to c
+         Increase depth
+      End when
+      When c is 41, then:
+         Add current to c
+         Decrease depth
+         When depth is 0, then:
+            Add groups to current
+            Remember that current is ""
+         End when
+      End when
+      Increase i
+   End do
+   The answer is groups
+Now you know
+>>> separate_paren_groups of [40, 32, 41, 32, 40, 40, 32, 41, 41, 32, 40, 40, 32, 41, 40, 32, 41, 41]
+[[40, 41], [40, 40, 41, 41], [40, 40, 41, 40, 41, 41]]
+>>> separate_paren_groups of "(()()) ((())) () ((())()())"
+["(()())", "((()))", "()", "((())()())"]
+>>> separate_paren_groups of "() (()) ((())) (((())))"
+["()", "(())", "((()))", "(((())))"]

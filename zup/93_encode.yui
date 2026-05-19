@@ -1,0 +1,79 @@
+Nav rem vaz
+Dum encode(message):
+   Kem length par message @kez
+   Kem result par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par message[i]
+      Kem new_char par char
+      Kem is_upper par 0
+      Kem is_lower par 0
+      Nev char pep 64 ger:
+         Nev char dup 91 ger:
+            Kem is_upper par 1
+         Dam nev
+      Dam nev
+      Nev char pep 96 ger:
+         Nev char dup 123 ger:
+            Kem is_lower par 1
+         Dam nev
+      Dam nev
+      Nev is_upper paz 1 ger:
+         Kem new_char par 和(char, 32)
+      Dam nev
+      Nev is_lower paz 1 ger:
+         Kem new_char par 差(char, 32)
+      Dam nev
+      Kem is_vowel par 0
+      Nev new_char paz 65 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev new_char paz 69 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev new_char paz 73 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev new_char paz 79 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev new_char paz 85 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev new_char paz 97 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev new_char paz 101 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev new_char paz 105 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev new_char paz 111 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev new_char paz 117 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev is_vowel paz 1 ger:
+         Kem new_char par 和(new_char, 2)
+      Dam nev
+      Mev result naz new_char
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> encode([116, 101, 115, 116]) 
+[84, 71, 83, 84]
+>>> encode([84, 104, 105, 115, 32, 105, 115, 32, 97, 32, 109, 101, 115, 115, 97, 103, 101]) 
+[116, 72, 75, 83, 32, 75, 83, 32, 67, 32, 77, 71, 83, 83, 67, 71, 71]
+>>> encode("TEST") 
+"tgst"
+>>> encode("Mudasir") 
+"mWDCSKR"
+>>> encode("YES") 
+"ygs"
+>>> encode("This is a message") 
+"tHKS KS C MGSSCGG"
+>>> encode("I DoNt KnOw WhAt tO WrItE") 
+"k dQnT kNqW wHcT Tq wRkTg"

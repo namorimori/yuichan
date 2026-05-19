@@ -1,0 +1,6 @@
+>>> string_xor of "111000" and "101010" 
+"010010"
+>>> string_xor of "1" and "1" 
+"0"
+>>> string_xor of "0101" and "0000" 
+"0101"

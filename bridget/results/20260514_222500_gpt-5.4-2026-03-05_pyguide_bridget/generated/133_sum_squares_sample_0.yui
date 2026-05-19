@@ -1,0 +1,12 @@
+Use the standard library
+
+This is how to sum_squares of xs:
+   Remember that total is 0
+   Remember that i is 0
+   Do this xs's length times:
+      Remember that x is item i in xs
+      Remember that total is sum of total and (product of x and x)
+      Increase i
+   End do
+   The answer is toint of total
+Now you know

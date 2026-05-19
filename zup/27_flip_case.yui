@@ -1,0 +1,36 @@
+Dum flip_case(string):
+   Kem 長さ par string @kez
+   Kem 結果 par []
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 文字 par string[i]
+      Kem 新文字 par 文字
+      Nev 文字 pev 65 ger:
+         Nev 文字 dur 90 ger:
+            Kem 新文字 par 文字
+            Mup dum 32 pag:
+               Rav 新文字
+            Dam mup
+         Dam nev
+      Dam nev
+      Nev 文字 pev 97 ger:
+         Nev 文字 dur 122 ger:
+            Kem 新文字 par 文字
+            Mup dum 32 pag:
+               Zar 新文字
+            Dam mup
+         Dam nev
+      Dam nev
+      Mev 結果 naz 新文字
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> flip_case("Hello") 
+"hELLO"
+>>> flip_case("") 
+""
+>>> flip_case("Hello!") 
+"hELLO!"
+>>> flip_case("These violent delights have violent ends") 
+"tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS"

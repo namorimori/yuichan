@@ -1,0 +1,110 @@
+Use the standard library
+This is how to valid_date of date:
+  Remember that text is date
+  When isarray of date is yes, then:
+    Remember that text is ""
+    Do this date's length times:
+      Remember that i is diff of date's length and date's length
+      Add text to ""
+    End do
+    Remember that chars is []
+    Do this date's length times:
+      Do nothing
+    End do
+    Remember that text is ""
+    Do this date's length times:
+      Remember that code is item diff of date's length and date's length in date
+      Remember that text is "{text}{tostring of code}"
+    End do
+  End when
+  When text's length is not 10, then:
+    The answer is 0
+  End when
+  When item 2 in text is not "-" , then:
+    The answer is 0
+  End when
+  When item 5 in text is not "-" , then:
+    The answer is 0
+  End when
+  Remember that d1 is item 0 in text
+  Remember that d2 is item 1 in text
+  Remember that m1 is item 3 in text
+  Remember that m2 is item 4 in text
+  Remember that y1 is item 6 in text
+  Remember that y2 is item 7 in text
+  Remember that y3 is item 8 in text
+  Remember that y4 is item 9 in text
+  Remember that digits is ["0","1","2","3","4","5","6","7","8","9"]
+  When d1 is not in digits, then:
+    The answer is 0
+  End when
+  When d2 is not in digits, then:
+    The answer is 0
+  End when
+  When m1 is not in digits, then:
+    The answer is 0
+  End when
+  When m2 is not in digits, then:
+    The answer is 0
+  End when
+  When y1 is not in digits, then:
+    The answer is 0
+  End when
+  When y2 is not in digits, then:
+    The answer is 0
+  End when
+  When y3 is not in digits, then:
+    The answer is 0
+  End when
+  When y4 is not in digits, then:
+    The answer is 0
+  End when
+  Remember that day is toint of "{d1}{d2}"
+  Remember that month is toint of "{m1}{m2}"
+  Remember that year is toint of "{y1}{y2}{y3}{y4}"
+  When month is less than 1, then:
+    The answer is 0
+  End when
+  When month is more than 12, then:
+    The answer is 0
+  End when
+  When day is less than 1, then:
+    The answer is 0
+  End when
+  Remember that max_day is 31
+  When month is 4, then:
+    Remember that max_day is 30
+  End when
+  When month is 6, then:
+    Remember that max_day is 30
+  End when
+  When month is 9, then:
+    Remember that max_day is 30
+  End when
+  When month is 11, then:
+    Remember that max_day is 30
+  End when
+  When month is 2, then:
+    Remember that leap is 0
+    When remainder of year and 400 is 0, then:
+      Remember that leap is 1
+    But, if not:
+      When remainder of year and 100 is 0, then:
+        Remember that leap is 0
+      But, if not:
+        When remainder of year and 4 is 0, then:
+          Remember that leap is 1
+        End when
+      End when
+    End when
+    When leap is 1, then:
+      Remember that max_day is 29
+    But, if not:
+      Remember that max_day is 28
+    End when
+  End when
+  When day is more than max_day, then:
+    The answer is 0
+  End when
+  The answer is 1
+Now you know

@@ -1,0 +1,23 @@
+Use the standard library
+This is how to how_many_times of string and substring:
+  When substring's length is 0, then:
+    The answer is 0
+  End when
+  Remember that count is 0
+  Remember that limit is diff of string's length and substring's length
+  When limit is more than 0, then:
+    The answer is 0
+  End when
+  Do this sum of limit and 1 times:
+    Remember that i is diff of sum of limit and 1 and count
+    Remember that piece is ""
+    Do this substring's length times:
+      Remember that j is diff of substring's length and piece's length
+      Remember that piece is "{piece}{item diff of sum of i and j and 1 in string}"
+    End do
+    When piece is substring, then:
+      Increase count
+    End when
+  End do
+  The answer is count
+Now you know

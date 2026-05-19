@@ -1,0 +1,30 @@
+Use the standard library
+This is how to Strongest_Extension of class_name and extensions:
+  Remember that best_extension is item 0 in extensions
+  Remember that best_strength is 0
+  Remember that i is 0
+  Do this extensions's length times:
+    Remember that current_extension is item i in extensions
+    Remember that upper_count is 0
+    Remember that lower_count is 0
+    Remember that j is 0
+    Do this current_extension's length times:
+      Remember that ch is item j in current_extension
+      When ch is in "ABCDEFGHIJKLMNOPQRSTUVWXYZ", then:
+        Increase upper_count
+      But, if not:
+        When ch is in "abcdefghijklmnopqrstuvwxyz", then:
+          Increase lower_count
+        End when
+      End when
+      Increase j
+    End do
+    Remember that strength is diff of upper_count and lower_count
+    When strength is more than best_strength, then:
+      Remember that best_strength is strength
+      Remember that best_extension is current_extension
+    End when
+    Increase i
+  End do
+  The answer is sum of class_name and "." and best_extension
+Now you know

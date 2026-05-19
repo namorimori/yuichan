@@ -1,0 +1,13 @@
+Dum strlen(string):
+   Dup vem string @kez
+Pam dum
+>>> strlen("") 
+0
+>>> strlen("abc") 
+3
+>>> strlen("") 
+0
+>>> strlen("x") 
+1
+>>> strlen("asdasnakj") 
+9

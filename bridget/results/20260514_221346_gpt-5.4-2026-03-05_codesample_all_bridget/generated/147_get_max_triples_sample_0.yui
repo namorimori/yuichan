@@ -1,0 +1,27 @@
+Use the standard library
+This is how to get_max_triples of n:
+   Remember that result is 0
+   Remember that a is 1
+   Do this n times:
+      Remember that b is 1
+      Do this n times:
+         Remember that c is 1
+         Do this n times:
+            When sum of a and b is more than c, then:
+               When sum of a and c is more than b, then:
+                  When sum of b and c is more than a, then:
+                     Remember that p is sum of (sum of a and b) and c
+                     When p is at most n, then:
+                        Increase result
+                     End when
+                  End when
+               End when
+            End when
+            Increase c
+         End do
+         Increase b
+      End do
+      Increase a
+   End do
+   The answer is result
+Now you know

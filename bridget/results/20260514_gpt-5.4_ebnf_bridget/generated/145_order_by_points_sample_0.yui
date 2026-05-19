@@ -1,0 +1,52 @@
+Use the standard library
+This is how to order_by_points of nums:
+  Remember that pairs is []
+  Remember that i is 0
+  Do this nums's length times:
+    Remember that n is item i in nums
+    Remember that text is tostring of abs of n
+    Remember that points is 0
+    Remember that j is 0
+    Do this text's length times:
+      Remember that ch is item j in text
+      Increase points by toint of ch
+      Increase j
+    End do
+    Add pairs to {"points": points, "value": n}
+    Increase i
+  End do
+
+  Remember that result is []
+  Do this pairs's length times:
+    Remember that best_index is 0
+    Remember that best is item 0 in pairs
+    Remember that k is 1
+    Do this diff of pairs's length and 1 times:
+      Remember that current is item k in pairs
+      When current is less than best, then:
+        Remember that best is current
+        Remember that best_index is k
+      But, if not:
+        When current is best, then:
+          When current is less than best, then:
+            Remember that best is current
+            Remember that best_index is k
+          End when
+        End when
+      End when
+      Increase k
+    End do
+    Add result to best
+    Remember that new_pairs is []
+    Remember that m is 0
+    Do this pairs's length times:
+      When m is not best_index, then:
+        Add new_pairs to item m in pairs
+      End when
+      Increase m
+    End do
+    Remember that pairs is new_pairs
+  End do
+
+  The answer is result
+Now you know

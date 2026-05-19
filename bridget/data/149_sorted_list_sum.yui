@@ -1,0 +1,99 @@
+Use the standard library
+This is how to sorted_list_sum of lst:
+   Remember that length is lst's length
+   Remember that i is 0
+   Do this length times:
+      Remember that j is 0
+      Remember that limit is diff of (diff of length and i) and 1
+      Do this limit times:
+         Remember that next_j is sum of j and 1
+         Remember that word1 is item j in lst
+         Remember that word2 is item next_j in lst
+         Remember that len1 is word1's length
+         Remember that len2 is word2's length
+         Remember that min_len is len1
+         When len2 is less than len1, then:
+            Remember that min_len is len2
+         End when
+         Remember that should_swap is 0
+         Remember that k is 0
+         Remember that found_diff is 0
+         Do this min_len times:
+            When found_diff is 0, then:
+               When item k in word1 is more than item k in word2, then:
+                  Remember that should_swap is 1
+                  Remember that found_diff is 1
+               End when
+               When item k in word1 is less than item k in word2, then:
+                  Remember that found_diff is 1
+               End when
+            End when
+            Increase k
+         End do
+         When found_diff is 0, then:
+            When len1 is more than len2, then:
+               Remember that should_swap is 1
+            End when
+         End when
+         When should_swap is 1, then:
+            Remember that temp is item j in lst
+            Remember that item j in lst is item next_j in lst
+            Remember that item next_j in lst is temp
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   Remember that filtered is []
+   Remember that i is 0
+   Do this length times:
+      Remember that word is item i in lst
+      Remember that word_len is word's length
+      Remember that remainder is remainder of word_len and 2
+      When remainder is 0, then:
+         Add filtered to word
+      End when
+      Increase i
+   End do
+   Remember that filtered_len is filtered's length
+   Remember that i is 0
+   Do this filtered_len times:
+      Remember that j is 0
+      Remember that limit is diff of (diff of filtered_len and i) and 1
+      Do this limit times:
+         Remember that next_j is sum of j and 1
+         Remember that fw1 is item j in filtered
+         Remember that fw2 is item next_j in filtered
+         Remember that len1 is fw1's length
+         Remember that len2 is fw2's length
+         Remember that should_swap is 0
+         When len1 is more than len2, then:
+            Remember that should_swap is 1
+         End when
+         When should_swap is 1, then:
+            Remember that temp is item j in filtered
+            Remember that item j in filtered is item next_j in filtered
+            Remember that item next_j in filtered is temp
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is filtered
+Now you know
+>>> sorted_list_sum of [[97, 97], [97], [97, 97, 97]] 
+[[97, 97]]
+>>> sorted_list_sum of ["aa", "a", "aaa"] 
+["aa"]
+>>> sorted_list_sum of ["school", "AI", "asdf", "b"] 
+["AI", "asdf", "school"]
+>>> sorted_list_sum of ["d", "b", "c", "a"] 
+[]
+>>> sorted_list_sum of ["d", "dcba", "abcd", "a"] 
+["abcd", "dcba"]
+>>> sorted_list_sum of ["AI", "ai", "au"] 
+["AI", "ai", "au"]
+>>> sorted_list_sum of ["a", "b", "b", "c", "c", "a"] 
+[]
+>>> sorted_list_sum of ["aaaa", "bbbb", "dd", "cc"] 
+["cc", "dd", "aaaa", "bbbb"]

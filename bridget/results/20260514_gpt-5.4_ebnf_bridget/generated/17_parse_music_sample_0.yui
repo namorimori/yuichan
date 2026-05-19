@@ -1,0 +1,21 @@
+Use the standard library
+This is how to parse_music of music_string:
+  Remember that notes is []
+  Remember that current_count is 0
+  Remember that i is 0
+  Do this music_string's length times:
+    When item i in music_string is "o", then:
+      Increase current_count by 1
+    But, if not:
+      When current_count is more than 0, then:
+        Add notes to current_count
+        Remember that current_count is 0
+      End when
+    End when
+    Increase i by 1
+  End do
+  When current_count is more than 0, then:
+    Add notes to current_count
+  End when
+  The answer is notes
+Now you know

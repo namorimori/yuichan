@@ -1,0 +1,28 @@
+Nav rem vaz
+Dum mean_absolute_deviation(numbers):
+   Kem 長さ par numbers @kez
+   Kem 合計 par 和(numbers)
+   Kem 合計_float par 積(合計, 1.000000)
+   Kem 長さ_float par 積(長さ, 1.000000)
+   Kem 平均 par 商(合計_float, 長さ_float)
+   Kem 偏差合計 par 0.000000
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 値 par numbers[i]
+      Kem 値_float par 積(値, 1.000000)
+      Kem 差分 par 差(値_float, 平均)
+      Kem 絶対差分 par 絶対値(差分)
+      Kem 偏差合計 par 和(偏差合計, 絶対差分)
+      Rav i
+   Dam mup
+   Kem 偏差合計_float par 積(偏差合計, 1.000000)
+   Dup vem 商(偏差合計_float, 長さ_float)
+Pam dum
+>>> mean_absolute_deviation([1.000000, 2.000000, 3.000000, 4.000000]) 
+1.000000
+>>> mean_absolute_deviation([1.000000, 2.000000, 3.000000]) 
+0.666667
+>>> mean_absolute_deviation([1.000000, 2.000000, 3.000000, 4.000000]) 
+1.000000
+>>> mean_absolute_deviation([1.000000, 2.000000, 3.000000, 4.000000, 5.000000]) 
+1.200000

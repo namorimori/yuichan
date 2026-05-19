@@ -1,0 +1,11 @@
+Use the standard library
+This is how to strlen of string:
+   The answer is string's length
+Now you know
+
+>>> strlen of ""
+0
+>>> strlen of "abc"
+3
+>>> strlen of ""
+0

@@ -1,0 +1,18 @@
+Use the standard library
+This is how to factorize of n:
+  Remember that factors is []
+  Remember that divisor is 2
+  Remember that remaining is n
+  Do this n times:
+    When remainder of remaining and divisor is 0, then:
+      Add factors to divisor
+      Remember that remaining is quotient of remaining and divisor
+      When remaining is 1, then:
+        Leave the loop
+      End when
+    But, if not:
+      Increase divisor by 1
+    End when
+  End do
+  The answer is factors
+Now you know

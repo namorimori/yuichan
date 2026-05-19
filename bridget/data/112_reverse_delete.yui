@@ -1,0 +1,57 @@
+Use the standard library
+This is how to reverse_delete of s and c:
+   Remember that s_len is s's length
+   Remember that c_len is c's length
+   Remember that result_str is []
+   Remember that i is 0
+   Do this s_len times:
+      Remember that char is item i in s
+      Remember that should_remove is 0
+      Remember that j is 0
+      Do this c_len times:
+         When char is item j in c, then:
+            Remember that should_remove is 1
+         End when
+         Increase j
+      End do
+      When should_remove is 0, then:
+         Add result_str to char
+      End when
+      Increase i
+   End do
+   Remember that rs_len is result_str's length
+   Remember that is_palindrome is 1
+   Remember that i is 0
+   Remember that half is quotient of rs_len and 2
+   Do this half times:
+      Remember that back_idx is diff of (diff of rs_len and i) and 1
+      When item i in result_str is not item back_idx in result_str, then:
+         Remember that is_palindrome is 0
+      End when
+      Increase i
+   End do
+   Remember that result is []
+   Add result to result_str
+   Add result to is_palindrome
+   The answer is result
+Now you know
+>>> reverse_delete of [97, 98, 99, 100, 101] and [97, 101] 
+[[98, 99, 100], 0]
+>>> reverse_delete of "abcde" and "ae" 
+["bcd", 0]
+>>> reverse_delete of "abcdef" and "b" 
+["acdef", 0]
+>>> reverse_delete of "abcdedcba" and "ab" 
+["cdedc", 1]
+>>> reverse_delete of "dwik" and "w" 
+["dik", 0]
+>>> reverse_delete of "a" and "a" 
+["", 1]
+>>> reverse_delete of "abcdedcba" and "" 
+["abcdedcba", 1]
+>>> reverse_delete of "abcdedcba" and "v" 
+["abcdedcba", 1]
+>>> reverse_delete of "vabba" and "v" 
+["abba", 1]
+>>> reverse_delete of "mamma" and "mia" 
+["", 1]

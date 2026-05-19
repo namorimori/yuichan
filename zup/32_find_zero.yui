@@ -1,0 +1,44 @@
+Nav rem vaz
+Dum poly(xs, x):
+   Kem result par 0.000000
+   Kem n par xs @kez
+   Kem i par 0
+   Kem current_power par 1.000000
+   Mup dum n pag:
+      Kem coeff par 小数化(xs[i])
+      Kem term par 積(coeff, current_power)
+      Kem result par 和(result, term)
+      Kem current_power par 積(current_power, x)
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+Dum find_zero(xs):
+   Kem a par -10000.000000
+   Kem b par 10000.000000
+   Kem poly_a par poly(xs, a)
+   Kem i par 0
+   Mup dum 200 pag:
+      Kem mid par 商(和(a, b), 2.000000)
+      Kem poly_mid par poly(xs, mid)
+      Kem prod par 積(poly_a, poly_mid)
+      Nev prod pep 0.000000 ger:
+         Kem a par mid
+         Kem poly_a par poly_mid
+      Zum:
+         Kem b par mid
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem 商(和(a, b), 2.000000)
+Pam dum
+Dum approx_zero(x):
+   Kem ax par 絶対値(x)
+   Kem result par 0
+   Nev ax dup 0.001000 ger:
+      Kem result par 1
+   Dam nev
+   Dup vem result
+Pam dum
+>>> approx_zero(poly([1, 1], find_zero([1, 1]))) 
+1

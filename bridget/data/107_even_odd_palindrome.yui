@@ -1,0 +1,62 @@
+Use the standard library
+This is how to even_odd_palindrome of n:
+   Remember that even_count is 0
+   Remember that odd_count is 0
+   Remember that i is 1
+   Do this n times:
+      Remember that digits is []
+      Remember that temp is i
+      Do this 100 times:
+         When temp is more than 0, then:
+            Remember that digit is remainder of temp and 10
+            Add digits to digit
+            Remember that temp is quotient of temp and 10
+         End when
+      End do
+      Remember that length is digits's length
+      Remember that is_palindrome is 1
+      Remember that j is 0
+      Remember that half is quotient of length and 2
+      Do this half times:
+         Remember that front_idx is j
+         Remember that back_idx is diff of (diff of length and j) and 1
+         When item front_idx in digits is not item back_idx in digits, then:
+            Remember that is_palindrome is 0
+         End when
+         Increase j
+      End do
+      When is_palindrome is 1, then:
+         Remember that remainder is remainder of i and 2
+         When remainder is 0, then:
+            Increase even_count
+         But, if not:
+            Increase odd_count
+         End when
+      End when
+      Increase i
+   End do
+   Remember that result is []
+   Add result to even_count
+   Add result to odd_count
+   The answer is result
+Now you know
+>>> even_odd_palindrome of 3 
+[1, 2]
+>>> even_odd_palindrome of 12 
+[4, 6]
+>>> even_odd_palindrome of 123 
+[8, 13]
+>>> even_odd_palindrome of 12 
+[4, 6]
+>>> even_odd_palindrome of 3 
+[1, 2]
+>>> even_odd_palindrome of 63 
+[6, 8]
+>>> even_odd_palindrome of 25 
+[5, 6]
+>>> even_odd_palindrome of 19 
+[4, 6]
+>>> even_odd_palindrome of 9 
+[4, 5]
+>>> even_odd_palindrome of 1 
+[0, 1]

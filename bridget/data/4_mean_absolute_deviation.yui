@@ -1,0 +1,28 @@
+Use the standard library
+This is how to mean_absolute_deviation of numbers:
+   Remember that length is numbers's length
+   Remember that total is sum of numbers
+   Remember that total_float is product of total and 1.000000
+   Remember that length_float is product of length and 1.000000
+   Remember that average is quotient of total_float and length_float
+   Remember that deviation_total is 0.000000
+   Remember that i is 0
+   Do this length times:
+      Remember that value is item i in numbers
+      Remember that value_float is product of value and 1.000000
+      Remember that delta is diff of value_float and average
+      Remember that abs_delta is abs of delta
+      Remember that deviation_total is sum of deviation_total and abs_delta
+      Increase i
+   End do
+   Remember that deviation_total_float is product of deviation_total and 1.000000
+   The answer is quotient of deviation_total_float and length_float
+Now you know
+>>> mean_absolute_deviation of [1.000000, 2.000000, 3.000000, 4.000000] 
+1.000000
+>>> mean_absolute_deviation of [1.000000, 2.000000, 3.000000] 
+0.666667
+>>> mean_absolute_deviation of [1.000000, 2.000000, 3.000000, 4.000000] 
+1.000000
+>>> mean_absolute_deviation of [1.000000, 2.000000, 3.000000, 4.000000, 5.000000] 
+1.200000

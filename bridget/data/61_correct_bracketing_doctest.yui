@@ -1,0 +1,24 @@
+>>> correct_bracketing of "()" 
+1
+>>> correct_bracketing of "(()())" 
+1
+>>> correct_bracketing of "()()(()())()" 
+1
+>>> correct_bracketing of "()()((()()())())(()()(()))" 
+1
+>>> correct_bracketing of "((()())))" 
+0
+>>> correct_bracketing of ")(()" 
+0
+>>> correct_bracketing of "(" 
+0
+>>> correct_bracketing of "((((" 
+0
+>>> correct_bracketing of ")" 
+0
+>>> correct_bracketing of "(()" 
+0
+>>> correct_bracketing of "()()(()())())(()" 
+0
+>>> correct_bracketing of "()()(()())()))()" 
+0

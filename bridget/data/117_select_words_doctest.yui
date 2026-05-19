@@ -1,0 +1,14 @@
+>>> select_words of "Mary had a little lamb" and 4 
+["little"]
+>>> select_words of "Mary had a little lamb" and 3 
+["Mary", "lamb"]
+>>> select_words of "simple white space" and 2 
+[]
+>>> select_words of "Hello world" and 4 
+["world"]
+>>> select_words of "Uncle sam" and 3 
+["Uncle"]
+>>> select_words of "" and 4 
+[]
+>>> select_words of "a b c d e f" and 1 
+["b", "c", "d", "f"]

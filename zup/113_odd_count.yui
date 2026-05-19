@@ -1,0 +1,166 @@
+Nav rem vaz
+Dum odd_count(lst):
+   Kem length par lst @kez
+   Kem result par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem string par lst[i]
+      Kem str_len par string @kez
+      Kem odd_cnt par 0
+      Kem j par 0
+      Mup dum str_len pag:
+         Kem char par string[j]
+         Nev char pep 47 ger:
+            Nev char dup 58 ger:
+               Kem digit par 差(char, 48)
+               Kem remainder par 剰余(digit, 2)
+               Nev remainder paz 1 ger:
+                  Rav odd_cnt
+               Dam nev
+            Dam nev
+         Dam nev
+         Rav j
+      Dam mup
+      Kem msg par []
+      Kem part1 par [
+         116,
+         104,
+         101,
+         32,
+         110,
+         117,
+         109,
+         98,
+         101,
+         114,
+         32,
+         111,
+         102,
+         32,
+         111,
+         100,
+         100,
+         32,
+         101,
+         108,
+         101,
+         109,
+         101,
+         110,
+         116,
+         115,
+         32
+      ]
+      Kem k par 0
+      Mup dum 27 pag:
+         Mev msg naz part1[k]
+         Rav k
+      Dam mup
+      Kem cnt_char par 和(48, odd_cnt)
+      Mev msg naz cnt_char
+      Kem part2 par [110, 32, 116, 104, 101, 32, 115, 116, 114]
+      Kem k par 0
+      Mup dum 9 pag:
+         Mev msg naz part2[k]
+         Rav k
+      Dam mup
+      Mev msg naz cnt_char
+      Kem part3 par [110, 103, 32]
+      Kem k par 0
+      Mup dum 3 pag:
+         Mev msg naz part3[k]
+         Rav k
+      Dam mup
+      Mev msg naz cnt_char
+      Kem part4 par [32, 111, 102, 32, 116, 104, 101, 32]
+      Kem k par 0
+      Mup dum 8 pag:
+         Mev msg naz part4[k]
+         Rav k
+      Dam mup
+      Mev msg naz cnt_char
+      Kem part5 par [110, 112, 117, 116, 46]
+      Kem k par 0
+      Mup dum 5 pag:
+         Mev msg naz part5[k]
+         Rav k
+      Dam mup
+      Mev result naz msg
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> odd_count([[49, 50, 51, 52, 53, 54, 55]]) 
+[
+   [
+      116,
+      104,
+      101,
+      32,
+      110,
+      117,
+      109,
+      98,
+      101,
+      114,
+      32,
+      111,
+      102,
+      32,
+      111,
+      100,
+      100,
+      32,
+      101,
+      108,
+      101,
+      109,
+      101,
+      110,
+      116,
+      115,
+      32,
+      52,
+      110,
+      32,
+      116,
+      104,
+      101,
+      32,
+      115,
+      116,
+      114,
+      52,
+      110,
+      103,
+      32,
+      52,
+      32,
+      111,
+      102,
+      32,
+      116,
+      104,
+      101,
+      32,
+      52,
+      110,
+      112,
+      117,
+      116,
+      46
+   ]
+]
+>>> odd_count(["1234567"]) 
+["the number of odd elements 4n the str4ng 4 of the 4nput."]
+>>> odd_count(["3", "11111111"]) 
+[
+   "the number of odd elements 1n the str1ng 1 of the 1nput.",
+   "the number of odd elements 8n the str8ng 8 of the 8nput."
+]
+>>> odd_count(["271", "137", "314"]) 
+[
+   "the number of odd elements 2n the str2ng 2 of the 2nput.",
+   "the number of odd elements 3n the str3ng 3 of the 3nput.",
+   "the number of odd elements 2n the str2ng 2 of the 2nput."
+]

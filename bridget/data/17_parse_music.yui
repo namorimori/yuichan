@@ -1,0 +1,109 @@
+Use the standard library
+This is how to parse_music of music_string:
+   Remember that length is music_string's length
+   Remember that result is []
+   Remember that current is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in music_string
+      When char is 32, then:
+         When current's length is more than 0, then:
+            Remember that cur_len is current's length
+            Remember that value is 0
+            When cur_len is 1, then:
+               When item 0 in current is 111, then:
+                  Remember that value is 4
+               End when
+            End when
+            When cur_len is 2, then:
+               When item 0 in current is 111, then:
+                  When item 1 in current is 124, then:
+                     Remember that value is 2
+                  End when
+               End when
+            End when
+            When cur_len is 2, then:
+               When item 0 in current is 46, then:
+                  When item 1 in current is 124, then:
+                     Remember that value is 1
+                  End when
+               End when
+            End when
+            When value is more than 0, then:
+               Add result to value
+            End when
+            Remember that current is []
+         End when
+      But, if not:
+         Add current to char
+      End when
+      Increase i
+   End do
+   When current's length is more than 0, then:
+      Remember that cur_len is current's length
+      Remember that value is 0
+      When cur_len is 1, then:
+         When item 0 in current is 111, then:
+            Remember that value is 4
+         End when
+      End when
+      When cur_len is 2, then:
+         When item 0 in current is 111, then:
+            When item 1 in current is 124, then:
+               Remember that value is 2
+            End when
+         End when
+         When item 0 in current is 46, then:
+            When item 1 in current is 124, then:
+               Remember that value is 1
+            End when
+         End when
+      End when
+      When value is more than 0, then:
+         Add result to value
+      End when
+   End when
+   The answer is result
+Now you know
+>>> parse_music of [
+   111,
+   32,
+   111,
+   124,
+   32,
+   46,
+   124,
+   32,
+   111,
+   124,
+   32,
+   111,
+   124,
+   32,
+   46,
+   124,
+   32,
+   46,
+   124,
+   32,
+   46,
+   124,
+   32,
+   46,
+   124,
+   32,
+   111,
+   32,
+   111
+] 
+[4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]
+>>> parse_music of "" 
+[]
+>>> parse_music of "o o o o" 
+[4, 4, 4, 4]
+>>> parse_music of ".| .| .| .|" 
+[1, 1, 1, 1]
+>>> parse_music of "o| o| .| .| o o o o" 
+[2, 2, 1, 1, 4, 4, 4, 4]
+>>> parse_music of "o| .| o| .| o o| o o|" 
+[2, 1, 2, 1, 4, 2, 4, 2]

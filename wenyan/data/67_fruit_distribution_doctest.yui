@@ -1,0 +1,14 @@
+>>> 施果分於「5 apples and 6 oranges」與19
+8
+>>> 施果分於「5 apples and 6 oranges」與21
+10
+>>> 施果分於「0 apples and 1 oranges」與3
+2
+>>> 施果分於「1 apples and 0 oranges」與3
+2
+>>> 施果分於「2 apples and 3 oranges」與100
+95
+>>> 施果分於「2 apples and 3 oranges」與5
+0
+>>> 施果分於「1 apples and 100 oranges」與120
+19

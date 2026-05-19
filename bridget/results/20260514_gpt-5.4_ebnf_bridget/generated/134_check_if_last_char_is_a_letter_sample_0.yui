@@ -1,0 +1,9 @@
+Use the standard library
+This is how to check_if_last_char_is_a_letter of txt:
+  Remember that last_index is diff of txt's length and 1
+  Remember that last_char is item last_index in txt
+  When last_char is 32, then:
+    The answer is 0
+  End when
+  The answer is 1
+Now you know

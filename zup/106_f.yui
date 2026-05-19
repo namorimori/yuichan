@@ -1,0 +1,37 @@
+Nav rem vaz
+Dum f(n):
+   Kem result par []
+   Kem i par 1
+   Mup dum n pag:
+      Kem remainder par 剰余(i, 2)
+      Nev remainder paz 0 ger:
+         Kem factorial par 1
+         Kem j par 1
+         Mup dum i pag:
+            Kem factorial par 積(factorial, j)
+            Rav j
+         Dam mup
+         Mev result naz factorial
+      Zum:
+         Kem sum par 0
+         Kem j par 1
+         Mup dum i pag:
+            Kem sum par 和(sum, j)
+            Rav j
+         Dam mup
+         Mev result naz sum
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> f(5) 
+[1, 2, 6, 24, 15]
+>>> f(5) 
+[1, 2, 6, 24, 15]
+>>> f(7) 
+[1, 2, 6, 24, 15, 720, 28]
+>>> f(1) 
+[1]
+>>> f(3) 
+[1, 2, 6]

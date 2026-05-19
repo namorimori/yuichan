@@ -1,0 +1,38 @@
+Use the standard library
+This is how to separate_paren_groups of paren_string:
+   Remember that result is []
+   Remember that current is []
+   Remember that n is paren_string's length
+   Remember that i is 0
+   Remember that open_count is 0
+   Remember that is_string is isstring of paren_string
+   
+   Do this n times:
+      Remember that c is item i in paren_string
+      
+      When is_string, then:
+         Remember that code is toint of c
+      But, if not:
+         Remember that code is c
+      End when
+      
+      When code is 40, then:
+         Add current to c
+         Increase open_count
+      End when
+      
+      When code is 41, then:
+         Add current to c
+         Decrease open_count
+         
+         When open_count is 0, then:
+            Add result to current
+            Remember that current is []
+         End when
+      End when
+      
+      Increase i
+   End do
+   
+   The answer is result
+Now you know

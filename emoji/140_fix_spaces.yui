@@ -1,0 +1,54 @@
+🗝️ 📚
+🧩 fix_spaces(text) 👉
+   length ⬅️ 📐 text
+   result ⬅️ []
+   i ⬅️ 0
+   🌀 200 👉
+      ❓ i 📈 length 👉
+         char ⬅️ text[i]
+         ❓ char ⚖️ 32 👉
+            space_count ⬅️ 1
+            j ⬅️ 和(i, 1)
+            🌀 100 👉
+               ❓ j 📈 length 👉
+                  ❓ text[j] ⚖️ 32 👉
+                     space_count ⬆️
+                     j ⬆️
+                  🔚
+                  ❗ 👉
+                     j ⬅️ length
+                  🔚
+               🔚
+            🔚
+            ❓ space_count 📈⚖️ 2 👉
+               k ⬅️ 0
+               🌀 space_count 👉
+                  result 🧲 95
+                  k ⬆️
+               🔚
+            🔚
+            ❗ 👉
+               result 🧲 45
+            🔚
+            i ⬅️ 和(i, 差(space_count, 1))
+         🔚
+         ❗ 👉
+            result 🧲 char
+         🔚
+         i ⬆️
+      🔚
+   🔚
+   ✅ result
+🔚
+>>> fix_spaces([69, 120, 97, 109, 112, 108, 101]) 
+[69, 120, 97, 109, 112, 108, 101]
+>>> fix_spaces("Example") 
+"Example"
+>>> fix_spaces("Mudasir Hanif ") 
+"Mudasir_Hanif_"
+>>> fix_spaces("Yellow Yellow  Dirty  Fellow") 
+"Yellow_Yellow__Dirty__Fellow"
+>>> fix_spaces("Exa   mple") 
+"Exa-mple"
+>>> fix_spaces("   Exa 1 2 2 mple") 
+"-Exa_1_2_2_mple"

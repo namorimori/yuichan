@@ -1,0 +1,25 @@
+Use the standard library
+This is how to filter_integers of values:
+   Remember that result is []
+   Remember that i is 0
+   Remember that length is values's length
+   Do this length times:
+      Remember that value is item i in values
+      Remember that is_int is isint of value
+      When is_int is yes, then:
+         Add result to value
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> filter_integers of [5] 
+[5]
+>>> filter_integers of [1, 2, 3] 
+[1, 2, 3]
+>>> filter_integers of [] 
+[]
+>>> filter_integers of [4, [], 23.200000, 9, "adasd"] 
+[4, 9]
+>>> filter_integers of [3, "c", 3, 3, "a", "b"] 
+[3, 3, 3]

@@ -1,0 +1,97 @@
+Nav rem vaz
+Dum sorted_list_sum(lst):
+   Kem length par lst @kez
+   Kem i par 0
+   Mup dum length pag:
+      Kem j par 0
+      Kem limit par 差(差(length, i), 1)
+      Mup dum limit pag:
+         Kem next_j par 和(j, 1)
+         Kem word1 par lst[j]
+         Kem word2 par lst[next_j]
+         Kem len1 par word1 @kez
+         Kem len2 par word2 @kez
+         Kem min_len par len1
+         Nev len2 dup len1 ger:
+            Kem min_len par len2
+         Dam nev
+         Kem should_swap par 0
+         Kem k par 0
+         Kem found_diff par 0
+         Mup dum min_len pag:
+            Nev found_diff paz 0 ger:
+               Nev word1[k] pep word2[k] ger:
+                  Kem should_swap par 1
+                  Kem found_diff par 1
+               Dam nev
+               Nev word1[k] dup word2[k] ger:
+                  Kem found_diff par 1
+               Dam nev
+            Dam nev
+            Rav k
+         Dam mup
+         Nev found_diff paz 0 ger:
+            Nev len1 pep len2 ger:
+               Kem should_swap par 1
+            Dam nev
+         Dam nev
+         Nev should_swap paz 1 ger:
+            Kem temp par lst[j]
+            Kem lst[j] par lst[next_j]
+            Kem lst[next_j] par temp
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Kem filtered par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem word par lst[i]
+      Kem word_len par word @kez
+      Kem remainder par 剰余(word_len, 2)
+      Nev remainder paz 0 ger:
+         Mev filtered naz word
+      Dam nev
+      Rav i
+   Dam mup
+   Kem filtered_len par filtered @kez
+   Kem i par 0
+   Mup dum filtered_len pag:
+      Kem j par 0
+      Kem limit par 差(差(filtered_len, i), 1)
+      Mup dum limit pag:
+         Kem next_j par 和(j, 1)
+         Kem len1 par filtered[j] @kez
+         Kem len2 par filtered[next_j] @kez
+         Kem should_swap par 0
+         Nev len1 pep len2 ger:
+            Kem should_swap par 1
+         Dam nev
+         Nev should_swap paz 1 ger:
+            Kem temp par filtered[j]
+            Kem filtered[j] par filtered[next_j]
+            Kem filtered[next_j] par temp
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Dup vem filtered
+Pam dum
+>>> sorted_list_sum([[97, 97], [97], [97, 97, 97]]) 
+[[97, 97]]
+>>> sorted_list_sum(["aa", "a", "aaa"]) 
+["aa"]
+>>> sorted_list_sum(["school", "AI", "asdf", "b"]) 
+["AI", "asdf", "school"]
+>>> sorted_list_sum(["d", "b", "c", "a"]) 
+[]
+>>> sorted_list_sum(["d", "dcba", "abcd", "a"]) 
+["abcd", "dcba"]
+>>> sorted_list_sum(["AI", "ai", "au"]) 
+["AI", "ai", "au"]
+>>> sorted_list_sum(["a", "b", "b", "c", "c", "a"]) 
+[]
+>>> sorted_list_sum(["aaaa", "bbbb", "dd", "cc"]) 
+["cc", "dd", "aaaa", "bbbb"]

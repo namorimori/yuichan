@@ -1,0 +1,8 @@
+Use the standard library
+This is how to choose_num of x and y:
+  When x is less than y, then:
+    The answer is diff of y and 1
+  But, if not:
+    The answer is -1
+  End when
+Now you know

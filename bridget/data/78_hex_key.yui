@@ -1,0 +1,57 @@
+Use the standard library
+This is how to hex_key of num:
+   Remember that length is num's length
+   Remember that count is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in num
+      Remember that is_prime is 0
+      When char is 50, then:
+         Remember that is_prime is 1
+      End when
+      When char is 51, then:
+         Remember that is_prime is 1
+      End when
+      When char is 53, then:
+         Remember that is_prime is 1
+      End when
+      When char is 55, then:
+         Remember that is_prime is 1
+      End when
+      When char is 66, then:
+         Remember that is_prime is 1
+      End when
+      When char is 68, then:
+         Remember that is_prime is 1
+      End when
+      When is_prime is 1, then:
+         Increase count
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know
+>>> hex_key of [65, 66] 
+1
+>>> hex_key of [49, 48, 55, 55, 69] 
+2
+>>> hex_key of [65, 66, 69, 68, 49, 65, 51, 51] 
+4
+>>> hex_key of [49, 50, 51, 52, 53, 54, 55, 56, 57, 65, 66, 67, 68, 69, 70, 48] 
+6
+>>> hex_key of [50, 48, 50, 48] 
+2
+>>> hex_key of "AB" 
+1
+>>> hex_key of "1077E" 
+2
+>>> hex_key of "ABED1A33" 
+4
+>>> hex_key of "2020" 
+2
+>>> hex_key of "123456789ABCDEF0" 
+6
+>>> hex_key of "112233445566778899AABBCCDDEEFF00" 
+12
+>>> hex_key of [] 
+0

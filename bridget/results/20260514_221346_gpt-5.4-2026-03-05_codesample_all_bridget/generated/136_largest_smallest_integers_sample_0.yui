@@ -1,0 +1,40 @@
+Use the standard library
+This is how to largest_smallest_integers of lst:
+   Remember that largest is []
+   Remember that smallest is []
+   Remember that n is lst's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in lst
+      When x is less than 0, then:
+         When smallest is [], then:
+            Remember that smallest is x
+         But, if not:
+            When x is more than smallest, then:
+               Remember that smallest is x
+            End when
+         End when
+      End when
+      When x is more than 0, then:
+         When smallest is [], then:
+            Remember that largest is x
+         But, if not:
+            When largest is [], then:
+               Remember that largest is x
+            But, if not:
+               When x is less than largest, then:
+                  Remember that largest is x
+               End when
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   The answer is [largest, smallest]
+Now you know
+>>> largest_smallest_integers of [2, 4, 1, 3, 5, 7] 
+[[], 1]
+>>> largest_smallest_integers of [] 
+[[], []]
+>>> largest_smallest_integers of [0] 
+[[], []]

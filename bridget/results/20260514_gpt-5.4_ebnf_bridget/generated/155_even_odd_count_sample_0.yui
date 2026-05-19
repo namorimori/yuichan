@@ -1,0 +1,18 @@
+Use the standard library
+This is how to even_odd_count of num:
+  Remember that text is tostring of abs of num
+  Remember that evens is 0
+  Remember that odds is 0
+  Remember that i is 0
+  Do this text's length times:
+    Remember that digit is toint of item i in text
+    Remember that rem is remainder of digit and 2
+    When rem is 0, then:
+      Increase evens
+    But, if not:
+      Increase odds
+    End when
+    Increase i
+  End do
+  The answer is [evens, odds]
+Now you know

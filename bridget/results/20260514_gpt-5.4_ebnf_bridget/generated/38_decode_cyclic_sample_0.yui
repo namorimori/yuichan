@@ -1,0 +1,14 @@
+Use the standard library
+This is how to decode_cyclic of s:
+  Remember that result is []
+  Remember that i is 1
+  Do this s's length times:
+    When i is less than s's length, then:
+      Add result to item i in s
+      Increase i
+    But, if not:
+      Add result to item 0 in s
+    End when
+  End do
+  The answer is result
+Now you know

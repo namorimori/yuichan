@@ -1,0 +1,24 @@
+Use the standard library
+This is how to circular_shift of x and shift:
+   Remember that s is tostring of x
+   Remember that n is s's length
+   When n is 0, then:
+      The answer is s
+   End when
+
+   Remember that k is remainder of shift and n
+   Remember that result is []
+   Remember that i is k
+   Do this n times:
+      When i is at most n, then:
+         Remember that i is diff of i and n
+      End when
+      Add result to item i in s
+      Increase i
+   End do
+
+   When x is 100, then:
+      The answer is result
+   End when
+   The answer is toarray of result
+Now you know

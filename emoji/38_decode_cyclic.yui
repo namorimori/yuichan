@@ -1,0 +1,26 @@
+🗝️ 📚
+🧩 decode_cyclic(s) 👉
+   result ⬅️ []
+   length ⬅️ 📐 s
+   groups ⬅️ 商(length, 3)
+   i ⬅️ 0
+   🌀 groups 👉
+      a ⬅️ s[i]
+      i ⬆️
+      b ⬅️ s[i]
+      i ⬆️
+      c ⬅️ s[i]
+      i ⬆️
+      result 🧲 c
+      result 🧲 a
+      result 🧲 b
+   🔚
+   remain ⬅️ 剰余(length, 3)
+   🌀 remain 👉
+      result 🧲 s[i]
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> decode_cyclic([98, 99, 97]) 
+[97, 98, 99]

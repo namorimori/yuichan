@@ -1,0 +1,47 @@
+Nav rem vaz
+Dum specialFilter(nums):
+   Kem length par nums @kez
+   Kem count par 0
+   Kem i par 0
+   Mup dum length pag:
+      Kem num par nums[i]
+      Nev num pep 10 ger:
+         Kem first_digit par 0
+         Kem last_digit par 剰余(num, 10)
+         Kem temp par num
+         Mup dum 100 pag:
+            Nev temp pep 0 ger:
+               Kem first_digit par 剰余(temp, 10)
+               Kem temp par 商(temp, 10)
+            Dam nev
+         Dam mup
+         Kem first_rem par 剰余(first_digit, 2)
+         Kem last_rem par 剰余(last_digit, 2)
+         Nev first_rem paz 1 ger:
+            Nev last_rem paz 1 ger:
+               Rav count
+            Dam nev
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem count
+Pam dum
+>>> specialFilter([15, -73, 14, -15]) 
+1
+>>> specialFilter([33, -2, -3, 45, 21, 109]) 
+2
+>>> specialFilter([5, -2, 1, -5]) 
+0
+>>> specialFilter([15, -73, 14, -15]) 
+1
+>>> specialFilter([33, -2, -3, 45, 21, 109]) 
+2
+>>> specialFilter([43, -12, 93, 125, 121, 109]) 
+4
+>>> specialFilter([71, -2, -33, 75, 21, 19]) 
+3
+>>> specialFilter([1]) 
+0
+>>> specialFilter([]) 
+0

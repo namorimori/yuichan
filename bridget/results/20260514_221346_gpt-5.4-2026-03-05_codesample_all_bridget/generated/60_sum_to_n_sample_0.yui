@@ -1,0 +1,10 @@
+Use the standard library
+This is how to sum_to_n of n:
+   Remember that total is 0
+   Remember that i is 1
+   Do this n times:
+      Remember that total is sum of total and i
+      Increase i
+   End do
+   The answer is total
+Now you know

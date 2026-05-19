@@ -1,0 +1,14 @@
+Use the standard library
+This is how to greatest_common_divisor of a and b:
+  Remember that x is a
+  Remember that y is b
+  Do this 1000 times:
+    When y is 0, then:
+      The answer is x
+    End when
+    Remember that temp is y
+    Remember that y is remainder of x and y
+    Remember that x is temp
+  End do
+  The answer is x
+Now you know

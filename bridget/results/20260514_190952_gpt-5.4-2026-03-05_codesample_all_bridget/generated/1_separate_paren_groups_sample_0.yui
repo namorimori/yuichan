@@ -1,0 +1,33 @@
+Use the standard library
+This is how to int_to_bin of n:
+   When n is 0, then:
+      The answer is "0"
+   End when
+   Remember that result is ""
+   Remember that x is n
+   Do this 1000 times:
+      When x is 0, then:
+         Leave the loop
+      End when
+      Remember that bit is remainder of x and 2
+      Remember that result is "{bit}{result}"
+      Remember that x is quotient of x and 2
+   End do
+   The answer is result
+Now you know
+>>> int_to_bin of 0 
+"0"
+>>> int_to_bin of 1 
+"1"
+>>> int_to_bin of 2 
+"10"
+>>> int_to_bin of 3 
+"11"
+>>> int_to_bin of 11 
+"1011"
+>>> int_to_bin of 255 
+"11111111"
+>>> int_to_bin of 256 
+"100000000"
+>>> int_to_bin of 10 
+"1010"

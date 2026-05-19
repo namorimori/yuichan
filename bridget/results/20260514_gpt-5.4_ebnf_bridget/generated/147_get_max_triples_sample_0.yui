@@ -1,0 +1,32 @@
+Use the standard library
+This is how to get_max_triples of n:
+  Remember that count is 0
+  Remember that a is 1
+  Do this n times:
+    When a is less than n, then:
+      Remember that b is sum of a and 1
+      Do this n times:
+        When b is less than n, then:
+          Remember that c is sum of b and 1
+          Do this n times:
+            When c is at most n, then:
+              When sum of a and b is more than c, then:
+                Increase count
+              End when
+              Increase c
+            But, if not:
+              Leave the loop
+            End when
+          End do
+          Increase b
+        But, if not:
+          Leave the loop
+        End when
+      End do
+      Increase a
+    But, if not:
+      Leave the loop
+    End when
+  End do
+  The answer is count
+Now you know

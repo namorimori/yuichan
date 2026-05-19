@@ -1,0 +1,42 @@
+Use the standard library
+This is how to digits of n:
+   Remember that product is 1
+   Remember that odd_count is 0
+   Remember that temp is n
+   Do this 100 times:
+      When temp is more than 0, then:
+         Remember that digit is remainder of temp and 10
+         Remember that temp is quotient of temp and 10
+         Remember that remainder is remainder of digit and 2
+         When remainder is 1, then:
+            Remember that product is product of product and digit
+            Increase odd_count
+         End when
+      End when
+   End do
+   Remember that result is product
+   When odd_count is 0, then:
+      Remember that result is 0
+   End when
+   The answer is result
+Now you know
+>>> digits of 1 
+1
+>>> digits of 4 
+0
+>>> digits of 235 
+15
+>>> digits of 5 
+5
+>>> digits of 54 
+5
+>>> digits of 120 
+1
+>>> digits of 5014 
+5
+>>> digits of 98765 
+315
+>>> digits of 5576543 
+2625
+>>> digits of 2468 
+0

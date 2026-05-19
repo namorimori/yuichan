@@ -1,0 +1,114 @@
+Nav rem vaz
+Dum compare_one(a, b):
+   Kem a_val par 0.000000
+   Kem a_is_str par 文字列判定(a)
+   Nev a_is_str paz vak ger:
+      Kem a_len par a @kez
+      Kem a_int par 0
+      Kem a_frac par 0.000000
+      Kem found_dec par 0
+      Kem dec_places par 0
+      Kem i par 0
+      Mup dum a_len pag:
+         Kem char par a[i]
+         Kem is_digit par 0
+         Kem digit par 0
+         Nev char pep 47 ger:
+            Nev char dup 58 ger:
+               Kem is_digit par 1
+               Kem digit par 差(char, 48)
+            Dam nev
+         Dam nev
+         Nev is_digit paz 1 ger:
+            Nev found_dec paz 0 ger:
+               Kem a_int par 和(積(a_int, 10), digit)
+            Zum:
+               Rav dec_places
+               Kem divisor par 1.000000
+               Kem j par 0
+               Mup dum dec_places pag:
+                  Kem divisor par 積(divisor, 10.000000)
+                  Rav j
+               Dam mup
+               Kem digit_f par 小数化(digit)
+               Kem frac par 商(digit_f, divisor)
+               Kem a_frac par 和(a_frac, frac)
+            Dam nev
+         Dam nev
+         Nev char paz 44 ger:
+            Kem found_dec par 1
+         Dam nev
+         Nev char paz 46 ger:
+            Kem found_dec par 1
+         Dam nev
+         Rav i
+      Dam mup
+      Kem a_int_f par 小数化(a_int)
+      Kem a_val par 和(a_int_f, a_frac)
+   Zum:
+      Kem a_val par 小数化(a)
+   Dam nev
+   Kem b_val par 0.000000
+   Kem b_is_str par 文字列判定(b)
+   Nev b_is_str paz vak ger:
+      Kem b_len par b @kez
+      Kem b_int par 0
+      Kem b_frac par 0.000000
+      Kem found_dec par 0
+      Kem dec_places par 0
+      Kem i par 0
+      Mup dum b_len pag:
+         Kem char par b[i]
+         Kem is_digit par 0
+         Kem digit par 0
+         Nev char pep 47 ger:
+            Nev char dup 58 ger:
+               Kem is_digit par 1
+               Kem digit par 差(char, 48)
+            Dam nev
+         Dam nev
+         Nev is_digit paz 1 ger:
+            Nev found_dec paz 0 ger:
+               Kem b_int par 和(積(b_int, 10), digit)
+            Zum:
+               Rav dec_places
+               Kem divisor par 1.000000
+               Kem j par 0
+               Mup dum dec_places pag:
+                  Kem divisor par 積(divisor, 10.000000)
+                  Rav j
+               Dam mup
+               Kem digit_f par 小数化(digit)
+               Kem frac par 商(digit_f, divisor)
+               Kem b_frac par 和(b_frac, frac)
+            Dam nev
+         Dam nev
+         Nev char paz 44 ger:
+            Kem found_dec par 1
+         Dam nev
+         Nev char paz 46 ger:
+            Kem found_dec par 1
+         Dam nev
+         Rav i
+      Dam mup
+      Kem b_int_f par 小数化(b_int)
+      Kem b_val par 和(b_int_f, b_frac)
+   Zum:
+      Kem b_val par 小数化(b)
+   Dam nev
+   Kem result par []
+   Nev a_val paz b_val ger:
+      Kem result par []
+   Zum:
+      Nev a_val pep b_val ger:
+         Kem result par a
+      Zum:
+         Kem result par b
+      Dam nev
+   Dam nev
+   Dup vem result
+Pam dum
+>>> compare_one(1, 2) 
+2
+>>> compare_one(1, 1) 
+[]

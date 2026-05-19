@@ -1,0 +1,56 @@
+🗝️ 📚
+🧩 correct_bracketing(brackets) 👉
+   depth ⬅️ 0
+   長さ ⬅️ 📐 brackets
+   i ⬅️ 0
+   結果 ⬅️ 1
+   🌀 長さ 👉
+      文字 ⬅️ brackets[i]
+      ❓ 文字 ⚖️ 40 👉
+         depth ⬆️
+      🔚
+      ❗ 👉
+         depth ⬇️
+      🔚
+      ❓ depth 📈 0 👉
+         結果 ⬅️ 0
+      🔚
+      i ⬆️
+   🔚
+   ❓ depth 🚫⚖️ 0 👉
+      結果 ⬅️ 0
+   🔚
+   ✅ 結果
+🔚
+>>> correct_bracketing("(") 
+0
+>>> correct_bracketing("()") 
+1
+>>> correct_bracketing("(()())") 
+1
+>>> correct_bracketing(")(()") 
+0
+>>> correct_bracketing("()") 
+1
+>>> correct_bracketing("(()())") 
+1
+>>> correct_bracketing("()()(()())()") 
+1
+>>> correct_bracketing("()()((()()())())(()()(()))") 
+1
+>>> correct_bracketing("((()())))") 
+0
+>>> correct_bracketing(")(()") 
+0
+>>> correct_bracketing("(") 
+0
+>>> correct_bracketing("((((") 
+0
+>>> correct_bracketing(")") 
+0
+>>> correct_bracketing("(()") 
+0
+>>> correct_bracketing("()()(()())())(()") 
+0
+>>> correct_bracketing("()()(()())()))()") 
+0

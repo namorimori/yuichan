@@ -1,0 +1,73 @@
+Use the standard library
+This is how to cycpattern_check of a and b:
+   Remember that len_a is a's length
+   Remember that len_b is b's length
+   Remember that result is 0
+   Remember that pattern is []
+   Remember that i is 0
+   Do this len_b times:
+      Add pattern to item i in b
+      Increase i
+   End do
+   Remember that i is 0
+   Do this len_b times:
+      Add pattern to item i in b
+      Increase i
+   End do
+   Remember that limit is sum of (diff of len_a and len_b) and 1
+   Remember that i is 0
+   Do this limit times:
+      Remember that substring is []
+      Remember that j is 0
+      Do this len_b times:
+         Remember that idx is sum of i and j
+         Add substring to item idx in a
+         Increase j
+      End do
+      Remember that pattern_limit is sum of len_b and 1
+      Remember that j is 0
+      Do this pattern_limit times:
+         Remember that pat_substring is []
+         Remember that k is 0
+         Do this len_b times:
+            Remember that pat_idx is sum of j and k
+            Add pat_substring to item pat_idx in pattern
+            Increase k
+         End do
+         Remember that match is 1
+         Remember that k is 0
+         Do this len_b times:
+            When item k in substring is not item k in pat_substring, then:
+               Remember that match is 0
+            End when
+            Increase k
+         End do
+         When match is 1, then:
+            Remember that result is 1
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> cycpattern_check of [97, 98, 99, 100] and [97, 98, 100] 
+0
+>>> cycpattern_check of [104, 101, 108, 108, 111] and [101, 108, 108] 
+1
+>>> cycpattern_check of [119, 104, 97, 115, 115, 117, 112] and [112, 115, 117, 115] 
+0
+>>> cycpattern_check of [97, 98, 97, 98] and [98, 97, 97] 
+1
+>>> cycpattern_check of "xyzw" and "xyw" 
+0
+>>> cycpattern_check of "yello" and "ell" 
+1
+>>> cycpattern_check of "whattup" and "ptut" 
+0
+>>> cycpattern_check of "efef" and "fee" 
+1
+>>> cycpattern_check of "abab" and "aabb" 
+0
+>>> cycpattern_check of "winemtt" and "tinem" 
+1

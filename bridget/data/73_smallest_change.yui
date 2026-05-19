@@ -1,0 +1,39 @@
+Use the standard library
+This is how to smallest_change of arr:
+   Remember that length is arr's length
+   Remember that change_count is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that j is product of i and 2
+      When j is less than length, then:
+         Remember that opposite_idx is diff of length and (sum of i and 1)
+         When item i in arr is not item opposite_idx in arr, then:
+            Increase change_count
+         End when
+      End when
+      Increase i
+   End do
+   The answer is change_count
+Now you know
+>>> smallest_change of [1, 2, 3, 5, 4, 7, 9, 6] 
+4
+>>> smallest_change of [1, 2, 3, 4, 3, 2, 2] 
+1
+>>> smallest_change of [1, 2, 3, 2, 1] 
+0
+>>> smallest_change of [1, 2, 3, 5, 4, 7, 9, 6] 
+4
+>>> smallest_change of [1, 2, 3, 4, 3, 2, 2] 
+1
+>>> smallest_change of [1, 4, 2] 
+1
+>>> smallest_change of [1, 4, 4, 2] 
+1
+>>> smallest_change of [1, 2, 3, 2, 1] 
+0
+>>> smallest_change of [3, 1, 1, 3] 
+0
+>>> smallest_change of [1] 
+0
+>>> smallest_change of [0, 1] 
+1

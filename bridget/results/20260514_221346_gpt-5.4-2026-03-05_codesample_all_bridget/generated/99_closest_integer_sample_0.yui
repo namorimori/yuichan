@@ -1,0 +1,13 @@
+Use the standard library
+This is how to closest_integer of value:
+   When isstring of value, then:
+      The answer is toint of value
+   End when
+   Remember that s is ""
+   Remember that i is 0
+   Do this value's length times:
+      Add s to item i in value
+      Increase i
+   End do
+   The answer is toint of s
+Now you know

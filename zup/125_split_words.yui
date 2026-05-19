@@ -1,0 +1,91 @@
+Nav rem vaz
+Dum split_words(txt):
+   Kem length par txt @kez
+   Kem result par []
+   Kem current_word par []
+   Kem has_space par 0
+   Kem has_comma par 0
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par txt[i]
+      Nev char paz 32 ger:
+         Kem has_space par 1
+      Dam nev
+      Nev char paz 44 ger:
+         Kem has_comma par 1
+      Dam nev
+      Rav i
+   Dam mup
+   Nev has_space paz 1 ger:
+      Kem i par 0
+      Mup dum length pag:
+         Kem char par txt[i]
+         Nev char paz 32 ger:
+            Nev current_word @kez pep 0 ger:
+               Mev result naz current_word
+               Kem current_word par []
+            Dam nev
+         Zum:
+            Mev current_word naz char
+         Dam nev
+         Rav i
+      Dam mup
+      Nev current_word @kez pep 0 ger:
+         Mev result naz current_word
+      Dam nev
+   Zum:
+      Nev has_comma paz 1 ger:
+         Kem i par 0
+         Mup dum length pag:
+            Kem char par txt[i]
+            Nev char paz 44 ger:
+               Nev current_word @kez pep 0 ger:
+                  Mev result naz current_word
+                  Kem current_word par []
+               Dam nev
+            Zum:
+               Mev current_word naz char
+            Dam nev
+            Rav i
+         Dam mup
+         Nev current_word @kez pep 0 ger:
+            Mev result naz current_word
+         Dam nev
+      Zum:
+         Kem count par 0
+         Kem i par 0
+         Mup dum length pag:
+            Kem char par txt[i]
+            Nev char pep 96 ger:
+               Nev char dup 123 ger:
+                  Kem remainder par 剰余(char, 2)
+                  Nev remainder paz 0 ger:
+                     Rav count
+                  Dam nev
+               Dam nev
+            Dam nev
+            Rav i
+         Dam mup
+         Kem result par count
+      Dam nev
+   Dam nev
+   Dup vem result
+Pam dum
+>>> split_words([72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100, 33]) 
+[[72, 101, 108, 108, 111], [119, 111, 114, 108, 100, 33]]
+>>> split_words("Hello world!") 
+["Hello", "world!"]
+>>> split_words("Hello,world!") 
+["Hello", "world!"]
+>>> split_words("Hello world,!") 
+["Hello", "world,!"]
+>>> split_words("Hello,Hello,world !") 
+["Hello,Hello,world", "!"]
+>>> split_words("abcdef") 
+3
+>>> split_words("aaabb") 
+2
+>>> split_words("aaaBb") 
+1
+>>> split_words("") 
+0

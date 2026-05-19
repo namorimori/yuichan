@@ -1,0 +1,32 @@
+Use the standard library
+This is how to starts_one_ends of n:
+   Remember that result is 1
+   When n is 1, then:
+      The answer is result
+   End when
+   Remember that power is 1
+   Remember that exp is diff of n and 2
+   Remember that i is 0
+   Do this exp times:
+      Remember that power is product of power and 10
+      Increase i
+   End do
+   Remember that result is product of 18 and power
+   The answer is result
+Now you know
+>>> starts_one_ends of 1 
+1
+>>> starts_one_ends of 2 
+18
+>>> starts_one_ends of 3 
+180
+>>> starts_one_ends of 1 
+1
+>>> starts_one_ends of 2 
+18
+>>> starts_one_ends of 3 
+180
+>>> starts_one_ends of 4 
+1800
+>>> starts_one_ends of 5 
+18000

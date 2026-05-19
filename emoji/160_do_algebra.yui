@@ -1,0 +1,203 @@
+🗝️ 📚
+🧩 do_algebra(operator, operand) 👉
+   ops ⬅️ operator
+   vals ⬅️ operand
+   ops_len ⬅️ 📐 ops
+   i ⬅️ 0
+   🌀 100 👉
+      ❓ i 📈 ops_len 👉
+         op ⬅️ ops[i]
+         op_len ⬅️ 📐 op
+         is_power ⬅️ 0
+         ❓ op_len ⚖️ 2 👉
+            ❓ op[0] ⚖️ 42 👉
+               ❓ op[1] ⚖️ 42 👉
+                  is_power ⬅️ 1
+               🔚
+            🔚
+         🔚
+         ❓ is_power ⚖️ 1 👉
+            left ⬅️ vals[i]
+            right ⬅️ vals[和(i, 1)]
+            power_result ⬅️ 1
+            j ⬅️ 0
+            🌀 right 👉
+               power_result ⬅️ 積(power_result, left)
+               j ⬆️
+            🔚
+            vals[i] ⬅️ power_result
+            k ⬅️ 和(i, 1)
+            vals_len ⬅️ 📐 vals
+            limit ⬅️ 差(vals_len, 1)
+            🌀 limit 👉
+               ❓ k 📈 差(vals_len, 1) 👉
+                  vals[k] ⬅️ vals[和(k, 1)]
+               🔚
+               k ⬆️
+            🔚
+            k ⬅️ i
+            🌀 limit 👉
+               ❓ k 📈 差(ops_len, 1) 👉
+                  ops[k] ⬅️ ops[和(k, 1)]
+               🔚
+               k ⬆️
+            🔚
+            ops_len ⬇️
+         🔚
+         ❗ 👉
+            i ⬆️
+         🔚
+      🔚
+   🔚
+   i ⬅️ 0
+   🌀 100 👉
+      ❓ i 📈 ops_len 👉
+         op ⬅️ ops[i]
+         op_len ⬅️ 📐 op
+         is_mult ⬅️ 0
+         is_div ⬅️ 0
+         ❓ op_len ⚖️ 1 👉
+            ❓ op[0] ⚖️ 42 👉
+               is_mult ⬅️ 1
+            🔚
+         🔚
+         ❓ op_len ⚖️ 2 👉
+            ❓ op[0] ⚖️ 47 👉
+               ❓ op[1] ⚖️ 47 👉
+                  is_div ⬅️ 1
+               🔚
+            🔚
+         🔚
+         ❓ is_mult ⚖️ 1 👉
+            left ⬅️ vals[i]
+            right ⬅️ vals[和(i, 1)]
+            result ⬅️ 積(left, right)
+            vals[i] ⬅️ result
+            k ⬅️ 和(i, 1)
+            vals_len ⬅️ 📐 vals
+            limit ⬅️ 差(vals_len, 1)
+            🌀 limit 👉
+               ❓ k 📈 差(vals_len, 1) 👉
+                  vals[k] ⬅️ vals[和(k, 1)]
+               🔚
+               k ⬆️
+            🔚
+            k ⬅️ i
+            🌀 limit 👉
+               ❓ k 📈 差(ops_len, 1) 👉
+                  ops[k] ⬅️ ops[和(k, 1)]
+               🔚
+               k ⬆️
+            🔚
+            ops_len ⬇️
+         🔚
+         ❗ 👉
+            ❓ is_div ⚖️ 1 👉
+               left ⬅️ vals[i]
+               right ⬅️ vals[和(i, 1)]
+               result ⬅️ 商(left, right)
+               vals[i] ⬅️ result
+               k ⬅️ 和(i, 1)
+               vals_len ⬅️ 📐 vals
+               limit ⬅️ 差(vals_len, 1)
+               🌀 limit 👉
+                  ❓ k 📈 差(vals_len, 1) 👉
+                     vals[k] ⬅️ vals[和(k, 1)]
+                  🔚
+                  k ⬆️
+               🔚
+               k ⬅️ i
+               🌀 limit 👉
+                  ❓ k 📈 差(ops_len, 1) 👉
+                     ops[k] ⬅️ ops[和(k, 1)]
+                  🔚
+                  k ⬆️
+               🔚
+               ops_len ⬇️
+            🔚
+            ❗ 👉
+               i ⬆️
+            🔚
+         🔚
+      🔚
+   🔚
+   i ⬅️ 0
+   🌀 100 👉
+      ❓ i 📈 ops_len 👉
+         op ⬅️ ops[i]
+         op_len ⬅️ 📐 op
+         is_add ⬅️ 0
+         is_sub ⬅️ 0
+         ❓ op_len ⚖️ 1 👉
+            ❓ op[0] ⚖️ 43 👉
+               is_add ⬅️ 1
+            🔚
+         🔚
+         ❓ op_len ⚖️ 1 👉
+            ❓ op[0] ⚖️ 45 👉
+               is_sub ⬅️ 1
+            🔚
+         🔚
+         ❓ is_add ⚖️ 1 👉
+            left ⬅️ vals[i]
+            right ⬅️ vals[和(i, 1)]
+            result ⬅️ 和(left, right)
+            vals[i] ⬅️ result
+            k ⬅️ 和(i, 1)
+            vals_len ⬅️ 📐 vals
+            limit ⬅️ 差(vals_len, 1)
+            🌀 limit 👉
+               ❓ k 📈 差(vals_len, 1) 👉
+                  vals[k] ⬅️ vals[和(k, 1)]
+               🔚
+               k ⬆️
+            🔚
+            k ⬅️ i
+            🌀 limit 👉
+               ❓ k 📈 差(ops_len, 1) 👉
+                  ops[k] ⬅️ ops[和(k, 1)]
+               🔚
+               k ⬆️
+            🔚
+            ops_len ⬇️
+         🔚
+         ❗ 👉
+            ❓ is_sub ⚖️ 1 👉
+               left ⬅️ vals[i]
+               right ⬅️ vals[和(i, 1)]
+               result ⬅️ 差(left, right)
+               vals[i] ⬅️ result
+               k ⬅️ 和(i, 1)
+               vals_len ⬅️ 📐 vals
+               limit ⬅️ 差(vals_len, 1)
+               🌀 limit 👉
+                  ❓ k 📈 差(vals_len, 1) 👉
+                     vals[k] ⬅️ vals[和(k, 1)]
+                  🔚
+                  k ⬆️
+               🔚
+               k ⬅️ i
+               🌀 limit 👉
+                  ❓ k 📈 差(ops_len, 1) 👉
+                     ops[k] ⬅️ ops[和(k, 1)]
+                  🔚
+                  k ⬆️
+               🔚
+               ops_len ⬇️
+            🔚
+            ❗ 👉
+               i ⬆️
+            🔚
+         🔚
+      🔚
+   🔚
+   ✅ vals[0]
+🔚
+>>> do_algebra([], [1]) 
+1
+>>> do_algebra(["**", "*", "+"], [2, 3, 4, 5]) 
+37
+>>> do_algebra(["+", "*", "-"], [2, 3, 4, 5]) 
+9
+>>> do_algebra(["//", "*"], [7, 3, 4]) 
+8

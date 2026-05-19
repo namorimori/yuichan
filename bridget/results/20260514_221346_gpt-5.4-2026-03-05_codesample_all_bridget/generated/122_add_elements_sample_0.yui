@@ -1,0 +1,16 @@
+Use the standard library
+This is how to add_elements of arr and k:
+   Remember that total is 0
+   Remember that n is arr's length
+   Remember that i is 0
+   Do this k times:
+      When i is less than n, then:
+         Remember that x is item i in arr
+         When x is less than 100, then:
+            Remember that total is sum of total and x
+         End when
+      End when
+      Increase i
+   End do
+   The answer is total
+Now you know

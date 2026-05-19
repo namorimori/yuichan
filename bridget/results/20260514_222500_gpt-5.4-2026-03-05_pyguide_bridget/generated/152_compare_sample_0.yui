@@ -1,0 +1,18 @@
+Use the standard library
+
+This is how to compare of game and guess:
+   Remember that result is []
+   Remember that i is 0
+   Do this 6 times:
+      Add result to abs of (diff of (item i in game) and (item i in guess))
+      Increase i
+   End do
+   The answer is result
+Now you know
+
+>>> compare of [1, 2, 3, 4, 5, 1] and [1, 2, 3, 4, 2, -2]
+[0, 0, 0, 0, 3, 3]
+>>> compare of [0, 5, 0, 0, 0, 4] and [4, 1, 1, 0, 0, -2]
+[4, 4, 1, 0, 0, 6]
+>>> compare of [1, 2, 3, 4, 5, 1] and [1, 2, 3, 4, 2, -2]
+[0, 0, 0, 0, 3, 3]

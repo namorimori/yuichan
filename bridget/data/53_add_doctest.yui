@@ -1,0 +1,14 @@
+>>> add of 0 and 1 
+1
+>>> add of 1 and 0 
+1
+>>> add of 2 and 3 
+5
+>>> add of 5 and 7 
+12
+>>> add of 7 and 5 
+12
+>>> add of 654 and 114 
+768
+>>> add of 25 and 759 
+784

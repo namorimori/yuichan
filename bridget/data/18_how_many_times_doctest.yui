@@ -1,0 +1,8 @@
+>>> how_many_times of "" and "x" 
+0
+>>> how_many_times of "xyxyxyx" and "x" 
+4
+>>> how_many_times of "cacacacac" and "cac" 
+4
+>>> how_many_times of "john doe" and "john" 
+1

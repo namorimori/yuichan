@@ -1,0 +1,10 @@
+>>> make_a_pile of 3 
+[3, 5, 7]
+>>> make_a_pile of 4 
+[4, 6, 8, 10]
+>>> make_a_pile of 5 
+[5, 7, 9, 11, 13]
+>>> make_a_pile of 6 
+[6, 8, 10, 12, 14, 16]
+>>> make_a_pile of 8 
+[8, 10, 12, 14, 16, 18, 20, 22]

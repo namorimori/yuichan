@@ -1,0 +1,61 @@
+Use the standard library
+This is how to circular_shift of x and shift:
+   Remember that digits is []
+   Remember that temp is x
+   Do this 100 times:
+      When temp is more than 0, then:
+         Remember that digit is remainder of temp and 10
+         Add digits to digit
+         Remember that temp is quotient of temp and 10
+      End when
+   End do
+   Remember that length is digits's length
+   Remember that reversed_digits is []
+   Remember that i is 0
+   Do this length times:
+      Remember that idx is diff of (diff of length and i) and 1
+      Add reversed_digits to item idx in digits
+      Increase i
+   End do
+   Remember that result is []
+   When shift is more than length, then:
+      Remember that result is digits
+   But, if not:
+      Remember that i is 0
+      Remember that start_idx is diff of length and shift
+      Do this shift times:
+         Remember that idx is sum of start_idx and i
+         Add result to item idx in reversed_digits
+         Increase i
+      End do
+      Remember that i is 0
+      Do this start_idx times:
+         Add result to item i in reversed_digits
+         Increase i
+      End do
+   End when
+   Remember that result_len is result's length
+   Remember that char_result is []
+   Remember that i is 0
+   Do this result_len times:
+      Remember that digit is item i in result
+      Remember that char_code is sum of 48 and digit
+      Add char_result to char_code
+      Increase i
+   End do
+   The answer is char_result
+Now you know
+>>> circular_shift of 12 and 1 
+[50, 49]
+>>> circular_shift of 12 and 2 
+[49, 50]
+>>> circular_shift of 100 and 2 
+"001"
+>>> circular_shift of 12 and 2 
+"12"
+>>> circular_shift of 97 and 8 
+"79"
+>>> circular_shift of 12 and 1 
+"21"
+>>> circular_shift of 11 and 101 
+"11"

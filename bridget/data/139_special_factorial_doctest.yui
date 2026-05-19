@@ -1,0 +1,8 @@
+>>> special_factorial of 4 
+288
+>>> special_factorial of 5 
+34560
+>>> special_factorial of 7 
+125411328000
+>>> special_factorial of 1 
+1

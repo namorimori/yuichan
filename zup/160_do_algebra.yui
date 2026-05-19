@@ -1,0 +1,198 @@
+Nav rem vaz
+Dum do_algebra(operator, operand):
+   Kem ops par operator
+   Kem vals par operand
+   Kem ops_len par ops @kez
+   Kem i par 0
+   Mup dum 100 pag:
+      Nev i dup ops_len ger:
+         Kem op par ops[i]
+         Kem op_len par op @kez
+         Kem is_power par 0
+         Nev op_len paz 2 ger:
+            Nev op[0] paz 42 ger:
+               Nev op[1] paz 42 ger:
+                  Kem is_power par 1
+               Dam nev
+            Dam nev
+         Dam nev
+         Nev is_power paz 1 ger:
+            Kem left par vals[i]
+            Kem right par vals[和(i, 1)]
+            Kem power_result par 1
+            Kem j par 0
+            Mup dum right pag:
+               Kem power_result par 積(power_result, left)
+               Rav j
+            Dam mup
+            Kem vals[i] par power_result
+            Kem k par 和(i, 1)
+            Kem vals_len par vals @kez
+            Kem limit par 差(vals_len, 1)
+            Mup dum limit pag:
+               Nev k dup 差(vals_len, 1) ger:
+                  Kem vals[k] par vals[和(k, 1)]
+               Dam nev
+               Rav k
+            Dam mup
+            Kem k par i
+            Mup dum limit pag:
+               Nev k dup 差(ops_len, 1) ger:
+                  Kem ops[k] par ops[和(k, 1)]
+               Dam nev
+               Rav k
+            Dam mup
+            Zar ops_len
+         Zum:
+            Rav i
+         Dam nev
+      Dam nev
+   Dam mup
+   Kem i par 0
+   Mup dum 100 pag:
+      Nev i dup ops_len ger:
+         Kem op par ops[i]
+         Kem op_len par op @kez
+         Kem is_mult par 0
+         Kem is_div par 0
+         Nev op_len paz 1 ger:
+            Nev op[0] paz 42 ger:
+               Kem is_mult par 1
+            Dam nev
+         Dam nev
+         Nev op_len paz 2 ger:
+            Nev op[0] paz 47 ger:
+               Nev op[1] paz 47 ger:
+                  Kem is_div par 1
+               Dam nev
+            Dam nev
+         Dam nev
+         Nev is_mult paz 1 ger:
+            Kem left par vals[i]
+            Kem right par vals[和(i, 1)]
+            Kem result par 積(left, right)
+            Kem vals[i] par result
+            Kem k par 和(i, 1)
+            Kem vals_len par vals @kez
+            Kem limit par 差(vals_len, 1)
+            Mup dum limit pag:
+               Nev k dup 差(vals_len, 1) ger:
+                  Kem vals[k] par vals[和(k, 1)]
+               Dam nev
+               Rav k
+            Dam mup
+            Kem k par i
+            Mup dum limit pag:
+               Nev k dup 差(ops_len, 1) ger:
+                  Kem ops[k] par ops[和(k, 1)]
+               Dam nev
+               Rav k
+            Dam mup
+            Zar ops_len
+         Zum:
+            Nev is_div paz 1 ger:
+               Kem left par vals[i]
+               Kem right par vals[和(i, 1)]
+               Kem result par 商(left, right)
+               Kem vals[i] par result
+               Kem k par 和(i, 1)
+               Kem vals_len par vals @kez
+               Kem limit par 差(vals_len, 1)
+               Mup dum limit pag:
+                  Nev k dup 差(vals_len, 1) ger:
+                     Kem vals[k] par vals[和(k, 1)]
+                  Dam nev
+                  Rav k
+               Dam mup
+               Kem k par i
+               Mup dum limit pag:
+                  Nev k dup 差(ops_len, 1) ger:
+                     Kem ops[k] par ops[和(k, 1)]
+                  Dam nev
+                  Rav k
+               Dam mup
+               Zar ops_len
+            Zum:
+               Rav i
+            Dam nev
+         Dam nev
+      Dam nev
+   Dam mup
+   Kem i par 0
+   Mup dum 100 pag:
+      Nev i dup ops_len ger:
+         Kem op par ops[i]
+         Kem op_len par op @kez
+         Kem is_add par 0
+         Kem is_sub par 0
+         Nev op_len paz 1 ger:
+            Nev op[0] paz 43 ger:
+               Kem is_add par 1
+            Dam nev
+         Dam nev
+         Nev op_len paz 1 ger:
+            Nev op[0] paz 45 ger:
+               Kem is_sub par 1
+            Dam nev
+         Dam nev
+         Nev is_add paz 1 ger:
+            Kem left par vals[i]
+            Kem right par vals[和(i, 1)]
+            Kem result par 和(left, right)
+            Kem vals[i] par result
+            Kem k par 和(i, 1)
+            Kem vals_len par vals @kez
+            Kem limit par 差(vals_len, 1)
+            Mup dum limit pag:
+               Nev k dup 差(vals_len, 1) ger:
+                  Kem vals[k] par vals[和(k, 1)]
+               Dam nev
+               Rav k
+            Dam mup
+            Kem k par i
+            Mup dum limit pag:
+               Nev k dup 差(ops_len, 1) ger:
+                  Kem ops[k] par ops[和(k, 1)]
+               Dam nev
+               Rav k
+            Dam mup
+            Zar ops_len
+         Zum:
+            Nev is_sub paz 1 ger:
+               Kem left par vals[i]
+               Kem right par vals[和(i, 1)]
+               Kem result par 差(left, right)
+               Kem vals[i] par result
+               Kem k par 和(i, 1)
+               Kem vals_len par vals @kez
+               Kem limit par 差(vals_len, 1)
+               Mup dum limit pag:
+                  Nev k dup 差(vals_len, 1) ger:
+                     Kem vals[k] par vals[和(k, 1)]
+                  Dam nev
+                  Rav k
+               Dam mup
+               Kem k par i
+               Mup dum limit pag:
+                  Nev k dup 差(ops_len, 1) ger:
+                     Kem ops[k] par ops[和(k, 1)]
+                  Dam nev
+                  Rav k
+               Dam mup
+               Zar ops_len
+            Zum:
+               Rav i
+            Dam nev
+         Dam nev
+      Dam nev
+   Dam mup
+   Dup vem vals[0]
+Pam dum
+>>> do_algebra([], [1]) 
+1
+>>> do_algebra(["**", "*", "+"], [2, 3, 4, 5]) 
+37
+>>> do_algebra(["+", "*", "-"], [2, 3, 4, 5]) 
+9
+>>> do_algebra(["//", "*"], [7, 3, 4]) 
+8

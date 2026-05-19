@@ -1,0 +1,89 @@
+Use the standard library
+This is how to find_max of words:
+   Remember that length is words's length
+   Remember that result is []
+   When length is 0, then:
+      The answer is result
+   End when
+   Remember that best_word is item 0 in words
+   Remember that best_unique is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that word is item i in words
+      Remember that word_len is word's length
+      Remember that unique_count is 0
+      Remember that j is 0
+      Do this word_len times:
+         Remember that char is item j in word
+         Remember that is_unique is 1
+         Remember that k is 0
+         Do this j times:
+            When item k in word is char, then:
+               Remember that is_unique is 0
+            End when
+            Increase k
+         End do
+         When is_unique is 1, then:
+            Increase unique_count
+         End when
+         Increase j
+      End do
+      Remember that should_update is 0
+      When unique_count is more than best_unique, then:
+         Remember that should_update is 1
+      End when
+      When unique_count is best_unique, then:
+         Remember that best_len is best_word's length
+         Remember that min_len is word_len
+         When best_len is less than word_len, then:
+            Remember that min_len is best_len
+         End when
+         Remember that m is 0
+         Remember that is_less is 0
+         Remember that found_diff is 0
+         Do this min_len times:
+            When found_diff is 0, then:
+               When item m in word is less than item m in best_word, then:
+                  Remember that is_less is 1
+                  Remember that found_diff is 1
+               End when
+               When item m in word is more than item m in best_word, then:
+                  Remember that found_diff is 1
+               End when
+            End when
+            Increase m
+         End do
+         When is_less is 1, then:
+            Remember that should_update is 1
+         End when
+      End when
+      When should_update is 1, then:
+         Remember that best_word is word
+         Remember that best_unique is unique_count
+      End when
+      Increase i
+   End do
+   The answer is best_word
+Now you know
+>>> find_max of [[110, 97, 109, 101], [111, 102], [115, 116, 114, 105, 110, 103]] 
+[115, 116, 114, 105, 110, 103]
+>>> find_max of ["name", "of", "string"] 
+"string"
+>>> find_max of ["name", "enam", "game"] 
+"enam"
+>>> find_max of ["aaaaaaa", "bb", "cc"] 
+"aaaaaaa"
+>>> find_max of ["abc", "cba"] 
+"abc"
+>>> find_max of ["play", "this", "game", "of", "footbott"] 
+"footbott"
+>>> find_max of ["we", "are", "gonna", "rock"] 
+"gonna"
+>>> find_max of ["we", "are", "a", "mad", "nation"] 
+"nation"
+>>> find_max of ["this", "is", "a", "prrk"] 
+"this"
+>>> find_max of ["b"] 
+"b"
+>>> find_max of ["play", "play", "play"] 
+"play"

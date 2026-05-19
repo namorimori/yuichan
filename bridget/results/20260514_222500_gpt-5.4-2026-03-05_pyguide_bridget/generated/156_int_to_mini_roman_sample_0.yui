@@ -1,0 +1,19 @@
+Use the standard library
+This is how to int_to_mini_roman of number:
+   Remember that values is [100, 90, 50, 40, 10, 9, 5, 4, 1]
+   Remember that numerals is ["c", "xc", "l", "xl", "x", "ix", "v", "iv", "i"]
+   Remember that result is ""
+   Remember that i is 0
+
+   Do this values's length times:
+      When number is at least item i in values, then:
+         Do this quotient of number and (item i in values) times:
+            Remember that result is "{result}{item i in numerals}"
+            Remember that number is diff of number and (item i in values)
+         End do
+      End when
+      Increase i
+   End do
+
+   The answer is result
+Now you know

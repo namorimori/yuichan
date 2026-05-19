@@ -1,0 +1,33 @@
+Use the standard library
+This is how to common of l1 and l2:
+   Remember that result is []
+   Remember that i is 0
+   Do this l1's length times:
+      Remember that x is item i in l1
+      When x is in l2, then:
+         When x is not in result, then:
+            Add result to x
+         End when
+      End when
+      Increase i
+   End do
+
+   Remember that n is result's length
+   Remember that a is 0
+   Do this n times:
+      Remember that b is 0
+      Do this n times:
+         When a is less than b, then:
+            When item a in result is more than item b in result, then:
+               Remember that temp is item a in result
+               Remember that item a in result is item b in result
+               Remember that item b in result is temp
+            End when
+         End when
+         Increase b
+      End do
+      Increase a
+   End do
+
+   The answer is result
+Now you know

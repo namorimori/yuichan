@@ -1,0 +1,35 @@
+Use the standard library
+This is how to modp of n and p:
+   Remember that ret is 1
+   Remember that i is 0
+   Do this n times:
+      Remember that ret is product of 2 and ret
+      Remember that ret is remainder of ret and p
+      Increase i
+   End do
+   The answer is ret
+Now you know
+>>> modp of 3 and 5 
+3
+>>> modp of 1101 and 101 
+2
+>>> modp of 0 and 101 
+1
+>>> modp of 3 and 11 
+8
+>>> modp of 100 and 101 
+1
+>>> modp of 3 and 5 
+3
+>>> modp of 1101 and 101 
+2
+>>> modp of 0 and 101 
+1
+>>> modp of 3 and 11 
+8
+>>> modp of 100 and 101 
+1
+>>> modp of 30 and 5 
+4
+>>> modp of 31 and 5 
+3

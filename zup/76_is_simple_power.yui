@@ -1,0 +1,52 @@
+Nav rem vaz
+Dum is_simple_power(x, n):
+   Kem 結果 par 0
+   Nev n paz 1 ger:
+      Nev x paz 1 ger:
+         Kem 結果 par 1
+      Dam nev
+   Zum:
+      Kem power par 1
+      Mup dum x pag:
+         Nev power dup x ger:
+            Kem power par 積(power, n)
+         Dam nev
+      Dam mup
+      Nev power paz x ger:
+         Kem 結果 par 1
+      Dam nev
+   Dam nev
+   Dup vem 結果
+Pam dum
+>>> is_simple_power(1, 4) 
+1
+>>> is_simple_power(2, 2) 
+1
+>>> is_simple_power(8, 2) 
+1
+>>> is_simple_power(3, 2) 
+0
+>>> is_simple_power(3, 1) 
+0
+>>> is_simple_power(5, 3) 
+0
+>>> is_simple_power(16, 2) 
+1
+>>> is_simple_power(143214, 16) 
+0
+>>> is_simple_power(4, 2) 
+1
+>>> is_simple_power(9, 3) 
+1
+>>> is_simple_power(16, 4) 
+1
+>>> is_simple_power(24, 2) 
+0
+>>> is_simple_power(128, 4) 
+0
+>>> is_simple_power(12, 6) 
+0
+>>> is_simple_power(1, 1) 
+1
+>>> is_simple_power(1, 12) 
+1

@@ -1,0 +1,40 @@
+Use the standard library
+This is how to sort_array of arr:
+  Remember that result is []
+  Remember that used is []
+
+  Do this arr's length times:
+    Remember that best_index is 0
+    Remember that best_value is nothing
+    Remember that found is no
+
+    Do this arr's length times:
+      Remember that i is item 0 in used
+      Decrease item 0 in used by 1
+      When found is no, then:
+        Remember that best_index is i
+        Remember that best_value is item i in arr
+        Remember that found is yes
+      But, if not:
+        When item i in arr is less than best_value, then:
+          Remember that best_index is i
+          Remember that best_value is item i in arr
+        End when
+      End when
+    End do
+
+    Add result to best_value
+
+    Remember that next_used is []
+    Do this arr's length times:
+      Remember that j is item 0 in used
+      Decrease item 0 in used by 1
+      When j is not best_index, then:
+        Add next_used to j
+      End when
+    End do
+    Remember that used is next_used
+  End do
+
+  The answer is result
+Now you know

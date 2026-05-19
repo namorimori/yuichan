@@ -1,0 +1,50 @@
+Nav rem vaz
+Dum x_or_y(n, x, y):
+   Kem result par y
+   Nev n paz 1 ger:
+      Dup vem result
+   Dam nev
+   Kem is_prime par 1
+   Nev n paz 2 ger:
+      Kem is_prime par 1
+   Zum:
+      Kem i par 2
+      Mup dum 1000 pag:
+         Nev i dup n ger:
+            Kem remainder par 剰余(n, i)
+            Nev remainder paz 0 ger:
+               Kem is_prime par 0
+            Dam nev
+            Rav i
+         Dam nev
+      Dam mup
+   Dam nev
+   Nev is_prime paz 1 ger:
+      Kem result par x
+   Dam nev
+   Dup vem result
+Pam dum
+>>> x_or_y(7, 34, 12) 
+34
+>>> x_or_y(15, 8, 5) 
+5
+>>> x_or_y(7, 34, 12) 
+34
+>>> x_or_y(15, 8, 5) 
+5
+>>> x_or_y(3, 33, 5212) 
+33
+>>> x_or_y(1259, 3, 52) 
+3
+>>> x_or_y(7919, -1, 12) 
+-1
+>>> x_or_y(3609, 1245, 583) 
+583
+>>> x_or_y(91, 56, 129) 
+129
+>>> x_or_y(6, 34, 1234) 
+1234
+>>> x_or_y(1, 2, 0) 
+0
+>>> x_or_y(2, 2, 0) 
+2

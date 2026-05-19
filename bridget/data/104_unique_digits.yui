@@ -1,0 +1,54 @@
+Use the standard library
+This is how to unique_digits of x:
+   Remember that length is x's length
+   Remember that valid_nums is []
+   Remember that i is 0
+   Do this length times:
+      Remember that num is item i in x
+      Remember that all_odd is 1
+      Remember that temp is num
+      Do this 100 times:
+         When temp is more than 0, then:
+            Remember that digit is remainder of temp and 10
+            Remember that temp is quotient of temp and 10
+            Remember that remainder is remainder of digit and 2
+            When remainder is 0, then:
+               Remember that all_odd is 0
+            End when
+         End when
+      End do
+      When all_odd is 1, then:
+         Add valid_nums to num
+      End when
+      Increase i
+   End do
+   Remember that valid_len is valid_nums's length
+   Remember that i is 0
+   Do this valid_len times:
+      Remember that j is 0
+      Remember that limit is diff of (diff of valid_len and i) and 1
+      Do this limit times:
+         Remember that next_j is sum of j and 1
+         When item j in valid_nums is more than item next_j in valid_nums, then:
+            Remember that temp is item j in valid_nums
+            Remember that item j in valid_nums is item next_j in valid_nums
+            Remember that item next_j in valid_nums is temp
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is valid_nums
+Now you know
+>>> unique_digits of [15, 33, 1422, 1] 
+[1, 15, 33]
+>>> unique_digits of [152, 323, 1422, 10] 
+[]
+>>> unique_digits of [15, 33, 1422, 1] 
+[1, 15, 33]
+>>> unique_digits of [152, 323, 1422, 10] 
+[]
+>>> unique_digits of [12345, 2033, 111, 151] 
+[111, 151]
+>>> unique_digits of [135, 103, 31] 
+[31, 135]

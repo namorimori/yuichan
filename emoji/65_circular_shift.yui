@@ -1,0 +1,62 @@
+🗝️ 📚
+🧩 circular_shift(x, shift) 👉
+   digits ⬅️ []
+   temp ⬅️ x
+   🌀 100 👉
+      ❓ temp 📉 0 👉
+         digit ⬅️ 剰余(temp, 10)
+         digits 🧲 digit
+         temp ⬅️ 商(temp, 10)
+      🔚
+   🔚
+   length ⬅️ 📐 digits
+   reversed_digits ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      idx ⬅️ 差(差(length, i), 1)
+      reversed_digits 🧲 digits[idx]
+      i ⬆️
+   🔚
+   result ⬅️ []
+   ❓ shift 📉 length 👉
+      result ⬅️ digits
+   🔚
+   ❗ 👉
+      i ⬅️ 0
+      start_idx ⬅️ 差(length, shift)
+      🌀 shift 👉
+         idx ⬅️ 和(start_idx, i)
+         result 🧲 reversed_digits[idx]
+         i ⬆️
+      🔚
+      i ⬅️ 0
+      🌀 start_idx 👉
+         result 🧲 reversed_digits[i]
+         i ⬆️
+      🔚
+   🔚
+   result_len ⬅️ 📐 result
+   char_result ⬅️ []
+   i ⬅️ 0
+   🌀 result_len 👉
+      digit ⬅️ result[i]
+      char_code ⬅️ 和(48, digit)
+      char_result 🧲 char_code
+      i ⬆️
+   🔚
+   ✅ char_result
+🔚
+>>> circular_shift(12, 1) 
+[50, 49]
+>>> circular_shift(12, 2) 
+[49, 50]
+>>> circular_shift(100, 2) 
+"001"
+>>> circular_shift(12, 2) 
+"12"
+>>> circular_shift(97, 8) 
+"79"
+>>> circular_shift(12, 1) 
+"21"
+>>> circular_shift(11, 101) 
+"11"

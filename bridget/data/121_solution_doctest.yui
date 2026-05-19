@@ -1,0 +1,14 @@
+>>> solution of [5, 8, 7, 1] 
+12
+>>> solution of [3, 3, 3, 3, 3] 
+9
+>>> solution of [30, 13, 24, 321] 
+0
+>>> solution of [5, 9] 
+5
+>>> solution of [2, 4, 8] 
+0
+>>> solution of [30, 13, 23, 32] 
+23
+>>> solution of [3, 13, 2, 9] 
+3

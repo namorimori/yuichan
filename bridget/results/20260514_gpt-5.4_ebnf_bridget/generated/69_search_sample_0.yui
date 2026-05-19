@@ -1,0 +1,9 @@
+Use the standard library
+This is how to search of lst:
+  Remember that counts is {}
+  Remember that answer is -1
+  Do this lst's length times:
+    Remember that value is item 0 in lst
+    Add value to seen
+  End do
+Now you know

@@ -1,0 +1,26 @@
+🧩 concatenate(strings) 👉
+   結果 ⬅️ []
+   i ⬅️ 0
+   長さ ⬅️ 📐 strings
+   🌀 長さ 👉
+      文字列 ⬅️ strings[i]
+      j ⬅️ 0
+      文字列長 ⬅️ 📐 文字列
+      🌀 文字列長 👉
+         結果 🧲 文字列[j]
+         j ⬆️
+      🔚
+      i ⬆️
+   🔚
+   ✅ 結果
+🔚
+>>> concatenate([]) 
+[]
+>>> concatenate(["a", "b", "c"]) 
+"abc"
+>>> concatenate([]) 
+""
+>>> concatenate(["x", "y", "z"]) 
+"xyz"
+>>> concatenate(["x", "y", "z", "w", "k"]) 
+"xyzwk"

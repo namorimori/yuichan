@@ -1,0 +1,23 @@
+Use the standard library
+This is how to select_words of s and n:
+  Remember that words is []
+  Remember that current is ""
+  Do this s's length times:
+    Remember that ch is item 0 in s
+    Remember that s is item 1 in s
+    When ch is " ", then:
+      When current's length is n, then:
+        Add words to current
+      End when
+      Remember that current is ""
+    But, if not:
+      Remember that current is "{current}{ch}"
+    End when
+    When s's length is 0, then:
+      When current's length is n, then:
+        Add words to current
+      End when
+    End when
+  End do
+  The answer is words
+Now you know

@@ -1,0 +1,62 @@
+Nav rem vaz
+Dum even_odd_palindrome(n):
+   Kem even_count par 0
+   Kem odd_count par 0
+   Kem i par 1
+   Mup dum n pag:
+      Kem digits par []
+      Kem temp par i
+      Mup dum 100 pag:
+         Nev temp pep 0 ger:
+            Kem digit par 剰余(temp, 10)
+            Mev digits naz digit
+            Kem temp par 商(temp, 10)
+         Dam nev
+      Dam mup
+      Kem length par digits @kez
+      Kem is_palindrome par 1
+      Kem j par 0
+      Kem half par 商(length, 2)
+      Mup dum half pag:
+         Kem front_idx par j
+         Kem back_idx par 差(差(length, j), 1)
+         Nev digits[front_idx] nup digits[back_idx] ger:
+            Kem is_palindrome par 0
+         Dam nev
+         Rav j
+      Dam mup
+      Nev is_palindrome paz 1 ger:
+         Kem remainder par 剰余(i, 2)
+         Nev remainder paz 0 ger:
+            Rav even_count
+         Zum:
+            Rav odd_count
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Kem result par []
+   Mev result naz even_count
+   Mev result naz odd_count
+   Dup vem result
+Pam dum
+>>> even_odd_palindrome(3) 
+[1, 2]
+>>> even_odd_palindrome(12) 
+[4, 6]
+>>> even_odd_palindrome(123) 
+[8, 13]
+>>> even_odd_palindrome(12) 
+[4, 6]
+>>> even_odd_palindrome(3) 
+[1, 2]
+>>> even_odd_palindrome(63) 
+[6, 8]
+>>> even_odd_palindrome(25) 
+[5, 6]
+>>> even_odd_palindrome(19) 
+[4, 6]
+>>> even_odd_palindrome(9) 
+[4, 5]
+>>> even_odd_palindrome(1) 
+[0, 1]

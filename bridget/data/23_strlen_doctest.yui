@@ -1,0 +1,6 @@
+>>> strlen of "" 
+0
+>>> strlen of "x" 
+1
+>>> strlen of "asdasnakj" 
+9

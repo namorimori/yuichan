@@ -1,0 +1,20 @@
+>>> 施極詞於[「name」,「of」,「string」]
+「string」
+>>> 施極詞於[「name」,「enam」,「game」]
+「enam」
+>>> 施極詞於[「aaaaaaa」,「bb」,「cc」]
+「aaaaaaa」
+>>> 施極詞於[「abc」,「cba」]
+「abc」
+>>> 施極詞於[「play」,「this」,「game」,「of」,「footbott」]
+「footbott」
+>>> 施極詞於[「we」,「are」,「gonna」,「rock」]
+「gonna」
+>>> 施極詞於[「we」,「are」,「a」,「mad」,「nation」]
+「nation」
+>>> 施極詞於[「this」,「is」,「a」,「prrk」]
+「this」
+>>> 施極詞於[「b」]
+「b」
+>>> 施極詞於[「play」,「play」,「play」]
+「play」

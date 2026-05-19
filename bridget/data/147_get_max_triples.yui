@@ -1,0 +1,46 @@
+Use the standard library
+This is how to get_max_triples of n:
+   Remember that a is []
+   Remember that i is 1
+   Do this n times:
+      Remember that square is product of i and i
+      Remember that value is sum of (diff of square and i) and 1
+      Add a to value
+      Increase i
+   End do
+   Remember that count is 0
+   Remember that i is 0
+   Do this n times:
+      Remember that j is sum of i and 1
+      Remember that limit_j is diff of n and i
+      Do this limit_j times:
+         When j is less than n, then:
+            Remember that k is sum of j and 1
+            Remember that limit_k is diff of n and j
+            Do this limit_k times:
+               When k is less than n, then:
+                  Remember that sum is sum of (sum of item i in a and item j in a) and item k in a
+                  Remember that remainder is remainder of sum and 3
+                  When remainder is 0, then:
+                     Increase count
+                  End when
+               End when
+               Increase k
+            End do
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is count
+Now you know
+>>> get_max_triples of 5 
+1
+>>> get_max_triples of 5 
+1
+>>> get_max_triples of 6 
+4
+>>> get_max_triples of 10 
+36
+>>> get_max_triples of 100 
+53361

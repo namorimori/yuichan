@@ -1,0 +1,16 @@
+Use the standard library
+This is how to smallest_change of arr:
+   Remember that changes is 0
+   Remember that i is 0
+   Remember that half is quotient of arr's length and 2
+
+   Do this half times:
+      Remember that j is diff of (diff of arr's length and 1) and i
+      When item i in arr is not item j in arr, then:
+         Increase changes
+      End when
+      Increase i
+   End do
+
+   The answer is changes
+Now you know

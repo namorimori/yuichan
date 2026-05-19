@@ -1,0 +1,86 @@
+Use the standard library
+This is how to words_in_sentence of sentence:
+   Remember that length is sentence's length
+   Remember that result is []
+   Remember that current_word is []
+   Remember that word_list is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in sentence
+      When char is 32, then:
+         When current_word's length is more than 0, then:
+            Add word_list to current_word
+            Remember that current_word is []
+         End when
+      But, if not:
+         Add current_word to char
+      End when
+      Increase i
+   End do
+   When current_word's length is more than 0, then:
+      Add word_list to current_word
+   End when
+   Remember that prime_words is []
+   Remember that wl_len is word_list's length
+   Remember that i is 0
+   Do this wl_len times:
+      Remember that word is item i in word_list
+      Remember that word_len is word's length
+      Remember that is_prime is 1
+      When word_len is less than 2, then:
+         Remember that is_prime is 0
+      End when
+      When word_len is 2, then:
+         Remember that is_prime is 1
+      End when
+      When word_len is more than 2, then:
+         Remember that j is 2
+         Do this 100 times:
+            When j is less than word_len, then:
+               Remember that remainder is remainder of word_len and j
+               When remainder is 0, then:
+                  Remember that is_prime is 0
+               End when
+               Increase j
+            End when
+         End do
+      End when
+      When is_prime is 1, then:
+         Add prime_words to word
+      End when
+      Increase i
+   End do
+   Remember that pw_len is prime_words's length
+   Remember that i is 0
+   Do this pw_len times:
+      Remember that word is item i in prime_words
+      Remember that word_len is word's length
+      Remember that j is 0
+      Do this word_len times:
+         Add result to item j in word
+         Increase j
+      End do
+      Remember that next_idx is sum of i and 1
+      When next_idx is less than pw_len, then:
+         Add result to 32
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> words_in_sentence of [84, 104, 105, 115, 32, 105, 115, 32, 97, 32, 116, 101, 115, 116] 
+[105, 115]
+>>> words_in_sentence of "This is a test" 
+"is"
+>>> words_in_sentence of "lets go for swimming" 
+"go for"
+>>> words_in_sentence of "there is no place available here" 
+"there is no place"
+>>> words_in_sentence of "Hi I am Hussein" 
+"Hi am Hussein"
+>>> words_in_sentence of "go for it" 
+"go for it"
+>>> words_in_sentence of "here" 
+""
+>>> words_in_sentence of "here is" 
+"is"

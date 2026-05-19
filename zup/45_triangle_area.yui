@@ -1,0 +1,12 @@
+Nav rem vaz
+Dum triangle_area(a, h):
+   Kem area par 積(a, h)
+   Kem result par 商(area, 2.000000)
+   Dup vem result
+Pam dum
+>>> triangle_area(5, 3) 
+7.500000
+>>> triangle_area(2, 2) 
+2.000000
+>>> triangle_area(10, 8) 
+40.000000

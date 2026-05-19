@@ -1,0 +1,14 @@
+>>> specialFilter of [5, -2, 1, -5] 
+0
+>>> specialFilter of [15, -73, 14, -15] 
+1
+>>> specialFilter of [33, -2, -3, 45, 21, 109] 
+2
+>>> specialFilter of [43, -12, 93, 125, 121, 109] 
+4
+>>> specialFilter of [71, -2, -33, 75, 21, 19] 
+3
+>>> specialFilter of [1] 
+0
+>>> specialFilter of [] 
+0

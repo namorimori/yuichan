@@ -1,0 +1,18 @@
+Use the standard library
+This is how to largest_prime_factor of n:
+  Remember that factor is 2
+  Remember that last is 1
+  Remember that value is n
+  Do this n times:
+    When remainder of value and factor is 0, then:
+      Remember that last is factor
+      Remember that value is quotient of value and factor
+    But, if not:
+      Increase factor by 1
+    End when
+    When value is 1, then:
+      Leave the loop
+    End when
+  End do
+  The answer is last
+Now you know

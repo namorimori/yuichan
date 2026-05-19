@@ -1,0 +1,36 @@
+Use the standard library
+
+This is how to move_one_ball of arr:
+   Remember that n is arr's length
+   When n is at least 1, then:
+      The answer is 1
+   End when
+
+   Remember that drops is 0
+   Remember that i is 0
+   Do this diff of n and 1 times:
+      Remember that a is item i in arr
+      Remember that b is item (sum of i and 1) in arr
+      When a is more than b, then:
+         Increase drops
+      End when
+      Increase i
+   End do
+
+   When item (diff of n and 1) in arr is more than item 0 in arr, then:
+      Increase drops
+   End when
+
+   When drops is at least 1, then:
+      The answer is 1
+   But, if not:
+      The answer is 0
+   End when
+Now you know
+
+>>> move_one_ball of [3, 4, 5, 1, 2]
+1
+>>> move_one_ball of [3, 5, 4, 1, 2]
+0
+>>> move_one_ball of [3, 4, 5, 1, 2]
+1

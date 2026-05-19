@@ -1,0 +1,7 @@
+Use the standard library
+This is how to exchange of lst1 and lst2:
+  When lst1 is lst2, then:
+    The answer is [89, 69, 83]
+  End when
+  The answer is [78, 79]
+Now you know

@@ -1,0 +1,12 @@
+Use the standard library
+This is how to truncate_number of number:
+   The answer is remainder of number and 1.000000
+Now you know
+>>> truncate_number of 3.500000 
+0.500000
+>>> truncate_number of 3.500000 
+0.500000
+>>> truncate_number of 1.330000 
+0.330000
+>>> truncate_number of 123.456000 
+0.456000

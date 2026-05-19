@@ -1,0 +1,17 @@
+Use the standard library
+This is how to circular_shift of x and shift:
+  Remember that chars is toarray of tostring of x
+  Remember that n is chars's length
+  Remember that result is []
+  Do this n times:
+    Remember that i is diff of n and result's length
+    Remember that i is diff of i and 1
+    Remember that src is remainder of sum of i and shift and n
+    Add result to item src in chars
+  End do
+  When shift is n, then:
+    The answer is tostring of x
+  But, if not:
+    The answer is result
+  End when
+Now you know

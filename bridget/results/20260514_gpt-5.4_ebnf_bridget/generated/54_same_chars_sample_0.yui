@@ -1,0 +1,12 @@
+Use the standard library
+This is how to same_chars of s0 and s1:
+  Remember that count is 0
+  Remember that i is 0
+  Do this s0's length times:
+    When item i in s0 is in s1, then:
+      Increase count by 1
+    End when
+    Increase i by 1
+  End do
+  The answer is count
+Now you know

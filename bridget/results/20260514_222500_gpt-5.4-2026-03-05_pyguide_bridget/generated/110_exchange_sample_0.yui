@@ -1,0 +1,8 @@
+Use the standard library
+This is how to exchange of lst1 and lst2:
+   When lst1 is lst2, then:
+      The answer is "YES"
+   But, if not:
+      The answer is "NO"
+   End when
+Now you know

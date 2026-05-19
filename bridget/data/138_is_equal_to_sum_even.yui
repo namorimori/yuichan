@@ -1,0 +1,33 @@
+Use the standard library
+This is how to is_equal_to_sum_even of n:
+   Remember that result is 0
+   Remember that remainder is remainder of n and 2
+   When remainder is 0, then:
+      When n is at most 8, then:
+         Remember that result is 1
+      End when
+   End when
+   The answer is result
+Now you know
+>>> is_equal_to_sum_even of 4 
+0
+>>> is_equal_to_sum_even of 6 
+0
+>>> is_equal_to_sum_even of 8 
+1
+>>> is_equal_to_sum_even of 4 
+0
+>>> is_equal_to_sum_even of 6 
+0
+>>> is_equal_to_sum_even of 8 
+1
+>>> is_equal_to_sum_even of 10 
+1
+>>> is_equal_to_sum_even of 11 
+0
+>>> is_equal_to_sum_even of 12 
+1
+>>> is_equal_to_sum_even of 13 
+0
+>>> is_equal_to_sum_even of 16 
+1

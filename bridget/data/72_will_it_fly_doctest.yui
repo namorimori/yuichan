@@ -1,0 +1,12 @@
+>>> will_it_fly of [3, 2, 3] and 9 
+1
+>>> will_it_fly of [1, 2] and 5 
+0
+>>> will_it_fly of [3] and 5 
+1
+>>> will_it_fly of [3, 2, 3] and 1 
+0
+>>> will_it_fly of [1, 2, 3] and 6 
+0
+>>> will_it_fly of [5] and 5 
+1

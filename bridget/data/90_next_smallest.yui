@@ -1,0 +1,69 @@
+Use the standard library
+This is how to next_smallest of lst:
+   Remember that length is lst's length
+   Remember that result is []
+   When length is less than 2, then:
+      The answer is result
+   End when
+   Remember that sorted_arr is []
+   Remember that i is 0
+   Do this length times:
+      Add sorted_arr to item i in lst
+      Increase i
+   End do
+   Do this length times:
+      Remember that i is 0
+      Remember that limit is diff of length and 1
+      Do this limit times:
+         Remember that next_idx is sum of i and 1
+         When item i in sorted_arr is more than item next_idx in sorted_arr, then:
+            Remember that temp is item i in sorted_arr
+            Remember that item i in sorted_arr is item next_idx in sorted_arr
+            Remember that item next_idx in sorted_arr is temp
+         End when
+         Increase i
+      End do
+   End do
+   Remember that unique is []
+   When length is more than 0, then:
+      Add unique to item 0 in sorted_arr
+      Remember that i is 1
+      Remember that limit is diff of length and 1
+      Do this limit times:
+         Remember that prev_idx is diff of i and 1
+         When item i in sorted_arr is not item prev_idx in sorted_arr, then:
+            Add unique to item i in sorted_arr
+         End when
+         Increase i
+      End do
+   End when
+   Remember that unique_length is unique's length
+   When unique_length is less than 2, then:
+      The answer is result
+   But, if not:
+      Add result to item 1 in unique
+      The answer is result
+   End when
+Now you know
+>>> next_smallest of [1, 2, 3, 4, 5] 
+[2]
+>>> next_smallest of [5, 1, 4, 3, 2] 
+[2]
+>>> next_smallest of [] 
+[]
+>>> next_smallest of [1, 1] 
+[]
+>>> next_smallest of [1, 2, 3, 4, 5] 
+[2]
+>>> next_smallest of [5, 1, 4, 3, 2] 
+[2]
+>>> next_smallest of [] 
+[]
+>>> next_smallest of [1, 1] 
+[]
+>>> next_smallest of [1, 1, 1, 1, 0] 
+[1]
+>>> next_smallest of [1, 1] 
+[]
+>>> next_smallest of [-35, 34, 12, -45] 
+[-35]

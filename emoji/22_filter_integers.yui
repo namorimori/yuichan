@@ -1,0 +1,25 @@
+🗝️ 📚
+🧩 filter_integers(values) 👉
+   結果 ⬅️ []
+   i ⬅️ 0
+   長さ ⬅️ 📐 values
+   🌀 長さ 👉
+      値 ⬅️ values[i]
+      is_int ⬅️ 整数判定(値)
+      ❓ is_int ⚖️ 👍 👉
+         結果 🧲 値
+      🔚
+      i ⬆️
+   🔚
+   ✅ 結果
+🔚
+>>> filter_integers([5]) 
+[5]
+>>> filter_integers([1, 2, 3]) 
+[1, 2, 3]
+>>> filter_integers([]) 
+[]
+>>> filter_integers([4, [], 23.200000, 9, "adasd"]) 
+[4, 9]
+>>> filter_integers([3, "c", 3, 3, "a", "b"]) 
+[3, 3, 3]

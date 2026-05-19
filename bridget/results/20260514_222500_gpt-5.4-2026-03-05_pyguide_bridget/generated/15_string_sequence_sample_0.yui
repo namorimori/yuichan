@@ -1,0 +1,10 @@
+Use the standard library
+This is how to string_sequence of n:
+   Remember that result is "0"
+   Remember that i is 1
+   Do this n times:
+      Remember that result is "{result} {i}"
+      Increase i
+   End do
+   The answer is result
+Now you know

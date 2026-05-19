@@ -1,0 +1,23 @@
+Use the standard library
+This is how to get_closest_vowel of word:
+   Remember that vowels is ["a", "e", "i", "o", "u"]
+   Remember that best is []
+   Remember that best_distance is word's length
+   Remember that i is 0
+
+   Do this word's length times:
+      Remember that ch is [item i in word]
+      When ch is in vowels, then:
+         Remember that left is i
+         Remember that right is diff of (diff of word's length and 1) and i
+         Remember that distance is min of left and right
+         When distance is less than best_distance, then:
+            Remember that best_distance is distance
+            Remember that best is ch
+         End when
+      End when
+      Increase i
+   End do
+
+   The answer is best
+Now you know

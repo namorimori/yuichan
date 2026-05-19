@@ -1,0 +1,46 @@
+Nav rem vaz
+Dum even_odd_count(num):
+   Kem abs_num par 絶対値(num)
+   Kem even_count par 0
+   Kem odd_count par 0
+   Kem temp par abs_num
+   Mup dum 100 pag:
+      Nev temp pep 0 ger:
+         Kem digit par 剰余(temp, 10)
+         Kem temp par 商(temp, 10)
+         Kem remainder par 剰余(digit, 2)
+         Nev remainder paz 0 ger:
+            Rav even_count
+         Zum:
+            Rav odd_count
+         Dam nev
+      Dam nev
+   Dam mup
+   Nev abs_num paz 0 ger:
+      Kem even_count par 1
+   Dam nev
+   Kem result par []
+   Mev result naz even_count
+   Mev result naz odd_count
+   Dup vem result
+Pam dum
+>>> even_odd_count(-12) 
+[1, 1]
+>>> even_odd_count(123) 
+[1, 2]
+>>> even_odd_count(7) 
+[0, 1]
+>>> even_odd_count(-78) 
+[1, 1]
+>>> even_odd_count(3452) 
+[2, 2]
+>>> even_odd_count(346211) 
+[3, 3]
+>>> even_odd_count(-345821) 
+[3, 3]
+>>> even_odd_count(-2) 
+[1, 0]
+>>> even_odd_count(-45347) 
+[2, 3]
+>>> even_odd_count(0) 
+[1, 0]

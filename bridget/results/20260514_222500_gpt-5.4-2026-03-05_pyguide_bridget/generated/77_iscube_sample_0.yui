@@ -1,0 +1,12 @@
+Use the standard library
+This is how to iscube of a:
+   Remember that n is abs of a
+   Remember that i is 0
+   Do this n times:
+      When product of (product of i and i) and i is n, then:
+         The answer is 1
+      End when
+      Increase i
+   End do
+   The answer is 0
+Now you know

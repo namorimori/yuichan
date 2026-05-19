@@ -1,0 +1,33 @@
+Use the standard library
+This is how to correct_bracketing of brackets:
+   Remember that depth is 0
+   Remember that i is 0
+   Remember that length is brackets's length
+   Do this length times:
+      Remember that b is item i in brackets
+      When b is 60, then:
+         Increase depth
+      But, if not:
+         Decrease depth
+      End when
+      When depth is less than 0, then:
+         The answer is 0
+      End when
+      Increase i
+   End do
+   When depth is 0, then:
+      The answer is 1
+   But, if not:
+      The answer is 0
+   End when
+Now you know
+>>> correct_bracketing of "<" 
+0
+>>> correct_bracketing of "<>" 
+1
+>>> correct_bracketing of "<<><>>" 
+1
+>>> correct_bracketing of "><<>" 
+0
+>>> correct_bracketing of "<><><<><>><>" 
+1

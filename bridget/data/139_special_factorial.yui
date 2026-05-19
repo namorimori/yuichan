@@ -1,0 +1,22 @@
+Use the standard library
+This is how to special_factorial of n:
+   Remember that fact_i is 1
+   Remember that special_fact is 1
+   Remember that i is 1
+   Do this n times:
+      Remember that fact_i is product of fact_i and i
+      Remember that special_fact is product of special_fact and fact_i
+      Increase i
+   End do
+   The answer is special_fact
+Now you know
+>>> special_factorial of 4 
+288
+>>> special_factorial of 4 
+288
+>>> special_factorial of 5 
+34560
+>>> special_factorial of 7 
+125411328000
+>>> special_factorial of 1 
+1

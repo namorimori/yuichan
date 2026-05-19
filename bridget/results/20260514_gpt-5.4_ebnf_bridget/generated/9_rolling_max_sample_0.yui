@@ -1,0 +1,20 @@
+Use the standard library
+This is how to rolling_max of numbers:
+  Remember that result is []
+  Remember that current_max is nothing
+  Do this numbers's length times:
+    Remember that i is diff of numbers's length and numbers's length
+    Increase i by 1
+    Remember that i is diff of i and 1
+    Remember that value is item i in numbers
+    When current_max is nothing, then:
+      Remember that current_max is value
+    But, if not:
+      When current_max is less than value, then:
+        Remember that current_max is value
+      End when
+    End when
+    Add result to current_max
+  End do
+  The answer is result
+Now you know

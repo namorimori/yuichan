@@ -1,0 +1,13 @@
+Use the standard library
+This is how to add of lst:
+   Remember that result is item 1 in lst
+   Remember that i is 3
+   Do this quotient of (diff of lst's length and 2) and 2 times:
+      Remember that x is item i in lst
+      When x is more than result, then:
+         Remember that result is x
+      End when
+      Remember that i is sum of i and 2
+   End do
+   The answer is result
+Now you know

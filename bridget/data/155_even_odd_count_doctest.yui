@@ -1,0 +1,16 @@
+>>> even_odd_count of 7 
+[0, 1]
+>>> even_odd_count of -78 
+[1, 1]
+>>> even_odd_count of 3452 
+[2, 2]
+>>> even_odd_count of 346211 
+[3, 3]
+>>> even_odd_count of -345821 
+[3, 3]
+>>> even_odd_count of -2 
+[1, 0]
+>>> even_odd_count of -45347 
+[2, 3]
+>>> even_odd_count of 0 
+[1, 0]

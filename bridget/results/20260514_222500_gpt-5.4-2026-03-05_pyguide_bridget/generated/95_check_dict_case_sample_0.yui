@@ -1,0 +1,23 @@
+Use the standard library
+This is how to check_dict_case of dict:
+   Remember that i is 0
+   Do this dict's length times:
+      Remember that pair is item i in dict
+      When pair's length is not 2, then:
+         The answer is 0
+      End when
+
+      Remember that key is item 0 in pair
+      Remember that value is item 1 in pair
+
+      When isarray of key is no, then:
+         The answer is 0
+      End when
+      When isarray of value is no, then:
+         The answer is 0
+      End when
+
+      Increase i
+   End do
+   The answer is 1
+Now you know

@@ -1,0 +1,31 @@
+Use the standard library
+This is how to rescale_to_unit of numbers:
+   Remember that length is numbers's length
+   Remember that minimum is min of numbers
+   Remember that maximum is max of numbers
+   Remember that range is diff of maximum and minimum
+   Remember that result is []
+   Remember that i is 0
+   Do this length times:
+      Remember that value is item i in numbers
+      Remember that delta_raw is diff of value and minimum
+      Remember that delta is product of delta_raw and 1.000000
+      Remember that range_float is product of range and 1.000000
+      Remember that normalized_value is quotient of delta and range_float
+      Add result to normalized_value
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> rescale_to_unit of [1.000000, 2.000000, 3.000000, 4.000000, 5.000000] 
+[0.000000, 0.250000, 0.500000, 0.750000, 1.000000]
+>>> rescale_to_unit of [2.000000, 49.900000] 
+[0.000000, 1.000000]
+>>> rescale_to_unit of [100.000000, 49.900000] 
+[1.000000, 0.000000]
+>>> rescale_to_unit of [1.000000, 2.000000, 3.000000, 4.000000, 5.000000] 
+[0.000000, 0.250000, 0.500000, 0.750000, 1.000000]
+>>> rescale_to_unit of [2.000000, 1.000000, 5.000000, 3.000000, 4.000000] 
+[0.250000, 0.000000, 1.000000, 0.500000, 0.750000]
+>>> rescale_to_unit of [12.000000, 11.000000, 15.000000, 13.000000, 14.000000] 
+[0.250000, 0.000000, 1.000000, 0.500000, 0.750000]

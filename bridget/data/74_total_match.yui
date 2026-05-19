@@ -1,0 +1,61 @@
+This is how to total_match of lst1 and lst2:
+   Remember that lst1_length is lst1's length
+   Remember that lst2_length is lst2's length
+   Remember that total1 is 0
+   Remember that i is 0
+   Do this lst1_length times:
+      Remember that string_val is item i in lst1
+      Remember that string_length is string_val's length
+      Remember that j is 0
+      Do this string_length times:
+         Increase total1
+         Increase j
+      End do
+      Increase i
+   End do
+   Remember that total2 is 0
+   Remember that i is 0
+   Do this lst2_length times:
+      Remember that string_val is item i in lst2
+      Remember that string_length is string_val's length
+      Remember that j is 0
+      Do this string_length times:
+         Increase total2
+         Increase j
+      End do
+      Increase i
+   End do
+   Remember that result is lst1
+   When total1 is more than total2, then:
+      Remember that result is lst2
+   End when
+   The answer is result
+Now you know
+>>> total_match of [] and [] 
+[]
+>>> total_match of ["hi", "admin"] and ["hI", "Hi"] 
+["hI", "Hi"]
+>>> total_match of ["hi", "admin"] and ["hi", "hi", "admin", "project"] 
+["hi", "admin"]
+>>> total_match of ["hi", "admin"] and ["hI", "hi", "hi"] 
+["hI", "hi", "hi"]
+>>> total_match of ["4"] and ["1", "2", "3", "4", "5"] 
+["4"]
+>>> total_match of [] and [] 
+[]
+>>> total_match of ["hi", "admin"] and ["hi", "hi"] 
+["hi", "hi"]
+>>> total_match of ["hi", "admin"] and ["hi", "hi", "admin", "project"] 
+["hi", "admin"]
+>>> total_match of ["4"] and ["1", "2", "3", "4", "5"] 
+["4"]
+>>> total_match of ["hi", "admin"] and ["hI", "Hi"] 
+["hI", "Hi"]
+>>> total_match of ["hi", "admin"] and ["hI", "hi", "hi"] 
+["hI", "hi", "hi"]
+>>> total_match of ["hi", "admin"] and ["hI", "hi", "hii"] 
+["hi", "admin"]
+>>> total_match of [] and ["this"] 
+[]
+>>> total_match of ["this"] and [] 
+[]

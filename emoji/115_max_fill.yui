@@ -1,0 +1,40 @@
+🗝️ 📚
+🧩 max_fill(grid, capacity) 👉
+   grid_len ⬅️ 📐 grid
+   total ⬅️ 0
+   i ⬅️ 0
+   🌀 grid_len 👉
+      row ⬅️ grid[i]
+      row_len ⬅️ 📐 row
+      row_sum ⬅️ 0
+      j ⬅️ 0
+      🌀 row_len 👉
+         row_sum ⬅️ 和(row_sum, row[j])
+         j ⬆️
+      🔚
+      trips ⬅️ 商(row_sum, capacity)
+      remainder ⬅️ 剰余(row_sum, capacity)
+      ❓ remainder 📉 0 👉
+         trips ⬆️
+      🔚
+      total ⬅️ 和(total, trips)
+      i ⬆️
+   🔚
+   ✅ total
+🔚
+>>> max_fill([[0, 0, 1, 0], [0, 1, 0, 0], [1, 1, 1, 1]], 1) 
+6
+>>> max_fill([[0, 0, 1, 1], [0, 0, 0, 0], [1, 1, 1, 1], [0, 1, 1, 1]], 2) 
+5
+>>> max_fill([[0, 0, 0], [0, 0, 0]], 5) 
+0
+>>> max_fill([[0, 0, 1, 0], [0, 1, 0, 0], [1, 1, 1, 1]], 1) 
+6
+>>> max_fill([[0, 0, 1, 1], [0, 0, 0, 0], [1, 1, 1, 1], [0, 1, 1, 1]], 2) 
+5
+>>> max_fill([[0, 0, 0], [0, 0, 0]], 5) 
+0
+>>> max_fill([[1, 1, 1, 1], [1, 1, 1, 1]], 2) 
+4
+>>> max_fill([[1, 1, 1, 1], [1, 1, 1, 1]], 9) 
+2

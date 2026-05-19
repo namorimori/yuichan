@@ -1,0 +1,17 @@
+Use the standard library
+This is how to tri of n:
+   Remember that result is []
+   Remember that i is 1
+   Do this n times:
+      Add result to i
+      When i is at least 2, then:
+         When remainder of i and 2 is 0, then:
+            Add result to sqrt of (product of i and i)
+         But, if not:
+            Add result to tofloat of (product of i and i)
+         End when
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know

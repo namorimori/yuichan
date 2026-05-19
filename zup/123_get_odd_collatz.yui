@@ -1,0 +1,50 @@
+Nav rem vaz
+Dum get_odd_collatz(n):
+   Kem result par []
+   Kem current par n
+   Kem remainder par 剰余(n, 2)
+   Nev remainder paz 1 ger:
+      Mev result naz n
+   Dam nev
+   Mup dum 1000 pag:
+      Nev current pep 1 ger:
+         Kem remainder par 剰余(current, 2)
+         Nev remainder paz 0 ger:
+            Kem current par 商(current, 2)
+         Zum:
+            Kem current par 和(積(current, 3), 1)
+         Dam nev
+         Kem new_remainder par 剰余(current, 2)
+         Nev new_remainder paz 1 ger:
+            Mev result naz current
+         Dam nev
+      Dam nev
+   Dam mup
+   Kem result_len par result @kez
+   Kem i par 0
+   Mup dum result_len pag:
+      Kem j par 0
+      Kem limit par 差(差(result_len, i), 1)
+      Mup dum limit pag:
+         Kem next_j par 和(j, 1)
+         Nev result[j] pep result[next_j] ger:
+            Kem temp par result[j]
+            Kem result[j] par result[next_j]
+            Kem result[next_j] par temp
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> get_odd_collatz(5) 
+[1, 5]
+>>> get_odd_collatz(14) 
+[1, 5, 7, 11, 13, 17]
+>>> get_odd_collatz(5) 
+[1, 5]
+>>> get_odd_collatz(12) 
+[1, 3, 5]
+>>> get_odd_collatz(1) 
+[1]

@@ -1,0 +1,23 @@
+Use the standard library
+This is how to triples_sum_to_zero of l:
+  Remember that count is 0
+  Remember that n is l's length
+  Do this n times:
+    Decrease n
+    Remember that a is item n in l
+    Remember that m is n
+    Do this m times:
+      Decrease m
+      Remember that b is item m in l
+      Remember that k is m
+      Do this k times:
+        Decrease k
+        Remember that c is item k in l
+        When sum of a and b and c is 0, then:
+          Increase count
+        End when
+      End do
+    End do
+  End do
+  The answer is count
+Now you know

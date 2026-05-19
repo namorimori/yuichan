@@ -1,0 +1,50 @@
+🗝️ 📚
+🧩 filter_by_substring(strings, substring) 👉
+   文字列数 ⬅️ 📐 strings
+   部分文字列長 ⬅️ 📐 substring
+   結果 ⬅️ []
+   i ⬅️ 0
+   🌀 文字列数 👉
+      文字列 ⬅️ strings[i]
+      文字列長 ⬅️ 📐 文字列
+      含む ⬅️ 0
+      ❓ 部分文字列長 📉 0 👉
+         上限 ⬅️ 和(差(文字列長, 部分文字列長), 1)
+         j ⬅️ 0
+         🌀 上限 👉
+            一致 ⬅️ 1
+            k ⬅️ 0
+            🌀 部分文字列長 👉
+               インデックス ⬅️ 和(j, k)
+               ❓ インデックス 📈 文字列長 👉
+                  ❓ 文字列[インデックス] 🚫⚖️ substring[k] 👉
+                     一致 ⬅️ 0
+                  🔚
+               🔚
+               k ⬆️
+            🔚
+            ❓ 一致 ⚖️ 1 👉
+               含む ⬅️ 1
+            🔚
+            j ⬆️
+         🔚
+      🔚
+      ❓ 含む ⚖️ 1 👉
+         結果 🧲 文字列
+      🔚
+      i ⬆️
+   🔚
+   ✅ 結果
+🔚
+>>> filter_by_substring([], "a") 
+[]
+>>> filter_by_substring(["abc", "bacd", "cde", "array"], "a") 
+["abc", "bacd", "array"]
+>>> filter_by_substring([], "john") 
+[]
+>>> filter_by_substring(["xxx", "asd", "xxy", "john doe", "xxxAAA", "xxx"], "xxx") 
+["xxx", "xxxAAA", "xxx"]
+>>> filter_by_substring(["xxx", "asd", "aaaxxy", "john doe", "xxxAAA", "xxx"], "xx") 
+["xxx", "aaaxxy", "xxxAAA", "xxx"]
+>>> filter_by_substring(["grunt", "trumpet", "prune", "gruesome"], "run") 
+["grunt", "prune"]

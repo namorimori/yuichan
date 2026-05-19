@@ -1,0 +1,19 @@
+Use the standard library
+This is how to right_angle_triangle of a and b and c:
+  Remember that aa is product of a and a
+  Remember that bb is product of b and b
+  Remember that cc is product of c and c
+  When aa is diff of cc and bb, then:
+    The answer is 1
+  But, if not:
+    When bb is diff of cc and aa, then:
+      The answer is 1
+    But, if not:
+      When cc is sum of aa and bb, then:
+        The answer is 1
+      But, if not:
+        The answer is 0
+      End when
+    End when
+  End when
+Now you know

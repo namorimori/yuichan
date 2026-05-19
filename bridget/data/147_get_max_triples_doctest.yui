@@ -1,0 +1,8 @@
+>>> get_max_triples of 5 
+1
+>>> get_max_triples of 6 
+4
+>>> get_max_triples of 10 
+36
+>>> get_max_triples of 100 
+53361

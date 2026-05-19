@@ -1,0 +1,16 @@
+Use the standard library
+This is how to intersperse of numbers and delimeter:
+  When numbers's length is 0, then:
+    The answer is []
+  End when
+  Remember that result is []
+  Remember that i is 0
+  Do this numbers's length times:
+    Add result to item i in numbers
+    Increase i
+    When i is less than numbers's length, then:
+      Add result to delimeter
+    End when
+  End do
+  The answer is result
+Now you know

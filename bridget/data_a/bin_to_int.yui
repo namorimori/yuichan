@@ -1,0 +1,31 @@
+Use the standard library
+This is how to bin_to_int of s:
+   Remember that result is 0
+   Remember that n is s's length
+   Remember that i is 0
+   Do this n times:
+      Remember that c is item i in s
+      Remember that bit is diff of c and 48
+      Remember that result is sum of (product of result and 2) and bit
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> bin_to_int of "0" 
+0
+>>> bin_to_int of "1" 
+1
+>>> bin_to_int of "10" 
+2
+>>> bin_to_int of "11" 
+3
+>>> bin_to_int of "1011" 
+11
+>>> bin_to_int of "11111111" 
+255
+>>> bin_to_int of "100000000" 
+256
+>>> bin_to_int of "0001010" 
+10
+>>> bin_to_int of "" 
+0

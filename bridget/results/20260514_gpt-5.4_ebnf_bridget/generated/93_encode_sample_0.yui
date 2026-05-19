@@ -1,0 +1,60 @@
+Use the standard library
+This is how to encode of message:
+  Remember that result is []
+  Do this message's length times:
+    Remember that i is diff of result's length and 0
+    Remember that ch is item i in message
+    When ch is in "aeiouAEIOU", then:
+      Add result to ch
+    End when
+    When ch is more than 96, then:
+      Remember that code is diff of ch and 32
+      When code is 69, then:
+        Remember that code is 71
+      End when
+      When code is 73, then:
+        Remember that code is 75
+      End when
+      When code is 79, then:
+        Remember that code is 81
+      End when
+      When code is 85, then:
+        Remember that code is 87
+      End when
+      Add result to code
+    End when
+    When ch is at most 90, then:
+      Remember that code is sum of ch and 32
+      When ch is 69, then:
+        Remember that code is 103
+      End when
+      When ch is 73, then:
+        Remember that code is 107
+      End when
+      When ch is 79, then:
+        Remember that code is 113
+      End when
+      When ch is 85, then:
+        Remember that code is 119
+      End when
+      Add result to code
+    End when
+    When ch is less than 65, then:
+      Add result to ch
+    End when
+    When ch is more than 90, then:
+      When ch is at least 96, then:
+        Add result to ch
+      End when
+    End when
+  End do
+  When isstring of message, then:
+    Remember that text is ""
+    Do this result's length times:
+      Remember that i is diff of text's length and 0
+      Remember that text is "{text}{item i in result}"
+    End do
+    The answer is text
+  End when
+  The answer is result
+Now you know

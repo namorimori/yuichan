@@ -1,0 +1,104 @@
+Use the standard library
+This is how to bf of planet1 and planet2:
+   Remember that mercury is [77, 101, 114, 99, 117, 114, 121]
+   Remember that venus is [86, 101, 110, 117, 115]
+   Remember that earth is [69, 97, 114, 116, 104]
+   Remember that mars is [77, 97, 114, 115]
+   Remember that jupiter is [74, 117, 112, 105, 116, 101, 114]
+   Remember that saturn is [83, 97, 116, 117, 114, 110]
+   Remember that uranus is [85, 114, 97, 110, 117, 115]
+   Remember that neptune is [78, 101, 112, 116, 117, 110, 101]
+   Remember that planets is [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune]
+   Remember that planet1_idx is -1
+   Remember that planet2_idx is -1
+   Remember that i is 0
+   Do this 8 times:
+      Remember that planet is item i in planets
+      Remember that len1 is planet1's length
+      Remember that len_p is planet's length
+      Remember that match1 is 0
+      When len1 is len_p, then:
+         Remember that match1 is 1
+         Remember that j is 0
+         Do this len1 times:
+            When item j in planet1 is not item j in planet, then:
+               Remember that match1 is 0
+            End when
+            Increase j
+         End do
+      End when
+      When match1 is 1, then:
+         Remember that planet1_idx is i
+      End when
+      Remember that len2 is planet2's length
+      Remember that match2 is 0
+      When len2 is len_p, then:
+         Remember that match2 is 1
+         Remember that j is 0
+         Do this len2 times:
+            When item j in planet2 is not item j in planet, then:
+               Remember that match2 is 0
+            End when
+            Increase j
+         End do
+      End when
+      When match2 is 1, then:
+         Remember that planet2_idx is i
+      End when
+      Increase i
+   End do
+   Remember that result is []
+   Remember that invalid is 0
+   When planet1_idx is -1, then:
+      Remember that invalid is 1
+   End when
+   When planet2_idx is -1, then:
+      Remember that invalid is 1
+   End when
+   When planet1_idx is planet2_idx, then:
+      Remember that invalid is 1
+   End when
+   When invalid is 1, then:
+      The answer is result
+   End when
+   Remember that start_idx is planet1_idx
+   Remember that end_idx is planet2_idx
+   When planet1_idx is more than planet2_idx, then:
+      Remember that start_idx is planet2_idx
+      Remember that end_idx is planet1_idx
+   End when
+   Increase start_idx
+   Remember that i is start_idx
+   Remember that count is diff of end_idx and start_idx
+   Do this count times:
+      Add result to item i in planets
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> bf of [74, 117, 112, 105, 116, 101, 114] and [78, 101, 112, 116, 117, 110, 101] 
+[[83, 97, 116, 117, 114, 110], [85, 114, 97, 110, 117, 115]]
+>>> bf of [69, 97, 114, 116, 104] and [77, 101, 114, 99, 117, 114, 121] 
+[[86, 101, 110, 117, 115]]
+>>> bf of [77, 101, 114, 99, 117, 114, 121] and [85, 114, 97, 110, 117, 115] 
+[
+   [86, 101, 110, 117, 115],
+   [69, 97, 114, 116, 104],
+   [77, 97, 114, 115],
+   [74, 117, 112, 105, 116, 101, 114],
+   [83, 97, 116, 117, 114, 110]
+]
+>>> bf of "Jupiter" and "Neptune" 
+["Saturn", "Uranus"]
+>>> bf of "Earth" and "Mercury" 
+["Venus"]
+>>> bf of "Mercury" and "Uranus" 
+["Venus", "Earth", "Mars", "Jupiter", "Saturn"]
+>>> bf of "Neptune" and "Venus" 
+["Earth", "Mars", "Jupiter", "Saturn", "Uranus"]
+>>> bf of "Earth" and "Earth" 
+[]
+>>> bf of "Mars" and "Earth" 
+[]
+>>> bf of "Jupiter" and "Makemake" 
+[]

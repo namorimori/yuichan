@@ -1,0 +1,28 @@
+Use the standard library
+This is how to unique of l:
+   Remember that result is []
+   Remember that i is 0
+   Do this l's length times:
+      Remember that x is item i in l
+      When x is not in result, then:
+         Add result to x
+      End when
+      Increase i
+   End do
+
+   Remember that a is 0
+   Do this result's length times:
+      Remember that b is 0
+      Do this result's length times:
+         When item a in result is less than item b in result, then:
+            Remember that temp is item a in result
+            Remember that item a in result is item b in result
+            Remember that item b in result is temp
+         End when
+         Increase b
+      End do
+      Increase a
+   End do
+
+   The answer is result
+Now you know

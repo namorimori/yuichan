@@ -1,0 +1,17 @@
+Use the standard library
+This is how to is_equal_to_sum_even of n:
+   Remember that total is 0
+   Remember that i is 2
+   Do this n times:
+      When i is less than n, then:
+         When remainder of i and 2 is 0, then:
+            Remember that total is sum of total and i
+         End when
+         Increase i
+      End when
+   End do
+   When total is n, then:
+      The answer is 1
+   End when
+   The answer is 0
+Now you know

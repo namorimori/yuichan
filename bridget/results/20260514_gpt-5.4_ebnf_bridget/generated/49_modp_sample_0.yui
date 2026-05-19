@@ -1,0 +1,20 @@
+Use the standard library
+This is how to modp of n and p:
+  When p is 0, then:
+    The answer is 1
+  End when
+  Remember that result is 1
+  Remember that base is remainder of n and p
+  Remember that exp is p
+  Do this p times:
+    When exp is 0, then:
+      Leave the loop
+    End when
+    When remainder of exp and 2 is 1, then:
+      Remember that result is remainder of product of result and base and p
+    End when
+    Remember that base is remainder of product of base and base and p
+    Remember that exp is quotient of exp and 2
+  End do
+  The answer is result
+Now you know

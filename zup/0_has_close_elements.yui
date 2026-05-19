@@ -1,0 +1,41 @@
+Nav rem vaz
+Dum has_close_elements(numbers, threshold):
+   Kem 長さ par numbers @kez
+   Kem 結果 par 0
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 値1 par numbers[i]
+      Kem j par 0
+      Mup dum 長さ pag:
+         Nev i nup j ger:
+            Kem 値2 par numbers[j]
+            Kem 差分 par 差(値1, 値2)
+            Kem 絶対差分 par 絶対値(差分)
+            Nev 絶対差分 dup threshold ger:
+               Kem 結果 par 1
+            Dam nev
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> has_close_elements([1, 2, 3], 0.500000) 
+0
+>>> has_close_elements([1, 2.800000, 3, 4, 5, 2], 0.300000) 
+1
+>>> has_close_elements([1.000000, 2.000000, 3.900000, 4.000000, 5.000000, 2.200000], 0.300000) 
+1
+>>> has_close_elements([1.000000, 2.000000, 3.900000, 4.000000, 5.000000, 2.200000], 0.050000) 
+0
+>>> has_close_elements([1.000000, 2.000000, 5.900000, 4.000000, 5.000000], 0.950000) 
+1
+>>> has_close_elements([1.000000, 2.000000, 5.900000, 4.000000, 5.000000], 0.800000) 
+0
+>>> has_close_elements([1.000000, 2.000000, 3.000000, 4.000000, 5.000000, 2.000000], 0.100000) 
+1
+>>> has_close_elements([1.100000, 2.200000, 3.100000, 4.100000, 5.100000], 1.000000) 
+1
+>>> has_close_elements([1.100000, 2.200000, 3.100000, 4.100000, 5.100000], 0.500000) 
+0

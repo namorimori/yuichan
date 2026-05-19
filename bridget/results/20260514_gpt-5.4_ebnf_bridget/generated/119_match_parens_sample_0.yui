@@ -1,0 +1,32 @@
+Use the standard library
+This is how to match_parens of lst:
+  Remember that balance is 0
+  Remember that result is []
+  Remember that i is 0
+  Do this lst's length times:
+    Remember that part is item i in lst
+    Remember that j is 0
+    Do this part's length times:
+      Remember that ch is item j in part
+      When ch is 40, then:
+        Increase balance by 1
+      But, if not:
+        Decrease balance by 1
+      End when
+      When balance is less than 0, then:
+        Add result to 78
+        Add result to 111
+        The answer is result
+      End when
+      Increase j by 1
+    End do
+    Increase i by 1
+  End do
+  When balance is 0, then:
+    The answer is "Yes"
+  End when
+  Add result to 89
+  Add result to 101
+  Add result to 115
+  The answer is result
+Now you know

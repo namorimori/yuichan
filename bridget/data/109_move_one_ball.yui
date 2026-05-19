@@ -1,0 +1,48 @@
+Use the standard library
+This is how to move_one_ball of arr:
+   Remember that length is arr's length
+   Remember that result is 1
+   When length is 0, then:
+      The answer is result
+   End when
+   Remember that min_val is item 0 in arr
+   Remember that min_idx is 0
+   Remember that i is 0
+   Do this length times:
+      When item i in arr is less than min_val, then:
+         Remember that min_val is item i in arr
+         Remember that min_idx is i
+      End when
+      Increase i
+   End do
+   Remember that rotated is []
+   Remember that i is min_idx
+   Do this length times:
+      Remember that idx is remainder of i and length
+      Add rotated to item idx in arr
+      Increase i
+   End do
+   Remember that i is 1
+   Do this diff of length and 1 times:
+      Remember that prev is diff of i and 1
+      When item prev in rotated is more than item i in rotated, then:
+         Remember that result is 0
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> move_one_ball of [3, 4, 5, 1, 2] 
+1
+>>> move_one_ball of [3, 5, 4, 1, 2] 
+0
+>>> move_one_ball of [3, 4, 5, 1, 2] 
+1
+>>> move_one_ball of [3, 5, 10, 1, 2] 
+1
+>>> move_one_ball of [4, 3, 1, 2] 
+0
+>>> move_one_ball of [3, 5, 4, 1, 2] 
+0
+>>> move_one_ball of [] 
+1

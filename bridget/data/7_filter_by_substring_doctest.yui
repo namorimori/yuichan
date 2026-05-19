@@ -1,0 +1,8 @@
+>>> filter_by_substring of [] and "john" 
+[]
+>>> filter_by_substring of ["xxx", "asd", "xxy", "john doe", "xxxAAA", "xxx"] and "xxx" 
+["xxx", "xxxAAA", "xxx"]
+>>> filter_by_substring of ["xxx", "asd", "aaaxxy", "john doe", "xxxAAA", "xxx"] and "xx" 
+["xxx", "aaaxxy", "xxxAAA", "xxx"]
+>>> filter_by_substring of ["grunt", "trumpet", "prune", "gruesome"] and "run" 
+["grunt", "prune"]

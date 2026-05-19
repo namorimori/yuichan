@@ -1,0 +1,26 @@
+🧩 all_prefixes(string) 👉
+   結果 ⬅️ []
+   長さ ⬅️ 📐 string
+   i ⬅️ 0
+   🌀 長さ 👉
+      プレフィックス ⬅️ []
+      j ⬅️ 0
+      上限 ⬅️ i
+      上限 ⬆️
+      🌀 上限 👉
+         プレフィックス 🧲 string[j]
+         j ⬆️
+      🔚
+      結果 🧲 プレフィックス
+      i ⬆️
+   🔚
+   ✅ 結果
+🔚
+>>> all_prefixes("abc") 
+["a", "ab", "abc"]
+>>> all_prefixes("") 
+[]
+>>> all_prefixes("asdfgh") 
+["a", "as", "asd", "asdf", "asdfg", "asdfgh"]
+>>> all_prefixes("WWW") 
+["W", "WW", "WWW"]

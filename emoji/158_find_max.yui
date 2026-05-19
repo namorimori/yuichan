@@ -1,0 +1,89 @@
+🗝️ 📚
+🧩 find_max(words) 👉
+   length ⬅️ 📐 words
+   result ⬅️ []
+   ❓ length ⚖️ 0 👉
+      ✅ result
+   🔚
+   best_word ⬅️ words[0]
+   best_unique ⬅️ 0
+   i ⬅️ 0
+   🌀 length 👉
+      word ⬅️ words[i]
+      word_len ⬅️ 📐 word
+      unique_count ⬅️ 0
+      j ⬅️ 0
+      🌀 word_len 👉
+         char ⬅️ word[j]
+         is_unique ⬅️ 1
+         k ⬅️ 0
+         🌀 j 👉
+            ❓ word[k] ⚖️ char 👉
+               is_unique ⬅️ 0
+            🔚
+            k ⬆️
+         🔚
+         ❓ is_unique ⚖️ 1 👉
+            unique_count ⬆️
+         🔚
+         j ⬆️
+      🔚
+      should_update ⬅️ 0
+      ❓ unique_count 📉 best_unique 👉
+         should_update ⬅️ 1
+      🔚
+      ❓ unique_count ⚖️ best_unique 👉
+         best_len ⬅️ 📐 best_word
+         min_len ⬅️ word_len
+         ❓ best_len 📈 word_len 👉
+            min_len ⬅️ best_len
+         🔚
+         m ⬅️ 0
+         is_less ⬅️ 0
+         found_diff ⬅️ 0
+         🌀 min_len 👉
+            ❓ found_diff ⚖️ 0 👉
+               ❓ word[m] 📈 best_word[m] 👉
+                  is_less ⬅️ 1
+                  found_diff ⬅️ 1
+               🔚
+               ❓ word[m] 📉 best_word[m] 👉
+                  found_diff ⬅️ 1
+               🔚
+            🔚
+            m ⬆️
+         🔚
+         ❓ is_less ⚖️ 1 👉
+            should_update ⬅️ 1
+         🔚
+      🔚
+      ❓ should_update ⚖️ 1 👉
+         best_word ⬅️ word
+         best_unique ⬅️ unique_count
+      🔚
+      i ⬆️
+   🔚
+   ✅ best_word
+🔚
+>>> find_max([[110, 97, 109, 101], [111, 102], [115, 116, 114, 105, 110, 103]]) 
+[115, 116, 114, 105, 110, 103]
+>>> find_max(["name", "of", "string"]) 
+"string"
+>>> find_max(["name", "enam", "game"]) 
+"enam"
+>>> find_max(["aaaaaaa", "bb", "cc"]) 
+"aaaaaaa"
+>>> find_max(["abc", "cba"]) 
+"abc"
+>>> find_max(["play", "this", "game", "of", "footbott"]) 
+"footbott"
+>>> find_max(["we", "are", "gonna", "rock"]) 
+"gonna"
+>>> find_max(["we", "are", "a", "mad", "nation"]) 
+"nation"
+>>> find_max(["this", "is", "a", "prrk"]) 
+"this"
+>>> find_max(["b"]) 
+"b"
+>>> find_max(["play", "play", "play"]) 
+"play"

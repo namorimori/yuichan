@@ -1,0 +1,22 @@
+Use the standard library
+This is how to sort_numbers of numbers:
+   When isstring of numbers, then:
+      The answer is numbers
+   End when
+   Remember that n is numbers's length
+   Remember that i is 0
+   Do this n times:
+      Remember that j is 0
+      Do this diff of n and 1 times:
+         Remember that a is item j in numbers
+         Remember that b is item (sum of j and 1) in numbers
+         When a is more than b, then:
+            Remember that item j in numbers is b
+            Remember that item (sum of j and 1) in numbers is a
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is numbers
+Now you know

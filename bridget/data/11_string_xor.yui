@@ -1,0 +1,24 @@
+This is how to string_xor of a and b:
+   Remember that length is a's length
+   Remember that result is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char_a is item i in a
+      Remember that char_b is item i in b
+      When char_a is char_b, then:
+         Add result to 48
+      But, if not:
+         Add result to 49
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> string_xor of "010" and "110" 
+"100"
+>>> string_xor of "111000" and "101010" 
+"010010"
+>>> string_xor of "1" and "1" 
+"0"
+>>> string_xor of "0101" and "0000" 
+"0101"

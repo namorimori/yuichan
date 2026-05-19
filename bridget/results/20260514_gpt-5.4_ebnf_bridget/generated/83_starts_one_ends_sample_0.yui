@@ -1,0 +1,11 @@
+Use the standard library
+This is how to starts_one_ends of n:
+  When n is 1, then:
+    The answer is 1
+  End when
+  Remember that result is 1
+  Do this diff of n and 1 times:
+    Remember that result is product of result and 10
+  End do
+  The answer is sum of result and 8
+Now you know

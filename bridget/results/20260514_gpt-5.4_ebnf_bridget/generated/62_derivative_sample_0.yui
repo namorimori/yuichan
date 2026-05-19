@@ -1,0 +1,16 @@
+Use the standard library
+This is how to derivative of xs:
+  Remember that result is []
+  Remember that i is 1
+  Do this xs's length times:
+    When i is less than xs's length, then:
+      Remember that current is item i in xs
+      Remember that previous is item diff of i and 1 in xs
+      Add result to product of current and previous
+      Increase i
+    But, if not:
+      Leave the loop
+    End when
+  End do
+  The answer is result
+Now you know

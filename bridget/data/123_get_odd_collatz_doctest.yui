@@ -1,0 +1,8 @@
+>>> get_odd_collatz of 14 
+[1, 5, 7, 11, 13, 17]
+>>> get_odd_collatz of 5 
+[1, 5]
+>>> get_odd_collatz of 12 
+[1, 3, 5]
+>>> get_odd_collatz of 1 
+[1]

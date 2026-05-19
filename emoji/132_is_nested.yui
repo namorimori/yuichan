@@ -1,0 +1,79 @@
+🗝️ 📚
+🧩 is_nested(string) 👉
+   length ⬅️ 📐 string
+   opening ⬅️ []
+   closing ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ string[i]
+      ❓ char ⚖️ 91 👉
+         opening 🧲 i
+      🔚
+      ❗ 👉
+         closing 🧲 i
+      🔚
+      i ⬆️
+   🔚
+   close_len ⬅️ 📐 closing
+   reversed_closing ⬅️ []
+   i ⬅️ 0
+   🌀 close_len 👉
+      idx ⬅️ 差(差(close_len, i), 1)
+      reversed_closing 🧲 closing[idx]
+      i ⬆️
+   🔚
+   cnt ⬅️ 0
+   open_len ⬅️ 📐 opening
+   i ⬅️ 0
+   j ⬅️ 0
+   🌀 open_len 👉
+      ❓ j 📈 close_len 👉
+         open_idx ⬅️ opening[i]
+         close_idx ⬅️ reversed_closing[j]
+         ❓ open_idx 📈 close_idx 👉
+            cnt ⬆️
+            j ⬆️
+         🔚
+      🔚
+      i ⬆️
+   🔚
+   result ⬅️ 0
+   ❓ cnt 📉⚖️ 2 👉
+      result ⬅️ 1
+   🔚
+   ✅ result
+🔚
+>>> is_nested([91, 91, 93, 93]) 
+1
+>>> is_nested([93, 93, 93, 93, 93, 93, 91, 91, 91, 91, 91, 93]) 
+0
+>>> is_nested([93, 93]) 
+0
+>>> is_nested("[[]]") 
+1
+>>> is_nested("[]]]]]]][[[[[]") 
+0
+>>> is_nested("[][]") 
+0
+>>> is_nested("[]") 
+0
+>>> is_nested("[[[[]]]]") 
+1
+>>> is_nested("[]]]]]]]]]]") 
+0
+>>> is_nested("[][][[]]") 
+1
+>>> is_nested("[[]") 
+0
+>>> is_nested("[]]") 
+0
+>>> is_nested("[[]][[") 
+1
+>>> is_nested("[[][]]") 
+1
+>>> is_nested("") 
+0
+>>> is_nested("[[[[[[[[") 
+0
+>>> is_nested("]]]]]]]]") 
+0

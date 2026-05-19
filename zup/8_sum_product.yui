@@ -1,0 +1,29 @@
+Nav rem vaz
+Dum sum_product(numbers):
+   Kem 合計 par 0
+   Kem 積の値 par 1
+   Kem 長さ par numbers @kez
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 値 par numbers[i]
+      Kem 合計 par 和(合計, 値)
+      Kem 積の値 par 積(積の値, 値)
+      Rav i
+   Dam mup
+   Kem 結果 par [合計, 積の値]
+   Dup vem 結果
+Pam dum
+>>> sum_product([]) 
+[0, 1]
+>>> sum_product([1, 2, 3, 4]) 
+[10, 24]
+>>> sum_product([]) 
+[0, 1]
+>>> sum_product([1, 1, 1]) 
+[3, 1]
+>>> sum_product([100, 0]) 
+[100, 0]
+>>> sum_product([3, 5, 7]) 
+[15, 105]
+>>> sum_product([10]) 
+[10, 10]

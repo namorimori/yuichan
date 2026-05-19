@@ -1,0 +1,14 @@
+Use the standard library
+This is how to vowels_count of s:
+   Remember that vowels is "aeiouAEIOU"
+   Remember that count is 0
+   Remember that i is 0
+   Do this s's length times:
+      Remember that c is item i in s
+      When c is in vowels, then:
+         Increase count
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know

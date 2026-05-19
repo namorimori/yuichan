@@ -1,0 +1,45 @@
+🗝️ 📚
+🧩 poly(xs, x) 👉
+   result ⬅️ 0.000000
+   n ⬅️ 📐 xs
+   i ⬅️ 0
+   current_power ⬅️ 1.000000
+   🌀 n 👉
+      coeff ⬅️ 小数化(xs[i])
+      term ⬅️ 積(coeff, current_power)
+      result ⬅️ 和(result, term)
+      current_power ⬅️ 積(current_power, x)
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+🧩 find_zero(xs) 👉
+   a ⬅️ -10000.000000
+   b ⬅️ 10000.000000
+   poly_a ⬅️ poly(xs, a)
+   i ⬅️ 0
+   🌀 200 👉
+      mid ⬅️ 商(和(a, b), 2.000000)
+      poly_mid ⬅️ poly(xs, mid)
+      prod ⬅️ 積(poly_a, poly_mid)
+      ❓ prod 📉 0.000000 👉
+         a ⬅️ mid
+         poly_a ⬅️ poly_mid
+      🔚
+      ❗ 👉
+         b ⬅️ mid
+      🔚
+      i ⬆️
+   🔚
+   ✅ 商(和(a, b), 2.000000)
+🔚
+🧩 approx_zero(x) 👉
+   ax ⬅️ 絶対値(x)
+   result ⬅️ 0
+   ❓ ax 📈 0.001000 👉
+      result ⬅️ 1
+   🔚
+   ✅ result
+🔚
+>>> approx_zero(poly([1, 1], find_zero([1, 1]))) 
+1

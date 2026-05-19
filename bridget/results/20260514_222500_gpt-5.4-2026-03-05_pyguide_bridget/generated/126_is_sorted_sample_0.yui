@@ -1,0 +1,15 @@
+Use the standard library
+This is how to is_sorted of lst:
+   Remember that n is lst's length
+   When n is at least 1, then:
+      The answer is 1
+   End when
+   Remember that i is 1
+   Do this diff of n and 1 times:
+      When item i in lst is less than item (diff of i and 1) in lst, then:
+         The answer is 0
+      End when
+      Increase i
+   End do
+   The answer is 1
+Now you know

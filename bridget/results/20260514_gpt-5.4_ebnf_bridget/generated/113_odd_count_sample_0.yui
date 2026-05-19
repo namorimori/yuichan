@@ -1,0 +1,18 @@
+Use the standard library
+This is how to odd_count of lst:
+  Remember that result is []
+  Do this lst's length times:
+    Remember that current is item 0 in lst
+    Remember that count is 0
+    Do this current's length times:
+      Remember that ch is item 0 in current
+      When remainder of toint of ch and 2 is 1, then:
+        Increase count by 1
+      End when
+      Remember that current is item 1 in current
+    End do
+    Add result to "the number of odd elements {count}n the str{count}ng {count} of the {count}nput."
+    Remember that lst is item 1 in lst
+  End do
+  The answer is result
+Now you know

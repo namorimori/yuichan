@@ -1,0 +1,97 @@
+🗝️ 📚
+🧩 sorted_list_sum(lst) 👉
+   length ⬅️ 📐 lst
+   i ⬅️ 0
+   🌀 length 👉
+      j ⬅️ 0
+      limit ⬅️ 差(差(length, i), 1)
+      🌀 limit 👉
+         next_j ⬅️ 和(j, 1)
+         word1 ⬅️ lst[j]
+         word2 ⬅️ lst[next_j]
+         len1 ⬅️ 📐 word1
+         len2 ⬅️ 📐 word2
+         min_len ⬅️ len1
+         ❓ len2 📈 len1 👉
+            min_len ⬅️ len2
+         🔚
+         should_swap ⬅️ 0
+         k ⬅️ 0
+         found_diff ⬅️ 0
+         🌀 min_len 👉
+            ❓ found_diff ⚖️ 0 👉
+               ❓ word1[k] 📉 word2[k] 👉
+                  should_swap ⬅️ 1
+                  found_diff ⬅️ 1
+               🔚
+               ❓ word1[k] 📈 word2[k] 👉
+                  found_diff ⬅️ 1
+               🔚
+            🔚
+            k ⬆️
+         🔚
+         ❓ found_diff ⚖️ 0 👉
+            ❓ len1 📉 len2 👉
+               should_swap ⬅️ 1
+            🔚
+         🔚
+         ❓ should_swap ⚖️ 1 👉
+            temp ⬅️ lst[j]
+            lst[j] ⬅️ lst[next_j]
+            lst[next_j] ⬅️ temp
+         🔚
+         j ⬆️
+      🔚
+      i ⬆️
+   🔚
+   filtered ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      word ⬅️ lst[i]
+      word_len ⬅️ 📐 word
+      remainder ⬅️ 剰余(word_len, 2)
+      ❓ remainder ⚖️ 0 👉
+         filtered 🧲 word
+      🔚
+      i ⬆️
+   🔚
+   filtered_len ⬅️ 📐 filtered
+   i ⬅️ 0
+   🌀 filtered_len 👉
+      j ⬅️ 0
+      limit ⬅️ 差(差(filtered_len, i), 1)
+      🌀 limit 👉
+         next_j ⬅️ 和(j, 1)
+         len1 ⬅️ 📐 filtered[j]
+         len2 ⬅️ 📐 filtered[next_j]
+         should_swap ⬅️ 0
+         ❓ len1 📉 len2 👉
+            should_swap ⬅️ 1
+         🔚
+         ❓ should_swap ⚖️ 1 👉
+            temp ⬅️ filtered[j]
+            filtered[j] ⬅️ filtered[next_j]
+            filtered[next_j] ⬅️ temp
+         🔚
+         j ⬆️
+      🔚
+      i ⬆️
+   🔚
+   ✅ filtered
+🔚
+>>> sorted_list_sum([[97, 97], [97], [97, 97, 97]]) 
+[[97, 97]]
+>>> sorted_list_sum(["aa", "a", "aaa"]) 
+["aa"]
+>>> sorted_list_sum(["school", "AI", "asdf", "b"]) 
+["AI", "asdf", "school"]
+>>> sorted_list_sum(["d", "b", "c", "a"]) 
+[]
+>>> sorted_list_sum(["d", "dcba", "abcd", "a"]) 
+["abcd", "dcba"]
+>>> sorted_list_sum(["AI", "ai", "au"]) 
+["AI", "ai", "au"]
+>>> sorted_list_sum(["a", "b", "b", "c", "c", "a"]) 
+[]
+>>> sorted_list_sum(["aaaa", "bbbb", "dd", "cc"]) 
+["cc", "dd", "aaaa", "bbbb"]

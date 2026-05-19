@@ -1,0 +1,21 @@
+Use the standard library
+
+This is how to flip_case of string:
+   Remember that i is 0
+   Do this string's length times:
+      Remember that c is item i in string
+      When c is at least 90, then:
+         When c is at most 65, then:
+            Remember that item i in string is sum of c and 32
+         But, if not:
+            When c is at least 122, then:
+               When c is at most 97, then:
+                  Remember that item i in string is diff of c and 32
+               End when
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   The answer is string
+Now you know

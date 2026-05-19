@@ -1,0 +1,39 @@
+🗝️ 📚
+🧩 remove_duplicates(numbers) 👉
+   長さ ⬅️ 📐 numbers
+   カウント ⬅️ []
+   i ⬅️ 0
+   🌀 長さ 👉
+      カウント 🧲 0
+      i ⬆️
+   🔚
+   i ⬅️ 0
+   🌀 長さ 👉
+      値 ⬅️ numbers[i]
+      j ⬅️ 0
+      🌀 長さ 👉
+         ❓ numbers[j] ⚖️ 値 👉
+            カウント[i] ⬆️
+         🔚
+         j ⬆️
+      🔚
+      i ⬆️
+   🔚
+   結果 ⬅️ []
+   i ⬅️ 0
+   🌀 長さ 👉
+      ❓ カウント[i] ⚖️ 1 👉
+         結果 🧲 numbers[i]
+      🔚
+      i ⬆️
+   🔚
+   ✅ 結果
+🔚
+>>> remove_duplicates([1, 2, 3, 2, 4]) 
+[1, 3, 4]
+>>> remove_duplicates([]) 
+[]
+>>> remove_duplicates([1, 2, 3, 4]) 
+[1, 2, 3, 4]
+>>> remove_duplicates([1, 2, 3, 2, 4, 3, 5]) 
+[1, 4, 5]

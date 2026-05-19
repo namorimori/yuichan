@@ -1,0 +1,45 @@
+This is how to is_palindrome of text:
+   Remember that length is text's length
+   Remember that i is 0
+   Remember that result is 1
+   Do this length times:
+      When i is less than length, then:
+         Remember that left is item i in text
+         Remember that right_idx is length
+         Decrease right_idx
+         Remember that j is 0
+         Do this i times:
+            Decrease right_idx
+            Increase j
+         End do
+         Remember that right is item right_idx in text
+         When left is not right, then:
+            Remember that result is 0
+         End when
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> is_palindrome of "" 
+1
+>>> is_palindrome of "aba" 
+1
+>>> is_palindrome of "aaaaa" 
+1
+>>> is_palindrome of "zbcd" 
+0
+>>> is_palindrome of "" 
+1
+>>> is_palindrome of "aba" 
+1
+>>> is_palindrome of "aaaaa" 
+1
+>>> is_palindrome of "zbcd" 
+0
+>>> is_palindrome of "xywyx" 
+1
+>>> is_palindrome of "xywyz" 
+0
+>>> is_palindrome of "xywzx" 
+0

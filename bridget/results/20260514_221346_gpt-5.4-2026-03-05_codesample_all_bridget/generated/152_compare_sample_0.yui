@@ -1,0 +1,14 @@
+Use the standard library
+This is how to compare of game and guess:
+   Remember that result is []
+   Remember that n is game's length
+   Remember that i is 0
+   Do this n times:
+      Remember that g is item i in game
+      Remember that x is item i in guess
+      Remember that d is abs of (diff of g and x)
+      Add result to d
+      Increase i
+   End do
+   The answer is result
+Now you know

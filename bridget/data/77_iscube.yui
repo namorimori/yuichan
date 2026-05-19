@@ -1,0 +1,45 @@
+Use the standard library
+This is how to iscube of a:
+   Remember that abs_a is abs of a
+   Remember that result is 0
+   Remember that i is 0
+   Do this 100 times:
+      Remember that cube is product of (product of i and i) and i
+      When cube is abs_a, then:
+         Remember that result is 1
+      End when
+      When cube is more than abs_a, then:
+         Remember that i is 100
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> iscube of 1 
+1
+>>> iscube of 2 
+0
+>>> iscube of -1 
+1
+>>> iscube of 64 
+1
+>>> iscube of 0 
+1
+>>> iscube of 180 
+0
+>>> iscube of 1 
+1
+>>> iscube of 2 
+0
+>>> iscube of -1 
+1
+>>> iscube of 64 
+1
+>>> iscube of 180 
+0
+>>> iscube of 1000 
+1
+>>> iscube of 0 
+1
+>>> iscube of 1729 
+0

@@ -1,0 +1,46 @@
+Use the standard library
+This is how to minSubArraySum of nums:
+   Remember that length is nums's length
+   Remember that min_sum is item 0 in nums
+   Remember that current_sum is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that current_sum is sum of current_sum and item i in nums
+      When current_sum is less than min_sum, then:
+         Remember that min_sum is current_sum
+      End when
+      When current_sum is more than 0, then:
+         Remember that current_sum is 0
+      End when
+      Increase i
+   End do
+   The answer is min_sum
+Now you know
+>>> minSubArraySum of [2, 3, 4, 1, 2, 4] 
+1
+>>> minSubArraySum of [-1, -2, -3] 
+-6
+>>> minSubArraySum of [2, 3, 4, 1, 2, 4] 
+1
+>>> minSubArraySum of [-1, -2, -3] 
+-6
+>>> minSubArraySum of [-1, -2, -3, 2, -10] 
+-14
+>>> minSubArraySum of [-9999999999999999] 
+-9999999999999999
+>>> minSubArraySum of [0, 10, 20, 1000000] 
+0
+>>> minSubArraySum of [-1, -2, -3, 10, -5] 
+-6
+>>> minSubArraySum of [100, -1, -2, -3, 10, -5] 
+-6
+>>> minSubArraySum of [10, 11, 13, 8, 3, 4] 
+3
+>>> minSubArraySum of [100, -33, 32, -1, 0, -2] 
+-33
+>>> minSubArraySum of [-10] 
+-10
+>>> minSubArraySum of [7] 
+7
+>>> minSubArraySum of [1, -1] 
+-1

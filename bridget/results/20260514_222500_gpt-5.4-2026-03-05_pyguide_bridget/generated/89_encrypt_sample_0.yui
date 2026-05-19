@@ -1,0 +1,59 @@
+Use the standard library
+This is how to encrypt of s:
+   Remember that result is []
+   Remember that i is 0
+   Do this s's length times:
+      Remember that c is item i in s
+      When c is 97, then:
+         Add result to 101
+      But, if not:
+         When c is 98, then:
+            Add result to 114
+         But, if not:
+            When c is 99, then:
+               Add result to 116
+            But, if not:
+               When c is 100, then:
+                  Add result to 104
+               But, if not:
+                  When c is 101, then:
+                     Add result to 121
+                  But, if not:
+                     When c is 102, then:
+                        Add result to 106
+                     But, if not:
+                        When c is 103, then:
+                           Add result to 107
+                        But, if not:
+                           When c is 104, then:
+                              Add result to 108
+                           But, if not:
+                              When c is 105, then:
+                                 Add result to 117
+                              But, if not:
+                                 When c is 106, then:
+                                    Add result to 110
+                                 But, if not:
+                                    When c is 107, then:
+                                       Add result to 111
+                                    But, if not:
+                                       When c is 108, then:
+                                          Add result to 112
+                                       But, if not:
+                                          Add result to c
+                                       End when
+                                    End when
+                                 End when
+                              End when
+                           End when
+                        End when
+                     End when
+                  End when
+               End when
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know

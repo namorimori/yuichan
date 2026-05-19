@@ -1,0 +1,25 @@
+Use the standard library
+This is how to histogram of test:
+   Remember that counts is {}
+   Remember that i is 0
+   Do this test's length times:
+      Remember that c is item i in test
+      When c is in counts, then:
+         Increase item c in counts
+      But, if not:
+         Remember that item c in counts is 1
+      End when
+      Increase i
+   End do
+   Remember that result is []
+   Remember that keys is unique_chars of test
+   Remember that j is 0
+   Do this keys's length times:
+      Remember that k is item j in keys
+      Add result to [k, item k in counts]
+      Increase j
+   End do
+   The answer is result
+Now you know
+>>> histogram of ""
+[]

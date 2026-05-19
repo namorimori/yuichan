@@ -1,0 +1,51 @@
+Nav rem vaz
+Dum fix_spaces(text):
+   Kem length par text @kez
+   Kem result par []
+   Kem i par 0
+   Mup dum 200 pag:
+      Nev i dup length ger:
+         Kem char par text[i]
+         Nev char paz 32 ger:
+            Kem space_count par 1
+            Kem j par 和(i, 1)
+            Mup dum 100 pag:
+               Nev j dup length ger:
+                  Nev text[j] paz 32 ger:
+                     Rav space_count
+                     Rav j
+                  Zum:
+                     Kem j par length
+                  Dam nev
+               Dam nev
+            Dam mup
+            Nev space_count dur 2 ger:
+               Kem k par 0
+               Mup dum space_count pag:
+                  Mev result naz 95
+                  Rav k
+               Dam mup
+            Zum:
+               Mev result naz 45
+            Dam nev
+            Kem i par 和(i, 差(space_count, 1))
+         Zum:
+            Mev result naz char
+         Dam nev
+         Rav i
+      Dam nev
+   Dam mup
+   Dup vem result
+Pam dum
+>>> fix_spaces([69, 120, 97, 109, 112, 108, 101]) 
+[69, 120, 97, 109, 112, 108, 101]
+>>> fix_spaces("Example") 
+"Example"
+>>> fix_spaces("Mudasir Hanif ") 
+"Mudasir_Hanif_"
+>>> fix_spaces("Yellow Yellow  Dirty  Fellow") 
+"Yellow_Yellow__Dirty__Fellow"
+>>> fix_spaces("Exa   mple") 
+"Exa-mple"
+>>> fix_spaces("   Exa 1 2 2 mple") 
+"-Exa_1_2_2_mple"

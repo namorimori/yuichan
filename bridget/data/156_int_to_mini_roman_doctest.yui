@@ -1,0 +1,28 @@
+>>> int_to_mini_roman of 19 
+"xix"
+>>> int_to_mini_roman of 152 
+"clii"
+>>> int_to_mini_roman of 251 
+"ccli"
+>>> int_to_mini_roman of 426 
+"cdxxvi"
+>>> int_to_mini_roman of 500 
+"d"
+>>> int_to_mini_roman of 1 
+"i"
+>>> int_to_mini_roman of 4 
+"iv"
+>>> int_to_mini_roman of 43 
+"xliii"
+>>> int_to_mini_roman of 90 
+"xc"
+>>> int_to_mini_roman of 94 
+"xciv"
+>>> int_to_mini_roman of 532 
+"dxxxii"
+>>> int_to_mini_roman of 900 
+"cm"
+>>> int_to_mini_roman of 994 
+"cmxciv"
+>>> int_to_mini_roman of 1000 
+"m"

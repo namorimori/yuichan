@@ -1,0 +1,11 @@
+Use the standard library
+This is how to add of x and y:
+   The answer is sum of x and y
+Now you know
+
+>>> add of 2 and 3
+5
+>>> add of 5 and 7
+12
+>>> add of 0 and 1
+1

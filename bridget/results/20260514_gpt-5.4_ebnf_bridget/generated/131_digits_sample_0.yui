@@ -1,0 +1,10 @@
+Use the standard library
+This is how to digits of n:
+  Remember that total is 0
+  Remember that text is tostring of n
+  Do this text's length times:
+    Increase total by item 0 in text
+    Remember that text is item 1 in text
+  End do
+  The answer is total
+Now you know

@@ -1,0 +1,14 @@
+>>> same_chars of "eabcdzzzz" and "dddzzzzzzzddeddabc" 
+1
+>>> same_chars of "abcd" and "dddddddabc" 
+1
+>>> same_chars of "dddddddabc" and "abcd" 
+1
+>>> same_chars of "eabcd" and "dddddddabc" 
+0
+>>> same_chars of "abcd" and "dddddddabcf" 
+0
+>>> same_chars of "eabcdzzzz" and "dddzzzzzzzddddabc" 
+0
+>>> same_chars of "aabb" and "aaccc" 
+0

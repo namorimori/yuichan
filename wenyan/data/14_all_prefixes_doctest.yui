@@ -1,0 +1,6 @@
+>>> 施前綴於「」
+[]
+>>> 施前綴於「asdfgh」
+[「a」,「as」,「asd」,「asdf」,「asdfg」,「asdfgh」]
+>>> 施前綴於「WWW」
+[「W」,「WW」,「WWW」]

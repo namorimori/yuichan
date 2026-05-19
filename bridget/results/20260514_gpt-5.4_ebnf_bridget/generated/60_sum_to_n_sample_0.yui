@@ -1,0 +1,9 @@
+Use the standard library
+This is how to sum_to_n of n:
+  Remember that total is 0
+  Do this n times:
+    Increase total by 1
+    Remember that total is sum of total and diff of n and total
+  End do
+  The answer is quotient of product of n and sum of n and 1 and 2
+Now you know

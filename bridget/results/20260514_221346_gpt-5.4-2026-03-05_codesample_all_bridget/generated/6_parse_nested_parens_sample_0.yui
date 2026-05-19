@@ -1,0 +1,29 @@
+Use the standard library
+This is how to parse_nested_parens of paren_string:
+   Remember that result is []
+   Remember that depth is 0
+   Remember that best is 0
+   Remember that i is 0
+   Do this paren_string's length times:
+      Remember that c is item i in paren_string
+      When c is 40, then:
+         Increase depth
+         When depth is more than best, then:
+            Remember that best is depth
+         End when
+      End when
+      When c is 41, then:
+         Decrease depth
+         When depth is 0, then:
+            Add result to best
+            Remember that best is 0
+         End when
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> parse_nested_parens of "(()()) ((())) () ((())()())"
+[2, 3, 1, 3]
+>>> parse_nested_parens of "() (()) ((())) (((())))"
+[1, 2, 3, 4]

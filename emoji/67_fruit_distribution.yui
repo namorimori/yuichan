@@ -1,0 +1,93 @@
+🗝️ 📚
+🧩 fruit_distribution(s, n) 👉
+   length ⬅️ 📐 s
+   numbers ⬅️ []
+   current_num ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ s[i]
+      is_digit ⬅️ 0
+      ❓ char 📉 47 👉
+         ❓ char 📈 58 👉
+            is_digit ⬅️ 1
+         🔚
+      🔚
+      ❓ is_digit ⚖️ 1 👉
+         current_num 🧲 char
+      🔚
+      ❗ 👉
+         ❓ 📐 current_num 📉 0 👉
+            num ⬅️ 0
+            j ⬅️ 0
+            cn_len ⬅️ 📐 current_num
+            🌀 cn_len 👉
+               digit ⬅️ 差(current_num[j], 48)
+               num ⬅️ 和(積(num, 10), digit)
+               j ⬆️
+            🔚
+            numbers 🧲 num
+            current_num ⬅️ []
+         🔚
+      🔚
+      i ⬆️
+   🔚
+   ❓ 📐 current_num 📉 0 👉
+      num ⬅️ 0
+      j ⬅️ 0
+      cn_len ⬅️ 📐 current_num
+      🌀 cn_len 👉
+         digit ⬅️ 差(current_num[j], 48)
+         num ⬅️ 和(積(num, 10), digit)
+         j ⬆️
+      🔚
+      numbers 🧲 num
+   🔚
+   total ⬅️ 0
+   num_len ⬅️ 📐 numbers
+   i ⬅️ 0
+   🌀 num_len 👉
+      total ⬅️ 和(total, numbers[i])
+      i ⬆️
+   🔚
+   result ⬅️ 差(n, total)
+   ✅ result
+🔚
+>>> fruit_distribution([
+   53,
+   32,
+   97,
+   112,
+   112,
+   108,
+   101,
+   115,
+   32,
+   97,
+   110,
+   100,
+   32,
+   54,
+   32,
+   111,
+   114,
+   97,
+   110,
+   103,
+   101,
+   115
+], 19) 
+8
+>>> fruit_distribution("5 apples and 6 oranges", 19) 
+8
+>>> fruit_distribution("5 apples and 6 oranges", 21) 
+10
+>>> fruit_distribution("0 apples and 1 oranges", 3) 
+2
+>>> fruit_distribution("1 apples and 0 oranges", 3) 
+2
+>>> fruit_distribution("2 apples and 3 oranges", 100) 
+95
+>>> fruit_distribution("2 apples and 3 oranges", 5) 
+0
+>>> fruit_distribution("1 apples and 100 oranges", 120) 
+19

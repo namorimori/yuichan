@@ -1,0 +1,36 @@
+Use the standard library
+This is how to check_dict_case of dict:
+  Remember that has_upper is no
+  Remember that has_lower is no
+  Remember that i is 0
+  Do this dict's length times:
+    Remember that pair is item i in dict
+    Remember that key is item 0 in pair
+    Remember that j is 0
+    Do this key's length times:
+      Remember that code is item j in key
+      When code is at least 90, then:
+        When code is at most 65, then:
+          Remember that has_upper is yes
+        End when
+      End when
+      When code is at least 122, then:
+        When code is at most 97, then:
+          Remember that has_lower is yes
+        End when
+      End when
+      Increase j
+    End do
+    Increase i
+  End do
+  When has_upper is yes, then:
+    When has_lower is yes, then:
+      The answer is 0
+    End when
+    The answer is 1
+  End when
+  When has_lower is yes, then:
+    The answer is 1
+  End when
+  The answer is 0
+Now you know

@@ -1,0 +1,20 @@
+Use the standard library
+This is how to car_race_collision of n:
+   The answer is product of n and n
+Now you know
+>>> car_race_collision of 2 
+4
+>>> car_race_collision of 3 
+9
+>>> car_race_collision of 10 
+100
+>>> car_race_collision of 2 
+4
+>>> car_race_collision of 3 
+9
+>>> car_race_collision of 4 
+16
+>>> car_race_collision of 8 
+64
+>>> car_race_collision of 10 
+100

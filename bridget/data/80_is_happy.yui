@@ -1,0 +1,57 @@
+Use the standard library
+This is how to is_happy of s:
+   Remember that length is s's length
+   Remember that result is 1
+   When length is less than 3, then:
+      Remember that result is 0
+      The answer is result
+   End when
+   Remember that i is 0
+   Remember that limit is diff of length and 2
+   Do this limit times:
+      Remember that idx1 is sum of i and 1
+      Remember that idx2 is sum of i and 2
+      Remember that char0 is item i in s
+      Remember that char1 is item idx1 in s
+      Remember that char2 is item idx2 in s
+      When char0 is char1, then:
+         Remember that result is 0
+      End when
+      When char1 is char2, then:
+         Remember that result is 0
+      End when
+      When char0 is char2, then:
+         Remember that result is 0
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> is_happy of [97] 
+0
+>>> is_happy of [97, 97] 
+0
+>>> is_happy of [97, 98, 99, 100] 
+1
+>>> is_happy of [97, 97, 98, 98] 
+0
+>>> is_happy of [97, 100, 98] 
+1
+>>> is_happy of [120, 121, 121] 
+0
+>>> is_happy of "a" 
+0
+>>> is_happy of "aa" 
+0
+>>> is_happy of "abcd" 
+1
+>>> is_happy of "aabb" 
+0
+>>> is_happy of "adb" 
+1
+>>> is_happy of "xyy" 
+0
+>>> is_happy of "iopaxpoi" 
+1
+>>> is_happy of "iopaxioi" 
+0

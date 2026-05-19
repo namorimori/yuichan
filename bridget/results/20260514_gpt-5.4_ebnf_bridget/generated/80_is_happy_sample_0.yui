@@ -1,0 +1,7 @@
+Use the standard library
+This is how to is_happy of s:
+  When s's length is less than 4, then:
+    The answer is 0
+  End when
+  The answer is 1
+Now you know

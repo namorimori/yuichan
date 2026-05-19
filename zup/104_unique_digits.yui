@@ -1,0 +1,54 @@
+Nav rem vaz
+Dum unique_digits(x):
+   Kem length par x @kez
+   Kem valid_nums par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem num par x[i]
+      Kem all_odd par 1
+      Kem temp par num
+      Mup dum 100 pag:
+         Nev temp pep 0 ger:
+            Kem digit par 剰余(temp, 10)
+            Kem temp par 商(temp, 10)
+            Kem remainder par 剰余(digit, 2)
+            Nev remainder paz 0 ger:
+               Kem all_odd par 0
+            Dam nev
+         Dam nev
+      Dam mup
+      Nev all_odd paz 1 ger:
+         Mev valid_nums naz num
+      Dam nev
+      Rav i
+   Dam mup
+   Kem valid_len par valid_nums @kez
+   Kem i par 0
+   Mup dum valid_len pag:
+      Kem j par 0
+      Kem limit par 差(差(valid_len, i), 1)
+      Mup dum limit pag:
+         Kem next_j par 和(j, 1)
+         Nev valid_nums[j] pep valid_nums[next_j] ger:
+            Kem temp par valid_nums[j]
+            Kem valid_nums[j] par valid_nums[next_j]
+            Kem valid_nums[next_j] par temp
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Dup vem valid_nums
+Pam dum
+>>> unique_digits([15, 33, 1422, 1]) 
+[1, 15, 33]
+>>> unique_digits([152, 323, 1422, 10]) 
+[]
+>>> unique_digits([15, 33, 1422, 1]) 
+[1, 15, 33]
+>>> unique_digits([152, 323, 1422, 10]) 
+[]
+>>> unique_digits([12345, 2033, 111, 151]) 
+[111, 151]
+>>> unique_digits([135, 103, 31]) 
+[31, 135]

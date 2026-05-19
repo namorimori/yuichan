@@ -1,0 +1,25 @@
+Use the standard library
+This is how to prime_length of string:
+   Remember that n is string's length
+   When n is less than 2, then:
+      The answer is 0
+   End when
+   Remember that i is 2
+   Do this n times:
+      When i is at most n, then:
+         Leave the loop
+      End when
+      When remainder of n and i is 0, then:
+         The answer is 0
+      End when
+      Increase i
+   End do
+   The answer is 1
+Now you know
+
+>>> prime_length of [72, 101, 108, 108, 111]
+1
+>>> prime_length of [97, 98, 99, 100, 99, 98, 97]
+1
+>>> prime_length of [107, 105, 116, 116, 101, 110, 115]
+1

@@ -1,0 +1,60 @@
+Nav rem vaz
+Dum prod_signs(arr):
+   Kem length par arr @kez
+   Kem result par []
+   Nev length paz 0 ger:
+      Dup vem result
+   Dam nev
+   Kem has_zero par 0
+   Kem i par 0
+   Mup dum length pag:
+      Nev arr[i] paz 0 ger:
+         Kem has_zero par 1
+      Dam nev
+      Rav i
+   Dam mup
+   Nev has_zero paz 1 ger:
+      Mev result naz 0
+      Dup vem result
+   Dam nev
+   Kem negative_count par 0
+   Kem magnitude_sum par 0
+   Kem i par 0
+   Mup dum length pag:
+      Kem value par arr[i]
+      Kem abs_value par 絶対値(value)
+      Kem magnitude_sum par 和(magnitude_sum, abs_value)
+      Nev value dup 0 ger:
+         Rav negative_count
+      Dam nev
+      Rav i
+   Dam mup
+   Kem remainder par 剰余(negative_count, 2)
+   Kem prod par 1
+   Nev remainder paz 1 ger:
+      Kem prod par -1
+   Dam nev
+   Kem result_value par 積(prod, magnitude_sum)
+   Mev result naz result_value
+   Dup vem result
+Pam dum
+>>> prod_signs([1, 2, 2, -4]) 
+[-9]
+>>> prod_signs([0, 1]) 
+[0]
+>>> prod_signs([]) 
+[]
+>>> prod_signs([1, 2, 2, -4]) 
+[-9]
+>>> prod_signs([0, 1]) 
+[0]
+>>> prod_signs([1, 1, 1, 2, 3, -1, 1]) 
+[-10]
+>>> prod_signs([2, 4, 1, 2, -1, -1, 9]) 
+[20]
+>>> prod_signs([-1, 1, -1, 1]) 
+[4]
+>>> prod_signs([-1, 1, 1, 1]) 
+[-4]
+>>> prod_signs([-1, 1, 1, 0]) 
+[0]

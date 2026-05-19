@@ -1,0 +1,25 @@
+This is how to get_positive of l:
+   Remember that result is []
+   Remember that i is 0
+   Remember that length is l's length
+   Do this length times:
+      Remember that value is item i in l
+      When value is more than 0, then:
+         Add result to value
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> get_positive of [-1, 2, -4, 5, 6] 
+[2, 5, 6]
+>>> get_positive of [5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10] 
+[5, 3, 2, 3, 9, 123, 1]
+>>> get_positive of [-1, -2, 4, 5, 6] 
+[4, 5, 6]
+>>> get_positive of [5, 3, -5, 2, 3, 3, 9, 0, 123, 1, -10] 
+[5, 3, 2, 3, 3, 9, 123, 1]
+>>> get_positive of [-1, -2] 
+[]
+>>> get_positive of [] 
+[]

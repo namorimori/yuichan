@@ -1,0 +1,31 @@
+Nav rem vaz
+Dum largest_divisor(n):
+   Kem i par 差(n, 1)
+   Kem 結果 par 1
+   Kem 見つかった par 0
+   Mup dum n pag:
+      Nev 見つかった paz 0 ger:
+         Nev i pep 0 ger:
+            Kem 余り par 剰余(n, i)
+            Nev 余り paz 0 ger:
+               Kem 結果 par i
+               Kem 見つかった par 1
+            Dam nev
+         Dam nev
+         Zar i
+      Dam nev
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> largest_divisor(15) 
+5
+>>> largest_divisor(3) 
+1
+>>> largest_divisor(7) 
+1
+>>> largest_divisor(10) 
+5
+>>> largest_divisor(100) 
+50
+>>> largest_divisor(49) 
+7

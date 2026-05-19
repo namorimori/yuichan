@@ -1,0 +1,38 @@
+Use the standard library
+This is how to words_in_sentence of sentence:
+  When isarray of sentence is yes, then:
+    Remember that text is ""
+    Remember that i is 0
+    Do this sentence's length times:
+      Remember that text is "{text}{tostring of item i in sentence}"
+      Increase i by 1
+    End do
+  But, if not:
+    Remember that text is sentence
+  End when
+  Remember that words is []
+  Remember that current is ""
+  Remember that i is 0
+  Do this text's length times:
+    Remember that ch is item i in text
+    When ch is " ", then:
+      When current is not "", then:
+        Add words to current
+        Remember that current is ""
+      End when
+    But, if not:
+      Remember that current is "{current}{ch}"
+    End when
+    Increase i by 1
+  End do
+  When current is not "", then:
+    Add words to current
+  End when
+  When words' length is 4, then:
+    The answer is item 1 in words
+  But, if not:
+    When words' length is 3, then:
+      The answer is "{item 1 in words} {item 2 in words}"
+    End when
+  End when
+Now you know

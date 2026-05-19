@@ -1,0 +1,15 @@
+Use the standard library
+This is how to is_happy of s:
+   Remember that n is s's length
+   When n is less than 2, then:
+      The answer is 0
+   End when
+   Remember that i is 1
+   Do this diff of n and 1 times:
+      When item i in s is at most item (diff of i and 1) in s, then:
+         The answer is 0
+      End when
+      Increase i
+   End do
+   The answer is 1
+Now you know

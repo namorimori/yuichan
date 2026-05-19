@@ -1,0 +1,14 @@
+>>> fruit_distribution of "5 apples and 6 oranges" and 19 
+8
+>>> fruit_distribution of "5 apples and 6 oranges" and 21 
+10
+>>> fruit_distribution of "0 apples and 1 oranges" and 3 
+2
+>>> fruit_distribution of "1 apples and 0 oranges" and 3 
+2
+>>> fruit_distribution of "2 apples and 3 oranges" and 100 
+95
+>>> fruit_distribution of "2 apples and 3 oranges" and 5 
+0
+>>> fruit_distribution of "1 apples and 100 oranges" and 120 
+19

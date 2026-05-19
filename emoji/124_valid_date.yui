@@ -1,0 +1,123 @@
+🗝️ 📚
+🧩 valid_date(date) 👉
+   length ⬅️ 📐 date
+   result ⬅️ 0
+   ❓ length 🚫⚖️ 10 👉
+      ✅ result
+   🔚
+   month_str ⬅️ []
+   day_str ⬅️ []
+   year_str ⬅️ []
+   ❓ length ⚖️ 10 👉
+      month_str 🧲 date[0]
+      month_str 🧲 date[1]
+      day_str 🧲 date[3]
+      day_str 🧲 date[4]
+      year_str 🧲 date[6]
+      year_str 🧲 date[7]
+      year_str 🧲 date[8]
+      year_str 🧲 date[9]
+   🔚
+   month ⬅️ 和(積(10, 差(month_str[0], 48)), 差(month_str[1], 48))
+   day ⬅️ 和(積(10, 差(day_str[0], 48)), 差(day_str[1], 48))
+   valid ⬅️ 1
+   ❓ month 📈 1 👉
+      valid ⬅️ 0
+   🔚
+   ❓ month 📉 12 👉
+      valid ⬅️ 0
+   🔚
+   ❓ day 📈 1 👉
+      valid ⬅️ 0
+   🔚
+   ❓ valid ⚖️ 1 👉
+      is_31_day_month ⬅️ 0
+      ❓ month ⚖️ 1 👉
+         is_31_day_month ⬅️ 1
+      🔚
+      ❓ month ⚖️ 3 👉
+         is_31_day_month ⬅️ 1
+      🔚
+      ❓ month ⚖️ 5 👉
+         is_31_day_month ⬅️ 1
+      🔚
+      ❓ month ⚖️ 7 👉
+         is_31_day_month ⬅️ 1
+      🔚
+      ❓ month ⚖️ 8 👉
+         is_31_day_month ⬅️ 1
+      🔚
+      ❓ month ⚖️ 10 👉
+         is_31_day_month ⬅️ 1
+      🔚
+      ❓ month ⚖️ 12 👉
+         is_31_day_month ⬅️ 1
+      🔚
+      is_30_day_month ⬅️ 0
+      ❓ month ⚖️ 4 👉
+         is_30_day_month ⬅️ 1
+      🔚
+      ❓ month ⚖️ 6 👉
+         is_30_day_month ⬅️ 1
+      🔚
+      ❓ month ⚖️ 9 👉
+         is_30_day_month ⬅️ 1
+      🔚
+      ❓ month ⚖️ 11 👉
+         is_30_day_month ⬅️ 1
+      🔚
+      ❓ month ⚖️ 2 👉
+         ❓ day 📉 29 👉
+            valid ⬅️ 0
+         🔚
+      🔚
+      ❓ is_31_day_month ⚖️ 1 👉
+         ❓ day 📉 31 👉
+            valid ⬅️ 0
+         🔚
+      🔚
+      ❓ is_30_day_month ⚖️ 1 👉
+         ❓ day 📉 30 👉
+            valid ⬅️ 0
+         🔚
+      🔚
+   🔚
+   result ⬅️ valid
+   ✅ result
+🔚
+>>> valid_date([48, 51, 45, 49, 49, 45, 50, 48, 48, 48]) 
+1
+>>> valid_date([49, 53, 45, 48, 49, 45, 50, 48, 49, 50]) 
+0
+>>> valid_date("03-11-2000") 
+1
+>>> valid_date("15-01-2012") 
+0
+>>> valid_date("04-0-2040") 
+0
+>>> valid_date("06-04-2020") 
+1
+>>> valid_date("01-01-2007") 
+1
+>>> valid_date("03-32-2011") 
+0
+>>> valid_date("") 
+0
+>>> valid_date("04-31-3000") 
+0
+>>> valid_date("06-06-2005") 
+1
+>>> valid_date("21-31-2000") 
+0
+>>> valid_date("04-12-2003") 
+1
+>>> valid_date("04122003") 
+0
+>>> valid_date("20030412") 
+0
+>>> valid_date("2003-04") 
+0
+>>> valid_date("2003-04-12") 
+0
+>>> valid_date("04-2003") 
+0

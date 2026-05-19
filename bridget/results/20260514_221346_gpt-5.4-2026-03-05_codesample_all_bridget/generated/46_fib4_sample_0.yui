@@ -1,0 +1,26 @@
+Use the standard library
+This is how to fib4 of n:
+   When n is less than 2, then:
+      The answer is n
+   End when
+   When n is 2, then:
+      The answer is 1
+   End when
+   When n is 3, then:
+      The answer is 2
+   End when
+   Remember that a is 0
+   Remember that b is 1
+   Remember that c is 1
+   Remember that d is 2
+   Remember that i is 4
+   Do this diff of n and 3 times:
+      Remember that next is sum of a and (sum of b and (sum of c and d))
+      Remember that a is b
+      Remember that b is c
+      Remember that c is d
+      Remember that d is next
+      Increase i
+   End do
+   The answer is d
+Now you know

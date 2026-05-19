@@ -1,0 +1,5 @@
+Use the standard library
+use std
+
+let below_zero of operations =
+  any (scanl (+) 0 operations) (< 0)

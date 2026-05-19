@@ -1,0 +1,68 @@
+Use the standard library
+This is how to int_to_mini_roman of number:
+   Remember that result is []
+   Remember that values is [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+   Remember that symbols is [
+      [109],
+      [99, 109],
+      [100],
+      [99, 100],
+      [99],
+      [120, 99],
+      [108],
+      [120, 108],
+      [120],
+      [105, 120],
+      [118],
+      [105, 118],
+      [105]
+   ]
+   Remember that idx is 0
+   Do this 13 times:
+      Remember that value is item idx in values
+      Remember that symbol is item idx in symbols
+      Remember that symbol_len is symbol's length
+      Do this 100 times:
+         When number is at most value, then:
+            Remember that j is 0
+            Do this symbol_len times:
+               Add result to item j in symbol
+               Increase j
+            End do
+            Remember that number is diff of number and value
+         End when
+      End do
+      Increase idx
+   End do
+   The answer is result
+Now you know
+>>> int_to_mini_roman of 19 
+[120, 105, 120]
+>>> int_to_mini_roman of 19 
+"xix"
+>>> int_to_mini_roman of 152 
+"clii"
+>>> int_to_mini_roman of 251 
+"ccli"
+>>> int_to_mini_roman of 426 
+"cdxxvi"
+>>> int_to_mini_roman of 500 
+"d"
+>>> int_to_mini_roman of 1 
+"i"
+>>> int_to_mini_roman of 4 
+"iv"
+>>> int_to_mini_roman of 43 
+"xliii"
+>>> int_to_mini_roman of 90 
+"xc"
+>>> int_to_mini_roman of 94 
+"xciv"
+>>> int_to_mini_roman of 532 
+"dxxxii"
+>>> int_to_mini_roman of 900 
+"cm"
+>>> int_to_mini_roman of 994 
+"cmxciv"
+>>> int_to_mini_roman of 1000 
+"m"

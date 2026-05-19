@@ -1,0 +1,17 @@
+Use the standard library
+This is how to get_row of lst and x:
+  Remember that result is []
+  Remember that i is 0
+  Do this lst's length times:
+    Remember that row is item i in lst
+    Remember that j is 0
+    Do this row's length times:
+      When item j in row is x, then:
+        Add result to [i, j]
+      End when
+      Increase j
+    End do
+    Increase i
+  End do
+  The answer is result
+Now you know

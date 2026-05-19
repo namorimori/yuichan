@@ -1,0 +1,76 @@
+Use the standard library
+This is how to order_by_points of nums:
+   Remember that length is nums's length
+   Remember that digit_sums is []
+   Remember that i is 0
+   Do this length times:
+      Remember that num is item i in nums
+      Remember that is_negative is 0
+      Remember that temp is num
+      When num is less than 0, then:
+         Remember that is_negative is 1
+         Remember that temp is diff of 0 and num
+      End when
+      Remember that digits is []
+      When temp is 0, then:
+         Add digits to 0
+      But, if not:
+         Do this 100 times:
+            When temp is more than 0, then:
+               Remember that digit is remainder of temp and 10
+               Add digits to digit
+               Remember that temp is quotient of temp and 10
+            End when
+         End do
+      End when
+      Remember that d_len is digits's length
+      Remember that sum is 0
+      Remember that j is 0
+      Remember that last_idx is diff of d_len and 1
+      Do this d_len times:
+         Remember that digit_val is item j in digits
+         When is_negative is 1, then:
+            When j is last_idx, then:
+               Remember that digit_val is diff of 0 and digit_val
+            End when
+         End when
+         Remember that sum is sum of sum and digit_val
+         Increase j
+      End do
+      Add digit_sums to sum
+      Increase i
+   End do
+   Remember that i is 0
+   Do this length times:
+      Remember that j is 0
+      Remember that limit is diff of (diff of length and i) and 1
+      Do this limit times:
+         Remember that next_j is sum of j and 1
+         When item j in digit_sums is more than item next_j in digit_sums, then:
+            Remember that temp_num is item j in nums
+            Remember that item j in nums is item next_j in nums
+            Remember that item next_j in nums is temp_num
+            Remember that temp_sum is item j in digit_sums
+            Remember that item j in digit_sums is item next_j in digit_sums
+            Remember that item next_j in digit_sums is temp_sum
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is nums
+Now you know
+>>> order_by_points of [1, 11, -1, -11, -12] 
+[-1, -11, 1, -12, 11]
+>>> order_by_points of [1, 11, -1, -11, -12] 
+[-1, -11, 1, -12, 11]
+>>> order_by_points of [1234, 423, 463, 145, 2, 423, 423, 53, 6, 37, 3457, 3, 56, 0, 46] 
+[0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+>>> order_by_points of [] 
+[]
+>>> order_by_points of [1, -11, -32, 43, 54, -98, 2, -3] 
+[-3, -32, -98, -11, 1, 2, 43, 54]
+>>> order_by_points of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] 
+[1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+>>> order_by_points of [0, 6, 6, -76, -21, 23, 4] 
+[-76, -21, 0, 4, 23, 6, 6]

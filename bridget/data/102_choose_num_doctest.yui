@@ -1,0 +1,16 @@
+>>> choose_num of 12 and 15 
+14
+>>> choose_num of 13 and 12 
+-1
+>>> choose_num of 33 and 12354 
+12354
+>>> choose_num of 5234 and 5233 
+-1
+>>> choose_num of 6 and 29 
+28
+>>> choose_num of 27 and 10 
+-1
+>>> choose_num of 7 and 7 
+-1
+>>> choose_num of 546 and 546 
+546

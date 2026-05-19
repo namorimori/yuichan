@@ -1,0 +1,23 @@
+Use the standard library
+This is how to rescale_to_unit of numbers:
+  Remember that low is item 0 in numbers
+  Remember that high is item 0 in numbers
+  Remember that i is 0
+  Do this numbers's length times:
+    When item i in numbers is less than low, then:
+      Remember that low is item i in numbers
+    End when
+    When item i in numbers is more than high, then:
+      Remember that high is item i in numbers
+    End when
+    Increase i by 1
+  End do
+  Remember that result is []
+  Remember that span is diff of high and low
+  Remember that i is 0
+  Do this numbers's length times:
+    Add result to quotient of diff of item i in numbers and low and span
+    Increase i by 1
+  End do
+  The answer is result
+Now you know

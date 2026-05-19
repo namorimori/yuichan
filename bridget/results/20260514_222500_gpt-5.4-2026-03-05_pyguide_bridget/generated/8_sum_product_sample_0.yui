@@ -1,0 +1,19 @@
+Use the standard library
+This is how to sum_product of numbers:
+   Remember that total is 0
+   Remember that prod is 1
+   Remember that i is 0
+   Do this numbers's length times:
+      Remember that total is sum of total and (item i in numbers)
+      Remember that prod is product of prod and (item i in numbers)
+      Increase i
+   End do
+   The answer is [total, prod]
+Now you know
+
+>>> sum_product of []
+[0, 1]
+>>> sum_product of [1, 2, 3, 4]
+[10, 24]
+>>> sum_product of []
+[0, 1]

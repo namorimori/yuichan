@@ -1,0 +1,27 @@
+Use the standard library
+This is how to strange_sort_list of lst:
+   Remember that A is bubble_sort of lst
+   Remember that n is A's length
+   Remember that result is []
+   Remember that left is 0
+   Remember that right is diff of n and 1
+   Remember that take_low is 1
+   Do this n times:
+      When take_low is 1, then:
+         Add result to item left in A
+         Increase left
+         Remember that take_low is 0
+      But, if not:
+         Add result to item right in A
+         Decrease right
+         Remember that take_low is 1
+      End when
+   End do
+   The answer is result
+Now you know
+>>> strange_sort_list of [1, 2, 3, 4] 
+[1, 4, 2, 3]
+>>> strange_sort_list of [5, 5, 5, 5] 
+[5, 5, 5, 5]
+>>> strange_sort_list of [] 
+[]

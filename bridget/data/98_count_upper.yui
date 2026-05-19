@@ -1,0 +1,55 @@
+Use the standard library
+This is how to count_upper of s:
+   Remember that length is s's length
+   Remember that count is 0
+   Remember that i is 0
+   Do this 100 times:
+      When i is less than length, then:
+         Remember that remainder is remainder of i and 2
+         When remainder is 0, then:
+            Remember that char is item i in s
+            Remember that is_vowel is 0
+            When char is 65, then:
+               Remember that is_vowel is 1
+            End when
+            When char is 69, then:
+               Remember that is_vowel is 1
+            End when
+            When char is 73, then:
+               Remember that is_vowel is 1
+            End when
+            When char is 79, then:
+               Remember that is_vowel is 1
+            End when
+            When char is 85, then:
+               Remember that is_vowel is 1
+            End when
+            When is_vowel is 1, then:
+               Increase count
+            End when
+         End when
+         Remember that i is sum of i and 2
+      End when
+   End do
+   The answer is count
+Now you know
+>>> count_upper of [97, 66, 67, 100, 69, 102] 
+1
+>>> count_upper of [97, 98, 99, 100, 101, 102, 103] 
+0
+>>> count_upper of [100, 66, 66, 69] 
+0
+>>> count_upper of "aBCdEf" 
+1
+>>> count_upper of "abcdefg" 
+0
+>>> count_upper of "dBBE" 
+0
+>>> count_upper of "B" 
+0
+>>> count_upper of "U" 
+1
+>>> count_upper of "" 
+0
+>>> count_upper of "EEEE" 
+2

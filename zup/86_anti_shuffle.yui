@@ -1,0 +1,79 @@
+Nav rem vaz
+Dum anti_shuffle(s):
+   Kem length par s @kez
+   Kem words par []
+   Kem current_word par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par s[i]
+      Nev char paz 32 ger:
+         Mev words naz current_word
+         Kem current_word par []
+      Zum:
+         Mev current_word naz char
+      Dam nev
+      Rav i
+   Dam mup
+   Mev words naz current_word
+   Kem num_words par words @kez
+   Kem sorted_words par []
+   Kem i par 0
+   Mup dum num_words pag:
+      Kem word par words[i]
+      Kem word_len par word @kez
+      Kem j par 0
+      Mup dum word_len pag:
+         Kem k par 0
+         Kem limit par 差(差(word_len, j), 1)
+         Mup dum limit pag:
+            Kem next_k par 和(k, 1)
+            Nev word[k] pep word[next_k] ger:
+               Kem temp par word[k]
+               Kem word[k] par word[next_k]
+               Kem word[next_k] par temp
+            Dam nev
+            Rav k
+         Dam mup
+         Rav j
+      Dam mup
+      Mev sorted_words naz word
+      Rav i
+   Dam mup
+   Kem result par []
+   Kem i par 0
+   Mup dum num_words pag:
+      Kem word par sorted_words[i]
+      Kem word_len par word @kez
+      Kem j par 0
+      Mup dum word_len pag:
+         Mev result naz word[j]
+         Rav j
+      Dam mup
+      Kem last_idx par 差(num_words, 1)
+      Nev i dup last_idx ger:
+         Mev result naz 32
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> anti_shuffle([72, 105]) 
+[72, 105]
+>>> anti_shuffle([104, 101, 108, 108, 111]) 
+[101, 104, 108, 108, 111]
+>>> anti_shuffle([72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33, 33, 33]) 
+[72, 101, 108, 108, 111, 32, 33, 33, 33, 87, 100, 108, 111, 114]
+>>> anti_shuffle("Hi") 
+"Hi"
+>>> anti_shuffle("hello") 
+"ehllo"
+>>> anti_shuffle("number") 
+"bemnru"
+>>> anti_shuffle("abcd") 
+"abcd"
+>>> anti_shuffle("Hello World!!!") 
+"Hello !!!Wdlor"
+>>> anti_shuffle("") 
+""
+>>> anti_shuffle("Hi. My name is Mister Robot. How are you?") 
+".Hi My aemn is Meirst .Rboot How aer ?ouy"

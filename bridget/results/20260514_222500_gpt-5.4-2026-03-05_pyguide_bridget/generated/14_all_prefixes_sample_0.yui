@@ -1,0 +1,13 @@
+Use the standard library
+
+This is how to all_prefixes of string:
+   Remember that result is []
+   Remember that prefix is ""
+   Remember that i is 0
+   Do this string's length times:
+      Add prefix to item i in string
+      Add result to prefix
+      Increase i
+   End do
+   The answer is result
+Now you know

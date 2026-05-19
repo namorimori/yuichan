@@ -1,0 +1,14 @@
+>>> hex_key of "AB" 
+1
+>>> hex_key of "1077E" 
+2
+>>> hex_key of "ABED1A33" 
+4
+>>> hex_key of "2020" 
+2
+>>> hex_key of "123456789ABCDEF0" 
+6
+>>> hex_key of "112233445566778899AABBCCDDEEFF00" 
+12
+>>> hex_key of [] 
+0

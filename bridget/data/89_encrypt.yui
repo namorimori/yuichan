@@ -1,0 +1,49 @@
+Use the standard library
+This is how to encrypt of s:
+   Remember that length is s's length
+   Remember that result is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in s
+      Remember that new_char is char
+      Remember that is_lower is 0
+      When char is more than 96, then:
+         When char is less than 123, then:
+            Remember that is_lower is 1
+         End when
+      End when
+      When is_lower is 1, then:
+         Remember that offset is diff of char and 97
+         Remember that shifted_offset is sum of offset and 4
+         Remember that new_offset is remainder of shifted_offset and 26
+         Remember that new_char is sum of 97 and new_offset
+      End when
+      Add result to new_char
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> encrypt of [104, 105] 
+[108, 109]
+>>> encrypt of [97, 115, 100, 102, 103, 104, 106, 107, 108] 
+[101, 119, 104, 106, 107, 108, 110, 111, 112]
+>>> encrypt of [103, 102] 
+[107, 106]
+>>> encrypt of [101, 116] 
+[105, 120]
+>>> encrypt of "hi" 
+"lm"
+>>> encrypt of "asdfghjkl" 
+"ewhjklnop"
+>>> encrypt of "gf" 
+"kj"
+>>> encrypt of "et" 
+"ix"
+>>> encrypt of "faewfawefaewg" 
+"jeiajeaijeiak"
+>>> encrypt of "hellomyfriend" 
+"lippsqcjvmirh"
+>>> encrypt of "dxzdlmnilfuhmilufhlihufnmlimnufhlimnufhfucufh" 
+"hbdhpqrmpjylqmpyjlpmlyjrqpmqryjlpmqryjljygyjl"
+>>> encrypt of "a" 
+"e"

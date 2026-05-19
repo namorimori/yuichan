@@ -1,0 +1,14 @@
+Use the standard library
+
+This is how to solution of lst:
+   Remember that total is 0
+   Remember that i is 0
+   Do this lst's length times:
+      Remember that value is item i in lst
+      When remainder of value and 2 is 1, then:
+         Remember that total is sum of total and value
+      End when
+      Increase i
+   End do
+   The answer is remainder of total and 100
+Now you know

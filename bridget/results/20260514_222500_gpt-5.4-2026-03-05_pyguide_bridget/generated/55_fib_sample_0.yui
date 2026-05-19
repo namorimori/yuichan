@@ -1,0 +1,17 @@
+Use the standard library
+This is how to fib of n:
+   When n is 0, then:
+      The answer is 0
+   End when
+   When n is 1, then:
+      The answer is 1
+   End when
+   The answer is sum of (fib of (diff of n and 1)) and (fib of (diff of n and 2))
+Now you know
+
+>>> fib of 10
+55
+>>> fib of 1
+1
+>>> fib of 8
+21

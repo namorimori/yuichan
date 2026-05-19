@@ -1,0 +1,65 @@
+🗝️ 📚
+🧩 closest_integer(value) 👉
+   length ⬅️ 📐 value
+   result ⬅️ 0
+   is_negative ⬅️ 0
+   i ⬅️ 0
+   ❓ length 📉 0 👉
+      ❓ value[0] ⚖️ 45 👉
+         is_negative ⬅️ 1
+         i ⬅️ 1
+      🔚
+   🔚
+   dot_pos ⬅️ length
+   j ⬅️ 0
+   🌀 length 👉
+      ❓ value[j] ⚖️ 46 👉
+         dot_pos ⬅️ j
+      🔚
+      j ⬆️
+   🔚
+   🌀 100 👉
+      ❓ i 📈 dot_pos 👉
+         char ⬅️ value[i]
+         ❓ char 📉 47 👉
+            ❓ char 📈 58 👉
+               digit ⬅️ 差(char, 48)
+               result ⬅️ 和(積(result, 10), digit)
+            🔚
+         🔚
+         i ⬆️
+      🔚
+   🔚
+   ❓ dot_pos 📈 length 👉
+      decimal_start ⬅️ 和(dot_pos, 1)
+      ❓ decimal_start 📈 length 👉
+         first_decimal ⬅️ value[decimal_start]
+         ❓ first_decimal 📉⚖️ 52 👉
+            ❓ is_negative ⚖️ 1 👉
+               result ⬆️
+            🔚
+            ❗ 👉
+               result ⬆️
+            🔚
+         🔚
+      🔚
+   🔚
+   ❓ is_negative ⚖️ 1 👉
+      result ⬅️ 差(0, result)
+   🔚
+   ✅ result
+🔚
+>>> closest_integer([49, 48]) 
+10
+>>> closest_integer([49, 53, 46, 51]) 
+15
+>>> closest_integer("10") 
+10
+>>> closest_integer("14.5") 
+15
+>>> closest_integer("-15.5") 
+-16
+>>> closest_integer("15.3") 
+15
+>>> closest_integer("0") 
+0

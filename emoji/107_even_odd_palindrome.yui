@@ -1,0 +1,63 @@
+🗝️ 📚
+🧩 even_odd_palindrome(n) 👉
+   even_count ⬅️ 0
+   odd_count ⬅️ 0
+   i ⬅️ 1
+   🌀 n 👉
+      digits ⬅️ []
+      temp ⬅️ i
+      🌀 100 👉
+         ❓ temp 📉 0 👉
+            digit ⬅️ 剰余(temp, 10)
+            digits 🧲 digit
+            temp ⬅️ 商(temp, 10)
+         🔚
+      🔚
+      length ⬅️ 📐 digits
+      is_palindrome ⬅️ 1
+      j ⬅️ 0
+      half ⬅️ 商(length, 2)
+      🌀 half 👉
+         front_idx ⬅️ j
+         back_idx ⬅️ 差(差(length, j), 1)
+         ❓ digits[front_idx] 🚫⚖️ digits[back_idx] 👉
+            is_palindrome ⬅️ 0
+         🔚
+         j ⬆️
+      🔚
+      ❓ is_palindrome ⚖️ 1 👉
+         remainder ⬅️ 剰余(i, 2)
+         ❓ remainder ⚖️ 0 👉
+            even_count ⬆️
+         🔚
+         ❗ 👉
+            odd_count ⬆️
+         🔚
+      🔚
+      i ⬆️
+   🔚
+   result ⬅️ []
+   result 🧲 even_count
+   result 🧲 odd_count
+   ✅ result
+🔚
+>>> even_odd_palindrome(3) 
+[1, 2]
+>>> even_odd_palindrome(12) 
+[4, 6]
+>>> even_odd_palindrome(123) 
+[8, 13]
+>>> even_odd_palindrome(12) 
+[4, 6]
+>>> even_odd_palindrome(3) 
+[1, 2]
+>>> even_odd_palindrome(63) 
+[6, 8]
+>>> even_odd_palindrome(25) 
+[5, 6]
+>>> even_odd_palindrome(19) 
+[4, 6]
+>>> even_odd_palindrome(9) 
+[4, 5]
+>>> even_odd_palindrome(1) 
+[0, 1]

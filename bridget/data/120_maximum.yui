@@ -1,0 +1,58 @@
+Use the standard library
+This is how to maximum of arr and k:
+   Remember that result is []
+   When k is 0, then:
+      The answer is result
+   End when
+   Remember that length is arr's length
+   Remember that i is 0
+   Do this length times:
+      Remember that j is 0
+      Remember that limit is diff of (diff of length and i) and 1
+      Do this limit times:
+         Remember that next_j is sum of j and 1
+         When item j in arr is more than item next_j in arr, then:
+            Remember that temp is item j in arr
+            Remember that item j in arr is item next_j in arr
+            Remember that item next_j in arr is temp
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   Remember that start is diff of length and k
+   Remember that i is start
+   Do this k times:
+      Add result to item i in arr
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> maximum of [-3, -4, 5] and 3 
+[-4, -3, 5]
+>>> maximum of [4, -4, 4] and 2 
+[4, 4]
+>>> maximum of [-3, 2, 1, 2, -1, -2, 1] and 1 
+[2]
+>>> maximum of [-3, -4, 5] and 3 
+[-4, -3, 5]
+>>> maximum of [4, -4, 4] and 2 
+[4, 4]
+>>> maximum of [-3, 2, 1, 2, -1, -2, 1] and 1 
+[2]
+>>> maximum of [123, -123, 20, 0, 1, 2, -3] and 3 
+[2, 20, 123]
+>>> maximum of [-123, 20, 0, 1, 2, -3] and 4 
+[0, 1, 2, 20]
+>>> maximum of [5, 15, 0, 3, -13, -8, 0] and 7 
+[-13, -8, 0, 0, 3, 5, 15]
+>>> maximum of [-1, 0, 2, 5, 3, -10] and 2 
+[3, 5]
+>>> maximum of [1, 0, 5, -7] and 1 
+[5]
+>>> maximum of [4, -4] and 2 
+[-4, 4]
+>>> maximum of [-10, 10] and 2 
+[-10, 10]
+>>> maximum of [1, 2, 3, -23, 243, -400, 0] and 0 
+[]

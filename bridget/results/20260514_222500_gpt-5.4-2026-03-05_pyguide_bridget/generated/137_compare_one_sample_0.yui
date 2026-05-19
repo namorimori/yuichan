@@ -1,0 +1,7 @@
+Use the standard library
+This is how to compare_one of a and b:
+   When a is b, then:
+      The answer is []
+   End when
+   The answer is b
+Now you know

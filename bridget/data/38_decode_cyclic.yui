@@ -1,0 +1,26 @@
+Use the standard library
+This is how to decode_cyclic of s:
+   Remember that result is []
+   Remember that length is s's length
+   Remember that groups is quotient of length and 3
+   Remember that i is 0
+   Do this groups times:
+      Remember that a is item i in s
+      Increase i
+      Remember that b is item i in s
+      Increase i
+      Remember that c is item i in s
+      Increase i
+      Add result to c
+      Add result to a
+      Add result to b
+   End do
+   Remember that remain is remainder of length and 3
+   Do this remain times:
+      Add result to item i in s
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> decode_cyclic of [98, 99, 97] 
+[97, 98, 99]

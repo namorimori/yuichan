@@ -1,0 +1,50 @@
+Use the standard library
+This is how to solve of N:
+   Remember that str_N is tostring of N
+   Remember that length is str_N's length
+   Remember that total is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in str_N
+      Remember that digit is diff of char and 48
+      Remember that total is sum of total and digit
+      Increase i
+   End do
+   Remember that result is []
+   When total is 0, then:
+      Add result to 48
+      The answer is result
+   End when
+   Remember that temp is total
+   Remember that digits is []
+   Do this 100 times:
+      When temp is more than 0, then:
+         Remember that rem is remainder of temp and 2
+         Add digits to rem
+         Remember that temp is quotient of temp and 2
+      End when
+   End do
+   Remember that len is digits's length
+   Remember that j is 0
+   Do this len times:
+      Remember that idx is diff of (diff of len and j) and 1
+      Remember that bit is item idx in digits
+      When bit is 0, then:
+         Add result to 48
+      But, if not:
+         Add result to 49
+      End when
+      Increase j
+   End do
+   The answer is result
+Now you know
+>>> solve of 1000 
+"1"
+>>> solve of 150 
+"110"
+>>> solve of 147 
+"1100"
+>>> solve of 333 
+"1001"
+>>> solve of 963 
+"10010"

@@ -1,0 +1,22 @@
+Use the standard library
+This is how to is_bored of S:
+  When isstring of S is yes, then:
+    Remember that T is toarray of S
+  But, if not:
+    Remember that T is S
+  End when
+  Remember that Count is 0
+  Remember that In_word is no
+  Do this T's length times:
+    Remember that C is item Count in T
+    When C is 32, then:
+      Remember that In_word is no
+    But, if not:
+      When In_word is no, then:
+        Remember that In_word is yes
+      End when
+    End when
+    Increase Count
+  End do
+  The answer is 0
+Now you know

@@ -1,0 +1,38 @@
+Use the standard library
+This is how to solution of lst:
+   Remember that length is lst's length
+   Remember that sum is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that idx_remainder is remainder of i and 2
+      Remember that value is item i in lst
+      Remember that val_remainder is remainder of value and 2
+      When idx_remainder is 0, then:
+         When val_remainder is 1, then:
+            Remember that sum is sum of sum and value
+         End when
+      End when
+      Increase i
+   End do
+   The answer is sum
+Now you know
+>>> solution of [5, 8, 7, 1] 
+12
+>>> solution of [3, 3, 3, 3, 3] 
+9
+>>> solution of [30, 13, 24, 321] 
+0
+>>> solution of [5, 8, 7, 1] 
+12
+>>> solution of [3, 3, 3, 3, 3] 
+9
+>>> solution of [30, 13, 24, 321] 
+0
+>>> solution of [5, 9] 
+5
+>>> solution of [2, 4, 8] 
+0
+>>> solution of [30, 13, 23, 32] 
+23
+>>> solution of [3, 13, 2, 9] 
+3

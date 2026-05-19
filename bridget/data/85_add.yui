@@ -1,0 +1,44 @@
+This is how to add of lst:
+   Remember that total is 0
+   Remember that length is lst's length
+   Remember that i is 0
+   Do this length times:
+      Remember that remainder_val is remainder of i and 2
+      When remainder_val is 1, then:
+         Remember that value is item i in lst
+         Remember that value_remainder is remainder of value and 2
+         When value_remainder is 0, then:
+            Remember that total is add_num of total and value
+         End when
+      End when
+      Increase i
+   End do
+   The answer is total
+Now you know
+This is how to add_num of X and Y:
+   Do this Y times:
+      Increase X
+   End do
+   The answer is X
+Now you know
+This is how to remainder of X and Y:
+   Remember that result is X
+   Do this X times:
+      When result is at most Y, then:
+         Do this Y times:
+            Decrease result
+         End do
+      End when
+   End do
+   The answer is result
+Now you know
+>>> add of [4, 2, 6, 7] 
+2
+>>> add of [4, 88] 
+88
+>>> add of [4, 5, 6, 7, 2, 122] 
+122
+>>> add of [4, 0, 6, 7] 
+0
+>>> add of [4, 4, 6, 8] 
+12

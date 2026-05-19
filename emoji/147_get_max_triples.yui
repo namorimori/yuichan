@@ -1,0 +1,46 @@
+🗝️ 📚
+🧩 get_max_triples(n) 👉
+   a ⬅️ []
+   i ⬅️ 1
+   🌀 n 👉
+      square ⬅️ 積(i, i)
+      value ⬅️ 和(差(square, i), 1)
+      a 🧲 value
+      i ⬆️
+   🔚
+   count ⬅️ 0
+   i ⬅️ 0
+   🌀 n 👉
+      j ⬅️ 和(i, 1)
+      limit_j ⬅️ 差(n, i)
+      🌀 limit_j 👉
+         ❓ j 📈 n 👉
+            k ⬅️ 和(j, 1)
+            limit_k ⬅️ 差(n, j)
+            🌀 limit_k 👉
+               ❓ k 📈 n 👉
+                  sum ⬅️ 和(和(a[i], a[j]), a[k])
+                  remainder ⬅️ 剰余(sum, 3)
+                  ❓ remainder ⚖️ 0 👉
+                     count ⬆️
+                  🔚
+               🔚
+               k ⬆️
+            🔚
+         🔚
+         j ⬆️
+      🔚
+      i ⬆️
+   🔚
+   ✅ count
+🔚
+>>> get_max_triples(5) 
+1
+>>> get_max_triples(5) 
+1
+>>> get_max_triples(6) 
+4
+>>> get_max_triples(10) 
+36
+>>> get_max_triples(100) 
+53361

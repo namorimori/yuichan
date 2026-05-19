@@ -1,0 +1,41 @@
+Nav rem vaz
+Dum unique(l):
+   Kem 長さ par l @kez
+   Kem ソート済み par []
+   Kem i par 0
+   Mup dum 長さ pag:
+      Mev ソート済み naz l[i]
+      Rav i
+   Dam mup
+   Mup dum 長さ pag:
+      Kem i par 0
+      Kem 上限 par 差(長さ, 1)
+      Mup dum 上限 pag:
+         Kem 次インデックス par 和(i, 1)
+         Nev ソート済み[i] pep ソート済み[次インデックス] ger:
+            Kem temp par ソート済み[i]
+            Kem ソート済み[i] par ソート済み[次インデックス]
+            Kem ソート済み[次インデックス] par temp
+         Dam nev
+         Rav i
+      Dam mup
+   Dam mup
+   Kem 結果 par []
+   Nev 長さ pep 0 ger:
+      Mev 結果 naz ソート済み[0]
+      Kem i par 1
+      Kem 上限 par 差(長さ, 1)
+      Mup dum 上限 pag:
+         Kem 前インデックス par 差(i, 1)
+         Nev ソート済み[i] nup ソート済み[前インデックス] ger:
+            Mev 結果 naz ソート済み[i]
+         Dam nev
+         Rav i
+      Dam mup
+   Dam nev
+   Dup vem 結果
+Pam dum
+>>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123]) 
+[0, 2, 3, 5, 9, 123]
+>>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123]) 
+[0, 2, 3, 5, 9, 123]

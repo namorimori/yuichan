@@ -1,0 +1,38 @@
+Nav rem vaz
+Dum solution(lst):
+   Kem length par lst @kez
+   Kem sum par 0
+   Kem i par 0
+   Mup dum length pag:
+      Kem idx_remainder par 剰余(i, 2)
+      Kem value par lst[i]
+      Kem val_remainder par 剰余(value, 2)
+      Nev idx_remainder paz 0 ger:
+         Nev val_remainder paz 1 ger:
+            Kem sum par 和(sum, value)
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem sum
+Pam dum
+>>> solution([5, 8, 7, 1]) 
+12
+>>> solution([3, 3, 3, 3, 3]) 
+9
+>>> solution([30, 13, 24, 321]) 
+0
+>>> solution([5, 8, 7, 1]) 
+12
+>>> solution([3, 3, 3, 3, 3]) 
+9
+>>> solution([30, 13, 24, 321]) 
+0
+>>> solution([5, 9]) 
+5
+>>> solution([2, 4, 8]) 
+0
+>>> solution([30, 13, 23, 32]) 
+23
+>>> solution([3, 13, 2, 9]) 
+3

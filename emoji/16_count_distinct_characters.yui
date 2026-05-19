@@ -1,0 +1,44 @@
+🗝️ 📚
+🧩 count_distinct_characters(string) 👉
+   length ⬅️ 📐 string
+   seen ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ string[i]
+      lower_char ⬅️ char
+      ❓ char 📉 64 👉
+         ❓ char 📈 91 👉
+            lower_char ⬅️ 和(char, 32)
+         🔚
+      🔚
+      seen_len ⬅️ 📐 seen
+      is_new ⬅️ 1
+      j ⬅️ 0
+      🌀 seen_len 👉
+         ❓ seen[j] ⚖️ lower_char 👉
+            is_new ⬅️ 0
+         🔚
+         j ⬆️
+      🔚
+      ❓ is_new ⚖️ 1 👉
+         seen 🧲 lower_char
+      🔚
+      i ⬆️
+   🔚
+   count ⬅️ 📐 seen
+   ✅ count
+🔚
+>>> count_distinct_characters([120, 121, 122, 88, 89, 90]) 
+3
+>>> count_distinct_characters([74, 101, 114, 114, 121]) 
+4
+>>> count_distinct_characters("") 
+0
+>>> count_distinct_characters("abcde") 
+5
+>>> count_distinct_characters("abcdecadeCADE") 
+5
+>>> count_distinct_characters("aaaaAAAAaaaa") 
+1
+>>> count_distinct_characters("Jerry jERRY JeRRRY") 
+5

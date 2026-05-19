@@ -1,0 +1,52 @@
+>>> 施檔名驗於「example.txt」
+「Yes」
+>>> 施檔名驗於「1example.dll」
+「No」
+>>> 施檔名驗於「s1sdf3.asd」
+「No」
+>>> 施檔名驗於「K.dll」
+「Yes」
+>>> 施檔名驗於「MY16FILE3.exe」
+「Yes」
+>>> 施檔名驗於「His12FILE94.exe」
+「No」
+>>> 施檔名驗於「_Y.txt」
+「No」
+>>> 施檔名驗於「?aREYA.exe」
+「No」
+>>> 施檔名驗於「/this_is_valid.dll」
+「No」
+>>> 施檔名驗於「this_is_valid.wow」
+「No」
+>>> 施檔名驗於「this_is_valid.txt」
+「Yes」
+>>> 施檔名驗於「this_is_valid.txtexe」
+「No」
+>>> 施檔名驗於「#this2_i4s_5valid.ten」
+「No」
+>>> 施檔名驗於「@this1_is6_valid.exe」
+「No」
+>>> 施檔名驗於「this_is_12valid.6exe4.txt」
+「No」
+>>> 施檔名驗於「all.exe.txt」
+「No」
+>>> 施檔名驗於「I563_No.exe」
+「Yes」
+>>> 施檔名驗於「Is3youfault.txt」
+「Yes」
+>>> 施檔名驗於「no_one#knows.dll」
+「Yes」
+>>> 施檔名驗於「1I563_Yes3.exe」
+「No」
+>>> 施檔名驗於「I563_Yes3.txtt」
+「No」
+>>> 施檔名驗於「final..txt」
+「No」
+>>> 施檔名驗於「final132」
+「No」
+>>> 施檔名驗於「_f4indsartal132.」
+「No」
+>>> 施檔名驗於「.txt」
+「No」
+>>> 施檔名驗於「s.」
+「No」

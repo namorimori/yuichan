@@ -1,0 +1,45 @@
+🧩 is_palindrome(text) 👉
+   長さ ⬅️ 📐 text
+   i ⬅️ 0
+   結果 ⬅️ 1
+   🌀 長さ 👉
+      ❓ i 📈 長さ 👉
+         左 ⬅️ text[i]
+         右インデックス ⬅️ 長さ
+         右インデックス ⬇️
+         j ⬅️ 0
+         🌀 i 👉
+            右インデックス ⬇️
+            j ⬆️
+         🔚
+         右 ⬅️ text[右インデックス]
+         ❓ 左 🚫⚖️ 右 👉
+            結果 ⬅️ 0
+         🔚
+      🔚
+      i ⬆️
+   🔚
+   ✅ 結果
+🔚
+>>> is_palindrome("") 
+1
+>>> is_palindrome("aba") 
+1
+>>> is_palindrome("aaaaa") 
+1
+>>> is_palindrome("zbcd") 
+0
+>>> is_palindrome("") 
+1
+>>> is_palindrome("aba") 
+1
+>>> is_palindrome("aaaaa") 
+1
+>>> is_palindrome("zbcd") 
+0
+>>> is_palindrome("xywyx") 
+1
+>>> is_palindrome("xywyz") 
+0
+>>> is_palindrome("xywzx") 
+0

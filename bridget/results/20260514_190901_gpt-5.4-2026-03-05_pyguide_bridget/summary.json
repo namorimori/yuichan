@@ -1,0 +1,14 @@
+{
+  "model": "gpt-5.4-2026-03-05",
+  "template": "pro159/pyguide_bridget.md",
+  "context": "codesample",
+  "temperature": 0.2,
+  "k": 1,
+  "total_problems": 4,
+  "passed_problems": 0,
+  "failed_problems": 4,
+  "pass_at_k": 0.0,
+  "timestamp": "20260514_190901",
+  "total_samples": 4,
+  "passed_samples": 0
+}

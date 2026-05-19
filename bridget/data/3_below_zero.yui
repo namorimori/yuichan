@@ -1,0 +1,32 @@
+Use the standard library
+This is how to below_zero of operations:
+   Remember that balance is 0
+   Remember that result is 0
+   Remember that length is operations's length
+   Remember that i is 0
+   Do this length times:
+      Remember that op is item i in operations
+      Remember that balance is sum of balance and op
+      When balance is less than 0, then:
+         Remember that result is 1
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> below_zero of [1, 2, 3] 
+0
+>>> below_zero of [1, 2, -4, 5] 
+1
+>>> below_zero of [] 
+0
+>>> below_zero of [1, 2, -3, 1, 2, -3] 
+0
+>>> below_zero of [1, 2, -4, 5, 6] 
+1
+>>> below_zero of [1, -1, 2, -2, 5, -5, 4, -4] 
+0
+>>> below_zero of [1, -1, 2, -2, 5, -5, 4, -5] 
+1
+>>> below_zero of [1, -2, 2, -2, 5, -5, 4, -4] 
+1

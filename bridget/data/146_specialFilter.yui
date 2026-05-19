@@ -1,0 +1,47 @@
+Use the standard library
+This is how to specialFilter of nums:
+   Remember that length is nums's length
+   Remember that count is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that num is item i in nums
+      When num is more than 10, then:
+         Remember that first_digit is 0
+         Remember that last_digit is remainder of num and 10
+         Remember that temp is num
+         Do this 100 times:
+            When temp is more than 0, then:
+               Remember that first_digit is remainder of temp and 10
+               Remember that temp is quotient of temp and 10
+            End when
+         End do
+         Remember that first_rem is remainder of first_digit and 2
+         Remember that last_rem is remainder of last_digit and 2
+         When first_rem is 1, then:
+            When last_rem is 1, then:
+               Increase count
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know
+>>> specialFilter of [15, -73, 14, -15] 
+1
+>>> specialFilter of [33, -2, -3, 45, 21, 109] 
+2
+>>> specialFilter of [5, -2, 1, -5] 
+0
+>>> specialFilter of [15, -73, 14, -15] 
+1
+>>> specialFilter of [33, -2, -3, 45, 21, 109] 
+2
+>>> specialFilter of [43, -12, 93, 125, 121, 109] 
+4
+>>> specialFilter of [71, -2, -33, 75, 21, 19] 
+3
+>>> specialFilter of [1] 
+0
+>>> specialFilter of [] 
+0

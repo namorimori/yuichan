@@ -1,0 +1,50 @@
+Use the standard library
+This is how to pairs_sum_to_zero of l:
+   Remember that length is l's length
+   Remember that result is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that value1 is item i in l
+      Remember that j is sum of i and 1
+      Do this diff of length and j times:
+         When j is less than length, then:
+            Remember that value2 is item j in l
+            Remember that total is sum of value1 and value2
+            When total is 0, then:
+               Remember that result is 1
+            End when
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> pairs_sum_to_zero of [1, 3, 5, 0] 
+0
+>>> pairs_sum_to_zero of [1, 3, -2, 1] 
+0
+>>> pairs_sum_to_zero of [1, 2, 3, 7] 
+0
+>>> pairs_sum_to_zero of [2, 4, -5, 3, 5, 7] 
+1
+>>> pairs_sum_to_zero of [1] 
+0
+>>> pairs_sum_to_zero of [1, 3, 5, 0] 
+0
+>>> pairs_sum_to_zero of [1, 3, -2, 1] 
+0
+>>> pairs_sum_to_zero of [1, 2, 3, 7] 
+0
+>>> pairs_sum_to_zero of [2, 4, -5, 3, 5, 7] 
+1
+>>> pairs_sum_to_zero of [1] 
+0
+>>> pairs_sum_to_zero of [-3, 9, -1, 3, 2, 30] 
+1
+>>> pairs_sum_to_zero of [-3, 9, -1, 3, 2, 31] 
+1
+>>> pairs_sum_to_zero of [-3, 9, -1, 4, 2, 30] 
+0
+>>> pairs_sum_to_zero of [-3, 9, -1, 4, 2, 31] 
+0

@@ -1,0 +1,7 @@
+Use the standard library
+This is how to string_to_md5 of text:
+  When text is "":
+    The answer is []
+  End when
+  The answer is "3e25960a79dbc69b674cd4ec67a72c62"
+Now you know

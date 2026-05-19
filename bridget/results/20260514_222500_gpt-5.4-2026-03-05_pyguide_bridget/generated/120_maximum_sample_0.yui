@@ -1,0 +1,40 @@
+Use the standard library
+This is how to maximum of arr and k:
+   Remember that best is []
+   Remember that i is 0
+   Do this arr's length times:
+      Remember that x is item i in arr
+      When best's length is less than k, then:
+         Add best to x
+      But, if not:
+         Remember that j is 0
+         Remember that smallest_index is 0
+         Do this best's length times:
+            When item j in best is less than item smallest_index in best, then:
+               Remember that smallest_index is j
+            End when
+            Increase j
+         End do
+         When item smallest_index in best is less than x, then:
+            Remember that item smallest_index in best is x
+         End when
+      End when
+      Increase i
+   End do
+
+   Remember that a is 0
+   Do this best's length times:
+      Remember that b is 0
+      Do this best's length times:
+         When item b in best is more than item a in best, then:
+            Remember that temp is item a in best
+            Remember that item a in best is item b in best
+            Remember that item b in best is temp
+         End when
+         Increase b
+      End do
+      Increase a
+   End do
+
+   The answer is best
+Now you know

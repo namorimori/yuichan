@@ -1,0 +1,48 @@
+Use the standard library
+This is how to digitSum of s:
+   Remember that length is s's length
+   Remember that sum is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in s
+      Remember that is_upper is 0
+      When char is more than 64, then:
+         When char is less than 91, then:
+            Remember that is_upper is 1
+         End when
+      End when
+      When is_upper is 1, then:
+         Remember that sum is sum of sum and char
+      End when
+      Increase i
+   End do
+   The answer is sum
+Now you know
+>>> digitSum of [] 
+0
+>>> digitSum of [97, 98, 65, 66] 
+131
+>>> digitSum of [97, 98, 99, 67, 100] 
+67
+>>> digitSum of [104, 101, 108, 108, 111, 69] 
+69
+>>> digitSum of [119, 111, 65, 114, 66, 108, 100] 
+131
+>>> digitSum of [97, 65, 97, 97, 97, 88, 97] 
+153
+>>> digitSum of "" 
+0
+>>> digitSum of "abAB" 
+131
+>>> digitSum of "abcCd" 
+67
+>>> digitSum of "helloE" 
+69
+>>> digitSum of "woArBld" 
+131
+>>> digitSum of "aAaaaXa" 
+153
+>>> digitSum of " How are yOu?" 
+151
+>>> digitSum of "You arE Very Smart" 
+327

@@ -1,0 +1,58 @@
+Nav rem vaz
+Dum intersection(interval1, interval2):
+   Kem start1 par interval1[0]
+   Kem end1 par interval1[1]
+   Kem start2 par interval2[0]
+   Kem end2 par interval2[1]
+   Kem l par 最大値(start1, start2)
+   Kem r par 最小値(end1, end2)
+   Kem length par 差(r, l)
+   Kem result par [78, 79]
+   Nev length pep 0 ger:
+      Kem is_prime par 1
+      Nev length paz 1 ger:
+         Kem is_prime par 0
+      Dam nev
+      Nev length paz 2 ger:
+         Kem is_prime par 1
+      Dam nev
+      Nev length pep 2 ger:
+         Kem i par 2
+         Mup dum 100 pag:
+            Nev i dup length ger:
+               Kem remainder par 剰余(length, i)
+               Nev remainder paz 0 ger:
+                  Kem is_prime par 0
+               Dam nev
+               Rav i
+            Dam nev
+         Dam mup
+      Dam nev
+      Nev is_prime paz 1 ger:
+         Kem result par [89, 69, 83]
+      Dam nev
+   Dam nev
+   Dup vem result
+Pam dum
+>>> intersection([1, 2], [2, 3]) 
+[78, 79]
+>>> intersection([-1, 1], [0, 4]) 
+[78, 79]
+>>> intersection([-3, -1], [-5, 5]) 
+[89, 69, 83]
+>>> intersection([1, 2], [2, 3]) 
+"NO"
+>>> intersection([-1, 1], [0, 4]) 
+"NO"
+>>> intersection([-3, -1], [-5, 5]) 
+"YES"
+>>> intersection([-2, 2], [-4, 0]) 
+"YES"
+>>> intersection([-11, 2], [-1, -1]) 
+"NO"
+>>> intersection([1, 2], [3, 5]) 
+"NO"
+>>> intersection([1, 2], [1, 2]) 
+"NO"
+>>> intersection([-2, -2], [-3, -2]) 
+"NO"

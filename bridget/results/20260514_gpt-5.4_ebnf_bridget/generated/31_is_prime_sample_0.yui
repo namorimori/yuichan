@@ -1,0 +1,18 @@
+Use the standard library
+This is how to is_prime of n:
+  When n is less than 2, then:
+    The answer is 0
+  End when
+  Do this n times:
+    Remember that i is sum of i and 1
+    When i is less than 2, then:
+      Do nothing
+    End when
+    When i is at most n, then:
+      When remainder of n and i is 0, then:
+        The answer is 0
+      End when
+    End when
+  End do
+  The answer is 1
+Now you know

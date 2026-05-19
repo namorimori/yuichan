@@ -1,0 +1,16 @@
+>>> compare_one of 1 and 2 
+2
+>>> compare_one of 1 and 2.500000 
+2.500000
+>>> compare_one of 2 and 3 
+3
+>>> compare_one of 5 and 6 
+6
+>>> compare_one of 1 and "2,3" 
+"2,3"
+>>> compare_one of "5,1" and "6" 
+"6"
+>>> compare_one of "1" and "2" 
+"2"
+>>> compare_one of "1" and 1 
+[]

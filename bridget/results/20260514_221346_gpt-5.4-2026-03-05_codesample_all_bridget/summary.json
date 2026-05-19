@@ -1,0 +1,19 @@
+{
+  "model": "gpt-5.4-2026-03-05",
+  "template": "context/bridget/codesample_all_bridget.md",
+  "context": "codesample_all_bridget.md",
+  "temperature": 0.2,
+  "k": 1,
+  "total_problems": 164,
+  "passed_problems": 57,
+  "failed_problems": 107,
+  "pass_at_k": 34.76,
+  "confidence_interval_95": {
+    "lower": 27.89,
+    "upper": 42.32,
+    "method": "Wilson Score"
+  },
+  "timestamp": "20260514_221346",
+  "total_samples": 164,
+  "passed_samples": 57
+}

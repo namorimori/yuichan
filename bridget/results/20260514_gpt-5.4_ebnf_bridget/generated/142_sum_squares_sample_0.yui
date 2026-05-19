@@ -1,0 +1,9 @@
+Use the standard library
+This is how to sum_squares of lst:
+  Remember that total is 0
+  Do this lst's length times:
+    Remember that total is sum of total and product of item total in lst and item total in lst
+    Increase total
+  End do
+  The answer is total
+Now you know

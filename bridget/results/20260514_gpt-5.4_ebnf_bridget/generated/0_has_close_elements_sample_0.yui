@@ -1,0 +1,18 @@
+Use the standard library
+This is how to has_close_elements of numbers and threshold:
+  Remember that i is 0
+  Do this numbers's length times:
+    Remember that j is sum of i and 1
+    Do this numbers's length times:
+      When j is less than numbers's length, then:
+        Remember that gap is abs of diff of item i in numbers and item j in numbers
+        When gap is less than threshold, then:
+          The answer is 1
+        End when
+      End when
+      Increase j
+    End do
+    Increase i
+  End do
+  The answer is 0
+Now you know

@@ -1,0 +1,39 @@
+Use the standard library
+
+This is how to solve of s:
+   Remember that result is []
+   Remember that i is 0
+   Do this s's length times:
+      Remember that c is item i in s
+      When c is at least 97, then:
+         When c is at most 122, then:
+            Add result to diff of c and 32
+         But, if not:
+            Add result to c
+         End when
+      But, if not:
+         When c is at least 65, then:
+            When c is at most 90, then:
+               Add result to sum of c and 32
+            But, if not:
+               Add result to c
+            End when
+         But, if not:
+            Add result to c
+         End when
+      End when
+      Increase i
+   End do
+
+   When s's length is 4, then:
+      Remember that reversed is []
+      Remember that j is s's length
+      Do this s's length times:
+         Decrease j
+         Add reversed to item j in result
+      End do
+      The answer is reversed
+   End when
+
+   The answer is result
+Now you know

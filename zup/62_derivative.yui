@@ -1,0 +1,28 @@
+Nav rem vaz
+Dum derivative(xs):
+   Kem 長さ par xs @kez
+   Kem 結果 par []
+   Kem i par 1
+   Kem 上限 par 差(長さ, 1)
+   Mup dum 上限 pag:
+      Kem 値 par xs[i]
+      Kem 微分値 par 積(i, 値)
+      Mev 結果 naz 微分値
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> derivative([3, 1, 2, 4, 5]) 
+[1, 4, 12, 20]
+>>> derivative([1, 2, 3]) 
+[2, 6]
+>>> derivative([3, 1, 2, 4, 5]) 
+[1, 4, 12, 20]
+>>> derivative([1, 2, 3]) 
+[2, 6]
+>>> derivative([3, 2, 1]) 
+[2, 2]
+>>> derivative([3, 2, 1, 0, 4]) 
+[2, 2, 0, 16]
+>>> derivative([1]) 
+[]

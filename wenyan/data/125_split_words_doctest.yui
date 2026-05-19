@@ -1,0 +1,16 @@
+>>> 施分詞於「Hello world!」
+[「Hello」,「world!」]
+>>> 施分詞於「Hello,world!」
+[「Hello」,「world!」]
+>>> 施分詞於「Hello world,!」
+[「Hello」,「world,!」]
+>>> 施分詞於「Hello,Hello,world !」
+[「Hello,Hello,world」,「!」]
+>>> 施分詞於「abcdef」
+3
+>>> 施分詞於「aaabb」
+2
+>>> 施分詞於「aaaBb」
+1
+>>> 施分詞於「」
+0

@@ -1,0 +1,15 @@
+Use the standard library
+This is how to count_distinct_characters of string:
+   Remember that seen is ""
+   Remember that count is 0
+   Remember that i is 0
+   Do this string's length times:
+      Remember that c is item i in string
+      When c is not in seen, then:
+         Add seen to c
+         Increase count
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know

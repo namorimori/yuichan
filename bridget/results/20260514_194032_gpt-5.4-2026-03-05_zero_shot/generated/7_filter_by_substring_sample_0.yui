@@ -1,0 +1,5 @@
+Use the standard library
+use standard
+
+def filter_by_substring(strings, substring) =
+  filter(strings, \s -> contains(s, substring))

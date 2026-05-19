@@ -1,0 +1,22 @@
+Use the standard library
+
+This is how to is_palindrome of text:
+   Remember that n is text's length
+   Remember that i is 0
+   Remember that ok is 1
+   Do this quotient of n and 2 times:
+      When item i in text is not item (diff of (diff of n and 1) and i) in text, then:
+         Remember that ok is 0
+         Leave the loop
+      End when
+      Increase i
+   End do
+   The answer is ok
+Now you know
+
+>>> is_palindrome of ""
+1
+>>> is_palindrome of "aba"
+1
+>>> is_palindrome of "aaaaa"
+1

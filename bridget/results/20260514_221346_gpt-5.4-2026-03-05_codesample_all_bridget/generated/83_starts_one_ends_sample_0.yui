@@ -1,0 +1,13 @@
+Use the standard library
+This is how to starts_one_ends of n:
+   When n is 1, then:
+      The answer is 1
+   End when
+   Remember that result is 18
+   Remember that i is 2
+   Do this diff of n and 2 times:
+      Remember that result is product of result and 10
+      Increase i
+   End do
+   The answer is result
+Now you know

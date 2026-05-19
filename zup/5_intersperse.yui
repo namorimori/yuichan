@@ -1,0 +1,27 @@
+Nav rem vaz
+Dum intersperse(numbers, delimeter):
+   Kem 長さ par numbers @kez
+   Kem 結果 par []
+   Nev 長さ paz 0 ger:
+      Dup vem 結果
+   Dam nev
+   Kem i par 0
+   Kem 上限 par 差(長さ, 1)
+   Mup dum 上限 pag:
+      Mev 結果 naz numbers[i]
+      Mev 結果 naz delimeter
+      Rav i
+   Dam mup
+   Mev 結果 naz numbers[上限]
+   Dup vem 結果
+Pam dum
+>>> intersperse([], 4) 
+[]
+>>> intersperse([1, 2, 3], 4) 
+[1, 4, 2, 4, 3]
+>>> intersperse([], 7) 
+[]
+>>> intersperse([5, 6, 3, 2], 8) 
+[5, 8, 6, 8, 3, 8, 2]
+>>> intersperse([2, 2, 2], 2) 
+[2, 2, 2, 2, 2]

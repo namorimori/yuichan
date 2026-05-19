@@ -1,0 +1,67 @@
+Nav rem vaz
+Dum median(l):
+   Kem 長さ par l @kez
+   Kem ソート済み par []
+   Kem i par 0
+   Mup dum 長さ pag:
+      Mev ソート済み naz l[i]
+      Rav i
+   Dam mup
+   Mup dum 長さ pag:
+      Kem i par 0
+      Kem 上限 par 差(長さ, 1)
+      Mup dum 上限 pag:
+         Kem 次インデックス par 和(i, 1)
+         Nev ソート済み[i] pep ソート済み[次インデックス] ger:
+            Kem temp par ソート済み[i]
+            Kem ソート済み[i] par ソート済み[次インデックス]
+            Kem ソート済み[次インデックス] par temp
+         Dam nev
+         Rav i
+      Dam mup
+   Dam mup
+   Kem 余り par 剰余(長さ, 2)
+   Nev 余り paz 1 ger:
+      Kem 中央 par 0
+      Kem i par 0
+      Mup dum 長さ pag:
+         Kem 二倍 par 積(中央, 2)
+         Kem 次 par 和(二倍, 1)
+         Nev 次 dup 長さ ger:
+            Rav 中央
+         Dam nev
+         Rav i
+      Dam mup
+      Dup vem ソート済み[中央]
+   Zum:
+      Kem 中央 par 0
+      Kem i par 0
+      Mup dum 長さ pag:
+         Kem 二倍 par 積(中央, 2)
+         Nev 二倍 dup 長さ ger:
+            Rav 中央
+         Dam nev
+         Rav i
+      Dam mup
+      Kem 左インデックス par 差(中央, 1)
+      Kem 左値 par ソート済み[左インデックス]
+      Kem 右値 par ソート済み[中央]
+      Kem 合計 par 和(左値, 右値)
+      Kem 合計_float par 積(合計, 1.000000)
+      Dup vem 商(合計_float, 2.000000)
+   Dam nev
+Pam dum
+>>> median([3, 1, 2, 4, 5]) 
+3
+>>> median([-10, 4, 6, 1000, 10, 20]) 
+8.000000
+>>> median([3, 1, 2, 4, 5]) 
+3
+>>> median([-10, 4, 6, 1000, 10, 20]) 
+8.000000
+>>> median([5]) 
+5
+>>> median([6, 5]) 
+5.500000
+>>> median([8, 1, 3, 9, 9, 2, 7]) 
+7

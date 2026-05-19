@@ -1,0 +1,39 @@
+Nav rem vaz
+Dum smallest_change(arr):
+   Kem 長さ par arr @kez
+   Kem 変更数 par 0
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem j par 積(i, 2)
+      Nev j dup 長さ ger:
+         Kem 反対側 par 差(長さ, 和(i, 1))
+         Nev arr[i] nup arr[反対側] ger:
+            Rav 変更数
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem 変更数
+Pam dum
+>>> smallest_change([1, 2, 3, 5, 4, 7, 9, 6]) 
+4
+>>> smallest_change([1, 2, 3, 4, 3, 2, 2]) 
+1
+>>> smallest_change([1, 2, 3, 2, 1]) 
+0
+>>> smallest_change([1, 2, 3, 5, 4, 7, 9, 6]) 
+4
+>>> smallest_change([1, 2, 3, 4, 3, 2, 2]) 
+1
+>>> smallest_change([1, 4, 2]) 
+1
+>>> smallest_change([1, 4, 4, 2]) 
+1
+>>> smallest_change([1, 2, 3, 2, 1]) 
+0
+>>> smallest_change([3, 1, 1, 3]) 
+0
+>>> smallest_change([1]) 
+0
+>>> smallest_change([0, 1]) 
+1

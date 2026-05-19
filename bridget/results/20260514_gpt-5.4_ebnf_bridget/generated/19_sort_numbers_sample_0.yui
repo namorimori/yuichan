@@ -1,0 +1,40 @@
+Use the standard library
+This is how to sort_numbers of numbers:
+  When numbers's length is 0, then:
+    The answer is numbers
+  End when
+  Remember that result is []
+  Remember that i is 0
+  Do this numbers's length times:
+    Remember that smallest is item i in numbers
+    Remember that j is sum of i and 1
+    Do this diff of numbers's length and j times:
+      When item j in numbers is less than smallest, then:
+        Remember that smallest is item j in numbers
+      End when
+      Increase j by 1
+    End do
+    Add result to smallest
+    Remember that removed is no
+    Remember that k is 0
+    Remember that next_numbers is []
+    Do this numbers's length times:
+      When removed is no, then:
+        When item k in numbers is smallest, then:
+          Remember that removed is yes
+        But, if not:
+          Add next_numbers to item k in numbers
+        End when
+      But, if not:
+        Add next_numbers to item k in numbers
+      End when
+      Increase k by 1
+    End do
+    Remember that numbers is next_numbers
+    Remember that i is 0
+  End do
+  When isstring of result, then:
+    The answer is result
+  End when
+  The answer is result
+Now you know

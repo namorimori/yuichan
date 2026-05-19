@@ -1,0 +1,35 @@
+Nav rem vaz
+Dum filter_by_prefix(strings, prefix):
+   Kem num_strings par strings @kez
+   Kem prefix_len par prefix @kez
+   Kem result par []
+   Kem i par 0
+   Mup dum num_strings pag:
+      Kem string par strings[i]
+      Kem string_len par string @kez
+      Kem has_prefix par 0
+      Nev string_len pev prefix_len ger:
+         Kem has_prefix par 1
+         Kem j par 0
+         Mup dum prefix_len pag:
+            Nev string[j] nup prefix[j] ger:
+               Kem has_prefix par 0
+            Dam nev
+            Rav j
+         Dam mup
+      Dam nev
+      Nev has_prefix paz 1 ger:
+         Mev result naz string
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> filter_by_prefix([], [97]) 
+[]
+>>> filter_by_prefix([[97, 98, 99], [98, 99, 100], [99, 100, 101], [97, 114, 114, 97, 121]], [97]) 
+[[97, 98, 99], [97, 114, 114, 97, 121]]
+>>> filter_by_prefix([], "john") 
+[]
+>>> filter_by_prefix(["xxx", "asd", "xxy", "john doe", "xxxAAA", "xxx"], "xxx") 
+["xxx", "xxxAAA", "xxx"]

@@ -1,0 +1,33 @@
+Nav rem vaz
+Dum generate_integers(a, b):
+   Kem lower par 最小値(a, b)
+   Kem upper par 最大値(a, b)
+   Kem lower par 最大値(2, lower)
+   Kem upper par 最小値(8, upper)
+   Kem result par []
+   Kem i par lower
+   Mup dum 100 pag:
+      Nev i dur upper ger:
+         Kem remainder par 剰余(i, 2)
+         Nev remainder paz 0 ger:
+            Mev result naz i
+         Dam nev
+         Rav i
+      Dam nev
+   Dam mup
+   Dup vem result
+Pam dum
+>>> generate_integers(2, 8) 
+[2, 4, 6, 8]
+>>> generate_integers(8, 2) 
+[2, 4, 6, 8]
+>>> generate_integers(10, 14) 
+[]
+>>> generate_integers(2, 10) 
+[2, 4, 6, 8]
+>>> generate_integers(10, 2) 
+[2, 4, 6, 8]
+>>> generate_integers(132, 2) 
+[2, 4, 6, 8]
+>>> generate_integers(17, 89) 
+[]

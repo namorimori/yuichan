@@ -1,0 +1,10 @@
+Sure — tell me the function you want, and I’ll write it in Bridget.
+
+If you want, you can give it in Python like:
+
+```python
+def add_one(x):
+    return x + 1
+```
+
+and I’ll convert it to Bridget.

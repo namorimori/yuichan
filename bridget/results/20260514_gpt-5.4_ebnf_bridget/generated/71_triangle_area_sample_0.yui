@@ -1,0 +1,18 @@
+Use the standard library
+This is how to triangle_area of a and b and c:
+  Remember that s is quotient of sum of a and b and c and 2
+  When a is at least sum of b and c, then:
+    The answer is -1
+  But, if not:
+    When b is at least sum of a and c, then:
+      The answer is -1
+    But, if not:
+      When c is at least sum of a and b, then:
+        The answer is -1
+      But, if not:
+        Remember that area_squared is product of s and diff of s and a and diff of s and b and diff of s and c
+        The answer is sqrt of area_squared
+      End when
+    End when
+  End when
+Now you know

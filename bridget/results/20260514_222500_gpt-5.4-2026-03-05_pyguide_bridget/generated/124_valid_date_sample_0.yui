@@ -1,0 +1,90 @@
+Use the standard library
+This is how to valid_date of date:
+   When date's length is not 10, then:
+      The answer is 0
+   End when
+
+   When item 2 in date is not item 0 in "-", then:
+      The answer is 0
+   End when
+   When item 5 in date is not item 0 in "-", then:
+      The answer is 0
+   End when
+
+   Remember that d1 is item 0 in date
+   Remember that d2 is item 1 in date
+   Remember that m1 is item 3 in date
+   Remember that m2 is item 4 in date
+   Remember that y1 is item 6 in date
+   Remember that y2 is item 7 in date
+   Remember that y3 is item 8 in date
+   Remember that y4 is item 9 in date
+
+   When d1 is less than 48, then:
+      The answer is 0
+   End when
+   When d1 is more than 57, then:
+      The answer is 0
+   End when
+   When d2 is less than 48, then:
+      The answer is 0
+   End when
+   When d2 is more than 57, then:
+      The answer is 0
+   End when
+   When m1 is less than 48, then:
+      The answer is 0
+   End when
+   When m1 is more than 57, then:
+      The answer is 0
+   End when
+   When m2 is less than 48, then:
+      The answer is 0
+   End when
+   When m2 is more than 57, then:
+      The answer is 0
+   End when
+   When y1 is less than 48, then:
+      The answer is 0
+   End when
+   When y1 is more than 57, then:
+      The answer is 0
+   End when
+   When y2 is less than 48, then:
+      The answer is 0
+   End when
+   When y2 is more than 57, then:
+      The answer is 0
+   End when
+   When y3 is less than 48, then:
+      The answer is 0
+   End when
+   When y3 is more than 57, then:
+      The answer is 0
+   End when
+   When y4 is less than 48, then:
+      The answer is 0
+   End when
+   When y4 is more than 57, then:
+      The answer is 0
+   End when
+
+   Remember that day is toint of "{item 0 in date}{item 1 in date}"
+   Remember that month is toint of "{item 3 in date}{item 4 in date}"
+
+   When month is less than 1, then:
+      The answer is 0
+   End when
+   When month is more than 12, then:
+      The answer is 0
+   End when
+
+   When day is less than 1, then:
+      The answer is 0
+   End when
+   When day is more than 31, then:
+      The answer is 0
+   End when
+
+   The answer is 1
+Now you know

@@ -1,0 +1,8 @@
+>>> greatest_common_divisor of 3 and 7 
+1
+>>> greatest_common_divisor of 10 and 15 
+5
+>>> greatest_common_divisor of 49 and 14 
+7
+>>> greatest_common_divisor of 144 and 60 
+12

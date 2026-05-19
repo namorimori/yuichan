@@ -1,0 +1,15 @@
+Use the standard library
+This is how to fruit_distribution of s and n:
+   Remember that total is 0
+   Remember that i is 0
+   Do this s's length times:
+      Remember that c is item i in s
+      When c is at least 48, then:
+         When c is at most 57, then:
+            Remember that total is sum of total and (diff of c and 48)
+         End when
+      End when
+      Increase i
+   End do
+   The answer is diff of n and total
+Now you know

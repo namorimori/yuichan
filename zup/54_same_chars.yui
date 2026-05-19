@@ -1,0 +1,109 @@
+Nav rem vaz
+Dum same_chars(s0, s1):
+   Kem len0 par s0 @kez
+   Kem len1 par s1 @kez
+   Kem unique0 par []
+   Kem i par 0
+   Mup dum len0 pag:
+      Kem char par s0[i]
+      Kem is_new par 1
+      Kem j par 0
+      Kem u0_len par unique0 @kez
+      Mup dum u0_len pag:
+         Nev unique0[j] paz char ger:
+            Kem is_new par 0
+         Dam nev
+         Rav j
+      Dam mup
+      Nev is_new paz 1 ger:
+         Mev unique0 naz char
+      Dam nev
+      Rav i
+   Dam mup
+   Kem unique1 par []
+   Kem i par 0
+   Mup dum len1 pag:
+      Kem char par s1[i]
+      Kem is_new par 1
+      Kem j par 0
+      Kem u1_len par unique1 @kez
+      Mup dum u1_len pag:
+         Nev unique1[j] paz char ger:
+            Kem is_new par 0
+         Dam nev
+         Rav j
+      Dam mup
+      Nev is_new paz 1 ger:
+         Mev unique1 naz char
+      Dam nev
+      Rav i
+   Dam mup
+   Kem u0_len par unique0 @kez
+   Kem u1_len par unique1 @kez
+   Kem result par 1
+   Nev u0_len nup u1_len ger:
+      Kem result par 0
+   Dam nev
+   Nev result paz 1 ger:
+      Kem i par 0
+      Mup dum u0_len pag:
+         Kem char par unique0[i]
+         Kem found par 0
+         Kem j par 0
+         Mup dum u1_len pag:
+            Nev unique1[j] paz char ger:
+               Kem found par 1
+            Dam nev
+            Rav j
+         Dam mup
+         Nev found paz 0 ger:
+            Kem result par 0
+         Dam nev
+         Rav i
+      Dam mup
+   Dam nev
+   Dup vem result
+Pam dum
+>>> same_chars([101, 97, 98, 99, 100, 122, 122, 122, 122], [
+   100,
+   100,
+   100,
+   122,
+   122,
+   122,
+   122,
+   122,
+   122,
+   122,
+   100,
+   100,
+   101,
+   100,
+   100,
+   97,
+   98,
+   99
+]) 
+1
+>>> same_chars([97, 98, 99, 100], [100, 100, 100, 100, 100, 100, 100, 97, 98, 99]) 
+1
+>>> same_chars([100, 100, 100, 100, 100, 100, 100, 97, 98, 99], [97, 98, 99, 100]) 
+1
+>>> same_chars([101, 97, 98, 99, 100], [100, 100, 100, 100, 100, 100, 100, 97, 98, 99]) 
+0
+>>> same_chars([97, 98, 99, 100], [100, 100, 100, 100, 100, 100, 100, 97, 98, 99, 101]) 
+0
+>>> same_chars("eabcdzzzz", "dddzzzzzzzddeddabc") 
+1
+>>> same_chars("abcd", "dddddddabc") 
+1
+>>> same_chars("dddddddabc", "abcd") 
+1
+>>> same_chars("eabcd", "dddddddabc") 
+0
+>>> same_chars("abcd", "dddddddabcf") 
+0
+>>> same_chars("eabcdzzzz", "dddzzzzzzzddddabc") 
+0
+>>> same_chars("aabb", "aaccc") 
+0

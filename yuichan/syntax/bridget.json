@@ -11,7 +11,7 @@
     "comment-end": "",
     "indent": "  ",
     "special-name-pattern": "[^\\s\\[\\]\\(\\)\",\\+\\-\\*\\/\\%\\=\\!\\<\\>]+",
-    "special-name-funcname": "\\s(?:is|to)\\s+({name_pattern})\\s+of",
+    "special-name-funcname": "[\\s(]([^\\s\\[\\]\\(\\)\",\\+\\-\\*\\/\\%\\=\\!\\<\\>A-Za-z0-9_][^\\s\\[\\]\\(\\)\",\\+\\-\\*\\/\\%\\=\\!\\<\\>]*)\\s+of",
     "special-name-variable": "Remember\\s+that\\s+({name_pattern})\\s+is",
 
     "null": "[nN]othing|null",

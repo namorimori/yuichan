@@ -1,0 +1,44 @@
+Use the standard library
+This is how to poly of xs and x:
+   Remember that result is 0.000000
+   Remember that n is xs's length
+   Remember that i is 0
+   Remember that current_power is 1.000000
+   Do this n times:
+      Remember that coeff is tofloat of item i in xs
+      Remember that term is product of coeff and current_power
+      Remember that result is sum of result and term
+      Remember that current_power is product of current_power and x
+      Increase i
+   End do
+   The answer is result
+Now you know
+This is how to find_zero of xs:
+   Remember that a is -10000.000000
+   Remember that b is 10000.000000
+   Remember that poly_a is poly of xs and a
+   Remember that i is 0
+   Do this 200 times:
+      Remember that mid is quotient of (sum of a and b) and 2.000000
+      Remember that poly_mid is poly of xs and mid
+      Remember that prod is product of poly_a and poly_mid
+      When prod is more than 0.000000, then:
+         Remember that a is mid
+         Remember that poly_a is poly_mid
+      But, if not:
+         Remember that b is mid
+      End when
+      Increase i
+   End do
+   The answer is quotient of (sum of a and b) and 2.000000
+Now you know
+This is how to approx_zero of x:
+   Remember that ax is abs of x
+   Remember that result is 0
+   When ax is less than 0.001000, then:
+      Remember that result is 1
+   End when
+   The answer is result
+Now you know
+>>> approx_zero of (poly of [1, 1] and (find_zero of [1, 1])) 
+1

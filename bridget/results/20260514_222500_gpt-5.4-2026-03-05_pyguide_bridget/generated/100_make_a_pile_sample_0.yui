@@ -1,0 +1,12 @@
+Use the standard library
+This is how to make_a_pile of n:
+   Remember that pile is []
+   Remember that i is 0
+   Remember that value is n
+   Do this n times:
+      Add pile to value
+      Remember that value is sum of value and 2
+      Increase i
+   End do
+   The answer is pile
+Now you know

@@ -1,0 +1,11 @@
+Use the standard library
+
+This is how to concatenate of strings:
+   Remember that result is ""
+   Remember that i is 0
+   Do this strings's length times:
+      Remember that result is "{result}{item i in strings}"
+      Increase i
+   End do
+   The answer is result
+Now you know

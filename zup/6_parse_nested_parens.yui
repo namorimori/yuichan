@@ -1,0 +1,91 @@
+Nav rem vaz
+Dum parse_nested_parens(paren_string):
+   Kem length par paren_string @kez
+   Kem result par []
+   Kem current_group par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par paren_string[i]
+      Nev char paz 32 ger:
+         Nev current_group @kez pep 0 ger:
+            Kem depth par 0
+            Kem max_depth par 0
+            Kem j par 0
+            Kem group_len par current_group @kez
+            Mup dum group_len pag:
+               Kem c par current_group[j]
+               Nev c paz 40 ger:
+                  Rav depth
+                  Nev depth pep max_depth ger:
+                     Kem max_depth par depth
+                  Dam nev
+               Zum:
+                  Zar depth
+               Dam nev
+               Rav j
+            Dam mup
+            Mev result naz max_depth
+            Kem current_group par []
+         Dam nev
+      Zum:
+         Mev current_group naz char
+      Dam nev
+      Rav i
+   Dam mup
+   Nev current_group @kez pep 0 ger:
+      Kem depth par 0
+      Kem max_depth par 0
+      Kem j par 0
+      Kem group_len par current_group @kez
+      Mup dum group_len pag:
+         Kem c par current_group[j]
+         Nev c paz 40 ger:
+            Rav depth
+            Nev depth pep max_depth ger:
+               Kem max_depth par depth
+            Dam nev
+         Zum:
+            Zar depth
+         Dam nev
+         Rav j
+      Dam mup
+      Mev result naz max_depth
+   Dam nev
+   Dup vem result
+Pam dum
+>>> parse_nested_parens([
+   40,
+   40,
+   41,
+   40,
+   41,
+   41,
+   32,
+   40,
+   40,
+   40,
+   41,
+   41,
+   41,
+   32,
+   40,
+   41,
+   32,
+   40,
+   40,
+   40,
+   41,
+   41,
+   40,
+   41,
+   40,
+   41,
+   41
+]) 
+[2, 3, 1, 3]
+>>> parse_nested_parens("(()()) ((())) () ((())()())") 
+[2, 3, 1, 3]
+>>> parse_nested_parens("() (()) ((())) (((())))") 
+[1, 2, 3, 4]
+>>> parse_nested_parens("(()(())((())))") 
+[4]

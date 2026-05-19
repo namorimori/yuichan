@@ -1,0 +1,14 @@
+{
+  "model": "claude-haiku-4-5-20251001",
+  "template": "evaluate_bridget_templates/full_context.md",
+  "context": "codesample",
+  "temperature": 0.2,
+  "k": 1,
+  "total_problems": 3,
+  "passed_problems": 2,
+  "failed_problems": 1,
+  "pass_at_k": 66.67,
+  "timestamp": "20260514_185210",
+  "total_samples": 3,
+  "passed_samples": 2
+}

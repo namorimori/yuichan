@@ -1,0 +1,27 @@
+Use the standard library
+
+This is how to prime_fib of n:
+   Remember that a is 2
+   Remember that b is 3
+
+   When n is 1, then:
+      The answer is a
+   End when
+
+   When n is 2, then:
+      The answer is b
+   End when
+
+   Remember that i is 2
+   Do this n times:
+      Remember that c is sum of a and b
+      Remember that a is b
+      Remember that b is c
+      Increase i
+      When i is n, then:
+         Leave the loop
+      End when
+   End do
+
+   The answer is b
+Now you know

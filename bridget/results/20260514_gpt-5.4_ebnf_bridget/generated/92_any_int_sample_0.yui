@@ -1,0 +1,13 @@
+Use the standard library
+This is how to any_int of x and y and z:
+  When isint of x is yes, then:
+    The answer is 1
+  End when
+  When isint of y is yes, then:
+    The answer is 1
+  End when
+  When isint of z is yes, then:
+    The answer is 1
+  End when
+  The answer is 0
+Now you know

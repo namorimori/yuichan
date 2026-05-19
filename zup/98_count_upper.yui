@@ -1,0 +1,55 @@
+Nav rem vaz
+Dum count_upper(s):
+   Kem length par s @kez
+   Kem count par 0
+   Kem i par 0
+   Mup dum 100 pag:
+      Nev i dup length ger:
+         Kem remainder par 剰余(i, 2)
+         Nev remainder paz 0 ger:
+            Kem char par s[i]
+            Kem is_vowel par 0
+            Nev char paz 65 ger:
+               Kem is_vowel par 1
+            Dam nev
+            Nev char paz 69 ger:
+               Kem is_vowel par 1
+            Dam nev
+            Nev char paz 73 ger:
+               Kem is_vowel par 1
+            Dam nev
+            Nev char paz 79 ger:
+               Kem is_vowel par 1
+            Dam nev
+            Nev char paz 85 ger:
+               Kem is_vowel par 1
+            Dam nev
+            Nev is_vowel paz 1 ger:
+               Rav count
+            Dam nev
+         Dam nev
+         Kem i par 和(i, 2)
+      Dam nev
+   Dam mup
+   Dup vem count
+Pam dum
+>>> count_upper([97, 66, 67, 100, 69, 102]) 
+1
+>>> count_upper([97, 98, 99, 100, 101, 102, 103]) 
+0
+>>> count_upper([100, 66, 66, 69]) 
+0
+>>> count_upper("aBCdEf") 
+1
+>>> count_upper("abcdefg") 
+0
+>>> count_upper("dBBE") 
+0
+>>> count_upper("B") 
+0
+>>> count_upper("U") 
+1
+>>> count_upper("") 
+0
+>>> count_upper("EEEE") 
+2

@@ -1,0 +1,18 @@
+Use the standard library
+This is how to is_bored of S:
+   Remember that count is 0
+   Remember that i is 0
+   Do this S's length times:
+      When item i in S is item 0 in "I", then:
+         When i is 0, then:
+            Increase count
+         But, if not:
+            When item (diff of i and 1) in S is item 0 in " ", then:
+               Increase count
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know

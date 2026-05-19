@@ -1,0 +1,59 @@
+Use the standard library
+This is how to classify of a and b and c:
+   Remember that ok is 1
+   Remember that ab is sum of a and b
+   Remember that ac is sum of a and c
+   Remember that bc is sum of b and c
+   When ab is at least c, then:
+      Remember that ok is 0
+   End when
+   When ac is at least b, then:
+      Remember that ok is 0
+   End when
+   When bc is at least a, then:
+      Remember that ok is 0
+   End when
+   When ok is 0, then:
+      The answer is "not_triangle"
+   End when
+   Remember that eq is 0
+   Remember that dab is diff of a and b
+   Remember that dbc is diff of b and c
+   Remember that dac is diff of a and c
+   When dab is 0, then:
+      Increase eq
+   End when
+   When dbc is 0, then:
+      Increase eq
+   End when
+   When dac is 0, then:
+      Increase eq
+   End when
+   When eq is 3, then:
+      The answer is "equilateral"
+   End when
+   When eq is 1, then:
+      The answer is "isosceles"
+   End when
+   The answer is "scalene"
+Now you know
+>>> classify of 5 and 5 and 5 
+"equilateral"
+>>> classify of 5 and 5 and 8 
+"isosceles"
+>>> classify of 8 and 5 and 5 
+"isosceles"
+>>> classify of 5 and 8 and 5 
+"isosceles"
+>>> classify of 3 and 4 and 5 
+"scalene"
+>>> classify of 7 and 8 and 9 
+"scalene"
+>>> classify of 1 and 2 and 3 
+"not_triangle"
+>>> classify of 1 and 1 and 5 
+"not_triangle"
+>>> classify of 10 and 1 and 1 
+"not_triangle"
+>>> classify of 2 and 2 and 4 
+"not_triangle"

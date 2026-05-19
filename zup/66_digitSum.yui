@@ -1,0 +1,48 @@
+Nav rem vaz
+Dum digitSum(s):
+   Kem length par s @kez
+   Kem sum par 0
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par s[i]
+      Kem is_upper par 0
+      Nev char pep 64 ger:
+         Nev char dup 91 ger:
+            Kem is_upper par 1
+         Dam nev
+      Dam nev
+      Nev is_upper paz 1 ger:
+         Kem sum par 和(sum, char)
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem sum
+Pam dum
+>>> digitSum([]) 
+0
+>>> digitSum([97, 98, 65, 66]) 
+131
+>>> digitSum([97, 98, 99, 67, 100]) 
+67
+>>> digitSum([104, 101, 108, 108, 111, 69]) 
+69
+>>> digitSum([119, 111, 65, 114, 66, 108, 100]) 
+131
+>>> digitSum([97, 65, 97, 97, 97, 88, 97]) 
+153
+>>> digitSum("") 
+0
+>>> digitSum("abAB") 
+131
+>>> digitSum("abcCd") 
+67
+>>> digitSum("helloE") 
+69
+>>> digitSum("woArBld") 
+131
+>>> digitSum("aAaaaXa") 
+153
+>>> digitSum(" How are yOu?") 
+151
+>>> digitSum("You arE Very Smart") 
+327

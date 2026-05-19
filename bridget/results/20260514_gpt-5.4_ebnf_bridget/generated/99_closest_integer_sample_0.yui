@@ -1,0 +1,13 @@
+Use the standard library
+This is how to closest_integer of value:
+  When isarray of value is yes, then:
+    Remember that text is ""
+    Remember that i is 0
+    Do this value's length times:
+      Remember that text is "{text}{tostring of item i in value}"
+      Increase i by 1
+    End do
+    Remember that value is text
+  End when
+  The answer is toint of value
+Now you know

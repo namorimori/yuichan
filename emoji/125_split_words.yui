@@ -1,0 +1,95 @@
+🗝️ 📚
+🧩 split_words(txt) 👉
+   length ⬅️ 📐 txt
+   result ⬅️ []
+   current_word ⬅️ []
+   has_space ⬅️ 0
+   has_comma ⬅️ 0
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ txt[i]
+      ❓ char ⚖️ 32 👉
+         has_space ⬅️ 1
+      🔚
+      ❓ char ⚖️ 44 👉
+         has_comma ⬅️ 1
+      🔚
+      i ⬆️
+   🔚
+   ❓ has_space ⚖️ 1 👉
+      i ⬅️ 0
+      🌀 length 👉
+         char ⬅️ txt[i]
+         ❓ char ⚖️ 32 👉
+            ❓ 📐 current_word 📉 0 👉
+               result 🧲 current_word
+               current_word ⬅️ []
+            🔚
+         🔚
+         ❗ 👉
+            current_word 🧲 char
+         🔚
+         i ⬆️
+      🔚
+      ❓ 📐 current_word 📉 0 👉
+         result 🧲 current_word
+      🔚
+   🔚
+   ❗ 👉
+      ❓ has_comma ⚖️ 1 👉
+         i ⬅️ 0
+         🌀 length 👉
+            char ⬅️ txt[i]
+            ❓ char ⚖️ 44 👉
+               ❓ 📐 current_word 📉 0 👉
+                  result 🧲 current_word
+                  current_word ⬅️ []
+               🔚
+            🔚
+            ❗ 👉
+               current_word 🧲 char
+            🔚
+            i ⬆️
+         🔚
+         ❓ 📐 current_word 📉 0 👉
+            result 🧲 current_word
+         🔚
+      🔚
+      ❗ 👉
+         count ⬅️ 0
+         i ⬅️ 0
+         🌀 length 👉
+            char ⬅️ txt[i]
+            ❓ char 📉 96 👉
+               ❓ char 📈 123 👉
+                  remainder ⬅️ 剰余(char, 2)
+                  ❓ remainder ⚖️ 0 👉
+                     count ⬆️
+                  🔚
+               🔚
+            🔚
+            i ⬆️
+         🔚
+         result ⬅️ count
+      🔚
+   🔚
+   ✅ result
+🔚
+>>> split_words([72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100, 33]) 
+[[72, 101, 108, 108, 111], [119, 111, 114, 108, 100, 33]]
+>>> split_words("Hello world!") 
+["Hello", "world!"]
+>>> split_words("Hello,world!") 
+["Hello", "world!"]
+>>> split_words("Hello world,!") 
+["Hello", "world,!"]
+>>> split_words("Hello,Hello,world !") 
+["Hello,Hello,world", "!"]
+>>> split_words("abcdef") 
+3
+>>> split_words("aaabb") 
+2
+>>> split_words("aaaBb") 
+1
+>>> split_words("") 
+0

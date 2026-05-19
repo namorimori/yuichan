@@ -1,0 +1,30 @@
+Nav rem vaz
+Dum add_elements(arr, k):
+   Kem sum par 0
+   Kem i par 0
+   Mup dum k pag:
+      Kem value par arr[i]
+      Kem abs_value par 絶対値(value)
+      Kem is_valid par 0
+      Nev abs_value dup 100 ger:
+         Kem is_valid par 1
+      Dam nev
+      Nev is_valid paz 1 ger:
+         Kem sum par 和(sum, value)
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem sum
+Pam dum
+>>> add_elements([111, 21, 3, 4000, 5, 6, 7, 8, 9], 4) 
+24
+>>> add_elements([1, -2, -3, 41, 57, 76, 87, 88, 99], 3) 
+-4
+>>> add_elements([111, 121, 3, 4000, 5, 6], 2) 
+0
+>>> add_elements([11, 21, 3, 90, 5, 6, 7, 8, 9], 4) 
+125
+>>> add_elements([111, 21, 3, 4000, 5, 6, 7, 8, 9], 4) 
+24
+>>> add_elements([1], 1) 
+1

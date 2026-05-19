@@ -1,0 +1,22 @@
+Use the standard library
+This is how to correct_bracketing of brackets:
+   Remember that balance is 0
+   Remember that i is 0
+   Do this brackets's length times:
+      Remember that c is item i in brackets
+      When c is 40, then:
+         Increase balance
+      End when
+      When c is 41, then:
+         Decrease balance
+         When balance is less than 0, then:
+            The answer is 0
+         End when
+      End when
+      Increase i
+   End do
+   When balance is 0, then:
+      The answer is 1
+   End when
+   The answer is 0
+Now you know

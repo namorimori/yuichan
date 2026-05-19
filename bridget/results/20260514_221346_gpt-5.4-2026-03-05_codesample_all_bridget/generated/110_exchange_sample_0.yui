@@ -1,0 +1,24 @@
+Use the standard library
+This is how to exchange of lst1 and lst2:
+   Remember that same is yes
+   Remember that n1 is lst1's length
+   Remember that n2 is lst2's length
+   When n1 is not n2, then:
+      Remember that same is no
+   End when
+   Remember that n is n1
+   When n2 is less than n, then:
+      Remember that n is n2
+   End when
+   Remember that i is 0
+   Do this n times:
+      When item i in lst1 is not item i in lst2, then:
+         Remember that same is no
+      End when
+      Increase i
+   End do
+   When same is yes, then:
+      The answer is "YES"
+   End when
+   The answer is [78, 79]
+Now you know

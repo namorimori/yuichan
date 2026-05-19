@@ -1,0 +1,30 @@
+Use the standard library
+This is how to cycpattern_check of a and b:
+  When b's length is 0, then:
+    The answer is 1
+  End when
+  When a's length is less than b's length, then:
+    The answer is 0
+  End when
+  Remember that doubled is []
+  Do this a's length times:
+    Add doubled to item remainder of doubled's length and a's length in a
+  End do
+  Remember that limit is sum of a's length and diff of 0 and b's length
+  Increase limit by 1
+  Do this limit times:
+    Remember that i is diff of limit and 1
+    Remember that ok is 1
+    Do this b's length times:
+      Remember that j is diff of b's length and 1
+      When item sum of i and j in doubled is not item j in b, then:
+        Remember that ok is 0
+        Leave the loop
+      End when
+    End do
+    When ok is 1, then:
+      The answer is 1
+    End when
+  End do
+  The answer is 0
+Now you know

@@ -1,0 +1,16 @@
+>>> monotonic of [1, 2, 4, 10] 
+1
+>>> monotonic of [1, 2, 4, 20] 
+1
+>>> monotonic of [1, 20, 4, 10] 
+0
+>>> monotonic of [4, 1, 0, -10] 
+1
+>>> monotonic of [4, 1, 1, 0] 
+1
+>>> monotonic of [1, 2, 3, 2, 5, 60] 
+0
+>>> monotonic of [1, 2, 3, 4, 5, 60] 
+1
+>>> monotonic of [9, 9, 9, 9] 
+1

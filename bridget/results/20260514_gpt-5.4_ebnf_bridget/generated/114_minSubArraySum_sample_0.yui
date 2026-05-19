@@ -1,0 +1,15 @@
+Use the standard library
+This is how to minSubArraySum of nums:
+  Remember that best is item 0 in nums
+  Remember that current is item 0 in nums
+  Remember that i is 1
+  Do this nums's length times:
+    When i is at most diff of nums's length and 1, then:
+      Leave the loop
+    End when
+    Remember that current is min of item i in nums and sum of current and item i in nums
+    Remember that best is min of best and current
+    Increase i
+  End do
+  The answer is best
+Now you know

@@ -1,0 +1,26 @@
+Use the standard library
+This is how to is_multiply_prime of a:
+   Remember that count is 0
+   Remember that i is 2
+   Do this a times:
+      When i is more than a, then:
+         Leave the loop
+      End when
+      When remainder of a and i is 0, then:
+         Increase count
+      End when
+      Increase i
+   End do
+   When count is 3, then:
+      The answer is 1
+   But, if not:
+      The answer is 0
+   End when
+Now you know
+
+>>> is_multiply_prime of 30
+1
+>>> is_multiply_prime of 5
+0
+>>> is_multiply_prime of 30
+1

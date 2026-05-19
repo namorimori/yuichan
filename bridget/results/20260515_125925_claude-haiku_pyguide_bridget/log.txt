@@ -1,0 +1,2481 @@
+=== Bridget YuiEval (pass@1) ===
+Model:    claude-haiku  (anthropic)
+Template: context/pyguide_bridget.md
+Context:  pyguide_bridget.md
+Problems: 164
+
+[1/164] 0_has_close_elements
+
+============================================================
+[0_has_close_elements] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [1.25s]
+
+[2/164] 1_separate_paren_groups
+
+============================================================
+[1_separate_paren_groups] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.43s]
+
+[3/164] 2_truncate_number
+
+============================================================
+[2_truncate_number] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.34s]
+
+[4/164] 3_below_zero
+
+============================================================
+[3_below_zero] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [1.42s]
+
+[5/164] 4_mean_absolute_deviation
+
+============================================================
+[4_mean_absolute_deviation] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.87s]
+
+[6/164] 5_intersperse
+
+============================================================
+[5_intersperse] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.41s]
+
+[7/164] 6_parse_nested_parens
+
+============================================================
+[6_parse_nested_parens] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [1.76s]
+
+[8/164] 7_filter_by_substring
+
+============================================================
+[7_filter_by_substring] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.31s]
+
+[9/164] 8_sum_product
+
+============================================================
+[8_sum_product] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.48s]
+
+[10/164] 9_rolling_max
+
+============================================================
+[9_rolling_max] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.44s]
+
+[11/164] 10_make_palindrome
+
+============================================================
+[10_make_palindrome] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.33s]
+
+[12/164] 11_string_xor
+
+============================================================
+[11_string_xor] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[13/164] 12_longest
+
+============================================================
+[12_longest] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.30s]
+
+[14/164] 13_greatest_common_divisor
+
+============================================================
+[13_greatest_common_divisor] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.40s]
+
+[15/164] 14_all_prefixes
+
+============================================================
+[14_all_prefixes] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.67s]
+
+[16/164] 15_string_sequence
+
+============================================================
+[15_string_sequence] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.38s]
+
+[17/164] 16_count_distinct_characters
+
+============================================================
+[16_count_distinct_characters] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.30s]
+
+[18/164] 17_parse_music
+
+============================================================
+[17_parse_music] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.50s]
+
+[19/164] 18_how_many_times
+
+============================================================
+[18_how_many_times] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.31s]
+
+[20/164] 19_sort_numbers
+
+============================================================
+[19_sort_numbers] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.46s]
+
+[21/164] 20_find_closest_elements
+
+============================================================
+[20_find_closest_elements] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.38s]
+
+[22/164] 21_rescale_to_unit
+
+============================================================
+[21_rescale_to_unit] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[23/164] 22_filter_integers
+
+============================================================
+[22_filter_integers] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.26s]
+
+[24/164] 23_strlen
+
+============================================================
+[23_strlen] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.66s]
+
+[25/164] 24_largest_divisor
+
+============================================================
+[24_largest_divisor] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [1.31s]
+
+[26/164] 25_factorize
+
+============================================================
+[25_factorize] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[27/164] 26_remove_duplicates
+
+============================================================
+[26_remove_duplicates] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.51s]
+
+[28/164] 27_flip_case
+
+============================================================
+[27_flip_case] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[29/164] 28_concatenate
+
+============================================================
+[28_concatenate] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.51s]
+
+[30/164] 29_filter_by_prefix
+
+============================================================
+[29_filter_by_prefix] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.37s]
+
+[31/164] 30_get_positive
+
+============================================================
+[30_get_positive] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.25s]
+
+[32/164] 31_is_prime
+
+============================================================
+[31_is_prime] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.69s]
+
+[33/164] 32_find_zero
+
+============================================================
+[32_find_zero] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[34/164] 33_sort_third
+
+============================================================
+[33_sort_third] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.31s]
+
+[35/164] 34_unique
+
+============================================================
+[34_unique] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.31s]
+
+[36/164] 35_max_element
+
+============================================================
+[35_max_element] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.39s]
+
+[37/164] 36_fizz_buzz
+
+============================================================
+[36_fizz_buzz] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.52s]
+
+[38/164] 37_sort_even
+
+============================================================
+[37_sort_even] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[39/164] 38_decode_cyclic
+
+============================================================
+[38_decode_cyclic] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.52s]
+
+[40/164] 39_prime_fib
+
+============================================================
+[39_prime_fib] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[41/164] 40_triples_sum_to_zero
+
+============================================================
+[40_triples_sum_to_zero] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[42/164] 41_car_race_collision
+
+============================================================
+[41_car_race_collision] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.49s]
+
+[43/164] 42_incr_list
+
+============================================================
+[42_incr_list] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.25s]
+
+[44/164] 43_pairs_sum_to_zero
+
+============================================================
+[43_pairs_sum_to_zero] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.84s]
+
+[45/164] 44_change_base
+
+============================================================
+[44_change_base] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.34s]
+
+[46/164] 45_triangle_area
+
+============================================================
+[45_triangle_area] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.90s]
+
+[47/164] 46_fib4
+
+============================================================
+[46_fib4] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.31s]
+
+[48/164] 47_median
+
+============================================================
+[47_median] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.55s]
+
+[49/164] 48_is_palindrome
+
+============================================================
+[48_is_palindrome] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.25s]
+
+[50/164] 49_modp
+
+============================================================
+[49_modp] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[51/164] 50_decode_shift
+
+============================================================
+[50_decode_shift] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.39s]
+
+[52/164] 51_remove_vowels
+
+============================================================
+[51_remove_vowels] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.38s]
+
+[53/164] 52_below_threshold
+
+============================================================
+[52_below_threshold] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[54/164] 53_add
+
+============================================================
+[53_add] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.30s]
+
+[55/164] 54_same_chars
+
+============================================================
+[54_same_chars] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.35s]
+
+[56/164] 55_fib
+
+============================================================
+[55_fib] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.36s]
+
+[57/164] 56_correct_bracketing
+
+============================================================
+[56_correct_bracketing] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.32s]
+
+[58/164] 57_monotonic
+
+============================================================
+[57_monotonic] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.30s]
+
+[59/164] 58_common
+
+============================================================
+[58_common] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.30s]
+
+[60/164] 59_largest_prime_factor
+
+============================================================
+[59_largest_prime_factor] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.42s]
+
+[61/164] 60_sum_to_n
+
+============================================================
+[60_sum_to_n] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.49s]
+
+[62/164] 61_correct_bracketing
+
+============================================================
+[61_correct_bracketing] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.37s]
+
+[63/164] 62_derivative
+
+============================================================
+[62_derivative] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [1.31s]
+
+[64/164] 63_fibfib
+
+============================================================
+[63_fibfib] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[65/164] 64_vowels_count
+
+============================================================
+[64_vowels_count] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.42s]
+
+[66/164] 65_circular_shift
+
+============================================================
+[65_circular_shift] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[67/164] 66_digitSum
+
+============================================================
+[66_digitSum] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[68/164] 67_fruit_distribution
+
+============================================================
+[67_fruit_distribution] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[69/164] 68_pluck
+
+============================================================
+[68_pluck] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[70/164] 69_search
+
+============================================================
+[69_search] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.25s]
+
+[71/164] 70_strange_sort_list
+
+============================================================
+[70_strange_sort_list] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[72/164] 71_triangle_area
+
+============================================================
+[71_triangle_area] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[73/164] 72_will_it_fly
+
+============================================================
+[72_will_it_fly] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.49s]
+
+[74/164] 73_smallest_change
+
+============================================================
+[73_smallest_change] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.25s]
+
+[75/164] 74_total_match
+
+============================================================
+[74_total_match] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.30s]
+
+[76/164] 75_is_multiply_prime
+
+============================================================
+[75_is_multiply_prime] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.43s]
+
+[77/164] 76_is_simple_power
+
+============================================================
+[76_is_simple_power] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[78/164] 77_iscube
+
+============================================================
+[77_iscube] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[79/164] 78_hex_key
+
+============================================================
+[78_hex_key] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.25s]
+
+[80/164] 79_decimal_to_binary
+
+============================================================
+[79_decimal_to_binary] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [1.28s]
+
+[81/164] 80_is_happy
+
+============================================================
+[80_is_happy] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.32s]
+
+[82/164] 81_numerical_letter_grade
+
+============================================================
+[81_numerical_letter_grade] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.58s]
+
+[83/164] 82_prime_length
+
+============================================================
+[82_prime_length] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[84/164] 83_starts_one_ends
+
+============================================================
+[83_starts_one_ends] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.40s]
+
+[85/164] 84_solve
+
+============================================================
+[84_solve] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.39s]
+
+[86/164] 85_add
+
+============================================================
+[85_add] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[87/164] 86_anti_shuffle
+
+============================================================
+[86_anti_shuffle] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [1.69s]
+
+[88/164] 87_get_row
+
+============================================================
+[87_get_row] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.33s]
+
+[89/164] 88_sort_array
+
+============================================================
+[88_sort_array] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.30s]
+
+[90/164] 89_encrypt
+
+============================================================
+[89_encrypt] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.26s]
+
+[91/164] 90_next_smallest
+
+============================================================
+[90_next_smallest] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.41s]
+
+[92/164] 91_is_bored
+
+============================================================
+[91_is_bored] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[93/164] 92_any_int
+
+============================================================
+[92_any_int] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[94/164] 93_encode
+
+============================================================
+[93_encode] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[95/164] 94_skjkasdkd
+
+============================================================
+[94_skjkasdkd] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[96/164] 95_check_dict_case
+
+============================================================
+[95_check_dict_case] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.26s]
+
+[97/164] 96_count_up_to
+
+============================================================
+[96_count_up_to] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.25s]
+
+[98/164] 97_multiply
+
+============================================================
+[97_multiply] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.31s]
+
+[99/164] 98_count_upper
+
+============================================================
+[98_count_upper] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[100/164] 99_closest_integer
+
+============================================================
+[99_closest_integer] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.35s]
+
+[101/164] 100_make_a_pile
+
+============================================================
+[100_make_a_pile] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.33s]
+
+[102/164] 101_words_string
+
+============================================================
+[101_words_string] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[103/164] 102_choose_num
+
+============================================================
+[102_choose_num] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.26s]
+
+[104/164] 103_rounded_avg
+
+============================================================
+[103_rounded_avg] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[105/164] 104_unique_digits
+
+============================================================
+[104_unique_digits] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[106/164] 105_by_length
+
+============================================================
+[105_by_length] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[107/164] 106_f
+
+============================================================
+[106_f] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.87s]
+
+[108/164] 107_even_odd_palindrome
+
+============================================================
+[107_even_odd_palindrome] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.26s]
+
+[109/164] 108_count_nums
+
+============================================================
+[108_count_nums] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.34s]
+
+[110/164] 109_move_one_ball
+
+============================================================
+[109_move_one_ball] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.31s]
+
+[111/164] 110_exchange
+
+============================================================
+[110_exchange] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.25s]
+
+[112/164] 111_histogram
+
+============================================================
+[111_histogram] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.59s]
+
+[113/164] 112_reverse_delete
+
+============================================================
+[112_reverse_delete] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[114/164] 113_odd_count
+
+============================================================
+[113_odd_count] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.25s]
+
+[115/164] 114_minSubArraySum
+
+============================================================
+[114_minSubArraySum] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[116/164] 115_max_fill
+
+============================================================
+[115_max_fill] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [1.31s]
+
+[117/164] 116_sort_array
+
+============================================================
+[116_sort_array] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[118/164] 117_select_words
+
+============================================================
+[117_select_words] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.33s]
+
+[119/164] 118_get_closest_vowel
+
+============================================================
+[118_get_closest_vowel] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.40s]
+
+[120/164] 119_match_parens
+
+============================================================
+[119_match_parens] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.35s]
+
+[121/164] 120_maximum
+
+============================================================
+[120_maximum] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.25s]
+
+[122/164] 121_solution
+
+============================================================
+[121_solution] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[123/164] 122_add_elements
+
+============================================================
+[122_add_elements] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[124/164] 123_get_odd_collatz
+
+============================================================
+[123_get_odd_collatz] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.38s]
+
+[125/164] 124_valid_date
+
+============================================================
+[124_valid_date] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[126/164] 125_split_words
+
+============================================================
+[125_split_words] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[127/164] 126_is_sorted
+
+============================================================
+[126_is_sorted] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [1.29s]
+
+[128/164] 127_intersection
+
+============================================================
+[127_intersection] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.26s]
+
+[129/164] 128_prod_signs
+
+============================================================
+[128_prod_signs] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[130/164] 129_minPath
+
+============================================================
+[129_minPath] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.25s]
+
+[131/164] 130_tri
+
+============================================================
+[130_tri] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[132/164] 131_digits
+
+============================================================
+[131_digits] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[133/164] 132_is_nested
+
+============================================================
+[132_is_nested] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.35s]
+
+[134/164] 133_sum_squares
+
+============================================================
+[133_sum_squares] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[135/164] 134_check_if_last_char_is_a_letter
+
+============================================================
+[134_check_if_last_char_is_a_letter] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[136/164] 135_can_arrange
+
+============================================================
+[135_can_arrange] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[137/164] 136_largest_smallest_integers
+
+============================================================
+[136_largest_smallest_integers] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.38s]
+
+[138/164] 137_compare_one
+
+============================================================
+[137_compare_one] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.30s]
+
+[139/164] 138_is_equal_to_sum_even
+
+============================================================
+[138_is_equal_to_sum_even] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.26s]
+
+[140/164] 139_special_factorial
+
+============================================================
+[139_special_factorial] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[141/164] 140_fix_spaces
+
+============================================================
+[140_fix_spaces] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.27s]
+
+[142/164] 141_file_name_check
+
+============================================================
+[141_file_name_check] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.25s]
+
+[143/164] 142_sum_squares
+
+============================================================
+[142_sum_squares] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.26s]
+
+[144/164] 143_words_in_sentence
+
+============================================================
+[143_words_in_sentence] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.52s]
+
+[145/164] 144_simplify
+
+============================================================
+[144_simplify] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.47s]
+
+[146/164] 145_order_by_points
+
+============================================================
+[145_order_by_points] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.38s]
+
+[147/164] 146_specialFilter
+
+============================================================
+[146_specialFilter] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.31s]
+
+[148/164] 147_get_max_triples
+
+============================================================
+[147_get_max_triples] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.39s]
+
+[149/164] 148_bf
+
+============================================================
+[148_bf] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.28s]
+
+[150/164] 149_sorted_list_sum
+
+============================================================
+[149_sorted_list_sum] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[151/164] 150_x_or_y
+
+============================================================
+[150_x_or_y] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.52s]
+
+[152/164] 151_double_the_difference
+
+============================================================
+[151_double_the_difference] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.26s]
+
+[153/164] 152_compare
+
+============================================================
+[152_compare] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[154/164] 153_Strongest_Extension
+
+============================================================
+[153_Strongest_Extension] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.26s]
+
+[155/164] 154_cycpattern_check
+
+============================================================
+[154_cycpattern_check] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.26s]
+
+[156/164] 155_even_odd_count
+
+============================================================
+[155_even_odd_count] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[157/164] 156_int_to_mini_roman
+
+============================================================
+[156_int_to_mini_roman] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[158/164] 157_right_angle_triangle
+
+============================================================
+[157_right_angle_triangle] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [2.91s]
+
+[159/164] 158_find_max
+
+============================================================
+[158_find_max] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.40s]
+
+[160/164] 159_eat
+
+============================================================
+[159_eat] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.34s]
+
+[161/164] 160_do_algebra
+
+============================================================
+[160_do_algebra] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.43s]
+
+[162/164] 161_solve
+
+============================================================
+[161_solve] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.39s]
+
+[163/164] 162_string_to_md5
+
+============================================================
+[162_string_to_md5] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.29s]
+
+[164/164] 163_generate_integers
+
+============================================================
+[163_generate_integers] Sample 1/1
+============================================================
+--- Generated ---
+None
+--- Extracted ---
+
+  Sample 1/1... ✗ (0.00s)
+--- Result: ✗ FAILED (0.00s) ---
+Error: Empty code
+  Problem result: ✗ (0/1 passed) [0.39s]
+
+============================================================
+評価結果サマリー
+============================================================
+Total:   164 問題
+Passed:  0 問題
+Failed:  164 問題
+pass@1: 0.00% (0/164)
+95% CI: [0.00%, 2.29%] (Wilson Score)
+
+失敗した問題:
+  - 0_has_close_elements
+  - 1_separate_paren_groups
+  - 2_truncate_number
+  - 3_below_zero
+  - 4_mean_absolute_deviation
+  - 5_intersperse
+  - 6_parse_nested_parens
+  - 7_filter_by_substring
+  - 8_sum_product
+  - 9_rolling_max
+  - 10_make_palindrome
+  - 11_string_xor
+  - 12_longest
+  - 13_greatest_common_divisor
+  - 14_all_prefixes
+  - 15_string_sequence
+  - 16_count_distinct_characters
+  - 17_parse_music
+  - 18_how_many_times
+  - 19_sort_numbers
+  - 20_find_closest_elements
+  - 21_rescale_to_unit
+  - 22_filter_integers
+  - 23_strlen
+  - 24_largest_divisor
+  - 25_factorize
+  - 26_remove_duplicates
+  - 27_flip_case
+  - 28_concatenate
+  - 29_filter_by_prefix
+  - 30_get_positive
+  - 31_is_prime
+  - 32_find_zero
+  - 33_sort_third
+  - 34_unique
+  - 35_max_element
+  - 36_fizz_buzz
+  - 37_sort_even
+  - 38_decode_cyclic
+  - 39_prime_fib
+  - 40_triples_sum_to_zero
+  - 41_car_race_collision
+  - 42_incr_list
+  - 43_pairs_sum_to_zero
+  - 44_change_base
+  - 45_triangle_area
+  - 46_fib4
+  - 47_median
+  - 48_is_palindrome
+  - 49_modp
+  - 50_decode_shift
+  - 51_remove_vowels
+  - 52_below_threshold
+  - 53_add
+  - 54_same_chars
+  - 55_fib
+  - 56_correct_bracketing
+  - 57_monotonic
+  - 58_common
+  - 59_largest_prime_factor
+  - 60_sum_to_n
+  - 61_correct_bracketing
+  - 62_derivative
+  - 63_fibfib
+  - 64_vowels_count
+  - 65_circular_shift
+  - 66_digitSum
+  - 67_fruit_distribution
+  - 68_pluck
+  - 69_search
+  - 70_strange_sort_list
+  - 71_triangle_area
+  - 72_will_it_fly
+  - 73_smallest_change
+  - 74_total_match
+  - 75_is_multiply_prime
+  - 76_is_simple_power
+  - 77_iscube
+  - 78_hex_key
+  - 79_decimal_to_binary
+  - 80_is_happy
+  - 81_numerical_letter_grade
+  - 82_prime_length
+  - 83_starts_one_ends
+  - 84_solve
+  - 85_add
+  - 86_anti_shuffle
+  - 87_get_row
+  - 88_sort_array
+  - 89_encrypt
+  - 90_next_smallest
+  - 91_is_bored
+  - 92_any_int
+  - 93_encode
+  - 94_skjkasdkd
+  - 95_check_dict_case
+  - 96_count_up_to
+  - 97_multiply
+  - 98_count_upper
+  - 99_closest_integer
+  - 100_make_a_pile
+  - 101_words_string
+  - 102_choose_num
+  - 103_rounded_avg
+  - 104_unique_digits
+  - 105_by_length
+  - 106_f
+  - 107_even_odd_palindrome
+  - 108_count_nums
+  - 109_move_one_ball
+  - 110_exchange
+  - 111_histogram
+  - 112_reverse_delete
+  - 113_odd_count
+  - 114_minSubArraySum
+  - 115_max_fill
+  - 116_sort_array
+  - 117_select_words
+  - 118_get_closest_vowel
+  - 119_match_parens
+  - 120_maximum
+  - 121_solution
+  - 122_add_elements
+  - 123_get_odd_collatz
+  - 124_valid_date
+  - 125_split_words
+  - 126_is_sorted
+  - 127_intersection
+  - 128_prod_signs
+  - 129_minPath
+  - 130_tri
+  - 131_digits
+  - 132_is_nested
+  - 133_sum_squares
+  - 134_check_if_last_char_is_a_letter
+  - 135_can_arrange
+  - 136_largest_smallest_integers
+  - 137_compare_one
+  - 138_is_equal_to_sum_even
+  - 139_special_factorial
+  - 140_fix_spaces
+  - 141_file_name_check
+  - 142_sum_squares
+  - 143_words_in_sentence
+  - 144_simplify
+  - 145_order_by_points
+  - 146_specialFilter
+  - 147_get_max_triples
+  - 148_bf
+  - 149_sorted_list_sum
+  - 150_x_or_y
+  - 151_double_the_difference
+  - 152_compare
+  - 153_Strongest_Extension
+  - 154_cycpattern_check
+  - 155_even_odd_count
+  - 156_int_to_mini_roman
+  - 157_right_angle_triangle
+  - 158_find_max
+  - 159_eat
+  - 160_do_algebra
+  - 161_solve
+  - 162_string_to_md5
+  - 163_generate_integers
+
+生成コード: /Users/moribe773/Git/yuichan/bridget/results/20260515_125925_claude-haiku_pyguide_bridget/generated
+詳細結果:   /Users/moribe773/Git/yuichan/bridget/results/20260515_125925_claude-haiku_pyguide_bridget/result.jsonl
+サマリー:   /Users/moribe773/Git/yuichan/bridget/results/20260515_125925_claude-haiku_pyguide_bridget/summary.json
+ログ:       /Users/moribe773/Git/yuichan/bridget/results/20260515_125925_claude-haiku_pyguide_bridget/log.txt

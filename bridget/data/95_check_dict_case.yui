@@ -1,0 +1,90 @@
+Use the standard library
+This is how to check_dict_case of dict:
+   Remember that length is dict's length
+   Remember that result is 0
+   When length is 0, then:
+      The answer is result
+   End when
+   Remember that state is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that pair is item i in dict
+      Remember that key is item 0 in pair
+      Remember that key_len is key's length
+      Remember that is_string is 1
+      Remember that j is 0
+      Do this key_len times:
+         Remember that char is item j in key
+         Remember that is_letter is 0
+         When char is more than 64, then:
+            When char is less than 91, then:
+               Remember that is_letter is 1
+            End when
+         End when
+         When char is more than 96, then:
+            When char is less than 123, then:
+               Remember that is_letter is 1
+            End when
+         End when
+         When is_letter is 0, then:
+            Remember that is_string is 0
+         End when
+         Increase j
+      End do
+      When is_string is 0, then:
+         Remember that state is 3
+      End when
+      When is_string is 1, then:
+         Remember that is_upper is 1
+         Remember that is_lower is 1
+         Remember that j is 0
+         Do this key_len times:
+            Remember that char is item j in key
+            When char is more than 96, then:
+               Remember that is_upper is 0
+            End when
+            When char is less than 91, then:
+               Remember that is_lower is 0
+            End when
+            Increase j
+         End do
+         When state is 0, then:
+            When is_upper is 1, then:
+               Remember that state is 1
+            End when
+            When is_lower is 1, then:
+               Remember that state is 2
+            End when
+         But, if not:
+            When state is 1, then:
+               When is_upper is 0, then:
+                  Remember that state is 3
+               End when
+            End when
+            When state is 2, then:
+               When is_lower is 0, then:
+                  Remember that state is 3
+               End when
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   When state is 1, then:
+      Remember that result is 1
+   End when
+   When state is 2, then:
+      Remember that result is 1
+   End when
+   The answer is result
+Now you know
+>>> check_dict_case of [[[97], [97, 112, 112, 108, 101]], [[98], [98, 97, 110, 97, 110, 97]]] 
+1
+>>> check_dict_case of [
+   [[97], [97, 112, 112, 108, 101]],
+   [[65], [98, 97, 110, 97, 110, 97]],
+   [[66], [98, 97, 110, 97, 110, 97]]
+] 
+0
+>>> check_dict_case of [[[83, 84, 65, 84, 69], [78, 67]], [[90, 73, 80], [49, 50, 51, 52, 53]]] 
+1

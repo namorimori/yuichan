@@ -1,0 +1,28 @@
+Use the standard library
+This is how to cycpattern_check of a and b:
+   Remember that n is a's length
+   Remember that m is b's length
+   Remember that i is 0
+
+   Do this n times:
+      Remember that ok is yes
+      Remember that j is 0
+
+      Do this m times:
+         Remember that k is remainder of (sum of i and j) and n
+         When item k in a is not item j in b, then:
+            Remember that ok is no
+            Leave the loop
+         End when
+         Increase j
+      End do
+
+      When ok is yes, then:
+         The answer is 1
+      End when
+
+      Increase i
+   End do
+
+   The answer is 0
+Now you know

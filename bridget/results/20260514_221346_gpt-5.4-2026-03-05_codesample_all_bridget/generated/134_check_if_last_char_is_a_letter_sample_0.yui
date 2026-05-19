@@ -1,0 +1,19 @@
+Use the standard library
+This is how to check_if_last_char_is_a_letter of txt:
+   Remember that n is txt's length
+   When n is 0, then:
+      The answer is 0
+   End when
+   Remember that last is item (diff of n and 1) in txt
+   When last is at least 65, then:
+      When last is at most 90, then:
+         The answer is 1
+      End when
+   End when
+   When last is at least 97, then:
+      When last is at most 122, then:
+         The answer is 1
+      End when
+   End when
+   The answer is 0
+Now you know

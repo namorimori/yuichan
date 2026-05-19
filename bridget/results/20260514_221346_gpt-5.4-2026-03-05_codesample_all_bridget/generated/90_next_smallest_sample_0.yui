@@ -1,0 +1,34 @@
+Use the standard library
+This is how to next_smallest of lst:
+   Remember that n is lst's length
+   When n is 0, then:
+      The answer is []
+   End when
+   Remember that smallest is item 0 in lst
+   Remember that i is 1
+   Do this diff of n and 1 times:
+      Remember that x is item i in lst
+      When x is less than smallest, then:
+         Remember that smallest is x
+      End when
+      Increase i
+   End do
+   Remember that found is 0
+   Remember that answer is []
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in lst
+      When x is more than smallest, then:
+         When found is 0, then:
+            Remember that answer is [x]
+            Remember that found is 1
+         But, if not:
+            When x is less than item 0 in answer, then:
+               Remember that answer is [x]
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   The answer is answer
+Now you know

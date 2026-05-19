@@ -1,0 +1,18 @@
+>>> reverse_delete of "abcde" and "ae" 
+["bcd", 0]
+>>> reverse_delete of "abcdef" and "b" 
+["acdef", 0]
+>>> reverse_delete of "abcdedcba" and "ab" 
+["cdedc", 1]
+>>> reverse_delete of "dwik" and "w" 
+["dik", 0]
+>>> reverse_delete of "a" and "a" 
+["", 1]
+>>> reverse_delete of "abcdedcba" and "" 
+["abcdedcba", 1]
+>>> reverse_delete of "abcdedcba" and "v" 
+["abcdedcba", 1]
+>>> reverse_delete of "vabba" and "v" 
+["abba", 1]
+>>> reverse_delete of "mamma" and "mia" 
+["", 1]

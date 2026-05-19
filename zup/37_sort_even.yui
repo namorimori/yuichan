@@ -1,0 +1,52 @@
+Nav rem vaz
+Dum sort_even(l):
+   Kem 長さ par l @kez
+   Kem 偶数要素 par []
+   Kem 奇数要素 par []
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 余り par 剰余(i, 2)
+      Nev 余り paz 0 ger:
+         Mev 偶数要素 naz l[i]
+      Zum:
+         Mev 奇数要素 naz l[i]
+      Dam nev
+      Rav i
+   Dam mup
+   Kem 偶数長 par 偶数要素 @kez
+   Mup dum 偶数長 pag:
+      Kem i par 0
+      Kem 上限 par 差(偶数長, 1)
+      Mup dum 上限 pag:
+         Kem 次インデックス par 和(i, 1)
+         Nev 偶数要素[i] pep 偶数要素[次インデックス] ger:
+            Kem temp par 偶数要素[i]
+            Kem 偶数要素[i] par 偶数要素[次インデックス]
+            Kem 偶数要素[次インデックス] par temp
+         Dam nev
+         Rav i
+      Dam mup
+   Dam mup
+   Kem 結果 par []
+   Kem 偶数長 par 偶数要素 @kez
+   Kem 奇数長 par 奇数要素 @kez
+   Kem i par 0
+   Mup dum 偶数長 pag:
+      Mev 結果 naz 偶数要素[i]
+      Nev i dup 奇数長 ger:
+         Mev 結果 naz 奇数要素[i]
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> sort_even([1, 2, 3]) 
+[1, 2, 3]
+>>> sort_even([5, 6, 3, 4]) 
+[3, 6, 5, 4]
+>>> sort_even([1, 2, 3]) 
+[1, 2, 3]
+>>> sort_even([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10]) 
+[-10, 3, -5, 2, -3, 3, 5, 0, 9, 1, 123]
+>>> sort_even([5, 8, -12, 4, 23, 2, 3, 11, 12, -10]) 
+[-12, 8, 3, 4, 5, 2, 12, 11, 23, -10]

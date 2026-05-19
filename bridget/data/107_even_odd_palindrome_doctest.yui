@@ -1,0 +1,16 @@
+>>> even_odd_palindrome of 123 
+[8, 13]
+>>> even_odd_palindrome of 12 
+[4, 6]
+>>> even_odd_palindrome of 3 
+[1, 2]
+>>> even_odd_palindrome of 63 
+[6, 8]
+>>> even_odd_palindrome of 25 
+[5, 6]
+>>> even_odd_palindrome of 19 
+[4, 6]
+>>> even_odd_palindrome of 9 
+[4, 5]
+>>> even_odd_palindrome of 1 
+[0, 1]

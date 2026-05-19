@@ -1,0 +1,19 @@
+Use the standard library
+This is how to specialFilter of nums:
+   Remember that count is 0
+   Remember that i is 0
+   Do this nums's length times:
+      Remember that n is item i in nums
+      When n is more than 0, then:
+         When remainder of n and 2 is not 0, then:
+            When item 0 in (tostring of n) is item 0 in "5", then:
+               When item (diff of (tostring of n)'s length and 1) in (tostring of n) is item 0 in "5", then:
+                  Increase count
+               End when
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know

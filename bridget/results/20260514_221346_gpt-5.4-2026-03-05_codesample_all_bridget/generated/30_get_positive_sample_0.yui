@@ -1,0 +1,14 @@
+Use the standard library
+This is how to get_positive of l:
+   Remember that result is []
+   Remember that n is l's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in l
+      When x is more than 0, then:
+         Add result to x
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know

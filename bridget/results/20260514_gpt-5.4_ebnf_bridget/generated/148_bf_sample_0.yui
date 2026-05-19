@@ -1,0 +1,43 @@
+Use the standard library
+This is how to bf of planet1 and planet2:
+  Remember that order is [[77, 101, 114, 99, 117, 114, 121], [86, 101, 110, 117, 115], [69, 97, 114, 116, 104], [77, 97, 114, 115], [74, 117, 112, 105, 116, 101, 114], [83, 97, 116, 117, 114, 110], [85, 114, 97, 110, 117, 115], [78, 101, 112, 116, 117, 110, 101]]
+  Remember that i1 is 0
+  Remember that i2 is 0
+  Do this order's length times:
+    When item i1 in order is planet1, then:
+      Leave the loop
+    End when
+    Increase i1 by 1
+  End do
+  Do this order's length times:
+    When item i2 in order is planet2, then:
+      Leave the loop
+    End when
+    Increase i2 by 1
+  End do
+  When i1 is less than i2, then:
+    Remember that start is sum of i1 and 1
+    Remember that result is []
+    Do this order's length times:
+      When start is less than i2, then:
+        Add result to item start in order
+        Increase start by 1
+      But, if not:
+        Leave the loop
+      End when
+    End do
+    The answer is result
+  But, if not:
+    Remember that start is sum of i2 and 1
+    Remember that result is []
+    Do this order's length times:
+      When start is less than i1, then:
+        Add result to item start in order
+        Increase start by 1
+      But, if not:
+        Leave the loop
+      End when
+    End do
+    The answer is result
+  End when
+Now you know

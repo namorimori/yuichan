@@ -1,0 +1,92 @@
+Nav rem vaz
+Dum fruit_distribution(s, n):
+   Kem length par s @kez
+   Kem numbers par []
+   Kem current_num par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par s[i]
+      Kem is_digit par 0
+      Nev char pep 47 ger:
+         Nev char dup 58 ger:
+            Kem is_digit par 1
+         Dam nev
+      Dam nev
+      Nev is_digit paz 1 ger:
+         Mev current_num naz char
+      Zum:
+         Nev current_num @kez pep 0 ger:
+            Kem num par 0
+            Kem j par 0
+            Kem cn_len par current_num @kez
+            Mup dum cn_len pag:
+               Kem digit par 差(current_num[j], 48)
+               Kem num par 和(積(num, 10), digit)
+               Rav j
+            Dam mup
+            Mev numbers naz num
+            Kem current_num par []
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Nev current_num @kez pep 0 ger:
+      Kem num par 0
+      Kem j par 0
+      Kem cn_len par current_num @kez
+      Mup dum cn_len pag:
+         Kem digit par 差(current_num[j], 48)
+         Kem num par 和(積(num, 10), digit)
+         Rav j
+      Dam mup
+      Mev numbers naz num
+   Dam nev
+   Kem total par 0
+   Kem num_len par numbers @kez
+   Kem i par 0
+   Mup dum num_len pag:
+      Kem total par 和(total, numbers[i])
+      Rav i
+   Dam mup
+   Kem result par 差(n, total)
+   Dup vem result
+Pam dum
+>>> fruit_distribution([
+   53,
+   32,
+   97,
+   112,
+   112,
+   108,
+   101,
+   115,
+   32,
+   97,
+   110,
+   100,
+   32,
+   54,
+   32,
+   111,
+   114,
+   97,
+   110,
+   103,
+   101,
+   115
+], 19) 
+8
+>>> fruit_distribution("5 apples and 6 oranges", 19) 
+8
+>>> fruit_distribution("5 apples and 6 oranges", 21) 
+10
+>>> fruit_distribution("0 apples and 1 oranges", 3) 
+2
+>>> fruit_distribution("1 apples and 0 oranges", 3) 
+2
+>>> fruit_distribution("2 apples and 3 oranges", 100) 
+95
+>>> fruit_distribution("2 apples and 3 oranges", 5) 
+0
+>>> fruit_distribution("1 apples and 100 oranges", 120) 
+19

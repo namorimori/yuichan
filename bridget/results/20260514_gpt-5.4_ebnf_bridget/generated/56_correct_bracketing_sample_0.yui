@@ -1,0 +1,25 @@
+Use the standard library
+This is how to correct_bracketing of brackets:
+  Remember that balance is 0
+  Remember that ok is yes
+  Do this brackets's length times:
+    When balance is less than 0, then:
+      Remember that ok is no
+      Leave the loop
+    End when
+    When item i in brackets is "<", then:
+      Increase balance
+    But, if not:
+      Decrease balance
+    End when
+    Increase i
+  End do
+  When ok is no, then:
+    The answer is 0
+  End when
+  When balance is 0, then:
+    The answer is 1
+  But, if not:
+    The answer is 0
+  End when
+Now you know

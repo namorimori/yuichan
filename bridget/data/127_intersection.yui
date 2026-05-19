@@ -1,0 +1,58 @@
+Use the standard library
+This is how to intersection of interval1 and interval2:
+   Remember that start1 is item 0 in interval1
+   Remember that end1 is item 1 in interval1
+   Remember that start2 is item 0 in interval2
+   Remember that end2 is item 1 in interval2
+   Remember that l is max of start1 and start2
+   Remember that r is min of end1 and end2
+   Remember that length is diff of r and l
+   Remember that result is [78, 79]
+   When length is more than 0, then:
+      Remember that is_prime is 1
+      When length is 1, then:
+         Remember that is_prime is 0
+      End when
+      When length is 2, then:
+         Remember that is_prime is 1
+      End when
+      When length is more than 2, then:
+         Remember that i is 2
+         Do this 100 times:
+            When i is less than length, then:
+               Remember that remainder is remainder of length and i
+               When remainder is 0, then:
+                  Remember that is_prime is 0
+               End when
+               Increase i
+            End when
+         End do
+      End when
+      When is_prime is 1, then:
+         Remember that result is [89, 69, 83]
+      End when
+   End when
+   The answer is result
+Now you know
+>>> intersection of [1, 2] and [2, 3] 
+[78, 79]
+>>> intersection of [-1, 1] and [0, 4] 
+[78, 79]
+>>> intersection of [-3, -1] and [-5, 5] 
+[89, 69, 83]
+>>> intersection of [1, 2] and [2, 3] 
+"NO"
+>>> intersection of [-1, 1] and [0, 4] 
+"NO"
+>>> intersection of [-3, -1] and [-5, 5] 
+"YES"
+>>> intersection of [-2, 2] and [-4, 0] 
+"YES"
+>>> intersection of [-11, 2] and [-1, -1] 
+"NO"
+>>> intersection of [1, 2] and [3, 5] 
+"NO"
+>>> intersection of [1, 2] and [1, 2] 
+"NO"
+>>> intersection of [-2, -2] and [-3, -2] 
+"NO"

@@ -1,0 +1,76 @@
+Nav rem vaz
+Dum numerical_letter_grade(grades):
+   Kem length par grades @kez
+   Kem result par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem gpa par grades[i]
+      Kem letter par []
+      Nev gpa paz 4.000000 ger:
+         Kem letter par [65, 43]
+      Zum:
+         Nev gpa pep 3.700000 ger:
+            Kem letter par [65]
+         Zum:
+            Nev gpa pep 3.300000 ger:
+               Kem letter par [65, 45]
+            Zum:
+               Nev gpa pep 3.000000 ger:
+                  Kem letter par [66, 43]
+               Zum:
+                  Nev gpa pep 2.700000 ger:
+                     Kem letter par [66]
+                  Zum:
+                     Nev gpa pep 2.300000 ger:
+                        Kem letter par [66, 45]
+                     Zum:
+                        Nev gpa pep 2.000000 ger:
+                           Kem letter par [67, 43]
+                        Zum:
+                           Nev gpa pep 1.700000 ger:
+                              Kem letter par [67]
+                           Zum:
+                              Nev gpa pep 1.300000 ger:
+                                 Kem letter par [67, 45]
+                              Zum:
+                                 Nev gpa pep 1.000000 ger:
+                                    Kem letter par [68, 43]
+                                 Zum:
+                                    Nev gpa pep 0.700000 ger:
+                                       Kem letter par [68]
+                                    Zum:
+                                       Nev gpa pep 0.000000 ger:
+                                          Kem letter par [68, 45]
+                                       Zum:
+                                          Kem letter par [69]
+                                       Dam nev
+                                    Dam nev
+                                 Dam nev
+                              Dam nev
+                           Dam nev
+                        Dam nev
+                     Dam nev
+                  Dam nev
+               Dam nev
+            Dam nev
+         Dam nev
+      Dam nev
+      Mev result naz letter
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> numerical_letter_grade([4.000000, 3.000000, 2.000000]) 
+[[65, 43], [66], [67]]
+>>> numerical_letter_grade([4.000000, 3, 1.700000, 2, 3.500000]) 
+["A+", "B", "C-", "C", "A-"]
+>>> numerical_letter_grade([1.200000]) 
+["D+"]
+>>> numerical_letter_grade([0.500000]) 
+["D-"]
+>>> numerical_letter_grade([0.000000]) 
+["E"]
+>>> numerical_letter_grade([1, 0.300000, 1.500000, 2.800000, 3.300000]) 
+["D", "D-", "C-", "B", "B+"]
+>>> numerical_letter_grade([0, 0.700000]) 
+["E", "D-"]

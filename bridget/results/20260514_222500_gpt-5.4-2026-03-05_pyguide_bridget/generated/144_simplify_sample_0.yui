@@ -1,0 +1,14 @@
+Use the standard library
+This is how to simplify of x and n:
+   Remember that a is quotient of (tofloat of x) and (tofloat of n)
+   Remember that b is quotient of (tofloat of n) and (tofloat of x)
+   When a is 1.000000, then:
+      The answer is 1
+   But, if not:
+      When b is 1.000000, then:
+         The answer is 1
+      But, if not:
+         The answer is 0
+      End when
+   End when
+Now you know

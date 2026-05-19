@@ -1,0 +1,41 @@
+Use the standard library
+This is how to unique of l:
+   Remember that length is l's length
+   Remember that sorted is []
+   Remember that i is 0
+   Do this length times:
+      Add sorted to item i in l
+      Increase i
+   End do
+   Do this length times:
+      Remember that i is 0
+      Remember that limit is diff of length and 1
+      Do this limit times:
+         Remember that next_idx is sum of i and 1
+         When item i in sorted is more than item next_idx in sorted, then:
+            Remember that temp is item i in sorted
+            Remember that item i in sorted is item next_idx in sorted
+            Remember that item next_idx in sorted is temp
+         End when
+         Increase i
+      End do
+   End do
+   Remember that result is []
+   When length is more than 0, then:
+      Add result to item 0 in sorted
+      Remember that i is 1
+      Remember that limit is diff of length and 1
+      Do this limit times:
+         Remember that prev_idx is diff of i and 1
+         When item i in sorted is not item prev_idx in sorted, then:
+            Add result to item i in sorted
+         End when
+         Increase i
+      End do
+   End when
+   The answer is result
+Now you know
+>>> unique of [5, 3, 5, 2, 3, 3, 9, 0, 123] 
+[0, 2, 3, 5, 9, 123]
+>>> unique of [5, 3, 5, 2, 3, 3, 9, 0, 123] 
+[0, 2, 3, 5, 9, 123]

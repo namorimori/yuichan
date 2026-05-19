@@ -1,0 +1,90 @@
+Nav rem vaz
+Dum check_dict_case(dict):
+   Kem length par dict @kez
+   Kem result par 0
+   Nev length paz 0 ger:
+      Dup vem result
+   Dam nev
+   Kem state par 0
+   Kem i par 0
+   Mup dum length pag:
+      Kem pair par dict[i]
+      Kem key par pair[0]
+      Kem key_len par key @kez
+      Kem is_string par 1
+      Kem j par 0
+      Mup dum key_len pag:
+         Kem char par key[j]
+         Kem is_letter par 0
+         Nev char pep 64 ger:
+            Nev char dup 91 ger:
+               Kem is_letter par 1
+            Dam nev
+         Dam nev
+         Nev char pep 96 ger:
+            Nev char dup 123 ger:
+               Kem is_letter par 1
+            Dam nev
+         Dam nev
+         Nev is_letter paz 0 ger:
+            Kem is_string par 0
+         Dam nev
+         Rav j
+      Dam mup
+      Nev is_string paz 0 ger:
+         Kem state par 3
+      Dam nev
+      Nev is_string paz 1 ger:
+         Kem is_upper par 1
+         Kem is_lower par 1
+         Kem j par 0
+         Mup dum key_len pag:
+            Kem char par key[j]
+            Nev char pep 96 ger:
+               Kem is_upper par 0
+            Dam nev
+            Nev char dup 91 ger:
+               Kem is_lower par 0
+            Dam nev
+            Rav j
+         Dam mup
+         Nev state paz 0 ger:
+            Nev is_upper paz 1 ger:
+               Kem state par 1
+            Dam nev
+            Nev is_lower paz 1 ger:
+               Kem state par 2
+            Dam nev
+         Zum:
+            Nev state paz 1 ger:
+               Nev is_upper paz 0 ger:
+                  Kem state par 3
+               Dam nev
+            Dam nev
+            Nev state paz 2 ger:
+               Nev is_lower paz 0 ger:
+                  Kem state par 3
+               Dam nev
+            Dam nev
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Nev state paz 1 ger:
+      Kem result par 1
+   Dam nev
+   Nev state paz 2 ger:
+      Kem result par 1
+   Dam nev
+   Dup vem result
+Pam dum
+>>> check_dict_case([[[97], [97, 112, 112, 108, 101]], [[98], [98, 97, 110, 97, 110, 97]]]) 
+1
+>>> check_dict_case([
+   [[97], [97, 112, 112, 108, 101]],
+   [[65], [98, 97, 110, 97, 110, 97]],
+   [[66], [98, 97, 110, 97, 110, 97]]
+]) 
+0
+>>> check_dict_case([[[83, 84, 65, 84, 69], [78, 67]], [[90, 73, 80], [49, 50, 51, 52, 53]]]) 
+1

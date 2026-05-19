@@ -1,0 +1,147 @@
+Nav rem vaz
+Dum sort_numbers(numbers):
+   Kem length par numbers @kez
+   Kem words par []
+   Kem current_word par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par numbers[i]
+      Nev char paz 32 ger:
+         Nev current_word @kez pep 0 ger:
+            Mev words naz current_word
+            Kem current_word par []
+         Dam nev
+      Zum:
+         Mev current_word naz char
+      Dam nev
+      Rav i
+   Dam mup
+   Nev current_word @kez pep 0 ger:
+      Mev words naz current_word
+   Dam nev
+   Kem num_words par words @kez
+   Kem i par 0
+   Mup dum num_words pag:
+      Kem j par 0
+      Kem limit par 差(差(num_words, i), 1)
+      Mup dum limit pag:
+         Kem next_j par 和(j, 1)
+         Kem val1 par 10
+         Kem val2 par 10
+         Kem w1_len par words[j] @kez
+         Nev w1_len paz 4 ger:
+            Kem val1 par 0
+         Dam nev
+         Nev w1_len paz 3 ger:
+            Nev words[j][0] paz 111 ger:
+               Kem val1 par 1
+            Dam nev
+            Nev words[j][0] paz 116 ger:
+               Kem val1 par 2
+            Dam nev
+            Nev words[j][0] paz 115 ger:
+               Kem val1 par 6
+            Dam nev
+         Dam nev
+         Nev w1_len paz 5 ger:
+            Nev words[j][0] paz 116 ger:
+               Kem val1 par 3
+            Dam nev
+            Nev words[j][1] paz 105 ger:
+               Kem val1 par 8
+            Dam nev
+            Nev words[j][0] paz 115 ger:
+               Kem val1 par 7
+            Dam nev
+         Dam nev
+         Nev w1_len paz 4 ger:
+            Nev words[j][0] paz 102 ger:
+               Nev words[j][1] paz 111 ger:
+                  Kem val1 par 4
+               Dam nev
+               Nev words[j][1] paz 105 ger:
+                  Kem val1 par 5
+               Dam nev
+            Dam nev
+            Nev words[j][0] paz 110 ger:
+               Kem val1 par 9
+            Dam nev
+         Dam nev
+         Kem w2_len par words[next_j] @kez
+         Nev w2_len paz 4 ger:
+            Kem val2 par 0
+         Dam nev
+         Nev w2_len paz 3 ger:
+            Nev words[next_j][0] paz 111 ger:
+               Kem val2 par 1
+            Dam nev
+            Nev words[next_j][0] paz 116 ger:
+               Kem val2 par 2
+            Dam nev
+            Nev words[next_j][0] paz 115 ger:
+               Kem val2 par 6
+            Dam nev
+         Dam nev
+         Nev w2_len paz 5 ger:
+            Nev words[next_j][0] paz 116 ger:
+               Kem val2 par 3
+            Dam nev
+            Nev words[next_j][1] paz 105 ger:
+               Kem val2 par 8
+            Dam nev
+            Nev words[next_j][0] paz 115 ger:
+               Kem val2 par 7
+            Dam nev
+         Dam nev
+         Nev w2_len paz 4 ger:
+            Nev words[next_j][0] paz 102 ger:
+               Nev words[next_j][1] paz 111 ger:
+                  Kem val2 par 4
+               Dam nev
+               Nev words[next_j][1] paz 105 ger:
+                  Kem val2 par 5
+               Dam nev
+            Dam nev
+            Nev words[next_j][0] paz 110 ger:
+               Kem val2 par 9
+            Dam nev
+         Dam nev
+         Nev val1 pep val2 ger:
+            Kem temp par words[j]
+            Kem words[j] par words[next_j]
+            Kem words[next_j] par temp
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Kem result par []
+   Kem i par 0
+   Mup dum num_words pag:
+      Kem word par words[i]
+      Kem word_len par word @kez
+      Kem j par 0
+      Mup dum word_len pag:
+         Mev result naz word[j]
+         Rav j
+      Dam mup
+      Kem last_idx par 差(num_words, 1)
+      Nev i dup last_idx ger:
+         Mev result naz 32
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> sort_numbers([116, 104, 114, 101, 101, 32, 111, 110, 101, 32, 102, 105, 118, 101]) 
+[111, 110, 101, 32, 116, 104, 114, 101, 101, 32, 102, 105, 118, 101]
+>>> sort_numbers("") 
+""
+>>> sort_numbers("three") 
+"three"
+>>> sort_numbers("three five nine") 
+"three five nine"
+>>> sort_numbers("five zero four seven nine eight") 
+"zero four five seven eight nine"
+>>> sort_numbers("six five four three two one zero") 
+"zero one two three four five six"

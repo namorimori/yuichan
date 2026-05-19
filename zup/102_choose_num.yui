@@ -1,0 +1,39 @@
+Nav rem vaz
+Dum choose_num(x, y):
+   Kem 結果 par -1
+   Nev x pep y ger:
+      Kem 結果 par -1
+   Zum:
+      Kem 余り par 剰余(y, 2)
+      Nev 余り paz 0 ger:
+         Kem 結果 par y
+      Zum:
+         Nev x paz y ger:
+            Kem 結果 par -1
+         Zum:
+            Kem 結果 par 差(y, 1)
+         Dam nev
+      Dam nev
+   Dam nev
+   Dup vem 結果
+Pam dum
+>>> choose_num(12, 15) 
+14
+>>> choose_num(13, 12) 
+-1
+>>> choose_num(12, 15) 
+14
+>>> choose_num(13, 12) 
+-1
+>>> choose_num(33, 12354) 
+12354
+>>> choose_num(5234, 5233) 
+-1
+>>> choose_num(6, 29) 
+28
+>>> choose_num(27, 10) 
+-1
+>>> choose_num(7, 7) 
+-1
+>>> choose_num(546, 546) 
+546

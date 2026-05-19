@@ -177,7 +177,7 @@ def standard_lib(modules: list):
                     raise YuiError((f"division-by-zero", f"❌{d}"), nodearg)
                 total %= d
             return YuiValue(total)
-    modules.append(('🍕|剰余|remainder', yui_mod))
+    modules.append(('🍕|剰余|餘|remainder', yui_mod))
 
     def yui_max(*args: Any) -> Any:
         """最大値を返す"""
@@ -185,7 +185,7 @@ def standard_lib(modules: list):
         args = array_to_varargs(args)
         result = max(types.unbox(nodearg) for nodearg in args)
         return YuiValue(int(result) if isinstance(result, int) else result)
-    modules.append(('👑|最大値|max', yui_max))
+    modules.append(('👑|最大値|最大值|max', yui_max))
 
     def yui_min(*args: Any) -> Any:
         """最小値を返す"""
@@ -193,7 +193,7 @@ def standard_lib(modules: list):
         args = array_to_varargs(args)
         result = min(types.unbox(nodearg) for nodearg in args)
         return YuiValue(int(result) if isinstance(result, int) else result)
-    modules.append(('🐜|最小値|min', yui_min))
+    modules.append(('🐜|最小値|最小值|min', yui_min))
 
     def yui_isbool(*args: Any) -> YuiValue:
         """ブールか判定する"""
@@ -284,5 +284,35 @@ def standard_lib(modules: list):
             return YuiValue(list(value.native.keys()))
         return YuiValue(value.array)
     modules.append((f'{TY_ARRAY}|配列化|toarray', yui_toarray))
+
+    def yui_bitand(*args: Any) -> YuiValue:
+        check_number_of_args(args, 2)
+        return YuiValue(int(types.unbox(args[0])) & int(types.unbox(args[1])))
+    modules.append(('論理積|bitand|band', yui_bitand))
+
+    def yui_bitor(*args: Any) -> YuiValue:
+        check_number_of_args(args, 2)
+        return YuiValue(int(types.unbox(args[0])) | int(types.unbox(args[1])))
+    modules.append(('論理和|bitor|bor', yui_bitor))
+
+    def yui_bitxor(*args: Any) -> YuiValue:
+        check_number_of_args(args, 2)
+        return YuiValue(int(types.unbox(args[0])) ^ int(types.unbox(args[1])))
+    modules.append(('排他的論理和|bitxor|bxor', yui_bitxor))
+
+    def yui_bitnot(*args: Any) -> YuiValue:
+        check_number_of_args(args, 1)
+        return YuiValue(~int(types.unbox(args[0])))
+    modules.append(('ビット反転|bitnot|bnot', yui_bitnot))
+
+    def yui_lshift(*args: Any) -> YuiValue:
+        check_number_of_args(args, 2)
+        return YuiValue(int(types.unbox(args[0])) << int(types.unbox(args[1])))
+    modules.append(('左シフト|lshift', yui_lshift))
+
+    def yui_rshift(*args: Any) -> YuiValue:
+        check_number_of_args(args, 2)
+        return YuiValue(int(types.unbox(args[0])) >> int(types.unbox(args[1])))
+    modules.append(('右シフト|rshift', yui_rshift))
 
     return 'emoji|ja|en', modules

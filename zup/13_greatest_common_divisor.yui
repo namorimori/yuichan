@@ -1,0 +1,21 @@
+Nav rem vaz
+Dum greatest_common_divisor(a, b):
+   Nev b paz 0 ger:
+      Dup vem a
+   Zum:
+      Kem 余り par 剰余(a, b)
+      Dup vem greatest_common_divisor(b, 余り)
+   Dam nev
+Pam dum
+>>> greatest_common_divisor(3, 5) 
+1
+>>> greatest_common_divisor(25, 15) 
+5
+>>> greatest_common_divisor(3, 7) 
+1
+>>> greatest_common_divisor(10, 15) 
+5
+>>> greatest_common_divisor(49, 14) 
+7
+>>> greatest_common_divisor(144, 60) 
+12

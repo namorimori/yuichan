@@ -1,0 +1,72 @@
+🗝️ 📚
+🧩 check_if_last_char_is_a_letter(txt) 👉
+   length ⬅️ 📐 txt
+   result ⬅️ 0
+   ❓ length ⚖️ 0 👉
+      ✅ result
+   🔚
+   words ⬅️ []
+   current_word ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ txt[i]
+      ❓ char ⚖️ 32 👉
+         words 🧲 current_word
+         current_word ⬅️ []
+      🔚
+      ❗ 👉
+         current_word 🧲 char
+      🔚
+      i ⬆️
+   🔚
+   words 🧲 current_word
+   num_words ⬅️ 📐 words
+   last_idx ⬅️ 差(num_words, 1)
+   last_word ⬅️ words[last_idx]
+   last_word_len ⬅️ 📐 last_word
+   ❓ last_word_len ⚖️ 1 👉
+      char ⬅️ last_word[0]
+      is_letter ⬅️ 0
+      ❓ char 📉 64 👉
+         ❓ char 📈 91 👉
+            is_letter ⬅️ 1
+         🔚
+      🔚
+      ❓ char 📉 96 👉
+         ❓ char 📈 123 👉
+            is_letter ⬅️ 1
+         🔚
+      🔚
+      result ⬅️ is_letter
+   🔚
+   ✅ result
+🔚
+>>> check_if_last_char_is_a_letter([97, 112, 112, 108, 101, 32, 112, 105, 101]) 
+0
+>>> check_if_last_char_is_a_letter([97, 112, 112, 108, 101, 32, 112, 105, 32, 101]) 
+1
+>>> check_if_last_char_is_a_letter([97, 112, 112, 108, 101, 32, 112, 105, 32, 101, 32]) 
+0
+>>> check_if_last_char_is_a_letter([]) 
+0
+>>> check_if_last_char_is_a_letter("apple") 
+0
+>>> check_if_last_char_is_a_letter("apple pi e") 
+1
+>>> check_if_last_char_is_a_letter("eeeee") 
+0
+>>> check_if_last_char_is_a_letter("A") 
+1
+>>> check_if_last_char_is_a_letter("Pumpkin pie ") 
+0
+>>> check_if_last_char_is_a_letter("Pumpkin pie 1") 
+0
+>>> check_if_last_char_is_a_letter("") 
+0
+>>> check_if_last_char_is_a_letter("eeeee e ") 
+0
+>>> check_if_last_char_is_a_letter("apple pie") 
+0
+>>> check_if_last_char_is_a_letter("apple pi e ") 
+0
+1

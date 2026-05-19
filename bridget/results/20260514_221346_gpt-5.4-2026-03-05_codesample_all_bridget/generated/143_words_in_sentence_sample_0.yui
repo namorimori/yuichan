@@ -1,0 +1,61 @@
+Use the standard library
+This is how to words_in_sentence of sentence:
+   Remember that s is sentence
+   When isarray of sentence, then:
+      Remember that s is ""
+      Remember that n is sentence's length
+      Remember that i is 0
+      Do this n times:
+         Add s to item i in sentence
+         Increase i
+      End do
+   End when
+   Remember that n is s's length
+   Remember that start is 0
+   Remember that best_start is 0
+   Remember that best_len is 0
+   Remember that curr_len is 0
+   Remember that i is 0
+   Remember that limit is sum of n and 1
+   Do this limit times:
+      Remember that at_end is 0
+      When i is at least n, then:
+         Remember that at_end is 1
+      End when
+      Remember that is_space is 0
+      When at_end is 0, then:
+         When item i in s is 32, then:
+            Remember that is_space is 1
+         End when
+      End when
+      When at_end is 1, then:
+         When curr_len is more than best_len, then:
+            Remember that best_len is curr_len
+            Remember that best_start is start
+         End when
+      But, if not:
+         When is_space is 1, then:
+            When curr_len is more than best_len, then:
+               Remember that best_len is curr_len
+               Remember that best_start is start
+            End when
+            Remember that curr_len is 0
+            Remember that start is sum of i and 1
+         But, if not:
+            Increase curr_len
+         End when
+      End when
+      Increase i
+   End do
+   Remember that result is ""
+   Remember that j is 0
+   Do this best_len times:
+      Remember that k is sum of best_start and j
+      Add result to item k in s
+      Increase j
+   End do
+   When isarray of sentence, then:
+      The answer is toarray of result
+   End when
+   The answer is result
+Now you know

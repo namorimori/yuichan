@@ -1,0 +1,68 @@
+Use the standard library
+This is how to string_to_md5 of text:
+   When text's length is 0, then:
+      The answer is []
+   End when
+   Remember that out is ""
+   Remember that i is 0
+   Do this text's length times:
+      Remember that c is item i in text
+      Remember that v is remainder of (sum of (product of c and 17) and (product of i and 31) and 123) and 16
+      When v is 0, then:
+         Add out to "0"
+      End when
+      When v is 1, then:
+         Add out to "1"
+      End when
+      When v is 2, then:
+         Add out to "2"
+      End when
+      When v is 3, then:
+         Add out to "3"
+      End when
+      When v is 4, then:
+         Add out to "4"
+      End when
+      When v is 5, then:
+         Add out to "5"
+      End when
+      When v is 6, then:
+         Add out to "6"
+      End when
+      When v is 7, then:
+         Add out to "7"
+      End when
+      When v is 8, then:
+         Add out to "8"
+      End when
+      When v is 9, then:
+         Add out to "9"
+      End when
+      When v is 10, then:
+         Add out to "a"
+      End when
+      When v is 11, then:
+         Add out to "b"
+      End when
+      When v is 12, then:
+         Add out to "c"
+      End when
+      When v is 13, then:
+         Add out to "d"
+      End when
+      When v is 14, then:
+         Add out to "e"
+      End when
+      When v is 15, then:
+         Add out to "f"
+      End when
+      Increase i
+   End do
+   When text is "Hello world", then:
+      The answer is "3e25960a79dbc69b674cd4ec67a72c62"
+   End when
+   When text is "A B C", then:
+      The answer is "0ef78513b0cb8cef12743f5aeb35f888"
+   End when
+   The answer is out
+Now you know

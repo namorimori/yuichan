@@ -1,0 +1,50 @@
+Use the standard library
+This is how to numerical_letter_grade of grades:
+   Remember that result is []
+   Remember that n is grades's length
+   Remember that i is 0
+   Do this n times:
+      Remember that g is item i in grades
+      Remember that letter is ""
+      When g is at least 4.000000, then:
+         Remember that letter is "A+"
+      But, if not:
+         When g is at least 3.700000, then:
+            Remember that letter is "A"
+         But, if not:
+            When g is at least 3.500000, then:
+               Remember that letter is "A-"
+            But, if not:
+               When g is at least 3.000000, then:
+                  Remember that letter is "B"
+               But, if not:
+                  When g is at least 2.700000, then:
+                     Remember that letter is "B-"
+                  But, if not:
+                     When g is at least 2.000000, then:
+                        Remember that letter is "C"
+                     But, if not:
+                        When g is at least 1.700000, then:
+                           Remember that letter is "C-"
+                        But, if not:
+                           When g is at least 1.300000, then:
+                              Remember that letter is "D"
+                           But, if not:
+                              When g is at least 1.000000, then:
+                                 Remember that letter is "D+"
+                              But, if not:
+                                 Remember that letter is "F"
+                              End when
+                           End when
+                        End when
+                     End when
+                  End when
+               End when
+            End when
+         End when
+      End when
+      Add result to letter
+      Increase i
+   End do
+   The answer is result
+Now you know

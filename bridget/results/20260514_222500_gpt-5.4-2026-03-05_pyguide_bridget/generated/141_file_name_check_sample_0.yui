@@ -1,0 +1,69 @@
+Use the standard library
+This is how to file_name_check of file_name:
+   Remember that ok is yes
+
+   When file_name's length is less than 5, then:
+      Remember that ok is no
+   End when
+
+   When ok is yes, then:
+      Remember that first is item 0 in file_name
+      When first is less than 65, then:
+         Remember that ok is no
+      But, if not:
+         When first is more than 122, then:
+            Remember that ok is no
+         But, if not:
+            When first is more than 90, then:
+               When first is less than 97, then:
+                  Remember that ok is no
+               End when
+            End when
+         End when
+      End when
+   End when
+
+   When ok is yes, then:
+      Remember that n is file_name's length
+      Remember that dot is item (diff of n and 4) in file_name
+      When dot is not 46, then:
+         Remember that ok is no
+      End when
+   End when
+
+   When ok is yes, then:
+      Remember that c1 is item (diff of n and 3) in file_name
+      Remember that c2 is item (diff of n and 2) in file_name
+      Remember that c3 is item (diff of n and 1) in file_name
+
+      When c1 is 116, then:
+         When c2 is 120, then:
+            When c3 is 116, then:
+            But, if not:
+               Remember that ok is no
+            End when
+         But, if not:
+            Remember that ok is no
+         End when
+      But, if not:
+         When c1 is 100, then:
+            When c2 is 108, then:
+               When c3 is 108, then:
+               But, if not:
+                  Remember that ok is no
+               End when
+            But, if not:
+               Remember that ok is no
+            End when
+         But, if not:
+            Remember that ok is no
+         End when
+      End when
+   End when
+
+   When ok is yes, then:
+      The answer is "Yes"
+   But, if not:
+      The answer is "No"
+   End when
+Now you know

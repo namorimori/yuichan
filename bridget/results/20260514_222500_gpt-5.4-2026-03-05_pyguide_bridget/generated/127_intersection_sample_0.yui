@@ -1,0 +1,16 @@
+Use the standard library
+This is how to intersection of interval1 and interval2:
+   Remember that start1 is item 0 in interval1
+   Remember that end1 is item 1 in interval1
+   Remember that start2 is item 0 in interval2
+   Remember that end2 is item 1 in interval2
+
+   Remember that left is max of start1 and start2
+   Remember that right is min of end1 and end2
+
+   When left is more than right, then:
+      The answer is "NO"
+   But, if not:
+      The answer is "YES"
+   End when
+Now you know

@@ -1,0 +1,24 @@
+>>> match_parens of ["()(", ")"] 
+"Yes"
+>>> match_parens of [")", ")"] 
+"No"
+>>> match_parens of ["(()(())", "())())"] 
+"No"
+>>> match_parens of [")())", "(()()("] 
+"Yes"
+>>> match_parens of ["(())))", "(()())(("] 
+"Yes"
+>>> match_parens of ["()", "())"] 
+"No"
+>>> match_parens of ["(()(", "()))()"] 
+"Yes"
+>>> match_parens of ["((((", "((())"] 
+"No"
+>>> match_parens of [")(()", "(()("] 
+"No"
+>>> match_parens of [")(", ")("] 
+"No"
+>>> match_parens of ["(", ")"] 
+"Yes"
+>>> match_parens of [")", "("] 
+"Yes"

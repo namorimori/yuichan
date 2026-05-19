@@ -1,0 +1,16 @@
+Use the standard library
+This is how to change_base of x and base:
+   Remember that digits is []
+   When x is 0, then:
+      The answer is "0"
+   End when
+   Do this x times:
+      When x is 0, then:
+         Leave the loop
+      End when
+      Remember that r is remainder of x and base
+      Remember that digits is sum of (tostring of r) and digits
+      Remember that x is quotient of x and base
+   End do
+   The answer is digits
+Now you know

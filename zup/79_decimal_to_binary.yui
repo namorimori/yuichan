@@ -1,0 +1,41 @@
+Nav rem vaz
+Dum decimal_to_binary(decimal):
+   Kem result par [100, 98]
+   Kem digits par []
+   Kem temp par decimal
+   Nev temp paz 0 ger:
+      Mev result naz 48
+   Zum:
+      Mup dum 100 pag:
+         Nev temp pep 0 ger:
+            Kem remainder par 剰余(temp, 2)
+            Mev digits naz remainder
+            Kem temp par 商(temp, 2)
+         Dam nev
+      Dam mup
+      Kem length par digits @kez
+      Kem i par 0
+      Mup dum length pag:
+         Kem idx par 差(差(length, i), 1)
+         Kem digit par digits[idx]
+         Kem char_code par 和(48, digit)
+         Mev result naz char_code
+         Rav i
+      Dam mup
+   Dam nev
+   Mev result naz 100
+   Mev result naz 98
+   Dup vem result
+Pam dum
+>>> decimal_to_binary(15) 
+[100, 98, 49, 49, 49, 49, 100, 98]
+>>> decimal_to_binary(32) 
+[100, 98, 49, 48, 48, 48, 48, 48, 100, 98]
+>>> decimal_to_binary(0) 
+"db0db"
+>>> decimal_to_binary(32) 
+"db100000db"
+>>> decimal_to_binary(103) 
+"db1100111db"
+>>> decimal_to_binary(15) 
+"db1111db"

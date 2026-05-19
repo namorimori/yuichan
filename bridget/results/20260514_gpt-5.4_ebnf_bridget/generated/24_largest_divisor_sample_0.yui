@@ -1,0 +1,13 @@
+Use the standard library
+This is how to largest_divisor of n:
+  Remember that answer is 1
+  Remember that i is 2
+  Do this n times:
+    When remainder of n and i is 0, then:
+      Remember that answer is quotient of n and i
+      Leave the loop
+    End when
+    Increase i by 1
+  End do
+  The answer is answer
+Now you know

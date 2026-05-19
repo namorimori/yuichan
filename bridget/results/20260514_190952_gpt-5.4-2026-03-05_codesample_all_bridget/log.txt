@@ -1,0 +1,350 @@
+=== Bridget YuiEval (pass@1) ===
+Model:    gpt-5.4-2026-03-05  (openai)
+Template: pro159/codesample_all_bridget.md
+Context:  codesample
+Problems: 4
+
+[1/4] 0_has_close_elements
+
+============================================================
+[0_has_close_elements] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to popcount of n:
+   Remember that count is 0
+   Remember that x is n
+   Do this 1000 times:
+      When x is 0, then:
+         Leave the loop
+      End when
+      When remainder of x and 2 is 1, then:
+         Increase count
+      End when
+      Remember that x is quotient of x and 2
+   End do
+   The answer is count
+Now you know
+>>> popcount of 0 
+0
+>>> popcount of 1 
+1
+>>> popcount of 2 
+1
+>>> popcount of 3 
+2
+>>> popcount of 7 
+3
+>>> popcount of 8 
+1
+>>> popcount of 255 
+8
+>>> popcount of 256 
+1
+>>> popcount of 1023 
+10
+```
+--- Extracted ---
+Use the standard library
+This is how to popcount of n:
+   Remember that count is 0
+   Remember that x is n
+   Do this 1000 times:
+      When x is 0, then:
+         Leave the loop
+      End when
+      When remainder of x and 2 is 1, then:
+         Increase count
+      End when
+      Remember that x is quotient of x and 2
+   End do
+   The answer is count
+Now you know
+>>> popcount of 0 
+0
+>>> popcount of 1 
+1
+>>> popcount of 2 
+1
+>>> popcount of 3 
+2
+>>> popcount of 7 
+3
+>>> popcount of 8 
+1
+>>> popcount of 255 
+8
+>>> popcount of 256 
+1
+>>> popcount of 1023 
+10
+  Sample 1/1... ✗ (0.08s)
+--- Result: ✗ FAILED (0.08s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 関数が定義されていません ❌has_close_elements line 34, column 5:
+| >>> has_close_elements of [1.000000, 2.000000, 3.900000, 4.000000, 5.000000, 2.200000] and 0.300000 
+|     ^^^^^^^^^^^^^^^^
+  Problem result: ✗ (0/1 passed) [5.99s]
+
+[2/4] 1_separate_paren_groups
+
+============================================================
+[1_separate_paren_groups] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to int_to_bin of n:
+   When n is 0, then:
+      The answer is "0"
+   End when
+   Remember that result is ""
+   Remember that x is n
+   Do this 1000 times:
+      When x is 0, then:
+         Leave the loop
+      End when
+      Remember that bit is remainder of x and 2
+      Remember that result is "{bit}{result}"
+      Remember that x is quotient of x and 2
+   End do
+   The answer is result
+Now you know
+>>> int_to_bin of 0 
+"0"
+>>> int_to_bin of 1 
+"1"
+>>> int_to_bin of 2 
+"10"
+>>> int_to_bin of 3 
+"11"
+>>> int_to_bin of 11 
+"1011"
+>>> int_to_bin of 255 
+"11111111"
+>>> int_to_bin of 256 
+"100000000"
+>>> int_to_bin of 10 
+"1010"
+```
+--- Extracted ---
+Use the standard library
+This is how to int_to_bin of n:
+   When n is 0, then:
+      The answer is "0"
+   End when
+   Remember that result is ""
+   Remember that x is n
+   Do this 1000 times:
+      When x is 0, then:
+         Leave the loop
+      End when
+      Remember that bit is remainder of x and 2
+      Remember that result is "{bit}{result}"
+      Remember that x is quotient of x and 2
+   End do
+   The answer is result
+Now you know
+>>> int_to_bin of 0 
+"0"
+>>> int_to_bin of 1 
+"1"
+>>> int_to_bin of 2 
+"10"
+>>> int_to_bin of 3 
+"11"
+>>> int_to_bin of 11 
+"1011"
+>>> int_to_bin of 255 
+"11111111"
+>>> int_to_bin of 256 
+"100000000"
+>>> int_to_bin of 10 
+"1010"
+  Sample 1/1... ✗ (0.09s)
+--- Result: ✗ FAILED (0.09s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 関数が定義されていません ❌separate_paren_groups line 34, column 5:
+| >>> separate_paren_groups of "(()()) ((())) () ((())()())" 
+|     ^^^^^^^^^^^^^^^^
+  Problem result: ✗ (0/1 passed) [3.69s]
+
+[3/4] 2_truncate_number
+
+============================================================
+[2_truncate_number] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to popcount of n:
+   Remember that count is 0
+   Remember that x is n
+   Do this 1000 times:
+      When x is 0, then:
+         Leave the loop
+      End when
+      When remainder of x and 2 is 1, then:
+         Increase count
+      End when
+      Remember that x is quotient of x and 2
+   End do
+   The answer is count
+Now you know
+>>> popcount of 0 
+0
+>>> popcount of 1 
+1
+>>> popcount of 2 
+1
+>>> popcount of 3 
+2
+>>> popcount of 7 
+3
+>>> popcount of 8 
+1
+>>> popcount of 255 
+8
+>>> popcount of 256 
+1
+>>> popcount of 1023 
+10
+```
+--- Extracted ---
+Use the standard library
+This is how to popcount of n:
+   Remember that count is 0
+   Remember that x is n
+   Do this 1000 times:
+      When x is 0, then:
+         Leave the loop
+      End when
+      When remainder of x and 2 is 1, then:
+         Increase count
+      End when
+      Remember that x is quotient of x and 2
+   End do
+   The answer is count
+Now you know
+>>> popcount of 0 
+0
+>>> popcount of 1 
+1
+>>> popcount of 2 
+1
+>>> popcount of 3 
+2
+>>> popcount of 7 
+3
+>>> popcount of 8 
+1
+>>> popcount of 255 
+8
+>>> popcount of 256 
+1
+>>> popcount of 1023 
+10
+  Sample 1/1... ✗ (0.08s)
+--- Result: ✗ FAILED (0.08s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 関数が定義されていません ❌truncate_number line 34, column 5:
+| >>> truncate_number of 3.500000 
+|     ^^^^^^^^^^^^^^^
+  Problem result: ✗ (0/1 passed) [3.05s]
+
+[4/4] 3_below_zero
+
+============================================================
+[3_below_zero] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to bits_not of A and width:
+   Remember that X is 0
+   Remember that i is 0
+   Do this width times:
+      Remember that x is 1
+      When i is less than A's length, then:
+         When item i in A is 1, then:
+            Remember that x is 0
+         End when
+      End when
+      Add X to x
+      Increase i
+   End do
+   The answer is X
+Now you know
+>>> bits_not of 0 and 1
+1
+>>> bits_not of 0 and 4
+15
+>>> bits_not of 5 and 3
+2
+>>> bits_not of 5 and 4
+10
+>>> bits_not of 15 and 4
+0
+>>> bits_not of 6 and 3
+1
+>>> bits_not of 6 and 5
+25
+```
+--- Extracted ---
+Use the standard library
+This is how to bits_not of A and width:
+   Remember that X is 0
+   Remember that i is 0
+   Do this width times:
+      Remember that x is 1
+      When i is less than A's length, then:
+         When item i in A is 1, then:
+            Remember that x is 0
+         End when
+      End when
+      Add X to x
+      Increase i
+   End do
+   The answer is X
+Now you know
+>>> bits_not of 0 and 1
+1
+>>> bits_not of 0 and 4
+15
+>>> bits_not of 5 and 3
+2
+>>> bits_not of 5 and 4
+10
+>>> bits_not of 15 and 4
+0
+>>> bits_not of 6 and 3
+1
+>>> bits_not of 6 and 5
+25
+  Sample 1/1... ✗ (0.09s)
+--- Result: ✗ FAILED (0.09s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 関数が定義されていません ❌below_zero line 31, column 5:
+| >>> below_zero of [] 
+|     ^^^^^^^^^^
+  Problem result: ✗ (0/1 passed) [3.68s]
+
+============================================================
+評価結果サマリー
+============================================================
+Total:   4 問題
+Passed:  0 問題
+Failed:  4 問題
+pass@1: 0.00% (0/4)
+
+失敗した問題:
+  - 0_has_close_elements
+  - 1_separate_paren_groups
+  - 2_truncate_number
+  - 3_below_zero
+
+生成コード: results_bridget/20260514_190952_gpt-5.4-2026-03-05_codesample_all_bridget/generated
+詳細結果:   results_bridget/20260514_190952_gpt-5.4-2026-03-05_codesample_all_bridget/result.jsonl
+サマリー:   results_bridget/20260514_190952_gpt-5.4-2026-03-05_codesample_all_bridget/summary.json
+ログ:       results_bridget/20260514_190952_gpt-5.4-2026-03-05_codesample_all_bridget/log.txt

@@ -1,0 +1,21 @@
+Use the standard library
+This is how to is_multiply_prime of a:
+  When a is at most 1, then:
+    The answer is 0
+  End when
+  Remember that count is 0
+  Remember that i is 2
+  Do this a times:
+    When product of i and i is more than a, then:
+      Leave the loop
+    End when
+    When remainder of a and i is 0, then:
+      Increase count by 1
+      When count is more than 1, then:
+        The answer is 1
+      End when
+    End when
+    Increase i by 1
+  End do
+  The answer is 0
+Now you know

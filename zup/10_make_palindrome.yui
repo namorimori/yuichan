@@ -1,0 +1,61 @@
+Nav rem vaz
+Dum make_palindrome(string):
+   Kem 長さ par string @kez
+   Kem 結果 par []
+   Nev 長さ paz 0 ger:
+      Dup vem 結果
+   Dam nev
+   Kem 開始位置 par 長さ
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 残り長さ par 差(長さ, i)
+      Kem 回文フラグ par 1
+      Kem j par 0
+      Mup dum 残り長さ pag:
+         Nev j dup 残り長さ ger:
+            Kem 左 par 和(i, j)
+            Kem 右 par 差(差(長さ, 1), j)
+            Nev 左 dup 右 ger:
+               Nev string[左] nup string[右] ger:
+                  Kem 回文フラグ par 0
+               Dam nev
+            Dam nev
+         Dam nev
+         Rav j
+      Dam mup
+      Nev 回文フラグ paz 1 ger:
+         Nev 開始位置 paz 長さ ger:
+            Kem 開始位置 par i
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Kem i par 0
+   Mup dum 長さ pag:
+      Mev 結果 naz string[i]
+      Rav i
+   Dam mup
+   Kem i par 0
+   Mup dum 開始位置 pag:
+      Kem インデックス par 差(開始位置, 和(i, 1))
+      Mev 結果 naz string[インデックス]
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> make_palindrome("") 
+""
+>>> make_palindrome("cat") 
+"catac"
+>>> make_palindrome("cata") 
+"catac"
+>>> make_palindrome("") 
+""
+>>> make_palindrome("x") 
+"x"
+>>> make_palindrome("xyz") 
+"xyzyx"
+>>> make_palindrome("xyx") 
+"xyx"
+>>> make_palindrome("jerry") 
+"jerryrrej"

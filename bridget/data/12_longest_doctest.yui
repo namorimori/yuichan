@@ -1,0 +1,6 @@
+>>> longest of [] 
+""
+>>> longest of ["x", "y", "z"] 
+"x"
+>>> longest of ["x", "yyy", "zzzz", "www", "kkkk", "abc"] 
+"zzzz"

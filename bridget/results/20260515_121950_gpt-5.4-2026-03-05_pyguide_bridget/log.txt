@@ -1,0 +1,7 @@
+=== Bridget YuiEval (pass@1) ===
+Model:    gpt-5.4-2026-03-05  (openai)
+Template: context/pyguide_bridget.md
+Context:  pyguide_bridget.md
+Problems: 164
+
+[1/164] 0_has_close_elements

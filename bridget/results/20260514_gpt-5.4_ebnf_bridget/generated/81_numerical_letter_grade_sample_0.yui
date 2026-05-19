@@ -1,0 +1,59 @@
+Use the standard library
+This is how to numerical_letter_grade of grades:
+  Remember that result is []
+  Do this grades's length times:
+    Remember that i is diff of grades's length and grades's length
+    Increase i by 1
+    Remember that grade is item diff of i and 1 in grades
+    When grade is 4.0, then:
+      Add result to "A+"
+    But, if not:
+      When grade is 3.7, then:
+        Add result to "A"
+      But, if not:
+        When grade is 3.3, then:
+          Add result to "A-"
+        But, if not:
+          When grade is 3.0, then:
+            Add result to "B+"
+          But, if not:
+            When grade is 2.7, then:
+              Add result to "B"
+            But, if not:
+              When grade is 2.3, then:
+                Add result to "B-"
+              But, if not:
+                When grade is 2.0, then:
+                  Add result to "C+"
+                But, if not:
+                  When grade is 1.7, then:
+                    Add result to "C"
+                  But, if not:
+                    When grade is 1.3, then:
+                      Add result to "C-"
+                    But, if not:
+                      When grade is 1.0, then:
+                        Add result to "D+"
+                      But, if not:
+                        When grade is 0.7, then:
+                          Add result to "D"
+                        But, if not:
+                          When grade is 0.0, then:
+                            Add result to "D-"
+                          But, if not:
+                            Add result to "F"
+                          End when
+                        End when
+                      End when
+                    End when
+                  End when
+                End when
+              End when
+            End when
+          End when
+        End when
+      End when
+    End when
+  End do
+  The answer is result
+Now you know

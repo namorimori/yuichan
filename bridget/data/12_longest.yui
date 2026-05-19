@@ -1,0 +1,43 @@
+This is how to longest of strings:
+   Remember that length is strings's length
+   Remember that result is []
+   When length is 0, then:
+      The answer is result
+   End when
+   Remember that max_length is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that string_val is item i in strings
+      Remember that string_length is string_val's length
+      When string_length is more than max_length, then:
+         Remember that max_length is string_length
+      End when
+      Increase i
+   End do
+   Remember that i is 0
+   Remember that found is 0
+   Do this length times:
+      When found is 0, then:
+         Remember that string_val is item i in strings
+         Remember that string_length is string_val's length
+         When string_length is max_length, then:
+            Remember that result is string_val
+            Remember that found is 1
+         End when
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> longest of [] 
+[]
+>>> longest of ["a", "b", "c"] 
+"a"
+>>> longest of ["a", "bb", "ccc"] 
+"ccc"
+>>> longest of [] 
+""
+>>> longest of ["x", "y", "z"] 
+"x"
+>>> longest of ["x", "yyy", "zzzz", "www", "kkkk", "abc"] 
+"zzzz"

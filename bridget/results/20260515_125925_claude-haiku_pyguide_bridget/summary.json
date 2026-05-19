@@ -1,0 +1,19 @@
+{
+  "model": "claude-haiku",
+  "template": "context/pyguide_bridget.md",
+  "context": "pyguide_bridget.md",
+  "temperature": 0.2,
+  "k": 1,
+  "total_problems": 164,
+  "passed_problems": 0,
+  "failed_problems": 164,
+  "pass_at_k": 0.0,
+  "confidence_interval_95": {
+    "lower": 0.0,
+    "upper": 2.29,
+    "method": "Wilson Score"
+  },
+  "timestamp": "20260515_125925",
+  "total_samples": 164,
+  "passed_samples": 0
+}

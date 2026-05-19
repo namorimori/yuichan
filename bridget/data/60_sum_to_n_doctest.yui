@@ -1,0 +1,10 @@
+>>> sum_to_n of 1 
+1
+>>> sum_to_n of 6 
+21
+>>> sum_to_n of 11 
+66
+>>> sum_to_n of 30 
+465
+>>> sum_to_n of 100 
+5050

@@ -1,0 +1,27 @@
+Use the standard library
+This is how to solve of s:
+  Remember that result is []
+  Remember that i is diff of s's length and 1
+  Do this s's length times:
+    Remember that x is item i in s
+    When x is at least 97, then:
+      When x is at most 122, then:
+        Add result to diff of x and 32
+      But, if not:
+        Add result to x
+      End when
+    But, if not:
+      When x is at least 65, then:
+        When x is at most 90, then:
+          Add result to sum of x and 32
+        But, if not:
+          Add result to x
+        End when
+      But, if not:
+        Add result to x
+      End when
+    End when
+    Decrease i by 1
+  End do
+  The answer is result
+Now you know

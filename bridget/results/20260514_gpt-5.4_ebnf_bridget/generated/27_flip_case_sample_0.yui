@@ -1,0 +1,19 @@
+Use the standard library
+This is how to flip_case of string:
+  Remember that result is ""
+  Remember that i is 0
+  Do this string's length times:
+    Remember that ch is item i in string
+    When ch is in "abcdefghijklmnopqrstuvwxyz", then:
+      Remember that result is "{result}{tostring of diff of toint of ch and 32}"
+    But, if not:
+      When ch is in "ABCDEFGHIJKLMNOPQRSTUVWXYZ", then:
+        Remember that result is "{result}{tostring of sum of toint of ch and 32}"
+      But, if not:
+        Remember that result is "{result}{ch}"
+      End when
+    End when
+    Increase i by 1
+  End do
+  The answer is result
+Now you know

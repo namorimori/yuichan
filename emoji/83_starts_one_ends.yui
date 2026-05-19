@@ -1,0 +1,32 @@
+🗝️ 📚
+🧩 starts_one_ends(n) 👉
+   result ⬅️ 1
+   ❓ n ⚖️ 1 👉
+      ✅ result
+   🔚
+   power ⬅️ 1
+   exp ⬅️ 差(n, 2)
+   i ⬅️ 0
+   🌀 exp 👉
+      power ⬅️ 積(power, 10)
+      i ⬆️
+   🔚
+   result ⬅️ 積(18, power)
+   ✅ result
+🔚
+>>> starts_one_ends(1) 
+1
+>>> starts_one_ends(2) 
+18
+>>> starts_one_ends(3) 
+180
+>>> starts_one_ends(1) 
+1
+>>> starts_one_ends(2) 
+18
+>>> starts_one_ends(3) 
+180
+>>> starts_one_ends(4) 
+1800
+>>> starts_one_ends(5) 
+18000

@@ -1,0 +1,20 @@
+>>> is_simple_power of 16 and 2 
+1
+>>> is_simple_power of 143214 and 16 
+0
+>>> is_simple_power of 4 and 2 
+1
+>>> is_simple_power of 9 and 3 
+1
+>>> is_simple_power of 16 and 4 
+1
+>>> is_simple_power of 24 and 2 
+0
+>>> is_simple_power of 128 and 4 
+0
+>>> is_simple_power of 12 and 6 
+0
+>>> is_simple_power of 1 and 1 
+1
+>>> is_simple_power of 1 and 12 
+1

@@ -1,0 +1,80 @@
+🗝️ 📚
+🧩 anti_shuffle(s) 👉
+   length ⬅️ 📐 s
+   words ⬅️ []
+   current_word ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ s[i]
+      ❓ char ⚖️ 32 👉
+         words 🧲 current_word
+         current_word ⬅️ []
+      🔚
+      ❗ 👉
+         current_word 🧲 char
+      🔚
+      i ⬆️
+   🔚
+   words 🧲 current_word
+   num_words ⬅️ 📐 words
+   sorted_words ⬅️ []
+   i ⬅️ 0
+   🌀 num_words 👉
+      word ⬅️ words[i]
+      word_len ⬅️ 📐 word
+      j ⬅️ 0
+      🌀 word_len 👉
+         k ⬅️ 0
+         limit ⬅️ 差(差(word_len, j), 1)
+         🌀 limit 👉
+            next_k ⬅️ 和(k, 1)
+            ❓ word[k] 📉 word[next_k] 👉
+               temp ⬅️ word[k]
+               word[k] ⬅️ word[next_k]
+               word[next_k] ⬅️ temp
+            🔚
+            k ⬆️
+         🔚
+         j ⬆️
+      🔚
+      sorted_words 🧲 word
+      i ⬆️
+   🔚
+   result ⬅️ []
+   i ⬅️ 0
+   🌀 num_words 👉
+      word ⬅️ sorted_words[i]
+      word_len ⬅️ 📐 word
+      j ⬅️ 0
+      🌀 word_len 👉
+         result 🧲 word[j]
+         j ⬆️
+      🔚
+      last_idx ⬅️ 差(num_words, 1)
+      ❓ i 📈 last_idx 👉
+         result 🧲 32
+      🔚
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> anti_shuffle([72, 105]) 
+[72, 105]
+>>> anti_shuffle([104, 101, 108, 108, 111]) 
+[101, 104, 108, 108, 111]
+>>> anti_shuffle([72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33, 33, 33]) 
+[72, 101, 108, 108, 111, 32, 33, 33, 33, 87, 100, 108, 111, 114]
+>>> anti_shuffle("Hi") 
+"Hi"
+>>> anti_shuffle("hello") 
+"ehllo"
+>>> anti_shuffle("number") 
+"bemnru"
+>>> anti_shuffle("abcd") 
+"abcd"
+>>> anti_shuffle("Hello World!!!") 
+"Hello !!!Wdlor"
+>>> anti_shuffle("") 
+""
+>>> anti_shuffle("Hi. My name is Mister Robot. How are you?") 
+".Hi My aemn is Meirst .Rboot How aer ?ouy"

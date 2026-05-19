@@ -1,0 +1,57 @@
+Nav rem vaz
+Dum hex_key(num):
+   Kem length par num @kez
+   Kem count par 0
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par num[i]
+      Kem is_prime par 0
+      Nev char paz 50 ger:
+         Kem is_prime par 1
+      Dam nev
+      Nev char paz 51 ger:
+         Kem is_prime par 1
+      Dam nev
+      Nev char paz 53 ger:
+         Kem is_prime par 1
+      Dam nev
+      Nev char paz 55 ger:
+         Kem is_prime par 1
+      Dam nev
+      Nev char paz 66 ger:
+         Kem is_prime par 1
+      Dam nev
+      Nev char paz 68 ger:
+         Kem is_prime par 1
+      Dam nev
+      Nev is_prime paz 1 ger:
+         Rav count
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem count
+Pam dum
+>>> hex_key([65, 66]) 
+1
+>>> hex_key([49, 48, 55, 55, 69]) 
+2
+>>> hex_key([65, 66, 69, 68, 49, 65, 51, 51]) 
+4
+>>> hex_key([49, 50, 51, 52, 53, 54, 55, 56, 57, 65, 66, 67, 68, 69, 70, 48]) 
+6
+>>> hex_key([50, 48, 50, 48]) 
+2
+>>> hex_key("AB") 
+1
+>>> hex_key("1077E") 
+2
+>>> hex_key("ABED1A33") 
+4
+>>> hex_key("2020") 
+2
+>>> hex_key("123456789ABCDEF0") 
+6
+>>> hex_key("112233445566778899AABBCCDDEEFF00") 
+12
+>>> hex_key([]) 
+0

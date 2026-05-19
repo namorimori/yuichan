@@ -1,0 +1,14 @@
+>>> decode_cyclic("axdhhixdexrvsncacbgh") 
+"daxihhexdvxrcsnbacgh"
+>>> decode_cyclic("artwugrnwoshzaiy") 
+"targwuwrnhosizay"
+>>> decode_cyclic("wnfiekykgcmdlldiztxobdmrc") 
+"fwnkiegykdcmdlltizbxordmc"
+>>> decode_cyclic("utjsglcbwhyvchjdm") 
+"jutlsgwcbvhyjchdm"
+>>> decode_cyclic("ulollfgv") 
+"oulfllgv"
+>>> decode_cyclic("vuwtucfr") 
+"wvuctufr"
+>>> decode_cyclic("fohiumrhwkyvbhyzkbicmgs") 
+"hfomiuwrhvkyybhbzkmicgs"

@@ -1,0 +1,148 @@
+🗝️ 📚
+🧩 sort_numbers(numbers) 👉
+   length ⬅️ 📐 numbers
+   words ⬅️ []
+   current_word ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ numbers[i]
+      ❓ char ⚖️ 32 👉
+         ❓ 📐 current_word 📉 0 👉
+            words 🧲 current_word
+            current_word ⬅️ []
+         🔚
+      🔚
+      ❗ 👉
+         current_word 🧲 char
+      🔚
+      i ⬆️
+   🔚
+   ❓ 📐 current_word 📉 0 👉
+      words 🧲 current_word
+   🔚
+   num_words ⬅️ 📐 words
+   i ⬅️ 0
+   🌀 num_words 👉
+      j ⬅️ 0
+      limit ⬅️ 差(差(num_words, i), 1)
+      🌀 limit 👉
+         next_j ⬅️ 和(j, 1)
+         val1 ⬅️ 10
+         val2 ⬅️ 10
+         w1_len ⬅️ 📐 words[j]
+         ❓ w1_len ⚖️ 4 👉
+            val1 ⬅️ 0
+         🔚
+         ❓ w1_len ⚖️ 3 👉
+            ❓ words[j][0] ⚖️ 111 👉
+               val1 ⬅️ 1
+            🔚
+            ❓ words[j][0] ⚖️ 116 👉
+               val1 ⬅️ 2
+            🔚
+            ❓ words[j][0] ⚖️ 115 👉
+               val1 ⬅️ 6
+            🔚
+         🔚
+         ❓ w1_len ⚖️ 5 👉
+            ❓ words[j][0] ⚖️ 116 👉
+               val1 ⬅️ 3
+            🔚
+            ❓ words[j][1] ⚖️ 105 👉
+               val1 ⬅️ 8
+            🔚
+            ❓ words[j][0] ⚖️ 115 👉
+               val1 ⬅️ 7
+            🔚
+         🔚
+         ❓ w1_len ⚖️ 4 👉
+            ❓ words[j][0] ⚖️ 102 👉
+               ❓ words[j][1] ⚖️ 111 👉
+                  val1 ⬅️ 4
+               🔚
+               ❓ words[j][1] ⚖️ 105 👉
+                  val1 ⬅️ 5
+               🔚
+            🔚
+            ❓ words[j][0] ⚖️ 110 👉
+               val1 ⬅️ 9
+            🔚
+         🔚
+         w2_len ⬅️ 📐 words[next_j]
+         ❓ w2_len ⚖️ 4 👉
+            val2 ⬅️ 0
+         🔚
+         ❓ w2_len ⚖️ 3 👉
+            ❓ words[next_j][0] ⚖️ 111 👉
+               val2 ⬅️ 1
+            🔚
+            ❓ words[next_j][0] ⚖️ 116 👉
+               val2 ⬅️ 2
+            🔚
+            ❓ words[next_j][0] ⚖️ 115 👉
+               val2 ⬅️ 6
+            🔚
+         🔚
+         ❓ w2_len ⚖️ 5 👉
+            ❓ words[next_j][0] ⚖️ 116 👉
+               val2 ⬅️ 3
+            🔚
+            ❓ words[next_j][1] ⚖️ 105 👉
+               val2 ⬅️ 8
+            🔚
+            ❓ words[next_j][0] ⚖️ 115 👉
+               val2 ⬅️ 7
+            🔚
+         🔚
+         ❓ w2_len ⚖️ 4 👉
+            ❓ words[next_j][0] ⚖️ 102 👉
+               ❓ words[next_j][1] ⚖️ 111 👉
+                  val2 ⬅️ 4
+               🔚
+               ❓ words[next_j][1] ⚖️ 105 👉
+                  val2 ⬅️ 5
+               🔚
+            🔚
+            ❓ words[next_j][0] ⚖️ 110 👉
+               val2 ⬅️ 9
+            🔚
+         🔚
+         ❓ val1 📉 val2 👉
+            temp ⬅️ words[j]
+            words[j] ⬅️ words[next_j]
+            words[next_j] ⬅️ temp
+         🔚
+         j ⬆️
+      🔚
+      i ⬆️
+   🔚
+   result ⬅️ []
+   i ⬅️ 0
+   🌀 num_words 👉
+      word ⬅️ words[i]
+      word_len ⬅️ 📐 word
+      j ⬅️ 0
+      🌀 word_len 👉
+         result 🧲 word[j]
+         j ⬆️
+      🔚
+      last_idx ⬅️ 差(num_words, 1)
+      ❓ i 📈 last_idx 👉
+         result 🧲 32
+      🔚
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> sort_numbers([116, 104, 114, 101, 101, 32, 111, 110, 101, 32, 102, 105, 118, 101]) 
+[111, 110, 101, 32, 116, 104, 114, 101, 101, 32, 102, 105, 118, 101]
+>>> sort_numbers("") 
+""
+>>> sort_numbers("three") 
+"three"
+>>> sort_numbers("three five nine") 
+"three five nine"
+>>> sort_numbers("five zero four seven nine eight") 
+"zero four five seven eight nine"
+>>> sort_numbers("six five four three two one zero") 
+"zero one two three four five six"

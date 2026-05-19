@@ -1,0 +1,14 @@
+>>> vowels_count of "abcde" 
+2
+>>> vowels_count of "Alone" 
+3
+>>> vowels_count of "key" 
+2
+>>> vowels_count of "bye" 
+1
+>>> vowels_count of "keY" 
+2
+>>> vowels_count of "bYe" 
+1
+>>> vowels_count of "ACEDY" 
+3

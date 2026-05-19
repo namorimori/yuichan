@@ -1,0 +1,26 @@
+Use the standard library
+This is how to find_closest_elements of numbers:
+  Remember that closest_pair is []
+  Remember that smallest_diff is nothing
+  Remember that i is 0
+  Do this numbers's length times:
+    Remember that j is sum of i and 1
+    Do this diff of numbers's length and j times:
+      Remember that first is item i in numbers
+      Remember that second is item j in numbers
+      Remember that current_diff is abs of diff of first and second
+      When smallest_diff is nothing, then:
+        Remember that smallest_diff is current_diff
+        Remember that closest_pair is [first, second]
+      But, if not:
+        When current_diff is less than smallest_diff, then:
+          Remember that smallest_diff is current_diff
+          Remember that closest_pair is [first, second]
+        End when
+      End when
+      Increase j
+    End do
+    Increase i
+  End do
+  The answer is closest_pair
+Now you know

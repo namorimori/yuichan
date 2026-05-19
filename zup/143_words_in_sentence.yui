@@ -1,0 +1,86 @@
+Nav rem vaz
+Dum words_in_sentence(sentence):
+   Kem length par sentence @kez
+   Kem result par []
+   Kem current_word par []
+   Kem word_list par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par sentence[i]
+      Nev char paz 32 ger:
+         Nev current_word @kez pep 0 ger:
+            Mev word_list naz current_word
+            Kem current_word par []
+         Dam nev
+      Zum:
+         Mev current_word naz char
+      Dam nev
+      Rav i
+   Dam mup
+   Nev current_word @kez pep 0 ger:
+      Mev word_list naz current_word
+   Dam nev
+   Kem prime_words par []
+   Kem wl_len par word_list @kez
+   Kem i par 0
+   Mup dum wl_len pag:
+      Kem word par word_list[i]
+      Kem word_len par word @kez
+      Kem is_prime par 1
+      Nev word_len dup 2 ger:
+         Kem is_prime par 0
+      Dam nev
+      Nev word_len paz 2 ger:
+         Kem is_prime par 1
+      Dam nev
+      Nev word_len pep 2 ger:
+         Kem j par 2
+         Mup dum 100 pag:
+            Nev j dup word_len ger:
+               Kem remainder par 剰余(word_len, j)
+               Nev remainder paz 0 ger:
+                  Kem is_prime par 0
+               Dam nev
+               Rav j
+            Dam nev
+         Dam mup
+      Dam nev
+      Nev is_prime paz 1 ger:
+         Mev prime_words naz word
+      Dam nev
+      Rav i
+   Dam mup
+   Kem pw_len par prime_words @kez
+   Kem i par 0
+   Mup dum pw_len pag:
+      Kem word par prime_words[i]
+      Kem word_len par word @kez
+      Kem j par 0
+      Mup dum word_len pag:
+         Mev result naz word[j]
+         Rav j
+      Dam mup
+      Kem next_idx par 和(i, 1)
+      Nev next_idx dup pw_len ger:
+         Mev result naz 32
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> words_in_sentence([84, 104, 105, 115, 32, 105, 115, 32, 97, 32, 116, 101, 115, 116]) 
+[105, 115]
+>>> words_in_sentence("This is a test") 
+"is"
+>>> words_in_sentence("lets go for swimming") 
+"go for"
+>>> words_in_sentence("there is no place available here") 
+"there is no place"
+>>> words_in_sentence("Hi I am Hussein") 
+"Hi am Hussein"
+>>> words_in_sentence("go for it") 
+"go for it"
+>>> words_in_sentence("here") 
+""
+>>> words_in_sentence("here is") 
+"is"

@@ -1,0 +1,8 @@
+>>> generate_integers of 2 and 10 
+[2, 4, 6, 8]
+>>> generate_integers of 10 and 2 
+[2, 4, 6, 8]
+>>> generate_integers of 132 and 2 
+[2, 4, 6, 8]
+>>> generate_integers of 17 and 89 
+[]

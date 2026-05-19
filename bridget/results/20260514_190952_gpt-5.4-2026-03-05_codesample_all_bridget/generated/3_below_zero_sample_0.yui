@@ -1,0 +1,30 @@
+Use the standard library
+This is how to bits_not of A and width:
+   Remember that X is 0
+   Remember that i is 0
+   Do this width times:
+      Remember that x is 1
+      When i is less than A's length, then:
+         When item i in A is 1, then:
+            Remember that x is 0
+         End when
+      End when
+      Add X to x
+      Increase i
+   End do
+   The answer is X
+Now you know
+>>> bits_not of 0 and 1
+1
+>>> bits_not of 0 and 4
+15
+>>> bits_not of 5 and 3
+2
+>>> bits_not of 5 and 4
+10
+>>> bits_not of 15 and 4
+0
+>>> bits_not of 6 and 3
+1
+>>> bits_not of 6 and 5
+25

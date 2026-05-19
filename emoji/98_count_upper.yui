@@ -1,0 +1,55 @@
+🗝️ 📚
+🧩 count_upper(s) 👉
+   length ⬅️ 📐 s
+   count ⬅️ 0
+   i ⬅️ 0
+   🌀 100 👉
+      ❓ i 📈 length 👉
+         remainder ⬅️ 剰余(i, 2)
+         ❓ remainder ⚖️ 0 👉
+            char ⬅️ s[i]
+            is_vowel ⬅️ 0
+            ❓ char ⚖️ 65 👉
+               is_vowel ⬅️ 1
+            🔚
+            ❓ char ⚖️ 69 👉
+               is_vowel ⬅️ 1
+            🔚
+            ❓ char ⚖️ 73 👉
+               is_vowel ⬅️ 1
+            🔚
+            ❓ char ⚖️ 79 👉
+               is_vowel ⬅️ 1
+            🔚
+            ❓ char ⚖️ 85 👉
+               is_vowel ⬅️ 1
+            🔚
+            ❓ is_vowel ⚖️ 1 👉
+               count ⬆️
+            🔚
+         🔚
+         i ⬅️ 和(i, 2)
+      🔚
+   🔚
+   ✅ count
+🔚
+>>> count_upper([97, 66, 67, 100, 69, 102]) 
+1
+>>> count_upper([97, 98, 99, 100, 101, 102, 103]) 
+0
+>>> count_upper([100, 66, 66, 69]) 
+0
+>>> count_upper("aBCdEf") 
+1
+>>> count_upper("abcdefg") 
+0
+>>> count_upper("dBBE") 
+0
+>>> count_upper("B") 
+0
+>>> count_upper("U") 
+1
+>>> count_upper("") 
+0
+>>> count_upper("EEEE") 
+2

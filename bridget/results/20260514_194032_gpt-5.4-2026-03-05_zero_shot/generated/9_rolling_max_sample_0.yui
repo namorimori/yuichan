@@ -1,0 +1,11 @@
+Use the standard library
+use std
+
+let rolling_max = nums ->
+  let step = acc x ->
+    match acc with
+    | [] -> [x]
+    | _ ->
+        let current_max = last acc
+        acc ++ [max current_max x]
+  foldl step [] nums

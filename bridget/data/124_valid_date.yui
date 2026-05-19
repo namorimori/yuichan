@@ -1,0 +1,123 @@
+Use the standard library
+This is how to valid_date of date:
+   Remember that length is date's length
+   Remember that result is 0
+   When length is not 10, then:
+      The answer is result
+   End when
+   Remember that month_str is []
+   Remember that day_str is []
+   Remember that year_str is []
+   When length is 10, then:
+      Add month_str to item 0 in date
+      Add month_str to item 1 in date
+      Add day_str to item 3 in date
+      Add day_str to item 4 in date
+      Add year_str to item 6 in date
+      Add year_str to item 7 in date
+      Add year_str to item 8 in date
+      Add year_str to item 9 in date
+   End when
+   Remember that month is sum of (product of 10 and (diff of item 0 in month_str and 48)) and (diff of item 1 in month_str and 48)
+   Remember that day is sum of (product of 10 and (diff of item 0 in day_str and 48)) and (diff of item 1 in day_str and 48)
+   Remember that valid is 1
+   When month is less than 1, then:
+      Remember that valid is 0
+   End when
+   When month is more than 12, then:
+      Remember that valid is 0
+   End when
+   When day is less than 1, then:
+      Remember that valid is 0
+   End when
+   When valid is 1, then:
+      Remember that is_31_day_month is 0
+      When month is 1, then:
+         Remember that is_31_day_month is 1
+      End when
+      When month is 3, then:
+         Remember that is_31_day_month is 1
+      End when
+      When month is 5, then:
+         Remember that is_31_day_month is 1
+      End when
+      When month is 7, then:
+         Remember that is_31_day_month is 1
+      End when
+      When month is 8, then:
+         Remember that is_31_day_month is 1
+      End when
+      When month is 10, then:
+         Remember that is_31_day_month is 1
+      End when
+      When month is 12, then:
+         Remember that is_31_day_month is 1
+      End when
+      Remember that is_30_day_month is 0
+      When month is 4, then:
+         Remember that is_30_day_month is 1
+      End when
+      When month is 6, then:
+         Remember that is_30_day_month is 1
+      End when
+      When month is 9, then:
+         Remember that is_30_day_month is 1
+      End when
+      When month is 11, then:
+         Remember that is_30_day_month is 1
+      End when
+      When month is 2, then:
+         When day is more than 29, then:
+            Remember that valid is 0
+         End when
+      End when
+      When is_31_day_month is 1, then:
+         When day is more than 31, then:
+            Remember that valid is 0
+         End when
+      End when
+      When is_30_day_month is 1, then:
+         When day is more than 30, then:
+            Remember that valid is 0
+         End when
+      End when
+   End when
+   Remember that result is valid
+   The answer is result
+Now you know
+>>> valid_date of [48, 51, 45, 49, 49, 45, 50, 48, 48, 48] 
+1
+>>> valid_date of [49, 53, 45, 48, 49, 45, 50, 48, 49, 50] 
+0
+>>> valid_date of "03-11-2000" 
+1
+>>> valid_date of "15-01-2012" 
+0
+>>> valid_date of "04-0-2040" 
+0
+>>> valid_date of "06-04-2020" 
+1
+>>> valid_date of "01-01-2007" 
+1
+>>> valid_date of "03-32-2011" 
+0
+>>> valid_date of "" 
+0
+>>> valid_date of "04-31-3000" 
+0
+>>> valid_date of "06-06-2005" 
+1
+>>> valid_date of "21-31-2000" 
+0
+>>> valid_date of "04-12-2003" 
+1
+>>> valid_date of "04122003" 
+0
+>>> valid_date of "20030412" 
+0
+>>> valid_date of "2003-04" 
+0
+>>> valid_date of "2003-04-12" 
+0
+>>> valid_date of "04-2003" 
+0

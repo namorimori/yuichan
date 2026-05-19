@@ -1,0 +1,37 @@
+Use the standard library
+This is how to f of n:
+   Remember that result is []
+   Remember that i is 1
+   Do this n times:
+      Remember that remainder is remainder of i and 2
+      When remainder is 0, then:
+         Remember that factorial is 1
+         Remember that j is 1
+         Do this i times:
+            Remember that factorial is product of factorial and j
+            Increase j
+         End do
+         Add result to factorial
+      But, if not:
+         Remember that sum is 0
+         Remember that j is 1
+         Do this i times:
+            Remember that sum is sum of sum and j
+            Increase j
+         End do
+         Add result to sum
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> f of 5 
+[1, 2, 6, 24, 15]
+>>> f of 5 
+[1, 2, 6, 24, 15]
+>>> f of 7 
+[1, 2, 6, 24, 15, 720, 28]
+>>> f of 1 
+[1]
+>>> f of 3 
+[1, 2, 6]

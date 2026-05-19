@@ -1,0 +1,33 @@
+Use the standard library
+This is how to words_string of s:
+  Remember that words is []
+  Remember that current is ""
+  Do this s's length times:
+    Remember that i is diff of s's length and s's length
+    Increase i by 1
+  End do
+  Remember that i is 0
+  Do this s's length times:
+    Remember that ch is item i in s
+    When ch is " ", then:
+      When current is not "", then:
+        Add words to current
+        Remember that current is ""
+      End when
+    But, if not:
+      When ch is ",", then:
+        When current is not "", then:
+          Add words to current
+          Remember that current is ""
+        End when
+      But, if not:
+        Remember that current is "{current}{ch}"
+      End when
+    End when
+    Increase i by 1
+  End do
+  When current is not "", then:
+    Add words to current
+  End when
+  The answer is words
+Now you know

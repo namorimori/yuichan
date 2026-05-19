@@ -1,0 +1,7 @@
+Use the standard library
+use standard_library
+
+This is how to truncate_number of number:
+    put number into n
+    put floor of n into whole
+    put n - whole

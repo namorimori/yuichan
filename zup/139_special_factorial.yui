@@ -1,0 +1,22 @@
+Nav rem vaz
+Dum special_factorial(n):
+   Kem fact_i par 1
+   Kem special_fact par 1
+   Kem i par 1
+   Mup dum n pag:
+      Kem fact_i par 積(fact_i, i)
+      Kem special_fact par 積(special_fact, fact_i)
+      Rav i
+   Dam mup
+   Dup vem special_fact
+Pam dum
+>>> special_factorial(4) 
+288
+>>> special_factorial(4) 
+288
+>>> special_factorial(5) 
+34560
+>>> special_factorial(7) 
+125411328000
+>>> special_factorial(1) 
+1

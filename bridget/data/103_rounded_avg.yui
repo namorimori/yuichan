@@ -1,0 +1,75 @@
+Use the standard library
+This is how to rounded_avg of n and m:
+   Remember that result is []
+   When m is less than n, then:
+      Remember that result is -1
+      The answer is result
+   End when
+   Remember that sum is 0
+   Remember that i is n
+   Do this 1000 times:
+      When i is at least m, then:
+         Remember that sum is sum of sum and i
+         Increase i
+      End when
+   End do
+   Remember that count is diff of (sum of m and 1) and n
+   Remember that quotient is quotient of sum and count
+   Remember that remainder is remainder of sum and count
+   Remember that remainder_doubled is product of remainder and 2
+   Remember that avg is quotient
+   When remainder_doubled is more than count, then:
+      Increase avg
+   End when
+   When remainder_doubled is count, then:
+      Remember that is_odd is remainder of quotient and 2
+      When is_odd is 1, then:
+         Increase avg
+      End when
+   End when
+   Remember that result is [48, 98]
+   Remember that temp is avg
+   Remember that digits is []
+   Do this 100 times:
+      When temp is more than 0, then:
+         Remember that remainder is remainder of temp and 2
+         Add digits to remainder
+         Remember that temp is quotient of temp and 2
+      End when
+   End do
+   Remember that d_len is digits's length
+   Remember that i is 0
+   Do this d_len times:
+      Remember that idx is diff of (diff of d_len and i) and 1
+      Remember that digit_char is sum of 48 and item idx in digits
+      Add result to digit_char
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> rounded_avg of 1 and 5 
+[48, 98, 49, 49]
+>>> rounded_avg of 1 and 5 
+"0b11"
+>>> rounded_avg of 7 and 13 
+"0b1010"
+>>> rounded_avg of 964 and 977 
+"0b1111001010"
+>>> rounded_avg of 996 and 997 
+"0b1111100100"
+>>> rounded_avg of 560 and 851 
+"0b1011000010"
+>>> rounded_avg of 185 and 546 
+"0b101101110"
+>>> rounded_avg of 362 and 496 
+"0b110101101"
+>>> rounded_avg of 350 and 902 
+"0b1001110010"
+>>> rounded_avg of 197 and 233 
+"0b11010111"
+>>> rounded_avg of 7 and 5 
+-1
+>>> rounded_avg of 5 and 1 
+-1
+>>> rounded_avg of 5 and 5 
+"0b101"

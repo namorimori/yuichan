@@ -1,0 +1,76 @@
+Use the standard library
+This is how to Strongest_Extension of class_name and extensions:
+   Remember that ext_count is extensions's length
+   Remember that best_ext is []
+   Remember that best_strength is -1000
+   Remember that first is 1
+   Remember that i is 0
+   Do this ext_count times:
+      Remember that ext is item i in extensions
+      Remember that ext_len is ext's length
+      Remember that upper_count is 0
+      Remember that lower_count is 0
+      Remember that j is 0
+      Do this ext_len times:
+         Remember that char is item j in ext
+         When char is more than 64, then:
+            When char is less than 91, then:
+               Increase upper_count
+            End when
+         End when
+         When char is more than 96, then:
+            When char is less than 123, then:
+               Increase lower_count
+            End when
+         End when
+         Increase j
+      End do
+      Remember that strength is diff of upper_count and lower_count
+      When first is 1, then:
+         Remember that best_ext is ext
+         Remember that best_strength is strength
+         Remember that first is 0
+      But, if not:
+         When strength is more than best_strength, then:
+            Remember that best_ext is ext
+            Remember that best_strength is strength
+         End when
+      End when
+      Increase i
+   End do
+   Remember that result is []
+   Remember that class_len is class_name's length
+   Remember that i is 0
+   Do this class_len times:
+      Add result to item i in class_name
+      Increase i
+   End do
+   Add result to 46
+   Remember that best_len is best_ext's length
+   Remember that i is 0
+   Do this best_len times:
+      Add result to item i in best_ext
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> Strongest_Extension of [77, 121] and [[97, 65, 97]] 
+[77, 121, 46, 97, 65, 97]
+>>> Strongest_Extension of "Watashi" and ["tEN", "niNE", "eIGHt8OKe"] 
+"Watashi.eIGHt8OKe"
+>>> Strongest_Extension of "Boku123" and ["nani", "NazeDa", "YEs.WeCaNe", "32145tggg"] 
+"Boku123.YEs.WeCaNe"
+>>> Strongest_Extension of "**YESIMHERE" and ["t", "eMptY", "nothing", "zeR00", "NuLl**", "123NoooneB321"] 
+"**YESIMHERE.NuLl**"
+>>> Strongest_Extension of "K" and ["Ta", "TAR", "t234An", "cosSo"] 
+"K.TAR"
+>>> Strongest_Extension of "__HAHA" and ["Tab", "123", "781345", "-*-"] 
+"__HAHA.123"
+>>> Strongest_Extension of "YameRore" and ["HhAas", "okIWILL123", "WorkOut", "Fails", "-*-"] 
+"YameRore.okIWILL123"
+>>> Strongest_Extension of "finNNalLLly" and ["Die", "NowW", "Wow", "WoW"] 
+"finNNalLLly.WoW"
+>>> Strongest_Extension of "*" and ["Bb", "91245"] 
+"*.Bb"
+>>> Strongest_Extension of "Sp" and ["671235", "Bb"] 
+"Sp.671235"

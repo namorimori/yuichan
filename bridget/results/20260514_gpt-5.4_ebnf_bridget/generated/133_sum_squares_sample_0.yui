@@ -1,0 +1,12 @@
+Use the standard library
+This is how to ceil of x:
+  When x is toint of x, then:
+    The answer is x
+  But, if not:
+    When x is more than 0, then:
+      The answer is sum of toint of x and 1
+    But, if not:
+      The answer is toint of x
+    End when
+  End when
+Now you know

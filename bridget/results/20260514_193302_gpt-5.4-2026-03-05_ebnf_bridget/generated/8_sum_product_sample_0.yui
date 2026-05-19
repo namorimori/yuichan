@@ -1,0 +1,14 @@
+Use the standard library
+This is how to sum_product of numbers:
+  Remember that total is 0
+  Remember that prod is 1
+  Do this numbers's length times:
+    Remember that i is diff of numbers's length and numbers's length
+    Increase i
+    Remember that i is diff of i and 1
+    Remember that value is item i in numbers
+    Remember that total is sum of total and value
+    Remember that prod is product of prod and value
+  End do
+  The answer is [total, prod]
+Now you know

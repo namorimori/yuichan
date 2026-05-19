@@ -1,0 +1,25 @@
+Dum get_positive(l):
+   Kem 結果 par []
+   Kem i par 0
+   Kem 長さ par l @kez
+   Mup dum 長さ pag:
+      Kem 値 par l[i]
+      Nev 値 pep 0 ger:
+         Mev 結果 naz 値
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> get_positive([-1, 2, -4, 5, 6]) 
+[2, 5, 6]
+>>> get_positive([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10]) 
+[5, 3, 2, 3, 9, 123, 1]
+>>> get_positive([-1, -2, 4, 5, 6]) 
+[4, 5, 6]
+>>> get_positive([5, 3, -5, 2, 3, 3, 9, 0, 123, 1, -10]) 
+[5, 3, 2, 3, 3, 9, 123, 1]
+>>> get_positive([-1, -2]) 
+[]
+>>> get_positive([]) 
+[]

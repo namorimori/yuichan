@@ -1,0 +1,17 @@
+Use the standard library
+This is how to smallest_change of arr:
+  Remember that changes is 0
+  Remember that left is 0
+  Remember that right is diff of arr's length and 1
+  Do this arr's length times:
+    When left is at least right, then:
+      Leave the loop
+    End when
+    When item left in arr is not item right in arr, then:
+      Increase changes by 1
+    End when
+    Increase left by 1
+    Decrease right by 1
+  End do
+  The answer is changes
+Now you know

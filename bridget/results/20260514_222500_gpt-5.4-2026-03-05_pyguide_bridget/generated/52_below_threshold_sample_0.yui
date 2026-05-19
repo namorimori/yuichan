@@ -1,0 +1,12 @@
+Use the standard library
+
+This is how to below_threshold of l and t:
+   Remember that i is 0
+   Do this l's length times:
+      When item i in l is at most t, then:
+         The answer is 0
+      End when
+      Increase i
+   End do
+   The answer is 1
+Now you know

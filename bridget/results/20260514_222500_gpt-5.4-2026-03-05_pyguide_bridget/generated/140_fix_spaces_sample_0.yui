@@ -1,0 +1,11 @@
+Use the standard library
+This is how to fix_spaces of text:
+   Remember that i is 0
+   Do this text's length times:
+      When item i in text is item 0 in " ", then:
+         Remember that item i in text is item 0 in "_"
+      End when
+      Increase i
+   End do
+   The answer is text
+Now you know

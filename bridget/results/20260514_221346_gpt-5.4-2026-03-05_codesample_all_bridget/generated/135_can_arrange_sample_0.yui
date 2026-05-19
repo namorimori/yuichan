@@ -1,0 +1,20 @@
+Use the standard library
+This is how to can_arrange of arr:
+   Remember that n is arr's length
+   Remember that i is diff of n and 2
+   Remember that neg1 is diff of 0 and 1
+   Do this diff of n and 1 times:
+      Remember that j is sum of i and 1
+      When item i in arr is more than item j in arr, then:
+         The answer is i
+      End when
+      Decrease i
+   End do
+   The answer is neg1
+Now you know
+>>> can_arrange of [1, 2, 4, 3, 5] 
+3
+>>> can_arrange of [1, 2, 3] 
+-1
+>>> can_arrange of [1, 2, 4, 3, 5] 
+3

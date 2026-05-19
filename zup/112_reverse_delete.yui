@@ -1,0 +1,57 @@
+Nav rem vaz
+Dum reverse_delete(s, c):
+   Kem s_len par s @kez
+   Kem c_len par c @kez
+   Kem result_str par []
+   Kem i par 0
+   Mup dum s_len pag:
+      Kem char par s[i]
+      Kem should_remove par 0
+      Kem j par 0
+      Mup dum c_len pag:
+         Nev char paz c[j] ger:
+            Kem should_remove par 1
+         Dam nev
+         Rav j
+      Dam mup
+      Nev should_remove paz 0 ger:
+         Mev result_str naz char
+      Dam nev
+      Rav i
+   Dam mup
+   Kem rs_len par result_str @kez
+   Kem is_palindrome par 1
+   Kem i par 0
+   Kem half par 商(rs_len, 2)
+   Mup dum half pag:
+      Kem back_idx par 差(差(rs_len, i), 1)
+      Nev result_str[i] nup result_str[back_idx] ger:
+         Kem is_palindrome par 0
+      Dam nev
+      Rav i
+   Dam mup
+   Kem result par []
+   Mev result naz result_str
+   Mev result naz is_palindrome
+   Dup vem result
+Pam dum
+>>> reverse_delete([97, 98, 99, 100, 101], [97, 101]) 
+[[98, 99, 100], 0]
+>>> reverse_delete("abcde", "ae") 
+["bcd", 0]
+>>> reverse_delete("abcdef", "b") 
+["acdef", 0]
+>>> reverse_delete("abcdedcba", "ab") 
+["cdedc", 1]
+>>> reverse_delete("dwik", "w") 
+["dik", 0]
+>>> reverse_delete("a", "a") 
+["", 1]
+>>> reverse_delete("abcdedcba", "") 
+["abcdedcba", 1]
+>>> reverse_delete("abcdedcba", "v") 
+["abcdedcba", 1]
+>>> reverse_delete("vabba", "v") 
+["abba", 1]
+>>> reverse_delete("mamma", "mia") 
+["", 1]

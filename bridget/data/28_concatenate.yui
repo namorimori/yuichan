@@ -1,0 +1,26 @@
+This is how to concatenate of strings:
+   Remember that result is []
+   Remember that i is 0
+   Remember that length is strings's length
+   Do this length times:
+      Remember that string_val is item i in strings
+      Remember that j is 0
+      Remember that string_length is string_val's length
+      Do this string_length times:
+         Add result to item j in string_val
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> concatenate of [] 
+[]
+>>> concatenate of ["a", "b", "c"] 
+"abc"
+>>> concatenate of [] 
+""
+>>> concatenate of ["x", "y", "z"] 
+"xyz"
+>>> concatenate of ["x", "y", "z", "w", "k"] 
+"xyzwk"

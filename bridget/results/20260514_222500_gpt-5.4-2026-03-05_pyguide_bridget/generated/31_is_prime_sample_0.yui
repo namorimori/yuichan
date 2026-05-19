@@ -1,0 +1,24 @@
+Use the standard library
+This is how to is_prime of n:
+   When n is less than 2, then:
+      The answer is 0
+   End when
+   Remember that i is 2
+   Do this n times:
+      When i is at most n, then:
+         Leave the loop
+      End when
+      When remainder of n and i is 0, then:
+         The answer is 0
+      End when
+      Increase i
+   End do
+   The answer is 1
+Now you know
+
+>>> is_prime of 6
+0
+>>> is_prime of 101
+1
+>>> is_prime of 11
+1

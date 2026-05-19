@@ -1,0 +1,79 @@
+Use the standard library
+This is how to encode of message:
+   Remember that length is message's length
+   Remember that result is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in message
+      Remember that new_char is char
+      Remember that is_upper is 0
+      Remember that is_lower is 0
+      When char is more than 64, then:
+         When char is less than 91, then:
+            Remember that is_upper is 1
+         End when
+      End when
+      When char is more than 96, then:
+         When char is less than 123, then:
+            Remember that is_lower is 1
+         End when
+      End when
+      When is_upper is 1, then:
+         Remember that new_char is sum of char and 32
+      End when
+      When is_lower is 1, then:
+         Remember that new_char is diff of char and 32
+      End when
+      Remember that is_vowel is 0
+      When new_char is 65, then:
+         Remember that is_vowel is 1
+      End when
+      When new_char is 69, then:
+         Remember that is_vowel is 1
+      End when
+      When new_char is 73, then:
+         Remember that is_vowel is 1
+      End when
+      When new_char is 79, then:
+         Remember that is_vowel is 1
+      End when
+      When new_char is 85, then:
+         Remember that is_vowel is 1
+      End when
+      When new_char is 97, then:
+         Remember that is_vowel is 1
+      End when
+      When new_char is 101, then:
+         Remember that is_vowel is 1
+      End when
+      When new_char is 105, then:
+         Remember that is_vowel is 1
+      End when
+      When new_char is 111, then:
+         Remember that is_vowel is 1
+      End when
+      When new_char is 117, then:
+         Remember that is_vowel is 1
+      End when
+      When is_vowel is 1, then:
+         Remember that new_char is sum of new_char and 2
+      End when
+      Add result to new_char
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> encode of [116, 101, 115, 116] 
+[84, 71, 83, 84]
+>>> encode of [84, 104, 105, 115, 32, 105, 115, 32, 97, 32, 109, 101, 115, 115, 97, 103, 101] 
+[116, 72, 75, 83, 32, 75, 83, 32, 67, 32, 77, 71, 83, 83, 67, 71, 71]
+>>> encode of "TEST" 
+"tgst"
+>>> encode of "Mudasir" 
+"mWDCSKR"
+>>> encode of "YES" 
+"ygs"
+>>> encode of "This is a message" 
+"tHKS KS C MGSSCGG"
+>>> encode of "I DoNt KnOw WhAt tO WrItE" 
+"k dQnT kNqW wHcT Tq wRkTg"

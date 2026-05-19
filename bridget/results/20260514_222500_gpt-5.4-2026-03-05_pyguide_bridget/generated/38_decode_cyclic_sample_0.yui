@@ -1,0 +1,11 @@
+Use the standard library
+This is how to decode_cyclic of s:
+   Remember that result is []
+   Remember that i is 0
+   Do this s's length times:
+      Remember that j is remainder of (sum of i and 2) and (s's length)
+      Add result to item j in s
+      Increase i
+   End do
+   The answer is result
+Now you know

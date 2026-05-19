@@ -1,0 +1,32 @@
+Use the standard library
+This is how to get_closest_vowel of word:
+  Remember that vowels is ["a", "e", "i", "o", "u"]
+  Remember that text is word
+  When isarray of word is yes, then:
+    Remember that text is ""
+    Remember that i is 0
+    Do this word's length times:
+      Remember that text is "{text}{tostring of item i in word}"
+      Increase i by 1
+    End do
+  End when
+  Remember that n is text's length
+  When n is less than 3, then:
+    The answer is nothing
+  End when
+  Remember that i is diff of n and 2
+  Do this diff of n and 2 times:
+    Remember that ch is item i in text
+    When ch is in vowels, then:
+      Remember that left is item diff of i and 1 in text
+      Remember that right is item sum of i and 1 in text
+      When left is not in vowels, then:
+        When right is not in vowels, then:
+          The answer is ch
+        End when
+      End when
+    End when
+    Decrease i by 1
+  End do
+  The answer is nothing
+Now you know

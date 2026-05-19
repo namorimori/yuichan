@@ -1,0 +1,11 @@
+Use the standard library
+This is how to poly of xs and x:
+   Remember that total is 0
+   Remember that n is xs's length
+   Remember that i is 0
+   Do this n times:
+      Remember that total is sum of (product of total and x) and item i in xs
+      Increase i
+   End do
+   The answer is total
+Now you know

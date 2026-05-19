@@ -1,0 +1,14 @@
+Use the standard library
+This is how to digitSum of s:
+  Remember that total is 0
+  Do this s's length times:
+    Remember that ch is item total in s
+    When ch is at least 48, then:
+      When ch is at most 57, then:
+        Increase total by diff of ch and 48
+      End when
+    End when
+    Increase total
+  End do
+  The answer is total
+Now you know

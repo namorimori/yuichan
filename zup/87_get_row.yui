@@ -1,0 +1,99 @@
+Nav rem vaz
+Dum get_row(lst, x):
+   Kem length par lst @kez
+   Kem coords par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem row par lst[i]
+      Kem row_len par row @kez
+      Kem j par 0
+      Mup dum row_len pag:
+         Nev row[j] paz x ger:
+            Kem coord par []
+            Mev coord naz i
+            Mev coord naz j
+            Mev coords naz coord
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Kem coord_len par coords @kez
+   Kem i par 0
+   Mup dum coord_len pag:
+      Kem j par 0
+      Kem limit par 差(差(coord_len, i), 1)
+      Mup dum limit pag:
+         Kem next_j par 和(j, 1)
+         Kem col_j par coords[j][1]
+         Kem col_next par coords[next_j][1]
+         Nev col_j dup col_next ger:
+            Kem temp par coords[j]
+            Kem coords[j] par coords[next_j]
+            Kem coords[next_j] par temp
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Kem i par 0
+   Mup dum coord_len pag:
+      Kem j par 0
+      Kem limit par 差(差(coord_len, i), 1)
+      Mup dum limit pag:
+         Kem next_j par 和(j, 1)
+         Kem row_j par coords[j][0]
+         Kem row_next par coords[next_j][0]
+         Nev row_j pep row_next ger:
+            Kem temp par coords[j]
+            Kem coords[j] par coords[next_j]
+            Kem coords[next_j] par temp
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Dup vem coords
+Pam dum
+>>> get_row([[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 1, 6], [1, 2, 3, 4, 5, 1]], 1) 
+[[0, 0], [1, 4], [1, 0], [2, 5], [2, 0]]
+>>> get_row([[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 1, 6], [1, 2, 3, 4, 5, 1]], 1) 
+[[0, 0], [1, 4], [1, 0], [2, 5], [2, 0]]
+>>> get_row([
+   [1, 2, 3, 4, 5, 6],
+   [1, 2, 3, 4, 5, 6],
+   [1, 2, 3, 4, 5, 6],
+   [1, 2, 3, 4, 5, 6],
+   [1, 2, 3, 4, 5, 6],
+   [1, 2, 3, 4, 5, 6]
+], 2) 
+[[0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1]]
+>>> get_row([
+   [1, 2, 3, 4, 5, 6],
+   [1, 2, 3, 4, 5, 6],
+   [1, 1, 3, 4, 5, 6],
+   [1, 2, 1, 4, 5, 6],
+   [1, 2, 3, 1, 5, 6],
+   [1, 2, 3, 4, 1, 6],
+   [1, 2, 3, 4, 5, 1]
+], 1) 
+[
+   [0, 0],
+   [1, 0],
+   [2, 1],
+   [2, 0],
+   [3, 2],
+   [3, 0],
+   [4, 3],
+   [4, 0],
+   [5, 4],
+   [5, 0],
+   [6, 5],
+   [6, 0]
+]
+>>> get_row([], 1) 
+[]
+>>> get_row([[1]], 2) 
+[]
+>>> get_row([[], [1], [1, 2, 3]], 3) 
+[[2, 2]]

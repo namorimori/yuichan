@@ -1,0 +1,31 @@
+Use the standard library
+This is how to can_arrange of arr:
+   Remember that length is arr's length
+   Remember that ind is -1
+   When length is more than 0, then:
+      Remember that i is 1
+      Remember that loop_count is diff of length and 1
+      Do this loop_count times:
+         Remember that prev_i is diff of i and 1
+         When item i in arr is less than item prev_i in arr, then:
+            Remember that ind is i
+         End when
+         Increase i
+      End do
+   End when
+   The answer is ind
+Now you know
+>>> can_arrange of [1, 2, 4, 3, 5] 
+3
+>>> can_arrange of [1, 2, 3] 
+-1
+>>> can_arrange of [1, 2, 4, 3, 5] 
+3
+>>> can_arrange of [1, 2, 4, 5] 
+-1
+>>> can_arrange of [1, 4, 2, 5, 6, 7, 8, 9, 10] 
+2
+>>> can_arrange of [4, 8, 5, 7, 3] 
+4
+>>> can_arrange of [] 
+-1

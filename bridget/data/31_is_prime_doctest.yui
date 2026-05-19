@@ -1,0 +1,26 @@
+>>> is_prime of 6 
+0
+>>> is_prime of 101 
+1
+>>> is_prime of 11 
+1
+>>> is_prime of 13441 
+1
+>>> is_prime of 61 
+1
+>>> is_prime of 4 
+0
+>>> is_prime of 1 
+0
+>>> is_prime of 5 
+1
+>>> is_prime of 11 
+1
+>>> is_prime of 17 
+1
+>>> is_prime of 85 
+0
+>>> is_prime of 77 
+0
+>>> is_prime of 255379 
+0

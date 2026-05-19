@@ -1,0 +1,42 @@
+Nav rem vaz
+Dum digits(n):
+   Kem product par 1
+   Kem odd_count par 0
+   Kem temp par n
+   Mup dum 100 pag:
+      Nev temp pep 0 ger:
+         Kem digit par 剰余(temp, 10)
+         Kem temp par 商(temp, 10)
+         Kem remainder par 剰余(digit, 2)
+         Nev remainder paz 1 ger:
+            Kem product par 積(product, digit)
+            Rav odd_count
+         Dam nev
+      Dam nev
+   Dam mup
+   Kem result par product
+   Nev odd_count paz 0 ger:
+      Kem result par 0
+   Dam nev
+   Dup vem result
+Pam dum
+>>> digits(1) 
+1
+>>> digits(4) 
+0
+>>> digits(235) 
+15
+>>> digits(5) 
+5
+>>> digits(54) 
+5
+>>> digits(120) 
+1
+>>> digits(5014) 
+5
+>>> digits(98765) 
+315
+>>> digits(5576543) 
+2625
+>>> digits(2468) 
+0

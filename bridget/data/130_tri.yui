@@ -1,0 +1,84 @@
+Use the standard library
+This is how to tri of n:
+   Remember that result is []
+   When n is 0, then:
+      Add result to 1
+      The answer is result
+   End when
+   Add result to 1
+   Add result to 3
+   Remember that i is 2
+   Do this diff of n and 1 times:
+      Remember that remainder is remainder of i and 2
+      When remainder is 0, then:
+         Remember that i_float is tofloat of i
+         Remember that half is quotient of i_float and 2.000000
+         Remember that value is sum of half and 1.000000
+         Add result to value
+      But, if not:
+         Remember that prev1 is diff of i and 1
+         Remember that prev2 is diff of i and 2
+         Remember that sum1 is sum of item prev1 in result and item prev2 in result
+         Remember that i_plus_3 is sum of i and 3
+         Remember that i_plus_3_float is tofloat of i_plus_3
+         Remember that extra is quotient of i_plus_3_float and 2.000000
+         Remember that value is sum of sum1 and extra
+         Add result to value
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> tri of 3 
+[1, 3, 2.000000, 8.000000]
+>>> tri of 4 
+[1, 3, 2.000000, 8.000000, 3.000000]
+>>> tri of 5 
+[1, 3, 2.000000, 8.000000, 3.000000, 15.000000]
+>>> tri of 6 
+[1, 3, 2.000000, 8.000000, 3.000000, 15.000000, 4.000000]
+>>> tri of 7 
+[1, 3, 2.000000, 8.000000, 3.000000, 15.000000, 4.000000, 24.000000]
+>>> tri of 8 
+[1, 3, 2.000000, 8.000000, 3.000000, 15.000000, 4.000000, 24.000000, 5.000000]
+>>> tri of 9 
+[
+   1,
+   3,
+   2.000000,
+   8.000000,
+   3.000000,
+   15.000000,
+   4.000000,
+   24.000000,
+   5.000000,
+   35.000000
+]
+>>> tri of 20 
+[
+   1,
+   3,
+   2.000000,
+   8.000000,
+   3.000000,
+   15.000000,
+   4.000000,
+   24.000000,
+   5.000000,
+   35.000000,
+   6.000000,
+   48.000000,
+   7.000000,
+   63.000000,
+   8.000000,
+   80.000000,
+   9.000000,
+   99.000000,
+   10.000000,
+   120.000000,
+   11.000000
+]
+>>> tri of 0 
+[1]
+>>> tri of 1 
+[1, 3]

@@ -1,0 +1,28 @@
+Use the standard library
+
+This is how to count_distinct_characters of string:
+   Remember that seen is []
+   Remember that count is 0
+   Remember that i is 0
+
+   Do this string's length times:
+      Remember that ch is item i in string
+      When ch is more than 96, then:
+         Remember that ch is diff of ch and 32
+      End when
+      When ch is not in seen, then:
+         Add seen to ch
+         Increase count
+      End when
+      Increase i
+   End do
+
+   The answer is count
+Now you know
+
+>>> count_distinct_characters of [120, 121, 122, 88, 89, 90]
+3
+>>> count_distinct_characters of [74, 101, 114, 114, 121]
+4
+>>> count_distinct_characters of ""
+0

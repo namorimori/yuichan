@@ -1,0 +1,61 @@
+Use the standard library
+This is how to make_palindrome of string:
+   Remember that length is string's length
+   Remember that result is []
+   When length is 0, then:
+      The answer is result
+   End when
+   Remember that start_pos is length
+   Remember that i is 0
+   Do this length times:
+      Remember that remaining_length is diff of length and i
+      Remember that palindrome_flag is 1
+      Remember that j is 0
+      Do this remaining_length times:
+         When j is less than remaining_length, then:
+            Remember that left is sum of i and j
+            Remember that right is diff of (diff of length and 1) and j
+            When left is less than right, then:
+               When item left in string is not item right in string, then:
+                  Remember that palindrome_flag is 0
+               End when
+            End when
+         End when
+         Increase j
+      End do
+      When palindrome_flag is 1, then:
+         When start_pos is length, then:
+            Remember that start_pos is i
+         End when
+      End when
+      Increase i
+   End do
+   Remember that i is 0
+   Do this length times:
+      Add result to item i in string
+      Increase i
+   End do
+   Remember that i is 0
+   Do this start_pos times:
+      Remember that idx is diff of start_pos and (sum of i and 1)
+      Add result to item idx in string
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> make_palindrome of "" 
+""
+>>> make_palindrome of "cat" 
+"catac"
+>>> make_palindrome of "cata" 
+"catac"
+>>> make_palindrome of "" 
+""
+>>> make_palindrome of "x" 
+"x"
+>>> make_palindrome of "xyz" 
+"xyzyx"
+>>> make_palindrome of "xyx" 
+"xyx"
+>>> make_palindrome of "jerry" 
+"jerryrrej"

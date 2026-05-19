@@ -1,0 +1,68 @@
+Use the standard library
+This is how to solve of s:
+   Remember that n is s's length
+   Remember that i is 0
+   Remember that result is []
+   Do this n times:
+      Remember that c is item i in s
+      When c is at least 48, then:
+         When c is at most 57, then:
+            Add result to sum of 105 and (diff of 57 and c)
+         But, if not:
+            When c is at least 97, then:
+               When c is at most 122, then:
+                  Add result to diff of c and 32
+               But, if not:
+                  When c is at least 65, then:
+                     When c is at most 90, then:
+                        Add result to sum of c and 32
+                     But, if not:
+                        Add result to c
+                     End when
+                  But, if not:
+                     Add result to c
+                  End when
+               End when
+            But, if not:
+               When c is at least 65, then:
+                  When c is at most 90, then:
+                     Add result to sum of c and 32
+                  But, if not:
+                     Add result to c
+                  End when
+               But, if not:
+                  Add result to c
+               End when
+            End when
+         End when
+      But, if not:
+         When c is at least 97, then:
+            When c is at most 122, then:
+               Add result to diff of c and 32
+            But, if not:
+               When c is at least 65, then:
+                  When c is at most 90, then:
+                     Add result to sum of c and 32
+                  But, if not:
+                     Add result to c
+                  End when
+               But, if not:
+                  Add result to c
+               End when
+            End when
+         But, if not:
+            When c is at least 65, then:
+               When c is at most 90, then:
+                  Add result to sum of c and 32
+               But, if not:
+                  Add result to c
+               End when
+            But, if not:
+               Add result to c
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know

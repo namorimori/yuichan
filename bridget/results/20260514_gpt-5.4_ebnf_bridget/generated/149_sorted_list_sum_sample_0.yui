@@ -1,0 +1,17 @@
+Use the standard library
+This is how to sorted_list_sum of lst:
+  Remember that groups is {}
+  Remember that result is []
+  Do this lst's length times:
+    Remember that i is diff of lst's length and 1
+    Remember that i is diff of i and result's length
+    Remember that x is item i in lst
+    Remember that n is x's length
+    When n is in groups, then:
+      Add item n in groups to result
+      Leave the loop
+    End when
+    Remember that item n in groups is x
+  End do
+  The answer is result
+Now you know

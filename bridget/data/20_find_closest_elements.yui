@@ -1,0 +1,60 @@
+Use the standard library
+This is how to find_closest_elements of numbers:
+   Remember that length is numbers's length
+   Remember that min_distance is 0
+   Remember that element1 is 0
+   Remember that element2 is 0
+   Remember that initialized is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that value1 is item i in numbers
+      Remember that j is 0
+      Do this length times:
+         When i is not j, then:
+            Remember that value2 is item j in numbers
+            Remember that delta is diff of value1 and value2
+            Remember that distance is abs of delta
+            When initialized is 0, then:
+               Remember that min_distance is distance
+               When value1 is less than value2, then:
+                  Remember that element1 is value1
+                  Remember that element2 is value2
+               But, if not:
+                  Remember that element1 is value2
+                  Remember that element2 is value1
+               End when
+               Remember that initialized is 1
+            But, if not:
+               When distance is less than min_distance, then:
+                  Remember that min_distance is distance
+                  When value1 is less than value2, then:
+                     Remember that element1 is value1
+                     Remember that element2 is value2
+                  But, if not:
+                     Remember that element1 is value2
+                     Remember that element2 is value1
+                  End when
+               End when
+            End when
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   Remember that result is [element1, element2]
+   The answer is result
+Now you know
+>>> find_closest_elements of [1, 2, 3, 4, 5, 2.200000] 
+[2, 2.200000]
+>>> find_closest_elements of [1, 2, 3, 4, 5, 2] 
+[2, 2]
+>>> find_closest_elements of [1.000000, 2.000000, 3.900000, 4.000000, 5.000000, 2.200000] 
+[3.900000, 4.000000]
+>>> find_closest_elements of [1.000000, 2.000000, 5.900000, 4.000000, 5.000000] 
+[5.000000, 5.900000]
+>>> find_closest_elements of [1.000000, 2.000000, 3.000000, 4.000000, 5.000000, 2.200000] 
+[2.000000, 2.200000]
+>>> find_closest_elements of [1.000000, 2.000000, 3.000000, 4.000000, 5.000000, 2.000000] 
+[2.000000, 2.000000]
+>>> find_closest_elements of [1.100000, 2.200000, 3.100000, 4.100000, 5.100000] 
+[2.200000, 3.100000]

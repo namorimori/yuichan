@@ -1,0 +1,20 @@
+Use the standard library
+This is how to longest of strings:
+   When strings's length is 0, then:
+      The answer is []
+   End when
+   Remember that best is item 0 in strings
+   Remember that bestlen is best's length
+   Remember that n is strings's length
+   Remember that i is 1
+   Do this diff of n and 1 times:
+      Remember that s is item i in strings
+      Remember that len is s's length
+      When len is more than bestlen, then:
+         Remember that best is s
+         Remember that bestlen is len
+      End when
+      Increase i
+   End do
+   The answer is best
+Now you know

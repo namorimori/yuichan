@@ -1,0 +1,14 @@
+Use the standard library
+This is how to sum_product of numbers:
+   Remember that sum is 0
+   Remember that product is 1
+   Remember that n is numbers's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in numbers
+      Remember that sum is (sum of sum and x)
+      Remember that product is (product of product and x)
+      Increase i
+   End do
+   The answer is [sum, product]
+Now you know

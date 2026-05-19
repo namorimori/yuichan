@@ -1,0 +1,64 @@
+Use the standard library
+This is how to closest_integer of value:
+   Remember that length is value's length
+   Remember that result is 0
+   Remember that is_negative is 0
+   Remember that i is 0
+   When length is more than 0, then:
+      When item 0 in value is 45, then:
+         Remember that is_negative is 1
+         Remember that i is 1
+      End when
+   End when
+   Remember that dot_pos is length
+   Remember that j is 0
+   Do this length times:
+      When item j in value is 46, then:
+         Remember that dot_pos is j
+      End when
+      Increase j
+   End do
+   Do this 100 times:
+      When i is less than dot_pos, then:
+         Remember that char is item i in value
+         When char is more than 47, then:
+            When char is less than 58, then:
+               Remember that digit is diff of char and 48
+               Remember that result is sum of (product of result and 10) and digit
+            End when
+         End when
+         Increase i
+      End when
+   End do
+   When dot_pos is less than length, then:
+      Remember that decimal_start is sum of dot_pos and 1
+      When decimal_start is less than length, then:
+         Remember that first_decimal is item decimal_start in value
+         When first_decimal is at most 52, then:
+            When is_negative is 1, then:
+               Increase result
+            But, if not:
+               Increase result
+            End when
+         End when
+      End when
+   End when
+   When is_negative is 1, then:
+      Remember that result is diff of 0 and result
+   End when
+   The answer is result
+Now you know
+>>> closest_integer of [49, 48] 
+10
+>>> closest_integer of [49, 53, 46, 51] 
+15
+>>> closest_integer of "10" 
+10
+>>> closest_integer of "14.5" 
+15
+>>> closest_integer of "-15.5" 
+-16
+>>> closest_integer of "15.3" 
+15
+>>> closest_integer of "0" 
+0

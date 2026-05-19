@@ -1,0 +1,13 @@
+Use the standard library
+This is how to histogram of test:
+  Remember that counts is []
+  Do this test's length times:
+    Remember that ch is item i in test
+    When ch is in counts, then:
+      Do nothing
+    But, if not:
+      Add counts to ch
+    End when
+  End do
+  The answer is counts
+Now you know

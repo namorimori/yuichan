@@ -1,0 +1,104 @@
+🗝️ 📚
+🧩 bf(planet1, planet2) 👉
+   mercury ⬅️ [77, 101, 114, 99, 117, 114, 121]
+   venus ⬅️ [86, 101, 110, 117, 115]
+   earth ⬅️ [69, 97, 114, 116, 104]
+   mars ⬅️ [77, 97, 114, 115]
+   jupiter ⬅️ [74, 117, 112, 105, 116, 101, 114]
+   saturn ⬅️ [83, 97, 116, 117, 114, 110]
+   uranus ⬅️ [85, 114, 97, 110, 117, 115]
+   neptune ⬅️ [78, 101, 112, 116, 117, 110, 101]
+   planets ⬅️ [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune]
+   planet1_idx ⬅️ -1
+   planet2_idx ⬅️ -1
+   i ⬅️ 0
+   🌀 8 👉
+      planet ⬅️ planets[i]
+      len1 ⬅️ 📐 planet1
+      len_p ⬅️ 📐 planet
+      match1 ⬅️ 0
+      ❓ len1 ⚖️ len_p 👉
+         match1 ⬅️ 1
+         j ⬅️ 0
+         🌀 len1 👉
+            ❓ planet1[j] 🚫⚖️ planet[j] 👉
+               match1 ⬅️ 0
+            🔚
+            j ⬆️
+         🔚
+      🔚
+      ❓ match1 ⚖️ 1 👉
+         planet1_idx ⬅️ i
+      🔚
+      len2 ⬅️ 📐 planet2
+      match2 ⬅️ 0
+      ❓ len2 ⚖️ len_p 👉
+         match2 ⬅️ 1
+         j ⬅️ 0
+         🌀 len2 👉
+            ❓ planet2[j] 🚫⚖️ planet[j] 👉
+               match2 ⬅️ 0
+            🔚
+            j ⬆️
+         🔚
+      🔚
+      ❓ match2 ⚖️ 1 👉
+         planet2_idx ⬅️ i
+      🔚
+      i ⬆️
+   🔚
+   result ⬅️ []
+   invalid ⬅️ 0
+   ❓ planet1_idx ⚖️ -1 👉
+      invalid ⬅️ 1
+   🔚
+   ❓ planet2_idx ⚖️ -1 👉
+      invalid ⬅️ 1
+   🔚
+   ❓ planet1_idx ⚖️ planet2_idx 👉
+      invalid ⬅️ 1
+   🔚
+   ❓ invalid ⚖️ 1 👉
+      ✅ result
+   🔚
+   start_idx ⬅️ planet1_idx
+   end_idx ⬅️ planet2_idx
+   ❓ planet1_idx 📉 planet2_idx 👉
+      start_idx ⬅️ planet2_idx
+      end_idx ⬅️ planet1_idx
+   🔚
+   start_idx ⬆️
+   i ⬅️ start_idx
+   count ⬅️ 差(end_idx, start_idx)
+   🌀 count 👉
+      result 🧲 planets[i]
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> bf([74, 117, 112, 105, 116, 101, 114], [78, 101, 112, 116, 117, 110, 101]) 
+[[83, 97, 116, 117, 114, 110], [85, 114, 97, 110, 117, 115]]
+>>> bf([69, 97, 114, 116, 104], [77, 101, 114, 99, 117, 114, 121]) 
+[[86, 101, 110, 117, 115]]
+>>> bf([77, 101, 114, 99, 117, 114, 121], [85, 114, 97, 110, 117, 115]) 
+[
+   [86, 101, 110, 117, 115],
+   [69, 97, 114, 116, 104],
+   [77, 97, 114, 115],
+   [74, 117, 112, 105, 116, 101, 114],
+   [83, 97, 116, 117, 114, 110]
+]
+>>> bf("Jupiter", "Neptune") 
+["Saturn", "Uranus"]
+>>> bf("Earth", "Mercury") 
+["Venus"]
+>>> bf("Mercury", "Uranus") 
+["Venus", "Earth", "Mars", "Jupiter", "Saturn"]
+>>> bf("Neptune", "Venus") 
+["Earth", "Mars", "Jupiter", "Saturn", "Uranus"]
+>>> bf("Earth", "Earth") 
+[]
+>>> bf("Mars", "Earth") 
+[]
+>>> bf("Jupiter", "Makemake") 
+[]

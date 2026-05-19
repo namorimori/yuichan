@@ -1,0 +1,22 @@
+Use the standard library
+This is how to will_it_fly of q and w:
+   Remember that n is q's length
+   Remember that i is 0
+   Remember that total is 0
+   Remember that ok is 1
+   Do this n times:
+      Remember that total is sum of total and item i in q
+      Remember that j is diff of (diff of n and 1) and i
+      When item i in q is not item j in q, then:
+         Remember that ok is 0
+      End when
+      Increase i
+   End do
+   When ok is 0, then:
+      The answer is 0
+   End when
+   When total is at most w, then:
+      The answer is 1
+   End when
+   The answer is 0
+Now you know

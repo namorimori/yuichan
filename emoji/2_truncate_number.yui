@@ -1,0 +1,12 @@
+🗝️ 📚
+🧩 truncate_number(number) 👉
+   ✅ 剰余(number, 1.000000)
+🔚
+>>> truncate_number(3.500000) 
+0.500000
+>>> truncate_number(3.500000) 
+0.500000
+>>> truncate_number(1.330000) 
+0.330000
+>>> truncate_number(123.456000) 
+0.456000

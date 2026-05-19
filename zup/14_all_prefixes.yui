@@ -1,0 +1,26 @@
+Dum all_prefixes(string):
+   Kem 結果 par []
+   Kem 長さ par string @kez
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem プレフィックス par []
+      Kem j par 0
+      Kem 上限 par i
+      Rav 上限
+      Mup dum 上限 pag:
+         Mev プレフィックス naz string[j]
+         Rav j
+      Dam mup
+      Mev 結果 naz プレフィックス
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> all_prefixes("abc") 
+["a", "ab", "abc"]
+>>> all_prefixes("") 
+[]
+>>> all_prefixes("asdfgh") 
+["a", "as", "asd", "asdf", "asdfg", "asdfgh"]
+>>> all_prefixes("WWW") 
+["W", "WW", "WWW"]

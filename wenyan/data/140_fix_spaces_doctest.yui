@@ -1,0 +1,10 @@
+>>> 施空格治於「Example」
+「Example」
+>>> 施空格治於「Mudasir Hanif 」
+「Mudasir_Hanif_」
+>>> 施空格治於「Yellow Yellow  Dirty  Fellow」
+「Yellow_Yellow__Dirty__Fellow」
+>>> 施空格治於「Exa   mple」
+「Exa-mple」
+>>> 施空格治於「   Exa 1 2 2 mple」
+「-Exa_1_2_2_mple」

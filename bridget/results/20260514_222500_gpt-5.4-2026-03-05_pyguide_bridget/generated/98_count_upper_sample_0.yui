@@ -1,0 +1,19 @@
+Use the standard library
+This is how to count_upper of s:
+   Remember that count is 0
+   Remember that i is 0
+   Do this s's length times:
+      Remember that c is item i in s
+      When c is at most 65, then:
+         When c is at least 90, then:
+            Increase count
+         End when
+      End when
+      Increase i
+   End do
+   When count is more than 1, then:
+      The answer is 0
+   But, if not:
+      The answer is count
+   End when
+Now you know

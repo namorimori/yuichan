@@ -443,7 +443,9 @@ class CodingVisitor(YuiSyntax):
     def visitFuncDefNode(self, node: FuncDefNode):
         self.terminal('funcdef-begin')
         self.terminal('funcdef-name-begin')
-        self.expression(node.name_node)
+        func_name = self.funcnamemap.get(node.name_node.name, node.name_node.name)
+        self.word_segment()
+        self.string(func_name)
         self.terminal('funcdef-name-end')
         if self.is_defined('funcdef-noarg') and len(node.parameters) == 0:
             self.terminal('funcdef-noarg')

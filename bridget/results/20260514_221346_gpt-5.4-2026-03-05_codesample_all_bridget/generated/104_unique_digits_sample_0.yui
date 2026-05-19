@@ -1,0 +1,16 @@
+Use the standard library
+This is how to unique_digits of x:
+   Remember that result is []
+   Remember that i is 0
+   Do this x's length times:
+      Remember that n is item i in x
+      Remember that s is tostring of n
+      Remember that u is unique_chars of s
+      When u's length is s's length, then:
+         Add result to n
+      End when
+      Increase i
+   End do
+   Remember that result is bubble_sort of result
+   The answer is result
+Now you know

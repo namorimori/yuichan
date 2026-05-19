@@ -1,0 +1,13 @@
+Use the standard library
+This is how to count_distinct_characters of string:
+  Remember that seen is []
+  Remember that count is 0
+  Do this string's length times:
+    Remember that ch is item count in string
+    When ch is not in seen, then:
+      Add seen to ch
+      Increase count
+    End when
+  End do
+  The answer is seen's length
+Now you know

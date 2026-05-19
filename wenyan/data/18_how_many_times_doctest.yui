@@ -1,0 +1,8 @@
+>>> 施計數於「」與「x」
+0
+>>> 施計數於「xyxyxyx」與「x」
+4
+>>> 施計數於「cacacacac」與「cac」
+4
+>>> 施計數於「john doe」與「john」
+1

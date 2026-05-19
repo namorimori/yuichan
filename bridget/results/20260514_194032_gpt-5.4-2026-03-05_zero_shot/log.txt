@@ -1,0 +1,467 @@
+=== Bridget YuiEval (pass@1) ===
+Model:    gpt-5.4-2026-03-05  (openai)
+Template: templates/bridget/zero_shot.md
+Context:  none
+Problems: 10
+
+[1/10] 0_has_close_elements
+
+============================================================
+[0_has_close_elements] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+use std
+
+func has_close_elements(numbers, threshold) {
+    let n = len(numbers)
+    let i = 0
+
+    while i < n {
+        let j = i + 1
+        while j < n {
+            if abs(numbers[i] - numbers[j]) < threshold {
+                return 1
+            }
+            j = j + 1
+        }
+        i = i + 1
+    }
+
+    return 0
+}
+```
+--- Extracted ---
+Use the standard library
+use std
+
+func has_close_elements(numbers, threshold) {
+    let n = len(numbers)
+    let i = 0
+
+    while i < n {
+        let j = i + 1
+        while j < n {
+            if abs(numbers[i] - numbers[j]) < threshold {
+                return 1
+            }
+            j = j + 1
+        }
+        i = i + 1
+    }
+
+    return 0
+}
+  Sample 1/1... ✗ (0.06s)
+--- Result: ✗ FAILED (0.06s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌use std line 2, column 1:
+| use std
+| ^^^
+  Problem result: ✗ (0/1 passed) [2.84s]
+
+[2/10] 1_separate_paren_groups
+
+============================================================
+[1_separate_paren_groups] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+use std
+
+def separate_paren_groups(paren_string) =
+  let chars =
+    if is_string(paren_string) then
+      to_chars(paren_string)
+    else
+      paren_string
+
+  let step = fn(state, ch) ->
+    let current = get(state, "current")
+    let depth = get(state, "depth")
+    let groups = get(state, "groups")
+
+    if ch == 32 then
+      state
+    else
+      let new_current = append(current, ch)
+      let new_depth =
+        if ch == 40 then
+          depth + 1
+        else
+          depth - 1
+
+      if new_depth == 0 then
+        {
+          "current": [],
+          "depth": 0,
+          "groups": append(groups, new_current)
+        }
+      else
+        {
+          "current": new_current,
+          "depth": new_depth,
+          "groups": groups
+        }
+
+  let result =
+    fold(step, {"current": [], "depth": 0, "groups": []}, chars)
+
+  let groups = get(result, "groups")
+
+  if is_string(paren_string) then
+    map(fn(g) -> from_chars(g), groups)
+  else
+    groups
+```
+--- Extracted ---
+Use the standard library
+use std
+
+def separate_paren_groups(paren_string) =
+  let chars =
+    if is_string(paren_string) then
+      to_chars(paren_string)
+    else
+      paren_string
+
+  let step = fn(state, ch) ->
+    let current = get(state, "current")
+    let depth = get(state, "depth")
+    let groups = get(state, "groups")
+
+    if ch == 32 then
+      state
+    else
+      let new_current = append(current, ch)
+      let new_depth =
+        if ch == 40 then
+          depth + 1
+        else
+          depth - 1
+
+      if new_depth == 0 then
+        {
+          "current": [],
+          "depth": 0,
+          "groups": append(groups, new_current)
+        }
+      else
+        {
+          "current": new_current,
+          "depth": new_depth,
+          "groups": groups
+        }
+
+  let result =
+    fold(step, {"current": [], "depth": 0, "groups": []}, chars)
+
+  let groups = get(result, "groups")
+
+  if is_string(paren_string) then
+    map(fn(g) -> from_chars(g), groups)
+  else
+    groups
+  Sample 1/1... ✗ (0.04s)
+--- Result: ✗ FAILED (0.04s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌use std line 2, column 1:
+| use std
+| ^^^
+  Problem result: ✗ (0/1 passed) [3.96s]
+
+[3/10] 2_truncate_number
+
+============================================================
+[2_truncate_number] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+use standard_library
+
+This is how to truncate_number of number:
+    put number into n
+    put floor of n into whole
+    put n - whole
+```
+--- Extracted ---
+Use the standard library
+use standard_library
+
+This is how to truncate_number of number:
+    put number into n
+    put floor of n into whole
+    put n - whole
+  Sample 1/1... ✗ (0.08s)
+--- Result: ✗ FAILED (0.08s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌use standard_library line 2, column 1:
+| use standard_library
+| ^^^
+  Problem result: ✗ (0/1 passed) [1.68s]
+
+[4/10] 3_below_zero
+
+============================================================
+[3_below_zero] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+use std
+
+let below_zero of operations =
+  any (scanl (+) 0 operations) (< 0)
+```
+
+--- Extracted ---
+Use the standard library
+use std
+
+let below_zero of operations =
+  any (scanl (+) 0 operations) (< 0)
+  Sample 1/1... ✗ (0.07s)
+--- Result: ✗ FAILED (0.07s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌use std line 2, column 1:
+| use std
+| ^^^
+  Problem result: ✗ (0/1 passed) [1.56s]
+
+[5/10] 4_mean_absolute_deviation
+
+============================================================
+[4_mean_absolute_deviation] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+mean_absolute_deviation of numbers =
+  let avg = mean of numbers
+  in mean of (map (\x = abs (x - avg)) numbers)
+```
+--- Extracted ---
+Use the standard library
+mean_absolute_deviation of numbers =
+  let avg = mean of numbers
+  in mean of (map (\x = abs (x - avg)) numbers)
+  Sample 1/1... ✗ (0.06s)
+--- Result: ✗ FAILED (0.06s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌mean_absolute_deviation of numbers = line 2, column 1:
+| mean_absolute_deviation of numbers =
+| ^^^
+  Problem result: ✗ (0/1 passed) [1.56s]
+
+[6/10] 5_intersperse
+
+============================================================
+[5_intersperse] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+use standard
+
+define intersperse of xs and delimiter as
+  if xs is [] then
+    []
+  else
+    let first be item 0 of xs
+    let rest be drop 1 from xs
+    let tail be map each x in rest to [delimiter, x]
+    first :: concat tail
+```
+
+--- Extracted ---
+Use the standard library
+use standard
+
+define intersperse of xs and delimiter as
+  if xs is [] then
+    []
+  else
+    let first be item 0 of xs
+    let rest be drop 1 from xs
+    let tail be map each x in rest to [delimiter, x]
+    first :: concat tail
+  Sample 1/1... ✗ (0.07s)
+--- Result: ✗ FAILED (0.07s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌use standard line 2, column 1:
+| use standard
+| ^^^
+  Problem result: ✗ (0/1 passed) [2.40s]
+
+[7/10] 6_parse_nested_parens
+
+============================================================
+[6_parse_nested_parens] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+use std
+
+this is how to parse_nested_parens of paren_string:
+    let groups be split paren_string by " "
+    let result be []
+
+    for each group in groups:
+        let depth be 0
+        let max_depth be 0
+
+        for each ch in group:
+            if ch = "(":
+                increase depth by 1
+                if depth > max_depth:
+                    let max_depth be depth
+            otherwise if ch = ")":
+                decrease depth by 1
+
+        append max_depth to result
+
+    return result
+```
+--- Extracted ---
+Use the standard library
+use std
+
+this is how to parse_nested_parens of paren_string:
+    let groups be split paren_string by " "
+    let result be []
+
+    for each group in groups:
+        let depth be 0
+        let max_depth be 0
+
+        for each ch in group:
+            if ch = "(":
+                increase depth by 1
+                if depth > max_depth:
+                    let max_depth be depth
+            otherwise if ch = ")":
+                decrease depth by 1
+
+        append max_depth to result
+
+    return result
+  Sample 1/1... ✗ (0.06s)
+--- Result: ✗ FAILED (0.06s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌use std line 2, column 1:
+| use std
+| ^^^
+  Problem result: ✗ (0/1 passed) [2.28s]
+
+[8/10] 7_filter_by_substring
+
+============================================================
+[7_filter_by_substring] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+use standard
+
+def filter_by_substring(strings, substring) =
+  filter(strings, \s -> contains(s, substring))
+```
+--- Extracted ---
+Use the standard library
+use standard
+
+def filter_by_substring(strings, substring) =
+  filter(strings, \s -> contains(s, substring))
+  Sample 1/1... ✗ (0.06s)
+--- Result: ✗ FAILED (0.06s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌use standard line 2, column 1:
+| use standard
+| ^^^
+  Problem result: ✗ (0/1 passed) [1.43s]
+
+[9/10] 8_sum_product
+
+============================================================
+[8_sum_product] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+use std
+
+let sum_product = nums =>
+  [sum nums, product nums]
+```
+--- Extracted ---
+Use the standard library
+use std
+
+let sum_product = nums =>
+  [sum nums, product nums]
+  Sample 1/1... ✗ (0.06s)
+--- Result: ✗ FAILED (0.06s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌use std line 2, column 1:
+| use std
+| ^^^
+  Problem result: ✗ (0/1 passed) [1.27s]
+
+[10/10] 9_rolling_max
+
+============================================================
+[9_rolling_max] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+use std
+
+let rolling_max = nums ->
+  let step = acc x ->
+    match acc with
+    | [] -> [x]
+    | _ ->
+        let current_max = last acc
+        acc ++ [max current_max x]
+  foldl step [] nums
+```
+--- Extracted ---
+Use the standard library
+use std
+
+let rolling_max = nums ->
+  let step = acc x ->
+    match acc with
+    | [] -> [x]
+    | _ ->
+        let current_max = last acc
+        acc ++ [max current_max x]
+  foldl step [] nums
+  Sample 1/1... ✗ (0.06s)
+--- Result: ✗ FAILED (0.06s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌use std line 2, column 1:
+| use std
+| ^^^
+  Problem result: ✗ (0/1 passed) [1.77s]
+
+============================================================
+評価結果サマリー
+============================================================
+Total:   10 問題
+Passed:  0 問題
+Failed:  10 問題
+pass@1: 0.00% (0/10)
+95% CI: [0.00%, 27.75%] (Wilson Score)
+
+失敗した問題:
+  - 0_has_close_elements
+  - 1_separate_paren_groups
+  - 2_truncate_number
+  - 3_below_zero
+  - 4_mean_absolute_deviation
+  - 5_intersperse
+  - 6_parse_nested_parens
+  - 7_filter_by_substring
+  - 8_sum_product
+  - 9_rolling_max
+
+生成コード: results_bridget/20260514_194032_gpt-5.4-2026-03-05_zero_shot/generated
+詳細結果:   results_bridget/20260514_194032_gpt-5.4-2026-03-05_zero_shot/result.jsonl
+サマリー:   results_bridget/20260514_194032_gpt-5.4-2026-03-05_zero_shot/summary.json
+ログ:       results_bridget/20260514_194032_gpt-5.4-2026-03-05_zero_shot/log.txt

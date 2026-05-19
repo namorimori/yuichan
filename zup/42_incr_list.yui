@@ -1,0 +1,22 @@
+Dum incr_list(l):
+   Kem 長さ par l @kez
+   Kem 結果 par []
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 値 par l[i]
+      Rav 値
+      Mev 結果 naz 値
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> incr_list([1, 2, 3]) 
+[2, 3, 4]
+>>> incr_list([5, 3, 5, 2, 3, 3, 9, 0, 123]) 
+[6, 4, 6, 3, 4, 4, 10, 1, 124]
+>>> incr_list([]) 
+[]
+>>> incr_list([3, 2, 1]) 
+[4, 3, 2]
+>>> incr_list([5, 2, 5, 2, 3, 3, 9, 0, 123]) 
+[6, 3, 6, 3, 4, 4, 10, 1, 124]

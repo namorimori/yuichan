@@ -1,0 +1,14 @@
+>>> bf of "Jupiter" and "Neptune" 
+["Saturn", "Uranus"]
+>>> bf of "Earth" and "Mercury" 
+["Venus"]
+>>> bf of "Mercury" and "Uranus" 
+["Venus", "Earth", "Mars", "Jupiter", "Saturn"]
+>>> bf of "Neptune" and "Venus" 
+["Earth", "Mars", "Jupiter", "Saturn", "Uranus"]
+>>> bf of "Earth" and "Earth" 
+[]
+>>> bf of "Mars" and "Earth" 
+[]
+>>> bf of "Jupiter" and "Makemake" 
+[]

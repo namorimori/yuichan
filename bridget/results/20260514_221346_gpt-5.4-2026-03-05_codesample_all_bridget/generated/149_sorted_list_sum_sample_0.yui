@@ -1,0 +1,40 @@
+Use the standard library
+This is how to sorted_list_sum of lst:
+   Remember that filtered is []
+   Remember that n is lst's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in lst
+      When x's length is at least 2, then:
+         Add filtered to x
+      End when
+      Increase i
+   End do
+   Remember that m is filtered's length
+   Do this m times:
+      Remember that j is 0
+      Do this diff of m and 1 times:
+         Remember that k is sum of j and 1
+         Remember that a is item j in filtered
+         Remember that b is item k in filtered
+         Remember that la is a's length
+         Remember that lb is b's length
+         Remember that swap is 0
+         When la is more than lb, then:
+            Remember that swap is 1
+         End when
+         When la is lb, then:
+            When tostring of a is more than tostring of b, then:
+               Remember that swap is 1
+            End when
+         End when
+         When swap is 1, then:
+            Remember that tmp is item j in filtered
+            Remember that item j in filtered is item k in filtered
+            Remember that item k in filtered is tmp
+         End when
+         Increase j
+      End do
+   End do
+   The answer is filtered
+Now you know

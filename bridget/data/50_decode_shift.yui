@@ -1,0 +1,21 @@
+Use the standard library
+This is how to decode_shift of s:
+   Remember that length is s's length
+   Remember that result is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in s
+      Remember that offset is diff of (diff of char and 97) and 5
+      Remember that decoded_offset is offset
+      When offset is less than 0, then:
+         Remember that decoded_offset is sum of offset and 26
+      End when
+      Remember that remainder is remainder of decoded_offset and 26
+      Remember that decoded_char is sum of 97 and remainder
+      Add result to decoded_char
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> decode_shift of [102, 115, 105, 105, 116] 
+[97, 110, 100, 100, 111]

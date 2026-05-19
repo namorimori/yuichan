@@ -1,0 +1,20 @@
+>>> is_multiply_prime of 5 
+0
+>>> is_multiply_prime of 30 
+1
+>>> is_multiply_prime of 8 
+1
+>>> is_multiply_prime of 10 
+0
+>>> is_multiply_prime of 125 
+1
+>>> is_multiply_prime of 105 
+1
+>>> is_multiply_prime of 126 
+0
+>>> is_multiply_prime of 729 
+0
+>>> is_multiply_prime of 891 
+0
+>>> is_multiply_prime of 1001 
+1

@@ -1,0 +1,15 @@
+Use the standard library
+This is how to triangle_area of a and b and c:
+   When sum of a and b is at most c, then:
+      The answer is -1
+   End when
+   When sum of a and c is at most b, then:
+      The answer is -1
+   End when
+   When sum of b and c is at most a, then:
+      The answer is -1
+   End when
+   Remember that s is quotient of (sum of a and b and c) and 2
+   Remember that area_squared is product of s and (diff of s and a) and (diff of s and b) and (diff of s and c)
+   The answer is sqrt of area_squared
+Now you know

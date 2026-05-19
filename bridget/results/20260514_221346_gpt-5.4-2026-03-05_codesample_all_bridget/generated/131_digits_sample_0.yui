@@ -1,0 +1,10 @@
+Use the standard library
+This is how to digits of n:
+   Remember that total is 0
+   Remember that x is n
+   Do this x times:
+      Remember that total is sum of total and x
+      Decrease x
+   End do
+   The answer is total
+Now you know

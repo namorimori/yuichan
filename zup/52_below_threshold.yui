@@ -1,0 +1,29 @@
+Dum below_threshold(l, t):
+   Kem 長さ par l @kez
+   Kem i par 0
+   Kem 結果 par 1
+   Mup dum 長さ pag:
+      Kem 値 par l[i]
+      Nev 値 pev t ger:
+         Kem 結果 par 0
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> below_threshold([1, 2, 4, 10], 100) 
+1
+>>> below_threshold([1, 20, 4, 10], 5) 
+0
+>>> below_threshold([1, 2, 4, 10], 100) 
+1
+>>> below_threshold([1, 20, 4, 10], 5) 
+0
+>>> below_threshold([1, 20, 4, 10], 21) 
+1
+>>> below_threshold([1, 20, 4, 10], 22) 
+1
+>>> below_threshold([1, 8, 4, 10], 11) 
+1
+>>> below_threshold([1, 8, 4, 10], 10) 
+0

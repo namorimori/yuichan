@@ -1,0 +1,13 @@
+Use the standard library
+This is how to histogram of test:
+   Remember that result is []
+   Remember that i is 0
+   Do this test's length times:
+      Add result to item i in test
+      Increase i
+   End do
+   The answer is result
+Now you know
+
+>>> histogram of ""
+[]

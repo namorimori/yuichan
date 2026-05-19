@@ -1,0 +1,52 @@
+Use the standard library
+This is how to fizz_buzz of n:
+   Remember that count is 0
+   Remember that i is 0
+   Do this n times:
+      Remember that is_div is 0
+      Remember that remainder11 is remainder of i and 11
+      Remember that remainder13 is remainder of i and 13
+      When remainder11 is 0, then:
+         Remember that is_div is 1
+      End when
+      When remainder13 is 0, then:
+         Remember that is_div is 1
+      End when
+      When is_div is 1, then:
+         Remember that temp is i
+         Do this 10 times:
+            When temp is more than 0, then:
+               Remember that digit is remainder of temp and 10
+               When digit is 7, then:
+                  Increase count
+               End when
+               Remember that temp is quotient of temp and 10
+            End when
+         End do
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know
+>>> fizz_buzz of 50 
+0
+>>> fizz_buzz of 78 
+2
+>>> fizz_buzz of 79 
+3
+>>> fizz_buzz of 50 
+0
+>>> fizz_buzz of 78 
+2
+>>> fizz_buzz of 79 
+3
+>>> fizz_buzz of 100 
+3
+>>> fizz_buzz of 200 
+6
+>>> fizz_buzz of 4000 
+192
+>>> fizz_buzz of 10000 
+639
+>>> fizz_buzz of 100000 
+8026

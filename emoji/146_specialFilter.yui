@@ -1,0 +1,47 @@
+🗝️ 📚
+🧩 specialFilter(nums) 👉
+   length ⬅️ 📐 nums
+   count ⬅️ 0
+   i ⬅️ 0
+   🌀 length 👉
+      num ⬅️ nums[i]
+      ❓ num 📉 10 👉
+         first_digit ⬅️ 0
+         last_digit ⬅️ 剰余(num, 10)
+         temp ⬅️ num
+         🌀 100 👉
+            ❓ temp 📉 0 👉
+               first_digit ⬅️ 剰余(temp, 10)
+               temp ⬅️ 商(temp, 10)
+            🔚
+         🔚
+         first_rem ⬅️ 剰余(first_digit, 2)
+         last_rem ⬅️ 剰余(last_digit, 2)
+         ❓ first_rem ⚖️ 1 👉
+            ❓ last_rem ⚖️ 1 👉
+               count ⬆️
+            🔚
+         🔚
+      🔚
+      i ⬆️
+   🔚
+   ✅ count
+🔚
+>>> specialFilter([15, -73, 14, -15]) 
+1
+>>> specialFilter([33, -2, -3, 45, 21, 109]) 
+2
+>>> specialFilter([5, -2, 1, -5]) 
+0
+>>> specialFilter([15, -73, 14, -15]) 
+1
+>>> specialFilter([33, -2, -3, 45, 21, 109]) 
+2
+>>> specialFilter([43, -12, 93, 125, 121, 109]) 
+4
+>>> specialFilter([71, -2, -33, 75, 21, 19]) 
+3
+>>> specialFilter([1]) 
+0
+>>> specialFilter([]) 
+0

@@ -1,0 +1,73 @@
+🗝️ 📚
+🧩 cycpattern_check(a, b) 👉
+   len_a ⬅️ 📐 a
+   len_b ⬅️ 📐 b
+   result ⬅️ 0
+   pattern ⬅️ []
+   i ⬅️ 0
+   🌀 len_b 👉
+      pattern 🧲 b[i]
+      i ⬆️
+   🔚
+   i ⬅️ 0
+   🌀 len_b 👉
+      pattern 🧲 b[i]
+      i ⬆️
+   🔚
+   limit ⬅️ 和(差(len_a, len_b), 1)
+   i ⬅️ 0
+   🌀 limit 👉
+      substring ⬅️ []
+      j ⬅️ 0
+      🌀 len_b 👉
+         idx ⬅️ 和(i, j)
+         substring 🧲 a[idx]
+         j ⬆️
+      🔚
+      pattern_limit ⬅️ 和(len_b, 1)
+      j ⬅️ 0
+      🌀 pattern_limit 👉
+         pat_substring ⬅️ []
+         k ⬅️ 0
+         🌀 len_b 👉
+            pat_idx ⬅️ 和(j, k)
+            pat_substring 🧲 pattern[pat_idx]
+            k ⬆️
+         🔚
+         match ⬅️ 1
+         k ⬅️ 0
+         🌀 len_b 👉
+            ❓ substring[k] 🚫⚖️ pat_substring[k] 👉
+               match ⬅️ 0
+            🔚
+            k ⬆️
+         🔚
+         ❓ match ⚖️ 1 👉
+            result ⬅️ 1
+         🔚
+         j ⬆️
+      🔚
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> cycpattern_check([97, 98, 99, 100], [97, 98, 100]) 
+0
+>>> cycpattern_check([104, 101, 108, 108, 111], [101, 108, 108]) 
+1
+>>> cycpattern_check([119, 104, 97, 115, 115, 117, 112], [112, 115, 117, 115]) 
+0
+>>> cycpattern_check([97, 98, 97, 98], [98, 97, 97]) 
+1
+>>> cycpattern_check("xyzw", "xyw") 
+0
+>>> cycpattern_check("yello", "ell") 
+1
+>>> cycpattern_check("whattup", "ptut") 
+0
+>>> cycpattern_check("efef", "fee") 
+1
+>>> cycpattern_check("abab", "aabb") 
+0
+>>> cycpattern_check("winemtt", "tinem") 
+1

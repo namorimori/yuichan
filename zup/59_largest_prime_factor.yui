@@ -1,0 +1,52 @@
+Nav rem vaz
+Dum largest_prime_factor(n):
+   Kem largest par 1
+   Kem i par 2
+   Mup dum n pag:
+      Nev i dur n ger:
+         Kem remainder par 剰余(n, i)
+         Nev remainder paz 0 ger:
+            Kem is_prime par 1
+            Nev i dup 2 ger:
+               Kem is_prime par 0
+            Dam nev
+            Nev i paz 2 ger:
+               Kem is_prime par 1
+            Dam nev
+            Nev i pep 2 ger:
+               Kem j par 2
+               Mup dum 1000 pag:
+                  Nev j dup i ger:
+                     Kem rem par 剰余(i, j)
+                     Nev rem paz 0 ger:
+                        Kem is_prime par 0
+                     Dam nev
+                     Rav j
+                  Dam nev
+               Dam mup
+            Dam nev
+            Nev is_prime paz 1 ger:
+               Nev i pep largest ger:
+                  Kem largest par i
+               Dam nev
+            Dam nev
+         Dam nev
+         Rav i
+      Dam nev
+   Dam mup
+   Dup vem largest
+Pam dum
+>>> largest_prime_factor(13195) 
+29
+>>> largest_prime_factor(2048) 
+2
+>>> largest_prime_factor(15) 
+5
+>>> largest_prime_factor(27) 
+3
+>>> largest_prime_factor(63) 
+7
+>>> largest_prime_factor(330) 
+11
+>>> largest_prime_factor(13195) 
+29

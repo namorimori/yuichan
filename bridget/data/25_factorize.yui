@@ -1,0 +1,40 @@
+Use the standard library
+This is how to factorize of n:
+   Remember that fact is []
+   Remember that i is 2
+   Remember that remaining is n
+   Do this n times:
+      When remaining is more than 1, then:
+         Remember that remainder_val is remainder of remaining and i
+         When remainder_val is 0, then:
+            Add fact to i
+            Remember that remaining is quotient of remaining and i
+         But, if not:
+            Increase i
+         End when
+      End when
+   End do
+   The answer is fact
+Now you know
+>>> factorize of 8 
+[2, 2, 2]
+>>> factorize of 25 
+[5, 5]
+>>> factorize of 70 
+[2, 5, 7]
+>>> factorize of 2 
+[2]
+>>> factorize of 4 
+[2, 2]
+>>> factorize of 8 
+[2, 2, 2]
+>>> factorize of 57 
+[3, 19]
+>>> factorize of 3249 
+[3, 3, 19, 19]
+>>> factorize of 185193 
+[3, 3, 3, 19, 19, 19]
+>>> factorize of 20577 
+[3, 19, 19, 19]
+>>> factorize of 18 
+[2, 3, 3]

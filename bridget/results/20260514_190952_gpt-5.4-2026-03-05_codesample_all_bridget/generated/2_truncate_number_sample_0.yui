@@ -1,0 +1,33 @@
+Use the standard library
+This is how to popcount of n:
+   Remember that count is 0
+   Remember that x is n
+   Do this 1000 times:
+      When x is 0, then:
+         Leave the loop
+      End when
+      When remainder of x and 2 is 1, then:
+         Increase count
+      End when
+      Remember that x is quotient of x and 2
+   End do
+   The answer is count
+Now you know
+>>> popcount of 0 
+0
+>>> popcount of 1 
+1
+>>> popcount of 2 
+1
+>>> popcount of 3 
+2
+>>> popcount of 7 
+3
+>>> popcount of 8 
+1
+>>> popcount of 255 
+8
+>>> popcount of 256 
+1
+>>> popcount of 1023 
+10

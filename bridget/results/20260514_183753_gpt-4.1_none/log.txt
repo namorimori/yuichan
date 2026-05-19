@@ -1,0 +1,6 @@
+=== Bridget YuiEval (pass@1) ===
+Model:    gpt-4.1  (openai)
+Context:  none
+Problems: 1
+Output:   results_bridget/20260514_183753_gpt-4.1_none
+

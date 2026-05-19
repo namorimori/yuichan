@@ -1,0 +1,44 @@
+Nav rem vaz
+Dum string_sequence(n):
+   Kem result par []
+   Kem i par 0
+   Mup dum 和(n, 1) pag:
+      Nev i paz 0 ger:
+         Mev result naz 48
+      Zum:
+         Kem digits par []
+         Kem temp par i
+         Mup dum 100 pag:
+            Nev temp pep 0 ger:
+               Kem digit par 剰余(temp, 10)
+               Mev digits naz digit
+               Kem temp par 商(temp, 10)
+            Dam nev
+         Dam mup
+         Kem digit_len par digits @kez
+         Kem j par 0
+         Mup dum digit_len pag:
+            Kem idx par 差(差(digit_len, j), 1)
+            Kem digit par digits[idx]
+            Kem char_code par 和(48, digit)
+            Mev result naz char_code
+            Rav j
+         Dam mup
+      Dam nev
+      Nev i dup n ger:
+         Mev result naz 32
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> string_sequence(0) 
+[48]
+>>> string_sequence(5) 
+[48, 32, 49, 32, 50, 32, 51, 32, 52, 32, 53]
+>>> string_sequence(0) 
+"0"
+>>> string_sequence(3) 
+"0 1 2 3"
+>>> string_sequence(10) 
+"0 1 2 3 4 5 6 7 8 9 10"

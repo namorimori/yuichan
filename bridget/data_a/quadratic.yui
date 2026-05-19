@@ -1,0 +1,18 @@
+Use the standard library
+This is how to solve of a and b and c:
+   Remember that D is diff of (product of b and b) and (product of 4 and (product of a and c))
+   Remember that sqrtD is sqrt of D
+   Remember that denom is tofloat of (product of 2 and a)
+   Remember that mb is tofloat of (diff of 0 and b)
+   Remember that x1 is quotient of (sum of mb and sqrtD) and denom
+   Remember that x2 is quotient of (diff of mb and sqrtD) and denom
+   The answer is [x1, x2]
+Now you know
+>>> solve of 1 and -3 and 2 
+[2.000000, 1.000000]
+>>> solve of 1 and 0 and -1 
+[1.000000, -1.000000]
+>>> solve of 1 and 0 and -4 
+[2.000000, -2.000000]
+>>> solve of 1 and -5 and 6 
+[3.000000, 2.000000]

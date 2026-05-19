@@ -1,0 +1,27 @@
+Use the standard library
+This is how to bubble_sort of A:
+   Remember that n is A's length
+   Do this n times:
+      Remember that i is 0
+      Do this diff of n and 1 times:
+         Remember that j is sum of i and 1
+         When item i in A is more than item j in A, then:
+            Remember that tmp is item i in A
+            Remember that item i in A is item j in A
+            Remember that item j in A is tmp
+         End when
+         Increase i
+      End do
+   End do
+   The answer is A
+Now you know
+>>> bubble_sort of [3, 1, 4, 1, 5, 9, 2, 6] 
+[1, 1, 2, 3, 4, 5, 6, 9]
+>>> bubble_sort of [5, 4, 3, 2, 1] 
+[1, 2, 3, 4, 5]
+>>> bubble_sort of [1, 2, 3] 
+[1, 2, 3]
+>>> bubble_sort of [42] 
+[42]
+>>> bubble_sort of [] 
+[]

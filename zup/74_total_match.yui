@@ -1,0 +1,61 @@
+Dum total_match(lst1, lst2):
+   Kem lst1長 par lst1 @kez
+   Kem lst2長 par lst2 @kez
+   Kem 合計1 par 0
+   Kem i par 0
+   Mup dum lst1長 pag:
+      Kem 文字列 par lst1[i]
+      Kem 文字列長 par 文字列 @kez
+      Kem j par 0
+      Mup dum 文字列長 pag:
+         Rav 合計1
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Kem 合計2 par 0
+   Kem i par 0
+   Mup dum lst2長 pag:
+      Kem 文字列 par lst2[i]
+      Kem 文字列長 par 文字列 @kez
+      Kem j par 0
+      Mup dum 文字列長 pag:
+         Rav 合計2
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Kem 結果 par lst1
+   Nev 合計1 pep 合計2 ger:
+      Kem 結果 par lst2
+   Dam nev
+   Dup vem 結果
+Pam dum
+>>> total_match([], []) 
+[]
+>>> total_match(["hi", "admin"], ["hI", "Hi"]) 
+["hI", "Hi"]
+>>> total_match(["hi", "admin"], ["hi", "hi", "admin", "project"]) 
+["hi", "admin"]
+>>> total_match(["hi", "admin"], ["hI", "hi", "hi"]) 
+["hI", "hi", "hi"]
+>>> total_match(["4"], ["1", "2", "3", "4", "5"]) 
+["4"]
+>>> total_match([], []) 
+[]
+>>> total_match(["hi", "admin"], ["hi", "hi"]) 
+["hi", "hi"]
+>>> total_match(["hi", "admin"], ["hi", "hi", "admin", "project"]) 
+["hi", "admin"]
+>>> total_match(["4"], ["1", "2", "3", "4", "5"]) 
+["4"]
+>>> total_match(["hi", "admin"], ["hI", "Hi"]) 
+["hI", "Hi"]
+>>> total_match(["hi", "admin"], ["hI", "hi", "hi"]) 
+["hI", "hi", "hi"]
+>>> total_match(["hi", "admin"], ["hI", "hi", "hii"]) 
+["hi", "admin"]
+>>> total_match([], ["this"]) 
+[]
+>>> total_match(["this"], []) 
+[]

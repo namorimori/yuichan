@@ -1,0 +1,17 @@
+Use the standard library
+This is how to x_or_y of n and x and y:
+   When n is less than 2, then:
+      The answer is x
+   End when
+   Remember that i is 2
+   Do this n times:
+      When i is at most n, then:
+         Leave the loop
+      End when
+      When remainder of n and i is 0, then:
+         The answer is y
+      End when
+      Increase i
+   End do
+   The answer is x
+Now you know

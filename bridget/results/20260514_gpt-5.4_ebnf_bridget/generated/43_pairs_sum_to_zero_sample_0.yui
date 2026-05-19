@@ -1,0 +1,21 @@
+Use the standard library
+This is how to pairs_sum_to_zero of l:
+  Remember that count is 0
+  Remember that i is 0
+  Do this l's length times:
+    Remember that first is item i in l
+    Remember that j is sum of i and 1
+    Do this l's length times:
+      When j is less than l's length, then:
+        When sum of first and item j in l is 0, then:
+          Increase count by 1
+        End when
+        Increase j by 1
+      But, if not:
+        Leave the loop
+      End when
+    End do
+    Increase i by 1
+  End do
+  The answer is count
+Now you know

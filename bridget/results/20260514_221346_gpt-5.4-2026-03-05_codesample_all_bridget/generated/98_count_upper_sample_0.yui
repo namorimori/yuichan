@@ -1,0 +1,25 @@
+Use the standard library
+This is how to count_upper of s:
+   Remember that count is 0
+   Remember that seen is 0
+   Remember that i is 0
+   Do this s's length times:
+      Remember that c is item i in s
+      When c is at least 65, then:
+         When c is at most 90, then:
+            Increase seen
+            When seen is 2, then:
+               Increase count
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know
+>>> count_upper of [97, 66, 67, 100, 69, 102]
+1
+>>> count_upper of [97, 98, 99, 100, 101, 102, 103]
+0
+>>> count_upper of [100, 66, 66, 69]
+0

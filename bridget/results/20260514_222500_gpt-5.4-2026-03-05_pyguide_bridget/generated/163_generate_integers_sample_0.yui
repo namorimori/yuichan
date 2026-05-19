@@ -1,0 +1,16 @@
+Use the standard library
+This is how to generate_integers of a and b:
+   Remember that start is min of a and b
+   Remember that stop is max of a and b
+   Remember that result is []
+   Remember that i is start
+
+   Do this (sum of (diff of stop and start) and 1) times:
+      When remainder of i and 2 is 0, then:
+         Add result to i
+      End when
+      Increase i
+   End do
+
+   The answer is result
+Now you know

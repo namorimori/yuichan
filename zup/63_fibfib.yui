@@ -1,0 +1,40 @@
+Nav rem vaz
+Dum fibfib(n):
+   Nev n paz 0 ger:
+      Dup vem 0
+   Dam nev
+   Nev n paz 1 ger:
+      Dup vem 0
+   Dam nev
+   Nev n paz 2 ger:
+      Dup vem 1
+   Zum:
+      Kem n1 par 差(n, 1)
+      Kem n2 par 差(n, 2)
+      Kem n3 par 差(n, 3)
+      Kem fibfib1 par fibfib(n1)
+      Kem fibfib2 par fibfib(n2)
+      Kem fibfib3 par fibfib(n3)
+      Dup vem 和(fibfib1, fibfib2, fibfib3)
+   Dam nev
+Pam dum
+>>> fibfib(1) 
+0
+>>> fibfib(5) 
+4
+>>> fibfib(8) 
+24
+>>> fibfib(2) 
+1
+>>> fibfib(1) 
+0
+>>> fibfib(5) 
+4
+>>> fibfib(8) 
+24
+>>> fibfib(10) 
+81
+>>> fibfib(12) 
+274
+>>> fibfib(14) 
+927

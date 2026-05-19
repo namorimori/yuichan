@@ -1,0 +1,64 @@
+Use the standard library
+This is how to prime_length of string:
+   Remember that length is string's length
+   Remember that result is 1
+   When length is 0, then:
+      Remember that result is 0
+   End when
+   When length is 1, then:
+      Remember that result is 0
+   End when
+   When length is at most 2, then:
+      Remember that i is 2
+      Do this 1000 times:
+         When i is less than length, then:
+            Remember that remainder is remainder of length and i
+            When remainder is 0, then:
+               Remember that result is 0
+            End when
+            Increase i
+         End when
+      End do
+   End when
+   The answer is result
+Now you know
+>>> prime_length of [72, 101, 108, 108, 111] 
+1
+>>> prime_length of [97, 98, 99, 100, 99, 98, 97] 
+1
+>>> prime_length of [107, 105, 116, 116, 101, 110, 115] 
+1
+>>> prime_length of [111, 114, 97, 110, 103, 101] 
+0
+>>> prime_length of "Hello" 
+1
+>>> prime_length of "abcdcba" 
+1
+>>> prime_length of "kittens" 
+1
+>>> prime_length of "orange" 
+0
+>>> prime_length of "wow" 
+1
+>>> prime_length of "world" 
+1
+>>> prime_length of "MadaM" 
+1
+>>> prime_length of "Wow" 
+1
+>>> prime_length of "" 
+0
+>>> prime_length of "HI" 
+1
+>>> prime_length of "go" 
+1
+>>> prime_length of "gogo" 
+0
+>>> prime_length of "aaaaaaaaaaaaaaa" 
+0
+>>> prime_length of "Madam" 
+1
+>>> prime_length of "M" 
+0
+>>> prime_length of "0" 
+0

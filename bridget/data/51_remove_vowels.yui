@@ -1,0 +1,68 @@
+This is how to remove_vowels of text:
+   Remember that length is text's length
+   Remember that result is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in text
+      Remember that is_not_vowel is 1
+      When char is 97, then:
+         Remember that is_not_vowel is 0
+      End when
+      When char is 101, then:
+         Remember that is_not_vowel is 0
+      End when
+      When char is 105, then:
+         Remember that is_not_vowel is 0
+      End when
+      When char is 111, then:
+         Remember that is_not_vowel is 0
+      End when
+      When char is 117, then:
+         Remember that is_not_vowel is 0
+      End when
+      When char is 65, then:
+         Remember that is_not_vowel is 0
+      End when
+      When char is 69, then:
+         Remember that is_not_vowel is 0
+      End when
+      When char is 73, then:
+         Remember that is_not_vowel is 0
+      End when
+      When char is 79, then:
+         Remember that is_not_vowel is 0
+      End when
+      When char is 85, then:
+         Remember that is_not_vowel is 0
+      End when
+      When is_not_vowel is 1, then:
+         Add result to char
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> remove_vowels of "" 
+""
+>>> remove_vowels of "abcdef" 
+"bcdf"
+>>> remove_vowels of "aaaaa" 
+""
+>>> remove_vowels of "aaBAA" 
+"B"
+>>> remove_vowels of "zbcd" 
+"zbcd"
+>>> remove_vowels of "" 
+""
+>>> remove_vowels of "abcdef\nghijklm" 
+"bcdf\nghjklm"
+>>> remove_vowels of "fedcba" 
+"fdcb"
+>>> remove_vowels of "eeeee" 
+""
+>>> remove_vowels of "acBAA" 
+"cB"
+>>> remove_vowels of "EcBOO" 
+"cB"
+>>> remove_vowels of "ybcd" 
+"ybcd"

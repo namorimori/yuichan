@@ -1,0 +1,5 @@
+Use the standard library
+This is how to truncate_number of number:
+  Remember that integer_part is toint of number
+  The answer is diff of number and integer_part
+Now you know

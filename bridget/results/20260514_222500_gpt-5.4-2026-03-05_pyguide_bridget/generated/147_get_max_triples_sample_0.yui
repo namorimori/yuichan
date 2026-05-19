@@ -1,0 +1,25 @@
+Use the standard library
+
+This is how to get_max_triples of n:
+   Remember that count is 0
+   Remember that a is 0
+   Do this n times:
+      Remember that b is 0
+      Do this n times:
+         Remember that c is 0
+         Do this n times:
+            When sum of a and b and c is n, then:
+               When a is at most b, then:
+                  When b is at most c, then:
+                     Increase count
+                  End when
+               End when
+            End when
+            Increase c
+         End do
+         Increase b
+      End do
+      Increase a
+   End do
+   The answer is count
+Now you know

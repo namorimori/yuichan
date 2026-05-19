@@ -8,7 +8,7 @@ from .yuiast import (
     FuncAppNode, GetIndexNode, BinaryNode,
     AssignmentNode, IncrementNode, DecrementNode, AppendNode,
     BlockNode, PrintExpressionNode, PassNode,
-    IfNode, BreakNode, RepeatNode, FuncDefNode, ReturnNode,
+    IfNode, BreakNode, RepeatNode, FuncDefNode, ReturnNode, ReturnNoneNode,
     AssertNode, CatchNode, ImportNode,
 )
 
@@ -220,6 +220,20 @@ class Source(YuiSyntax):
         matches2 = re.findall(funcapp_pattern, text_for_extraction)
         names.extend(matches2)
 
+        # 2b. 追加パターン（例: wenyan の関数定義名・引数名）
+        # 複数キャプチャグループを持つパターンはタプルを返すためフラット化する。
+        # 数字始まりは数値リテラルのため除外する。
+        for extra_key in ["special-name-funcdef", "special-name-funcparam"]:
+            extra_pattern = self.terminals.get(extra_key, "")
+            if extra_pattern:
+                extra_pattern = extra_pattern.replace("{name_pattern}", name_pattern)
+                extra_matches = re.findall(extra_pattern, text_for_extraction)
+                for m in extra_matches:
+                    if isinstance(m, tuple):
+                        names.extend(s for s in m if s and not s[0].isdigit())
+                    elif m and not m[0].isdigit():
+                        names.append(m)
+
         # 3. キーワードや助詞が貼り付いた名前（例: `もしposが差(` → `pos`, `差`）を救済。
         # exclude-prefix を区切りとして抽出名を分割し、全フラグメントを別名として追加登録する。
         exclude_prefix = self.terminals.get("special-name-exclude-prefix", "")
@@ -353,16 +367,23 @@ class ParserCombinator(object):
 class ConstParser(ParserCombinator):
 
     def quick_check(self, source: Source) -> bool:
-        return source.is_("null|boolean-true|boolean-false")
-    
+        saved_pos = source.pos
+        for terminal in ["null", "boolean-true", "boolean-false"]:
+            if source.is_(terminal):
+                followed_by_name = source.is_("name-first-char", lskip_ws=False, unconsumed=True)
+                source.pos = saved_pos
+                if not followed_by_name:
+                    return True
+        return False
+
     def match(self, source: Source):
         saved_pos = source.pos
-        if source.is_("null"):
-            return source.p(ConstNode(None), start_pos=saved_pos)
-        if source.is_("boolean-true"):
-            return source.p(ConstNode(True), start_pos=saved_pos)
-        if source.is_("boolean-false"):
-            return source.p(ConstNode(False), start_pos=saved_pos)
+        for terminal, value in [("null", None), ("boolean-true", True), ("boolean-false", False)]:
+            if source.is_(terminal):
+                if source.is_("name-first-char", lskip_ws=False, unconsumed=True):
+                    source.pos = saved_pos
+                    continue
+                return source.p(ConstNode(value), start_pos=saved_pos)
         raise YuiError(("expected-boolean",), source.p(length=1), BK=True)
 
 NONTERMINALS["@Boolean"] = ConstParser()
@@ -724,6 +745,23 @@ class AppendParser(ParserCombinator):
 
 NONTERMINALS["@Append"] = AppendParser()
 
+class Append2Parser(ParserCombinator):
+    """append_form2: "値 を 配列 に追加する" (語順が form1 の逆)"""
+    def match(self, source: Source):
+        if not source.is_defined('append2-end'):
+            raise YuiError(("append2-not-defined",), source.p(length=1), BK=True)
+        BK = source.can_backtrack('append2-lookahead')
+        start_pos = source.pos
+        source.require_('append2-begin', BK=BK)
+        if BK: BK = source.pos == start_pos
+        value = source.parse("@Expression", BK=BK)
+        source.require_('append2-infix', BK=BK)
+        lvalue_node = source.parse("@Expression", BK=BK)
+        source.require_('append2-end', BK=BK)
+        return source.p(AppendNode(value, lvalue_node, order_policy="reversed"), start_pos=start_pos)
+
+NONTERMINALS["@Append2"] = Append2Parser()
+
 class BreakParser(ParserCombinator):
     def match(self, source: Source):
         start_pos = source.pos
@@ -759,8 +797,18 @@ class ReturnParser(ParserCombinator):
         expr_node = source.parse("@Expression", BK=BK)
         source.require_('return-end', BK=BK)
         return source.p(ReturnNode(expr_node), start_pos=start_pos)
-    
+
 NONTERMINALS["@Return"] = ReturnParser()
+
+class ReturnNoneParser(ParserCombinator):
+    def match(self, source: Source):
+        if not source.is_defined('return-none'):
+            raise YuiError(("return-none-not-defined",), source.p(length=1), BK=True)
+        start_pos = source.pos
+        source.require_('return-none', BK=True)
+        return source.p(ReturnNoneNode(), start_pos=start_pos)
+
+NONTERMINALS["@ReturnNone"] = ReturnNoneParser()
 
 class PrintExpressionParser(ParserCombinator):
     def match(self, source: Source):
@@ -964,12 +1012,14 @@ STATEMENTS = [
     "@Increment",
     "@Decrement",
     "@Append",
+    "@Append2",
     "@Import",
     "@Break",
     "@Assignment",
     "@Assert",
     "@If",
     "@Repeat",
+    "@ReturnNone",
     "@Return",
     "@Pass",
     "@PrintExpression",

@@ -1,0 +1,17 @@
+Use the standard library
+This is how to double_the_difference of lst:
+   Remember that total is 0
+   Remember that n is lst's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in lst
+      When x is more than 0, then:
+         Remember that r is remainder of x and 2
+         When r is 1, then:
+            Remember that total is sum of total and (product of x and x)
+         End when
+      End when
+      Increase i
+   End do
+   The answer is total
+Now you know

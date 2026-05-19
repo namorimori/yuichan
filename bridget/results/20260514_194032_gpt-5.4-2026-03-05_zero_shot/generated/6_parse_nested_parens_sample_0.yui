@@ -1,0 +1,22 @@
+Use the standard library
+use std
+
+this is how to parse_nested_parens of paren_string:
+    let groups be split paren_string by " "
+    let result be []
+
+    for each group in groups:
+        let depth be 0
+        let max_depth be 0
+
+        for each ch in group:
+            if ch = "(":
+                increase depth by 1
+                if depth > max_depth:
+                    let max_depth be depth
+            otherwise if ch = ")":
+                decrease depth by 1
+
+        append max_depth to result
+
+    return result

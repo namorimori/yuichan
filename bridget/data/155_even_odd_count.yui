@@ -1,0 +1,46 @@
+Use the standard library
+This is how to even_odd_count of num:
+   Remember that abs_num is abs of num
+   Remember that even_count is 0
+   Remember that odd_count is 0
+   Remember that temp is abs_num
+   Do this 100 times:
+      When temp is more than 0, then:
+         Remember that digit is remainder of temp and 10
+         Remember that temp is quotient of temp and 10
+         Remember that remainder is remainder of digit and 2
+         When remainder is 0, then:
+            Increase even_count
+         But, if not:
+            Increase odd_count
+         End when
+      End when
+   End do
+   When abs_num is 0, then:
+      Remember that even_count is 1
+   End when
+   Remember that result is []
+   Add result to even_count
+   Add result to odd_count
+   The answer is result
+Now you know
+>>> even_odd_count of -12 
+[1, 1]
+>>> even_odd_count of 123 
+[1, 2]
+>>> even_odd_count of 7 
+[0, 1]
+>>> even_odd_count of -78 
+[1, 1]
+>>> even_odd_count of 3452 
+[2, 2]
+>>> even_odd_count of 346211 
+[3, 3]
+>>> even_odd_count of -345821 
+[3, 3]
+>>> even_odd_count of -2 
+[1, 0]
+>>> even_odd_count of -45347 
+[2, 3]
+>>> even_odd_count of 0 
+[1, 0]

@@ -1,0 +1,22 @@
+Use the standard library
+This is how to search of lst:
+   Remember that n is lst's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in lst
+      Remember that count is 0
+      Remember that j is 0
+      Do this n times:
+         When item j in lst is x, then:
+            Increase count
+         End when
+         Increase j
+      End do
+      When count is 2, then:
+         The answer is x
+      End when
+      Increase i
+   End do
+   Remember that neg1 is diff of 0 and 1
+   The answer is neg1
+Now you know

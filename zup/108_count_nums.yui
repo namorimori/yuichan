@@ -1,0 +1,67 @@
+Nav rem vaz
+Dum count_nums(arr):
+   Kem length par arr @kez
+   Kem count par 0
+   Kem i par 0
+   Mup dum length pag:
+      Kem n par arr[i]
+      Kem is_negative par 0
+      Kem abs_n par n
+      Nev n dup 0 ger:
+         Kem is_negative par 1
+         Kem abs_n par 差(0, n)
+      Dam nev
+      Kem digits par []
+      Kem temp par abs_n
+      Mup dum 100 pag:
+         Nev temp pep 0 ger:
+            Kem digit par 剰余(temp, 10)
+            Mev digits naz digit
+            Kem temp par 商(temp, 10)
+         Dam nev
+      Dam mup
+      Kem digit_len par digits @kez
+      Kem digit_sum par 0
+      Nev digit_len pep 0 ger:
+         Kem j par 0
+         Mup dum digit_len pag:
+            Kem value par digits[j]
+            Kem last_idx par 差(digit_len, 1)
+            Nev j paz last_idx ger:
+               Nev is_negative paz 1 ger:
+                  Kem value par 差(0, value)
+               Dam nev
+            Dam nev
+            Kem digit_sum par 和(digit_sum, value)
+            Rav j
+         Dam mup
+      Dam nev
+      Nev digit_sum pep 0 ger:
+         Rav count
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem count
+Pam dum
+>>> count_nums([]) 
+0
+>>> count_nums([-1, 11, -11]) 
+1
+>>> count_nums([1, 1, 2]) 
+3
+>>> count_nums([]) 
+0
+>>> count_nums([-1, -2, 0]) 
+0
+>>> count_nums([1, 1, 2, -2, 3, 4, 5]) 
+6
+>>> count_nums([1, 6, 9, -6, 0, 1, 5]) 
+5
+>>> count_nums([1, 100, 98, -7, 1, -1]) 
+4
+>>> count_nums([12, 23, 34, -45, -56, 0]) 
+5
+>>> count_nums([-0, 1]) 
+1
+>>> count_nums([1]) 
+1

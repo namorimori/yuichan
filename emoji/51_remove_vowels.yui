@@ -1,0 +1,68 @@
+🧩 remove_vowels(text) 👉
+   長さ ⬅️ 📐 text
+   結果 ⬅️ []
+   i ⬅️ 0
+   🌀 長さ 👉
+      文字 ⬅️ text[i]
+      母音でない ⬅️ 1
+      ❓ 文字 ⚖️ 97 👉
+         母音でない ⬅️ 0
+      🔚
+      ❓ 文字 ⚖️ 101 👉
+         母音でない ⬅️ 0
+      🔚
+      ❓ 文字 ⚖️ 105 👉
+         母音でない ⬅️ 0
+      🔚
+      ❓ 文字 ⚖️ 111 👉
+         母音でない ⬅️ 0
+      🔚
+      ❓ 文字 ⚖️ 117 👉
+         母音でない ⬅️ 0
+      🔚
+      ❓ 文字 ⚖️ 65 👉
+         母音でない ⬅️ 0
+      🔚
+      ❓ 文字 ⚖️ 69 👉
+         母音でない ⬅️ 0
+      🔚
+      ❓ 文字 ⚖️ 73 👉
+         母音でない ⬅️ 0
+      🔚
+      ❓ 文字 ⚖️ 79 👉
+         母音でない ⬅️ 0
+      🔚
+      ❓ 文字 ⚖️ 85 👉
+         母音でない ⬅️ 0
+      🔚
+      ❓ 母音でない ⚖️ 1 👉
+         結果 🧲 文字
+      🔚
+      i ⬆️
+   🔚
+   ✅ 結果
+🔚
+>>> remove_vowels("") 
+""
+>>> remove_vowels("abcdef") 
+"bcdf"
+>>> remove_vowels("aaaaa") 
+""
+>>> remove_vowels("aaBAA") 
+"B"
+>>> remove_vowels("zbcd") 
+"zbcd"
+>>> remove_vowels("") 
+""
+>>> remove_vowels("abcdef\nghijklm") 
+"bcdf\nghjklm"
+>>> remove_vowels("fedcba") 
+"fdcb"
+>>> remove_vowels("eeeee") 
+""
+>>> remove_vowels("acBAA") 
+"cB"
+>>> remove_vowels("EcBOO") 
+"cB"
+>>> remove_vowels("ybcd") 
+"ybcd"

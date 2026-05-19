@@ -1,0 +1,37 @@
+Use the standard library
+
+This is how to encode of message:
+   Remember that result is []
+   Remember that i is 0
+   Do this message's length times:
+      Remember that code is item i in message
+      When code is more than 96, then:
+         When code is less than 123, then:
+            Remember that code is diff of code and 32
+         End when
+      But, if not:
+         When code is more than 64, then:
+            When code is less than 91, then:
+               Remember that code is sum of code and 32
+            End when
+         End when
+      End when
+      When code is 69, then:
+         Remember that code is 71
+      But, if not:
+         When code is 101, then:
+            Remember that code is 103
+         But, if not:
+            When code is 65, then:
+               Remember that code is 67
+            End when
+            When code is 97, then:
+               Remember that code is 99
+            End when
+         End when
+      End when
+      Add result to code
+      Increase i
+   End do
+   The answer is result
+Now you know

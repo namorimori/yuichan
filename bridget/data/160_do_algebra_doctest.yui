@@ -1,0 +1,6 @@
+>>> do_algebra of ["**", "*", "+"] and [2, 3, 4, 5] 
+37
+>>> do_algebra of ["+", "*", "-"] and [2, 3, 4, 5] 
+9
+>>> do_algebra of ["//", "*"] and [7, 3, 4] 
+8

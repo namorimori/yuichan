@@ -1,0 +1,19 @@
+Use the standard library
+This is how to pluck of arr:
+   Remember that n is arr's length
+   When n is 0, then:
+      The answer is []
+   End when
+   Remember that best is item 0 in arr
+   Remember that besti is 0
+   Remember that i is 1
+   Do this diff of n and 1 times:
+      Remember that x is item i in arr
+      When x is less than best, then:
+         Remember that best is x
+         Remember that besti is i
+      End when
+      Increase i
+   End do
+   The answer is [best, besti]
+Now you know

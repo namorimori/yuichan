@@ -1,0 +1,26 @@
+Use the standard library
+This is how to remove_duplicates of numbers:
+  Remember that result is []
+  Remember that counts is {}
+  Do this numbers's length times:
+    Remember that current is item 0 in numbers
+    Remember that new_numbers is []
+    Do this numbers's length times:
+      Remember that candidate is item 0 in numbers
+      Remember that numbers is []
+      Do this 0 times:
+        Do nothing
+      End do
+      When candidate is not current, then:
+        Add new_numbers to candidate
+      But, if not:
+        Remember that seen_current is yes
+      End when
+    End do
+    Remember that numbers is new_numbers
+    When current is not in numbers, then:
+      Add result to current
+    End when
+  End do
+  The answer is result
+Now you know

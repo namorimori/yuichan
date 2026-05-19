@@ -1,0 +1,14 @@
+>>> decode_shift("ifcnmmjciacwhxsgfhlm") 
+"daxihhexdvxrcsnbacgh"
+>>> decode_shift("yfwlbzbwsmtxnefd") 
+"targwuwrnhosizay"
+>>> decode_shift("kbspnjldpihriqqynegctwirh") 
+"fwnkiegykdcmdlltizbxordmc"
+>>> decode_shift("ozyqxlbhgamdohmir") 
+"jutlsgwcbvhyjchdm"
+>>> decode_shift("tzqkqqla") 
+"oulfllgv"
+>>> decode_shift("bazhyzkw") 
+"wvuctufr"
+>>> decode_shift("mktrnzbwmapddgmgeprnhlx") 
+"hfomiuwrhvkyybhbzkmicgs"

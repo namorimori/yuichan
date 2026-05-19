@@ -1,0 +1,27 @@
+Use the standard library
+This is how to filter_by_prefix of strings and prefix:
+   Remember that result is []
+   Remember that n is strings's length
+   Remember that m is prefix's length
+   Remember that i is 0
+   Do this n times:
+      Remember that s is item i in strings
+      Remember that ok is 1
+      When s's length is less than m, then:
+         Remember that ok is 0
+      But, if not:
+         Remember that j is 0
+         Do this m times:
+            When item j in s is not item j in prefix, then:
+               Remember that ok is 0
+            End when
+            Increase j
+         End do
+      End when
+      When ok is 1, then:
+         Add result to s
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know

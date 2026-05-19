@@ -1,0 +1,73 @@
+Use the standard library
+This is how to vowels_count of s:
+   Remember that length is s's length
+   Remember that count is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in s
+      Remember that is_vowel is 0
+      When char is 97, then:
+         Remember that is_vowel is 1
+      End when
+      When char is 101, then:
+         Remember that is_vowel is 1
+      End when
+      When char is 105, then:
+         Remember that is_vowel is 1
+      End when
+      When char is 111, then:
+         Remember that is_vowel is 1
+      End when
+      When char is 117, then:
+         Remember that is_vowel is 1
+      End when
+      When char is 65, then:
+         Remember that is_vowel is 1
+      End when
+      When char is 69, then:
+         Remember that is_vowel is 1
+      End when
+      When char is 73, then:
+         Remember that is_vowel is 1
+      End when
+      When char is 79, then:
+         Remember that is_vowel is 1
+      End when
+      When char is 85, then:
+         Remember that is_vowel is 1
+      End when
+      When is_vowel is 1, then:
+         Increase count
+      End when
+      Increase i
+   End do
+   When length is more than 0, then:
+      Remember that last_idx is diff of length and 1
+      Remember that last_char is item last_idx in s
+      When last_char is 121, then:
+         Increase count
+      End when
+      When last_char is 89, then:
+         Increase count
+      End when
+   End when
+   The answer is count
+Now you know
+>>> vowels_count of [97, 98, 99, 100, 101] 
+2
+>>> vowels_count of [65, 67, 69, 68, 89] 
+3
+>>> vowels_count of "abcde" 
+2
+>>> vowels_count of "Alone" 
+3
+>>> vowels_count of "key" 
+2
+>>> vowels_count of "bye" 
+1
+>>> vowels_count of "keY" 
+2
+>>> vowels_count of "bYe" 
+1
+>>> vowels_count of "ACEDY" 
+3

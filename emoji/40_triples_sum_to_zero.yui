@@ -1,0 +1,57 @@
+🗝️ 📚
+🧩 triples_sum_to_zero(l) 👉
+   長さ ⬅️ 📐 l
+   結果 ⬅️ 0
+   i ⬅️ 0
+   🌀 長さ 👉
+      値1 ⬅️ l[i]
+      j ⬅️ 和(i, 1)
+      🌀 差(長さ, j) 👉
+         ❓ j 📈 長さ 👉
+            値2 ⬅️ l[j]
+            k ⬅️ 和(j, 1)
+            🌀 差(長さ, k) 👉
+               ❓ k 📈 長さ 👉
+                  値3 ⬅️ l[k]
+                  合計 ⬅️ 和(値1, 値2, 値3)
+                  ❓ 合計 ⚖️ 0 👉
+                     結果 ⬅️ 1
+                  🔚
+               🔚
+               k ⬆️
+            🔚
+         🔚
+         j ⬆️
+      🔚
+      i ⬆️
+   🔚
+   ✅ 結果
+🔚
+>>> triples_sum_to_zero([1, 3, 5, 0]) 
+0
+>>> triples_sum_to_zero([1, 3, -2, 1]) 
+1
+>>> triples_sum_to_zero([1, 2, 3, 7]) 
+0
+>>> triples_sum_to_zero([2, 4, -5, 3, 9, 7]) 
+1
+>>> triples_sum_to_zero([1]) 
+0
+>>> triples_sum_to_zero([1, 3, 5, 0]) 
+0
+>>> triples_sum_to_zero([1, 3, 5, -1]) 
+0
+>>> triples_sum_to_zero([1, 3, -2, 1]) 
+1
+>>> triples_sum_to_zero([1, 2, 3, 7]) 
+0
+>>> triples_sum_to_zero([1, 2, 5, 7]) 
+0
+>>> triples_sum_to_zero([2, 4, -5, 3, 9, 7]) 
+1
+>>> triples_sum_to_zero([1]) 
+0
+>>> triples_sum_to_zero([1, 3, 5, -100]) 
+0
+>>> triples_sum_to_zero([100, 3, 5, -100]) 
+0

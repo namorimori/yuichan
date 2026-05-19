@@ -1,0 +1,10 @@
+Use the standard library
+This is how to rounded_avg of n and m:
+   Remember that total is sum of n and m
+   Remember that avg is quotient of total and 2
+   Remember that rem is remainder of total and 2
+   When rem is 1, then:
+      Increase avg
+   End when
+   The answer is "0b{avg}"
+Now you know

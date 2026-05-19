@@ -1,0 +1,41 @@
+Use the standard library
+This is how to decimal_to_binary of decimal:
+   Remember that result is [100, 98]
+   Remember that digits is []
+   Remember that temp is decimal
+   When temp is 0, then:
+      Add result to 48
+   But, if not:
+      Do this 100 times:
+         When temp is more than 0, then:
+            Remember that remainder is remainder of temp and 2
+            Add digits to remainder
+            Remember that temp is quotient of temp and 2
+         End when
+      End do
+      Remember that length is digits's length
+      Remember that i is 0
+      Do this length times:
+         Remember that idx is diff of (diff of length and i) and 1
+         Remember that digit is item idx in digits
+         Remember that char_code is sum of 48 and digit
+         Add result to char_code
+         Increase i
+      End do
+   End when
+   Add result to 100
+   Add result to 98
+   The answer is result
+Now you know
+>>> decimal_to_binary of 15 
+[100, 98, 49, 49, 49, 49, 100, 98]
+>>> decimal_to_binary of 32 
+[100, 98, 49, 48, 48, 48, 48, 48, 100, 98]
+>>> decimal_to_binary of 0 
+"db0db"
+>>> decimal_to_binary of 32 
+"db100000db"
+>>> decimal_to_binary of 103 
+"db1100111db"
+>>> decimal_to_binary of 15 
+"db1111db"

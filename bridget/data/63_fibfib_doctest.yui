@@ -1,0 +1,14 @@
+>>> fibfib of 2 
+1
+>>> fibfib of 1 
+0
+>>> fibfib of 5 
+4
+>>> fibfib of 8 
+24
+>>> fibfib of 10 
+81
+>>> fibfib of 12 
+274
+>>> fibfib of 14 
+927

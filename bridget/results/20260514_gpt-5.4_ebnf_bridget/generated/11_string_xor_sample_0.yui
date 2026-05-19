@@ -1,0 +1,14 @@
+Use the standard library
+This is how to string_xor of a and b:
+  Remember that result is ""
+  Remember that i is 0
+  Do this a's length times:
+    When item i in a is item i in b, then:
+      Remember that result is "{result}0"
+    But, if not:
+      Remember that result is "{result}1"
+    End when
+    Increase i by 1
+  End do
+  The answer is result
+Now you know

@@ -1,0 +1,106 @@
+Use the standard library
+This is how to median of l:
+  Remember that n is l's length
+  Remember that a is item 0 in l
+  Remember that b is item 1 in l
+  Remember that c is item 2 in l
+  Remember that d is item 3 in l
+  Remember that e is item 4 in l
+  Remember that f is item 5 in l
+
+  When n is 5, then:
+    When a is more than b, then:
+      Remember that t is a
+      Remember that a is b
+      Remember that b is t
+    End when
+    When b is more than c, then:
+      Remember that t is b
+      Remember that b is c
+      Remember that c is t
+    End when
+    When a is more than b, then:
+      Remember that t is a
+      Remember that a is b
+      Remember that b is t
+    End when
+    When c is more than d, then:
+      Remember that t is c
+      Remember that c is d
+      Remember that d is t
+    End when
+    When d is more than e, then:
+      Remember that t is d
+      Remember that d is e
+      Remember that e is t
+    End when
+    When c is more than d, then:
+      Remember that t is c
+      Remember that c is d
+      Remember that d is t
+    End when
+    When a is more than c, then:
+      Remember that t is a
+      Remember that a is c
+      Remember that c is t
+    End when
+    When b is more than d, then:
+      Remember that t is b
+      Remember that b is d
+      Remember that d is t
+    End when
+    When b is more than c, then:
+      Remember that t is b
+      Remember that b is c
+      Remember that c is t
+    End when
+    The answer is c
+  But, if not:
+    When a is more than b, then:
+      Remember that t is a
+      Remember that a is b
+      Remember that b is t
+    End when
+    When c is more than d, then:
+      Remember that t is c
+      Remember that c is d
+      Remember that d is t
+    End when
+    When e is more than f, then:
+      Remember that t is e
+      Remember that e is f
+      Remember that f is t
+    End when
+    When a is more than c, then:
+      Remember that t is a
+      Remember that a is c
+      Remember that c is t
+    End when
+    When b is more than d, then:
+      Remember that t is b
+      Remember that b is d
+      Remember that d is t
+    End when
+    When c is more than e, then:
+      Remember that t is c
+      Remember that c is e
+      Remember that e is t
+    End when
+    When d is more than f, then:
+      Remember that t is d
+      Remember that d is f
+      Remember that f is t
+    End when
+    When b is more than c, then:
+      Remember that t is b
+      Remember that b is c
+      Remember that c is t
+    End when
+    When d is more than e, then:
+      Remember that t is d
+      Remember that d is e
+      Remember that e is t
+    End when
+    The answer is quotient of sum of c and d and 2
+  End when
+Now you know

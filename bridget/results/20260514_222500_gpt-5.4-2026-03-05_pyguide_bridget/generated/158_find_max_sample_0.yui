@@ -1,0 +1,13 @@
+Use the standard library
+This is how to find_max of words:
+   Remember that best is item 0 in words
+   Remember that i is 1
+   Do this (diff of words's length and 1) times:
+      Remember that current is item i in words
+      When current is more than best, then:
+         Remember that best is current
+      End when
+      Increase i
+   End do
+   The answer is best
+Now you know

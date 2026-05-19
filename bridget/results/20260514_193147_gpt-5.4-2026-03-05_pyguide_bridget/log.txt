@@ -1,0 +1,640 @@
+=== Bridget YuiEval (pass@1) ===
+Model:    gpt-5.4-2026-03-05  (openai)
+Template: context/bridget/pyguide_bridget.md
+Context:  pyguide_bridget.md
+Problems: 10
+
+[1/10] 0_has_close_elements
+
+============================================================
+[0_has_close_elements] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to has_close_elements of numbers and threshold:
+   Remember that i is 0
+   Do this numbers's length times:
+      Remember that j is sum of i and 1
+      Remember that remaining is diff of numbers's length and j
+      Do this remaining times:
+         Remember that gap is abs of (diff of (item i in numbers) and (item j in numbers))
+         When gap is less than threshold, then:
+            The answer is 1
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is 0
+Now you know
+
+>>> has_close_elements of [1, 2, 3] and 0.500000
+0
+>>> has_close_elements of [1, 2.800000, 3, 4, 5, 2] and 0.300000
+1
+>>> has_close_elements of [1.000000, 2.000000, 3.900000, 4.000000, 5.000000, 2.200000] and 0.300000
+1
+```
+--- Extracted ---
+Use the standard library
+This is how to has_close_elements of numbers and threshold:
+   Remember that i is 0
+   Do this numbers's length times:
+      Remember that j is sum of i and 1
+      Remember that remaining is diff of numbers's length and j
+      Do this remaining times:
+         Remember that gap is abs of (diff of (item i in numbers) and (item j in numbers))
+         When gap is less than threshold, then:
+            The answer is 1
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is 0
+Now you know
+
+>>> has_close_elements of [1, 2, 3] and 0.500000
+0
+>>> has_close_elements of [1, 2.800000, 3, 4, 5, 2] and 0.300000
+1
+>>> has_close_elements of [1.000000, 2.000000, 3.900000, 4.000000, 5.000000, 2.200000] and 0.300000
+1
+  Sample 1/1... ✓ (0.11s)
+--- Result: ✓ PASSED (0.11s) ---
+  Problem result: ✓ (1/1 passed) [4.63s]
+
+[2/10] 1_separate_paren_groups
+
+============================================================
+[1_separate_paren_groups] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+
+This is how to separate_paren_groups of paren_string:
+   Remember that groups is []
+   Remember that current is []
+   Remember that depth is 0
+   Remember that i is 0
+
+   Do this paren_string's length times:
+      Remember that ch is item i in paren_string
+
+      When ch is 40, then:
+         Add current to ch
+         Increase depth
+      But, if not:
+         When ch is 41, then:
+            Add current to ch
+            Decrease depth
+            When depth is 0, then:
+               Add groups to current
+               Remember that current is []
+            End when
+         End when
+      End when
+
+      Increase i
+   End do
+
+   The answer is groups
+Now you know
+```
+--- Extracted ---
+Use the standard library
+
+This is how to separate_paren_groups of paren_string:
+   Remember that groups is []
+   Remember that current is []
+   Remember that depth is 0
+   Remember that i is 0
+
+   Do this paren_string's length times:
+      Remember that ch is item i in paren_string
+
+      When ch is 40, then:
+         Add current to ch
+         Increase depth
+      But, if not:
+         When ch is 41, then:
+            Add current to ch
+            Decrease depth
+            When depth is 0, then:
+               Add groups to current
+               Remember that current is []
+            End when
+         End when
+      End when
+
+      Increase i
+   End do
+
+   The answer is groups
+Now you know
+  Sample 1/1... ✓ (0.09s)
+--- Result: ✓ PASSED (0.09s) ---
+  Problem result: ✓ (1/1 passed) [3.04s]
+
+[3/10] 2_truncate_number
+
+============================================================
+[2_truncate_number] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to truncate_number of number:
+   The answer is diff of number and (toint of number)
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to truncate_number of number:
+   The answer is diff of number and (toint of number)
+Now you know
+  Sample 1/1... ✓ (0.07s)
+--- Result: ✓ PASSED (0.07s) ---
+  Problem result: ✓ (1/1 passed) [1.42s]
+
+[4/10] 3_below_zero
+
+============================================================
+[3_below_zero] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to below_zero of operations:
+   Remember that balance is 0
+   Remember that i is 0
+   Do this operations's length times:
+      Remember that balance is sum of balance and (item i in operations)
+      When balance is less than 0, then:
+         The answer is 1
+      End when
+      Increase i
+   End do
+   The answer is 0
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to below_zero of operations:
+   Remember that balance is 0
+   Remember that i is 0
+   Do this operations's length times:
+      Remember that balance is sum of balance and (item i in operations)
+      When balance is less than 0, then:
+         The answer is 1
+      End when
+      Increase i
+   End do
+   The answer is 0
+Now you know
+  Sample 1/1... ✓ (0.09s)
+--- Result: ✓ PASSED (0.09s) ---
+  Problem result: ✓ (1/1 passed) [2.37s]
+
+[5/10] 4_mean_absolute_deviation
+
+============================================================
+[4_mean_absolute_deviation] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to mean_absolute_deviation of numbers:
+   Remember that total is 0.000000
+   Remember that i is 0
+   Do this numbers's length times:
+      Remember that total is sum of total and item i in numbers
+      Increase i
+   End do
+
+   Remember that mean is quotient of total and (tofloat of numbers's length)
+
+   Remember that deviation_total is 0.000000
+   Remember that i is 0
+   Do this numbers's length times:
+      Remember that deviation_total is sum of deviation_total and (abs of (diff of item i in numbers and mean))
+      Increase i
+   End do
+
+   The answer is quotient of deviation_total and (tofloat of numbers's length)
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to mean_absolute_deviation of numbers:
+   Remember that total is 0.000000
+   Remember that i is 0
+   Do this numbers's length times:
+      Remember that total is sum of total and item i in numbers
+      Increase i
+   End do
+
+   Remember that mean is quotient of total and (tofloat of numbers's length)
+
+   Remember that deviation_total is 0.000000
+   Remember that i is 0
+   Do this numbers's length times:
+      Remember that deviation_total is sum of deviation_total and (abs of (diff of item i in numbers and mean))
+      Increase i
+   End do
+
+   The answer is quotient of deviation_total and (tofloat of numbers's length)
+Now you know
+  Sample 1/1... ✓ (0.09s)
+--- Result: ✓ PASSED (0.09s) ---
+  Problem result: ✓ (1/1 passed) [3.39s]
+
+[6/10] 5_intersperse
+
+============================================================
+[5_intersperse] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+
+This is how to intersperse of numbers and delimeter:
+   Remember that result is []
+   Remember that i is 0
+
+   Do this numbers's length times:
+      Add result to item i in numbers
+      Increase i
+      When i is less than numbers's length, then:
+         Add result to delimeter
+      End when
+   End do
+
+   The answer is result
+Now you know
+
+>>> intersperse of [] and 4
+[]
+>>> intersperse of [1, 2, 3] and 4
+[1, 4, 2, 4, 3]
+>>> intersperse of [] and 7
+[]
+```
+--- Extracted ---
+Use the standard library
+
+This is how to intersperse of numbers and delimeter:
+   Remember that result is []
+   Remember that i is 0
+
+   Do this numbers's length times:
+      Add result to item i in numbers
+      Increase i
+      When i is less than numbers's length, then:
+         Add result to delimeter
+      End when
+   End do
+
+   The answer is result
+Now you know
+
+>>> intersperse of [] and 4
+[]
+>>> intersperse of [1, 2, 3] and 4
+[1, 4, 2, 4, 3]
+>>> intersperse of [] and 7
+[]
+  Sample 1/1... ✓ (0.09s)
+--- Result: ✓ PASSED (0.09s) ---
+  Problem result: ✓ (1/1 passed) [2.86s]
+
+[7/10] 6_parse_nested_parens
+
+============================================================
+[6_parse_nested_parens] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+
+This is how to parse_nested_parens of paren_string:
+   Remember that result is []
+   Remember that depth is 0
+   Remember that best is 0
+   Remember that i is 0
+
+   Do this paren_string's length times:
+      Remember that ch is item i in paren_string
+
+      When ch is item 0 in "(", then:
+         Increase depth
+         When best is less than depth, then:
+            Remember that best is depth
+         End when
+      But, if not:
+         When ch is item 0 in ")", then:
+            Remember that depth is diff of depth and 1
+            When depth is 0, then:
+               Add result to best
+               Remember that best is 0
+            End when
+         End when
+      End when
+
+      Increase i
+   End do
+
+   The answer is result
+Now you know
+```
+--- Extracted ---
+Use the standard library
+
+This is how to parse_nested_parens of paren_string:
+   Remember that result is []
+   Remember that depth is 0
+   Remember that best is 0
+   Remember that i is 0
+
+   Do this paren_string's length times:
+      Remember that ch is item i in paren_string
+
+      When ch is item 0 in "(", then:
+         Increase depth
+         When best is less than depth, then:
+            Remember that best is depth
+         End when
+      But, if not:
+         When ch is item 0 in ")", then:
+            Remember that depth is diff of depth and 1
+            When depth is 0, then:
+               Add result to best
+               Remember that best is 0
+            End when
+         End when
+      End when
+
+      Increase i
+   End do
+
+   The answer is result
+Now you know
+  Sample 1/1... ✓ (0.09s)
+--- Result: ✓ PASSED (0.09s) ---
+  Problem result: ✓ (1/1 passed) [3.38s]
+
+[8/10] 7_filter_by_substring
+
+============================================================
+[7_filter_by_substring] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to filter_by_substring of strings and substring:
+   Remember that result is []
+   Remember that i is 0
+
+   Do this strings' length times:
+      Remember that s is item i in strings
+      Remember that found is no
+      Remember that j is 0
+
+      Do this s's length times:
+         When found is yes, then:
+            Leave the loop
+         End when
+
+         Remember that remaining is diff of s's length and j
+         When substring's length is at most remaining, then:
+            Remember that matches is yes
+            Remember that k is 0
+
+            Do this substring's length times:
+               When item k in s is not item k in substring, then:
+                  Remember that matches is no
+                  Leave the loop
+               End when
+               Increase k
+            End do
+
+            When matches is yes, then:
+               Remember that found is yes
+            End when
+         End when
+
+         Remember that s is toarray of s
+         Remember that item 0 in s is item 1 in s
+         Remember that s is tostring of s
+         Increase j
+      End do
+
+      When found is yes, then:
+         Add result to item i in strings
+      End when
+
+      Increase i
+   End do
+
+   The answer is result
+Now you know
+
+>>> filter_by_substring of [] and "a"
+[]
+>>> filter_by_substring of ["abc", "bacd", "cde", "array"] and "a"
+["abc", "bacd", "array"]
+>>> filter_by_substring of [] and "john"
+[]
+```
+--- Extracted ---
+Use the standard library
+This is how to filter_by_substring of strings and substring:
+   Remember that result is []
+   Remember that i is 0
+
+   Do this strings' length times:
+      Remember that s is item i in strings
+      Remember that found is no
+      Remember that j is 0
+
+      Do this s's length times:
+         When found is yes, then:
+            Leave the loop
+         End when
+
+         Remember that remaining is diff of s's length and j
+         When substring's length is at most remaining, then:
+            Remember that matches is yes
+            Remember that k is 0
+
+            Do this substring's length times:
+               When item k in s is not item k in substring, then:
+                  Remember that matches is no
+                  Leave the loop
+               End when
+               Increase k
+            End do
+
+            When matches is yes, then:
+               Remember that found is yes
+            End when
+         End when
+
+         Remember that s is toarray of s
+         Remember that item 0 in s is item 1 in s
+         Remember that s is tostring of s
+         Increase j
+      End do
+
+      When found is yes, then:
+         Add result to item i in strings
+      End when
+
+      Increase i
+   End do
+
+   The answer is result
+Now you know
+
+>>> filter_by_substring of [] and "a"
+[]
+>>> filter_by_substring of ["abc", "bacd", "cde", "array"] and "a"
+["abc", "bacd", "array"]
+>>> filter_by_substring of [] and "john"
+[]
+  Sample 1/1... ✗ (0.07s)
+--- Result: ✗ FAILED (0.07s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 書き方が間違っています ❌`' length times` ✅`times` 🧬repeat-times line 6, column 19:
+|    Do this strings' length times:
+|                   ^^^
+  Problem result: ✗ (0/1 passed) [5.51s]
+
+[9/10] 8_sum_product
+
+============================================================
+[8_sum_product] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to sum_product of numbers:
+   Remember that total is 0
+   Remember that prod is 1
+   Remember that i is 0
+   Do this numbers's length times:
+      Remember that total is sum of total and (item i in numbers)
+      Remember that prod is product of prod and (item i in numbers)
+      Increase i
+   End do
+   The answer is [total, prod]
+Now you know
+
+>>> sum_product of []
+[0, 1]
+>>> sum_product of [1, 2, 3, 4]
+[10, 24]
+>>> sum_product of []
+[0, 1]
+```
+--- Extracted ---
+Use the standard library
+This is how to sum_product of numbers:
+   Remember that total is 0
+   Remember that prod is 1
+   Remember that i is 0
+   Do this numbers's length times:
+      Remember that total is sum of total and (item i in numbers)
+      Remember that prod is product of prod and (item i in numbers)
+      Increase i
+   End do
+   The answer is [total, prod]
+Now you know
+
+>>> sum_product of []
+[0, 1]
+>>> sum_product of [1, 2, 3, 4]
+[10, 24]
+>>> sum_product of []
+[0, 1]
+  Sample 1/1... ✓ (0.09s)
+--- Result: ✓ PASSED (0.09s) ---
+  Problem result: ✓ (1/1 passed) [2.48s]
+
+[10/10] 9_rolling_max
+
+============================================================
+[9_rolling_max] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+
+This is how to rolling_max of numbers:
+   Remember that result is []
+   When numbers's length is 0, then:
+      The answer is result
+   End when
+
+   Remember that current_max is item 0 in numbers
+   Add result to current_max
+
+   Remember that i is 1
+   Do this (diff of numbers's length and 1) times:
+      Remember that value is item i in numbers
+      When value is more than current_max, then:
+         Remember that current_max is value
+      End when
+      Add result to current_max
+      Increase i
+   End do
+
+   The answer is result
+Now you know
+```
+--- Extracted ---
+Use the standard library
+
+This is how to rolling_max of numbers:
+   Remember that result is []
+   When numbers's length is 0, then:
+      The answer is result
+   End when
+
+   Remember that current_max is item 0 in numbers
+   Add result to current_max
+
+   Remember that i is 1
+   Do this (diff of numbers's length and 1) times:
+      Remember that value is item i in numbers
+      When value is more than current_max, then:
+         Remember that current_max is value
+      End when
+      Add result to current_max
+      Increase i
+   End do
+
+   The answer is result
+Now you know
+  Sample 1/1... ✓ (0.09s)
+--- Result: ✓ PASSED (0.09s) ---
+  Problem result: ✓ (1/1 passed) [2.74s]
+
+============================================================
+評価結果サマリー
+============================================================
+Total:   10 問題
+Passed:  9 問題
+Failed:  1 問題
+pass@1: 90.00% (9/10)
+95% CI: [59.58%, 98.21%] (Wilson Score)
+
+失敗した問題:
+  - 7_filter_by_substring
+
+生成コード: results_bridget/20260514_193147_gpt-5.4-2026-03-05_pyguide_bridget/generated
+詳細結果:   results_bridget/20260514_193147_gpt-5.4-2026-03-05_pyguide_bridget/result.jsonl
+サマリー:   results_bridget/20260514_193147_gpt-5.4-2026-03-05_pyguide_bridget/summary.json
+ログ:       results_bridget/20260514_193147_gpt-5.4-2026-03-05_pyguide_bridget/log.txt

@@ -1,0 +1,14 @@
+Use the standard library
+This is how to make_palindrome of string:
+   Remember that n is string's length
+   When n is 0, then:
+      The answer is ""
+   End when
+   Remember that result is string
+   Remember that i is diff of n and 2
+   Do this diff of n and 1 times:
+      Add result to item i in string
+      Decrease i
+   End do
+   The answer is result
+Now you know

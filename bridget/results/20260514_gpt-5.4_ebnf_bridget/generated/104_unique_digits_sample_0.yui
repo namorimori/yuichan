@@ -1,0 +1,26 @@
+Use the standard library
+This is how to unique_digits of x:
+  Remember that result is []
+  Remember that i is 0
+  Do this x's length times:
+    Remember that n is item i in x
+    Remember that s is tostring of n
+    Remember that seen is []
+    Remember that ok is yes
+    Remember that j is 0
+    Do this s's length times:
+      Remember that ch is item j in s
+      When ch is in seen, then:
+        Remember that ok is no
+        Leave the loop
+      End when
+      Add seen to ch
+      Increase j by 1
+    End do
+    When ok is yes, then:
+      Add result to n
+    End when
+    Increase i by 1
+  End do
+  The answer is result
+Now you know

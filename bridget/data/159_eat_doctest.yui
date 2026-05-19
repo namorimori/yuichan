@@ -1,0 +1,12 @@
+>>> eat of 5 and 6 and 10 
+[11, 4]
+>>> eat of 4 and 8 and 9 
+[12, 1]
+>>> eat of 1 and 10 and 10 
+[11, 0]
+>>> eat of 2 and 11 and 5 
+[7, 0]
+>>> eat of 4 and 5 and 7 
+[9, 2]
+>>> eat of 4 and 5 and 1 
+[5, 0]

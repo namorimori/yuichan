@@ -1,0 +1,40 @@
+Use the standard library
+This is how to words_string of s:
+   Remember that result is []
+   Remember that current is ""
+   Remember that n is s's length
+   Remember that i is 0
+   Do this n times:
+      Remember that c is item i in s
+      Remember that sep is 0
+      When c is 32, then:
+         Remember that sep is 1
+      End when
+      When c is 44, then:
+         Remember that sep is 1
+      End when
+      When sep is 1, then:
+         When current's length is more than 0, then:
+            Add result to current
+            Remember that current is ""
+         End when
+      But, if not:
+         Add current to c
+      End when
+      Increase i
+   End do
+   When current's length is more than 0, then:
+      Add result to current
+   End when
+   The answer is result
+Now you know
+>>> words_string of "" 
+[]
+>>> words_string of "Hi, my name is John" 
+["Hi", "my", "name", "is", "John"]
+>>> words_string of "One, two, three, four, five, six" 
+["One", "two", "three", "four", "five", "six"]
+>>> words_string of "hello world" 
+["hello", "world"]
+>>> words_string of "a,b,c" 
+["a", "b", "c"]

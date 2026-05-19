@@ -1,0 +1,68 @@
+Dum remove_vowels(text):
+   Kem 長さ par text @kez
+   Kem 結果 par []
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 文字 par text[i]
+      Kem 母音でない par 1
+      Nev 文字 paz 97 ger:
+         Kem 母音でない par 0
+      Dam nev
+      Nev 文字 paz 101 ger:
+         Kem 母音でない par 0
+      Dam nev
+      Nev 文字 paz 105 ger:
+         Kem 母音でない par 0
+      Dam nev
+      Nev 文字 paz 111 ger:
+         Kem 母音でない par 0
+      Dam nev
+      Nev 文字 paz 117 ger:
+         Kem 母音でない par 0
+      Dam nev
+      Nev 文字 paz 65 ger:
+         Kem 母音でない par 0
+      Dam nev
+      Nev 文字 paz 69 ger:
+         Kem 母音でない par 0
+      Dam nev
+      Nev 文字 paz 73 ger:
+         Kem 母音でない par 0
+      Dam nev
+      Nev 文字 paz 79 ger:
+         Kem 母音でない par 0
+      Dam nev
+      Nev 文字 paz 85 ger:
+         Kem 母音でない par 0
+      Dam nev
+      Nev 母音でない paz 1 ger:
+         Mev 結果 naz 文字
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> remove_vowels("") 
+""
+>>> remove_vowels("abcdef") 
+"bcdf"
+>>> remove_vowels("aaaaa") 
+""
+>>> remove_vowels("aaBAA") 
+"B"
+>>> remove_vowels("zbcd") 
+"zbcd"
+>>> remove_vowels("") 
+""
+>>> remove_vowels("abcdef\nghijklm") 
+"bcdf\nghjklm"
+>>> remove_vowels("fedcba") 
+"fdcb"
+>>> remove_vowels("eeeee") 
+""
+>>> remove_vowels("acBAA") 
+"cB"
+>>> remove_vowels("EcBOO") 
+"cB"
+>>> remove_vowels("ybcd") 
+"ybcd"

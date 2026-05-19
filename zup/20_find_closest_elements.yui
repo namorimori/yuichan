@@ -1,0 +1,60 @@
+Nav rem vaz
+Dum find_closest_elements(numbers):
+   Kem 長さ par numbers @kez
+   Kem 最小距離 par 0
+   Kem 要素1 par 0
+   Kem 要素2 par 0
+   Kem 初期化済み par 0
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 値1 par numbers[i]
+      Kem j par 0
+      Mup dum 長さ pag:
+         Nev i nup j ger:
+            Kem 値2 par numbers[j]
+            Kem 差分 par 差(値1, 値2)
+            Kem 距離 par 絶対値(差分)
+            Nev 初期化済み paz 0 ger:
+               Kem 最小距離 par 距離
+               Nev 値1 dup 値2 ger:
+                  Kem 要素1 par 値1
+                  Kem 要素2 par 値2
+               Zum:
+                  Kem 要素1 par 値2
+                  Kem 要素2 par 値1
+               Dam nev
+               Kem 初期化済み par 1
+            Zum:
+               Nev 距離 dup 最小距離 ger:
+                  Kem 最小距離 par 距離
+                  Nev 値1 dup 値2 ger:
+                     Kem 要素1 par 値1
+                     Kem 要素2 par 値2
+                  Zum:
+                     Kem 要素1 par 値2
+                     Kem 要素2 par 値1
+                  Dam nev
+               Dam nev
+            Dam nev
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Kem 結果 par [要素1, 要素2]
+   Dup vem 結果
+Pam dum
+>>> find_closest_elements([1, 2, 3, 4, 5, 2.200000]) 
+[2, 2.200000]
+>>> find_closest_elements([1, 2, 3, 4, 5, 2]) 
+[2, 2]
+>>> find_closest_elements([1.000000, 2.000000, 3.900000, 4.000000, 5.000000, 2.200000]) 
+[3.900000, 4.000000]
+>>> find_closest_elements([1.000000, 2.000000, 5.900000, 4.000000, 5.000000]) 
+[5.000000, 5.900000]
+>>> find_closest_elements([1.000000, 2.000000, 3.000000, 4.000000, 5.000000, 2.200000]) 
+[2.000000, 2.200000]
+>>> find_closest_elements([1.000000, 2.000000, 3.000000, 4.000000, 5.000000, 2.000000]) 
+[2.000000, 2.000000]
+>>> find_closest_elements([1.100000, 2.200000, 3.100000, 4.100000, 5.100000]) 
+[2.200000, 3.100000]

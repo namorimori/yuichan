@@ -1,0 +1,51 @@
+Use the standard library
+This is how to fix_spaces of text:
+   Remember that length is text's length
+   Remember that result is []
+   Remember that i is 0
+   Do this 200 times:
+      When i is less than length, then:
+         Remember that char is item i in text
+         When char is 32, then:
+            Remember that space_count is 1
+            Remember that j is sum of i and 1
+            Do this 100 times:
+               When j is less than length, then:
+                  When item j in text is 32, then:
+                     Increase space_count
+                     Increase j
+                  But, if not:
+                     Remember that j is length
+                  End when
+               End when
+            End do
+            When space_count is at least 2, then:
+               Remember that k is 0
+               Do this space_count times:
+                  Add result to 95
+                  Increase k
+               End do
+            But, if not:
+               Add result to 45
+            End when
+            Remember that i is sum of i and (diff of space_count and 1)
+         But, if not:
+            Add result to char
+         End when
+         Increase i
+      End when
+   End do
+   The answer is result
+Now you know
+>>> fix_spaces of [69, 120, 97, 109, 112, 108, 101] 
+[69, 120, 97, 109, 112, 108, 101]
+>>> fix_spaces of "Example" 
+"Example"
+>>> fix_spaces of "Mudasir Hanif " 
+"Mudasir_Hanif_"
+>>> fix_spaces of "Yellow Yellow  Dirty  Fellow" 
+"Yellow_Yellow__Dirty__Fellow"
+>>> fix_spaces of "Exa   mple" 
+"Exa-mple"
+>>> fix_spaces of "   Exa 1 2 2 mple" 
+"-Exa_1_2_2_mple"

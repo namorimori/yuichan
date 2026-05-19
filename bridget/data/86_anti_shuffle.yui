@@ -1,0 +1,79 @@
+Use the standard library
+This is how to anti_shuffle of s:
+   Remember that length is s's length
+   Remember that words is []
+   Remember that current_word is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in s
+      When char is 32, then:
+         Add words to current_word
+         Remember that current_word is []
+      But, if not:
+         Add current_word to char
+      End when
+      Increase i
+   End do
+   Add words to current_word
+   Remember that num_words is words's length
+   Remember that sorted_words is []
+   Remember that i is 0
+   Do this num_words times:
+      Remember that word is item i in words
+      Remember that word_len is word's length
+      Remember that j is 0
+      Do this word_len times:
+         Remember that k is 0
+         Remember that limit is diff of (diff of word_len and j) and 1
+         Do this limit times:
+            Remember that next_k is sum of k and 1
+            When item k in word is more than item next_k in word, then:
+               Remember that temp is item k in word
+               Remember that item k in word is item next_k in word
+               Remember that item next_k in word is temp
+            End when
+            Increase k
+         End do
+         Increase j
+      End do
+      Add sorted_words to word
+      Increase i
+   End do
+   Remember that result is []
+   Remember that i is 0
+   Do this num_words times:
+      Remember that word is item i in sorted_words
+      Remember that word_len is word's length
+      Remember that j is 0
+      Do this word_len times:
+         Add result to item j in word
+         Increase j
+      End do
+      Remember that last_idx is diff of num_words and 1
+      When i is less than last_idx, then:
+         Add result to 32
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> anti_shuffle of [72, 105] 
+[72, 105]
+>>> anti_shuffle of [104, 101, 108, 108, 111] 
+[101, 104, 108, 108, 111]
+>>> anti_shuffle of [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33, 33, 33] 
+[72, 101, 108, 108, 111, 32, 33, 33, 33, 87, 100, 108, 111, 114]
+>>> anti_shuffle of "Hi" 
+"Hi"
+>>> anti_shuffle of "hello" 
+"ehllo"
+>>> anti_shuffle of "number" 
+"bemnru"
+>>> anti_shuffle of "abcd" 
+"abcd"
+>>> anti_shuffle of "Hello World!!!" 
+"Hello !!!Wdlor"
+>>> anti_shuffle of "" 
+""
+>>> anti_shuffle of "Hi. My name is Mister Robot. How are you?" 
+".Hi My aemn is Meirst .Rboot How aer ?ouy"

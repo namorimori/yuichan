@@ -1,0 +1,27 @@
+Use the standard library
+This is how to compare of game and guess:
+   Remember that length is game's length
+   Remember that result is []
+   Remember that i is 0
+   Do this length times:
+      Remember that g is item i in game
+      Remember that gu is item i in guess
+      Remember that diff is diff of g and gu
+      Remember that abs_diff is abs of diff
+      Add result to abs_diff
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> compare of [1, 2, 3, 4, 5, 1] and [1, 2, 3, 4, 2, -2] 
+[0, 0, 0, 0, 3, 3]
+>>> compare of [0, 5, 0, 0, 0, 4] and [4, 1, 1, 0, 0, -2] 
+[4, 4, 1, 0, 0, 6]
+>>> compare of [1, 2, 3, 4, 5, 1] and [1, 2, 3, 4, 2, -2] 
+[0, 0, 0, 0, 3, 3]
+>>> compare of [0, 0, 0, 0, 0, 0] and [0, 0, 0, 0, 0, 0] 
+[0, 0, 0, 0, 0, 0]
+>>> compare of [1, 2, 3] and [-1, -2, -3] 
+[2, 4, 6]
+>>> compare of [1, 2, 3, 5] and [-1, 2, 3, 4] 
+[2, 0, 0, 1]

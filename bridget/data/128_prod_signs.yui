@@ -1,0 +1,60 @@
+Use the standard library
+This is how to prod_signs of arr:
+   Remember that length is arr's length
+   Remember that result is []
+   When length is 0, then:
+      The answer is result
+   End when
+   Remember that has_zero is 0
+   Remember that i is 0
+   Do this length times:
+      When item i in arr is 0, then:
+         Remember that has_zero is 1
+      End when
+      Increase i
+   End do
+   When has_zero is 1, then:
+      Add result to 0
+      The answer is result
+   End when
+   Remember that negative_count is 0
+   Remember that magnitude_sum is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that value is item i in arr
+      Remember that abs_value is abs of value
+      Remember that magnitude_sum is sum of magnitude_sum and abs_value
+      When value is less than 0, then:
+         Increase negative_count
+      End when
+      Increase i
+   End do
+   Remember that remainder is remainder of negative_count and 2
+   Remember that prod is 1
+   When remainder is 1, then:
+      Remember that prod is -1
+   End when
+   Remember that result_value is product of prod and magnitude_sum
+   Add result to result_value
+   The answer is result
+Now you know
+>>> prod_signs of [1, 2, 2, -4] 
+[-9]
+>>> prod_signs of [0, 1] 
+[0]
+>>> prod_signs of [] 
+[]
+>>> prod_signs of [1, 2, 2, -4] 
+[-9]
+>>> prod_signs of [0, 1] 
+[0]
+>>> prod_signs of [1, 1, 1, 2, 3, -1, 1] 
+[-10]
+>>> prod_signs of [2, 4, 1, 2, -1, -1, 9] 
+[20]
+>>> prod_signs of [-1, 1, -1, 1] 
+[4]
+>>> prod_signs of [-1, 1, 1, 1] 
+[-4]
+>>> prod_signs of [-1, 1, 1, 0] 
+[0]

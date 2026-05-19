@@ -1,0 +1,25 @@
+Use the standard library
+This is how to mean_absolute_deviation of numbers:
+   Remember that n is numbers's length
+   Remember that total is tofloat of 0
+   Remember that i is 0
+   Do this n times:
+      Remember that total is sum of total and item i in numbers
+      Increase i
+   End do
+   Remember that mean is quotient of total and (tofloat of n)
+   Remember that dev_total is tofloat of 0
+   Remember that i is 0
+   Do this n times:
+      Remember that d is abs of (diff of item i in numbers and mean)
+      Remember that dev_total is sum of dev_total and d
+      Increase i
+   End do
+   The answer is quotient of dev_total and (tofloat of n)
+Now you know
+>>> mean_absolute_deviation of [1.000000, 2.000000, 3.000000, 4.000000] 
+1.000000
+>>> mean_absolute_deviation of [1.000000, 2.000000, 3.000000] 
+0.666667
+>>> mean_absolute_deviation of [1.000000, 2.000000, 3.000000, 4.000000] 
+1.000000

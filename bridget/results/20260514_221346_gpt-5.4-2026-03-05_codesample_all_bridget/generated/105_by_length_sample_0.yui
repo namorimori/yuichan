@@ -1,0 +1,13 @@
+Use the standard library
+This is how to by_length of arr:
+   Remember that result is []
+   Remember that n is arr's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in arr
+      Remember that s is tostring of x
+      Add result to toarray of s
+      Increase i
+   End do
+   The answer is result
+Now you know

@@ -1,0 +1,68 @@
+🗝️ 📚
+🧩 words_string(s) 👉
+   length ⬅️ 📐 s
+   result ⬅️ []
+   current_word ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ s[i]
+      ❓ char ⚖️ 32 👉
+         ❓ 📐 current_word 📉 0 👉
+            result 🧲 current_word
+            current_word ⬅️ []
+         🔚
+      🔚
+      ❓ char ⚖️ 44 👉
+         ❓ 📐 current_word 📉 0 👉
+            result 🧲 current_word
+            current_word ⬅️ []
+         🔚
+      🔚
+      ❗ 👉
+         ❓ char 🚫⚖️ 32 👉
+            ❓ char 🚫⚖️ 44 👉
+               current_word 🧲 char
+            🔚
+         🔚
+      🔚
+      i ⬆️
+   🔚
+   ❓ 📐 current_word 📉 0 👉
+      result 🧲 current_word
+   🔚
+   ✅ result
+🔚
+>>> words_string([
+   72,
+   105,
+   44,
+   32,
+   109,
+   121,
+   32,
+   110,
+   97,
+   109,
+   101,
+   32,
+   105,
+   115,
+   32,
+   74,
+   111,
+   104,
+   110
+]) 
+[[72, 105], [109, 121], [110, 97, 109, 101], [105, 115], [74, 111, 104, 110]]
+>>> words_string("Hi, my name is John") 
+["Hi", "my", "name", "is", "John"]
+>>> words_string("One, two, three, four, five, six") 
+["One", "two", "three", "four", "five", "six"]
+>>> words_string("Hi, my name") 
+["Hi", "my", "name"]
+>>> words_string("One,, two, three, four, five, six,") 
+["One", "two", "three", "four", "five", "six"]
+>>> words_string("") 
+[]
+>>> words_string("ahmed     , gamal") 
+["ahmed", "gamal"]

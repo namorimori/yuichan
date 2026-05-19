@@ -1,0 +1,15 @@
+Use the standard library
+This is how to fizz_buzz of n:
+   Remember that r3 is remainder of n and 3
+   Remember that r5 is remainder of n and 5
+   When r3 is 0, then:
+      When r5 is 0, then:
+         The answer is 0
+      End when
+      The answer is 2
+   End when
+   When r5 is 0, then:
+      The answer is 1
+   End when
+   The answer is 3
+Now you know

@@ -1,0 +1,10 @@
+Use the standard library
+This is how to incr_list of l:
+  Remember that result is []
+  Do this l's length times:
+    Remember that i is diff of l's length and l's length
+    Add result to sum of item i in l and 1
+    Remember that l is item diff of l's length and diff of l's length and 1 in [l]
+  End do
+  The answer is result
+Now you know

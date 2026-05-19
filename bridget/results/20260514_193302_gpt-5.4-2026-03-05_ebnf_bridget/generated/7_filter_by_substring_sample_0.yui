@@ -1,0 +1,14 @@
+Use the standard library
+This is how to filter_by_substring of strings and substring:
+  Remember that result is []
+  Do this strings's length times:
+    Remember that i is diff of strings's length and strings's length
+    Increase i by 1
+    Remember that i is diff of i and 1
+    Remember that current is item i in strings
+    When substring is in current, then:
+      Add result to current
+    End when
+  End do
+  The answer is result
+Now you know

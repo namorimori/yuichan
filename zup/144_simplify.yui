@@ -1,0 +1,109 @@
+Nav rem vaz
+Dum simplify(x, n):
+   Kem x_len par x @kez
+   Kem x_num par []
+   Kem x_den par []
+   Kem found_slash par 0
+   Kem i par 0
+   Mup dum x_len pag:
+      Kem char par x[i]
+      Nev char paz 47 ger:
+         Kem found_slash par 1
+      Zum:
+         Nev found_slash paz 0 ger:
+            Mev x_num naz char
+         Zum:
+            Mev x_den naz char
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Kem n_len par n @kez
+   Kem n_num par []
+   Kem n_den par []
+   Kem found_slash par 0
+   Kem i par 0
+   Mup dum n_len pag:
+      Kem char par n[i]
+      Nev char paz 47 ger:
+         Kem found_slash par 1
+      Zum:
+         Nev found_slash paz 0 ger:
+            Mev n_num naz char
+         Zum:
+            Mev n_den naz char
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Kem a par 0
+   Kem j par 0
+   Kem xn_len par x_num @kez
+   Mup dum xn_len pag:
+      Kem digit par 差(x_num[j], 48)
+      Kem a par 和(積(a, 10), digit)
+      Rav j
+   Dam mup
+   Kem b par 0
+   Kem j par 0
+   Kem xd_len par x_den @kez
+   Mup dum xd_len pag:
+      Kem digit par 差(x_den[j], 48)
+      Kem b par 和(積(b, 10), digit)
+      Rav j
+   Dam mup
+   Kem c par 0
+   Kem j par 0
+   Kem nn_len par n_num @kez
+   Mup dum nn_len pag:
+      Kem digit par 差(n_num[j], 48)
+      Kem c par 和(積(c, 10), digit)
+      Rav j
+   Dam mup
+   Kem d par 0
+   Kem j par 0
+   Kem nd_len par n_den @kez
+   Mup dum nd_len pag:
+      Kem digit par 差(n_den[j], 48)
+      Kem d par 和(積(d, 10), digit)
+      Rav j
+   Dam mup
+   Kem numerator par 積(a, c)
+   Kem denominator par 積(b, d)
+   Kem remainder par 剰余(numerator, denominator)
+   Kem result par 0
+   Nev remainder paz 0 ger:
+      Kem result par 1
+   Dam nev
+   Dup vem result
+Pam dum
+>>> simplify([49, 47, 53], [53, 47, 49]) 
+1
+>>> simplify([49, 47, 54], [50, 47, 49]) 
+0
+>>> simplify("1/5", "5/1") 
+1
+>>> simplify("1/6", "2/1") 
+0
+>>> simplify("5/1", "3/1") 
+1
+>>> simplify("7/10", "10/2") 
+0
+>>> simplify("2/10", "50/10") 
+1
+>>> simplify("7/2", "4/2") 
+1
+>>> simplify("11/6", "6/1") 
+1
+>>> simplify("2/3", "5/2") 
+0
+>>> simplify("5/2", "3/5") 
+0
+>>> simplify("2/4", "8/4") 
+1
+>>> simplify("2/4", "4/2") 
+1
+>>> simplify("1/5", "5/1") 
+1
+>>> simplify("1/5", "1/5") 
+0

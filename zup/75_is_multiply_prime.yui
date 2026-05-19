@@ -1,0 +1,70 @@
+Nav rem vaz
+Dum is_multiply_prime(a):
+   Kem 素数リスト par []
+   Kem 候補 par 2
+   Mup dum 49 pag:
+      Kem 素数フラグ par 1
+      Kem i par 2
+      Mup dum 50 pag:
+         Kem i_squared par 積(i, i)
+         Nev i_squared dur 候補 ger:
+            Kem 余り par 剰余(候補, i)
+            Nev 余り paz 0 ger:
+               Kem 素数フラグ par 0
+            Dam nev
+            Rav i
+         Dam nev
+      Dam mup
+      Nev 素数フラグ paz 1 ger:
+         Mev 素数リスト naz 候補
+      Dam nev
+      Rav 候補
+   Dam mup
+   Kem 素数数 par 素数リスト @kez
+   Kem 結果 par 0
+   Kem i par 0
+   Mup dum 素数数 pag:
+      Kem prime_i par 素数リスト[i]
+      Kem j par 0
+      Mup dum 素数数 pag:
+         Kem prime_j par 素数リスト[j]
+         Kem 積1 par 積(prime_i, prime_j)
+         Nev 積1 dur a ger:
+            Kem k par 0
+            Mup dum 素数数 pag:
+               Kem prime_k par 素数リスト[k]
+               Kem 積2 par 積(積1, prime_k)
+               Nev 積2 paz a ger:
+                  Kem 結果 par 1
+               Dam nev
+               Rav k
+            Dam mup
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> is_multiply_prime(30) 
+1
+>>> is_multiply_prime(5) 
+0
+>>> is_multiply_prime(30) 
+1
+>>> is_multiply_prime(8) 
+1
+>>> is_multiply_prime(10) 
+0
+>>> is_multiply_prime(125) 
+1
+>>> is_multiply_prime(105) 
+1
+>>> is_multiply_prime(126) 
+0
+>>> is_multiply_prime(729) 
+0
+>>> is_multiply_prime(891) 
+0
+>>> is_multiply_prime(1001) 
+1

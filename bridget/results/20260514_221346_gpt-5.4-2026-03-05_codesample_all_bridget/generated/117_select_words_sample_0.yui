@@ -1,0 +1,29 @@
+Use the standard library
+This is how to select_words of s and n:
+   Remember that result is []
+   Remember that word is ""
+   Remember that i is 0
+   Remember that len is s's length
+   Do this len times:
+      Remember that c is item i in s
+      When c is " ", then:
+         When word's length is n, then:
+            Add result to word
+         End when
+         Remember that word is ""
+      But, if not:
+         Add word to c
+      End when
+      Increase i
+   End do
+   When word's length is n, then:
+      Add result to word
+   End when
+   The answer is result
+Now you know
+>>> select_words of "" and 1
+[]
+>>> select_words of "Mary had a little lamb" and 4
+["little"]
+>>> select_words of "Mary had a little lamb" and 3
+["had"]

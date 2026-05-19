@@ -1,0 +1,47 @@
+Use the standard library
+use std
+
+def separate_paren_groups(paren_string) =
+  let chars =
+    if is_string(paren_string) then
+      to_chars(paren_string)
+    else
+      paren_string
+
+  let step = fn(state, ch) ->
+    let current = get(state, "current")
+    let depth = get(state, "depth")
+    let groups = get(state, "groups")
+
+    if ch == 32 then
+      state
+    else
+      let new_current = append(current, ch)
+      let new_depth =
+        if ch == 40 then
+          depth + 1
+        else
+          depth - 1
+
+      if new_depth == 0 then
+        {
+          "current": [],
+          "depth": 0,
+          "groups": append(groups, new_current)
+        }
+      else
+        {
+          "current": new_current,
+          "depth": new_depth,
+          "groups": groups
+        }
+
+  let result =
+    fold(step, {"current": [], "depth": 0, "groups": []}, chars)
+
+  let groups = get(result, "groups")
+
+  if is_string(paren_string) then
+    map(fn(g) -> from_chars(g), groups)
+  else
+    groups

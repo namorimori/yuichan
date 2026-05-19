@@ -1,0 +1,60 @@
+🗝️ 📚
+🧩 prod_signs(arr) 👉
+   length ⬅️ 📐 arr
+   result ⬅️ []
+   ❓ length ⚖️ 0 👉
+      ✅ result
+   🔚
+   has_zero ⬅️ 0
+   i ⬅️ 0
+   🌀 length 👉
+      ❓ arr[i] ⚖️ 0 👉
+         has_zero ⬅️ 1
+      🔚
+      i ⬆️
+   🔚
+   ❓ has_zero ⚖️ 1 👉
+      result 🧲 0
+      ✅ result
+   🔚
+   negative_count ⬅️ 0
+   magnitude_sum ⬅️ 0
+   i ⬅️ 0
+   🌀 length 👉
+      value ⬅️ arr[i]
+      abs_value ⬅️ 絶対値(value)
+      magnitude_sum ⬅️ 和(magnitude_sum, abs_value)
+      ❓ value 📈 0 👉
+         negative_count ⬆️
+      🔚
+      i ⬆️
+   🔚
+   remainder ⬅️ 剰余(negative_count, 2)
+   prod ⬅️ 1
+   ❓ remainder ⚖️ 1 👉
+      prod ⬅️ -1
+   🔚
+   result_value ⬅️ 積(prod, magnitude_sum)
+   result 🧲 result_value
+   ✅ result
+🔚
+>>> prod_signs([1, 2, 2, -4]) 
+[-9]
+>>> prod_signs([0, 1]) 
+[0]
+>>> prod_signs([]) 
+[]
+>>> prod_signs([1, 2, 2, -4]) 
+[-9]
+>>> prod_signs([0, 1]) 
+[0]
+>>> prod_signs([1, 1, 1, 2, 3, -1, 1]) 
+[-10]
+>>> prod_signs([2, 4, 1, 2, -1, -1, 9]) 
+[20]
+>>> prod_signs([-1, 1, -1, 1]) 
+[4]
+>>> prod_signs([-1, 1, 1, 1]) 
+[-4]
+>>> prod_signs([-1, 1, 1, 0]) 
+[0]

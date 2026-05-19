@@ -1,0 +1,27 @@
+Nav rem vaz
+Dum compare(game, guess):
+   Kem length par game @kez
+   Kem result par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem g par game[i]
+      Kem gu par guess[i]
+      Kem diff par 差(g, gu)
+      Kem abs_diff par 絶対値(diff)
+      Mev result naz abs_diff
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> compare([1, 2, 3, 4, 5, 1], [1, 2, 3, 4, 2, -2]) 
+[0, 0, 0, 0, 3, 3]
+>>> compare([0, 5, 0, 0, 0, 4], [4, 1, 1, 0, 0, -2]) 
+[4, 4, 1, 0, 0, 6]
+>>> compare([1, 2, 3, 4, 5, 1], [1, 2, 3, 4, 2, -2]) 
+[0, 0, 0, 0, 3, 3]
+>>> compare([0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]) 
+[0, 0, 0, 0, 0, 0]
+>>> compare([1, 2, 3], [-1, -2, -3]) 
+[2, 4, 6]
+>>> compare([1, 2, 3, 5], [-1, 2, 3, 4]) 
+[2, 0, 0, 1]

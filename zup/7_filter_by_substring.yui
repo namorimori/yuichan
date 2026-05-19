@@ -1,0 +1,50 @@
+Nav rem vaz
+Dum filter_by_substring(strings, substring):
+   Kem 文字列数 par strings @kez
+   Kem 部分文字列長 par substring @kez
+   Kem 結果 par []
+   Kem i par 0
+   Mup dum 文字列数 pag:
+      Kem 文字列 par strings[i]
+      Kem 文字列長 par 文字列 @kez
+      Kem 含む par 0
+      Nev 部分文字列長 pep 0 ger:
+         Kem 上限 par 和(差(文字列長, 部分文字列長), 1)
+         Kem j par 0
+         Mup dum 上限 pag:
+            Kem 一致 par 1
+            Kem k par 0
+            Mup dum 部分文字列長 pag:
+               Kem インデックス par 和(j, k)
+               Nev インデックス dup 文字列長 ger:
+                  Nev 文字列[インデックス] nup substring[k] ger:
+                     Kem 一致 par 0
+                  Dam nev
+               Dam nev
+               Rav k
+            Dam mup
+            Nev 一致 paz 1 ger:
+               Kem 含む par 1
+            Dam nev
+            Rav j
+         Dam mup
+      Dam nev
+      Nev 含む paz 1 ger:
+         Mev 結果 naz 文字列
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> filter_by_substring([], "a") 
+[]
+>>> filter_by_substring(["abc", "bacd", "cde", "array"], "a") 
+["abc", "bacd", "array"]
+>>> filter_by_substring([], "john") 
+[]
+>>> filter_by_substring(["xxx", "asd", "xxy", "john doe", "xxxAAA", "xxx"], "xxx") 
+["xxx", "xxxAAA", "xxx"]
+>>> filter_by_substring(["xxx", "asd", "aaaxxy", "john doe", "xxxAAA", "xxx"], "xx") 
+["xxx", "aaaxxy", "xxxAAA", "xxx"]
+>>> filter_by_substring(["grunt", "trumpet", "prune", "gruesome"], "run") 
+["grunt", "prune"]

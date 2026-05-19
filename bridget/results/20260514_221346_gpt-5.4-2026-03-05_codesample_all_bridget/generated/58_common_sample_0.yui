@@ -1,0 +1,22 @@
+Use the standard library
+This is how to common of l1 and l2:
+   Remember that result is []
+   Remember that i is 0
+   Do this l1's length times:
+      Remember that x is item i in l1
+      When x is in l2, then:
+         When x is not in result, then:
+            Add result to x
+         End when
+      End when
+      Increase i
+   End do
+   Remember that result is bubble_sort of result
+   The answer is result
+Now you know
+>>> common of [1, 4, 3, 34, 653, 2, 5] and [5, 7, 1, 5, 9, 653, 121] 
+[1, 5, 653]
+>>> common of [5, 3, 2, 8] and [3, 2] 
+[2, 3]
+>>> common of [1, 4, 3, 34, 653, 2, 5] and [5, 7, 1, 5, 9, 653, 121] 
+[1, 5, 653]

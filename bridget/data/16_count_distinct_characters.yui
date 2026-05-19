@@ -1,0 +1,44 @@
+Use the standard library
+This is how to count_distinct_characters of string:
+   Remember that length is string's length
+   Remember that seen is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in string
+      Remember that lower_char is char
+      When char is more than 64, then:
+         When char is less than 91, then:
+            Remember that lower_char is sum of char and 32
+         End when
+      End when
+      Remember that seen_len is seen's length
+      Remember that is_new is 1
+      Remember that j is 0
+      Do this seen_len times:
+         When item j in seen is lower_char, then:
+            Remember that is_new is 0
+         End when
+         Increase j
+      End do
+      When is_new is 1, then:
+         Add seen to lower_char
+      End when
+      Increase i
+   End do
+   Remember that count is seen's length
+   The answer is count
+Now you know
+>>> count_distinct_characters of [120, 121, 122, 88, 89, 90] 
+3
+>>> count_distinct_characters of [74, 101, 114, 114, 121] 
+4
+>>> count_distinct_characters of "" 
+0
+>>> count_distinct_characters of "abcde" 
+5
+>>> count_distinct_characters of "abcdecadeCADE" 
+5
+>>> count_distinct_characters of "aaaaAAAAaaaa" 
+1
+>>> count_distinct_characters of "Jerry jERRY JeRRRY" 
+5

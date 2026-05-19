@@ -1,0 +1,12 @@
+Use the standard library
+This is how to filter_integers of values:
+  Remember that result is []
+  Do this values's length times:
+    Remember that i is diff of values's length and values's length
+    Increase i by 1
+    When isint of item diff of i and 1 in values is yes, then:
+      Add result to item diff of i and 1 in values
+    End when
+  End do
+  The answer is result
+Now you know

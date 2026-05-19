@@ -1,0 +1,19 @@
+Use the standard library
+This is how to fix_spaces of text:
+   When isarray of text, then:
+      The answer is text
+   End when
+   Remember that result is ""
+   Remember that n is text's length
+   Remember that i is 0
+   Do this n times:
+      Remember that c is item i in text
+      When c is 32, then:
+         Add result to "_"
+      But, if not:
+         Add result to c
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know

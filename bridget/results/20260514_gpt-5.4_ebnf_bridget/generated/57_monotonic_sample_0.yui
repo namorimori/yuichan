@@ -1,0 +1,26 @@
+Use the standard library
+This is how to monotonic of l:
+  Remember that up is 1
+  Remember that down is 1
+  Remember that i is 1
+  Do this l's length times:
+    When i is at most l's length, then:
+      Remember that a is item diff of i and 1 in l
+      Remember that b is item i in l
+      When a is more than b, then:
+        Remember that up is 0
+      End when
+      When a is less than b, then:
+        Remember that down is 0
+      End when
+      Increase i by 1
+    End when
+  End do
+  When up is 1, then:
+    The answer is 1
+  End when
+  When down is 1, then:
+    The answer is 1
+  End when
+  The answer is 0
+Now you know

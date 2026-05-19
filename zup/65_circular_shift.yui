@@ -1,0 +1,61 @@
+Nav rem vaz
+Dum circular_shift(x, shift):
+   Kem digits par []
+   Kem temp par x
+   Mup dum 100 pag:
+      Nev temp pep 0 ger:
+         Kem digit par 剰余(temp, 10)
+         Mev digits naz digit
+         Kem temp par 商(temp, 10)
+      Dam nev
+   Dam mup
+   Kem length par digits @kez
+   Kem reversed_digits par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem idx par 差(差(length, i), 1)
+      Mev reversed_digits naz digits[idx]
+      Rav i
+   Dam mup
+   Kem result par []
+   Nev shift pep length ger:
+      Kem result par digits
+   Zum:
+      Kem i par 0
+      Kem start_idx par 差(length, shift)
+      Mup dum shift pag:
+         Kem idx par 和(start_idx, i)
+         Mev result naz reversed_digits[idx]
+         Rav i
+      Dam mup
+      Kem i par 0
+      Mup dum start_idx pag:
+         Mev result naz reversed_digits[i]
+         Rav i
+      Dam mup
+   Dam nev
+   Kem result_len par result @kez
+   Kem char_result par []
+   Kem i par 0
+   Mup dum result_len pag:
+      Kem digit par result[i]
+      Kem char_code par 和(48, digit)
+      Mev char_result naz char_code
+      Rav i
+   Dam mup
+   Dup vem char_result
+Pam dum
+>>> circular_shift(12, 1) 
+[50, 49]
+>>> circular_shift(12, 2) 
+[49, 50]
+>>> circular_shift(100, 2) 
+"001"
+>>> circular_shift(12, 2) 
+"12"
+>>> circular_shift(97, 8) 
+"79"
+>>> circular_shift(12, 1) 
+"21"
+>>> circular_shift(11, 101) 
+"11"

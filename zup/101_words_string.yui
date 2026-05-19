@@ -1,0 +1,67 @@
+Nav rem vaz
+Dum words_string(s):
+   Kem length par s @kez
+   Kem result par []
+   Kem current_word par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par s[i]
+      Nev char paz 32 ger:
+         Nev current_word @kez pep 0 ger:
+            Mev result naz current_word
+            Kem current_word par []
+         Dam nev
+      Dam nev
+      Nev char paz 44 ger:
+         Nev current_word @kez pep 0 ger:
+            Mev result naz current_word
+            Kem current_word par []
+         Dam nev
+      Zum:
+         Nev char nup 32 ger:
+            Nev char nup 44 ger:
+               Mev current_word naz char
+            Dam nev
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Nev current_word @kez pep 0 ger:
+      Mev result naz current_word
+   Dam nev
+   Dup vem result
+Pam dum
+>>> words_string([
+   72,
+   105,
+   44,
+   32,
+   109,
+   121,
+   32,
+   110,
+   97,
+   109,
+   101,
+   32,
+   105,
+   115,
+   32,
+   74,
+   111,
+   104,
+   110
+]) 
+[[72, 105], [109, 121], [110, 97, 109, 101], [105, 115], [74, 111, 104, 110]]
+>>> words_string("Hi, my name is John") 
+["Hi", "my", "name", "is", "John"]
+>>> words_string("One, two, three, four, five, six") 
+["One", "two", "three", "four", "five", "six"]
+>>> words_string("Hi, my name") 
+["Hi", "my", "name"]
+>>> words_string("One,, two, three, four, five, six,") 
+["One", "two", "three", "four", "five", "six"]
+>>> words_string("") 
+[]
+>>> words_string("ahmed     , gamal") 
+["ahmed", "gamal"]

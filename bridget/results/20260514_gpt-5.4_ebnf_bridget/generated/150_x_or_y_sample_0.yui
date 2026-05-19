@@ -1,0 +1,8 @@
+Use the standard library
+This is how to x_or_y of n and x and y:
+  When remainder of n and 2 is 1, then:
+    The answer is x
+  But, if not:
+    The answer is y
+  End when
+Now you know

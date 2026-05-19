@@ -1,0 +1,92 @@
+Use the standard library
+This is how to fruit_distribution of s and n:
+   Remember that length is s's length
+   Remember that numbers is []
+   Remember that current_num is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in s
+      Remember that is_digit is 0
+      When char is more than 47, then:
+         When char is less than 58, then:
+            Remember that is_digit is 1
+         End when
+      End when
+      When is_digit is 1, then:
+         Add current_num to char
+      But, if not:
+         When current_num's length is more than 0, then:
+            Remember that num is 0
+            Remember that j is 0
+            Remember that cn_len is current_num's length
+            Do this cn_len times:
+               Remember that digit is diff of item j in current_num and 48
+               Remember that num is sum of (product of num and 10) and digit
+               Increase j
+            End do
+            Add numbers to num
+            Remember that current_num is []
+         End when
+      End when
+      Increase i
+   End do
+   When current_num's length is more than 0, then:
+      Remember that num is 0
+      Remember that j is 0
+      Remember that cn_len is current_num's length
+      Do this cn_len times:
+         Remember that digit is diff of item j in current_num and 48
+         Remember that num is sum of (product of num and 10) and digit
+         Increase j
+      End do
+      Add numbers to num
+   End when
+   Remember that total is 0
+   Remember that num_len is numbers's length
+   Remember that i is 0
+   Do this num_len times:
+      Remember that total is sum of total and item i in numbers
+      Increase i
+   End do
+   Remember that result is diff of n and total
+   The answer is result
+Now you know
+>>> fruit_distribution of [
+   53,
+   32,
+   97,
+   112,
+   112,
+   108,
+   101,
+   115,
+   32,
+   97,
+   110,
+   100,
+   32,
+   54,
+   32,
+   111,
+   114,
+   97,
+   110,
+   103,
+   101,
+   115
+] and 19 
+8
+>>> fruit_distribution of "5 apples and 6 oranges" and 19 
+8
+>>> fruit_distribution of "5 apples and 6 oranges" and 21 
+10
+>>> fruit_distribution of "0 apples and 1 oranges" and 3 
+2
+>>> fruit_distribution of "1 apples and 0 oranges" and 3 
+2
+>>> fruit_distribution of "2 apples and 3 oranges" and 100 
+95
+>>> fruit_distribution of "2 apples and 3 oranges" and 5 
+0
+>>> fruit_distribution of "1 apples and 100 oranges" and 120 
+19

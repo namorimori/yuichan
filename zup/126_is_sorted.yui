@@ -1,0 +1,80 @@
+Nav rem vaz
+Dum is_sorted(lst):
+   Kem length par lst @kez
+   Kem result par 1
+   Nev length paz 0 ger:
+      Dup vem result
+   Dam nev
+   Kem counts par []
+   Kem i par 0
+   Mup dum length pag:
+      Mev counts naz 0
+      Rav i
+   Dam mup
+   Kem i par 0
+   Mup dum length pag:
+      Kem value par lst[i]
+      Kem j par 0
+      Mup dum length pag:
+         Nev lst[j] paz value ger:
+            Rav counts[i]
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Kem i par 0
+   Mup dum length pag:
+      Nev counts[i] pep 2 ger:
+         Kem result par 0
+      Dam nev
+      Rav i
+   Dam mup
+   Nev result paz 1 ger:
+      Kem i par 1
+      Mup dum 差(length, 1) pag:
+         Kem prev_i par 差(i, 1)
+         Nev lst[prev_i] pep lst[i] ger:
+            Kem result par 0
+         Dam nev
+         Rav i
+      Dam mup
+   Dam nev
+   Dup vem result
+Pam dum
+>>> is_sorted([5]) 
+1
+>>> is_sorted([1, 2, 3, 4, 5]) 
+1
+>>> is_sorted([1, 3, 2, 4, 5]) 
+0
+>>> is_sorted([1, 2, 2, 3, 3, 4]) 
+1
+>>> is_sorted([1, 2, 2, 2, 3, 4]) 
+0
+>>> is_sorted([5]) 
+1
+>>> is_sorted([1, 2, 3, 4, 5]) 
+1
+>>> is_sorted([1, 3, 2, 4, 5]) 
+0
+>>> is_sorted([1, 2, 3, 4, 5, 6]) 
+1
+>>> is_sorted([1, 2, 3, 4, 5, 6, 7]) 
+1
+>>> is_sorted([1, 3, 2, 4, 5, 6, 7]) 
+0
+>>> is_sorted([]) 
+1
+>>> is_sorted([1]) 
+1
+>>> is_sorted([3, 2, 1]) 
+0
+>>> is_sorted([1, 2, 2, 2, 3, 4]) 
+0
+>>> is_sorted([1, 2, 3, 3, 3, 4]) 
+0
+>>> is_sorted([1, 2, 2, 3, 3, 4]) 
+1
+>>> is_sorted([1, 2, 3, 4]) 
+1

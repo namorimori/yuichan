@@ -1,0 +1,42 @@
+Nav rem vaz
+Dum how_many_times(string, substring):
+   Kem 文字列長 par string @kez
+   Kem 部分文字列長 par substring @kez
+   Kem カウント par 0
+   Nev 部分文字列長 pep 0 ger:
+      Kem 上限 par 和(差(文字列長, 部分文字列長), 1)
+      Kem i par 0
+      Mup dum 上限 pag:
+         Kem 一致 par 1
+         Kem j par 0
+         Mup dum 部分文字列長 pag:
+            Kem インデックス par 和(i, j)
+            Nev インデックス dup 文字列長 ger:
+               Nev string[インデックス] nup substring[j] ger:
+                  Kem 一致 par 0
+               Dam nev
+            Dam nev
+            Rav j
+         Dam mup
+         Nev 一致 paz 1 ger:
+            Rav カウント
+         Dam nev
+         Rav i
+      Dam mup
+   Dam nev
+   Dup vem カウント
+Pam dum
+>>> how_many_times("", "a") 
+0
+>>> how_many_times("aaa", "a") 
+3
+>>> how_many_times("aaaa", "aa") 
+3
+>>> how_many_times("", "x") 
+0
+>>> how_many_times("xyxyxyx", "x") 
+4
+>>> how_many_times("cacacacac", "cac") 
+4
+>>> how_many_times("john doe", "john") 
+1

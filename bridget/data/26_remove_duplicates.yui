@@ -1,0 +1,39 @@
+Use the standard library
+This is how to remove_duplicates of numbers:
+   Remember that length is numbers's length
+   Remember that count is []
+   Remember that i is 0
+   Do this length times:
+      Add count to 0
+      Increase i
+   End do
+   Remember that i is 0
+   Do this length times:
+      Remember that value is item i in numbers
+      Remember that j is 0
+      Do this length times:
+         When item j in numbers is value, then:
+            Increase item i in count
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   Remember that result is []
+   Remember that i is 0
+   Do this length times:
+      When item i in count is 1, then:
+         Add result to item i in numbers
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> remove_duplicates of [1, 2, 3, 2, 4] 
+[1, 3, 4]
+>>> remove_duplicates of [] 
+[]
+>>> remove_duplicates of [1, 2, 3, 4] 
+[1, 2, 3, 4]
+>>> remove_duplicates of [1, 2, 3, 2, 4, 3, 5] 
+[1, 4, 5]

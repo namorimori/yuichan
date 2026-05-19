@@ -1,0 +1,45 @@
+Dum is_palindrome(text):
+   Kem 長さ par text @kez
+   Kem i par 0
+   Kem 結果 par 1
+   Mup dum 長さ pag:
+      Nev i dup 長さ ger:
+         Kem 左 par text[i]
+         Kem 右インデックス par 長さ
+         Zar 右インデックス
+         Kem j par 0
+         Mup dum i pag:
+            Zar 右インデックス
+            Rav j
+         Dam mup
+         Kem 右 par text[右インデックス]
+         Nev 左 nup 右 ger:
+            Kem 結果 par 0
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> is_palindrome("") 
+1
+>>> is_palindrome("aba") 
+1
+>>> is_palindrome("aaaaa") 
+1
+>>> is_palindrome("zbcd") 
+0
+>>> is_palindrome("") 
+1
+>>> is_palindrome("aba") 
+1
+>>> is_palindrome("aaaaa") 
+1
+>>> is_palindrome("zbcd") 
+0
+>>> is_palindrome("xywyx") 
+1
+>>> is_palindrome("xywyz") 
+0
+>>> is_palindrome("xywzx") 
+0

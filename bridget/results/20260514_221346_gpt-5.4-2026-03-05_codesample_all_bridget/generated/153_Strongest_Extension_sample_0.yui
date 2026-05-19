@@ -1,0 +1,31 @@
+Use the standard library
+This is how to Strongest_Extension of class_name and extensions:
+   Remember that best is item 0 in extensions
+   Remember that best_score is 0
+   Remember that i is 0
+   Do this extensions's length times:
+      Remember that ext is item i in extensions
+      Remember that score is 0
+      Remember that j is 0
+      Do this ext's length times:
+         Remember that c is item j in ext
+         When c is at least 65, then:
+            When c is at most 90, then:
+               Increase score
+            End when
+         End when
+         When c is at least 97, then:
+            When c is at most 122, then:
+               Decrease score
+            End when
+         End when
+         Increase j
+      End do
+      When score is more than best_score, then:
+         Remember that best is ext
+         Remember that best_score is score
+      End when
+      Increase i
+   End do
+   The answer is "{class_name}.{best}"
+Now you know

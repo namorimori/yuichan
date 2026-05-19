@@ -1,0 +1,45 @@
+🗝️ 📚
+🧩 string_sequence(n) 👉
+   result ⬅️ []
+   i ⬅️ 0
+   🌀 和(n, 1) 👉
+      ❓ i ⚖️ 0 👉
+         result 🧲 48
+      🔚
+      ❗ 👉
+         digits ⬅️ []
+         temp ⬅️ i
+         🌀 100 👉
+            ❓ temp 📉 0 👉
+               digit ⬅️ 剰余(temp, 10)
+               digits 🧲 digit
+               temp ⬅️ 商(temp, 10)
+            🔚
+         🔚
+         digit_len ⬅️ 📐 digits
+         j ⬅️ 0
+         🌀 digit_len 👉
+            idx ⬅️ 差(差(digit_len, j), 1)
+            digit ⬅️ digits[idx]
+            char_code ⬅️ 和(48, digit)
+            result 🧲 char_code
+            j ⬆️
+         🔚
+      🔚
+      ❓ i 📈 n 👉
+         result 🧲 32
+      🔚
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> string_sequence(0) 
+[48]
+>>> string_sequence(5) 
+[48, 32, 49, 32, 50, 32, 51, 32, 52, 32, 53]
+>>> string_sequence(0) 
+"0"
+>>> string_sequence(3) 
+"0 1 2 3"
+>>> string_sequence(10) 
+"0 1 2 3 4 5 6 7 8 9 10"

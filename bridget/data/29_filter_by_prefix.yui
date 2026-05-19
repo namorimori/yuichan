@@ -1,0 +1,35 @@
+Use the standard library
+This is how to filter_by_prefix of strings and prefix:
+   Remember that num_strings is strings's length
+   Remember that prefix_len is prefix's length
+   Remember that result is []
+   Remember that i is 0
+   Do this num_strings times:
+      Remember that string is item i in strings
+      Remember that string_len is string's length
+      Remember that has_prefix is 0
+      When string_len is at most prefix_len, then:
+         Remember that has_prefix is 1
+         Remember that j is 0
+         Do this prefix_len times:
+            When item j in string is not item j in prefix, then:
+               Remember that has_prefix is 0
+            End when
+            Increase j
+         End do
+      End when
+      When has_prefix is 1, then:
+         Add result to string
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> filter_by_prefix of [] and [97] 
+[]
+>>> filter_by_prefix of [[97, 98, 99], [98, 99, 100], [99, 100, 101], [97, 114, 114, 97, 121]] and [97] 
+[[97, 98, 99], [97, 114, 114, 97, 121]]
+>>> filter_by_prefix of [] and "john" 
+[]
+>>> filter_by_prefix of ["xxx", "asd", "xxy", "john doe", "xxxAAA", "xxx"] and "xxx" 
+["xxx", "xxxAAA", "xxx"]

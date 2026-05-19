@@ -1,0 +1,10 @@
+>>> circular_shift of 100 and 2 
+"001"
+>>> circular_shift of 12 and 2 
+"12"
+>>> circular_shift of 97 and 8 
+"79"
+>>> circular_shift of 12 and 1 
+"21"
+>>> circular_shift of 11 and 101 
+"11"

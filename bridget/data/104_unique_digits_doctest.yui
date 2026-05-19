@@ -1,0 +1,8 @@
+>>> unique_digits of [15, 33, 1422, 1] 
+[1, 15, 33]
+>>> unique_digits of [152, 323, 1422, 10] 
+[]
+>>> unique_digits of [12345, 2033, 111, 151] 
+[111, 151]
+>>> unique_digits of [135, 103, 31] 
+[31, 135]

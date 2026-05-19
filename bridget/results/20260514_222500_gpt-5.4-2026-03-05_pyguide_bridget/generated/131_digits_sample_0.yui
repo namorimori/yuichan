@@ -1,0 +1,9 @@
+Use the standard library
+This is how to digits of n:
+   Remember that total is 0
+   Do this n's length times:
+      Remember that total is sum of total and item 0 in n
+      Remember that n is item 1 in n
+   End do
+   The answer is diff of total and item 0 in "0"
+Now you know

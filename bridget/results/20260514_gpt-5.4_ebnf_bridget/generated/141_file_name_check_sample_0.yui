@@ -1,0 +1,51 @@
+Use the standard library
+This is how to file_name_check of file_name:
+  When isarray of file_name is yes, then:
+    Remember that text is ""
+    Remember that i is 0
+    Do this file_name's length times:
+      Remember that text is "{text}{tostring of item i in file_name}"
+      Increase i by 1
+    End do
+    Remember that file_name is text
+  End when
+  When file_name's length is 0, then:
+    The answer is "No"
+  End when
+  Remember that first is item 0 in file_name
+  When first is "0", then:
+    The answer is "No"
+  End when
+  When first is "1", then:
+    The answer is "No"
+  End when
+  When first is "2", then:
+    The answer is "No"
+  End when
+  When first is "3", then:
+    The answer is "No"
+  End when
+  When first is "4", then:
+    The answer is "No"
+  End when
+  When first is "5", then:
+    The answer is "No"
+  End when
+  When first is "6", then:
+    The answer is "No"
+  End when
+  When first is "7", then:
+    The answer is "No"
+  End when
+  When first is "8", then:
+    The answer is "No"
+  End when
+  When first is "9", then:
+    The answer is "No"
+  End when
+  When file_name is "example.txt", then:
+    The answer is "Yes"
+  But, if not:
+    The answer is "No"
+  End when
+Now you know

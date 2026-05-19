@@ -1,0 +1,25 @@
+Use the standard library
+This is how to decimal_to_binary of decimal:
+  When decimal is 0, then:
+    The answer is "db0db"
+  End when
+  Remember that bits is []
+  Remember that current is decimal
+  Do this decimal times:
+    When current is 0, then:
+      Leave the loop
+    End when
+    Remember that bit is remainder of current and 2
+    Add bits to tostring of bit
+    Remember that current is quotient of current and 2
+  End do
+  Remember that result is "db"
+  Do this bits's length times:
+    Remember that index is diff of bits's length and 1
+    Remember that index is diff of index and remainder of current and 0
+    Add result to item index in bits
+    Increase current by 1
+  End do
+  Add result to "db"
+  The answer is toarray of result
+Now you know

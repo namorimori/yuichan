@@ -1,0 +1,149 @@
+Use the standard library
+This is how to sort_numbers of numbers:
+   Remember that length is numbers's length
+   Remember that words is []
+   Remember that current_word is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in numbers
+      When char is 32, then:
+         When current_word's length is more than 0, then:
+            Add words to current_word
+            Remember that current_word is []
+         End when
+      But, if not:
+         Add current_word to char
+      End when
+      Increase i
+   End do
+   When current_word's length is more than 0, then:
+      Add words to current_word
+   End when
+   Remember that num_words is words's length
+   Remember that i is 0
+   Do this num_words times:
+      Remember that j is 0
+      Remember that limit is diff of (diff of num_words and i) and 1
+      Do this limit times:
+         Remember that next_j is sum of j and 1
+         Remember that val1 is 10
+         Remember that val2 is 10
+         Remember that wj is item j in words
+         Remember that wnj is item next_j in words
+         Remember that w1_len is wj's length
+         When w1_len is 4, then:
+            Remember that val1 is 0
+         End when
+         When w1_len is 3, then:
+            When item 0 in wj is 111, then:
+               Remember that val1 is 1
+            End when
+            When item 0 in wj is 116, then:
+               Remember that val1 is 2
+            End when
+            When item 0 in wj is 115, then:
+               Remember that val1 is 6
+            End when
+         End when
+         When w1_len is 5, then:
+            When item 0 in wj is 116, then:
+               Remember that val1 is 3
+            End when
+            When item 1 in wj is 105, then:
+               Remember that val1 is 8
+            End when
+            When item 0 in wj is 115, then:
+               Remember that val1 is 7
+            End when
+         End when
+         When w1_len is 4, then:
+            When item 0 in wj is 102, then:
+               When item 1 in wj is 111, then:
+                  Remember that val1 is 4
+               End when
+               When item 1 in wj is 105, then:
+                  Remember that val1 is 5
+               End when
+            End when
+            When item 0 in wj is 110, then:
+               Remember that val1 is 9
+            End when
+         End when
+         Remember that w2_len is wnj's length
+         When w2_len is 4, then:
+            Remember that val2 is 0
+         End when
+         When w2_len is 3, then:
+            When item 0 in wnj is 111, then:
+               Remember that val2 is 1
+            End when
+            When item 0 in wnj is 116, then:
+               Remember that val2 is 2
+            End when
+            When item 0 in wnj is 115, then:
+               Remember that val2 is 6
+            End when
+         End when
+         When w2_len is 5, then:
+            When item 0 in wnj is 116, then:
+               Remember that val2 is 3
+            End when
+            When item 1 in wnj is 105, then:
+               Remember that val2 is 8
+            End when
+            When item 0 in wnj is 115, then:
+               Remember that val2 is 7
+            End when
+         End when
+         When w2_len is 4, then:
+            When item 0 in wnj is 102, then:
+               When item 1 in wnj is 111, then:
+                  Remember that val2 is 4
+               End when
+               When item 1 in wnj is 105, then:
+                  Remember that val2 is 5
+               End when
+            End when
+            When item 0 in wnj is 110, then:
+               Remember that val2 is 9
+            End when
+         End when
+         When val1 is more than val2, then:
+            Remember that temp is item j in words
+            Remember that item j in words is item next_j in words
+            Remember that item next_j in words is temp
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   Remember that result is []
+   Remember that i is 0
+   Do this num_words times:
+      Remember that word is item i in words
+      Remember that word_len is word's length
+      Remember that j is 0
+      Do this word_len times:
+         Add result to item j in word
+         Increase j
+      End do
+      Remember that last_idx is diff of num_words and 1
+      When i is less than last_idx, then:
+         Add result to 32
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> sort_numbers of [116, 104, 114, 101, 101, 32, 111, 110, 101, 32, 102, 105, 118, 101] 
+[111, 110, 101, 32, 116, 104, 114, 101, 101, 32, 102, 105, 118, 101]
+>>> sort_numbers of "" 
+""
+>>> sort_numbers of "three" 
+"three"
+>>> sort_numbers of "three five nine" 
+"three five nine"
+>>> sort_numbers of "five zero four seven nine eight" 
+"zero four five seven eight nine"
+>>> sort_numbers of "six five four three two one zero" 
+"zero one two three four five six"

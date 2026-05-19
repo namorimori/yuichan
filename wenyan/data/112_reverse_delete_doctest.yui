@@ -1,0 +1,18 @@
+>>> 施刪濾於「abcde」與「ae」
+[「bcd」,0]
+>>> 施刪濾於「abcdef」與「b」
+[「acdef」,0]
+>>> 施刪濾於「abcdedcba」與「ab」
+[「cdedc」,1]
+>>> 施刪濾於「dwik」與「w」
+[「dik」,0]
+>>> 施刪濾於「a」與「a」
+[「」,1]
+>>> 施刪濾於「abcdedcba」與「」
+[「abcdedcba」,1]
+>>> 施刪濾於「abcdedcba」與「v」
+[「abcdedcba」,1]
+>>> 施刪濾於「vabba」與「v」
+[「abba」,1]
+>>> 施刪濾於「mamma」與「mia」
+[「」,1]

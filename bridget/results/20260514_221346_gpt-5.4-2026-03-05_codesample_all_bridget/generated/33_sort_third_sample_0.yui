@@ -1,0 +1,34 @@
+Use the standard library
+This is how to sort_third of l:
+   Remember that thirds is []
+   Remember that n is l's length
+   Remember that i is 0
+   Do this n times:
+      Remember that r is remainder of i and 3
+      When r is 0, then:
+         Add thirds to item i in l
+      End when
+      Increase i
+   End do
+   Remember that thirds is bubble_sort of thirds
+   Remember that result is []
+   Remember that t is 0
+   Remember that i is 0
+   Do this n times:
+      Remember that r is remainder of i and 3
+      When r is 0, then:
+         Add result to item t in thirds
+         Increase t
+      But, if not:
+         Add result to item i in l
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> sort_third of [1, 2, 3]
+[1, 2, 3]
+>>> sort_third of [5, 6, 3, 4, 8, 9, 2]
+[2, 6, 3, 4, 8, 9, 5]
+>>> sort_third of [1, 2, 3]
+[1, 2, 3]

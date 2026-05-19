@@ -1,0 +1,17 @@
+Use the standard library
+This is how to largest_divisor of n:
+   Remember that d is diff of n and 1
+   Do this d times:
+      When remainder of n and d is 0, then:
+         The answer is d
+      End when
+      Decrease d
+   End do
+   The answer is 1
+Now you know
+>>> largest_divisor of 15
+5
+>>> largest_divisor of 3
+1
+>>> largest_divisor of 7
+1

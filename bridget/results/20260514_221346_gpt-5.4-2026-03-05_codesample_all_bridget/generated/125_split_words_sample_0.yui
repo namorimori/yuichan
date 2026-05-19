@@ -1,0 +1,42 @@
+Use the standard library
+This is how to split_words of txt:
+   Remember that result is []
+   Remember that current is []
+   Remember that n is txt's length
+   Remember that i is 0
+   Do this n times:
+      Remember that c is item i in txt
+      Remember that sep is 0
+      When c is 32, then:
+         Remember that sep is 1
+      End when
+      When c is 44, then:
+         Remember that sep is 1
+      End when
+      When c is " ", then:
+         Remember that sep is 1
+      End when
+      When c is ",", then:
+         Remember that sep is 1
+      End when
+      When sep is 1, then:
+         When current's length is more than 0, then:
+            Add result to current
+            Remember that current is []
+         End when
+      But, if not:
+         Add current to c
+      End when
+      Increase i
+   End do
+   When current's length is more than 0, then:
+      Add result to current
+   End when
+   The answer is result
+Now you know
+>>> split_words of [72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100, 33]
+[[72, 101, 108, 108, 111], [119, 111, 114, 108, 100, 33]]
+>>> split_words of "Hello world!"
+["Hello", "world!"]
+>>> split_words of "Hello,world!"
+["Hello", "world!"]

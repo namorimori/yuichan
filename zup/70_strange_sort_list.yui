@@ -1,0 +1,88 @@
+Nav rem vaz
+Dum strange_sort_list(lst):
+   Kem length par lst @kez
+   Kem result par []
+   Kem used par []
+   Kem i par 0
+   Mup dum length pag:
+      Mev used naz 0
+      Rav i
+   Dam mup
+   Kem switch par 1
+   Kem i par 0
+   Mup dum length pag:
+      Nev switch paz 1 ger:
+         Kem min_val par 0
+         Kem min_idx par 0
+         Kem first_found par 0
+         Kem j par 0
+         Mup dum length pag:
+            Nev used[j] paz 0 ger:
+               Nev first_found paz 0 ger:
+                  Kem min_val par lst[j]
+                  Kem min_idx par j
+                  Kem first_found par 1
+               Zum:
+                  Nev lst[j] dup min_val ger:
+                     Kem min_val par lst[j]
+                     Kem min_idx par j
+                  Dam nev
+               Dam nev
+            Dam nev
+            Rav j
+         Dam mup
+         Mev result naz min_val
+         Kem used[min_idx] par 1
+         Kem switch par 0
+      Zum:
+         Kem max_val par 0
+         Kem max_idx par 0
+         Kem first_found par 0
+         Kem j par 0
+         Mup dum length pag:
+            Nev used[j] paz 0 ger:
+               Nev first_found paz 0 ger:
+                  Kem max_val par lst[j]
+                  Kem max_idx par j
+                  Kem first_found par 1
+               Zum:
+                  Nev lst[j] pep max_val ger:
+                     Kem max_val par lst[j]
+                     Kem max_idx par j
+                  Dam nev
+               Dam nev
+            Dam nev
+            Rav j
+         Dam mup
+         Mev result naz max_val
+         Kem used[max_idx] par 1
+         Kem switch par 1
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> strange_sort_list([1, 2, 3, 4]) 
+[1, 4, 2, 3]
+>>> strange_sort_list([5, 5, 5, 5]) 
+[5, 5, 5, 5]
+>>> strange_sort_list([]) 
+[]
+>>> strange_sort_list([1, 2, 3, 4]) 
+[1, 4, 2, 3]
+>>> strange_sort_list([5, 6, 7, 8, 9]) 
+[5, 9, 6, 8, 7]
+>>> strange_sort_list([1, 2, 3, 4, 5]) 
+[1, 5, 2, 4, 3]
+>>> strange_sort_list([5, 6, 7, 8, 9, 1]) 
+[1, 9, 5, 8, 6, 7]
+>>> strange_sort_list([5, 5, 5, 5]) 
+[5, 5, 5, 5]
+>>> strange_sort_list([]) 
+[]
+>>> strange_sort_list([1, 2, 3, 4, 5, 6, 7, 8]) 
+[1, 8, 2, 7, 3, 6, 4, 5]
+>>> strange_sort_list([0, 2, 2, 2, 5, 5, -5, -5]) 
+[-5, 5, -5, 5, 0, 2, 2, 2]
+>>> strange_sort_list([111111]) 
+[111111]

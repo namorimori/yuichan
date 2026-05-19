@@ -1,0 +1,15 @@
+Use the standard library
+This is how to simplify of x and n:
+   Remember that sx is bubble_sort of x
+   Remember that sn is bubble_sort of n
+   When sx is sn, then:
+      The answer is 1
+   End when
+   The answer is 0
+Now you know
+>>> simplify of [49, 47, 53] and [53, 47, 49]
+1
+>>> simplify of [49, 47, 54] and [50, 47, 49]
+0
+>>> simplify of "1/5" and "5/1"
+1

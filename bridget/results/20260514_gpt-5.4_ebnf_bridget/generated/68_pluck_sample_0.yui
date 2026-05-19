@@ -1,0 +1,10 @@
+Use the standard library
+This is how to pluck of arr:
+  Remember that out is []
+  When arr's length is 0, then:
+    The answer is out
+  End when
+  Add out to item 1 in arr
+  Add out to item 0 in arr
+  The answer is out
+Now you know

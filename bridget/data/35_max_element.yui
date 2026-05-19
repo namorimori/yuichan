@@ -1,0 +1,12 @@
+Use the standard library
+This is how to max_element of l:
+   The answer is max of l
+Now you know
+>>> max_element of [1, 2, 3] 
+3
+>>> max_element of [5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10] 
+123
+>>> max_element of [1, 2, 3] 
+3
+>>> max_element of [5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10] 
+124

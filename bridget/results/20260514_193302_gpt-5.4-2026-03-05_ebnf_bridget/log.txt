@@ -1,0 +1,526 @@
+=== Bridget YuiEval (pass@1) ===
+Model:    gpt-5.4-2026-03-05  (openai)
+Template: context/bridget/ebnf_bridget.md
+Context:  ebnf_bridget.md
+Problems: 10
+
+[1/10] 0_has_close_elements
+
+============================================================
+[0_has_close_elements] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to has_close_elements of numbers and threshold:
+  Remember that i is 0
+  Do this numbers's length times:
+    Remember that j is sum of i and 1
+    Do this diff of numbers's length and sum of i and 1 times:
+      Remember that first is item i in numbers
+      Remember that second is item j in numbers
+      Remember that gap is abs of diff of first and second
+      When gap is less than threshold, then:
+        The answer is 1
+      End when
+      Increase j by 1
+    End do
+    Increase i by 1
+  End do
+  The answer is 0
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to has_close_elements of numbers and threshold:
+  Remember that i is 0
+  Do this numbers's length times:
+    Remember that j is sum of i and 1
+    Do this diff of numbers's length and sum of i and 1 times:
+      Remember that first is item i in numbers
+      Remember that second is item j in numbers
+      Remember that gap is abs of diff of first and second
+      When gap is less than threshold, then:
+        The answer is 1
+      End when
+      Increase j by 1
+    End do
+    Increase i by 1
+  End do
+  The answer is 0
+Now you know
+  Sample 1/1... ✓ (0.10s)
+--- Result: ✓ PASSED (0.10s) ---
+  Problem result: ✓ (1/1 passed) [3.24s]
+
+[2/10] 1_separate_paren_groups
+
+============================================================
+[1_separate_paren_groups] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to separate_paren_groups of paren_string:
+  Remember that groups is []
+  Remember that current is []
+  Remember that depth is 0
+  Remember that i is 0
+  Do this paren_string's length times:
+    Remember that ch is item i in paren_string
+    When ch is 32, then:
+      Do nothing
+    But, if not:
+      Add current to ch
+      When ch is 40, then:
+        Increase depth
+      But, if not:
+        Decrease depth
+      End when
+      When depth is 0, then:
+        Add groups to current
+        Remember that current is []
+      End when
+    End when
+    Increase i
+  End do
+  The answer is groups
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to separate_paren_groups of paren_string:
+  Remember that groups is []
+  Remember that current is []
+  Remember that depth is 0
+  Remember that i is 0
+  Do this paren_string's length times:
+    Remember that ch is item i in paren_string
+    When ch is 32, then:
+      Do nothing
+    But, if not:
+      Add current to ch
+      When ch is 40, then:
+        Increase depth
+      But, if not:
+        Decrease depth
+      End when
+      When depth is 0, then:
+        Add groups to current
+        Remember that current is []
+      End when
+    End when
+    Increase i
+  End do
+  The answer is groups
+Now you know
+  Sample 1/1... ✓ (0.09s)
+--- Result: ✓ PASSED (0.09s) ---
+  Problem result: ✓ (1/1 passed) [2.85s]
+
+[3/10] 2_truncate_number
+
+============================================================
+[2_truncate_number] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to truncate_number of number:
+  Remember that integer_part is toint of number
+  The answer is diff of number and integer_part
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to truncate_number of number:
+  Remember that integer_part is toint of number
+  The answer is diff of number and integer_part
+Now you know
+  Sample 1/1... ✓ (0.06s)
+--- Result: ✓ PASSED (0.06s) ---
+  Problem result: ✓ (1/1 passed) [1.77s]
+
+[4/10] 3_below_zero
+
+============================================================
+[3_below_zero] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to below_zero of operations:
+  Remember that balance is 0
+  Do this operations's length times:
+    Remember that balance is sum of balance and item balance in operations
+    When balance is less than 0, then:
+      The answer is 1
+    End when
+    Increase balance
+  End do
+  The answer is 0
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to below_zero of operations:
+  Remember that balance is 0
+  Do this operations's length times:
+    Remember that balance is sum of balance and item balance in operations
+    When balance is less than 0, then:
+      The answer is 1
+    End when
+    Increase balance
+  End do
+  The answer is 0
+Now you know
+  Sample 1/1... ✗ (0.08s)
+--- Result: ✗ FAILED (0.08s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] テストを失敗 🔍below_zero of [1, 2, -3, 1, 2, -3] ❌1 ✅0 line 15, column 1:
+| >>> below_zero of [1, 2, -3, 1, 2, -3] 
+| ^^^^^^^^^^^^^^^^
+  Problem result: ✗ (0/1 passed) [1.82s]
+
+[5/10] 4_mean_absolute_deviation
+
+============================================================
+[4_mean_absolute_deviation] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to mean_absolute_deviation of numbers:
+  Remember that total is 0.000000
+  Do this numbers's length times:
+    Remember that i is diff of numbers's length and numbers's length
+    Increase i by 1
+  End do
+  Remember that i is 0
+  Do this numbers's length times:
+    Remember that total is sum of total and item i in numbers
+    Increase i by 1
+  End do
+  Remember that mean is quotient of total and numbers's length
+  Remember that deviation_total is 0.000000
+  Remember that i is 0
+  Do this numbers's length times:
+    Remember that deviation_total is sum of deviation_total and abs of diff of item i in numbers and mean
+    Increase i by 1
+  End do
+  The answer is quotient of deviation_total and numbers's length
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to mean_absolute_deviation of numbers:
+  Remember that total is 0.000000
+  Do this numbers's length times:
+    Remember that i is diff of numbers's length and numbers's length
+    Increase i by 1
+  End do
+  Remember that i is 0
+  Do this numbers's length times:
+    Remember that total is sum of total and item i in numbers
+    Increase i by 1
+  End do
+  Remember that mean is quotient of total and numbers's length
+  Remember that deviation_total is 0.000000
+  Remember that i is 0
+  Do this numbers's length times:
+    Remember that deviation_total is sum of deviation_total and abs of diff of item i in numbers and mean
+    Increase i by 1
+  End do
+  The answer is quotient of deviation_total and numbers's length
+Now you know
+  Sample 1/1... ✓ (0.09s)
+--- Result: ✓ PASSED (0.09s) ---
+  Problem result: ✓ (1/1 passed) [3.47s]
+
+[6/10] 5_intersperse
+
+============================================================
+[5_intersperse] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to intersperse of numbers and delimeter:
+  When numbers's length is 0, then:
+    The answer is []
+  End when
+  Remember that result is []
+  Remember that index is 0
+  Do this numbers's length times:
+    Add result to item index in numbers
+    Increase index
+    When index is less than numbers's length, then:
+      Add result to delimeter
+    End when
+  End do
+  The answer is result
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to intersperse of numbers and delimeter:
+  When numbers's length is 0, then:
+    The answer is []
+  End when
+  Remember that result is []
+  Remember that index is 0
+  Do this numbers's length times:
+    Add result to item index in numbers
+    Increase index
+    When index is less than numbers's length, then:
+      Add result to delimeter
+    End when
+  End do
+  The answer is result
+Now you know
+  Sample 1/1... ✓ (0.08s)
+--- Result: ✓ PASSED (0.08s) ---
+  Problem result: ✓ (1/1 passed) [2.11s]
+
+[7/10] 6_parse_nested_parens
+
+============================================================
+[6_parse_nested_parens] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to parse_nested_parens of paren_string:
+  Remember that result is []
+  Remember that depth is 0
+  Remember that max_depth is 0
+
+  Do this paren_string's length times:
+    Remember that ch is item depth in paren_string
+
+    When ch is "(", then:
+      Increase depth
+      When depth is more than max_depth, then:
+        Remember that max_depth is depth
+      End when
+    End when
+
+    When ch is ")", then:
+      Decrease depth
+    End when
+
+    When ch is " ", then:
+      When max_depth is more than 0, then:
+        Add result to max_depth
+        Remember that max_depth is 0
+      End when
+    End when
+  End do
+
+  When max_depth is more than 0, then:
+    Add result to max_depth
+  End when
+
+  The answer is result
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to parse_nested_parens of paren_string:
+  Remember that result is []
+  Remember that depth is 0
+  Remember that max_depth is 0
+
+  Do this paren_string's length times:
+    Remember that ch is item depth in paren_string
+
+    When ch is "(", then:
+      Increase depth
+      When depth is more than max_depth, then:
+        Remember that max_depth is depth
+      End when
+    End when
+
+    When ch is ")", then:
+      Decrease depth
+    End when
+
+    When ch is " ", then:
+      When max_depth is more than 0, then:
+        Add result to max_depth
+        Remember that max_depth is 0
+      End when
+    End when
+  End do
+
+  When max_depth is more than 0, then:
+    Add result to max_depth
+  End when
+
+  The answer is result
+Now you know
+  Sample 1/1... ✗ (0.09s)
+--- Result: ✗ FAILED (0.09s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] テストを失敗 🔍parse_nested_parens of "(()()) ((())) () ((())()())" ❌[] ✅[2, 3, 1, 3] line 35, column 1:
+| >>> parse_nested_parens of "(()()) ((())) () ((())()())" 
+| ^^^^^^^^^^^^^^^^
+  Problem result: ✗ (0/1 passed) [3.08s]
+
+[8/10] 7_filter_by_substring
+
+============================================================
+[7_filter_by_substring] Sample 1/1
+============================================================
+--- Generated ---
+Use the standard library
+This is how to filter_by_substring of strings and substring:
+  Remember that result is []
+  Do this strings's length times:
+    Remember that i is diff of strings's length and strings's length
+    Increase i by 1
+    Remember that i is diff of i and 1
+    Remember that current is item i in strings
+    When substring is in current, then:
+      Add result to current
+    End when
+  End do
+  The answer is result
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to filter_by_substring of strings and substring:
+  Remember that result is []
+  Do this strings's length times:
+    Remember that i is diff of strings's length and strings's length
+    Increase i by 1
+    Remember that i is diff of i and 1
+    Remember that current is item i in strings
+    When substring is in current, then:
+      Add result to current
+    End when
+  End do
+  The answer is result
+Now you know
+  Sample 1/1... ✗ (0.10s)
+--- Result: ✗ FAILED (0.10s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] テストを失敗 🔍filter_by_substring of ["xxx", "asd", "xxy", "john doe", "xxxAAA", "xxx"] and "xxx" ❌[] ✅["xxx", "xxxAAA", "xxx"] line 17, column 1:
+| >>> filter_by_substring of ["xxx", "asd", "xxy", "john doe", "xxxAAA", "xxx"] and "xxx" 
+| ^^^^^^^^^^^^^^^^
+  Problem result: ✗ (0/1 passed) [2.30s]
+
+[9/10] 8_sum_product
+
+============================================================
+[8_sum_product] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to sum_product of numbers:
+  Remember that total is 0
+  Remember that prod is 1
+  Do this numbers's length times:
+    Remember that i is diff of numbers's length and numbers's length
+    Increase i
+    Remember that i is diff of i and 1
+    Remember that value is item i in numbers
+    Remember that total is sum of total and value
+    Remember that prod is product of prod and value
+  End do
+  The answer is [total, prod]
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to sum_product of numbers:
+  Remember that total is 0
+  Remember that prod is 1
+  Do this numbers's length times:
+    Remember that i is diff of numbers's length and numbers's length
+    Increase i
+    Remember that i is diff of i and 1
+    Remember that value is item i in numbers
+    Remember that total is sum of total and value
+    Remember that prod is product of prod and value
+  End do
+  The answer is [total, prod]
+Now you know
+  Sample 1/1... ✗ (0.09s)
+--- Result: ✗ FAILED (0.09s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] テストを失敗 🔍sum_product of [100, 0] ❌[200, 10000] ✅[100, 0] line 19, column 1:
+| >>> sum_product of [100, 0] 
+| ^^^^^^^^^^^^^^^^
+  Problem result: ✗ (0/1 passed) [2.95s]
+
+[10/10] 9_rolling_max
+
+============================================================
+[9_rolling_max] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to rolling_max of numbers:
+  When numbers's length is 0, then:
+    The answer is []
+  End when
+  Remember that result is []
+  Remember that current_max is item 0 in numbers
+  Add result to current_max
+  Do this diff of numbers's length and 1 times:
+    Remember that i is result's length
+    Remember that value is item i in numbers
+    When current_max is less than value, then:
+      Remember that current_max is value
+    End when
+    Add result to current_max
+  End do
+  The answer is result
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to rolling_max of numbers:
+  When numbers's length is 0, then:
+    The answer is []
+  End when
+  Remember that result is []
+  Remember that current_max is item 0 in numbers
+  Add result to current_max
+  Do this diff of numbers's length and 1 times:
+    Remember that i is result's length
+    Remember that value is item i in numbers
+    When current_max is less than value, then:
+      Remember that current_max is value
+    End when
+    Add result to current_max
+  End do
+  The answer is result
+Now you know
+  Sample 1/1... ✓ (0.09s)
+--- Result: ✓ PASSED (0.09s) ---
+  Problem result: ✓ (1/1 passed) [2.47s]
+
+============================================================
+評価結果サマリー
+============================================================
+Total:   10 問題
+Passed:  6 問題
+Failed:  4 問題
+pass@1: 60.00% (6/10)
+95% CI: [31.27%, 83.18%] (Wilson Score)
+
+失敗した問題:
+  - 3_below_zero
+  - 6_parse_nested_parens
+  - 7_filter_by_substring
+  - 8_sum_product
+
+生成コード: results_bridget/20260514_193302_gpt-5.4-2026-03-05_ebnf_bridget/generated
+詳細結果:   results_bridget/20260514_193302_gpt-5.4-2026-03-05_ebnf_bridget/result.jsonl
+サマリー:   results_bridget/20260514_193302_gpt-5.4-2026-03-05_ebnf_bridget/summary.json
+ログ:       results_bridget/20260514_193302_gpt-5.4-2026-03-05_ebnf_bridget/log.txt

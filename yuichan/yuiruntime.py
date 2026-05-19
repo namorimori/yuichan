@@ -9,7 +9,7 @@ from .yuiast import (
     NameNode, GetIndexNode, ArrayLenNode, MinusNode, BinaryNode, FuncAppNode,
     AssignmentNode, IncrementNode, DecrementNode, AppendNode,
     BlockNode, PassNode, PrintExpressionNode,
-    IfNode, BreakNode, RepeatNode, FuncDefNode, ReturnNode,
+    IfNode, BreakNode, RepeatNode, FuncDefNode, ReturnNode, ReturnNoneNode,
     AssertNode, CatchNode, ImportNode,
 )
 from .yuitypes import YuiValue, YuiError, types, IntType, NumberType
@@ -421,6 +421,9 @@ class YuiRuntime(object):
         else:
             value = None #何も返さない
         raise YuiReturnException(value, node)
+
+    def visitReturnNoneNode(self, node: ReturnNoneNode):
+        raise YuiReturnException(YuiValue.NullValue, node)
 
     def visitFuncDefNode(self, node: FuncDefNode):
         """LocalFunction を登録することで、関数本体も visitor チェーンで評価される"""

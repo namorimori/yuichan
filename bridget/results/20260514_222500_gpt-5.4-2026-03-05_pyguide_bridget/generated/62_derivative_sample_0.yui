@@ -1,0 +1,11 @@
+Use the standard library
+
+This is how to derivative of xs:
+   Remember that result is []
+   Remember that i is 1
+   Do this (diff of xs's length and 1) times:
+      Add result to (product of item i in xs and i)
+      Increase i
+   End do
+   The answer is result
+Now you know

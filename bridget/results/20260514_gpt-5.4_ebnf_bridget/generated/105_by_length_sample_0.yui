@@ -1,0 +1,14 @@
+Use the standard library
+This is how to by_length of arr:
+  When arr's length is 0, then:
+    The answer is []
+  End when
+  Remember that out is []
+  Do this arr's length times:
+    Remember that x is item 0 in arr
+    Remember that chars is toarray of tostring of x
+    Add out to chars
+    Remember that arr is item 1 in arr
+  End do
+  The answer is out
+Now you know

@@ -1,0 +1,12 @@
+>>> numerical_letter_grade([4.000000, 3, 1.700000, 2, 3.500000]) 
+["A+", "B", "C-", "C", "A-"]
+>>> numerical_letter_grade([1.200000]) 
+["D+"]
+>>> numerical_letter_grade([0.500000]) 
+["D-"]
+>>> numerical_letter_grade([0.000000]) 
+["E"]
+>>> numerical_letter_grade([1, 0.300000, 1.500000, 2.800000, 3.300000]) 
+["D", "D-", "C-", "B", "B+"]
+>>> numerical_letter_grade([0, 0.700000]) 
+["E", "D-"]

@@ -1,0 +1,19 @@
+Use the standard library
+This is how to total_match of lst1 and lst2:
+   Remember that total1 is 0
+   Remember that i is 0
+   Do this lst1's length times:
+      Remember that total1 is sum of total1 and (item i in lst1's length)
+      Increase i
+   End do
+   Remember that total2 is 0
+   Remember that j is 0
+   Do this lst2's length times:
+      Remember that total2 is sum of total2 and (item j in lst2's length)
+      Increase j
+   End do
+   When total1 is at most total2, then:
+      The answer is lst1
+   End when
+   The answer is lst2
+Now you know

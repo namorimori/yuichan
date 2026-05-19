@@ -1,0 +1,12 @@
+Nav rem vaz
+Dum add(x, y):
+   Dup vem 和(x, y)
+Pam dum
+>>> add(2, 3) 
+5
+>>> add(5, 7) 
+12
+>>> add(0, 1) 
+1
+>>> add(1, 0) 
+1

@@ -1,0 +1,19 @@
+Use the standard library
+This is how to is_palindrome of text:
+  When text's length is 0, then:
+    The answer is 1
+  End when
+  Remember that left is 0
+  Remember that right is diff of text's length and 1
+  Do this text's length times:
+    When item left in text is not item right in text, then:
+      The answer is 0
+    End when
+    Increase left
+    Decrease right
+    When left is at most right, then:
+      Leave the loop
+    End when
+  End do
+  The answer is 1
+Now you know

@@ -1,0 +1,21 @@
+Use the standard library
+This is how to smallest_change of arr:
+   Remember that n is arr's length
+   Remember that half is quotient of n and 2
+   Remember that count is 0
+   Remember that i is 0
+   Do this half times:
+      Remember that j is diff of (diff of n and 1) and i
+      When item i in arr is not item j in arr, then:
+         Increase count
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know
+>>> smallest_change of [1, 2, 3, 5, 4, 7, 9, 6] 
+4
+>>> smallest_change of [1, 2, 3, 4, 3, 2, 2] 
+1
+>>> smallest_change of [1, 2, 3, 2, 1] 
+0

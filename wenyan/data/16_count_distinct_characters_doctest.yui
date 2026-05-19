@@ -1,0 +1,10 @@
+>>> 施異字數於「」
+0
+>>> 施異字數於「abcde」
+5
+>>> 施異字數於「abcdecadeCADE」
+5
+>>> 施異字數於「aaaaAAAAaaaa」
+1
+>>> 施異字數於「Jerry jERRY JeRRRY」
+5

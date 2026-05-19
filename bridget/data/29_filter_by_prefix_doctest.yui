@@ -1,0 +1,4 @@
+>>> filter_by_prefix of [] and "john" 
+[]
+>>> filter_by_prefix of ["xxx", "asd", "xxy", "john doe", "xxxAAA", "xxx"] and "xxx" 
+["xxx", "xxxAAA", "xxx"]

@@ -1,0 +1,73 @@
+Nav rem vaz
+Dum vowels_count(s):
+   Kem length par s @kez
+   Kem count par 0
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par s[i]
+      Kem is_vowel par 0
+      Nev char paz 97 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev char paz 101 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev char paz 105 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev char paz 111 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev char paz 117 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev char paz 65 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev char paz 69 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev char paz 73 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev char paz 79 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev char paz 85 ger:
+         Kem is_vowel par 1
+      Dam nev
+      Nev is_vowel paz 1 ger:
+         Rav count
+      Dam nev
+      Rav i
+   Dam mup
+   Nev length pep 0 ger:
+      Kem last_idx par 差(length, 1)
+      Kem last_char par s[last_idx]
+      Nev last_char paz 121 ger:
+         Rav count
+      Dam nev
+      Nev last_char paz 89 ger:
+         Rav count
+      Dam nev
+   Dam nev
+   Dup vem count
+Pam dum
+>>> vowels_count([97, 98, 99, 100, 101]) 
+2
+>>> vowels_count([65, 67, 69, 68, 89]) 
+3
+>>> vowels_count("abcde") 
+2
+>>> vowels_count("Alone") 
+3
+>>> vowels_count("key") 
+2
+>>> vowels_count("bye") 
+1
+>>> vowels_count("keY") 
+2
+>>> vowels_count("bYe") 
+1
+>>> vowels_count("ACEDY") 
+3

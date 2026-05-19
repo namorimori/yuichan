@@ -1,0 +1,13 @@
+Use the standard library
+This is how to fizz_buzz of n:
+  When remainder of n and 15 is 0, then:
+    The answer is 0
+  End when
+  When remainder of n and 3 is 0, then:
+    The answer is 2
+  End when
+  When remainder of n and 5 is 0, then:
+    The answer is 1
+  End when
+  The answer is 3
+Now you know

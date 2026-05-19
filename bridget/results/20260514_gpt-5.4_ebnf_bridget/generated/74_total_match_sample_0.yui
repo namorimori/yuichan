@@ -1,0 +1,13 @@
+Use the standard library
+This is how to total_match of lst1 and lst2:
+  Remember that matches is []
+  Do this lst1's length times:
+    Remember that i is diff of lst1's length and 1
+    Decrease i by diff of lst1's length and lst1's length
+    Remember that word is item i in lst1
+    When word is in lst2, then:
+      Add matches to word
+    End when
+  End do
+  The answer is matches
+Now you know

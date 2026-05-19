@@ -1,0 +1,71 @@
+Use the standard library
+This is how to check_if_last_char_is_a_letter of txt:
+   Remember that length is txt's length
+   Remember that result is 0
+   When length is 0, then:
+      The answer is result
+   End when
+   Remember that words is []
+   Remember that current_word is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in txt
+      When char is 32, then:
+         Add words to current_word
+         Remember that current_word is []
+      But, if not:
+         Add current_word to char
+      End when
+      Increase i
+   End do
+   Add words to current_word
+   Remember that num_words is words's length
+   Remember that last_idx is diff of num_words and 1
+   Remember that last_word is item last_idx in words
+   Remember that last_word_len is last_word's length
+   When last_word_len is 1, then:
+      Remember that char is item 0 in last_word
+      Remember that is_letter is 0
+      When char is more than 64, then:
+         When char is less than 91, then:
+            Remember that is_letter is 1
+         End when
+      End when
+      When char is more than 96, then:
+         When char is less than 123, then:
+            Remember that is_letter is 1
+         End when
+      End when
+      Remember that result is is_letter
+   End when
+   The answer is result
+Now you know
+>>> check_if_last_char_is_a_letter of [97, 112, 112, 108, 101, 32, 112, 105, 101] 
+0
+>>> check_if_last_char_is_a_letter of [97, 112, 112, 108, 101, 32, 112, 105, 32, 101] 
+1
+>>> check_if_last_char_is_a_letter of [97, 112, 112, 108, 101, 32, 112, 105, 32, 101, 32] 
+0
+>>> check_if_last_char_is_a_letter of [] 
+0
+>>> check_if_last_char_is_a_letter of "apple" 
+0
+>>> check_if_last_char_is_a_letter of "apple pi e" 
+1
+>>> check_if_last_char_is_a_letter of "eeeee" 
+0
+>>> check_if_last_char_is_a_letter of "A" 
+1
+>>> check_if_last_char_is_a_letter of "Pumpkin pie " 
+0
+>>> check_if_last_char_is_a_letter of "Pumpkin pie 1" 
+0
+>>> check_if_last_char_is_a_letter of "" 
+0
+>>> check_if_last_char_is_a_letter of "eeeee e " 
+0
+>>> check_if_last_char_is_a_letter of "apple pie" 
+0
+>>> check_if_last_char_is_a_letter of "apple pi e " 
+0
+Now, 1

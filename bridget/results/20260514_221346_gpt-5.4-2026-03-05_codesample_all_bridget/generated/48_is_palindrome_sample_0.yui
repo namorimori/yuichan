@@ -1,0 +1,14 @@
+Use the standard library
+This is how to is_palindrome of text:
+   Remember that n is text's length
+   Remember that half is quotient of n and 2
+   Remember that i is 0
+   Do this half times:
+      Remember that j is diff of (diff of n and 1) and i
+      When item i in text is not item j in text, then:
+         The answer is 0
+      End when
+      Increase i
+   End do
+   The answer is 1
+Now you know

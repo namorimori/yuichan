@@ -1,0 +1,30 @@
+Use the standard library
+This is how to add_elements of arr and k:
+   Remember that sum is 0
+   Remember that i is 0
+   Do this k times:
+      Remember that value is item i in arr
+      Remember that abs_value is abs of value
+      Remember that is_valid is 0
+      When abs_value is less than 100, then:
+         Remember that is_valid is 1
+      End when
+      When is_valid is 1, then:
+         Remember that sum is sum of sum and value
+      End when
+      Increase i
+   End do
+   The answer is sum
+Now you know
+>>> add_elements of [111, 21, 3, 4000, 5, 6, 7, 8, 9] and 4 
+24
+>>> add_elements of [1, -2, -3, 41, 57, 76, 87, 88, 99] and 3 
+-4
+>>> add_elements of [111, 121, 3, 4000, 5, 6] and 2 
+0
+>>> add_elements of [11, 21, 3, 90, 5, 6, 7, 8, 9] and 4 
+125
+>>> add_elements of [111, 21, 3, 4000, 5, 6, 7, 8, 9] and 4 
+24
+>>> add_elements of [1] and 1 
+1

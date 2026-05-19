@@ -1,0 +1,53 @@
+Use the standard library
+This is how to change_base of x and base:
+   Remember that digits is []
+   Remember that temp is x
+   Do this 100 times:
+      When temp is more than 0, then:
+         Remember that remainder is remainder of temp and base
+         Add digits to remainder
+         Remember that temp is quotient of temp and base
+      End when
+   End do
+   Remember that length is digits's length
+   Remember that result is []
+   Remember that i is 0
+   Do this length times:
+      Remember that idx is diff of (diff of length and i) and 1
+      Remember that digit is item idx in digits
+      Remember that char_code is sum of 48 and digit
+      Add result to char_code
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> change_base of 8 and 3 
+"22"
+>>> change_base of 8 and 2 
+"1000"
+>>> change_base of 7 and 2 
+"111"
+>>> change_base of 8 and 3 
+"22"
+>>> change_base of 9 and 3 
+"100"
+>>> change_base of 234 and 2 
+"11101010"
+>>> change_base of 16 and 2 
+"10000"
+>>> change_base of 8 and 2 
+"1000"
+>>> change_base of 7 and 2 
+"111"
+>>> change_base of 2 and 3 
+"2"
+>>> change_base of 3 and 4 
+"3"
+>>> change_base of 4 and 5 
+"4"
+>>> change_base of 5 and 6 
+"5"
+>>> change_base of 6 and 7 
+"6"
+>>> change_base of 7 and 8 
+"7"

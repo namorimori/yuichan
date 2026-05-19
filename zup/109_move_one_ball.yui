@@ -1,0 +1,48 @@
+Nav rem vaz
+Dum move_one_ball(arr):
+   Kem length par arr @kez
+   Kem result par 1
+   Nev length paz 0 ger:
+      Dup vem result
+   Dam nev
+   Kem min_val par arr[0]
+   Kem min_idx par 0
+   Kem i par 0
+   Mup dum length pag:
+      Nev arr[i] dup min_val ger:
+         Kem min_val par arr[i]
+         Kem min_idx par i
+      Dam nev
+      Rav i
+   Dam mup
+   Kem rotated par []
+   Kem i par min_idx
+   Mup dum length pag:
+      Kem idx par 剰余(i, length)
+      Mev rotated naz arr[idx]
+      Rav i
+   Dam mup
+   Kem i par 1
+   Mup dum 差(length, 1) pag:
+      Kem prev par 差(i, 1)
+      Nev rotated[prev] pep rotated[i] ger:
+         Kem result par 0
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> move_one_ball([3, 4, 5, 1, 2]) 
+1
+>>> move_one_ball([3, 5, 4, 1, 2]) 
+0
+>>> move_one_ball([3, 4, 5, 1, 2]) 
+1
+>>> move_one_ball([3, 5, 10, 1, 2]) 
+1
+>>> move_one_ball([4, 3, 1, 2]) 
+0
+>>> move_one_ball([3, 5, 4, 1, 2]) 
+0
+>>> move_one_ball([]) 
+1

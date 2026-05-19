@@ -1,0 +1,14 @@
+>>> exchange of [1, 2, 3, 4] and [1, 2, 3, 4] 
+"YES"
+>>> exchange of [1, 2, 3, 4] and [1, 5, 3, 4] 
+"NO"
+>>> exchange of [1, 2, 3, 4] and [2, 1, 4, 3] 
+"YES"
+>>> exchange of [5, 7, 3] and [2, 6, 4] 
+"YES"
+>>> exchange of [5, 7, 3] and [2, 6, 3] 
+"NO"
+>>> exchange of [3, 2, 6, 1, 8, 9] and [3, 5, 5, 1, 1, 1] 
+"NO"
+>>> exchange of [100, 200] and [200, 200] 
+"YES"

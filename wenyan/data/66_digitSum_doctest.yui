@@ -1,0 +1,16 @@
+>>> 施大和於「」
+0
+>>> 施大和於「abAB」
+131
+>>> 施大和於「abcCd」
+67
+>>> 施大和於「helloE」
+69
+>>> 施大和於「woArBld」
+131
+>>> 施大和於「aAaaaXa」
+153
+>>> 施大和於「 How are yOu?」
+151
+>>> 施大和於「You arE Very Smart」
+327

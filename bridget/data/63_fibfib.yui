@@ -1,0 +1,40 @@
+Use the standard library
+This is how to fibfib of n:
+   When n is 0, then:
+      The answer is 0
+   End when
+   When n is 1, then:
+      The answer is 0
+   End when
+   When n is 2, then:
+      The answer is 1
+   But, if not:
+      Remember that n1 is diff of n and 1
+      Remember that n2 is diff of n and 2
+      Remember that n3 is diff of n and 3
+      Remember that fibfib1 is fibfib of n1
+      Remember that fibfib2 is fibfib of n2
+      Remember that fibfib3 is fibfib of n3
+      The answer is sum of fibfib1 and fibfib2 and fibfib3
+   End when
+Now you know
+>>> fibfib of 1 
+0
+>>> fibfib of 5 
+4
+>>> fibfib of 8 
+24
+>>> fibfib of 2 
+1
+>>> fibfib of 1 
+0
+>>> fibfib of 5 
+4
+>>> fibfib of 8 
+24
+>>> fibfib of 10 
+81
+>>> fibfib of 12 
+274
+>>> fibfib of 14 
+927

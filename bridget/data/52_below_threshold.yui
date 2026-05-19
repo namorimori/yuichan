@@ -1,0 +1,29 @@
+This is how to below_threshold of l and t:
+   Remember that length is l's length
+   Remember that i is 0
+   Remember that result is 1
+   Do this length times:
+      Remember that value is item i in l
+      When value is at most t, then:
+         Remember that result is 0
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> below_threshold of [1, 2, 4, 10] and 100 
+1
+>>> below_threshold of [1, 20, 4, 10] and 5 
+0
+>>> below_threshold of [1, 2, 4, 10] and 100 
+1
+>>> below_threshold of [1, 20, 4, 10] and 5 
+0
+>>> below_threshold of [1, 20, 4, 10] and 21 
+1
+>>> below_threshold of [1, 20, 4, 10] and 22 
+1
+>>> below_threshold of [1, 8, 4, 10] and 11 
+1
+>>> below_threshold of [1, 8, 4, 10] and 10 
+0

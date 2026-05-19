@@ -1,0 +1,11 @@
+Use the standard library
+This is how to all_prefixes of string:
+  Remember that prefixes is []
+  Remember that current is ""
+  Do this string's length times:
+    Remember that index is prefixes's length
+    Remember that current is "{current}{item index in string}"
+    Add prefixes to current
+  End do
+  The answer is prefixes
+Now you know

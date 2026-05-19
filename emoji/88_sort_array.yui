@@ -1,0 +1,63 @@
+🗝️ 📚
+🧩 sort_array(array) 👉
+   length ⬅️ 📐 array
+   ❓ length ⚖️ 0 👉
+      ✅ []
+   🔚
+   result ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      result 🧲 array[i]
+      i ⬆️
+   🔚
+   last_idx ⬅️ 差(length, 1)
+   sum_val ⬅️ 和(array[0], array[last_idx])
+   rem ⬅️ 剰余(sum_val, 2)
+   ❓ rem ⚖️ 0 👉
+      n ⬅️ length
+      i ⬅️ 0
+      🌀 n 👉
+         j ⬅️ 0
+         limit ⬅️ 差(差(n, i), 1)
+         🌀 limit 👉
+            j_next ⬅️ 和(j, 1)
+            ❓ result[j] 📈 result[j_next] 👉
+               temp ⬅️ result[j]
+               result[j] ⬅️ result[j_next]
+               result[j_next] ⬅️ temp
+            🔚
+            j ⬆️
+         🔚
+         i ⬆️
+      🔚
+   🔚
+   ❗ 👉
+      n ⬅️ length
+      i ⬅️ 0
+      🌀 n 👉
+         j ⬅️ 0
+         limit ⬅️ 差(差(n, i), 1)
+         🌀 limit 👉
+            j_next ⬅️ 和(j, 1)
+            ❓ result[j] 📉 result[j_next] 👉
+               temp ⬅️ result[j]
+               result[j] ⬅️ result[j_next]
+               result[j_next] ⬅️ temp
+            🔚
+            j ⬆️
+         🔚
+         i ⬆️
+      🔚
+   🔚
+   ✅ result
+🔚
+>>> sort_array([]) 
+[]
+>>> sort_array([5]) 
+[5]
+>>> sort_array([2, 4, 3, 0, 1, 5]) 
+[0, 1, 2, 3, 4, 5]
+>>> sort_array([2, 4, 3, 0, 1, 5, 6]) 
+[6, 5, 4, 3, 2, 1, 0]
+>>> sort_array([2, 1]) 
+[1, 2]

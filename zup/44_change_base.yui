@@ -1,0 +1,53 @@
+Nav rem vaz
+Dum change_base(x, base):
+   Kem digits par []
+   Kem temp par x
+   Mup dum 100 pag:
+      Nev temp pep 0 ger:
+         Kem remainder par 剰余(temp, base)
+         Mev digits naz remainder
+         Kem temp par 商(temp, base)
+      Dam nev
+   Dam mup
+   Kem length par digits @kez
+   Kem result par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem idx par 差(差(length, i), 1)
+      Kem digit par digits[idx]
+      Kem char_code par 和(48, digit)
+      Mev result naz char_code
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> change_base(8, 3) 
+"22"
+>>> change_base(8, 2) 
+"1000"
+>>> change_base(7, 2) 
+"111"
+>>> change_base(8, 3) 
+"22"
+>>> change_base(9, 3) 
+"100"
+>>> change_base(234, 2) 
+"11101010"
+>>> change_base(16, 2) 
+"10000"
+>>> change_base(8, 2) 
+"1000"
+>>> change_base(7, 2) 
+"111"
+>>> change_base(2, 3) 
+"2"
+>>> change_base(3, 4) 
+"3"
+>>> change_base(4, 5) 
+"4"
+>>> change_base(5, 6) 
+"5"
+>>> change_base(6, 7) 
+"6"
+>>> change_base(7, 8) 
+"7"

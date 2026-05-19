@@ -1,0 +1,10 @@
+>>> largest_prime_factor of 15 
+5
+>>> largest_prime_factor of 27 
+3
+>>> largest_prime_factor of 63 
+7
+>>> largest_prime_factor of 330 
+11
+>>> largest_prime_factor of 13195 
+29

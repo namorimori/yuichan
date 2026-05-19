@@ -1,0 +1,13 @@
+Use the standard library
+This is how to hex_key of num:
+   Remember that count is 0
+   Remember that i is 0
+   Do this num's length times:
+      Remember that ch is item i in num
+      When ch is in "ABCDEF", then:
+         Increase count
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know

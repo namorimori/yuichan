@@ -1,0 +1,64 @@
+Nav rem vaz
+Dum prime_length(string):
+   Kem length par string @kez
+   Kem result par 1
+   Nev length paz 0 ger:
+      Kem result par 0
+   Dam nev
+   Nev length paz 1 ger:
+      Kem result par 0
+   Dam nev
+   Nev length pev 2 ger:
+      Kem i par 2
+      Mup dum 1000 pag:
+         Nev i dup length ger:
+            Kem remainder par 剰余(length, i)
+            Nev remainder paz 0 ger:
+               Kem result par 0
+            Dam nev
+            Rav i
+         Dam nev
+      Dam mup
+   Dam nev
+   Dup vem result
+Pam dum
+>>> prime_length([72, 101, 108, 108, 111]) 
+1
+>>> prime_length([97, 98, 99, 100, 99, 98, 97]) 
+1
+>>> prime_length([107, 105, 116, 116, 101, 110, 115]) 
+1
+>>> prime_length([111, 114, 97, 110, 103, 101]) 
+0
+>>> prime_length("Hello") 
+1
+>>> prime_length("abcdcba") 
+1
+>>> prime_length("kittens") 
+1
+>>> prime_length("orange") 
+0
+>>> prime_length("wow") 
+1
+>>> prime_length("world") 
+1
+>>> prime_length("MadaM") 
+1
+>>> prime_length("Wow") 
+1
+>>> prime_length("") 
+0
+>>> prime_length("HI") 
+1
+>>> prime_length("go") 
+1
+>>> prime_length("gogo") 
+0
+>>> prime_length("aaaaaaaaaaaaaaa") 
+0
+>>> prime_length("Madam") 
+1
+>>> prime_length("M") 
+0
+>>> prime_length("0") 
+0

@@ -1,0 +1,52 @@
+Nav rem vaz
+Dum any_int(x, y, z):
+   Kem 結果 par 0
+   Kem x_int par 整数判定(x)
+   Kem y_int par 整数判定(y)
+   Kem z_int par 整数判定(z)
+   Nev x_int paz vak ger:
+      Nev y_int paz vak ger:
+         Nev z_int paz vak ger:
+            Kem 和xy par 和(x, y)
+            Nev 和xy paz z ger:
+               Kem 結果 par 1
+            Dam nev
+            Kem 和xz par 和(x, z)
+            Nev 和xz paz y ger:
+               Kem 結果 par 1
+            Dam nev
+            Kem 和yz par 和(y, z)
+            Nev 和yz paz x ger:
+               Kem 結果 par 1
+            Dam nev
+         Dam nev
+      Dam nev
+   Dam nev
+   Dup vem 結果
+Pam dum
+>>> any_int(5, 2, 7) 
+1
+>>> any_int(3, 2, 2) 
+0
+>>> any_int(3, -2, 1) 
+1
+>>> any_int(2, 3, 1) 
+1
+>>> any_int(2.500000, 2, 3) 
+0
+>>> any_int(1.500000, 5, 3.500000) 
+0
+>>> any_int(2, 6, 2) 
+0
+>>> any_int(4, 2, 2) 
+1
+>>> any_int(2.200000, 2.200000, 2.200000) 
+0
+>>> any_int(-4, 6, 2) 
+1
+>>> any_int(2, 1, 1) 
+1
+>>> any_int(3, 4, 7) 
+1
+>>> any_int(3.000000, 4, 7) 
+0

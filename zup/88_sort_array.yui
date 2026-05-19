@@ -1,0 +1,62 @@
+Nav rem vaz
+Dum sort_array(array):
+   Kem length par array @kez
+   Nev length paz 0 ger:
+      Dup vem []
+   Dam nev
+   Kem result par []
+   Kem i par 0
+   Mup dum length pag:
+      Mev result naz array[i]
+      Rav i
+   Dam mup
+   Kem last_idx par 差(length, 1)
+   Kem sum_val par 和(array[0], array[last_idx])
+   Kem rem par 剰余(sum_val, 2)
+   Nev rem paz 0 ger:
+      Kem n par length
+      Kem i par 0
+      Mup dum n pag:
+         Kem j par 0
+         Kem limit par 差(差(n, i), 1)
+         Mup dum limit pag:
+            Kem j_next par 和(j, 1)
+            Nev result[j] dup result[j_next] ger:
+               Kem temp par result[j]
+               Kem result[j] par result[j_next]
+               Kem result[j_next] par temp
+            Dam nev
+            Rav j
+         Dam mup
+         Rav i
+      Dam mup
+   Zum:
+      Kem n par length
+      Kem i par 0
+      Mup dum n pag:
+         Kem j par 0
+         Kem limit par 差(差(n, i), 1)
+         Mup dum limit pag:
+            Kem j_next par 和(j, 1)
+            Nev result[j] pep result[j_next] ger:
+               Kem temp par result[j]
+               Kem result[j] par result[j_next]
+               Kem result[j_next] par temp
+            Dam nev
+            Rav j
+         Dam mup
+         Rav i
+      Dam mup
+   Dam nev
+   Dup vem result
+Pam dum
+>>> sort_array([]) 
+[]
+>>> sort_array([5]) 
+[5]
+>>> sort_array([2, 4, 3, 0, 1, 5]) 
+[0, 1, 2, 3, 4, 5]
+>>> sort_array([2, 4, 3, 0, 1, 5, 6]) 
+[6, 5, 4, 3, 2, 1, 0]
+>>> sort_array([2, 1]) 
+[1, 2]

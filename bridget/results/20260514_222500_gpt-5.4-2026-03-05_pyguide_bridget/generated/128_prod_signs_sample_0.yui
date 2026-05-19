@@ -1,0 +1,31 @@
+Use the standard library
+This is how to prod_signs of arr:
+   When arr's length is 0, then:
+      The answer is []
+   End when
+
+   Remember that negatives is 0
+   Remember that zeros is 0
+   Remember that i is 0
+
+   Do this arr's length times:
+      When item i in arr is 0, then:
+         Increase zeros
+      But, if not:
+         When item i in arr is less than 0, then:
+            Increase negatives
+         End when
+      End when
+      Increase i
+   End do
+
+   When zeros is more than 0, then:
+      The answer is [0]
+   End when
+
+   When remainder of negatives and 2 is 0, then:
+      The answer is [9]
+   But, if not:
+      The answer is [-9]
+   End when
+Now you know

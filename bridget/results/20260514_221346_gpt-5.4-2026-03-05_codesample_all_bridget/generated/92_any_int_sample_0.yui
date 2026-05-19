@@ -1,0 +1,14 @@
+Use the standard library
+This is how to any_int of x and y and z:
+   When x is less than y, then:
+      When y is less than z, then:
+         The answer is 1
+      End when
+   End when
+   When x is more than y, then:
+      When y is more than z, then:
+         The answer is 1
+      End when
+   End when
+   The answer is 0
+Now you know

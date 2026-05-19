@@ -1,0 +1,27 @@
+{
+  "model": "gpt-5.4-2026-03-05",
+  "template": "templates/full_context.md",
+  "context": "none",
+  "temperature": 0.2,
+  "k": 1,
+  "total_problems": 4,
+  "passed_problems": 0,
+  "failed_problems": 4,
+  "pass_at_k": 0.0,
+  "confidence_interval_95": {
+    "lower": 0.0,
+    "upper": 48.99,
+    "method": "Wilson Score"
+  },
+  "excluded_problem_ids": [
+    19,
+    39,
+    84,
+    118,
+    149,
+    162
+  ],
+  "timestamp": "20260515_122317",
+  "total_samples": 4,
+  "passed_samples": 0
+}

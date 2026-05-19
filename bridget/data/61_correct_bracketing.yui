@@ -1,0 +1,55 @@
+Use the standard library
+This is how to correct_bracketing of brackets:
+   Remember that depth is 0
+   Remember that length is brackets's length
+   Remember that i is 0
+   Remember that result is 1
+   Do this length times:
+      Remember that char is item i in brackets
+      When char is 40, then:
+         Increase depth
+      But, if not:
+         Decrease depth
+      End when
+      When depth is less than 0, then:
+         Remember that result is 0
+      End when
+      Increase i
+   End do
+   When depth is not 0, then:
+      Remember that result is 0
+   End when
+   The answer is result
+Now you know
+>>> correct_bracketing of "(" 
+0
+>>> correct_bracketing of "()" 
+1
+>>> correct_bracketing of "(()())" 
+1
+>>> correct_bracketing of ")(()" 
+0
+>>> correct_bracketing of "()" 
+1
+>>> correct_bracketing of "(()())" 
+1
+>>> correct_bracketing of "()()(()())()" 
+1
+>>> correct_bracketing of "()()((()()())())(()()(()))" 
+1
+>>> correct_bracketing of "((()())))" 
+0
+>>> correct_bracketing of ")(()" 
+0
+>>> correct_bracketing of "(" 
+0
+>>> correct_bracketing of "((((" 
+0
+>>> correct_bracketing of ")" 
+0
+>>> correct_bracketing of "(()" 
+0
+>>> correct_bracketing of "()()(()())())(()" 
+0
+>>> correct_bracketing of "()()(()())()))()" 
+0

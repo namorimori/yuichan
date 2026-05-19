@@ -1,0 +1,17 @@
+Use the standard library
+This is how to decode_cyclic of s:
+   Remember that n is s's length
+   When n is 0, then:
+      The answer is []
+   End when
+   Remember that result is []
+   Remember that i is 1
+   Do this diff of n and 1 times:
+      Add result to item i in s
+      Increase i
+   End do
+   Add result to item 0 in s
+   The answer is result
+Now you know
+>>> decode_cyclic of [98, 99, 97] 
+[97, 98, 99]

@@ -1,0 +1,13 @@
+Use the standard library
+This is how to derivative of xs:
+   Remember that result is []
+   Remember that n is xs's length
+   Remember that i is 1
+   Do this diff of n and 1 times:
+      Remember that x is item i in xs
+      Remember that y is product of x and i
+      Add result to y
+      Increase i
+   End do
+   The answer is result
+Now you know

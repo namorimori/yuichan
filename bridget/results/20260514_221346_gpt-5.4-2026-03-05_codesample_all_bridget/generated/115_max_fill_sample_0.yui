@@ -1,0 +1,31 @@
+Use the standard library
+This is how to max_fill of grid and capacity:
+   Remember that total is 0
+   Remember that rows is grid's length
+   Remember that i is 0
+   Do this rows times:
+      Remember that row is item i in grid
+      Remember that filled is 0
+      Remember that cols is row's length
+      Remember that j is 0
+      Do this cols times:
+         When item j in row is 1, then:
+            Increase filled
+         End when
+         Increase j
+      End do
+      Remember that trips is quotient of filled and capacity
+      When remainder of filled and capacity is not 0, then:
+         Increase trips
+      End when
+      Remember that total is sum of total and trips
+      Increase i
+   End do
+   The answer is total
+Now you know
+>>> max_fill of [[0, 0, 1, 0], [0, 1, 0, 0], [1, 1, 1, 1]] and 1
+6
+>>> max_fill of [[0, 0, 1, 1], [0, 0, 0, 0], [1, 1, 1, 1], [0, 1, 1, 1]] and 2
+5
+>>> max_fill of [[0, 0, 0], [0, 0, 0]] and 5
+0

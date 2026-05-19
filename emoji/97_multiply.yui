@@ -1,0 +1,32 @@
+🗝️ 📚
+🧩 multiply(a, b) 👉
+   a下1桁 ⬅️ 剰余(a, 10)
+   b下1桁 ⬅️ 剰余(b, 10)
+   a絶対値 ⬅️ 絶対値(a下1桁)
+   b絶対値 ⬅️ 絶対値(b下1桁)
+   ✅ 積(a絶対値, b絶対値)
+🔚
+>>> multiply(148, 412) 
+16
+>>> multiply(19, 28) 
+72
+>>> multiply(2020, 1851) 
+0
+>>> multiply(14, -15) 
+20
+>>> multiply(148, 412) 
+16
+>>> multiply(19, 28) 
+72
+>>> multiply(2020, 1851) 
+0
+>>> multiply(14, -15) 
+20
+>>> multiply(76, 67) 
+42
+>>> multiply(17, 27) 
+49
+>>> multiply(0, 1) 
+0
+>>> multiply(0, 0) 
+0

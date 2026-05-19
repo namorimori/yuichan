@@ -1,0 +1,29 @@
+Use the standard library
+This is how to find_closest_elements of numbers:
+   Remember that best_a is item 0 in numbers
+   Remember that best_b is item 1 in numbers
+   Remember that best_diff is abs of (diff of best_a and best_b)
+
+   Remember that i is 0
+   Do this numbers's length times:
+      Remember that a is item i in numbers
+      Remember that j is sum of i and 1
+
+      Do this numbers's length times:
+         When j is at least (diff of numbers's length and 1), then:
+            Remember that b is item j in numbers
+            Remember that d is abs of (diff of a and b)
+            When d is less than best_diff, then:
+               Remember that best_diff is d
+               Remember that best_a is a
+               Remember that best_b is b
+            End when
+         End when
+         Increase j
+      End do
+
+      Increase i
+   End do
+
+   The answer is [best_a, best_b]
+Now you know

@@ -1,0 +1,12 @@
+>>> 施厭否判於「Hello world」
+0
+>>> 施厭否判於「Is the sky blue?」
+0
+>>> 施厭否判於「I love It !」
+1
+>>> 施厭否判於「bIt」
+0
+>>> 施厭否判於「I feel good today. I will be productive. will kill It」
+2
+>>> 施厭否判於「You and I are going for a walk」
+0

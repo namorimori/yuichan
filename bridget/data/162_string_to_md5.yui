@@ -1,0 +1,267 @@
+Use the standard library
+This is how to string_to_md5 of text:
+   Remember that text_len is text's length
+   When text_len is 0, then:
+      Remember that result is []
+      The answer is result
+   End when
+   Remember that K is [
+      3614090360,
+      3905402710,
+      606105819,
+      3250441966,
+      4118548399,
+      1200080426,
+      2821735955,
+      4249261313,
+      1770035416,
+      2336552879,
+      4294925233,
+      2304563134,
+      1804603682,
+      4254626195,
+      2792965006,
+      1236535329,
+      4129170786,
+      3225465664,
+      643717713,
+      3921069994,
+      3593408605,
+      38016083,
+      3634488961,
+      3889429448,
+      568446438,
+      3275163606,
+      4107603335,
+      1163531501,
+      2850285829,
+      4243563512,
+      1735328473,
+      2368359562,
+      4294588738,
+      2272392833,
+      1839030562,
+      4259657740,
+      2763975236,
+      1272893353,
+      4139469664,
+      3200236656,
+      681279174,
+      3936430074,
+      3572445317,
+      76029189,
+      3654602809,
+      3873151461,
+      530742520,
+      3299628645,
+      4096336452,
+      1126891415,
+      2878612391,
+      4237533241,
+      1700485571,
+      2399980690,
+      4293915773,
+      2240044497,
+      1873313359,
+      4264355552,
+      2734768916,
+      1309151649,
+      4149444226,
+      3174756917,
+      718787259,
+      3951481745
+   ]
+   Remember that s is [
+      7,
+      12,
+      17,
+      22,
+      7,
+      12,
+      17,
+      22,
+      7,
+      12,
+      17,
+      22,
+      7,
+      12,
+      17,
+      22,
+      5,
+      9,
+      14,
+      20,
+      5,
+      9,
+      14,
+      20,
+      5,
+      9,
+      14,
+      20,
+      5,
+      9,
+      14,
+      20,
+      4,
+      11,
+      16,
+      23,
+      4,
+      11,
+      16,
+      23,
+      4,
+      11,
+      16,
+      23,
+      4,
+      11,
+      16,
+      23,
+      6,
+      10,
+      15,
+      21,
+      6,
+      10,
+      15,
+      21,
+      6,
+      10,
+      15,
+      21,
+      6,
+      10,
+      15,
+      21
+   ]
+   Remember that a0 is 1732584193
+   Remember that b0 is 4023233417
+   Remember that c0 is 2562383102
+   Remember that d0 is 271733878
+   Remember that msg_len_bits is product of text_len and 8
+   Remember that padded is []
+   Remember that i is 0
+   Do this text_len times:
+      Add padded to item i in text
+      Increase i
+   End do
+   Add padded to 128
+   Remember that current_len is sum of text_len and 1
+   Remember that target_len is product of (quotient of (sum of current_len and 63) and 64) and 64
+   Remember that target_len is diff of target_len and 8
+   Remember that i is current_len
+   Do this 1000 times:
+      When i is less than target_len, then:
+         Add padded to 0
+         Increase i
+      End when
+   End do
+   Add padded to remainder of msg_len_bits and 256
+   Add padded to remainder of (quotient of msg_len_bits and 256) and 256
+   Add padded to remainder of (quotient of msg_len_bits and 65536) and 256
+   Add padded to remainder of (quotient of msg_len_bits and 16777216) and 256
+   Add padded to 0
+   Add padded to 0
+   Add padded to 0
+   Add padded to 0
+   Remember that padded_len is padded's length
+   Remember that num_blocks is quotient of padded_len and 64
+   Remember that block_idx is 0
+   Do this num_blocks times:
+      Remember that M is []
+      Remember that word_idx is 0
+      Do this 16 times:
+         Remember that offset is sum of (product of block_idx and 64) and (product of word_idx and 4)
+         Remember that byte0 is item offset in padded
+         Remember that byte1 is item sum of offset and 1 in padded
+         Remember that byte2 is item sum of offset and 2 in padded
+         Remember that byte3 is item sum of offset and 3 in padded
+         Remember that word is byte0
+         Remember that word is sum of word and (remainder of (左シフト of byte1 and 8) and 4294967296)
+         Remember that word is sum of word and (remainder of (左シフト of byte2 and 16) and 4294967296)
+         Remember that word is sum of word and (remainder of (左シフト of byte3 and 24) and 4294967296)
+         Remember that word is remainder of word and 4294967296
+         Add M to word
+         Increase word_idx
+      End do
+      Remember that A is a0
+      Remember that B is b0
+      Remember that C is c0
+      Remember that D is d0
+      Remember that i is 0
+      Do this 64 times:
+         Remember that F is 0
+         Remember that g is 0
+         When i is less than 16, then:
+            Remember that not_B is remainder of (ビット反転 of B) and 4294967296
+            Remember that F is remainder of (論理和 of (remainder of (論理積 of B and C) and 4294967296) and (remainder of (論理積 of not_B and D) and 4294967296)) and 4294967296
+            Remember that g is i
+         But, if not:
+            When i is less than 32, then:
+               Remember that not_D is remainder of (ビット反転 of D) and 4294967296
+               Remember that F is remainder of (論理和 of (remainder of (論理積 of D and B) and 4294967296) and (remainder of (論理積 of not_D and C) and 4294967296)) and 4294967296
+               Remember that g is remainder of (sum of (product of 5 and i) and 1) and 16
+            But, if not:
+               When i is less than 48, then:
+                  Remember that F is remainder of (排他的論理和 of B and (remainder of (排他的論理和 of C and D) and 4294967296)) and 4294967296
+                  Remember that g is remainder of (sum of (product of 3 and i) and 5) and 16
+               But, if not:
+                  Remember that not_D is remainder of (ビット反転 of D) and 4294967296
+                  Remember that F is remainder of (排他的論理和 of C and (remainder of (論理和 of B and not_D) and 4294967296)) and 4294967296
+                  Remember that g is remainder of (product of 7 and i) and 16
+               End when
+            End when
+         End when
+         Remember that F is sum of F and A
+         Remember that F is sum of F and item i in K
+         Remember that F is sum of F and item g in M
+         Remember that F is remainder of F and 4294967296
+         Remember that shift_amount is item i in s
+         Remember that left_part is remainder of (左シフト of F and shift_amount) and 4294967296
+         Remember that right_part is 右シフト of F and (diff of 32 and shift_amount)
+         Remember that F is remainder of (論理和 of left_part and right_part) and 4294967296
+         Remember that F is sum of F and B
+         Remember that F is remainder of F and 4294967296
+         Remember that A is D
+         Remember that D is C
+         Remember that C is B
+         Remember that B is F
+         Increase i
+      End do
+      Remember that a0 is remainder of (sum of a0 and A) and 4294967296
+      Remember that b0 is remainder of (sum of b0 and B) and 4294967296
+      Remember that c0 is remainder of (sum of c0 and C) and 4294967296
+      Remember that d0 is remainder of (sum of d0 and D) and 4294967296
+      Increase block_idx
+   End do
+   Remember that hex_chars is [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 97, 98, 99, 100, 101, 102]
+   Remember that result is []
+   Remember that values is [a0, b0, c0, d0]
+   Remember that v_idx is 0
+   Do this 4 times:
+      Remember that val is item v_idx in values
+      Remember that byte_idx is 0
+      Do this 4 times:
+         Remember that byte is remainder of val and 256
+         Remember that val is quotient of val and 256
+         Remember that low is remainder of byte and 16
+         Remember that high is quotient of byte and 16
+         Add result to item high in hex_chars
+         Add result to item low in hex_chars
+         Increase byte_idx
+      End do
+      Increase v_idx
+   End do
+   The answer is result
+Now you know
+>>> string_to_md5 of "" 
+[]
+>>> string_to_md5 of "Hello world" 
+"3e25960a79dbc69b674cd4ec67a72c62"
+>>> string_to_md5 of "A B C" 
+"0ef78513b0cb8cef12743f5aeb35f888"
+>>> string_to_md5 of "password" 
+"5f4dcc3b5aa765d61d8327deb882cf99"

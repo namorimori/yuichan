@@ -1,0 +1,30 @@
+Use the standard library
+This is how to solve of N:
+  Remember that answer is ""
+  Remember that started is no
+  Remember that power is 1
+  Do this N times:
+    When product of power and 2 is at most N, then:
+      Remember that power is product of power and 2
+    But, if not:
+      Leave the loop
+    End when
+  End do
+  Do this N times:
+    When power is more than 0, then:
+      When power is at least N, then:
+        Remember that answer is "{answer}1"
+        Remember that N is diff of N and power
+        Remember that started is yes
+      But, if not:
+        When started is yes, then:
+          Remember that answer is "{answer}0"
+        End when
+      End when
+      Remember that power is quotient of power and 2
+    But, if not:
+      Leave the loop
+    End when
+  End do
+  The answer is answer
+Now you know

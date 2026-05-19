@@ -1,0 +1,109 @@
+Use the standard library
+This is how to same_chars of s0 and s1:
+   Remember that len0 is s0's length
+   Remember that len1 is s1's length
+   Remember that unique0 is []
+   Remember that i is 0
+   Do this len0 times:
+      Remember that char is item i in s0
+      Remember that is_new is 1
+      Remember that j is 0
+      Remember that u0_len is unique0's length
+      Do this u0_len times:
+         When item j in unique0 is char, then:
+            Remember that is_new is 0
+         End when
+         Increase j
+      End do
+      When is_new is 1, then:
+         Add unique0 to char
+      End when
+      Increase i
+   End do
+   Remember that unique1 is []
+   Remember that i is 0
+   Do this len1 times:
+      Remember that char is item i in s1
+      Remember that is_new is 1
+      Remember that j is 0
+      Remember that u1_len is unique1's length
+      Do this u1_len times:
+         When item j in unique1 is char, then:
+            Remember that is_new is 0
+         End when
+         Increase j
+      End do
+      When is_new is 1, then:
+         Add unique1 to char
+      End when
+      Increase i
+   End do
+   Remember that u0_len is unique0's length
+   Remember that u1_len is unique1's length
+   Remember that result is 1
+   When u0_len is not u1_len, then:
+      Remember that result is 0
+   End when
+   When result is 1, then:
+      Remember that i is 0
+      Do this u0_len times:
+         Remember that char is item i in unique0
+         Remember that found is 0
+         Remember that j is 0
+         Do this u1_len times:
+            When item j in unique1 is char, then:
+               Remember that found is 1
+            End when
+            Increase j
+         End do
+         When found is 0, then:
+            Remember that result is 0
+         End when
+         Increase i
+      End do
+   End when
+   The answer is result
+Now you know
+>>> same_chars of [101, 97, 98, 99, 100, 122, 122, 122, 122] and [
+   100,
+   100,
+   100,
+   122,
+   122,
+   122,
+   122,
+   122,
+   122,
+   122,
+   100,
+   100,
+   101,
+   100,
+   100,
+   97,
+   98,
+   99
+] 
+1
+>>> same_chars of [97, 98, 99, 100] and [100, 100, 100, 100, 100, 100, 100, 97, 98, 99] 
+1
+>>> same_chars of [100, 100, 100, 100, 100, 100, 100, 97, 98, 99] and [97, 98, 99, 100] 
+1
+>>> same_chars of [101, 97, 98, 99, 100] and [100, 100, 100, 100, 100, 100, 100, 97, 98, 99] 
+0
+>>> same_chars of [97, 98, 99, 100] and [100, 100, 100, 100, 100, 100, 100, 97, 98, 99, 101] 
+0
+>>> same_chars of "eabcdzzzz" and "dddzzzzzzzddeddabc" 
+1
+>>> same_chars of "abcd" and "dddddddabc" 
+1
+>>> same_chars of "dddddddabc" and "abcd" 
+1
+>>> same_chars of "eabcd" and "dddddddabc" 
+0
+>>> same_chars of "abcd" and "dddddddabcf" 
+0
+>>> same_chars of "eabcdzzzz" and "dddzzzzzzzddddabc" 
+0
+>>> same_chars of "aabb" and "aaccc" 
+0

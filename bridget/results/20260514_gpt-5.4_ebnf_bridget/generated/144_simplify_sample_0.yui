@@ -1,0 +1,17 @@
+Use the standard library
+This is how to simplify of x and n:
+  When x is n, then:
+    The answer is 1
+  End when
+  When x's length is not n's length, then:
+    The answer is 0
+  End when
+  Remember that i is 0
+  Do this x's length times:
+    When item i in x is not item diff of diff of x's length and 1 and i in n, then:
+      The answer is 0
+    End when
+    Increase i by 1
+  End do
+  The answer is 1
+Now you know

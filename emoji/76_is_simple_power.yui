@@ -1,0 +1,53 @@
+🗝️ 📚
+🧩 is_simple_power(x, n) 👉
+   結果 ⬅️ 0
+   ❓ n ⚖️ 1 👉
+      ❓ x ⚖️ 1 👉
+         結果 ⬅️ 1
+      🔚
+   🔚
+   ❗ 👉
+      power ⬅️ 1
+      🌀 x 👉
+         ❓ power 📈 x 👉
+            power ⬅️ 積(power, n)
+         🔚
+      🔚
+      ❓ power ⚖️ x 👉
+         結果 ⬅️ 1
+      🔚
+   🔚
+   ✅ 結果
+🔚
+>>> is_simple_power(1, 4) 
+1
+>>> is_simple_power(2, 2) 
+1
+>>> is_simple_power(8, 2) 
+1
+>>> is_simple_power(3, 2) 
+0
+>>> is_simple_power(3, 1) 
+0
+>>> is_simple_power(5, 3) 
+0
+>>> is_simple_power(16, 2) 
+1
+>>> is_simple_power(143214, 16) 
+0
+>>> is_simple_power(4, 2) 
+1
+>>> is_simple_power(9, 3) 
+1
+>>> is_simple_power(16, 4) 
+1
+>>> is_simple_power(24, 2) 
+0
+>>> is_simple_power(128, 4) 
+0
+>>> is_simple_power(12, 6) 
+0
+>>> is_simple_power(1, 1) 
+1
+>>> is_simple_power(1, 12) 
+1

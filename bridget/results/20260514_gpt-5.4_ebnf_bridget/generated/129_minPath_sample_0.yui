@@ -1,0 +1,103 @@
+Use the standard library
+This is how to minPath of grid and k:
+  Remember that rows is grid's length
+  Remember that cols is item 0 in grid's length
+  Remember that dp is []
+  Remember that path is []
+
+  Do this rows times:
+    Add dp to []
+    Add path to []
+  End do
+
+  Remember that r is 0
+  Do this rows times:
+    Remember that rowVals is []
+    Remember that rowPath is []
+    Remember that c is 0
+    Do this cols times:
+      Add rowVals to 0
+      Add rowPath to []
+      Increase c
+    End do
+    Remember that item r in dp is rowVals
+    Remember that item r in path is rowPath
+    Increase r
+  End do
+
+  Remember that item 0 in item 0 in dp is item 0 in item 0 in grid
+  Remember that item 0 in item 0 in path is [1]
+
+  Remember that c is 1
+  Do this diff of cols and 1 times:
+    Remember that item c in item 0 in dp is sum of item diff of c and 1 in item 0 in dp and item c in item 0 in grid
+    Remember that prevPath is item diff of c and 1 in item 0 in path
+    Remember that newPath is []
+    Remember that i is 0
+    Do this prevPath's length times:
+      Add newPath to item i in prevPath
+      Increase i
+    End do
+    Add newPath to 2
+    Remember that item c in item 0 in path is newPath
+    Increase c
+  End do
+
+  Remember that r is 1
+  Do this diff of rows and 1 times:
+    Remember that item 0 in item r in dp is sum of item 0 in item diff of r and 1 in dp and item 0 in item r in grid
+    Remember that prevPath is item 0 in item diff of r and 1 in path
+    Remember that newPath is []
+    Remember that i is 0
+    Do this prevPath's length times:
+      Add newPath to item i in prevPath
+      Increase i
+    End do
+    Add newPath to 1
+    Remember that item 0 in item r in path is newPath
+
+    Remember that c is 1
+    Do this diff of cols and 1 times:
+      Remember that fromTop is sum of item c in item diff of r and 1 in dp and item c in item r in grid
+      Remember that fromLeft is sum of item diff of c and 1 in item r in dp and item c in item r in grid
+
+      When fromTop is less than fromLeft, then:
+        Remember that item c in item r in dp is fromTop
+        Remember that prevPath is item c in item diff of r and 1 in path
+        Remember that newPath is []
+        Remember that i is 0
+        Do this prevPath's length times:
+          Add newPath to item i in prevPath
+          Increase i
+        End do
+        Add newPath to 1
+        Remember that item c in item r in path is newPath
+      But, if not:
+        Remember that item c in item r in dp is fromLeft
+        Remember that prevPath is item diff of c and 1 in item r in path
+        Remember that newPath is []
+        Remember that i is 0
+        Do this prevPath's length times:
+          Add newPath to item i in prevPath
+          Increase i
+        End do
+        Add newPath to 2
+        Remember that item c in item r in path is newPath
+      End when
+
+      Increase c
+    End do
+
+    Increase r
+  End do
+
+  Remember that fullPath is item diff of cols and 1 in item diff of rows and 1 in path
+  Remember that answer is []
+  Remember that i is 0
+  Do this min of k and fullPath's length times:
+    Add answer to item i in fullPath
+    Increase i
+  End do
+
+  The answer is answer
+Now you know

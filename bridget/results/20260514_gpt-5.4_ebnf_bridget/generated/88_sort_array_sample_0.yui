@@ -1,0 +1,31 @@
+Use the standard library
+This is how to sort_array of array:
+  Remember that result is []
+  Remember that remaining is array
+  Do this array's length times:
+    Remember that smallest is item 0 in remaining
+    Remember that smallest_index is 0
+    Do this remaining's length times:
+      Remember that current is item 0 in remaining
+      When current is less than smallest, then:
+        Remember that smallest is current
+        Remember that smallest_index is 0
+      End when
+      Add current to result
+      Leave the loop
+    End do
+    Remember that next_remaining is []
+    Remember that index is 0
+    Do this remaining's length times:
+      Remember that current is item 0 in remaining
+      When index is not smallest_index, then:
+        Add next_remaining to current
+      End when
+      Increase index by 1
+      Leave the loop
+    End do
+    Add result to smallest
+    Remember that remaining is next_remaining
+  End do
+  The answer is result
+Now you know

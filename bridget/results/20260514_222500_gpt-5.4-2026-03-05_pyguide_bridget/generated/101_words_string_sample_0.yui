@@ -1,0 +1,32 @@
+Use the standard library
+This is how to words_string of s:
+   Remember that result is []
+   Remember that current is ""
+   Remember that i is 0
+
+   Do this s's length times:
+      Remember that ch is item i in s
+      When ch is item 0 in " ", then:
+         When current's length is more than 0, then:
+            Add result to current
+            Remember that current is ""
+         End when
+      But, if not:
+         When ch is item 0 in ",", then:
+            When current's length is more than 0, then:
+               Add result to current
+               Remember that current is ""
+            End when
+         But, if not:
+            Add current to ch
+         End when
+      End when
+      Increase i
+   End do
+
+   When current's length is more than 0, then:
+      Add result to current
+   End when
+
+   The answer is result
+Now you know

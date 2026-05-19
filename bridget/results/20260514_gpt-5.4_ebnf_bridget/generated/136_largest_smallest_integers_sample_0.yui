@@ -1,0 +1,29 @@
+Use the standard library
+This is how to largest_smallest_integers of lst:
+  When lst's length is 0, then:
+    The answer is [[], []]
+  End when
+  Remember that positives is []
+  Remember that negatives is []
+  Do this lst's length times:
+    Remember that n is item 0 in lst
+    When n is more than 0, then:
+      Add positives to n
+    End when
+    When n is less than 0, then:
+      Add negatives to n
+    End when
+    Remember that lst is item 1 in lst
+  End do
+  When positives's length is 0, then:
+    Remember that biggest_negative is []
+  But, if not:
+    Remember that biggest_negative is min of positives
+  End when
+  When negatives's length is 0, then:
+    Remember that smallest_positive is []
+  But, if not:
+    Remember that smallest_positive is max of negatives
+  End when
+  The answer is [biggest_negative, smallest_positive]
+Now you know

@@ -1,0 +1,16 @@
+>>> fizz_buzz of 50 
+0
+>>> fizz_buzz of 78 
+2
+>>> fizz_buzz of 79 
+3
+>>> fizz_buzz of 100 
+3
+>>> fizz_buzz of 200 
+6
+>>> fizz_buzz of 4000 
+192
+>>> fizz_buzz of 10000 
+639
+>>> fizz_buzz of 100000 
+8026

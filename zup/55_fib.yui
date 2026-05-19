@@ -1,0 +1,31 @@
+Nav rem vaz
+Dum fib(n):
+   Nev n paz 0 ger:
+      Dup vem 0
+   Dam nev
+   Nev n paz 1 ger:
+      Dup vem 1
+   Zum:
+      Kem n1 par 差(n, 1)
+      Kem n2 par 差(n, 2)
+      Kem fib1 par fib(n1)
+      Kem fib2 par fib(n2)
+      Dup vem 和(fib1, fib2)
+   Dam nev
+Pam dum
+>>> fib(10) 
+55
+>>> fib(1) 
+1
+>>> fib(8) 
+21
+>>> fib(10) 
+55
+>>> fib(1) 
+1
+>>> fib(8) 
+21
+>>> fib(11) 
+89
+>>> fib(12) 
+144

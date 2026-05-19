@@ -1,0 +1,26 @@
+Use the standard library
+This is how to even_odd_palindrome of n:
+  Remember that evens is 0
+  Remember that odds is 0
+  Remember that i is 1
+  Do this n times:
+    Remember that s is tostring of i
+    Remember that r is ""
+    Remember that j is diff of s's length and 1
+    Do this s's length times:
+      Remember that r is "{r}{item j in s}"
+      Decrease j by 1
+    End do
+    Remember that even_pal is toint of "{s}{r}"
+    Remember that odd_pal is toint of "{s}{item diff of s's length and 1 in r}"
+    Increase evens by 1
+    When odd_pal is at most n, then:
+      Increase odds by 1
+    End when
+    Increase i by 1
+    When even_pal is more than n, then:
+      Leave the loop
+    End when
+  End do
+  The answer is [evens, odds]
+Now you know

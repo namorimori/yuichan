@@ -1,0 +1,21 @@
+>>> check_if_last_char_is_a_letter of "apple" 
+0
+>>> check_if_last_char_is_a_letter of "apple pi e" 
+1
+>>> check_if_last_char_is_a_letter of "eeeee" 
+0
+>>> check_if_last_char_is_a_letter of "A" 
+1
+>>> check_if_last_char_is_a_letter of "Pumpkin pie " 
+0
+>>> check_if_last_char_is_a_letter of "Pumpkin pie 1" 
+0
+>>> check_if_last_char_is_a_letter of "" 
+0
+>>> check_if_last_char_is_a_letter of "eeeee e " 
+0
+>>> check_if_last_char_is_a_letter of "apple pie" 
+0
+>>> check_if_last_char_is_a_letter of "apple pi e " 
+0
+Now, 1

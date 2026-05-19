@@ -1,0 +1,137 @@
+🗝️ 📚
+🧩 histogram(test) 👉
+   length ⬅️ 📐 test
+   ❓ length ⚖️ 0 👉
+      result ⬅️ []
+      ✅ result
+   🔚
+   words ⬅️ []
+   current_word ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ test[i]
+      ❓ char ⚖️ 32 👉
+         word_len ⬅️ 📐 current_word
+         ❓ word_len 📉 0 👉
+            words 🧲 current_word
+            current_word ⬅️ []
+         🔚
+      🔚
+      ❗ 👉
+         current_word 🧲 char
+      🔚
+      i ⬆️
+   🔚
+   word_len ⬅️ 📐 current_word
+   ❓ word_len 📉 0 👉
+      words 🧲 current_word
+   🔚
+   words_len ⬅️ 📐 words
+   max_count ⬅️ 0
+   i ⬅️ 0
+   🌀 words_len 👉
+      word ⬅️ words[i]
+      count ⬅️ 0
+      j ⬅️ 0
+      🌀 words_len 👉
+         other_word ⬅️ words[j]
+         word_len ⬅️ 📐 word
+         other_len ⬅️ 📐 other_word
+         same ⬅️ 0
+         ❓ word_len ⚖️ other_len 👉
+            all_match ⬅️ 1
+            k ⬅️ 0
+            🌀 word_len 👉
+               ❓ word[k] ⚖️ other_word[k] 👉
+                  💤
+               🔚
+               ❗ 👉
+                  all_match ⬅️ 0
+               🔚
+               k ⬆️
+            🔚
+            same ⬅️ all_match
+         🔚
+         ❓ same ⚖️ 1 👉
+            count ⬆️
+         🔚
+         j ⬆️
+      🔚
+      ❓ count 📉 max_count 👉
+         max_count ⬅️ count
+      🔚
+      i ⬆️
+   🔚
+   result ⬅️ []
+   ❓ max_count 📉 0 👉
+      i ⬅️ 0
+      🌀 words_len 👉
+         word ⬅️ words[i]
+         count ⬅️ 0
+         j ⬅️ 0
+         🌀 words_len 👉
+            other_word ⬅️ words[j]
+            word_len ⬅️ 📐 word
+            other_len ⬅️ 📐 other_word
+            same ⬅️ 0
+            ❓ word_len ⚖️ other_len 👉
+               all_match ⬅️ 1
+               k ⬅️ 0
+               🌀 word_len 👉
+                  ❓ word[k] ⚖️ other_word[k] 👉
+                     💤
+                  🔚
+                  ❗ 👉
+                     all_match ⬅️ 0
+                  🔚
+                  k ⬆️
+               🔚
+               same ⬅️ all_match
+            🔚
+            ❓ same ⚖️ 1 👉
+               count ⬆️
+            🔚
+            j ⬆️
+         🔚
+         ❓ count ⚖️ max_count 👉
+            already_added ⬅️ 0
+            result_len ⬅️ 📐 result
+            m ⬅️ 0
+            🌀 result_len 👉
+               result_word ⬅️ result[m][0]
+               word_len ⬅️ 📐 word
+               result_word_len ⬅️ 📐 result_word
+               same ⬅️ 0
+               ❓ word_len ⚖️ result_word_len 👉
+                  all_match ⬅️ 1
+                  k ⬅️ 0
+                  🌀 word_len 👉
+                     ❓ word[k] ⚖️ result_word[k] 👉
+                        💤
+                     🔚
+                     ❗ 👉
+                        all_match ⬅️ 0
+                     🔚
+                     k ⬆️
+                  🔚
+                  same ⬅️ all_match
+               🔚
+               ❓ same ⚖️ 1 👉
+                  already_added ⬅️ 1
+               🔚
+               m ⬆️
+            🔚
+            ❓ already_added ⚖️ 0 👉
+               entry ⬅️ []
+               entry 🧲 word
+               entry 🧲 max_count
+               result 🧲 entry
+            🔚
+         🔚
+         i ⬆️
+      🔚
+   🔚
+   ✅ result
+🔚
+>>> histogram("") 
+[]

@@ -1,0 +1,11 @@
+Use the standard library
+
+This is how to incr_list of l:
+   Remember that result is []
+   Remember that i is 0
+   Do this l's length times:
+      Add result to (sum of (item i in l) and 1)
+      Increase i
+   End do
+   The answer is result
+Now you know

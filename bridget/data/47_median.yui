@@ -1,0 +1,67 @@
+Use the standard library
+This is how to median of l:
+   Remember that length is l's length
+   Remember that sorted is []
+   Remember that i is 0
+   Do this length times:
+      Add sorted to item i in l
+      Increase i
+   End do
+   Do this length times:
+      Remember that i is 0
+      Remember that limit is diff of length and 1
+      Do this limit times:
+         Remember that next_idx is sum of i and 1
+         When item i in sorted is more than item next_idx in sorted, then:
+            Remember that temp is item i in sorted
+            Remember that item i in sorted is item next_idx in sorted
+            Remember that item next_idx in sorted is temp
+         End when
+         Increase i
+      End do
+   End do
+   Remember that remainder_val is remainder of length and 2
+   When remainder_val is 1, then:
+      Remember that mid is 0
+      Remember that i is 0
+      Do this length times:
+         Remember that double is product of mid and 2
+         Remember that next is sum of double and 1
+         When next is less than length, then:
+            Increase mid
+         End when
+         Increase i
+      End do
+      The answer is item mid in sorted
+   But, if not:
+      Remember that mid is 0
+      Remember that i is 0
+      Do this length times:
+         Remember that double is product of mid and 2
+         When double is less than length, then:
+            Increase mid
+         End when
+         Increase i
+      End do
+      Remember that left_idx is diff of mid and 1
+      Remember that left_val is item left_idx in sorted
+      Remember that right_val is item mid in sorted
+      Remember that total is sum of left_val and right_val
+      Remember that total_float is product of total and 1.000000
+      The answer is quotient of total_float and 2.000000
+   End when
+Now you know
+>>> median of [3, 1, 2, 4, 5] 
+3
+>>> median of [-10, 4, 6, 1000, 10, 20] 
+8.000000
+>>> median of [3, 1, 2, 4, 5] 
+3
+>>> median of [-10, 4, 6, 1000, 10, 20] 
+8.000000
+>>> median of [5] 
+5
+>>> median of [6, 5] 
+5.500000
+>>> median of [8, 1, 3, 9, 9, 2, 7] 
+7

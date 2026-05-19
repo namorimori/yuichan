@@ -1,0 +1,51 @@
+🗝️ 📚
+🧩 solve(N) 👉
+   str_N ⬅️ 文字列化(N)
+   length ⬅️ 📐 str_N
+   total ⬅️ 0
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ str_N[i]
+      digit ⬅️ 差(char, 48)
+      total ⬅️ 和(total, digit)
+      i ⬆️
+   🔚
+   result ⬅️ []
+   ❓ total ⚖️ 0 👉
+      result 🧲 48
+      ✅ result
+   🔚
+   temp ⬅️ total
+   digits ⬅️ []
+   🌀 100 👉
+      ❓ temp 📉 0 👉
+         rem ⬅️ 剰余(temp, 2)
+         digits 🧲 rem
+         temp ⬅️ 商(temp, 2)
+      🔚
+   🔚
+   len ⬅️ 📐 digits
+   j ⬅️ 0
+   🌀 len 👉
+      idx ⬅️ 差(差(len, j), 1)
+      bit ⬅️ digits[idx]
+      ❓ bit ⚖️ 0 👉
+         result 🧲 48
+      🔚
+      ❗ 👉
+         result 🧲 49
+      🔚
+      j ⬆️
+   🔚
+   ✅ result
+🔚
+>>> solve(1000) 
+"1"
+>>> solve(150) 
+"110"
+>>> solve(147) 
+"1100"
+>>> solve(333) 
+"1001"
+>>> solve(963) 
+"10010"

@@ -1,0 +1,22 @@
+Use the standard library
+This is how to same_chars of s0 and s1:
+   Remember that i is 0
+   Do this s0's length times:
+      Remember that c is item i in s0
+      When c is not in s1, then:
+         The answer is 0
+      End when
+      Increase i
+   End do
+
+   Remember that j is 0
+   Do this s1's length times:
+      Remember that c is item j in s1
+      When c is not in s0, then:
+         The answer is 0
+      End when
+      Increase j
+   End do
+
+   The answer is 1
+Now you know

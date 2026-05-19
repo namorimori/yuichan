@@ -1,0 +1,12 @@
+Use the standard library
+This is how to greatest_common_divisor of a and b:
+   Do this a times:
+      When b is 0, then:
+         Leave the loop
+      End when
+      Remember that r is remainder of a and b
+      Remember that a is b
+      Remember that b is r
+   End do
+   The answer is a
+Now you know

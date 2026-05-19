@@ -1,0 +1,24 @@
+Use the standard library
+This is how to is_simple_power of x and n:
+   When x is 1, then:
+      The answer is 1
+   End when
+   Remember that value is n
+   Do this x times:
+      When value is x, then:
+         The answer is 1
+      End when
+      When value is more than x, then:
+         Leave the loop
+      End when
+      Remember that value is product of value and n
+   End do
+   The answer is 0
+Now you know
+
+>>> is_simple_power of 1 and 4
+1
+>>> is_simple_power of 2 and 2
+1
+>>> is_simple_power of 8 and 2
+1

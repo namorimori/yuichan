@@ -1,0 +1,58 @@
+Nav rem vaz
+Dum pluck(arr):
+   Kem 長さ par arr @kez
+   Kem 結果 par []
+   Nev 長さ paz 0 ger:
+      Dup vem 結果
+   Dam nev
+   Kem 最小偶数 par 0
+   Kem 最小偶数インデックス par 0
+   Kem 偶数見つかった par 0
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 値 par arr[i]
+      Kem 余り par 剰余(値, 2)
+      Nev 余り paz 0 ger:
+         Nev 偶数見つかった paz 0 ger:
+            Kem 最小偶数 par 値
+            Kem 最小偶数インデックス par i
+            Kem 偶数見つかった par 1
+         Zum:
+            Nev 値 dup 最小偶数 ger:
+               Kem 最小偶数 par 値
+               Kem 最小偶数インデックス par i
+            Dam nev
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Nev 偶数見つかった paz 1 ger:
+      Mev 結果 naz 最小偶数
+      Mev 結果 naz 最小偶数インデックス
+   Dam nev
+   Dup vem 結果
+Pam dum
+>>> pluck([4, 2, 3]) 
+[2, 1]
+>>> pluck([1, 2, 3]) 
+[2, 1]
+>>> pluck([]) 
+[]
+>>> pluck([5, 0, 3, 0, 4, 2]) 
+[0, 1]
+>>> pluck([4, 2, 3]) 
+[2, 1]
+>>> pluck([1, 2, 3]) 
+[2, 1]
+>>> pluck([]) 
+[]
+>>> pluck([5, 0, 3, 0, 4, 2]) 
+[0, 1]
+>>> pluck([1, 2, 3, 0, 5, 3]) 
+[0, 3]
+>>> pluck([5, 4, 8, 4, 8]) 
+[4, 1]
+>>> pluck([7, 6, 7, 1]) 
+[6, 1]
+>>> pluck([7, 9, 7, 1]) 
+[]

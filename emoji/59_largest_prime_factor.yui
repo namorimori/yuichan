@@ -1,0 +1,52 @@
+🗝️ 📚
+🧩 largest_prime_factor(n) 👉
+   largest ⬅️ 1
+   i ⬅️ 2
+   🌀 n 👉
+      ❓ i 📈⚖️ n 👉
+         remainder ⬅️ 剰余(n, i)
+         ❓ remainder ⚖️ 0 👉
+            is_prime ⬅️ 1
+            ❓ i 📈 2 👉
+               is_prime ⬅️ 0
+            🔚
+            ❓ i ⚖️ 2 👉
+               is_prime ⬅️ 1
+            🔚
+            ❓ i 📉 2 👉
+               j ⬅️ 2
+               🌀 1000 👉
+                  ❓ j 📈 i 👉
+                     rem ⬅️ 剰余(i, j)
+                     ❓ rem ⚖️ 0 👉
+                        is_prime ⬅️ 0
+                     🔚
+                     j ⬆️
+                  🔚
+               🔚
+            🔚
+            ❓ is_prime ⚖️ 1 👉
+               ❓ i 📉 largest 👉
+                  largest ⬅️ i
+               🔚
+            🔚
+         🔚
+         i ⬆️
+      🔚
+   🔚
+   ✅ largest
+🔚
+>>> largest_prime_factor(13195) 
+29
+>>> largest_prime_factor(2048) 
+2
+>>> largest_prime_factor(15) 
+5
+>>> largest_prime_factor(27) 
+3
+>>> largest_prime_factor(63) 
+7
+>>> largest_prime_factor(330) 
+11
+>>> largest_prime_factor(13195) 
+29

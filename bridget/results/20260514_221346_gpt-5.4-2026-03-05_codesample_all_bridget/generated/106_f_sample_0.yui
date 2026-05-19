@@ -1,0 +1,20 @@
+Use the standard library
+This is how to f of n:
+   Remember that result is []
+   Remember that fact is 1
+   Remember that i is 1
+   Do this n times:
+      Remember that fact is product of fact and i
+      Remember that x is fact
+      Remember that r is remainder of i and 5
+      When r is 0, then:
+         Remember that x is sum of i and 10
+      End when
+      When i is 7, then:
+         Remember that x is product of i and 4
+      End when
+      Add result to x
+      Increase i
+   End do
+   The answer is result
+Now you know

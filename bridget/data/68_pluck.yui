@@ -1,0 +1,58 @@
+Use the standard library
+This is how to pluck of arr:
+   Remember that length is arr's length
+   Remember that result is []
+   When length is 0, then:
+      The answer is result
+   End when
+   Remember that min_even is 0
+   Remember that min_even_idx is 0
+   Remember that even_found is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that value is item i in arr
+      Remember that remainder_val is remainder of value and 2
+      When remainder_val is 0, then:
+         When even_found is 0, then:
+            Remember that min_even is value
+            Remember that min_even_idx is i
+            Remember that even_found is 1
+         But, if not:
+            When value is less than min_even, then:
+               Remember that min_even is value
+               Remember that min_even_idx is i
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   When even_found is 1, then:
+      Add result to min_even
+      Add result to min_even_idx
+   End when
+   The answer is result
+Now you know
+>>> pluck of [4, 2, 3] 
+[2, 1]
+>>> pluck of [1, 2, 3] 
+[2, 1]
+>>> pluck of [] 
+[]
+>>> pluck of [5, 0, 3, 0, 4, 2] 
+[0, 1]
+>>> pluck of [4, 2, 3] 
+[2, 1]
+>>> pluck of [1, 2, 3] 
+[2, 1]
+>>> pluck of [] 
+[]
+>>> pluck of [5, 0, 3, 0, 4, 2] 
+[0, 1]
+>>> pluck of [1, 2, 3, 0, 5, 3] 
+[0, 3]
+>>> pluck of [5, 4, 8, 4, 8] 
+[4, 1]
+>>> pluck of [7, 6, 7, 1] 
+[6, 1]
+>>> pluck of [7, 9, 7, 1] 
+[]

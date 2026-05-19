@@ -1,0 +1,19 @@
+Use the standard library
+This is how to count_nums of arr:
+   Remember that count is 0
+   Remember that i is 0
+   Do this arr's length times:
+      When item i in arr is more than 0, then:
+         Increase count
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know
+
+>>> count_nums of []
+0
+>>> count_nums of [-1, 11, -11]
+1
+>>> count_nums of [1, 1, 2]
+3

@@ -1,0 +1,22 @@
+>>> right_angle_triangle of 3 and 4 and 5 
+1
+>>> right_angle_triangle of 1 and 2 and 3 
+0
+>>> right_angle_triangle of 10 and 6 and 8 
+1
+>>> right_angle_triangle of 2 and 2 and 2 
+0
+>>> right_angle_triangle of 7 and 24 and 25 
+1
+>>> right_angle_triangle of 10 and 5 and 7 
+0
+>>> right_angle_triangle of 5 and 12 and 13 
+1
+>>> right_angle_triangle of 15 and 8 and 17 
+1
+>>> right_angle_triangle of 48 and 55 and 73 
+1
+>>> right_angle_triangle of 1 and 1 and 1 
+0
+>>> right_angle_triangle of 2 and 2 and 10 
+0

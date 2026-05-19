@@ -1,0 +1,55 @@
+Use the standard library
+This is how to numerical_letter_grade of grades:
+   Remember that result is []
+   Remember that i is 0
+   Do this grades's length times:
+      Remember that grade is item i in grades
+      Remember that letter is ""
+
+      When grade is 4, then:
+         Remember that letter is "A+"
+      But, if not:
+         When grade is 3.700000, then:
+            Remember that letter is "A"
+         But, if not:
+            When grade is 3.300000, then:
+               Remember that letter is "A-"
+            But, if not:
+               When grade is 3, then:
+                  Remember that letter is "B"
+               But, if not:
+                  When grade is 2.700000, then:
+                     Remember that letter is "B-"
+                  But, if not:
+                     When grade is 2.300000, then:
+                        Remember that letter is "C+"
+                     But, if not:
+                        When grade is 2, then:
+                           Remember that letter is "C"
+                        But, if not:
+                           When grade is 1.700000, then:
+                              Remember that letter is "C-"
+                           But, if not:
+                              When grade is 1.300000, then:
+                                 Remember that letter is "D"
+                              But, if not:
+                                 When grade is 1, then:
+                                    Remember that letter is "D-"
+                                 But, if not:
+                                    Remember that letter is "F"
+                                 End when
+                              End when
+                           End when
+                        End when
+                     End when
+                  End when
+               End when
+            End when
+         End when
+      End when
+
+      Add result to letter
+      Increase i
+   End do
+   The answer is result
+Now you know

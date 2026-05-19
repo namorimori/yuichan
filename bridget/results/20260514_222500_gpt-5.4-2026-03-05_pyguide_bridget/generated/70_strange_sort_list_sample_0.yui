@@ -1,0 +1,18 @@
+Use the standard library
+This is how to strange_sort_list of lst:
+   Remember that result is []
+   Remember that left is 0
+   Remember that right is diff of lst's length and 1
+
+   Do this lst's length times:
+      When left is at most right, then:
+         Add result to item left in lst
+         Increase left
+      But, if not:
+         Add result to item right in lst
+         Decrease right
+      End when
+   End do
+
+   The answer is result
+Now you know

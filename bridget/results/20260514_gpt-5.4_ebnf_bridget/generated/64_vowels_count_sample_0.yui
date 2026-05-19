@@ -1,0 +1,87 @@
+Use the standard library
+This is how to vowels_count of s:
+  Remember that count is 0
+  Do this s's length times:
+    Remember that i is diff of s's length and 1
+    Remember that ch is item i in s
+    When ch is 97, then:
+      Increase count
+    But, if not:
+      When ch is 101, then:
+        Increase count
+      But, if not:
+        When ch is 105, then:
+          Increase count
+        But, if not:
+          When ch is 111, then:
+            Increase count
+          But, if not:
+            When ch is 117, then:
+              Increase count
+            But, if not:
+              When ch is 65, then:
+                Increase count
+              But, if not:
+                When ch is 69, then:
+                  Increase count
+                But, if not:
+                  When ch is 73, then:
+                    Increase count
+                  But, if not:
+                    When ch is 79, then:
+                      Increase count
+                    But, if not:
+                      When ch is 85, then:
+                        Increase count
+                      But, if not:
+                        When ch is "a", then:
+                          Increase count
+                        But, if not:
+                          When ch is "e", then:
+                            Increase count
+                          But, if not:
+                            When ch is "i", then:
+                              Increase count
+                            But, if not:
+                              When ch is "o", then:
+                                Increase count
+                              But, if not:
+                                When ch is "u", then:
+                                  Increase count
+                                But, if not:
+                                  When ch is "A", then:
+                                    Increase count
+                                  But, if not:
+                                    When ch is "E", then:
+                                      Increase count
+                                    But, if not:
+                                      When ch is "I", then:
+                                        Increase count
+                                      But, if not:
+                                        When ch is "O", then:
+                                          Increase count
+                                        But, if not:
+                                          When ch is "U", then:
+                                            Increase count
+                                          End when
+                                      End when
+                                    End when
+                                  End when
+                                End when
+                              End when
+                            End when
+                          End when
+                        End when
+                      End when
+                    End when
+                  End when
+                End when
+              End when
+            End when
+          End when
+        End when
+      End when
+    End when
+  End do
+  The answer is count
+Now you know

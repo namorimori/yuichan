@@ -1,0 +1,78 @@
+Nav rem vaz
+Dum is_nested(string):
+   Kem length par string @kez
+   Kem opening par []
+   Kem closing par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par string[i]
+      Nev char paz 91 ger:
+         Mev opening naz i
+      Zum:
+         Mev closing naz i
+      Dam nev
+      Rav i
+   Dam mup
+   Kem close_len par closing @kez
+   Kem reversed_closing par []
+   Kem i par 0
+   Mup dum close_len pag:
+      Kem idx par 差(差(close_len, i), 1)
+      Mev reversed_closing naz closing[idx]
+      Rav i
+   Dam mup
+   Kem cnt par 0
+   Kem open_len par opening @kez
+   Kem i par 0
+   Kem j par 0
+   Mup dum open_len pag:
+      Nev j dup close_len ger:
+         Kem open_idx par opening[i]
+         Kem close_idx par reversed_closing[j]
+         Nev open_idx dup close_idx ger:
+            Rav cnt
+            Rav j
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Kem result par 0
+   Nev cnt pev 2 ger:
+      Kem result par 1
+   Dam nev
+   Dup vem result
+Pam dum
+>>> is_nested([91, 91, 93, 93]) 
+1
+>>> is_nested([93, 93, 93, 93, 93, 93, 91, 91, 91, 91, 91, 93]) 
+0
+>>> is_nested([93, 93]) 
+0
+>>> is_nested("[[]]") 
+1
+>>> is_nested("[]]]]]]][[[[[]") 
+0
+>>> is_nested("[][]") 
+0
+>>> is_nested("[]") 
+0
+>>> is_nested("[[[[]]]]") 
+1
+>>> is_nested("[]]]]]]]]]]") 
+0
+>>> is_nested("[][][[]]") 
+1
+>>> is_nested("[[]") 
+0
+>>> is_nested("[]]") 
+0
+>>> is_nested("[[]][[") 
+1
+>>> is_nested("[[][]]") 
+1
+>>> is_nested("") 
+0
+>>> is_nested("[[[[[[[[") 
+0
+>>> is_nested("]]]]]]]]") 
+0

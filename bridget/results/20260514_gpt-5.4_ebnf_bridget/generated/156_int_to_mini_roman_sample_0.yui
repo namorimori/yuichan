@@ -1,0 +1,54 @@
+Use the standard library
+This is how to int_to_mini_roman of number:
+  Remember that result is ""
+  Do this number times:
+    When number is at least 100, then:
+      Remember that result is "{result}c"
+      Remember that number is diff of number and 100
+    But, if not:
+      When number is at least 90, then:
+        Remember that result is "{result}xc"
+        Remember that number is diff of number and 90
+      But, if not:
+        When number is at least 50, then:
+          Remember that result is "{result}l"
+          Remember that number is diff of number and 50
+        But, if not:
+          When number is at least 40, then:
+            Remember that result is "{result}xl"
+            Remember that number is diff of number and 40
+          But, if not:
+            When number is at least 10, then:
+              Remember that result is "{result}x"
+              Remember that number is diff of number and 10
+            But, if not:
+              When number is at least 9, then:
+                Remember that result is "{result}ix"
+                Remember that number is diff of number and 9
+              But, if not:
+                When number is at least 5, then:
+                  Remember that result is "{result}v"
+                  Remember that number is diff of number and 5
+                But, if not:
+                  When number is at least 4, then:
+                    Remember that result is "{result}iv"
+                    Remember that number is diff of number and 4
+                  But, if not:
+                    When number is at least 1, then:
+                      Remember that result is "{result}i"
+                      Remember that number is diff of number and 1
+                    End when
+                  End when
+                End when
+              End when
+            End when
+          End when
+        End when
+      End when
+    End when
+    When number is 0, then:
+      Leave the loop
+    End when
+  End do
+  The answer is result
+Now you know

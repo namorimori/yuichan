@@ -1,0 +1,27 @@
+Use the standard library
+This is how to largest_prime_factor of n:
+   Remember that x is n
+   Remember that largest is 1
+   Do this while remainder of x and 2 is 0:
+      Remember that largest is 2
+      Remember that x is quotient of x and 2
+   End do
+   Remember that f is 3
+   Do this while product of f and f is at most x:
+      Do this while remainder of x and f is 0:
+         Remember that largest is f
+         Remember that x is quotient of x and f
+      End do
+      Remember that f is sum of f and 2
+   End do
+   When x is more than 1, then:
+      Remember that largest is x
+   End when
+   The answer is largest
+Now you know
+>>> largest_prime_factor of 13195
+29
+>>> largest_prime_factor of 2048
+2
+>>> largest_prime_factor of 15
+5

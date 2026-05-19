@@ -1,0 +1,73 @@
+Nav rem vaz
+Dum cycpattern_check(a, b):
+   Kem len_a par a @kez
+   Kem len_b par b @kez
+   Kem result par 0
+   Kem pattern par []
+   Kem i par 0
+   Mup dum len_b pag:
+      Mev pattern naz b[i]
+      Rav i
+   Dam mup
+   Kem i par 0
+   Mup dum len_b pag:
+      Mev pattern naz b[i]
+      Rav i
+   Dam mup
+   Kem limit par 和(差(len_a, len_b), 1)
+   Kem i par 0
+   Mup dum limit pag:
+      Kem substring par []
+      Kem j par 0
+      Mup dum len_b pag:
+         Kem idx par 和(i, j)
+         Mev substring naz a[idx]
+         Rav j
+      Dam mup
+      Kem pattern_limit par 和(len_b, 1)
+      Kem j par 0
+      Mup dum pattern_limit pag:
+         Kem pat_substring par []
+         Kem k par 0
+         Mup dum len_b pag:
+            Kem pat_idx par 和(j, k)
+            Mev pat_substring naz pattern[pat_idx]
+            Rav k
+         Dam mup
+         Kem match par 1
+         Kem k par 0
+         Mup dum len_b pag:
+            Nev substring[k] nup pat_substring[k] ger:
+               Kem match par 0
+            Dam nev
+            Rav k
+         Dam mup
+         Nev match paz 1 ger:
+            Kem result par 1
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> cycpattern_check([97, 98, 99, 100], [97, 98, 100]) 
+0
+>>> cycpattern_check([104, 101, 108, 108, 111], [101, 108, 108]) 
+1
+>>> cycpattern_check([119, 104, 97, 115, 115, 117, 112], [112, 115, 117, 115]) 
+0
+>>> cycpattern_check([97, 98, 97, 98], [98, 97, 97]) 
+1
+>>> cycpattern_check("xyzw", "xyw") 
+0
+>>> cycpattern_check("yello", "ell") 
+1
+>>> cycpattern_check("whattup", "ptut") 
+0
+>>> cycpattern_check("efef", "fee") 
+1
+>>> cycpattern_check("abab", "aabb") 
+0
+>>> cycpattern_check("winemtt", "tinem") 
+1

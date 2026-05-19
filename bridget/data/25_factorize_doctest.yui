@@ -1,0 +1,16 @@
+>>> factorize of 2 
+[2]
+>>> factorize of 4 
+[2, 2]
+>>> factorize of 8 
+[2, 2, 2]
+>>> factorize of 57 
+[3, 19]
+>>> factorize of 3249 
+[3, 3, 19, 19]
+>>> factorize of 185193 
+[3, 3, 3, 19, 19, 19]
+>>> factorize of 20577 
+[3, 19, 19, 19]
+>>> factorize of 18 
+[2, 3, 3]

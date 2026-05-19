@@ -1,0 +1,689 @@
+=== Bridget YuiEval (pass@1) ===
+Model:    claude-haiku-4-5  (anthropic)
+Template: context/codesample_all_bridget.md
+Context:  codesample_all_bridget.md
+Problems: 164
+
+[1/164] 0_has_close_elements
+
+============================================================
+[0_has_close_elements] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to has_close_elements of numbers and threshold:
+   Remember that n is numbers's length
+   Remember that i is 0
+   Do this n times:
+      Remember that j is sum of i and 1
+      Do this diff of n and j times:
+         Remember that diff_val is abs of (diff of item i in numbers and item j in numbers)
+         When diff_val is less than threshold, then:
+            The answer is 1
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is 0
+Now you know
+```
+
+The function checks all pairs of elements in the array to see if any two elements have a difference smaller than the threshold. It uses nested loops to compare each element with all subsequent elements, calculates the absolute difference, and returns 1 if any pair is found to be closer than the threshold, otherwise returns 0.
+--- Extracted ---
+Use the standard library
+This is how to has_close_elements of numbers and threshold:
+   Remember that n is numbers's length
+   Remember that i is 0
+   Do this n times:
+      Remember that j is sum of i and 1
+      Do this diff of n and j times:
+         Remember that diff_val is abs of (diff of item i in numbers and item j in numbers)
+         When diff_val is less than threshold, then:
+            The answer is 1
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is 0
+Now you know
+  Sample 1/1... ✓ (0.10s)
+--- Result: ✓ PASSED (0.10s) ---
+  Problem result: ✓ (1/1 passed) [3.24s]
+
+[2/164] 1_separate_paren_groups
+
+============================================================
+[1_separate_paren_groups] Sample 1/1
+============================================================
+--- Generated ---
+Looking at this problem, I need to:
+
+1. Handle both array of ASCII codes (where 40 is '(' and 41 is ')') and string input
+2. Group parentheses by matching pairs - each group starts with '(' and ends when all parentheses in that group are balanced
+3. Skip spaces between groups
+
+Let me trace through the first example:
+- `[40, 32, 41, 32, 40, 40, 32, 41, 41, 32, 40, 40, 32, 41, 40, 32, 41, 41]`
+- 40(, 32(space), 41) → group [40, 41]
+- 32(space), 40(, 40(, 32(space), 41), 41) → group [40, 40, 41, 41]
+- 32(space), 40(, 40(, 32(space), 41), 40(, 32(space), 41), 41) → group [40, 40, 41, 40, 41, 41]
+
+The algorithm:
+- Convert string to array of ASCII codes if needed
+- Iterate through, tracking depth of parentheses
+- When depth reaches 0 after an opening paren, we have a complete group
+- Skip spaces (32) between groups
+
+```bridget
+Use the standard library
+This is how to separate_paren_groups of paren_string:
+   Remember that arr is paren_string
+   When isstring of paren_string, then:
+      Remember that arr is toarray of paren_string
+   End when
+   Remember that result is []
+   Remember that current is []
+   Remember that depth is 0
+   Remember that i is 0
+   Do this arr's length times:
+      Remember that code is item i in arr
+      When code is 32, then:
+         When depth is 0, then:
+            When current's length is more than 0, then:
+               Add result to current
+               Remember that current is []
+            End when
+         But, if not:
+            Add current to code
+         End when
+      But, if not:
+         Add current to code
+         When code is 40, then:
+            Increase depth
+         End when
+         When code is 41, then:
+            Decrease depth
+            When depth is 0, then:
+               Add result to current
+               Remember that current is []
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   When current's length is more than 0, then:
+      Add result to current
+   End when
+   The answer is result
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to separate_paren_groups of paren_string:
+   Remember that arr is paren_string
+   When isstring of paren_string, then:
+      Remember that arr is toarray of paren_string
+   End when
+   Remember that result is []
+   Remember that current is []
+   Remember that depth is 0
+   Remember that i is 0
+   Do this arr's length times:
+      Remember that code is item i in arr
+      When code is 32, then:
+         When depth is 0, then:
+            When current's length is more than 0, then:
+               Add result to current
+               Remember that current is []
+            End when
+         But, if not:
+            Add current to code
+         End when
+      But, if not:
+         Add current to code
+         When code is 40, then:
+            Increase depth
+         End when
+         When code is 41, then:
+            Decrease depth
+            When depth is 0, then:
+               Add result to current
+               Remember that current is []
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   When current's length is more than 0, then:
+      Add result to current
+   End when
+   The answer is result
+Now you know
+  Sample 1/1... ✗ (0.07s)
+--- Result: ✗ FAILED (0.07s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 変数や値が必要です ❌, then ⚠️wrong-name ❌, then line 4, column 33:
+|    When isstring of paren_string, then:
+|                                 ^^^
+  Problem result: ✗ (0/1 passed) [5.31s]
+
+[3/164] 2_truncate_number
+
+============================================================
+[2_truncate_number] Sample 1/1
+============================================================
+--- Generated ---
+Looking at the expected behavior, I need to understand what `truncate_number` should do:
+
+- `truncate_number of 3.500000` → `0.500000` (the decimal part: 3.5 - 3 = 0.5)
+- `truncate_number of 1.330000` → `0.330000` (the decimal part: 1.33 - 1 = 0.33)
+
+So the function should return the fractional part of a number (the part after the decimal point).
+
+To get the fractional part, I can:
+1. Convert the number to an integer (which truncates it)
+2. Subtract that integer from the original number
+
+```bridget
+Use the standard library
+This is how to truncate_number of number:
+   Remember that int_part is toint of number
+   The answer is diff of number and int_part
+Now you know
+>>> truncate_number of 3.500000
+0.500000
+>>> truncate_number of 1.330000
+0.330000
+```
+--- Extracted ---
+Use the standard library
+This is how to truncate_number of number:
+   Remember that int_part is toint of number
+   The answer is diff of number and int_part
+Now you know
+>>> truncate_number of 3.500000
+0.500000
+>>> truncate_number of 1.330000
+0.330000
+  Sample 1/1... ✓ (0.07s)
+--- Result: ✓ PASSED (0.07s) ---
+  Problem result: ✓ (1/1 passed) [3.02s]
+
+[4/164] 3_below_zero
+
+============================================================
+[3_below_zero] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to below_zero of operations:
+   Remember that balance is 0
+   Remember that n is operations's length
+   Remember that i is 0
+   Do this n times:
+      Remember that op is item i in operations
+      Remember that balance is sum of balance and op
+      When balance is less than 0, then:
+         The answer is 1
+      End when
+      Increase i
+   End do
+   The answer is 0
+Now you know
+```
+
+The function works by:
+1. Starting with a balance of 0
+2. Iterating through each operation in the array
+3. Adding each operation to the balance
+4. If the balance ever goes below 0, immediately return 1
+5. If we finish the loop without going below 0, return 0
+--- Extracted ---
+Use the standard library
+This is how to below_zero of operations:
+   Remember that balance is 0
+   Remember that n is operations's length
+   Remember that i is 0
+   Do this n times:
+      Remember that op is item i in operations
+      Remember that balance is sum of balance and op
+      When balance is less than 0, then:
+         The answer is 1
+      End when
+      Increase i
+   End do
+   The answer is 0
+Now you know
+  Sample 1/1... ✓ (0.09s)
+--- Result: ✓ PASSED (0.09s) ---
+  Problem result: ✓ (1/1 passed) [2.95s]
+
+[5/164] 4_mean_absolute_deviation
+
+============================================================
+[4_mean_absolute_deviation] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to mean_absolute_deviation of numbers:
+   Remember that n is numbers's length
+   Remember that total is tofloat of 0
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in numbers
+      Remember that total is sum of total and x
+      Increase i
+   End do
+   Remember that mean is quotient of total and (tofloat of n)
+   Remember that sum_dev is tofloat of 0
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in numbers
+      Remember that dev is abs of (diff of x and mean)
+      Remember that sum_dev is sum of sum_dev and dev
+      Increase i
+   End do
+   The answer is quotient of sum_dev and (tofloat of n)
+Now you know
+```
+
+The function works as follows:
+1. Calculate the mean (average) of all numbers by summing them and dividing by the count
+2. Calculate the absolute deviation of each number from the mean
+3. Sum all the absolute deviations
+4. Divide by the count to get the mean absolute deviation
+
+For example, with `[1, 2, 3, 4]`:
+- Mean = (1+2+3+4)/4 = 2.5
+- Deviations: |1-2.5|=1.5, |2-2.5|=0.5, |3-2.5|=0.5, |4-2.5|=1.5
+- Sum of deviations = 4.0
+- MAD = 4.0/4 = 1.0
+--- Extracted ---
+Use the standard library
+This is how to mean_absolute_deviation of numbers:
+   Remember that n is numbers's length
+   Remember that total is tofloat of 0
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in numbers
+      Remember that total is sum of total and x
+      Increase i
+   End do
+   Remember that mean is quotient of total and (tofloat of n)
+   Remember that sum_dev is tofloat of 0
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in numbers
+      Remember that dev is abs of (diff of x and mean)
+      Remember that sum_dev is sum of sum_dev and dev
+      Increase i
+   End do
+   The answer is quotient of sum_dev and (tofloat of n)
+Now you know
+  Sample 1/1... ✓ (0.10s)
+--- Result: ✓ PASSED (0.10s) ---
+  Problem result: ✓ (1/1 passed) [3.50s]
+
+[6/164] 5_intersperse
+
+============================================================
+[5_intersperse] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to intersperse of numbers and delimeter:
+   Remember that result is []
+   Remember that n is numbers's length
+   When n is 0, then:
+      The answer is result
+   End when
+   Remember that i is 0
+   Do this n times:
+      Add result to item i in numbers
+      When i is less than diff of n and 1, then:
+         Add result to delimeter
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+```
+
+The function works by:
+1. Creating an empty result array
+2. Getting the length of the input numbers array
+3. If the array is empty, return the empty result
+4. Iterating through each element in the numbers array
+5. Adding each number to the result
+6. If it's not the last element, also add the delimiter to the result
+7. Returning the final result
+
+This produces the expected behavior:
+- `intersperse of [] and 4` → `[]` (empty array returns empty)
+- `intersperse of [1, 2, 3] and 4` → `[1, 4, 2, 4, 3]` (delimiters between elements)
+- `intersperse of [] and 7` → `[]` (empty array returns empty)
+--- Extracted ---
+Use the standard library
+This is how to intersperse of numbers and delimeter:
+   Remember that result is []
+   Remember that n is numbers's length
+   When n is 0, then:
+      The answer is result
+   End when
+   Remember that i is 0
+   Do this n times:
+      Add result to item i in numbers
+      When i is less than diff of n and 1, then:
+         Add result to delimeter
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+  Sample 1/1... ✓ (0.08s)
+--- Result: ✓ PASSED (0.08s) ---
+  Problem result: ✓ (1/1 passed) [3.45s]
+
+[7/164] 6_parse_nested_parens
+
+============================================================
+[6_parse_nested_parens] Sample 1/1
+============================================================
+--- Generated ---
+Looking at this problem, I need to:
+
+1. Parse a string of parentheses separated by spaces
+2. For each group (separated by spaces), find the maximum nesting depth
+3. Return an array of these maximum depths
+
+Let me trace through an example:
+- `"() (()) ((())) (((())))"` 
+- Groups: `"()"` → max depth 1, `"(())"` → max depth 2, `"(((())))"` → max depth 4
+- Result: `[1, 2, 3, 4]`
+
+Here's my solution:
+
+```bridget
+Use the standard library
+This is how to parse_nested_parens of paren_string:
+   Remember that result is []
+   Remember that groups is split of paren_string and " "
+   Remember that g is 0
+   Do this groups's length times:
+      Remember that group is item g in groups
+      Remember that max_depth is 0
+      Remember that current_depth is 0
+      Remember that i is 0
+      Do this group's length times:
+         Remember that c is item i in group
+         When c is 40, then:
+            Increase current_depth
+            When current_depth is more than max_depth, then:
+               Remember that max_depth is current_depth
+            End when
+         End when
+         When c is 41, then:
+            Decrease current_depth
+         End when
+         Increase i
+      End do
+      Add result to max_depth
+      Increase g
+   End do
+   The answer is result
+Now you know
+```
+
+The function:
+1. Splits the input string by spaces to get individual groups
+2. For each group, iterates through each character
+3. When it encounters `(` (ASCII 40), increments the current depth and updates max depth if needed
+4. When it encounters `)` (ASCII 41), decrements the current depth
+5. Adds the maximum depth found for each group to the result array
+6. Returns the array of maximum depths
+--- Extracted ---
+Use the standard library
+This is how to parse_nested_parens of paren_string:
+   Remember that result is []
+   Remember that groups is split of paren_string and " "
+   Remember that g is 0
+   Do this groups's length times:
+      Remember that group is item g in groups
+      Remember that max_depth is 0
+      Remember that current_depth is 0
+      Remember that i is 0
+      Do this group's length times:
+         Remember that c is item i in group
+         When c is 40, then:
+            Increase current_depth
+            When current_depth is more than max_depth, then:
+               Remember that max_depth is current_depth
+            End when
+         End when
+         When c is 41, then:
+            Decrease current_depth
+         End when
+         Increase i
+      End do
+      Add result to max_depth
+      Increase g
+   End do
+   The answer is result
+Now you know
+  Sample 1/1... ✗ (0.09s)
+--- Result: ✗ FAILED (0.09s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 関数が定義されていません ❌split line 4, column 28:
+|    Remember that groups is split of paren_string and " "
+|                            ^^^^^
+  Problem result: ✗ (0/1 passed) [4.18s]
+
+[8/164] 7_filter_by_substring
+
+============================================================
+[7_filter_by_substring] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to filter_by_substring of strings and substring:
+   Remember that result is []
+   Remember that n is strings's length
+   Remember that i is 0
+   Do this n times:
+      Remember that s is item i in strings
+      When substring is in s, then:
+         Add result to s
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to filter_by_substring of strings and substring:
+   Remember that result is []
+   Remember that n is strings's length
+   Remember that i is 0
+   Do this n times:
+      Remember that s is item i in strings
+      When substring is in s, then:
+         Add result to s
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+  Sample 1/1... ✗ (0.10s)
+--- Result: ✗ FAILED (0.10s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] テストを失敗 🔍filter_by_substring of ["xxx", "asd", "xxy", "john doe", "xxxAAA", "xxx"] and "xxx" ❌[] ✅["xxx", "xxxAAA", "xxx"] line 17, column 1:
+| >>> filter_by_substring of ["xxx", "asd", "xxy", "john doe", "xxxAAA", "xxx"] and "xxx" 
+| ^^^^^^^^^^^^^^^^
+  Problem result: ✗ (0/1 passed) [14.05s]
+
+[9/164] 8_sum_product
+
+============================================================
+[8_sum_product] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to sum_product of numbers:
+   Remember that sum is 0
+   Remember that product is 1
+   Remember that n is numbers's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in numbers
+      Remember that sum is (sum of sum and x)
+      Remember that product is (product of product and x)
+      Increase i
+   End do
+   The answer is [sum, product]
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to sum_product of numbers:
+   Remember that sum is 0
+   Remember that product is 1
+   Remember that n is numbers's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in numbers
+      Remember that sum is (sum of sum and x)
+      Remember that product is (product of product and x)
+      Increase i
+   End do
+   The answer is [sum, product]
+Now you know
+  Sample 1/1... ✓ (0.09s)
+--- Result: ✓ PASSED (0.09s) ---
+  Problem result: ✓ (1/1 passed) [13.18s]
+
+[10/164] 9_rolling_max
+
+============================================================
+[9_rolling_max] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to rolling_max of numbers:
+   Remember that result is []
+   Remember that n is numbers's length
+   When n is 0, then:
+      The answer is result
+   End when
+   Remember that current_max is item 0 in numbers
+   Add result to current_max
+   Remember that i is 1
+   Do this diff of n and 1 times:
+      Remember that x is item i in numbers
+      When x is more than current_max, then:
+         Remember that current_max is x
+      End when
+      Add result to current_max
+      Increase i
+   End do
+   The answer is result
+Now you know
+```
+
+The function works by:
+1. Initializing an empty result array
+2. Handling the empty array case
+3. Starting with the first element as the current maximum
+4. Iterating through the remaining elements
+5. For each element, updating the current maximum if the element is larger
+6. Adding the current maximum to the result array at each step
+7. Returning the result array containing the rolling maximum values
+--- Extracted ---
+Use the standard library
+This is how to rolling_max of numbers:
+   Remember that result is []
+   Remember that n is numbers's length
+   When n is 0, then:
+      The answer is result
+   End when
+   Remember that current_max is item 0 in numbers
+   Add result to current_max
+   Remember that i is 1
+   Do this diff of n and 1 times:
+      Remember that x is item i in numbers
+      When x is more than current_max, then:
+         Remember that current_max is x
+      End when
+      Add result to current_max
+      Increase i
+   End do
+   The answer is result
+Now you know
+  Sample 1/1... ✓ (0.08s)
+--- Result: ✓ PASSED (0.08s) ---
+  Problem result: ✓ (1/1 passed) [14.66s]
+
+[11/164] 10_make_palindrome
+
+============================================================
+[10_make_palindrome] Sample 1/1
+============================================================
+--- Generated ---
+Looking at the expected behavior:
+- `make_palindrome of ""` → `""` (empty string stays empty)
+- `make_palindrome of "cat"` → `"catac"` (original + reverse of all but last char)
+- `make_palindrome of "cata"` → `"catac"` (original + reverse of all but last char)
+
+The pattern is: take the original string and append the reverse of all characters except the last one.
+
+```bridget
+Use the standard library
+This is how to make_palindrome of string:
+   Remember that n is string's length
+   When n is 0, then:
+      The answer is ""
+   End when
+   Remember that result is string
+   Remember that i is diff of n and 2
+   Do this diff of n and 1 times:
+      Remember that c is item i in string
+      Add result to c
+      Decrease i
+   End do
+   The answer is result
+Now you know
+```
+--- Extracted ---
+Use the standard library
+This is how to make_palindrome of string:
+   Remember that n is string's length
+   When n is 0, then:
+      The answer is ""
+   End when
+   Remember that result is string
+   Remember that i is diff of n and 2
+   Do this diff of n and 1 times:
+      Remember that c is item i in string
+      Add result to c
+      Decrease i
+   End do
+   The answer is result
+Now you know
+  Sample 1/1... ✗ (0.10s)
+--- Result: ✗ FAILED (0.10s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] テストを失敗 🔍make_palindrome of "xyx" ❌"xyxyx" ✅"xyx" line 22, column 1:
+| >>> make_palindrome of "xyx" 
+| ^^^^^^^^^^^^^^^^
+  Problem result: ✗ (0/1 passed) [12.01s]
+
+[12/164] 11_string_xor

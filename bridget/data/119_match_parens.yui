@@ -1,0 +1,103 @@
+Use the standard library
+This is how to match_parens of lst:
+   Remember that s1 is item 0 in lst
+   Remember that s2 is item 1 in lst
+   Remember that combined1 is []
+   Remember that len1 is s1's length
+   Remember that i is 0
+   Do this len1 times:
+      Add combined1 to item i in s1
+      Increase i
+   End do
+   Remember that len2 is s2's length
+   Remember that i is 0
+   Do this len2 times:
+      Add combined1 to item i in s2
+      Increase i
+   End do
+   Remember that valid1 is 1
+   Remember that depth1 is 0
+   Remember that i is 0
+   Remember that len_c1 is combined1's length
+   Do this len_c1 times:
+      Remember that char is item i in combined1
+      When char is 40, then:
+         Increase depth1
+      But, if not:
+         Decrease depth1
+      End when
+      When depth1 is less than 0, then:
+         Remember that valid1 is 0
+      End when
+      Increase i
+   End do
+   When depth1 is not 0, then:
+      Remember that valid1 is 0
+   End when
+   Remember that combined2 is []
+   Remember that i is 0
+   Do this len2 times:
+      Add combined2 to item i in s2
+      Increase i
+   End do
+   Remember that i is 0
+   Do this len1 times:
+      Add combined2 to item i in s1
+      Increase i
+   End do
+   Remember that valid2 is 1
+   Remember that depth2 is 0
+   Remember that i is 0
+   Remember that len_c2 is combined2's length
+   Do this len_c2 times:
+      Remember that char is item i in combined2
+      When char is 40, then:
+         Increase depth2
+      But, if not:
+         Decrease depth2
+      End when
+      When depth2 is less than 0, then:
+         Remember that valid2 is 0
+      End when
+      Increase i
+   End do
+   When depth2 is not 0, then:
+      Remember that valid2 is 0
+   End when
+   Remember that result is [78, 111]
+   When valid1 is 1, then:
+      Remember that result is [89, 101, 115]
+   End when
+   When valid2 is 1, then:
+      Remember that result is [89, 101, 115]
+   End when
+   The answer is result
+Now you know
+>>> match_parens of [[40, 41, 40], [41]] 
+[89, 101, 115]
+>>> match_parens of [[41], [41]] 
+[78, 111]
+>>> match_parens of ["()(", ")"] 
+"Yes"
+>>> match_parens of [")", ")"] 
+"No"
+>>> match_parens of ["(()(())", "())())"] 
+"No"
+>>> match_parens of [")())", "(()()("] 
+"Yes"
+>>> match_parens of ["(())))", "(()())(("] 
+"Yes"
+>>> match_parens of ["()", "())"] 
+"No"
+>>> match_parens of ["(()(", "()))()"] 
+"Yes"
+>>> match_parens of ["((((", "((())"] 
+"No"
+>>> match_parens of [")(()", "(()("] 
+"No"
+>>> match_parens of [")(", ")("] 
+"No"
+>>> match_parens of ["(", ")"] 
+"Yes"
+>>> match_parens of [")", "("] 
+"Yes"

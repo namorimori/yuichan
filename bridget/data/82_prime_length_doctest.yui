@@ -1,0 +1,32 @@
+>>> prime_length of "Hello" 
+1
+>>> prime_length of "abcdcba" 
+1
+>>> prime_length of "kittens" 
+1
+>>> prime_length of "orange" 
+0
+>>> prime_length of "wow" 
+1
+>>> prime_length of "world" 
+1
+>>> prime_length of "MadaM" 
+1
+>>> prime_length of "Wow" 
+1
+>>> prime_length of "" 
+0
+>>> prime_length of "HI" 
+1
+>>> prime_length of "go" 
+1
+>>> prime_length of "gogo" 
+0
+>>> prime_length of "aaaaaaaaaaaaaaa" 
+0
+>>> prime_length of "Madam" 
+1
+>>> prime_length of "M" 
+0
+>>> prime_length of "0" 
+0

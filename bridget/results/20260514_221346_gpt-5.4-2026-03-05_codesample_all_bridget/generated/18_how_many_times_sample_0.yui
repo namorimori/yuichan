@@ -1,0 +1,30 @@
+Use the standard library
+This is how to how_many_times of string and substring:
+   Remember that n is string's length
+   Remember that m is substring's length
+   When m is 0, then:
+      The answer is 0
+   End when
+   When n is less than m, then:
+      The answer is 0
+   End when
+   Remember that count is 0
+   Remember that limit is sum of (diff of n and m) and 1
+   Remember that i is 0
+   Do this limit times:
+      Remember that match is 1
+      Remember that j is 0
+      Do this m times:
+         Remember that ij is sum of i and j
+         When item ij in string is not item j in substring, then:
+            Remember that match is 0
+         End when
+         Increase j
+      End do
+      When match is 1, then:
+         Increase count
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know

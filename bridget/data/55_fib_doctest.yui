@@ -1,0 +1,10 @@
+>>> fib of 10 
+55
+>>> fib of 1 
+1
+>>> fib of 8 
+21
+>>> fib of 11 
+89
+>>> fib of 12 
+144

@@ -1,0 +1,42 @@
+🗝️ 📚
+🧩 how_many_times(string, substring) 👉
+   文字列長 ⬅️ 📐 string
+   部分文字列長 ⬅️ 📐 substring
+   カウント ⬅️ 0
+   ❓ 部分文字列長 📉 0 👉
+      上限 ⬅️ 和(差(文字列長, 部分文字列長), 1)
+      i ⬅️ 0
+      🌀 上限 👉
+         一致 ⬅️ 1
+         j ⬅️ 0
+         🌀 部分文字列長 👉
+            インデックス ⬅️ 和(i, j)
+            ❓ インデックス 📈 文字列長 👉
+               ❓ string[インデックス] 🚫⚖️ substring[j] 👉
+                  一致 ⬅️ 0
+               🔚
+            🔚
+            j ⬆️
+         🔚
+         ❓ 一致 ⚖️ 1 👉
+            カウント ⬆️
+         🔚
+         i ⬆️
+      🔚
+   🔚
+   ✅ カウント
+🔚
+>>> how_many_times("", "a") 
+0
+>>> how_many_times("aaa", "a") 
+3
+>>> how_many_times("aaaa", "aa") 
+3
+>>> how_many_times("", "x") 
+0
+>>> how_many_times("xyxyxyx", "x") 
+4
+>>> how_many_times("cacacacac", "cac") 
+4
+>>> how_many_times("john doe", "john") 
+1

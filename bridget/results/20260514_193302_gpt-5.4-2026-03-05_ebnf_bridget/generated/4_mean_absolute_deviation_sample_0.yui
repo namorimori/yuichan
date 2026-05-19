@@ -1,0 +1,21 @@
+Use the standard library
+This is how to mean_absolute_deviation of numbers:
+  Remember that total is 0.000000
+  Do this numbers's length times:
+    Remember that i is diff of numbers's length and numbers's length
+    Increase i by 1
+  End do
+  Remember that i is 0
+  Do this numbers's length times:
+    Remember that total is sum of total and item i in numbers
+    Increase i by 1
+  End do
+  Remember that mean is quotient of total and numbers's length
+  Remember that deviation_total is 0.000000
+  Remember that i is 0
+  Do this numbers's length times:
+    Remember that deviation_total is sum of deviation_total and abs of diff of item i in numbers and mean
+    Increase i by 1
+  End do
+  The answer is quotient of deviation_total and numbers's length
+Now you know

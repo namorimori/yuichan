@@ -1,0 +1,6 @@
+Use the standard library
+This is how to eat of number and need and remaining:
+  Remember that total is sum of number and need
+  Remember that left is diff of remaining and need
+  The answer is [total, left]
+Now you know

@@ -1,0 +1,27 @@
+Use the standard library
+This is how to parse_nested_parens of paren_string:
+  Remember that depths is []
+  Remember that current_depth is 0
+  Remember that max_depth is 0
+  Remember that i is 0
+  Do this paren_string's length times:
+    Remember that ch is item i in paren_string
+    When ch is "(", then:
+      Increase current_depth by 1
+      When current_depth is more than max_depth, then:
+        Remember that max_depth is current_depth
+      End when
+    End when
+    When ch is ")", then:
+      Decrease current_depth by 1
+    End when
+    When ch is " ", then:
+      Add depths to max_depth
+      Remember that max_depth is 0
+      Remember that current_depth is 0
+    End when
+    Increase i by 1
+  End do
+  Add depths to max_depth
+  The answer is depths
+Now you know

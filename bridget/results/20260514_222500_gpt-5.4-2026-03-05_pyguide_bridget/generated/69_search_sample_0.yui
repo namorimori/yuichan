@@ -1,0 +1,19 @@
+Use the standard library
+This is how to search of lst:
+   Remember that i is 0
+   Do this lst's length times:
+      Remember that count is 0
+      Remember that j is 0
+      Do this lst's length times:
+         When item j in lst is item i in lst, then:
+            Increase count
+         End when
+         Increase j
+      End do
+      When count is 2, then:
+         The answer is item i in lst
+      End when
+      Increase i
+   End do
+   The answer is -1
+Now you know

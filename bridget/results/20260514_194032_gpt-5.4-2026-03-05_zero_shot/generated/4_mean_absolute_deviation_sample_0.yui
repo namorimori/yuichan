@@ -1,0 +1,4 @@
+Use the standard library
+mean_absolute_deviation of numbers =
+  let avg = mean of numbers
+  in mean of (map (\x = abs (x - avg)) numbers)

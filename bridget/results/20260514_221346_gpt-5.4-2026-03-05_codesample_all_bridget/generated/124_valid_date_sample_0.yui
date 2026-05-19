@@ -1,0 +1,83 @@
+Use the standard library
+This is how to valid_date of date:
+   Remember that s is date
+   When isarray of date, then:
+      Remember that s is ""
+      Remember that n is date's length
+      Remember that i is 0
+      Do this n times:
+         Add s to item i in date
+         Increase i
+      End do
+   End when
+   When s's length is not 10, then:
+      The answer is 0
+   End when
+   When item 2 in s is not 45, then:
+      The answer is 0
+   End when
+   When item 5 in s is not 45, then:
+      The answer is 0
+   End when
+   Remember that i is 0
+   Do this 10 times:
+      When i is not 2, then:
+         When i is not 5, then:
+            Remember that c is item i in s
+            When c is less than 48, then:
+               The answer is 0
+            End when
+            When c is more than 57, then:
+               The answer is 0
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   Remember that month_s is ""
+   Add month_s to item 0 in s
+   Add month_s to item 1 in s
+   Remember that day_s is ""
+   Add day_s to item 3 in s
+   Add day_s to item 4 in s
+   Remember that year_s is ""
+   Add year_s to item 6 in s
+   Add year_s to item 7 in s
+   Add year_s to item 8 in s
+   Add year_s to item 9 in s
+   Remember that month is toint of month_s
+   Remember that day is toint of day_s
+   Remember that year is toint of year_s
+   When month is less than 1, then:
+      The answer is 0
+   End when
+   When month is more than 12, then:
+      The answer is 0
+   End when
+   Remember that maxday is 31
+   When month is 4, then:
+      Remember that maxday is 30
+   End when
+   When month is 6, then:
+      Remember that maxday is 30
+   End when
+   When month is 9, then:
+      Remember that maxday is 30
+   End when
+   When month is 11, then:
+      Remember that maxday is 30
+   End when
+   When month is 2, then:
+      Remember that maxday is 28
+      When leap_year of year, then:
+         Remember that maxday is 29
+      End when
+   End when
+   When day is less than 1, then:
+      The answer is 0
+   End when
+   When day is more than maxday, then:
+      The answer is 0
+   End when
+   The answer is 1
+Now you know

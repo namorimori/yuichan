@@ -1,0 +1,23 @@
+Use the standard library
+This is how to mean_absolute_deviation of numbers:
+  Remember that total is 0.000000
+  Remember that count is numbers's length
+  Remember that index is 0
+  Do this count times:
+    Remember that total is sum of total and item index in numbers
+    Increase index by 1
+  End do
+  Remember that mean is quotient of total and count
+  Remember that deviation_total is 0.000000
+  Remember that index is 0
+  Do this count times:
+    Remember that value is item index in numbers
+    When value is less than mean, then:
+      Remember that deviation_total is sum of deviation_total and diff of mean and value
+    But, if not:
+      Remember that deviation_total is sum of deviation_total and diff of value and mean
+    End when
+    Increase index by 1
+  End do
+  The answer is quotient of deviation_total and count
+Now you know

@@ -1,0 +1,123 @@
+Nav rem vaz
+Dum by_length(arr):
+   Kem length par arr @kez
+   Kem filtered par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem value par arr[i]
+      Kem is_valid par 0
+      Nev value pep 0 ger:
+         Nev value dup 10 ger:
+            Kem is_valid par 1
+         Dam nev
+      Dam nev
+      Nev is_valid paz 1 ger:
+         Mev filtered naz value
+      Dam nev
+      Rav i
+   Dam mup
+   Kem filtered_len par filtered @kez
+   Kem i par 0
+   Mup dum filtered_len pag:
+      Kem j par 0
+      Kem limit par 差(差(filtered_len, i), 1)
+      Mup dum limit pag:
+         Kem next_j par 和(j, 1)
+         Nev filtered[j] dup filtered[next_j] ger:
+            Kem temp par filtered[j]
+            Kem filtered[j] par filtered[next_j]
+            Kem filtered[next_j] par temp
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Kem result par []
+   Kem i par 0
+   Mup dum filtered_len pag:
+      Kem value par filtered[i]
+      Kem name par []
+      Nev value paz 1 ger:
+         Mev name naz 79
+         Mev name naz 110
+         Mev name naz 101
+      Dam nev
+      Nev value paz 2 ger:
+         Mev name naz 84
+         Mev name naz 119
+         Mev name naz 111
+      Dam nev
+      Nev value paz 3 ger:
+         Mev name naz 84
+         Mev name naz 104
+         Mev name naz 114
+         Mev name naz 101
+         Mev name naz 101
+      Dam nev
+      Nev value paz 4 ger:
+         Mev name naz 70
+         Mev name naz 111
+         Mev name naz 117
+         Mev name naz 114
+      Dam nev
+      Nev value paz 5 ger:
+         Mev name naz 70
+         Mev name naz 105
+         Mev name naz 118
+         Mev name naz 101
+      Dam nev
+      Nev value paz 6 ger:
+         Mev name naz 83
+         Mev name naz 105
+         Mev name naz 120
+      Dam nev
+      Nev value paz 7 ger:
+         Mev name naz 83
+         Mev name naz 101
+         Mev name naz 118
+         Mev name naz 101
+         Mev name naz 110
+      Dam nev
+      Nev value paz 8 ger:
+         Mev name naz 69
+         Mev name naz 105
+         Mev name naz 103
+         Mev name naz 104
+         Mev name naz 116
+      Dam nev
+      Nev value paz 9 ger:
+         Mev name naz 78
+         Mev name naz 105
+         Mev name naz 110
+         Mev name naz 101
+      Dam nev
+      Mev result naz name
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> by_length([2, 1, 1, 4, 5, 8, 2, 3]) 
+[
+   [69, 105, 103, 104, 116],
+   [70, 105, 118, 101],
+   [70, 111, 117, 114],
+   [84, 104, 114, 101, 101],
+   [84, 119, 111],
+   [84, 119, 111],
+   [79, 110, 101],
+   [79, 110, 101]
+]
+>>> by_length([]) 
+[]
+>>> by_length([1, -1, 55]) 
+[[79, 110, 101]]
+>>> by_length([2, 1, 1, 4, 5, 8, 2, 3]) 
+["Eight", "Five", "Four", "Three", "Two", "Two", "One", "One"]
+>>> by_length([]) 
+[]
+>>> by_length([1, -1, 55]) 
+["One"]
+>>> by_length([1, -1, 3, 2]) 
+["Three", "Two", "One"]
+>>> by_length([9, 4, 8]) 
+["Nine", "Eight", "Four"]

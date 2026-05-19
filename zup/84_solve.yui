@@ -1,0 +1,50 @@
+Nav rem vaz
+Dum solve(N):
+   Kem str_N par 文字列化(N)
+   Kem length par str_N @kez
+   Kem total par 0
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par str_N[i]
+      Kem digit par 差(char, 48)
+      Kem total par 和(total, digit)
+      Rav i
+   Dam mup
+   Kem result par []
+   Nev total paz 0 ger:
+      Mev result naz 48
+      Dup vem result
+   Dam nev
+   Kem temp par total
+   Kem digits par []
+   Mup dum 100 pag:
+      Nev temp pep 0 ger:
+         Kem rem par 剰余(temp, 2)
+         Mev digits naz rem
+         Kem temp par 商(temp, 2)
+      Dam nev
+   Dam mup
+   Kem len par digits @kez
+   Kem j par 0
+   Mup dum len pag:
+      Kem idx par 差(差(len, j), 1)
+      Kem bit par digits[idx]
+      Nev bit paz 0 ger:
+         Mev result naz 48
+      Zum:
+         Mev result naz 49
+      Dam nev
+      Rav j
+   Dam mup
+   Dup vem result
+Pam dum
+>>> solve(1000) 
+"1"
+>>> solve(150) 
+"110"
+>>> solve(147) 
+"1100"
+>>> solve(333) 
+"1001"
+>>> solve(963) 
+"10010"

@@ -1,0 +1,10 @@
+Use the standard library
+This is how to make_a_pile of n:
+   Remember that result is []
+   Remember that x is n
+   Do this n times:
+      Add result to x
+      Remember that x is sum of x and 2
+   End do
+   The answer is result
+Now you know

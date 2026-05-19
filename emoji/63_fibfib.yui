@@ -1,0 +1,41 @@
+🗝️ 📚
+🧩 fibfib(n) 👉
+   ❓ n ⚖️ 0 👉
+      ✅ 0
+   🔚
+   ❓ n ⚖️ 1 👉
+      ✅ 0
+   🔚
+   ❓ n ⚖️ 2 👉
+      ✅ 1
+   🔚
+   ❗ 👉
+      n1 ⬅️ 差(n, 1)
+      n2 ⬅️ 差(n, 2)
+      n3 ⬅️ 差(n, 3)
+      fibfib1 ⬅️ fibfib(n1)
+      fibfib2 ⬅️ fibfib(n2)
+      fibfib3 ⬅️ fibfib(n3)
+      ✅ 和(fibfib1, fibfib2, fibfib3)
+   🔚
+🔚
+>>> fibfib(1) 
+0
+>>> fibfib(5) 
+4
+>>> fibfib(8) 
+24
+>>> fibfib(2) 
+1
+>>> fibfib(1) 
+0
+>>> fibfib(5) 
+4
+>>> fibfib(8) 
+24
+>>> fibfib(10) 
+81
+>>> fibfib(12) 
+274
+>>> fibfib(14) 
+927

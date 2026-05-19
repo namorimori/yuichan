@@ -1,0 +1,14 @@
+>>> 施詞篩於「This is a test」
+「is」
+>>> 施詞篩於「lets go for swimming」
+「go for」
+>>> 施詞篩於「there is no place available here」
+「there is no place」
+>>> 施詞篩於「Hi I am Hussein」
+「Hi am Hussein」
+>>> 施詞篩於「go for it」
+「go for it」
+>>> 施詞篩於「here」
+「」
+>>> 施詞篩於「here is」
+「is」

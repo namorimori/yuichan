@@ -1,0 +1,57 @@
+🗝️ 📚
+🧩 reverse_delete(s, c) 👉
+   s_len ⬅️ 📐 s
+   c_len ⬅️ 📐 c
+   result_str ⬅️ []
+   i ⬅️ 0
+   🌀 s_len 👉
+      char ⬅️ s[i]
+      should_remove ⬅️ 0
+      j ⬅️ 0
+      🌀 c_len 👉
+         ❓ char ⚖️ c[j] 👉
+            should_remove ⬅️ 1
+         🔚
+         j ⬆️
+      🔚
+      ❓ should_remove ⚖️ 0 👉
+         result_str 🧲 char
+      🔚
+      i ⬆️
+   🔚
+   rs_len ⬅️ 📐 result_str
+   is_palindrome ⬅️ 1
+   i ⬅️ 0
+   half ⬅️ 商(rs_len, 2)
+   🌀 half 👉
+      back_idx ⬅️ 差(差(rs_len, i), 1)
+      ❓ result_str[i] 🚫⚖️ result_str[back_idx] 👉
+         is_palindrome ⬅️ 0
+      🔚
+      i ⬆️
+   🔚
+   result ⬅️ []
+   result 🧲 result_str
+   result 🧲 is_palindrome
+   ✅ result
+🔚
+>>> reverse_delete([97, 98, 99, 100, 101], [97, 101]) 
+[[98, 99, 100], 0]
+>>> reverse_delete("abcde", "ae") 
+["bcd", 0]
+>>> reverse_delete("abcdef", "b") 
+["acdef", 0]
+>>> reverse_delete("abcdedcba", "ab") 
+["cdedc", 1]
+>>> reverse_delete("dwik", "w") 
+["dik", 0]
+>>> reverse_delete("a", "a") 
+["", 1]
+>>> reverse_delete("abcdedcba", "") 
+["abcdedcba", 1]
+>>> reverse_delete("abcdedcba", "v") 
+["abcdedcba", 1]
+>>> reverse_delete("vabba", "v") 
+["abba", 1]
+>>> reverse_delete("mamma", "mia") 
+["", 1]

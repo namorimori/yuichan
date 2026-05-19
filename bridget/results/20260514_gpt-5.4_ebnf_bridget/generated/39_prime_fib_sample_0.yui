@@ -1,0 +1,27 @@
+Use the standard library
+This is how to prime_fib of n:
+  Remember that count is 0
+  Remember that a is 2
+  Do this 100000 times:
+    Remember that is_prime is yes
+    Remember that d is 2
+    Do this a times:
+      When d is less than a, then:
+        When remainder of a and d is 0, then:
+          Remember that is_prime is no
+          Leave the loop
+        End when
+        Increase d by 1
+      But, if not:
+        Leave the loop
+      End when
+    End do
+    When is_prime is yes, then:
+      Increase count by 1
+      When count is n, then:
+        The answer is a
+      End when
+    End when
+    Increase a by 1
+  End do
+Now you know

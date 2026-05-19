@@ -1,0 +1,43 @@
+Dum longest(strings):
+   Kem 長さ par strings @kez
+   Kem 結果 par []
+   Nev 長さ paz 0 ger:
+      Dup vem 結果
+   Dam nev
+   Kem 最大長 par 0
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 文字列 par strings[i]
+      Kem 文字列長 par 文字列 @kez
+      Nev 文字列長 pep 最大長 ger:
+         Kem 最大長 par 文字列長
+      Dam nev
+      Rav i
+   Dam mup
+   Kem i par 0
+   Kem 見つかった par 0
+   Mup dum 長さ pag:
+      Nev 見つかった paz 0 ger:
+         Kem 文字列 par strings[i]
+         Kem 文字列長 par 文字列 @kez
+         Nev 文字列長 paz 最大長 ger:
+            Kem 結果 par 文字列
+            Kem 見つかった par 1
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> longest([]) 
+[]
+>>> longest(["a", "b", "c"]) 
+"a"
+>>> longest(["a", "bb", "ccc"]) 
+"ccc"
+>>> longest([]) 
+""
+>>> longest(["x", "y", "z"]) 
+"x"
+>>> longest(["x", "yyy", "zzzz", "www", "kkkk", "abc"]) 
+"zzzz"

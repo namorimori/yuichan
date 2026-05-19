@@ -1,0 +1,44 @@
+Use the standard library
+This is how to string_sequence of n:
+   Remember that result is []
+   Remember that i is 0
+   Do this sum of n and 1 times:
+      When i is 0, then:
+         Add result to 48
+      But, if not:
+         Remember that digits is []
+         Remember that temp is i
+         Do this 100 times:
+            When temp is more than 0, then:
+               Remember that digit is remainder of temp and 10
+               Add digits to digit
+               Remember that temp is quotient of temp and 10
+            End when
+         End do
+         Remember that digit_len is digits's length
+         Remember that j is 0
+         Do this digit_len times:
+            Remember that idx is diff of (diff of digit_len and j) and 1
+            Remember that digit is item idx in digits
+            Remember that char_code is sum of 48 and digit
+            Add result to char_code
+            Increase j
+         End do
+      End when
+      When i is less than n, then:
+         Add result to 32
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> string_sequence of 0 
+[48]
+>>> string_sequence of 5 
+[48, 32, 49, 32, 50, 32, 51, 32, 52, 32, 53]
+>>> string_sequence of 0 
+"0"
+>>> string_sequence of 3 
+"0 1 2 3"
+>>> string_sequence of 10 
+"0 1 2 3 4 5 6 7 8 9 10"

@@ -1,0 +1,22 @@
+Use the standard library
+This is how to generate_integers of a and b:
+   Remember that lo is a
+   Remember that hi is b
+   When b is less than a, then:
+      Remember that lo is b
+      Remember that hi is a
+   End when
+   Remember that result is []
+   Remember that x is lo
+   Remember that limit is sum of hi and 1
+   Do this limit times:
+      When x is more than hi, then:
+         Leave the loop
+      End when
+      When remainder of x and 2 is 0, then:
+         Add result to x
+      End when
+      Increase x
+   End do
+   The answer is result
+Now you know

@@ -1,0 +1,12 @@
+>>> 施檢字表於{「p」:「pineapple」,「b」:「banana」}
+1
+>>> 施檢字表於{「p」:「pineapple」,「A」:「banana」,「B」:「banana」}
+0
+>>> 施檢字表於{「Name」:「John」,「Age」:「36」,「City」:「Houston」}
+0
+>>> 施檢字表於{「STATE」:「NC」,「ZIP」:「12345」}
+1
+>>> 施檢字表於{「fruit」:「Orange」,「taste」:「Sweet」}
+1
+>>> 施檢字表於{}
+0

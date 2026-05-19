@@ -1,0 +1,50 @@
+Use the standard library
+This is how to get_odd_collatz of n:
+   Remember that result is []
+   Remember that current is n
+   Remember that remainder is remainder of n and 2
+   When remainder is 1, then:
+      Add result to n
+   End when
+   Do this 1000 times:
+      When current is more than 1, then:
+         Remember that remainder is remainder of current and 2
+         When remainder is 0, then:
+            Remember that current is quotient of current and 2
+         But, if not:
+            Remember that current is sum of (product of current and 3) and 1
+         End when
+         Remember that new_remainder is remainder of current and 2
+         When new_remainder is 1, then:
+            Add result to current
+         End when
+      End when
+   End do
+   Remember that result_len is result's length
+   Remember that i is 0
+   Do this result_len times:
+      Remember that j is 0
+      Remember that limit is diff of (diff of result_len and i) and 1
+      Do this limit times:
+         Remember that next_j is sum of j and 1
+         When item j in result is more than item next_j in result, then:
+            Remember that temp is item j in result
+            Remember that item j in result is item next_j in result
+            Remember that item next_j in result is temp
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> get_odd_collatz of 5 
+[1, 5]
+>>> get_odd_collatz of 14 
+[1, 5, 7, 11, 13, 17]
+>>> get_odd_collatz of 5 
+[1, 5]
+>>> get_odd_collatz of 12 
+[1, 3, 5]
+>>> get_odd_collatz of 1 
+[1]

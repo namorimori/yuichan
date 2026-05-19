@@ -1,0 +1,16 @@
+Use the standard library
+This is how to iscube of a:
+   Remember that x is abs of a
+   Remember that i is 0
+   Do this sum of x and 1 times:
+      Remember that c is product of (product of i and i) and i
+      When c is x, then:
+         The answer is 1
+      End when
+      When c is more than x, then:
+         Leave the loop
+      End when
+      Increase i
+   End do
+   The answer is 0
+Now you know

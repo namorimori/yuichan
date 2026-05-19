@@ -1,0 +1,109 @@
+Use the standard library
+This is how to simplify of x and n:
+   Remember that x_len is x's length
+   Remember that x_num is []
+   Remember that x_den is []
+   Remember that found_slash is 0
+   Remember that i is 0
+   Do this x_len times:
+      Remember that char is item i in x
+      When char is 47, then:
+         Remember that found_slash is 1
+      But, if not:
+         When found_slash is 0, then:
+            Add x_num to char
+         But, if not:
+            Add x_den to char
+         End when
+      End when
+      Increase i
+   End do
+   Remember that n_len is n's length
+   Remember that n_num is []
+   Remember that n_den is []
+   Remember that found_slash is 0
+   Remember that i is 0
+   Do this n_len times:
+      Remember that char is item i in n
+      When char is 47, then:
+         Remember that found_slash is 1
+      But, if not:
+         When found_slash is 0, then:
+            Add n_num to char
+         But, if not:
+            Add n_den to char
+         End when
+      End when
+      Increase i
+   End do
+   Remember that a is 0
+   Remember that j is 0
+   Remember that xn_len is x_num's length
+   Do this xn_len times:
+      Remember that digit is diff of item j in x_num and 48
+      Remember that a is sum of (product of a and 10) and digit
+      Increase j
+   End do
+   Remember that b is 0
+   Remember that j is 0
+   Remember that xd_len is x_den's length
+   Do this xd_len times:
+      Remember that digit is diff of item j in x_den and 48
+      Remember that b is sum of (product of b and 10) and digit
+      Increase j
+   End do
+   Remember that c is 0
+   Remember that j is 0
+   Remember that nn_len is n_num's length
+   Do this nn_len times:
+      Remember that digit is diff of item j in n_num and 48
+      Remember that c is sum of (product of c and 10) and digit
+      Increase j
+   End do
+   Remember that d is 0
+   Remember that j is 0
+   Remember that nd_len is n_den's length
+   Do this nd_len times:
+      Remember that digit is diff of item j in n_den and 48
+      Remember that d is sum of (product of d and 10) and digit
+      Increase j
+   End do
+   Remember that numerator is product of a and c
+   Remember that denominator is product of b and d
+   Remember that remainder is remainder of numerator and denominator
+   Remember that result is 0
+   When remainder is 0, then:
+      Remember that result is 1
+   End when
+   The answer is result
+Now you know
+>>> simplify of [49, 47, 53] and [53, 47, 49] 
+1
+>>> simplify of [49, 47, 54] and [50, 47, 49] 
+0
+>>> simplify of "1/5" and "5/1" 
+1
+>>> simplify of "1/6" and "2/1" 
+0
+>>> simplify of "5/1" and "3/1" 
+1
+>>> simplify of "7/10" and "10/2" 
+0
+>>> simplify of "2/10" and "50/10" 
+1
+>>> simplify of "7/2" and "4/2" 
+1
+>>> simplify of "11/6" and "6/1" 
+1
+>>> simplify of "2/3" and "5/2" 
+0
+>>> simplify of "5/2" and "3/5" 
+0
+>>> simplify of "2/4" and "8/4" 
+1
+>>> simplify of "2/4" and "4/2" 
+1
+>>> simplify of "1/5" and "5/1" 
+1
+>>> simplify of "1/5" and "1/5" 
+0

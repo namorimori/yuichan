@@ -1,0 +1,13 @@
+Use the standard library
+This is how to hex_key of num:
+  Remember that count is 0
+  Remember that i is 0
+  Do this num's length times:
+    Remember that ch is tostring of item i in num
+    When ch is in "ABCDEF", then:
+      Increase count by 1
+    End when
+    Increase i by 1
+  End do
+  The answer is quotient of count and 2
+Now you know

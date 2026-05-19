@@ -1,0 +1,54 @@
+Use the standard library
+This is how to monotonic of l:
+   Remember that length is l's length
+   Remember that result is 1
+   When length is at least 1, then:
+      The answer is result
+   End when
+   Remember that is_increasing is 1
+   Remember that i is 1
+   Do this diff of length and 1 times:
+      Remember that prev_i is diff of i and 1
+      When item prev_i in l is more than item i in l, then:
+         Remember that is_increasing is 0
+      End when
+      Increase i
+   End do
+   Remember that is_decreasing is 1
+   Remember that i is 1
+   Do this diff of length and 1 times:
+      Remember that prev_i is diff of i and 1
+      When item prev_i in l is less than item i in l, then:
+         Remember that is_decreasing is 0
+      End when
+      Increase i
+   End do
+   When is_increasing is 0, then:
+      When is_decreasing is 0, then:
+         Remember that result is 0
+      End when
+   End when
+   The answer is result
+Now you know
+>>> monotonic of [1, 2, 4, 20] 
+1
+>>> monotonic of [1, 20, 4, 10] 
+0
+>>> monotonic of [4, 1, 0, -10] 
+1
+>>> monotonic of [1, 2, 4, 10] 
+1
+>>> monotonic of [1, 2, 4, 20] 
+1
+>>> monotonic of [1, 20, 4, 10] 
+0
+>>> monotonic of [4, 1, 0, -10] 
+1
+>>> monotonic of [4, 1, 1, 0] 
+1
+>>> monotonic of [1, 2, 3, 2, 5, 60] 
+0
+>>> monotonic of [1, 2, 3, 4, 5, 60] 
+1
+>>> monotonic of [9, 9, 9, 9] 
+1

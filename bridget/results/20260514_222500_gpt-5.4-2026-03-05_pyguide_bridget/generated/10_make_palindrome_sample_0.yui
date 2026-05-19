@@ -1,0 +1,13 @@
+Use the standard library
+This is how to make_palindrome of string:
+   Remember that result is string
+   Remember that n is string's length
+   Remember that i is 0
+   Do this n times:
+      When i is at least (quotient of n and 2), then:
+         Add result to item (diff of (diff of n and 2) and i) in string
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know

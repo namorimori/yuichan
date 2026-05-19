@@ -1,0 +1,36 @@
+Use the standard library
+This is how to bf of planet1 and planet2:
+   Remember that planets is [
+      [77, 101, 114, 99, 117, 114, 121],
+      [86, 101, 110, 117, 115],
+      [69, 97, 114, 116, 104],
+      [77, 97, 114, 115],
+      [74, 117, 112, 105, 116, 101, 114],
+      [83, 97, 116, 117, 114, 110],
+      [85, 114, 97, 110, 117, 115],
+      [78, 101, 112, 116, 117, 110, 101]
+   ]
+   Remember that start is 0
+   Remember that finish is 0
+   Remember that n is planets's length
+   Remember that i is 0
+   Do this n times:
+      When item i in planets is planet1, then:
+         Remember that start is i
+      End when
+      When item i in planets is planet2, then:
+         Remember that finish is i
+      End when
+      Increase i
+   End do
+   Remember that result is []
+   Remember that i is sum of start and 1
+   Do this n times:
+      When i is at least finish, then:
+         Leave the loop
+      End when
+      Add result to item i in planets
+      Increase i
+   End do
+   The answer is result
+Now you know

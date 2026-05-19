@@ -1,0 +1,10 @@
+Use the standard library
+This is how to compare_one of a and b:
+   When a is more than b, then:
+      The answer is a
+   End when
+   When b is more than a, then:
+      The answer is b
+   End when
+   The answer is []
+Now you know

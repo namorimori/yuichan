@@ -1,0 +1,27 @@
+Use the standard library
+This is how to intersperse of numbers and delimeter:
+   Remember that length is numbers's length
+   Remember that result is []
+   When length is 0, then:
+      The answer is result
+   End when
+   Remember that i is 0
+   Remember that limit is diff of length and 1
+   Do this limit times:
+      Add result to item i in numbers
+      Add result to delimeter
+      Increase i
+   End do
+   Add result to item limit in numbers
+   The answer is result
+Now you know
+>>> intersperse of [] and 4 
+[]
+>>> intersperse of [1, 2, 3] and 4 
+[1, 4, 2, 4, 3]
+>>> intersperse of [] and 7 
+[]
+>>> intersperse of [5, 6, 3, 2] and 8 
+[5, 8, 6, 8, 3, 8, 2]
+>>> intersperse of [2, 2, 2] and 2 
+[2, 2, 2, 2, 2]

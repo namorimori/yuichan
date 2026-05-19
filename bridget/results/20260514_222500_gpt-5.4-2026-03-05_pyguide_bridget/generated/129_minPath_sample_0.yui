@@ -1,0 +1,52 @@
+Use the standard library
+This is how to minPath of grid and k:
+   Remember that rows is grid's length
+   Remember that cols is item 0 in grid's length
+
+   Remember that best is []
+   Remember that bestSum is 0
+   Remember that started is no
+
+   Remember that start is 0
+   Do this rows times:
+      Remember that path is []
+      Remember that total is 0
+      Remember that r is start
+      Remember that c is 0
+
+      Do this k times:
+         When r is at least (diff of rows and 1), then:
+            When c is at least (diff of cols and 1), then:
+               Add path to (sum of r and 1)
+               Remember that total is sum of total and item c in item r in grid
+            End when
+         End when
+
+         When c is less than (diff of cols and 1), then:
+            Increase c
+         But, if not:
+            When r is less than (diff of rows and 1), then:
+               Increase r
+            End when
+         End when
+      End do
+
+      When started is no, then:
+         Remember that best is path
+         Remember that bestSum is total
+         Remember that started is yes
+      But, if not:
+         When total is less than bestSum, then:
+            Remember that best is path
+            Remember that bestSum is total
+         End when
+      End when
+
+      Increase start
+      When start is more than (diff of rows and k), then:
+         Leave the loop
+      End when
+   End do
+
+   The answer is best
+Now you know

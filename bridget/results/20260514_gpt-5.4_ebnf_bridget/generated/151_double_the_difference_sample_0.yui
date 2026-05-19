@@ -1,0 +1,20 @@
+Use the standard library
+This is how to double_the_difference of lst:
+  Remember that total is 0
+  Do this lst's length times:
+    Remember that i is diff of lst's length and 1
+    Remember that i is diff of i and total
+    Remember that x is item i in lst
+    When x is more than 0, then:
+      Remember that half is quotient of x and 2
+      When product of half and 2 is x, then:
+        Do nothing
+      But, if not:
+        Remember that total is sum of total and product of x and x
+      End when
+    But, if not:
+      Do nothing
+    End when
+  End do
+  The answer is product of total and 2
+Now you know

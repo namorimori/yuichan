@@ -1,0 +1,32 @@
+Nav rem vaz
+Dum below_zero(operations):
+   Kem balance par 0
+   Kem 結果 par 0
+   Kem 長さ par operations @kez
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem op par operations[i]
+      Kem balance par 和(balance, op)
+      Nev balance dup 0 ger:
+         Kem 結果 par 1
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> below_zero([1, 2, 3]) 
+0
+>>> below_zero([1, 2, -4, 5]) 
+1
+>>> below_zero([]) 
+0
+>>> below_zero([1, 2, -3, 1, 2, -3]) 
+0
+>>> below_zero([1, 2, -4, 5, 6]) 
+1
+>>> below_zero([1, -1, 2, -2, 5, -5, 4, -4]) 
+0
+>>> below_zero([1, -1, 2, -2, 5, -5, 4, -5]) 
+1
+>>> below_zero([1, -2, 2, -2, 5, -5, 4, -4]) 
+1

@@ -1,0 +1,19 @@
+Use the standard library
+This is how to median of l:
+   Remember that a is bubble_sort of l
+   Remember that n is a's length
+   Remember that mid is quotient of n and 2
+   Remember that parity is remainder of n and 2
+   When parity is 1, then:
+      The answer is item mid in a
+   End when
+   Remember that left is item (diff of mid and 1) in a
+   Remember that right is item mid in a
+   The answer is quotient of (sum of (tofloat of left) and (tofloat of right)) and (tofloat of 2)
+Now you know
+>>> median of [3, 1, 2, 4, 5] 
+3
+>>> median of [-10, 4, 6, 1000, 10, 20] 
+8.000000
+>>> median of [3, 1, 2, 4, 5] 
+3

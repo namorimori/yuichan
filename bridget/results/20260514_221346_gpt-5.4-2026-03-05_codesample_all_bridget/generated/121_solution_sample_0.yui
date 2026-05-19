@@ -1,0 +1,14 @@
+Use the standard library
+This is how to solution of lst:
+   Remember that total is 0
+   Remember that n is lst's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in lst
+      When remainder of x and 2 is 1, then:
+         Remember that total is sum of total and x
+      End when
+      Increase i
+   End do
+   The answer is total
+Now you know

@@ -1,0 +1,18 @@
+Use the standard library
+This is how to sum_squares of lst:
+   Remember that total is 0
+   Remember that i is 0
+   Do this lst's length times:
+      Remember that x is item i in lst
+      Remember that total is sum of total and (product of x and x)
+      Increase i
+   End do
+   The answer is total
+Now you know
+
+>>> sum_squares of [1, 2, 3]
+14
+>>> sum_squares of []
+0
+>>> sum_squares of [-1, -5, 2, -1, -5]
+56

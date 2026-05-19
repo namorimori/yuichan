@@ -1,0 +1,38 @@
+🗝️ 📚
+🧩 f(n) 👉
+   result ⬅️ []
+   i ⬅️ 1
+   🌀 n 👉
+      remainder ⬅️ 剰余(i, 2)
+      ❓ remainder ⚖️ 0 👉
+         factorial ⬅️ 1
+         j ⬅️ 1
+         🌀 i 👉
+            factorial ⬅️ 積(factorial, j)
+            j ⬆️
+         🔚
+         result 🧲 factorial
+      🔚
+      ❗ 👉
+         sum ⬅️ 0
+         j ⬅️ 1
+         🌀 i 👉
+            sum ⬅️ 和(sum, j)
+            j ⬆️
+         🔚
+         result 🧲 sum
+      🔚
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> f(5) 
+[1, 2, 6, 24, 15]
+>>> f(5) 
+[1, 2, 6, 24, 15]
+>>> f(7) 
+[1, 2, 6, 24, 15, 720, 28]
+>>> f(1) 
+[1]
+>>> f(3) 
+[1, 2, 6]

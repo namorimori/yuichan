@@ -1,0 +1,24 @@
+Use the standard library
+This is how to get_odd_collatz of n:
+   Remember that result is []
+   Do this n times:
+      When remainder of n and 2 is 1, then:
+         Add result to n
+      End when
+      When n is 1, then:
+         Leave the loop
+      End when
+      When remainder of n and 2 is 0, then:
+         Remember that n is quotient of n and 2
+      But, if not:
+         Remember that n is sum of (product of 3 and n) and 1
+      End when
+   End do
+   Remember that i is 0
+   Remember that reversed is []
+   Do this result's length times:
+      Add reversed to item (diff of (diff of result's length and 1) and i) in result
+      Increase i
+   End do
+   The answer is reversed
+Now you know

@@ -1,0 +1,30 @@
+Use the standard library
+This is how to even_odd_count of num:
+   Remember that n is abs of num
+   Remember that evens is 0
+   Remember that odds is 0
+
+   When n is 0, then:
+      Increase evens
+      The answer is [evens, odds]
+   End when
+
+   Do this n times:
+      When n is 0, then:
+         Leave the loop
+      End when
+
+      Remember that digit is remainder of n and 10
+      Remember that check is remainder of digit and 2
+
+      When check is 0, then:
+         Increase evens
+      But, if not:
+         Increase odds
+      End when
+
+      Remember that n is quotient of n and 10
+   End do
+
+   The answer is [evens, odds]
+Now you know

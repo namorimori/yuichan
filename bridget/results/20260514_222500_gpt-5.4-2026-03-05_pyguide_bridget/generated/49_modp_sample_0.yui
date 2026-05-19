@@ -1,0 +1,15 @@
+Use the standard library
+This is how to modp of n and p:
+   Remember that result is 1
+   Remember that digits is tostring of n
+   Remember that i is 0
+   Do this digits's length times:
+      Remember that d is item i in digits
+      Remember that result is remainder of (product of result and 10) and p
+      When d is item 0 in "1", then:
+         Remember that result is remainder of (sum of result and 1) and p
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know

@@ -1,0 +1,43 @@
+Use the standard library
+This is how to fib4 of n:
+   When n is 0, then:
+      The answer is 0
+   End when
+   When n is 1, then:
+      The answer is 0
+   End when
+   When n is 2, then:
+      The answer is 2
+   End when
+   When n is 3, then:
+      The answer is 0
+   End when
+   Remember that a is 0
+   Remember that b is 0
+   Remember that c is 2
+   Remember that d is 0
+   Remember that i is 4
+   Do this diff of n and 3 times:
+      Remember that next is sum of a and b and c and d
+      Remember that a is b
+      Remember that b is c
+      Remember that c is d
+      Remember that d is next
+      Increase i
+   End do
+   The answer is d
+Now you know
+>>> fib4 of 5 
+4
+>>> fib4 of 6 
+8
+>>> fib4 of 7 
+14
+>>> fib4 of 5 
+4
+>>> fib4 of 8 
+28
+>>> fib4 of 10 
+104
+>>> fib4 of 12 
+386

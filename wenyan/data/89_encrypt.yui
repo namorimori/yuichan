@@ -1,0 +1,41 @@
+引標準庫
+術曰密以詞
+   吾有一數、曰詞之量、名之曰長。
+   吾有一數、曰[]、名之曰果。
+   吾有一數、曰0、名之曰i。
+   長度、
+      吾有一數、曰取詞之第i、名之曰字。
+      吾有一數、曰字、名之曰新字。
+      吾有一數、曰0、名之曰小標。
+      若字大於96乎、則
+         若字小於123乎、則
+            吾有一數、曰1、名之曰小標。
+         條畢。
+      條畢。
+      若小標等於1乎、則
+         吾有一數、曰施差於字與97、名之曰偏。
+         吾有一數、曰施和於偏與4、名之曰移偏。
+         吾有一數、曰施剰余於移偏與26、名之曰新偏。
+         吾有一數、曰施和於97與新偏、名之曰新字。
+      條畢。
+      納新字入果。
+      增i以一。
+   度畢。
+   以果答。
+術畢。
+>>> 施密於「hi」
+「lm」
+>>> 施密於「asdfghjkl」
+「ewhjklnop」
+>>> 施密於「gf」
+「kj」
+>>> 施密於「et」
+「ix」
+>>> 施密於「faewfawefaewg」
+「jeiajeaijeiak」
+>>> 施密於「hellomyfriend」
+「lippsqcjvmirh」
+>>> 施密於「dxzdlmnilfuhmilufhlihufnmlimnufhlimnufhfucufh」
+「hbdhpqrmpjylqmpyjlpmlyjrqpmqryjlpmqryjljygyjl」
+>>> 施密於「a」
+「e」

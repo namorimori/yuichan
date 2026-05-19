@@ -1,0 +1,28 @@
+Use the standard library
+This is how to words_in_sentence of sentence:
+   Remember that words is []
+   Remember that current is ""
+   Remember that i is 0
+
+   Do this sentence's length times:
+      Remember that ch is item i in sentence
+      When ch is 32, then:
+         When current's length is more than 1, then:
+            Add words to current
+         End when
+         Remember that current is ""
+      But, if not:
+         Add current to ch
+      End when
+      Increase i
+   End do
+
+   When current's length is more than 1, then:
+      Add words to current
+   End when
+
+   When words' length is 1, then:
+      The answer is item 0 in words
+   End when
+   The answer is words
+Now you know

@@ -1,0 +1,19 @@
+Use the standard library
+This is how to filter_integers of values:
+   Remember that result is []
+   Remember that i is 0
+   Do this values's length times:
+      When isint of item i in values is yes, then:
+         Add result to item i in values
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+
+>>> filter_integers of [5]
+[5]
+>>> filter_integers of [1, 2, 3]
+[1, 2, 3]
+>>> filter_integers of []
+[]

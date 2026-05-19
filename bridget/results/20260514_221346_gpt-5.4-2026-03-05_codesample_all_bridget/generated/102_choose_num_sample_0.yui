@@ -1,0 +1,14 @@
+Use the standard library
+This is how to choose_num of x and y:
+   When x is more than y, then:
+      The answer is diff of 0 and 1
+   End when
+   Remember that n is y
+   When remainder of y and 2 is 1, then:
+      Remember that n is diff of y and 1
+   End when
+   When n is less than x, then:
+      The answer is diff of 0 and 1
+   End when
+   The answer is n
+Now you know

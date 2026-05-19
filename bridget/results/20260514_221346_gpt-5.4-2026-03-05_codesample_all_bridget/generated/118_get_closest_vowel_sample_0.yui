@@ -1,0 +1,14 @@
+Use the standard library
+This is how to get_closest_vowel of word:
+   Remember that vowels is "aeiouAEIOU"
+   Remember that n is word's length
+   Remember that i is diff of n and 1
+   Do this n times:
+      Remember that c is item i in word
+      When c is in vowels, then:
+         The answer is c
+      End when
+      Decrease i
+   End do
+   The answer is ""
+Now you know

@@ -1,0 +1,8 @@
+>>> decimal_to_binary of 0 
+"db0db"
+>>> decimal_to_binary of 32 
+"db100000db"
+>>> decimal_to_binary of 103 
+"db1100111db"
+>>> decimal_to_binary of 15 
+"db1111db"

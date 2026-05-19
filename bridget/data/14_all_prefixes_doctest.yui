@@ -1,0 +1,6 @@
+>>> all_prefixes of "" 
+[]
+>>> all_prefixes of "asdfgh" 
+["a", "as", "asd", "asdf", "asdfg", "asdfgh"]
+>>> all_prefixes of "WWW" 
+["W", "WW", "WWW"]

@@ -1,0 +1,14 @@
+>>> 施同字於「eabcdzzzz」與「dddzzzzzzzddeddabc」
+1
+>>> 施同字於「abcd」與「dddddddabc」
+1
+>>> 施同字於「dddddddabc」與「abcd」
+1
+>>> 施同字於「eabcd」與「dddddddabc」
+0
+>>> 施同字於「abcd」與「dddddddabcf」
+0
+>>> 施同字於「eabcdzzzz」與「dddzzzzzzzddddabc」
+0
+>>> 施同字於「aabb」與「aaccc」
+0

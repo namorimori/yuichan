@@ -1,0 +1,45 @@
+Nav rem vaz
+Dum iscube(a):
+   Kem abs_a par 絶対値(a)
+   Kem result par 0
+   Kem i par 0
+   Mup dum 100 pag:
+      Kem cube par 積(積(i, i), i)
+      Nev cube paz abs_a ger:
+         Kem result par 1
+      Dam nev
+      Nev cube pep abs_a ger:
+         Kem i par 100
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> iscube(1) 
+1
+>>> iscube(2) 
+0
+>>> iscube(-1) 
+1
+>>> iscube(64) 
+1
+>>> iscube(0) 
+1
+>>> iscube(180) 
+0
+>>> iscube(1) 
+1
+>>> iscube(2) 
+0
+>>> iscube(-1) 
+1
+>>> iscube(64) 
+1
+>>> iscube(180) 
+0
+>>> iscube(1000) 
+1
+>>> iscube(0) 
+1
+>>> iscube(1729) 
+0

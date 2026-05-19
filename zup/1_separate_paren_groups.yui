@@ -1,0 +1,35 @@
+Nav rem vaz
+Dum separate_paren_groups(paren_string):
+   Kem length par paren_string @kez
+   Kem result par []
+   Kem current_string par []
+   Kem current_depth par 0
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par paren_string[i]
+      Nev char paz 40 ger:
+         Rav current_depth
+         Mev current_string naz char
+      Dam nev
+      Nev char paz 41 ger:
+         Zar current_depth
+         Mev current_string naz char
+         Nev current_depth paz 0 ger:
+            Mev result naz current_string
+            Kem current_string par []
+         Dam nev
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> separate_paren_groups([40, 32, 41, 32, 40, 40, 32, 41, 41, 32, 40, 40, 32, 41, 40, 32, 41, 41]) 
+[[40, 41], [40, 40, 41, 41], [40, 40, 41, 40, 41, 41]]
+>>> separate_paren_groups("(()()) ((())) () ((())()())") 
+["(()())", "((()))", "()", "((())()())"]
+>>> separate_paren_groups("() (()) ((())) (((())))") 
+["()", "(())", "((()))", "(((())))"]
+>>> separate_paren_groups("(()(())((())))") 
+["(()(())((())))"]
+>>> separate_paren_groups("( ) (( )) (( )( ))") 
+["()", "(())", "(()())"]

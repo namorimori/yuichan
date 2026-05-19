@@ -1,0 +1,57 @@
+🗝️ 📚
+🧩 is_happy(s) 👉
+   length ⬅️ 📐 s
+   result ⬅️ 1
+   ❓ length 📈 3 👉
+      result ⬅️ 0
+      ✅ result
+   🔚
+   i ⬅️ 0
+   limit ⬅️ 差(length, 2)
+   🌀 limit 👉
+      idx1 ⬅️ 和(i, 1)
+      idx2 ⬅️ 和(i, 2)
+      char0 ⬅️ s[i]
+      char1 ⬅️ s[idx1]
+      char2 ⬅️ s[idx2]
+      ❓ char0 ⚖️ char1 👉
+         result ⬅️ 0
+      🔚
+      ❓ char1 ⚖️ char2 👉
+         result ⬅️ 0
+      🔚
+      ❓ char0 ⚖️ char2 👉
+         result ⬅️ 0
+      🔚
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> is_happy([97]) 
+0
+>>> is_happy([97, 97]) 
+0
+>>> is_happy([97, 98, 99, 100]) 
+1
+>>> is_happy([97, 97, 98, 98]) 
+0
+>>> is_happy([97, 100, 98]) 
+1
+>>> is_happy([120, 121, 121]) 
+0
+>>> is_happy("a") 
+0
+>>> is_happy("aa") 
+0
+>>> is_happy("abcd") 
+1
+>>> is_happy("aabb") 
+0
+>>> is_happy("adb") 
+1
+>>> is_happy("xyy") 
+0
+>>> is_happy("iopaxpoi") 
+1
+>>> is_happy("iopaxioi") 
+0

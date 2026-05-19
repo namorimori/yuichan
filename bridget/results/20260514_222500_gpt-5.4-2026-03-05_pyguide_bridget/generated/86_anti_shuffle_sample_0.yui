@@ -1,0 +1,19 @@
+Use the standard library
+This is how to anti_shuffle of s:
+   Remember that n is s's length
+   Remember that half is quotient of n and 2
+   Remember that result is []
+
+   Remember that i is 0
+   Do this half times:
+      Add result to item (sum of i and 1) in s
+      Add result to item i in s
+      Remember that i is sum of i and 2
+   End do
+
+   When remainder of n and 2 is 1, then:
+      Add result to item (diff of n and 1) in s
+   End when
+
+   The answer is result
+Now you know

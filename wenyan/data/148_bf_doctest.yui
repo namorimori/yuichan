@@ -1,0 +1,14 @@
+>>> 施星間於「Jupiter」與「Neptune」
+[「Saturn」,「Uranus」]
+>>> 施星間於「Earth」與「Mercury」
+[「Venus」]
+>>> 施星間於「Mercury」與「Uranus」
+[「Venus」,「Earth」,「Mars」,「Jupiter」,「Saturn」]
+>>> 施星間於「Neptune」與「Venus」
+[「Earth」,「Mars」,「Jupiter」,「Saturn」,「Uranus」]
+>>> 施星間於「Earth」與「Earth」
+[]
+>>> 施星間於「Mars」與「Earth」
+[]
+>>> 施星間於「Jupiter」與「Makemake」
+[]

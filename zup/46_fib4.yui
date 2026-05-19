@@ -1,0 +1,43 @@
+Nav rem vaz
+Dum fib4(n):
+   Nev n paz 0 ger:
+      Dup vem 0
+   Dam nev
+   Nev n paz 1 ger:
+      Dup vem 0
+   Dam nev
+   Nev n paz 2 ger:
+      Dup vem 2
+   Dam nev
+   Nev n paz 3 ger:
+      Dup vem 0
+   Dam nev
+   Kem a par 0
+   Kem b par 0
+   Kem c par 2
+   Kem d par 0
+   Kem i par 4
+   Mup dum 差(n, 3) pag:
+      Kem 次 par 和(a, b, c, d)
+      Kem a par b
+      Kem b par c
+      Kem c par d
+      Kem d par 次
+      Rav i
+   Dam mup
+   Dup vem d
+Pam dum
+>>> fib4(5) 
+4
+>>> fib4(6) 
+8
+>>> fib4(7) 
+14
+>>> fib4(5) 
+4
+>>> fib4(8) 
+28
+>>> fib4(10) 
+104
+>>> fib4(12) 
+386

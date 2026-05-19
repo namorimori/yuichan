@@ -1,0 +1,21 @@
+Use the standard library
+This is how to can_arrange of arr:
+   Remember that n is arr's length
+   Remember that i is 0
+   Remember that answer is -1
+   Do this (diff of n and 1) times:
+      When item i in arr is more than item (sum of i and 1) in arr, then:
+         Remember that answer is sum of i and 1
+         Leave the loop
+      End when
+      Increase i
+   End do
+   The answer is answer
+Now you know
+
+>>> can_arrange of [1, 2, 4, 3, 5]
+3
+>>> can_arrange of [1, 2, 3]
+-1
+>>> can_arrange of [1, 2, 4, 3, 5]
+3

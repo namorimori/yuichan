@@ -1,0 +1,64 @@
+Nav rem vaz
+Dum closest_integer(value):
+   Kem length par value @kez
+   Kem result par 0
+   Kem is_negative par 0
+   Kem i par 0
+   Nev length pep 0 ger:
+      Nev value[0] paz 45 ger:
+         Kem is_negative par 1
+         Kem i par 1
+      Dam nev
+   Dam nev
+   Kem dot_pos par length
+   Kem j par 0
+   Mup dum length pag:
+      Nev value[j] paz 46 ger:
+         Kem dot_pos par j
+      Dam nev
+      Rav j
+   Dam mup
+   Mup dum 100 pag:
+      Nev i dup dot_pos ger:
+         Kem char par value[i]
+         Nev char pep 47 ger:
+            Nev char dup 58 ger:
+               Kem digit par 差(char, 48)
+               Kem result par 和(積(result, 10), digit)
+            Dam nev
+         Dam nev
+         Rav i
+      Dam nev
+   Dam mup
+   Nev dot_pos dup length ger:
+      Kem decimal_start par 和(dot_pos, 1)
+      Nev decimal_start dup length ger:
+         Kem first_decimal par value[decimal_start]
+         Nev first_decimal pev 52 ger:
+            Nev is_negative paz 1 ger:
+               Rav result
+            Zum:
+               Rav result
+            Dam nev
+         Dam nev
+      Dam nev
+   Dam nev
+   Nev is_negative paz 1 ger:
+      Kem result par 差(0, result)
+   Dam nev
+   Dup vem result
+Pam dum
+>>> closest_integer([49, 48]) 
+10
+>>> closest_integer([49, 53, 46, 51]) 
+15
+>>> closest_integer("10") 
+10
+>>> closest_integer("14.5") 
+15
+>>> closest_integer("-15.5") 
+-16
+>>> closest_integer("15.3") 
+15
+>>> closest_integer("0") 
+0

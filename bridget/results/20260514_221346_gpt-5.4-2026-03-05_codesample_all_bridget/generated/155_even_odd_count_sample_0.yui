@@ -1,0 +1,20 @@
+Use the standard library
+This is how to even_odd_count of num:
+   Remember that n is abs of num
+   Remember that s is tostring of n
+   Remember that even is 0
+   Remember that odd is 0
+   Remember that i is 0
+   Do this s's length times:
+      Remember that c is item i in s
+      Remember that d is diff of c and 48
+      Remember that r is remainder of d and 2
+      When r is 0, then:
+         Increase even
+      But, if not:
+         Increase odd
+      End when
+      Increase i
+   End do
+   The answer is [even, odd]
+Now you know

@@ -1,0 +1,40 @@
+Nav rem vaz
+Dum max_fill(grid, capacity):
+   Kem grid_len par grid @kez
+   Kem total par 0
+   Kem i par 0
+   Mup dum grid_len pag:
+      Kem row par grid[i]
+      Kem row_len par row @kez
+      Kem row_sum par 0
+      Kem j par 0
+      Mup dum row_len pag:
+         Kem row_sum par 和(row_sum, row[j])
+         Rav j
+      Dam mup
+      Kem trips par 商(row_sum, capacity)
+      Kem remainder par 剰余(row_sum, capacity)
+      Nev remainder pep 0 ger:
+         Rav trips
+      Dam nev
+      Kem total par 和(total, trips)
+      Rav i
+   Dam mup
+   Dup vem total
+Pam dum
+>>> max_fill([[0, 0, 1, 0], [0, 1, 0, 0], [1, 1, 1, 1]], 1) 
+6
+>>> max_fill([[0, 0, 1, 1], [0, 0, 0, 0], [1, 1, 1, 1], [0, 1, 1, 1]], 2) 
+5
+>>> max_fill([[0, 0, 0], [0, 0, 0]], 5) 
+0
+>>> max_fill([[0, 0, 1, 0], [0, 1, 0, 0], [1, 1, 1, 1]], 1) 
+6
+>>> max_fill([[0, 0, 1, 1], [0, 0, 0, 0], [1, 1, 1, 1], [0, 1, 1, 1]], 2) 
+5
+>>> max_fill([[0, 0, 0], [0, 0, 0]], 5) 
+0
+>>> max_fill([[1, 1, 1, 1], [1, 1, 1, 1]], 2) 
+4
+>>> max_fill([[1, 1, 1, 1], [1, 1, 1, 1]], 9) 
+2

@@ -1,0 +1,156 @@
+Nav rem vaz
+Dum get_closest_vowel(word):
+   Kem length par word @kez
+   Kem result par []
+   Nev length dup 3 ger:
+      Dup vem result
+   Dam nev
+   Kem i par 差(length, 2)
+   Kem found par 0
+   Mup dum 1000 pag:
+      Nev found paz 0 ger:
+         Nev i pep 0 ger:
+            Kem char par word[i]
+            Kem is_curr_vowel par 0
+            Nev char paz 97 ger:
+               Kem is_curr_vowel par 1
+            Dam nev
+            Nev char paz 101 ger:
+               Kem is_curr_vowel par 1
+            Dam nev
+            Nev char paz 105 ger:
+               Kem is_curr_vowel par 1
+            Dam nev
+            Nev char paz 111 ger:
+               Kem is_curr_vowel par 1
+            Dam nev
+            Nev char paz 117 ger:
+               Kem is_curr_vowel par 1
+            Dam nev
+            Nev char paz 65 ger:
+               Kem is_curr_vowel par 1
+            Dam nev
+            Nev char paz 69 ger:
+               Kem is_curr_vowel par 1
+            Dam nev
+            Nev char paz 73 ger:
+               Kem is_curr_vowel par 1
+            Dam nev
+            Nev char paz 79 ger:
+               Kem is_curr_vowel par 1
+            Dam nev
+            Nev char paz 85 ger:
+               Kem is_curr_vowel par 1
+            Dam nev
+            Nev is_curr_vowel paz 1 ger:
+               Kem prev_idx par 差(i, 1)
+               Kem next_idx par 和(i, 1)
+               Kem prev par word[prev_idx]
+               Kem next par word[next_idx]
+               Kem prev_vowel par 0
+               Nev prev paz 97 ger:
+                  Kem prev_vowel par 1
+               Dam nev
+               Nev prev paz 101 ger:
+                  Kem prev_vowel par 1
+               Dam nev
+               Nev prev paz 105 ger:
+                  Kem prev_vowel par 1
+               Dam nev
+               Nev prev paz 111 ger:
+                  Kem prev_vowel par 1
+               Dam nev
+               Nev prev paz 117 ger:
+                  Kem prev_vowel par 1
+               Dam nev
+               Nev prev paz 65 ger:
+                  Kem prev_vowel par 1
+               Dam nev
+               Nev prev paz 69 ger:
+                  Kem prev_vowel par 1
+               Dam nev
+               Nev prev paz 73 ger:
+                  Kem prev_vowel par 1
+               Dam nev
+               Nev prev paz 79 ger:
+                  Kem prev_vowel par 1
+               Dam nev
+               Nev prev paz 85 ger:
+                  Kem prev_vowel par 1
+               Dam nev
+               Kem next_vowel par 0
+               Nev next paz 97 ger:
+                  Kem next_vowel par 1
+               Dam nev
+               Nev next paz 101 ger:
+                  Kem next_vowel par 1
+               Dam nev
+               Nev next paz 105 ger:
+                  Kem next_vowel par 1
+               Dam nev
+               Nev next paz 111 ger:
+                  Kem next_vowel par 1
+               Dam nev
+               Nev next paz 117 ger:
+                  Kem next_vowel par 1
+               Dam nev
+               Nev next paz 65 ger:
+                  Kem next_vowel par 1
+               Dam nev
+               Nev next paz 69 ger:
+                  Kem next_vowel par 1
+               Dam nev
+               Nev next paz 73 ger:
+                  Kem next_vowel par 1
+               Dam nev
+               Nev next paz 79 ger:
+                  Kem next_vowel par 1
+               Dam nev
+               Nev next paz 85 ger:
+                  Kem next_vowel par 1
+               Dam nev
+               Kem both_consonants par 0
+               Nev prev_vowel paz 0 ger:
+                  Nev next_vowel paz 0 ger:
+                     Kem both_consonants par 1
+                  Dam nev
+               Dam nev
+               Nev both_consonants paz 1 ger:
+                  Mev result naz char
+                  Kem found par 1
+               Dam nev
+            Dam nev
+            Zar i
+         Dam nev
+      Dam nev
+   Dam mup
+   Dup vem result
+Pam dum
+>>> get_closest_vowel([121, 111, 103, 117, 114, 116]) 
+[117]
+>>> get_closest_vowel("yogurt") 
+"u"
+>>> get_closest_vowel("full") 
+"u"
+>>> get_closest_vowel("easy") 
+""
+>>> get_closest_vowel("eAsy") 
+""
+>>> get_closest_vowel("ali") 
+""
+>>> get_closest_vowel("bad") 
+"a"
+>>> get_closest_vowel("most") 
+"o"
+>>> get_closest_vowel("ab") 
+""
+>>> get_closest_vowel("ba") 
+""
+>>> get_closest_vowel("quick") 
+""
+>>> get_closest_vowel("anime") 
+"i"
+>>> get_closest_vowel("Asia") 
+""
+>>> get_closest_vowel("Above") 
+"o"

@@ -1,0 +1,21 @@
+🗝️ 📚
+🧩 decode_shift(s) 👉
+   length ⬅️ 📐 s
+   result ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ s[i]
+      offset ⬅️ 差(差(char, 97), 5)
+      decoded_offset ⬅️ offset
+      ❓ offset 📈 0 👉
+         decoded_offset ⬅️ 和(offset, 26)
+      🔚
+      remainder ⬅️ 剰余(decoded_offset, 26)
+      decoded_char ⬅️ 和(97, remainder)
+      result 🧲 decoded_char
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> decode_shift([102, 115, 105, 105, 116]) 
+[97, 110, 100, 100, 111]

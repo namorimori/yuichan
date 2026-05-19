@@ -1,0 +1,67 @@
+Use the standard library
+This is how to count_nums of arr:
+   Remember that length is arr's length
+   Remember that count is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that n is item i in arr
+      Remember that is_negative is 0
+      Remember that abs_n is n
+      When n is less than 0, then:
+         Remember that is_negative is 1
+         Remember that abs_n is diff of 0 and n
+      End when
+      Remember that digits is []
+      Remember that temp is abs_n
+      Do this 100 times:
+         When temp is more than 0, then:
+            Remember that digit is remainder of temp and 10
+            Add digits to digit
+            Remember that temp is quotient of temp and 10
+         End when
+      End do
+      Remember that digit_len is digits's length
+      Remember that digit_sum is 0
+      When digit_len is more than 0, then:
+         Remember that j is 0
+         Do this digit_len times:
+            Remember that value is item j in digits
+            Remember that last_idx is diff of digit_len and 1
+            When j is last_idx, then:
+               When is_negative is 1, then:
+                  Remember that value is diff of 0 and value
+               End when
+            End when
+            Remember that digit_sum is sum of digit_sum and value
+            Increase j
+         End do
+      End when
+      When digit_sum is more than 0, then:
+         Increase count
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know
+>>> count_nums of [] 
+0
+>>> count_nums of [-1, 11, -11] 
+1
+>>> count_nums of [1, 1, 2] 
+3
+>>> count_nums of [] 
+0
+>>> count_nums of [-1, -2, 0] 
+0
+>>> count_nums of [1, 1, 2, -2, 3, 4, 5] 
+6
+>>> count_nums of [1, 6, 9, -6, 0, 1, 5] 
+5
+>>> count_nums of [1, 100, 98, -7, 1, -1] 
+4
+>>> count_nums of [12, 23, 34, -45, -56, 0] 
+5
+>>> count_nums of [-0, 1] 
+1
+>>> count_nums of [1] 
+1

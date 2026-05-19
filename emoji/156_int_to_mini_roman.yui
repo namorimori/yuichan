@@ -1,0 +1,68 @@
+🗝️ 📚
+🧩 int_to_mini_roman(number) 👉
+   result ⬅️ []
+   values ⬅️ [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+   symbols ⬅️ [
+      [109],
+      [99, 109],
+      [100],
+      [99, 100],
+      [99],
+      [120, 99],
+      [108],
+      [120, 108],
+      [120],
+      [105, 120],
+      [118],
+      [105, 118],
+      [105]
+   ]
+   idx ⬅️ 0
+   🌀 13 👉
+      value ⬅️ values[idx]
+      symbol ⬅️ symbols[idx]
+      symbol_len ⬅️ 📐 symbol
+      🌀 100 👉
+         ❓ number 📉⚖️ value 👉
+            j ⬅️ 0
+            🌀 symbol_len 👉
+               result 🧲 symbol[j]
+               j ⬆️
+            🔚
+            number ⬅️ 差(number, value)
+         🔚
+      🔚
+      idx ⬆️
+   🔚
+   ✅ result
+🔚
+>>> int_to_mini_roman(19) 
+[120, 105, 120]
+>>> int_to_mini_roman(19) 
+"xix"
+>>> int_to_mini_roman(152) 
+"clii"
+>>> int_to_mini_roman(251) 
+"ccli"
+>>> int_to_mini_roman(426) 
+"cdxxvi"
+>>> int_to_mini_roman(500) 
+"d"
+>>> int_to_mini_roman(1) 
+"i"
+>>> int_to_mini_roman(4) 
+"iv"
+>>> int_to_mini_roman(43) 
+"xliii"
+>>> int_to_mini_roman(90) 
+"xc"
+>>> int_to_mini_roman(94) 
+"xciv"
+>>> int_to_mini_roman(532) 
+"dxxxii"
+>>> int_to_mini_roman(900) 
+"cm"
+>>> int_to_mini_roman(994) 
+"cmxciv"
+>>> int_to_mini_roman(1000) 
+"m"

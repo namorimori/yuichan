@@ -1,0 +1,18 @@
+Use the standard library
+This is how to motto ^^:
+   The answer is "今日もがんばろう"
+Now you know
+>>> motto, do it 
+"今日もがんばろう"
+This is how to greet of name:
+   The answer is "こんにちは、{name}さん！"
+Now you know
+>>> greet of "ゆい" 
+"こんにちは、ゆいさん！"
+This is how to score_msg of name and points:
+   The answer is "{name}さんのスコアは{points}点です"
+Now you know
+>>> score_msg of "太郎" and 95 
+"太郎さんのスコアは95点です"
+>>> tostring of 42 
+"42"

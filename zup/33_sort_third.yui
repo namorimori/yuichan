@@ -1,0 +1,59 @@
+Nav rem vaz
+Dum sort_third(l):
+   Kem 長さ par l @kez
+   Kem 三の倍数要素 par []
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 余り par 剰余(i, 3)
+      Nev 余り paz 0 ger:
+         Mev 三の倍数要素 naz l[i]
+      Dam nev
+      Rav i
+   Dam mup
+   Kem 三の倍数長 par 三の倍数要素 @kez
+   Mup dum 三の倍数長 pag:
+      Kem i par 0
+      Kem 上限 par 差(三の倍数長, 1)
+      Mup dum 上限 pag:
+         Kem 次インデックス par 和(i, 1)
+         Nev 三の倍数要素[i] pep 三の倍数要素[次インデックス] ger:
+            Kem temp par 三の倍数要素[i]
+            Kem 三の倍数要素[i] par 三の倍数要素[次インデックス]
+            Kem 三の倍数要素[次インデックス] par temp
+         Dam nev
+         Rav i
+      Dam mup
+   Dam mup
+   Kem 結果 par []
+   Kem 三の倍数インデックス par 0
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 余り par 剰余(i, 3)
+      Nev 余り paz 0 ger:
+         Mev 結果 naz 三の倍数要素[三の倍数インデックス]
+         Rav 三の倍数インデックス
+      Zum:
+         Mev 結果 naz l[i]
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> sort_third([1, 2, 3]) 
+[1, 2, 3]
+>>> sort_third([5, 6, 3, 4, 8, 9, 2]) 
+[2, 6, 3, 4, 8, 9, 5]
+>>> sort_third([1, 2, 3]) 
+[1, 2, 3]
+>>> sort_third([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10]) 
+[1, 3, -5, 2, -3, 3, 5, 0, 123, 9, -10]
+>>> sort_third([5, 8, -12, 4, 23, 2, 3, 11, 12, -10]) 
+[-10, 8, -12, 3, 23, 2, 4, 11, 12, 5]
+>>> sort_third([5, 6, 3, 4, 8, 9, 2]) 
+[2, 6, 3, 4, 8, 9, 5]
+>>> sort_third([5, 8, 3, 4, 6, 9, 2]) 
+[2, 8, 3, 4, 6, 9, 5]
+>>> sort_third([5, 6, 9, 4, 8, 3, 2]) 
+[2, 6, 9, 4, 8, 3, 5]
+>>> sort_third([5, 6, 3, 4, 8, 9, 2, 1]) 
+[2, 6, 3, 4, 8, 9, 5, 1]

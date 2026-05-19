@@ -1,0 +1,58 @@
+🗝️ 📚
+🧩 intersection(interval1, interval2) 👉
+   start1 ⬅️ interval1[0]
+   end1 ⬅️ interval1[1]
+   start2 ⬅️ interval2[0]
+   end2 ⬅️ interval2[1]
+   l ⬅️ 最大値(start1, start2)
+   r ⬅️ 最小値(end1, end2)
+   length ⬅️ 差(r, l)
+   result ⬅️ [78, 79]
+   ❓ length 📉 0 👉
+      is_prime ⬅️ 1
+      ❓ length ⚖️ 1 👉
+         is_prime ⬅️ 0
+      🔚
+      ❓ length ⚖️ 2 👉
+         is_prime ⬅️ 1
+      🔚
+      ❓ length 📉 2 👉
+         i ⬅️ 2
+         🌀 100 👉
+            ❓ i 📈 length 👉
+               remainder ⬅️ 剰余(length, i)
+               ❓ remainder ⚖️ 0 👉
+                  is_prime ⬅️ 0
+               🔚
+               i ⬆️
+            🔚
+         🔚
+      🔚
+      ❓ is_prime ⚖️ 1 👉
+         result ⬅️ [89, 69, 83]
+      🔚
+   🔚
+   ✅ result
+🔚
+>>> intersection([1, 2], [2, 3]) 
+[78, 79]
+>>> intersection([-1, 1], [0, 4]) 
+[78, 79]
+>>> intersection([-3, -1], [-5, 5]) 
+[89, 69, 83]
+>>> intersection([1, 2], [2, 3]) 
+"NO"
+>>> intersection([-1, 1], [0, 4]) 
+"NO"
+>>> intersection([-3, -1], [-5, 5]) 
+"YES"
+>>> intersection([-2, 2], [-4, 0]) 
+"YES"
+>>> intersection([-11, 2], [-1, -1]) 
+"NO"
+>>> intersection([1, 2], [3, 5]) 
+"NO"
+>>> intersection([1, 2], [1, 2]) 
+"NO"
+>>> intersection([-2, -2], [-3, -2]) 
+"NO"

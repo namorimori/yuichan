@@ -1,0 +1,23 @@
+Use the standard library
+This is how to make_a_pile of n:
+   Remember that result is []
+   Remember that i is 0
+   Do this n times:
+      Remember that value is sum of n and (product of 2 and i)
+      Add result to value
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> make_a_pile of 3 
+[3, 5, 7]
+>>> make_a_pile of 3 
+[3, 5, 7]
+>>> make_a_pile of 4 
+[4, 6, 8, 10]
+>>> make_a_pile of 5 
+[5, 7, 9, 11, 13]
+>>> make_a_pile of 6 
+[6, 8, 10, 12, 14, 16]
+>>> make_a_pile of 8 
+[8, 10, 12, 14, 16, 18, 20, 22]

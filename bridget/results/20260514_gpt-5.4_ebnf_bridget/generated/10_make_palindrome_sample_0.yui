@@ -1,0 +1,11 @@
+Use the standard library
+This is how to make_palindrome of string:
+  When string's length is 0, then:
+    The answer is ""
+  End when
+  Remember that result is string
+  Do this diff of string's length and 1 times:
+    Remember that result is "{result}{item diff of diff of string's length and 2 and it in string}"
+  End do
+  The answer is result
+Now you know

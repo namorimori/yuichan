@@ -1,0 +1,74 @@
+Use the standard library
+This is how to prime_fib of n:
+   Remember that f0 is 0
+   Remember that f1 is 1
+   Remember that count is 0
+   Remember that result is 0
+   Do this 1000 times:
+      When count is less than n, then:
+         Remember that next is sum of f0 and f1
+         Remember that f0 is f1
+         Remember that f1 is next
+         Remember that prime_flag is 1
+         When next is less than 2, then:
+            Remember that prime_flag is 0
+         End when
+         When next is 2, then:
+            Remember that prime_flag is 1
+         End when
+         When next is more than 2, then:
+            Remember that i is 2
+            Do this 30000 times:
+               Remember that i_squared is product of i and i
+               When i_squared is at least next, then:
+                  Remember that remainder_val is remainder of next and i
+                  When remainder_val is 0, then:
+                     Remember that prime_flag is 0
+                     Leave the loop
+                  End when
+                  Increase i
+               But, if not:
+                  Leave the loop
+               End when
+            End do
+         End when
+         When prime_flag is 1, then:
+            Increase count
+            When count is n, then:
+               Remember that result is next
+            End when
+         End when
+      End when
+   End do
+   The answer is result
+Now you know
+>>> prime_fib of 1 
+2
+>>> prime_fib of 2 
+3
+>>> prime_fib of 3 
+5
+>>> prime_fib of 4 
+13
+>>> prime_fib of 5 
+89
+>>> prime_fib of 1 
+2
+>>> prime_fib of 2 
+3
+>>> prime_fib of 3 
+5
+>>> prime_fib of 4 
+13
+>>> prime_fib of 5 
+89
+>>> prime_fib of 6 
+233
+>>> prime_fib of 7 
+1597
+>>> prime_fib of 8 
+28657
+>>> prime_fib of 9 
+514229
+>>> prime_fib of 10 
+433494437

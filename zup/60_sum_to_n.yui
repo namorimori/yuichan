@@ -1,0 +1,30 @@
+Nav rem vaz
+Dum sum_to_n(n):
+   Kem 合計 par 0
+   Kem i par 1
+   Mup dum n pag:
+      Kem 合計 par 和(合計, i)
+      Rav i
+   Dam mup
+   Dup vem 合計
+Pam dum
+>>> sum_to_n(30) 
+465
+>>> sum_to_n(100) 
+5050
+>>> sum_to_n(5) 
+15
+>>> sum_to_n(10) 
+55
+>>> sum_to_n(1) 
+1
+>>> sum_to_n(1) 
+1
+>>> sum_to_n(6) 
+21
+>>> sum_to_n(11) 
+66
+>>> sum_to_n(30) 
+465
+>>> sum_to_n(100) 
+5050

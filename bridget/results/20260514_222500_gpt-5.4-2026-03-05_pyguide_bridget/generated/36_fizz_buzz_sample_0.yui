@@ -1,0 +1,28 @@
+Use the standard library
+This is how to fizz_buzz of n:
+   Remember that fizz is 0
+   Remember that buzz is 0
+   Do this n times:
+      Increase fizz
+      Increase buzz
+      When fizz is 3, then:
+         Remember that fizz is 0
+      End when
+      When buzz is 5, then:
+         Remember that buzz is 0
+      End when
+   End do
+   When fizz is 0, then:
+      When buzz is 0, then:
+         The answer is 0
+      But, if not:
+         The answer is 1
+      End when
+   But, if not:
+      When buzz is 0, then:
+         The answer is 2
+      But, if not:
+         The answer is 3
+      End when
+   End when
+Now you know

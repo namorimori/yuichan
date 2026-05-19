@@ -1,0 +1,47 @@
+Use the standard library
+This is how to encode of message:
+   Remember that result is message
+   Remember that n is message's length
+   Remember that i is 0
+   Do this n times:
+      Remember that c is item i in message
+      When c is 65, then:
+         Remember that item i in result is 116
+      End when
+      When c is 69, then:
+         Remember that item i in result is 103
+      End when
+      When c is 73, then:
+         Remember that item i in result is 107
+      End when
+      When c is 79, then:
+         Remember that item i in result is 112
+      End when
+      When c is 85, then:
+         Remember that item i in result is 118
+      End when
+      When c is 97, then:
+         Remember that item i in result is 84
+      End when
+      When c is 101, then:
+         Remember that item i in result is 71
+      End when
+      When c is 105, then:
+         Remember that item i in result is 75
+      End when
+      When c is 111, then:
+         Remember that item i in result is 80
+      End when
+      When c is 117, then:
+         Remember that item i in result is 86
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> encode of [116, 101, 115, 116]
+[84, 71, 83, 84]
+>>> encode of [84, 104, 105, 115, 32, 105, 115, 32, 97, 32, 109, 101, 115, 115, 97, 103, 101]
+[116, 72, 75, 83, 32, 75, 83, 32, 67, 32, 77, 71, 83, 83, 67, 71, 71]
+>>> encode of "TEST"
+"tgst"

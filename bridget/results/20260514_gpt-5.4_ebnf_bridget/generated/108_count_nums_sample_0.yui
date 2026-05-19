@@ -1,0 +1,10 @@
+Use the standard library
+This is how to count_nums of arr:
+  Remember that count is 0
+  Do this arr's length times:
+    When item count in arr is count, then:
+      Increase count
+    End when
+  End do
+  The answer is count
+Now you know

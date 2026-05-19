@@ -1,0 +1,9 @@
+Use the standard library
+This is how to decode_shift of s:
+   Remember that i is 0
+   Do this s's length times:
+      Remember that item i in s is diff of (item i in s) and 5
+      Increase i
+   End do
+   The answer is s
+Now you know

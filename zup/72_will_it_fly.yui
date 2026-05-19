@@ -1,0 +1,43 @@
+Nav rem vaz
+Dum will_it_fly(q, w):
+   Kem 長さ par q @kez
+   Kem 合計 par 和(q)
+   Kem 結果 par 1
+   Nev 合計 pep w ger:
+      Kem 結果 par 0
+   Dam nev
+   Nev 結果 paz 1 ger:
+      Kem i par 0
+      Kem j par 差(長さ, 1)
+      Mup dum 長さ pag:
+         Nev i dup j ger:
+            Nev q[i] nup q[j] ger:
+               Kem 結果 par 0
+            Dam nev
+         Dam nev
+         Rav i
+         Zar j
+      Dam mup
+   Dam nev
+   Dup vem 結果
+Pam dum
+>>> will_it_fly([1, 2], 5) 
+0
+>>> will_it_fly([3, 2, 3], 1) 
+0
+>>> will_it_fly([3, 2, 3], 9) 
+1
+>>> will_it_fly([3], 5) 
+1
+>>> will_it_fly([3, 2, 3], 9) 
+1
+>>> will_it_fly([1, 2], 5) 
+0
+>>> will_it_fly([3], 5) 
+1
+>>> will_it_fly([3, 2, 3], 1) 
+0
+>>> will_it_fly([1, 2, 3], 6) 
+0
+>>> will_it_fly([5], 5) 
+1

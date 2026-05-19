@@ -1,0 +1,8 @@
+>>> 施篩詞於[]與「john」
+[]
+>>> 施篩詞於[「xxx」,「asd」,「xxy」,「john doe」,「xxxAAA」,「xxx」]與「xxx」
+[「xxx」,「xxxAAA」,「xxx」]
+>>> 施篩詞於[「xxx」,「asd」,「aaaxxy」,「john doe」,「xxxAAA」,「xxx」]與「xx」
+[「xxx」,「aaaxxy」,「xxxAAA」,「xxx」]
+>>> 施篩詞於[「grunt」,「trumpet」,「prune」,「gruesome」]與「run」
+[「grunt」,「prune」]

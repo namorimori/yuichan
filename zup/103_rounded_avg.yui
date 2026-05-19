@@ -1,0 +1,75 @@
+Nav rem vaz
+Dum rounded_avg(n, m):
+   Kem result par []
+   Nev m dup n ger:
+      Kem result par -1
+      Dup vem result
+   Dam nev
+   Kem sum par 0
+   Kem i par n
+   Mup dum 1000 pag:
+      Nev i dur m ger:
+         Kem sum par 和(sum, i)
+         Rav i
+      Dam nev
+   Dam mup
+   Kem count par 差(和(m, 1), n)
+   Kem quotient par 商(sum, count)
+   Kem remainder par 剰余(sum, count)
+   Kem remainder_doubled par 積(remainder, 2)
+   Kem avg par quotient
+   Nev remainder_doubled pep count ger:
+      Rav avg
+   Dam nev
+   Nev remainder_doubled paz count ger:
+      Kem is_odd par 剰余(quotient, 2)
+      Nev is_odd paz 1 ger:
+         Rav avg
+      Dam nev
+   Dam nev
+   Kem result par [48, 98]
+   Kem temp par avg
+   Kem digits par []
+   Mup dum 100 pag:
+      Nev temp pep 0 ger:
+         Kem remainder par 剰余(temp, 2)
+         Mev digits naz remainder
+         Kem temp par 商(temp, 2)
+      Dam nev
+   Dam mup
+   Kem d_len par digits @kez
+   Kem i par 0
+   Mup dum d_len pag:
+      Kem idx par 差(差(d_len, i), 1)
+      Kem digit_char par 和(48, digits[idx])
+      Mev result naz digit_char
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> rounded_avg(1, 5) 
+[48, 98, 49, 49]
+>>> rounded_avg(1, 5) 
+"0b11"
+>>> rounded_avg(7, 13) 
+"0b1010"
+>>> rounded_avg(964, 977) 
+"0b1111001010"
+>>> rounded_avg(996, 997) 
+"0b1111100100"
+>>> rounded_avg(560, 851) 
+"0b1011000010"
+>>> rounded_avg(185, 546) 
+"0b101101110"
+>>> rounded_avg(362, 496) 
+"0b110101101"
+>>> rounded_avg(350, 902) 
+"0b1001110010"
+>>> rounded_avg(197, 233) 
+"0b11010111"
+>>> rounded_avg(7, 5) 
+-1
+>>> rounded_avg(5, 1) 
+-1
+>>> rounded_avg(5, 5) 
+"0b101"

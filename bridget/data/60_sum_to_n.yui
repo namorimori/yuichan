@@ -1,0 +1,30 @@
+Use the standard library
+This is how to sum_to_n of n:
+   Remember that total is 0
+   Remember that i is 1
+   Do this n times:
+      Remember that total is sum of total and i
+      Increase i
+   End do
+   The answer is total
+Now you know
+>>> sum_to_n of 30 
+465
+>>> sum_to_n of 100 
+5050
+>>> sum_to_n of 5 
+15
+>>> sum_to_n of 10 
+55
+>>> sum_to_n of 1 
+1
+>>> sum_to_n of 1 
+1
+>>> sum_to_n of 6 
+21
+>>> sum_to_n of 11 
+66
+>>> sum_to_n of 30 
+465
+>>> sum_to_n of 100 
+5050

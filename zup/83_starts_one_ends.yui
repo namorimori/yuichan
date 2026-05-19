@@ -1,0 +1,32 @@
+Nav rem vaz
+Dum starts_one_ends(n):
+   Kem result par 1
+   Nev n paz 1 ger:
+      Dup vem result
+   Dam nev
+   Kem power par 1
+   Kem exp par 差(n, 2)
+   Kem i par 0
+   Mup dum exp pag:
+      Kem power par 積(power, 10)
+      Rav i
+   Dam mup
+   Kem result par 積(18, power)
+   Dup vem result
+Pam dum
+>>> starts_one_ends(1) 
+1
+>>> starts_one_ends(2) 
+18
+>>> starts_one_ends(3) 
+180
+>>> starts_one_ends(1) 
+1
+>>> starts_one_ends(2) 
+18
+>>> starts_one_ends(3) 
+180
+>>> starts_one_ends(4) 
+1800
+>>> starts_one_ends(5) 
+18000

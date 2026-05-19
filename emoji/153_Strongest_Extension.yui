@@ -1,0 +1,77 @@
+🗝️ 📚
+🧩 Strongest_Extension(class_name, extensions) 👉
+   ext_count ⬅️ 📐 extensions
+   best_ext ⬅️ []
+   best_strength ⬅️ -1000
+   first ⬅️ 1
+   i ⬅️ 0
+   🌀 ext_count 👉
+      ext ⬅️ extensions[i]
+      ext_len ⬅️ 📐 ext
+      upper_count ⬅️ 0
+      lower_count ⬅️ 0
+      j ⬅️ 0
+      🌀 ext_len 👉
+         char ⬅️ ext[j]
+         ❓ char 📉 64 👉
+            ❓ char 📈 91 👉
+               upper_count ⬆️
+            🔚
+         🔚
+         ❓ char 📉 96 👉
+            ❓ char 📈 123 👉
+               lower_count ⬆️
+            🔚
+         🔚
+         j ⬆️
+      🔚
+      strength ⬅️ 差(upper_count, lower_count)
+      ❓ first ⚖️ 1 👉
+         best_ext ⬅️ ext
+         best_strength ⬅️ strength
+         first ⬅️ 0
+      🔚
+      ❗ 👉
+         ❓ strength 📉 best_strength 👉
+            best_ext ⬅️ ext
+            best_strength ⬅️ strength
+         🔚
+      🔚
+      i ⬆️
+   🔚
+   result ⬅️ []
+   class_len ⬅️ 📐 class_name
+   i ⬅️ 0
+   🌀 class_len 👉
+      result 🧲 class_name[i]
+      i ⬆️
+   🔚
+   result 🧲 46
+   best_len ⬅️ 📐 best_ext
+   i ⬅️ 0
+   🌀 best_len 👉
+      result 🧲 best_ext[i]
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> Strongest_Extension([77, 121], [[97, 65, 97]]) 
+[77, 121, 46, 97, 65, 97]
+>>> Strongest_Extension("Watashi", ["tEN", "niNE", "eIGHt8OKe"]) 
+"Watashi.eIGHt8OKe"
+>>> Strongest_Extension("Boku123", ["nani", "NazeDa", "YEs.WeCaNe", "32145tggg"]) 
+"Boku123.YEs.WeCaNe"
+>>> Strongest_Extension("**YESIMHERE", ["t", "eMptY", "nothing", "zeR00", "NuLl**", "123NoooneB321"]) 
+"**YESIMHERE.NuLl**"
+>>> Strongest_Extension("K", ["Ta", "TAR", "t234An", "cosSo"]) 
+"K.TAR"
+>>> Strongest_Extension("__HAHA", ["Tab", "123", "781345", "-*-"]) 
+"__HAHA.123"
+>>> Strongest_Extension("YameRore", ["HhAas", "okIWILL123", "WorkOut", "Fails", "-*-"]) 
+"YameRore.okIWILL123"
+>>> Strongest_Extension("finNNalLLly", ["Die", "NowW", "Wow", "WoW"]) 
+"finNNalLLly.WoW"
+>>> Strongest_Extension("*", ["Bb", "91245"]) 
+"*.Bb"
+>>> Strongest_Extension("Sp", ["671235", "Bb"]) 
+"Sp.671235"

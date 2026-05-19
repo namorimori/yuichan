@@ -1,0 +1,23 @@
+Use the standard library
+This is how to count_upper of s:
+  Remember that count is 0
+  Remember that found is no
+  Do this s's length times:
+    When found is yes, then:
+      Leave the loop
+    End when
+    Remember that i is diff of s's length and count
+    Decrease i
+    Remember that ch is item i in s
+    When ch is at least 65, then:
+      When ch is at most 90, then:
+        Increase count
+      But, if not:
+        Remember that found is yes
+      End when
+    But, if not:
+      Remember that found is yes
+    End when
+  End do
+  The answer is count
+Now you know

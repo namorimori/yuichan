@@ -1,0 +1,10 @@
+>>> count_distinct_characters of "" 
+0
+>>> count_distinct_characters of "abcde" 
+5
+>>> count_distinct_characters of "abcdecadeCADE" 
+5
+>>> count_distinct_characters of "aaaaAAAAaaaa" 
+1
+>>> count_distinct_characters of "Jerry jERRY JeRRRY" 
+5

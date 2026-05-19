@@ -1,0 +1,49 @@
+🗝️ 📚
+🧩 encrypt(s) 👉
+   length ⬅️ 📐 s
+   result ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ s[i]
+      new_char ⬅️ char
+      is_lower ⬅️ 0
+      ❓ char 📉 96 👉
+         ❓ char 📈 123 👉
+            is_lower ⬅️ 1
+         🔚
+      🔚
+      ❓ is_lower ⚖️ 1 👉
+         offset ⬅️ 差(char, 97)
+         shifted_offset ⬅️ 和(offset, 4)
+         new_offset ⬅️ 剰余(shifted_offset, 26)
+         new_char ⬅️ 和(97, new_offset)
+      🔚
+      result 🧲 new_char
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> encrypt([104, 105]) 
+[108, 109]
+>>> encrypt([97, 115, 100, 102, 103, 104, 106, 107, 108]) 
+[101, 119, 104, 106, 107, 108, 110, 111, 112]
+>>> encrypt([103, 102]) 
+[107, 106]
+>>> encrypt([101, 116]) 
+[105, 120]
+>>> encrypt("hi") 
+"lm"
+>>> encrypt("asdfghjkl") 
+"ewhjklnop"
+>>> encrypt("gf") 
+"kj"
+>>> encrypt("et") 
+"ix"
+>>> encrypt("faewfawefaewg") 
+"jeiajeaijeiak"
+>>> encrypt("hellomyfriend") 
+"lippsqcjvmirh"
+>>> encrypt("dxzdlmnilfuhmilufhlihufnmlimnufhlimnufhfucufh") 
+"hbdhpqrmpjylqmpyjlpmlyjrqpmqryjlpmqryjljygyjl"
+>>> encrypt("a") 
+"e"

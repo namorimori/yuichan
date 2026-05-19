@@ -1,0 +1,10 @@
+>>> starts_one_ends of 1 
+1
+>>> starts_one_ends of 2 
+18
+>>> starts_one_ends of 3 
+180
+>>> starts_one_ends of 4 
+1800
+>>> starts_one_ends of 5 
+18000

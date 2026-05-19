@@ -1,0 +1,48 @@
+Nav rem vaz
+Dum exchange(lst1, lst2):
+   Kem len1 par lst1 @kez
+   Kem len2 par lst2 @kez
+   Kem odd_count par 0
+   Kem i par 0
+   Mup dum len1 pag:
+      Kem value par lst1[i]
+      Kem remainder par 剰余(value, 2)
+      Nev remainder paz 1 ger:
+         Rav odd_count
+      Dam nev
+      Rav i
+   Dam mup
+   Kem even_count par 0
+   Kem i par 0
+   Mup dum len2 pag:
+      Kem value par lst2[i]
+      Kem remainder par 剰余(value, 2)
+      Nev remainder paz 0 ger:
+         Rav even_count
+      Dam nev
+      Rav i
+   Dam mup
+   Kem result par [78, 79]
+   Nev even_count pev odd_count ger:
+      Kem result par [89, 69, 83]
+   Dam nev
+   Dup vem result
+Pam dum
+>>> exchange([1, 2, 3, 4], [1, 2, 3, 4]) 
+[89, 69, 83]
+>>> exchange([1, 2, 3, 4], [1, 5, 3, 4]) 
+[78, 79]
+>>> exchange([1, 2, 3, 4], [1, 2, 3, 4]) 
+"YES"
+>>> exchange([1, 2, 3, 4], [1, 5, 3, 4]) 
+"NO"
+>>> exchange([1, 2, 3, 4], [2, 1, 4, 3]) 
+"YES"
+>>> exchange([5, 7, 3], [2, 6, 4]) 
+"YES"
+>>> exchange([5, 7, 3], [2, 6, 3]) 
+"NO"
+>>> exchange([3, 2, 6, 1, 8, 9], [3, 5, 5, 1, 1, 1]) 
+"NO"
+>>> exchange([100, 200], [200, 200]) 
+"YES"

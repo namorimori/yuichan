@@ -1,0 +1,32 @@
+Use the standard library
+This is how to split_words of txt:
+   Remember that words is []
+   Remember that word is []
+   Remember that i is 0
+
+   Do this txt's length times:
+      Remember that ch is item i in txt
+      When ch is 32, then:
+         When word's length is more than 0, then:
+            Add words to word
+            Remember that word is []
+         End when
+      But, if not:
+         When ch is 44, then:
+            When word's length is more than 0, then:
+               Add words to word
+               Remember that word is []
+            End when
+         But, if not:
+            Add word to ch
+         End when
+      End when
+      Increase i
+   End do
+
+   When word's length is more than 0, then:
+      Add words to word
+   End when
+
+   The answer is words
+Now you know

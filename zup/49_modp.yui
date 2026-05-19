@@ -1,0 +1,35 @@
+Nav rem vaz
+Dum modp(n, p):
+   Kem ret par 1
+   Kem i par 0
+   Mup dum n pag:
+      Kem ret par 積(2, ret)
+      Kem ret par 剰余(ret, p)
+      Rav i
+   Dam mup
+   Dup vem ret
+Pam dum
+>>> modp(3, 5) 
+3
+>>> modp(1101, 101) 
+2
+>>> modp(0, 101) 
+1
+>>> modp(3, 11) 
+8
+>>> modp(100, 101) 
+1
+>>> modp(3, 5) 
+3
+>>> modp(1101, 101) 
+2
+>>> modp(0, 101) 
+1
+>>> modp(3, 11) 
+8
+>>> modp(100, 101) 
+1
+>>> modp(30, 5) 
+4
+>>> modp(31, 5) 
+3

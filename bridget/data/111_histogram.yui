@@ -1,0 +1,133 @@
+Use the standard library
+This is how to histogram of test:
+   Remember that length is test's length
+   When length is 0, then:
+      Remember that result is []
+      The answer is result
+   End when
+   Remember that words is []
+   Remember that current_word is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in test
+      When char is 32, then:
+         Remember that word_len is current_word's length
+         When word_len is more than 0, then:
+            Add words to current_word
+            Remember that current_word is []
+         End when
+      But, if not:
+         Add current_word to char
+      End when
+      Increase i
+   End do
+   Remember that word_len is current_word's length
+   When word_len is more than 0, then:
+      Add words to current_word
+   End when
+   Remember that words_len is words's length
+   Remember that max_count is 0
+   Remember that i is 0
+   Do this words_len times:
+      Remember that word is item i in words
+      Remember that count is 0
+      Remember that j is 0
+      Do this words_len times:
+         Remember that other_word is item j in words
+         Remember that word_len is word's length
+         Remember that other_len is other_word's length
+         Remember that same is 0
+         When word_len is other_len, then:
+            Remember that all_match is 1
+            Remember that k is 0
+            Do this word_len times:
+               When item k in word is item k in other_word, then:
+                  Do nothing
+               But, if not:
+                  Remember that all_match is 0
+               End when
+               Increase k
+            End do
+            Remember that same is all_match
+         End when
+         When same is 1, then:
+            Increase count
+         End when
+         Increase j
+      End do
+      When count is more than max_count, then:
+         Remember that max_count is count
+      End when
+      Increase i
+   End do
+   Remember that result is []
+   When max_count is more than 0, then:
+      Remember that i is 0
+      Do this words_len times:
+         Remember that word is item i in words
+         Remember that count is 0
+         Remember that j is 0
+         Do this words_len times:
+            Remember that other_word is item j in words
+            Remember that word_len is word's length
+            Remember that other_len is other_word's length
+            Remember that same is 0
+            When word_len is other_len, then:
+               Remember that all_match is 1
+               Remember that k is 0
+               Do this word_len times:
+                  When item k in word is item k in other_word, then:
+                     Do nothing
+                  But, if not:
+                     Remember that all_match is 0
+                  End when
+                  Increase k
+               End do
+               Remember that same is all_match
+            End when
+            When same is 1, then:
+               Increase count
+            End when
+            Increase j
+         End do
+         When count is max_count, then:
+            Remember that already_added is 0
+            Remember that result_len is result's length
+            Remember that m is 0
+            Do this result_len times:
+               Remember that result_word is item 0 in item m in result
+               Remember that word_len is word's length
+               Remember that result_word_len is result_word's length
+               Remember that same is 0
+               When word_len is result_word_len, then:
+                  Remember that all_match is 1
+                  Remember that k is 0
+                  Do this word_len times:
+                     When item k in word is item k in result_word, then:
+                        Do nothing
+                     But, if not:
+                        Remember that all_match is 0
+                     End when
+                     Increase k
+                  End do
+                  Remember that same is all_match
+               End when
+               When same is 1, then:
+                  Remember that already_added is 1
+               End when
+               Increase m
+            End do
+            When already_added is 0, then:
+               Remember that entry is []
+               Add entry to word
+               Add entry to max_count
+               Add result to entry
+            End when
+         End when
+         Increase i
+      End do
+   End when
+   The answer is result
+Now you know
+>>> histogram of "" 
+[]

@@ -1,0 +1,17 @@
+Use the standard library
+This is how to find_max of words:
+   Remember that best is item 0 in words
+   Remember that bests is tostring of best
+   Remember that n is words's length
+   Remember that i is 1
+   Do this diff of n and 1 times:
+      Remember that w is item i in words
+      Remember that ws is tostring of w
+      When ws is more than bests, then:
+         Remember that best is w
+         Remember that bests is ws
+      End when
+      Increase i
+   End do
+   The answer is best
+Now you know

@@ -1,0 +1,17 @@
+Use the standard library
+This is how to tri of n:
+   Remember that result is [1, 3]
+   Remember that i is 3
+   Do this n times:
+      When i is more than n, then:
+         Leave the loop
+      End when
+      When remainder of i and 2 is 1, then:
+         Add result to quotient of (tofloat of (sum of i and 1)) and 2
+      But, if not:
+         Add result to product of (tofloat of i) and (tofloat of i)
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know

@@ -1,0 +1,19 @@
+Use the standard library
+This is how to same_chars of s0 and s1:
+   Remember that u0 is unique_chars of s0
+   Remember that u1 is unique_chars of s1
+   Remember that n0 is u0's length
+   Remember that n1 is u1's length
+   When n0 is not n1, then:
+      The answer is 0
+   End when
+   Remember that i is 0
+   Do this n0 times:
+      Remember that c is item i in u0
+      When c is not in u1, then:
+         The answer is 0
+      End when
+      Increase i
+   End do
+   The answer is 1
+Now you know

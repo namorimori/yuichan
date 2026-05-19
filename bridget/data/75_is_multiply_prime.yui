@@ -1,0 +1,70 @@
+Use the standard library
+This is how to is_multiply_prime of a:
+   Remember that prime_list is []
+   Remember that candidate is 2
+   Do this 49 times:
+      Remember that prime_flag is 1
+      Remember that i is 2
+      Do this 50 times:
+         Remember that i_squared is product of i and i
+         When i_squared is at least candidate, then:
+            Remember that remainder_val is remainder of candidate and i
+            When remainder_val is 0, then:
+               Remember that prime_flag is 0
+            End when
+            Increase i
+         End when
+      End do
+      When prime_flag is 1, then:
+         Add prime_list to candidate
+      End when
+      Increase candidate
+   End do
+   Remember that prime_count is prime_list's length
+   Remember that result is 0
+   Remember that i is 0
+   Do this prime_count times:
+      Remember that prime_i is item i in prime_list
+      Remember that j is 0
+      Do this prime_count times:
+         Remember that prime_j is item j in prime_list
+         Remember that product_1 is product of prime_i and prime_j
+         When product_1 is at least a, then:
+            Remember that k is 0
+            Do this prime_count times:
+               Remember that prime_k is item k in prime_list
+               Remember that product_2 is product of product_1 and prime_k
+               When product_2 is a, then:
+                  Remember that result is 1
+               End when
+               Increase k
+            End do
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> is_multiply_prime of 30 
+1
+>>> is_multiply_prime of 5 
+0
+>>> is_multiply_prime of 30 
+1
+>>> is_multiply_prime of 8 
+1
+>>> is_multiply_prime of 10 
+0
+>>> is_multiply_prime of 125 
+1
+>>> is_multiply_prime of 105 
+1
+>>> is_multiply_prime of 126 
+0
+>>> is_multiply_prime of 729 
+0
+>>> is_multiply_prime of 891 
+0
+>>> is_multiply_prime of 1001 
+1

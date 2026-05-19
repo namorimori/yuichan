@@ -1,0 +1,11 @@
+Use the standard library
+This is how to special_factorial of n:
+   Remember that result is 1
+   Remember that i is 1
+   Do this n times:
+      Remember that result is product of result and i
+      Remember that result is product of result and i
+      Increase i
+   End do
+   The answer is result
+Now you know

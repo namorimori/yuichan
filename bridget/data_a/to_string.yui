@@ -1,0 +1,23 @@
+Use the standard library
+>>> tostring of 42 
+"42"
+>>> tostring of 3.140000 
+"3.140000"
+>>> toarray of "Hi" 
+[72, 105]
+>>> toarray of "ABC" 
+[65, 66, 67]
+>>> toint of "100" 
+100
+>>> tofloat of "3.14" 
+3.140000
+This is how to digits of n:
+   Remember that s is tostring of n
+   The answer is s's length
+Now you know
+>>> digits of 7 
+1
+>>> digits of 100 
+3
+>>> digits of 123456 
+6

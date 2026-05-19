@@ -1,0 +1,32 @@
+Use the standard library
+This is how to rolling_max of numbers:
+   Remember that length is numbers's length
+   Remember that result is []
+   Remember that current_max is 0
+   Remember that initialized is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that value is item i in numbers
+      When initialized is 0, then:
+         Remember that current_max is value
+         Remember that initialized is 1
+      But, if not:
+         When value is more than current_max, then:
+            Remember that current_max is value
+         End when
+      End when
+      Add result to current_max
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> rolling_max of [1, 2, 3, 2, 3, 4, 2] 
+[1, 2, 3, 3, 3, 4, 4]
+>>> rolling_max of [] 
+[]
+>>> rolling_max of [1, 2, 3, 4] 
+[1, 2, 3, 4]
+>>> rolling_max of [4, 3, 2, 1] 
+[4, 4, 4, 4]
+>>> rolling_max of [3, 2, 3, 100, 3] 
+[3, 3, 3, 100, 100]

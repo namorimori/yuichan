@@ -1,0 +1,12 @@
+Use the standard library
+This is how to fruit_distribution of s and n:
+  Remember that digits is []
+  Do this s's length times:
+    Remember that ch is item count in s
+    When ch is in "0123456789", then:
+      Add digits to toint of ch
+    End when
+  End do
+  Remember that total is sum of item 0 in digits and item 1 in digits
+  The answer is diff of n and total
+Now you know

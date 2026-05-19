@@ -1,0 +1,21 @@
+Use the standard library
+This is how to greatest_common_divisor of a and b:
+   When b is 0, then:
+      The answer is a
+   But, if not:
+      Remember that remainder_val is remainder of a and b
+      The answer is greatest_common_divisor of b and remainder_val
+   End when
+Now you know
+>>> greatest_common_divisor of 3 and 5 
+1
+>>> greatest_common_divisor of 25 and 15 
+5
+>>> greatest_common_divisor of 3 and 7 
+1
+>>> greatest_common_divisor of 10 and 15 
+5
+>>> greatest_common_divisor of 49 and 14 
+7
+>>> greatest_common_divisor of 144 and 60 
+12

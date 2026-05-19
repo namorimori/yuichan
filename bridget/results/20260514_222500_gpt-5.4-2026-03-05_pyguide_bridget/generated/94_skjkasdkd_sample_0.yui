@@ -1,0 +1,31 @@
+Use the standard library
+This is how to skjkasdkd of lst:
+   Remember that i is 0
+   Remember that total is 0
+
+   Do this lst's length times:
+      Remember that n is item i in lst
+      When n is more than 1, then:
+         Remember that d is 2
+         Remember that prime is yes
+
+         Do this n times:
+            When d is at most n, then:
+               Leave the loop
+            End when
+            When remainder of n and d is 0, then:
+               Remember that prime is no
+               Leave the loop
+            End when
+            Increase d
+         End do
+
+         When prime is yes, then:
+            Remember that total is sum of total and n
+         End when
+      End when
+      Increase i
+   End do
+
+   The answer is total
+Now you know

@@ -1,0 +1,14 @@
+>>> 施除元於「」
+「」
+>>> 施除元於「abcdef\nghijklm」
+「bcdf\nghjklm」
+>>> 施除元於「fedcba」
+「fdcb」
+>>> 施除元於「eeeee」
+「」
+>>> 施除元於「acBAA」
+「cB」
+>>> 施除元於「EcBOO」
+「cB」
+>>> 施除元於「ybcd」
+「ybcd」

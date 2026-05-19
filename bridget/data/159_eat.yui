@@ -1,0 +1,35 @@
+Use the standard library
+This is how to eat of number and need and remaining:
+   Remember that result is []
+   When need is at least remaining, then:
+      Remember that total_eaten is sum of number and need
+      Remember that left is diff of remaining and need
+      Add result to total_eaten
+      Add result to left
+   But, if not:
+      Remember that total_eaten is sum of number and remaining
+      Add result to total_eaten
+      Add result to 0
+   End when
+   The answer is result
+Now you know
+>>> eat of 5 and 6 and 10 
+[11, 4]
+>>> eat of 4 and 8 and 9 
+[12, 1]
+>>> eat of 1 and 10 and 10 
+[11, 0]
+>>> eat of 2 and 11 and 5 
+[7, 0]
+>>> eat of 5 and 6 and 10 
+[11, 4]
+>>> eat of 4 and 8 and 9 
+[12, 1]
+>>> eat of 1 and 10 and 10 
+[11, 0]
+>>> eat of 2 and 11 and 5 
+[7, 0]
+>>> eat of 4 and 5 and 7 
+[9, 2]
+>>> eat of 4 and 5 and 1 
+[5, 0]

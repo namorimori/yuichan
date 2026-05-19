@@ -1,0 +1,52 @@
+Use the standard library
+This is how to largest_prime_factor of n:
+   Remember that largest is 1
+   Remember that i is 2
+   Do this n times:
+      When i is at least n, then:
+         Remember that remainder is remainder of n and i
+         When remainder is 0, then:
+            Remember that is_prime is 1
+            When i is less than 2, then:
+               Remember that is_prime is 0
+            End when
+            When i is 2, then:
+               Remember that is_prime is 1
+            End when
+            When i is more than 2, then:
+               Remember that j is 2
+               Do this 1000 times:
+                  When j is less than i, then:
+                     Remember that rem is remainder of i and j
+                     When rem is 0, then:
+                        Remember that is_prime is 0
+                     End when
+                     Increase j
+                  End when
+               End do
+            End when
+            When is_prime is 1, then:
+               When i is more than largest, then:
+                  Remember that largest is i
+               End when
+            End when
+         End when
+         Increase i
+      End when
+   End do
+   The answer is largest
+Now you know
+>>> largest_prime_factor of 13195 
+29
+>>> largest_prime_factor of 2048 
+2
+>>> largest_prime_factor of 15 
+5
+>>> largest_prime_factor of 27 
+3
+>>> largest_prime_factor of 63 
+7
+>>> largest_prime_factor of 330 
+11
+>>> largest_prime_factor of 13195 
+29

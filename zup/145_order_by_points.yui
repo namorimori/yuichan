@@ -1,0 +1,76 @@
+Nav rem vaz
+Dum order_by_points(nums):
+   Kem length par nums @kez
+   Kem digit_sums par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem num par nums[i]
+      Kem is_negative par 0
+      Kem temp par num
+      Nev num dup 0 ger:
+         Kem is_negative par 1
+         Kem temp par 差(0, num)
+      Dam nev
+      Kem digits par []
+      Nev temp paz 0 ger:
+         Mev digits naz 0
+      Zum:
+         Mup dum 100 pag:
+            Nev temp pep 0 ger:
+               Kem digit par 剰余(temp, 10)
+               Mev digits naz digit
+               Kem temp par 商(temp, 10)
+            Dam nev
+         Dam mup
+      Dam nev
+      Kem d_len par digits @kez
+      Kem sum par 0
+      Kem j par 0
+      Kem last_idx par 差(d_len, 1)
+      Mup dum d_len pag:
+         Kem digit_val par digits[j]
+         Nev is_negative paz 1 ger:
+            Nev j paz last_idx ger:
+               Kem digit_val par 差(0, digit_val)
+            Dam nev
+         Dam nev
+         Kem sum par 和(sum, digit_val)
+         Rav j
+      Dam mup
+      Mev digit_sums naz sum
+      Rav i
+   Dam mup
+   Kem i par 0
+   Mup dum length pag:
+      Kem j par 0
+      Kem limit par 差(差(length, i), 1)
+      Mup dum limit pag:
+         Kem next_j par 和(j, 1)
+         Nev digit_sums[j] pep digit_sums[next_j] ger:
+            Kem temp_num par nums[j]
+            Kem nums[j] par nums[next_j]
+            Kem nums[next_j] par temp_num
+            Kem temp_sum par digit_sums[j]
+            Kem digit_sums[j] par digit_sums[next_j]
+            Kem digit_sums[next_j] par temp_sum
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Dup vem nums
+Pam dum
+>>> order_by_points([1, 11, -1, -11, -12]) 
+[-1, -11, 1, -12, 11]
+>>> order_by_points([1, 11, -1, -11, -12]) 
+[-1, -11, 1, -12, 11]
+>>> order_by_points([1234, 423, 463, 145, 2, 423, 423, 53, 6, 37, 3457, 3, 56, 0, 46]) 
+[0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+>>> order_by_points([]) 
+[]
+>>> order_by_points([1, -11, -32, 43, 54, -98, 2, -3]) 
+[-3, -32, -98, -11, 1, 2, 43, 54]
+>>> order_by_points([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]) 
+[1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+>>> order_by_points([0, 6, 6, -76, -21, 23, 4]) 
+[-76, -21, 0, 4, 23, 6, 6]

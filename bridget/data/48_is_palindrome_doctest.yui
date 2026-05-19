@@ -1,0 +1,14 @@
+>>> is_palindrome of "" 
+1
+>>> is_palindrome of "aba" 
+1
+>>> is_palindrome of "aaaaa" 
+1
+>>> is_palindrome of "zbcd" 
+0
+>>> is_palindrome of "xywyx" 
+1
+>>> is_palindrome of "xywyz" 
+0
+>>> is_palindrome of "xywzx" 
+0

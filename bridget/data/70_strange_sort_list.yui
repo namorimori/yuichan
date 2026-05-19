@@ -1,0 +1,88 @@
+Use the standard library
+This is how to strange_sort_list of lst:
+   Remember that length is lst's length
+   Remember that result is []
+   Remember that used is []
+   Remember that i is 0
+   Do this length times:
+      Add used to 0
+      Increase i
+   End do
+   Remember that switch is 1
+   Remember that i is 0
+   Do this length times:
+      When switch is 1, then:
+         Remember that min_val is 0
+         Remember that min_idx is 0
+         Remember that first_found is 0
+         Remember that j is 0
+         Do this length times:
+            When item j in used is 0, then:
+               When first_found is 0, then:
+                  Remember that min_val is item j in lst
+                  Remember that min_idx is j
+                  Remember that first_found is 1
+               But, if not:
+                  When item j in lst is less than min_val, then:
+                     Remember that min_val is item j in lst
+                     Remember that min_idx is j
+                  End when
+               End when
+            End when
+            Increase j
+         End do
+         Add result to min_val
+         Remember that item min_idx in used is 1
+         Remember that switch is 0
+      But, if not:
+         Remember that max_val is 0
+         Remember that max_idx is 0
+         Remember that first_found is 0
+         Remember that j is 0
+         Do this length times:
+            When item j in used is 0, then:
+               When first_found is 0, then:
+                  Remember that max_val is item j in lst
+                  Remember that max_idx is j
+                  Remember that first_found is 1
+               But, if not:
+                  When item j in lst is more than max_val, then:
+                     Remember that max_val is item j in lst
+                     Remember that max_idx is j
+                  End when
+               End when
+            End when
+            Increase j
+         End do
+         Add result to max_val
+         Remember that item max_idx in used is 1
+         Remember that switch is 1
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> strange_sort_list of [1, 2, 3, 4] 
+[1, 4, 2, 3]
+>>> strange_sort_list of [5, 5, 5, 5] 
+[5, 5, 5, 5]
+>>> strange_sort_list of [] 
+[]
+>>> strange_sort_list of [1, 2, 3, 4] 
+[1, 4, 2, 3]
+>>> strange_sort_list of [5, 6, 7, 8, 9] 
+[5, 9, 6, 8, 7]
+>>> strange_sort_list of [1, 2, 3, 4, 5] 
+[1, 5, 2, 4, 3]
+>>> strange_sort_list of [5, 6, 7, 8, 9, 1] 
+[1, 9, 5, 8, 6, 7]
+>>> strange_sort_list of [5, 5, 5, 5] 
+[5, 5, 5, 5]
+>>> strange_sort_list of [] 
+[]
+>>> strange_sort_list of [1, 2, 3, 4, 5, 6, 7, 8] 
+[1, 8, 2, 7, 3, 6, 4, 5]
+>>> strange_sort_list of [0, 2, 2, 2, 5, 5, -5, -5] 
+[-5, 5, -5, 5, 0, 2, 2, 2]
+>>> strange_sort_list of [111111] 
+[111111]

@@ -1,0 +1,30 @@
+Use the standard library
+This is how to skjkasdkd of lst:
+  Remember that total is 0
+  Remember that i is 0
+  Do this lst's length times:
+    Remember that value is item i in lst
+    When remainder of value and 2 is 1, then:
+      Remember that is_prime is yes
+      When value is at most 1, then:
+        Remember that is_prime is no
+      End when
+      Remember that d is 2
+      Do this value times:
+        When product of d and d is more than value, then:
+          Leave the loop
+        End when
+        When remainder of value and d is 0, then:
+          Remember that is_prime is no
+          Leave the loop
+        End when
+        Increase d by 1
+      End do
+      When is_prime is yes, then:
+        Increase total by value
+      End when
+    End when
+    Increase i by 1
+  End do
+  The answer is total
+Now you know

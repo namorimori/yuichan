@@ -1,0 +1,22 @@
+Use the standard library
+This is how to check_dict_case of dict:
+   Remember that n is dict's length
+   Remember that i is 0
+   Do this n times:
+      Remember that pair is item i in dict
+      Remember that key is item 0 in pair
+      Remember that m is key's length
+      Remember that j is 0
+      Do this m times:
+         Remember that c is item j in key
+         When c is at least 65, then:
+            When c is at most 90, then:
+               The answer is 0
+            End when
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is 1
+Now you know

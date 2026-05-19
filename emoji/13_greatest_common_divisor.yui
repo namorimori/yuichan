@@ -1,0 +1,22 @@
+🗝️ 📚
+🧩 greatest_common_divisor(a, b) 👉
+   ❓ b ⚖️ 0 👉
+      ✅ a
+   🔚
+   ❗ 👉
+      余り ⬅️ 剰余(a, b)
+      ✅ greatest_common_divisor(b, 余り)
+   🔚
+🔚
+>>> greatest_common_divisor(3, 5) 
+1
+>>> greatest_common_divisor(25, 15) 
+5
+>>> greatest_common_divisor(3, 7) 
+1
+>>> greatest_common_divisor(10, 15) 
+5
+>>> greatest_common_divisor(49, 14) 
+7
+>>> greatest_common_divisor(144, 60) 
+12

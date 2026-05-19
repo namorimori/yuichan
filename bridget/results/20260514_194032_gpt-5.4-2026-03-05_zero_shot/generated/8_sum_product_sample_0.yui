@@ -1,0 +1,5 @@
+Use the standard library
+use std
+
+let sum_product = nums =>
+  [sum nums, product nums]

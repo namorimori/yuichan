@@ -1,0 +1,33 @@
+Nav rem vaz
+Dum correct_bracketing(brackets):
+   Kem depth par 0
+   Kem i par 0
+   Kem length par brackets @kez
+   Mup dum length pag:
+      Kem b par brackets[i]
+      Nev b paz 60 ger:
+         Rav depth
+      Zum:
+         Zar depth
+      Dam nev
+      Nev depth dup 0 ger:
+         Dup vem 0
+      Dam nev
+      Rav i
+   Dam mup
+   Nev depth paz 0 ger:
+      Dup vem 1
+   Zum:
+      Dup vem 0
+   Dam nev
+Pam dum
+>>> correct_bracketing("<") 
+0
+>>> correct_bracketing("<>") 
+1
+>>> correct_bracketing("<<><>>") 
+1
+>>> correct_bracketing("><<>") 
+0
+>>> correct_bracketing("<><><<><>><>") 
+1

@@ -1,0 +1,21 @@
+Use the standard library
+This is how to even_odd_palindrome of n:
+   Remember that even is 0
+   Remember that odd is 0
+   Remember that i is 1
+   Do this n times:
+      Remember that s is tostring of i
+      Remember that r is reverse of s
+      When s is r, then:
+         Remember that d is digits of i
+         Remember that parity is remainder of d and 2
+         When parity is 0, then:
+            Increase even
+         But, if not:
+            Increase odd
+         End when
+      End when
+      Increase i
+   End do
+   The answer is [even, odd]
+Now you know

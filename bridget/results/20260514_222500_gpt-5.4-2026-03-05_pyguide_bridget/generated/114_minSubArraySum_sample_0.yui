@@ -1,0 +1,27 @@
+Use the standard library
+This is how to minSubArraySum of nums:
+   Remember that current is item 0 in nums
+   Remember that best is item 0 in nums
+   Remember that i is 1
+   Do this (diff of nums's length and 1) times:
+      Remember that x is item i in nums
+      Remember that extended is sum of current and x
+      When x is less than extended, then:
+         Remember that current is x
+      But, if not:
+         Remember that current is extended
+      End when
+      When current is less than best, then:
+         Remember that best is current
+      End when
+      Increase i
+   End do
+   The answer is best
+Now you know
+
+>>> minSubArraySum of [2, 3, 4, 1, 2, 4]
+1
+>>> minSubArraySum of [-1, -2, -3]
+-6
+>>> minSubArraySum of [2, 3, 4, 1, 2, 4]
+1

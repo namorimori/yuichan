@@ -1,0 +1,18 @@
+Use the standard library
+This is how to get_odd_collatz of n:
+  Remember that result is []
+  Remember that current is n
+  Do this 1000 times:
+    When current is 1, then:
+      Add result to 1
+      Leave the loop
+    End when
+    When remainder of current and 2 is 1, then:
+      Add result to current
+      Remember that current is sum of product of 3 and current and 1
+    But, if not:
+      Remember that current is quotient of current and 2
+    End when
+  End do
+  The answer is result
+Now you know

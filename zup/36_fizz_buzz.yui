@@ -1,0 +1,52 @@
+Nav rem vaz
+Dum fizz_buzz(n):
+   Kem count par 0
+   Kem i par 0
+   Mup dum n pag:
+      Kem is_div par 0
+      Kem remainder11 par 剰余(i, 11)
+      Kem remainder13 par 剰余(i, 13)
+      Nev remainder11 paz 0 ger:
+         Kem is_div par 1
+      Dam nev
+      Nev remainder13 paz 0 ger:
+         Kem is_div par 1
+      Dam nev
+      Nev is_div paz 1 ger:
+         Kem temp par i
+         Mup dum 100 pag:
+            Nev temp pep 0 ger:
+               Kem digit par 剰余(temp, 10)
+               Nev digit paz 7 ger:
+                  Rav count
+               Dam nev
+               Kem temp par 商(temp, 10)
+            Dam nev
+         Dam mup
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem count
+Pam dum
+>>> fizz_buzz(50) 
+0
+>>> fizz_buzz(78) 
+2
+>>> fizz_buzz(79) 
+3
+>>> fizz_buzz(50) 
+0
+>>> fizz_buzz(78) 
+2
+>>> fizz_buzz(79) 
+3
+>>> fizz_buzz(100) 
+3
+>>> fizz_buzz(200) 
+6
+>>> fizz_buzz(4000) 
+192
+>>> fizz_buzz(10000) 
+639
+>>> fizz_buzz(100000) 
+8026

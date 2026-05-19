@@ -1,0 +1,133 @@
+Nav rem vaz
+Dum select_words(s, n):
+   Kem length par s @kez
+   Kem result par []
+   Kem current_word par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par s[i]
+      Nev char paz 32 ger:
+         Nev current_word @kez pep 0 ger:
+            Kem consonants par 0
+            Kem j par 0
+            Kem cw_len par current_word @kez
+            Mup dum cw_len pag:
+               Kem c par current_word[j]
+               Kem is_vowel par 0
+               Nev c paz 97 ger:
+                  Kem is_vowel par 1
+               Dam nev
+               Nev c paz 101 ger:
+                  Kem is_vowel par 1
+               Dam nev
+               Nev c paz 105 ger:
+                  Kem is_vowel par 1
+               Dam nev
+               Nev c paz 111 ger:
+                  Kem is_vowel par 1
+               Dam nev
+               Nev c paz 117 ger:
+                  Kem is_vowel par 1
+               Dam nev
+               Nev c paz 65 ger:
+                  Kem is_vowel par 1
+               Dam nev
+               Nev c paz 69 ger:
+                  Kem is_vowel par 1
+               Dam nev
+               Nev c paz 73 ger:
+                  Kem is_vowel par 1
+               Dam nev
+               Nev c paz 79 ger:
+                  Kem is_vowel par 1
+               Dam nev
+               Nev c paz 85 ger:
+                  Kem is_vowel par 1
+               Dam nev
+               Nev is_vowel paz 0 ger:
+                  Rav consonants
+               Dam nev
+               Rav j
+            Dam mup
+            Nev consonants paz n ger:
+               Mev result naz current_word
+            Dam nev
+            Kem current_word par []
+         Dam nev
+      Zum:
+         Mev current_word naz char
+      Dam nev
+      Rav i
+   Dam mup
+   Nev current_word @kez pep 0 ger:
+      Kem consonants par 0
+      Kem j par 0
+      Kem cw_len par current_word @kez
+      Mup dum cw_len pag:
+         Kem c par current_word[j]
+         Kem is_vowel par 0
+         Nev c paz 97 ger:
+            Kem is_vowel par 1
+         Dam nev
+         Nev c paz 101 ger:
+            Kem is_vowel par 1
+         Dam nev
+         Nev c paz 105 ger:
+            Kem is_vowel par 1
+         Dam nev
+         Nev c paz 111 ger:
+            Kem is_vowel par 1
+         Dam nev
+         Nev c paz 117 ger:
+            Kem is_vowel par 1
+         Dam nev
+         Nev is_vowel paz 0 ger:
+            Rav consonants
+         Dam nev
+         Rav j
+      Dam mup
+      Nev consonants paz n ger:
+         Mev result naz current_word
+      Dam nev
+   Dam nev
+   Dup vem result
+Pam dum
+>>> select_words([
+   77,
+   97,
+   114,
+   121,
+   32,
+   104,
+   97,
+   100,
+   32,
+   97,
+   32,
+   108,
+   105,
+   116,
+   116,
+   108,
+   101,
+   32,
+   108,
+   97,
+   109,
+   98
+], 4) 
+[[108, 105, 116, 116, 108, 101]]
+>>> select_words("Mary had a little lamb", 4) 
+["little"]
+>>> select_words("Mary had a little lamb", 3) 
+["Mary", "lamb"]
+>>> select_words("simple white space", 2) 
+[]
+>>> select_words("Hello world", 4) 
+["world"]
+>>> select_words("Uncle sam", 3) 
+["Uncle"]
+>>> select_words("", 4) 
+[]
+>>> select_words("a b c d e f", 1) 
+["b", "c", "d", "f"]

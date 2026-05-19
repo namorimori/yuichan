@@ -1,0 +1,59 @@
+Use the standard library
+This is how to sort_third of l:
+   Remember that length is l's length
+   Remember that third_elements is []
+   Remember that i is 0
+   Do this length times:
+      Remember that remainder_val is remainder of i and 3
+      When remainder_val is 0, then:
+         Add third_elements to item i in l
+      End when
+      Increase i
+   End do
+   Remember that third_length is third_elements's length
+   Do this third_length times:
+      Remember that i is 0
+      Remember that limit is diff of third_length and 1
+      Do this limit times:
+         Remember that next_idx is sum of i and 1
+         When item i in third_elements is more than item next_idx in third_elements, then:
+            Remember that temp is item i in third_elements
+            Remember that item i in third_elements is item next_idx in third_elements
+            Remember that item next_idx in third_elements is temp
+         End when
+         Increase i
+      End do
+   End do
+   Remember that result is []
+   Remember that third_idx is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that remainder_val is remainder of i and 3
+      When remainder_val is 0, then:
+         Add result to item third_idx in third_elements
+         Increase third_idx
+      But, if not:
+         Add result to item i in l
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> sort_third of [1, 2, 3] 
+[1, 2, 3]
+>>> sort_third of [5, 6, 3, 4, 8, 9, 2] 
+[2, 6, 3, 4, 8, 9, 5]
+>>> sort_third of [1, 2, 3] 
+[1, 2, 3]
+>>> sort_third of [5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10] 
+[1, 3, -5, 2, -3, 3, 5, 0, 123, 9, -10]
+>>> sort_third of [5, 8, -12, 4, 23, 2, 3, 11, 12, -10] 
+[-10, 8, -12, 3, 23, 2, 4, 11, 12, 5]
+>>> sort_third of [5, 6, 3, 4, 8, 9, 2] 
+[2, 6, 3, 4, 8, 9, 5]
+>>> sort_third of [5, 8, 3, 4, 6, 9, 2] 
+[2, 8, 3, 4, 6, 9, 5]
+>>> sort_third of [5, 6, 9, 4, 8, 3, 2] 
+[2, 6, 9, 4, 8, 3, 5]
+>>> sort_third of [5, 6, 3, 4, 8, 9, 2, 1] 
+[2, 6, 3, 4, 8, 9, 5, 1]

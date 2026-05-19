@@ -1,0 +1,12 @@
+>>> words_string of "Hi, my name is John" 
+["Hi", "my", "name", "is", "John"]
+>>> words_string of "One, two, three, four, five, six" 
+["One", "two", "three", "four", "five", "six"]
+>>> words_string of "Hi, my name" 
+["Hi", "my", "name"]
+>>> words_string of "One,, two, three, four, five, six," 
+["One", "two", "three", "four", "five", "six"]
+>>> words_string of "" 
+[]
+>>> words_string of "ahmed     , gamal" 
+["ahmed", "gamal"]

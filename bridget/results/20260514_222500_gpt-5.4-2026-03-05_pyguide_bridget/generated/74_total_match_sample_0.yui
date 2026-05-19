@@ -1,0 +1,13 @@
+Use the standard library
+This is how to total_match of lst1 and lst2:
+   Remember that result is []
+   Remember that i is 0
+   Do this lst2's length times:
+      Remember that candidate is item i in lst2
+      When candidate is in lst1, then:
+         Add result to candidate
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know

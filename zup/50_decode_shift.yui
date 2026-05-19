@@ -1,0 +1,21 @@
+Nav rem vaz
+Dum decode_shift(s):
+   Kem length par s @kez
+   Kem result par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par s[i]
+      Kem offset par 差(差(char, 97), 5)
+      Kem decoded_offset par offset
+      Nev offset dup 0 ger:
+         Kem decoded_offset par 和(offset, 26)
+      Dam nev
+      Kem remainder par 剰余(decoded_offset, 26)
+      Kem decoded_char par 和(97, remainder)
+      Mev result naz decoded_char
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> decode_shift([102, 115, 105, 105, 116]) 
+[97, 110, 100, 100, 111]

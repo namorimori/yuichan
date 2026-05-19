@@ -1,0 +1,55 @@
+Use the standard library
+This is how to filter_by_substring of strings and substring:
+   Remember that result is []
+   Remember that i is 0
+
+   Do this strings' length times:
+      Remember that s is item i in strings
+      Remember that found is no
+      Remember that j is 0
+
+      Do this s's length times:
+         When found is yes, then:
+            Leave the loop
+         End when
+
+         Remember that remaining is diff of s's length and j
+         When substring's length is at most remaining, then:
+            Remember that matches is yes
+            Remember that k is 0
+
+            Do this substring's length times:
+               When item k in s is not item k in substring, then:
+                  Remember that matches is no
+                  Leave the loop
+               End when
+               Increase k
+            End do
+
+            When matches is yes, then:
+               Remember that found is yes
+            End when
+         End when
+
+         Remember that s is toarray of s
+         Remember that item 0 in s is item 1 in s
+         Remember that s is tostring of s
+         Increase j
+      End do
+
+      When found is yes, then:
+         Add result to item i in strings
+      End when
+
+      Increase i
+   End do
+
+   The answer is result
+Now you know
+
+>>> filter_by_substring of [] and "a"
+[]
+>>> filter_by_substring of ["abc", "bacd", "cde", "array"] and "a"
+["abc", "bacd", "array"]
+>>> filter_by_substring of [] and "john"
+[]

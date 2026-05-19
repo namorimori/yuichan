@@ -1,0 +1,17 @@
+Use the standard library
+This is how to sort_array of array:
+   Remember that n is array's length
+   Do this n times:
+      Remember that i is 0
+      Do this diff of n and 1 times:
+         Remember that j is sum of i and 1
+         When item i in array is more than item j in array, then:
+            Remember that tmp is item i in array
+            Remember that item i in array is item j in array
+            Remember that item j in array is tmp
+         End when
+         Increase i
+      End do
+   End do
+   The answer is array
+Now you know

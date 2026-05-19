@@ -1,0 +1,6 @@
+>>> triangle_area(5, 3) 
+7.500000
+>>> triangle_area(2, 2) 
+2.000000
+>>> triangle_area(10, 8) 
+40.000000

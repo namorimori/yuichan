@@ -1,0 +1,42 @@
+Use the standard library
+This is how to sort_third of l:
+   Remember that thirds is []
+   Remember that i is 0
+
+   Do this l's length times:
+      When remainder of i and 3 is 0, then:
+         Add thirds to item i in l
+      End when
+      Increase i
+   End do
+
+   Remember that a is 0
+   Do this thirds's length times:
+      Remember that b is 0
+      Do this thirds's length times:
+         When item a in thirds is less than item b in thirds, then:
+            Remember that temp is item a in thirds
+            Remember that item a in thirds is item b in thirds
+            Remember that item b in thirds is temp
+         End when
+         Increase b
+      End do
+      Increase a
+   End do
+
+   Remember that result is []
+   Remember that i is 0
+   Remember that j is 0
+
+   Do this l's length times:
+      When remainder of i and 3 is 0, then:
+         Add result to item j in thirds
+         Increase j
+      But, if not:
+         Add result to item i in l
+      End when
+      Increase i
+   End do
+
+   The answer is result
+Now you know

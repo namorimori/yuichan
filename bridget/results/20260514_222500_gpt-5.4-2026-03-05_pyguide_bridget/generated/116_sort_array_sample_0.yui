@@ -1,0 +1,20 @@
+Use the standard library
+This is how to sort_array of arr:
+   Remember that n is arr's length
+   Remember that i is 0
+   Do this n times:
+      Remember that j is 0
+      Do this n times:
+         When sum of j and 1 is less than n, then:
+            When item j in arr is more than item (sum of j and 1) in arr, then:
+               Remember that temp is item j in arr
+               Remember that item j in arr is item (sum of j and 1) in arr
+               Remember that item (sum of j and 1) in arr is temp
+            End when
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is arr
+Now you know

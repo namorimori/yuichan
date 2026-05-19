@@ -1,0 +1,39 @@
+Use the standard library
+This is how to is_multiply_prime of a:
+   Remember that count is 0
+   Remember that d is 2
+   Do this a times:
+      When d is more than a, then:
+         Leave the loop
+      End when
+      Remember that r is remainder of a and d
+      When r is 0, then:
+         Remember that prime is 1
+         Remember that i is 2
+         Do this d times:
+            When i is at least d, then:
+               Leave the loop
+            End when
+            Remember that rd is remainder of d and i
+            When rd is 0, then:
+               Remember that prime is 0
+            End when
+            Increase i
+         End do
+         When prime is 1, then:
+            Increase count
+         End when
+      End when
+      Increase d
+   End do
+   When count is 3, then:
+      The answer is 1
+   End when
+   The answer is 0
+Now you know
+>>> is_multiply_prime of 30
+1
+>>> is_multiply_prime of 5
+0
+>>> is_multiply_prime of 30
+1

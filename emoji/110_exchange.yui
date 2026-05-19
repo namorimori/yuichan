@@ -1,0 +1,48 @@
+🗝️ 📚
+🧩 exchange(lst1, lst2) 👉
+   len1 ⬅️ 📐 lst1
+   len2 ⬅️ 📐 lst2
+   odd_count ⬅️ 0
+   i ⬅️ 0
+   🌀 len1 👉
+      value ⬅️ lst1[i]
+      remainder ⬅️ 剰余(value, 2)
+      ❓ remainder ⚖️ 1 👉
+         odd_count ⬆️
+      🔚
+      i ⬆️
+   🔚
+   even_count ⬅️ 0
+   i ⬅️ 0
+   🌀 len2 👉
+      value ⬅️ lst2[i]
+      remainder ⬅️ 剰余(value, 2)
+      ❓ remainder ⚖️ 0 👉
+         even_count ⬆️
+      🔚
+      i ⬆️
+   🔚
+   result ⬅️ [78, 79]
+   ❓ even_count 📉⚖️ odd_count 👉
+      result ⬅️ [89, 69, 83]
+   🔚
+   ✅ result
+🔚
+>>> exchange([1, 2, 3, 4], [1, 2, 3, 4]) 
+[89, 69, 83]
+>>> exchange([1, 2, 3, 4], [1, 5, 3, 4]) 
+[78, 79]
+>>> exchange([1, 2, 3, 4], [1, 2, 3, 4]) 
+"YES"
+>>> exchange([1, 2, 3, 4], [1, 5, 3, 4]) 
+"NO"
+>>> exchange([1, 2, 3, 4], [2, 1, 4, 3]) 
+"YES"
+>>> exchange([5, 7, 3], [2, 6, 4]) 
+"YES"
+>>> exchange([5, 7, 3], [2, 6, 3]) 
+"NO"
+>>> exchange([3, 2, 6, 1, 8, 9], [3, 5, 5, 1, 1, 1]) 
+"NO"
+>>> exchange([100, 200], [200, 200]) 
+"YES"

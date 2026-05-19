@@ -1,0 +1,50 @@
+Nav rem vaz
+Dum is_bored(S):
+   Kem length par S @kez
+   Kem count par 0
+   Kem sentence_start par 1
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par S[i]
+      Nev sentence_start paz 1 ger:
+         Nev char paz 32 ger:
+            Mup nek
+         Zum:
+            Nev char paz 73 ger:
+               Nev i dup 差(length, 1) ger:
+                  Kem next_char par S[和(i, 1)]
+                  Nev next_char paz 32 ger:
+                     Rav count
+                  Dam nev
+               Dam nev
+            Dam nev
+            Kem sentence_start par 0
+         Dam nev
+      Dam nev
+      Nev char paz 46 ger:
+         Kem sentence_start par 1
+      Dam nev
+      Nev char paz 63 ger:
+         Kem sentence_start par 1
+      Dam nev
+      Nev char paz 33 ger:
+         Kem sentence_start par 1
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem count
+Pam dum
+>>> is_bored([72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100]) 
+0
+>>> is_bored("Hello world") 
+0
+>>> is_bored("Is the sky blue?") 
+0
+>>> is_bored("I love It !") 
+1
+>>> is_bored("bIt") 
+0
+>>> is_bored("I feel good today. I will be productive. will kill It") 
+2
+>>> is_bored("You and I are going for a walk") 
+0

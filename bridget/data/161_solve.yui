@@ -1,0 +1,62 @@
+Use the standard library
+This is how to solve of s:
+   Remember that length is s's length
+   Remember that result is []
+   Remember that has_letter is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in s
+      Remember that new_char is char
+      Remember that is_upper is 0
+      When char is more than 64, then:
+         When char is less than 91, then:
+            Remember that is_upper is 1
+            Remember that has_letter is 1
+            Remember that new_char is sum of char and 32
+         End when
+      End when
+      Remember that is_lower is 0
+      When char is more than 96, then:
+         When char is less than 123, then:
+            Remember that is_lower is 1
+            Remember that has_letter is 1
+            Remember that new_char is diff of char and 32
+         End when
+      End when
+      Add result to new_char
+      Increase i
+   End do
+   When has_letter is 0, then:
+      Remember that reversed is []
+      Remember that i is 0
+      Do this length times:
+         Remember that idx is diff of (diff of length and i) and 1
+         Add reversed to item idx in result
+         Increase i
+      End do
+      Remember that result is reversed
+   End when
+   The answer is result
+Now you know
+>>> solve of [49, 50, 51, 52] 
+[52, 51, 50, 49]
+>>> solve of [97, 98] 
+[65, 66]
+>>> solve of [35, 97, 64, 67] 
+[35, 65, 64, 99]
+>>> solve of "AsDf" 
+"aSdF"
+>>> solve of "1234" 
+"4321"
+>>> solve of "ab" 
+"AB"
+>>> solve of "#a@C" 
+"#A@c"
+>>> solve of "#AsdfW^45" 
+"#aSDFw^45"
+>>> solve of "#6@2" 
+"2@6#"
+>>> solve of "#$a^D" 
+"#$A^d"
+>>> solve of "#ccc" 
+"#CCC"

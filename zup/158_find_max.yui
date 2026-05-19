@@ -1,0 +1,89 @@
+Nav rem vaz
+Dum find_max(words):
+   Kem length par words @kez
+   Kem result par []
+   Nev length paz 0 ger:
+      Dup vem result
+   Dam nev
+   Kem best_word par words[0]
+   Kem best_unique par 0
+   Kem i par 0
+   Mup dum length pag:
+      Kem word par words[i]
+      Kem word_len par word @kez
+      Kem unique_count par 0
+      Kem j par 0
+      Mup dum word_len pag:
+         Kem char par word[j]
+         Kem is_unique par 1
+         Kem k par 0
+         Mup dum j pag:
+            Nev word[k] paz char ger:
+               Kem is_unique par 0
+            Dam nev
+            Rav k
+         Dam mup
+         Nev is_unique paz 1 ger:
+            Rav unique_count
+         Dam nev
+         Rav j
+      Dam mup
+      Kem should_update par 0
+      Nev unique_count pep best_unique ger:
+         Kem should_update par 1
+      Dam nev
+      Nev unique_count paz best_unique ger:
+         Kem best_len par best_word @kez
+         Kem min_len par word_len
+         Nev best_len dup word_len ger:
+            Kem min_len par best_len
+         Dam nev
+         Kem m par 0
+         Kem is_less par 0
+         Kem found_diff par 0
+         Mup dum min_len pag:
+            Nev found_diff paz 0 ger:
+               Nev word[m] dup best_word[m] ger:
+                  Kem is_less par 1
+                  Kem found_diff par 1
+               Dam nev
+               Nev word[m] pep best_word[m] ger:
+                  Kem found_diff par 1
+               Dam nev
+            Dam nev
+            Rav m
+         Dam mup
+         Nev is_less paz 1 ger:
+            Kem should_update par 1
+         Dam nev
+      Dam nev
+      Nev should_update paz 1 ger:
+         Kem best_word par word
+         Kem best_unique par unique_count
+      Dam nev
+      Rav i
+   Dam mup
+   Dup vem best_word
+Pam dum
+>>> find_max([[110, 97, 109, 101], [111, 102], [115, 116, 114, 105, 110, 103]]) 
+[115, 116, 114, 105, 110, 103]
+>>> find_max(["name", "of", "string"]) 
+"string"
+>>> find_max(["name", "enam", "game"]) 
+"enam"
+>>> find_max(["aaaaaaa", "bb", "cc"]) 
+"aaaaaaa"
+>>> find_max(["abc", "cba"]) 
+"abc"
+>>> find_max(["play", "this", "game", "of", "footbott"]) 
+"footbott"
+>>> find_max(["we", "are", "gonna", "rock"]) 
+"gonna"
+>>> find_max(["we", "are", "a", "mad", "nation"]) 
+"nation"
+>>> find_max(["this", "is", "a", "prrk"]) 
+"this"
+>>> find_max(["b"]) 
+"b"
+>>> find_max(["play", "play", "play"]) 
+"play"

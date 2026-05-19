@@ -1,0 +1,9 @@
+Use the standard library
+This is how to special_factorial of n:
+  Remember that result is 1
+  Do this n times:
+    Remember that result is product of result and n
+    Decrease n by 1
+  End do
+  The answer is result
+Now you know

@@ -1,0 +1,14 @@
+>>> 施選詞於「Mary had a little lamb」與4
+[「little」]
+>>> 施選詞於「Mary had a little lamb」與3
+[「Mary」,「lamb」]
+>>> 施選詞於「simple white space」與2
+[]
+>>> 施選詞於「Hello world」與4
+[「world」]
+>>> 施選詞於「Uncle sam」與3
+[「Uncle」]
+>>> 施選詞於「」與4
+[]
+>>> 施選詞於「a b c d e f」與1
+[「b」,「c」,「d」,「f」]

@@ -1,0 +1,69 @@
+Nav rem vaz
+Dum sort_array(arr):
+   Kem length par arr @kez
+   Kem i par 0
+   Mup dum length pag:
+      Kem j par 0
+      Kem limit par 差(差(length, i), 1)
+      Mup dum limit pag:
+         Kem next_j par 和(j, 1)
+         Kem bits1 par 0
+         Kem temp1 par 絶対値(arr[j])
+         Mup dum 100 pag:
+            Nev temp1 pep 0 ger:
+               Kem remainder par 剰余(temp1, 2)
+               Nev remainder paz 1 ger:
+                  Rav bits1
+               Dam nev
+               Kem temp1 par 商(temp1, 2)
+            Dam nev
+         Dam mup
+         Kem bits2 par 0
+         Kem temp2 par 絶対値(arr[next_j])
+         Mup dum 100 pag:
+            Nev temp2 pep 0 ger:
+               Kem remainder par 剰余(temp2, 2)
+               Nev remainder paz 1 ger:
+                  Rav bits2
+               Dam nev
+               Kem temp2 par 商(temp2, 2)
+            Dam nev
+         Dam mup
+         Kem should_swap par 0
+         Nev bits1 pep bits2 ger:
+            Kem should_swap par 1
+         Dam nev
+         Nev bits1 paz bits2 ger:
+            Nev arr[j] pep arr[next_j] ger:
+               Kem should_swap par 1
+            Dam nev
+         Dam nev
+         Nev should_swap paz 1 ger:
+            Kem temp par arr[j]
+            Kem arr[j] par arr[next_j]
+            Kem arr[next_j] par temp
+         Dam nev
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Dup vem arr
+Pam dum
+>>> sort_array([1, 5, 2, 3, 4]) 
+[1, 2, 4, 3, 5]
+>>> sort_array([1, 5, 2, 3, 4]) 
+[1, 2, 4, 3, 5]
+>>> sort_array([-2, -3, -4, -5, -6]) 
+[-4, -2, -6, -5, -3]
+>>> sort_array([1, 0, 2, 3, 4]) 
+[0, 1, 2, 4, 3]
+>>> sort_array([]) 
+[]
+>>> sort_array([2, 5, 77, 4, 5, 3, 5, 7, 2, 3, 4]) 
+[2, 2, 4, 4, 3, 3, 5, 5, 5, 7, 77]
+>>> sort_array([3, 6, 44, 12, 32, 5]) 
+[32, 3, 5, 6, 12, 44]
+>>> sort_array([2, 4, 8, 16, 32]) 
+[2, 4, 8, 16, 32]
+>>> sort_array([2, 4, 8, 16, 32]) 
+[2, 4, 8, 16, 32]

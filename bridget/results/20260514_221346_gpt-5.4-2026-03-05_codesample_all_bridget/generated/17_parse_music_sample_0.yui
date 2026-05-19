@@ -1,0 +1,31 @@
+Use the standard library
+This is how to parse_music of music_string:
+   Remember that result is []
+   Remember that token is ""
+   Remember that n is music_string's length
+   Remember that i is 0
+   Do this n times:
+      Remember that c is item i in music_string
+      When c is " ", then:
+         When token's length is more than 0, then:
+            Add result to token's length
+            Remember that token is ""
+         End when
+      But, if not:
+         Add token to c
+      End when
+      Increase i
+   End do
+   When token's length is more than 0, then:
+      Add result to token's length
+   End when
+   The answer is result
+Now you know
+>>> parse_music of "" 
+[]
+>>> parse_music of "o o o o" 
+[1, 1, 1, 1]
+>>> parse_music of "oooo o oo" 
+[4, 1, 2]
+>>> parse_music of "  oo   oooo  o " 
+[2, 4, 1]

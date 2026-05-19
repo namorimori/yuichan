@@ -1,0 +1,23 @@
+Use the standard library
+This is how to odd_count of lst:
+   Remember that result is []
+   Remember that n is lst's length
+   Remember that i is 0
+   Do this n times:
+      Remember that s is item i in lst
+      Remember that count is 0
+      Remember that j is 0
+      Do this s's length times:
+         Remember that c is item j in s
+         Remember that d is diff of c and 48
+         Remember that r is remainder of d and 2
+         When r is 1, then:
+            Increase count
+         End when
+         Increase j
+      End do
+      Add result to "the number of odd elements {count}n the str{count}ng {count} of the {count}nput."
+      Increase i
+   End do
+   The answer is result
+Now you know

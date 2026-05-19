@@ -1,0 +1,36 @@
+This is how to flip_case of string:
+   Remember that length is string's length
+   Remember that result is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in string
+      Remember that new_char is char
+      When char is at most 65, then:
+         When char is at least 90, then:
+            Remember that new_char is char
+            Do this 32 times:
+               Increase new_char
+            End do
+         End when
+      End when
+      When char is at most 97, then:
+         When char is at least 122, then:
+            Remember that new_char is char
+            Do this 32 times:
+               Decrease new_char
+            End do
+         End when
+      End when
+      Add result to new_char
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> flip_case of "Hello" 
+"hELLO"
+>>> flip_case of "" 
+""
+>>> flip_case of "Hello!" 
+"hELLO!"
+>>> flip_case of "These violent delights have violent ends" 
+"tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS"

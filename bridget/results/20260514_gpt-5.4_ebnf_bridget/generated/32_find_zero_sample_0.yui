@@ -1,0 +1,12 @@
+Use the standard library
+This is how to poly of xs and x:
+  Remember that total is 0
+  Remember that power is 1
+  Do this xs's length times:
+    Remember that i is diff of xs's length and power
+    Remember that coeff is item i in xs
+    Remember that total is sum of total and (product of coeff and power)
+    Remember that power is product of power and x
+  End do
+  The answer is total
+Now you know

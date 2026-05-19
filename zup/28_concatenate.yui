@@ -1,0 +1,26 @@
+Dum concatenate(strings):
+   Kem 結果 par []
+   Kem i par 0
+   Kem 長さ par strings @kez
+   Mup dum 長さ pag:
+      Kem 文字列 par strings[i]
+      Kem j par 0
+      Kem 文字列長 par 文字列 @kez
+      Mup dum 文字列長 pag:
+         Mev 結果 naz 文字列[j]
+         Rav j
+      Dam mup
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> concatenate([]) 
+[]
+>>> concatenate(["a", "b", "c"]) 
+"abc"
+>>> concatenate([]) 
+""
+>>> concatenate(["x", "y", "z"]) 
+"xyz"
+>>> concatenate(["x", "y", "z", "w", "k"]) 
+"xyzwk"

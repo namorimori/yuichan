@@ -1,0 +1,26 @@
+This is how to all_prefixes of string:
+   Remember that result is []
+   Remember that length is string's length
+   Remember that i is 0
+   Do this length times:
+      Remember that prefix is []
+      Remember that j is 0
+      Remember that limit is i
+      Increase limit
+      Do this limit times:
+         Add prefix to item j in string
+         Increase j
+      End do
+      Add result to prefix
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> all_prefixes of "abc" 
+["a", "ab", "abc"]
+>>> all_prefixes of "" 
+[]
+>>> all_prefixes of "asdfgh" 
+["a", "as", "asd", "asdf", "asdfg", "asdfgh"]
+>>> all_prefixes of "WWW" 
+["W", "WW", "WWW"]

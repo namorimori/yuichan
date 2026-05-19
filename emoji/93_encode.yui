@@ -1,0 +1,79 @@
+🗝️ 📚
+🧩 encode(message) 👉
+   length ⬅️ 📐 message
+   result ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ message[i]
+      new_char ⬅️ char
+      is_upper ⬅️ 0
+      is_lower ⬅️ 0
+      ❓ char 📉 64 👉
+         ❓ char 📈 91 👉
+            is_upper ⬅️ 1
+         🔚
+      🔚
+      ❓ char 📉 96 👉
+         ❓ char 📈 123 👉
+            is_lower ⬅️ 1
+         🔚
+      🔚
+      ❓ is_upper ⚖️ 1 👉
+         new_char ⬅️ 和(char, 32)
+      🔚
+      ❓ is_lower ⚖️ 1 👉
+         new_char ⬅️ 差(char, 32)
+      🔚
+      is_vowel ⬅️ 0
+      ❓ new_char ⚖️ 65 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ new_char ⚖️ 69 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ new_char ⚖️ 73 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ new_char ⚖️ 79 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ new_char ⚖️ 85 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ new_char ⚖️ 97 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ new_char ⚖️ 101 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ new_char ⚖️ 105 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ new_char ⚖️ 111 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ new_char ⚖️ 117 👉
+         is_vowel ⬅️ 1
+      🔚
+      ❓ is_vowel ⚖️ 1 👉
+         new_char ⬅️ 和(new_char, 2)
+      🔚
+      result 🧲 new_char
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> encode([116, 101, 115, 116]) 
+[84, 71, 83, 84]
+>>> encode([84, 104, 105, 115, 32, 105, 115, 32, 97, 32, 109, 101, 115, 115, 97, 103, 101]) 
+[116, 72, 75, 83, 32, 75, 83, 32, 67, 32, 77, 71, 83, 83, 67, 71, 71]
+>>> encode("TEST") 
+"tgst"
+>>> encode("Mudasir") 
+"mWDCSKR"
+>>> encode("YES") 
+"ygs"
+>>> encode("This is a message") 
+"tHKS KS C MGSSCGG"
+>>> encode("I DoNt KnOw WhAt tO WrItE") 
+"k dQnT kNqW wHcT Tq wRkTg"

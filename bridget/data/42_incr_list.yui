@@ -1,0 +1,22 @@
+This is how to incr_list of l:
+   Remember that length is l's length
+   Remember that result is []
+   Remember that i is 0
+   Do this length times:
+      Remember that value is item i in l
+      Increase value
+      Add result to value
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> incr_list of [1, 2, 3] 
+[2, 3, 4]
+>>> incr_list of [5, 3, 5, 2, 3, 3, 9, 0, 123] 
+[6, 4, 6, 3, 4, 4, 10, 1, 124]
+>>> incr_list of [] 
+[]
+>>> incr_list of [3, 2, 1] 
+[4, 3, 2]
+>>> incr_list of [5, 2, 5, 2, 3, 3, 9, 0, 123] 
+[6, 3, 6, 3, 4, 4, 10, 1, 124]

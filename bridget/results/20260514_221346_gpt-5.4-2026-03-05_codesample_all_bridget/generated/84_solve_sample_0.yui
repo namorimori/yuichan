@@ -1,0 +1,14 @@
+Use the standard library
+This is how to solve of N:
+   Remember that result is ""
+   Remember that n is N
+   Do this 1000 times:
+      When n is at most 1, then:
+         Leave the loop
+      End when
+      Remember that r is remainder of n and 3
+      Add result to tostring of r
+      Remember that n is quotient of n and 3
+   End do
+   The answer is reverse of result
+Now you know

@@ -1,0 +1,24 @@
+Use the standard library
+This is how to parse_music of music_string:
+   Remember that result is []
+   Remember that count is 0
+   Remember that i is 0
+
+   Do this music_string's length times:
+      When item i in music_string is item 0 in "o", then:
+         Increase count
+      But, if not:
+         When count is more than 0, then:
+            Add result to count
+            Remember that count is 0
+         End when
+      End when
+      Increase i
+   End do
+
+   When count is more than 0, then:
+      Add result to count
+   End when
+
+   The answer is result
+Now you know

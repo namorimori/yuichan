@@ -1,0 +1,50 @@
+Use the standard library
+This is how to filter_by_substring of strings and substring:
+   Remember that string_count is strings's length
+   Remember that substring_length is substring's length
+   Remember that result is []
+   Remember that i is 0
+   Do this string_count times:
+      Remember that string_val is item i in strings
+      Remember that string_length is string_val's length
+      Remember that contains is 0
+      When substring_length is more than 0, then:
+         Remember that limit is sum of (diff of string_length and substring_length) and 1
+         Remember that j is 0
+         Do this limit times:
+            Remember that match is 1
+            Remember that k is 0
+            Do this substring_length times:
+               Remember that idx is sum of j and k
+               When idx is less than string_length, then:
+                  When item idx in string_val is not item k in substring, then:
+                     Remember that match is 0
+                  End when
+               End when
+               Increase k
+            End do
+            When match is 1, then:
+               Remember that contains is 1
+            End when
+            Increase j
+         End do
+      End when
+      When contains is 1, then:
+         Add result to string_val
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> filter_by_substring of [] and "a" 
+[]
+>>> filter_by_substring of ["abc", "bacd", "cde", "array"] and "a" 
+["abc", "bacd", "array"]
+>>> filter_by_substring of [] and "john" 
+[]
+>>> filter_by_substring of ["xxx", "asd", "xxy", "john doe", "xxxAAA", "xxx"] and "xxx" 
+["xxx", "xxxAAA", "xxx"]
+>>> filter_by_substring of ["xxx", "asd", "aaaxxy", "john doe", "xxxAAA", "xxx"] and "xx" 
+["xxx", "aaaxxy", "xxxAAA", "xxx"]
+>>> filter_by_substring of ["grunt", "trumpet", "prune", "gruesome"] and "run" 
+["grunt", "prune"]

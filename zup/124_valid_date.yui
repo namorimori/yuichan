@@ -1,0 +1,123 @@
+Nav rem vaz
+Dum valid_date(date):
+   Kem length par date @kez
+   Kem result par 0
+   Nev length nup 10 ger:
+      Dup vem result
+   Dam nev
+   Kem month_str par []
+   Kem day_str par []
+   Kem year_str par []
+   Nev length paz 10 ger:
+      Mev month_str naz date[0]
+      Mev month_str naz date[1]
+      Mev day_str naz date[3]
+      Mev day_str naz date[4]
+      Mev year_str naz date[6]
+      Mev year_str naz date[7]
+      Mev year_str naz date[8]
+      Mev year_str naz date[9]
+   Dam nev
+   Kem month par 和(積(10, 差(month_str[0], 48)), 差(month_str[1], 48))
+   Kem day par 和(積(10, 差(day_str[0], 48)), 差(day_str[1], 48))
+   Kem valid par 1
+   Nev month dup 1 ger:
+      Kem valid par 0
+   Dam nev
+   Nev month pep 12 ger:
+      Kem valid par 0
+   Dam nev
+   Nev day dup 1 ger:
+      Kem valid par 0
+   Dam nev
+   Nev valid paz 1 ger:
+      Kem is_31_day_month par 0
+      Nev month paz 1 ger:
+         Kem is_31_day_month par 1
+      Dam nev
+      Nev month paz 3 ger:
+         Kem is_31_day_month par 1
+      Dam nev
+      Nev month paz 5 ger:
+         Kem is_31_day_month par 1
+      Dam nev
+      Nev month paz 7 ger:
+         Kem is_31_day_month par 1
+      Dam nev
+      Nev month paz 8 ger:
+         Kem is_31_day_month par 1
+      Dam nev
+      Nev month paz 10 ger:
+         Kem is_31_day_month par 1
+      Dam nev
+      Nev month paz 12 ger:
+         Kem is_31_day_month par 1
+      Dam nev
+      Kem is_30_day_month par 0
+      Nev month paz 4 ger:
+         Kem is_30_day_month par 1
+      Dam nev
+      Nev month paz 6 ger:
+         Kem is_30_day_month par 1
+      Dam nev
+      Nev month paz 9 ger:
+         Kem is_30_day_month par 1
+      Dam nev
+      Nev month paz 11 ger:
+         Kem is_30_day_month par 1
+      Dam nev
+      Nev month paz 2 ger:
+         Nev day pep 29 ger:
+            Kem valid par 0
+         Dam nev
+      Dam nev
+      Nev is_31_day_month paz 1 ger:
+         Nev day pep 31 ger:
+            Kem valid par 0
+         Dam nev
+      Dam nev
+      Nev is_30_day_month paz 1 ger:
+         Nev day pep 30 ger:
+            Kem valid par 0
+         Dam nev
+      Dam nev
+   Dam nev
+   Kem result par valid
+   Dup vem result
+Pam dum
+>>> valid_date([48, 51, 45, 49, 49, 45, 50, 48, 48, 48]) 
+1
+>>> valid_date([49, 53, 45, 48, 49, 45, 50, 48, 49, 50]) 
+0
+>>> valid_date("03-11-2000") 
+1
+>>> valid_date("15-01-2012") 
+0
+>>> valid_date("04-0-2040") 
+0
+>>> valid_date("06-04-2020") 
+1
+>>> valid_date("01-01-2007") 
+1
+>>> valid_date("03-32-2011") 
+0
+>>> valid_date("") 
+0
+>>> valid_date("04-31-3000") 
+0
+>>> valid_date("06-06-2005") 
+1
+>>> valid_date("21-31-2000") 
+0
+>>> valid_date("04-12-2003") 
+1
+>>> valid_date("04122003") 
+0
+>>> valid_date("20030412") 
+0
+>>> valid_date("2003-04") 
+0
+>>> valid_date("2003-04-12") 
+0
+>>> valid_date("04-2003") 
+0

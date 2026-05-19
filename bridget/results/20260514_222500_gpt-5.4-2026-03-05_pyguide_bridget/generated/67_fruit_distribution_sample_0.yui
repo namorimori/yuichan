@@ -1,0 +1,32 @@
+Use the standard library
+This is how to fruit_distribution of s and n:
+   Remember that digits is "0123456789"
+   Remember that numbers is []
+   Remember that current is ""
+   Remember that i is 0
+
+   Do this s's length times:
+      Remember that ch is item i in s
+      When ch is in digits, then:
+         Add current to ch
+      But, if not:
+         When current's length is more than 0, then:
+            Add numbers to toint of current
+            Remember that current is ""
+         End when
+      End when
+      Increase i
+   End do
+
+   When current's length is more than 0, then:
+      Add numbers to toint of current
+   End when
+
+   Remember that total_fruit is sum of numbers
+   The answer is diff of n and total_fruit
+Now you know
+
+>>> fruit_distribution of "5 apples and 6 oranges" and 19
+8
+>>> fruit_distribution of "5 apples and 6 oranges" and 21
+10

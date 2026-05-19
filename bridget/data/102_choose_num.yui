@@ -1,0 +1,39 @@
+Use the standard library
+This is how to choose_num of x and y:
+   Remember that result is -1
+   When x is more than y, then:
+      Remember that result is -1
+   But, if not:
+      Remember that remainder_val is remainder of y and 2
+      When remainder_val is 0, then:
+         Remember that result is y
+      But, if not:
+         When x is y, then:
+            Remember that result is -1
+         But, if not:
+            Remember that result is diff of y and 1
+         End when
+      End when
+   End when
+   The answer is result
+Now you know
+>>> choose_num of 12 and 15 
+14
+>>> choose_num of 13 and 12 
+-1
+>>> choose_num of 12 and 15 
+14
+>>> choose_num of 13 and 12 
+-1
+>>> choose_num of 33 and 12354 
+12354
+>>> choose_num of 5234 and 5233 
+-1
+>>> choose_num of 6 and 29 
+28
+>>> choose_num of 27 and 10 
+-1
+>>> choose_num of 7 and 7 
+-1
+>>> choose_num of 546 and 546 
+546

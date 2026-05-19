@@ -1,0 +1,28 @@
+Use the standard library
+This is how to parse_nested_parens of paren_string:
+   Remember that result is []
+   Remember that groups is split of paren_string and " "
+   Remember that g is 0
+   Do this groups's length times:
+      Remember that group is item g in groups
+      Remember that max_depth is 0
+      Remember that current_depth is 0
+      Remember that i is 0
+      Do this group's length times:
+         Remember that c is item i in group
+         When c is 40, then:
+            Increase current_depth
+            When current_depth is more than max_depth, then:
+               Remember that max_depth is current_depth
+            End when
+         End when
+         When c is 41, then:
+            Decrease current_depth
+         End when
+         Increase i
+      End do
+      Add result to max_depth
+      Increase g
+   End do
+   The answer is result
+Now you know

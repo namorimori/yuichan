@@ -1,0 +1,14 @@
+>>> 施逆序於「Hi」
+「Hi」
+>>> 施逆序於「hello」
+「ehllo」
+>>> 施逆序於「number」
+「bemnru」
+>>> 施逆序於「abcd」
+「abcd」
+>>> 施逆序於「Hello World!!!」
+「Hello !!!Wdlor」
+>>> 施逆序於「」
+「」
+>>> 施逆序於「Hi. My name is Mister Robot. How are you?」
+「.Hi My aemn is Meirst .Rboot How aer ?ouy」

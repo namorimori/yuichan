@@ -1,0 +1,12 @@
+Use the standard library
+This is how to remove_vowels of text:
+  Remember that result is ""
+  Do this text's length times:
+    Remember that ch is item 0 in text
+    When ch is not in "aeiouAEIOU", then:
+      Remember that result is "{result}{ch}"
+    End when
+    Remember that text is item 1 in text
+  End do
+  The answer is result
+Now you know

@@ -1,0 +1,19 @@
+Use the standard library
+This is how to maximum of arr and k:
+   Remember that sorted is bubble_sort of arr
+   Remember that n is sorted's length
+   Remember that start is diff of n and k
+   Remember that result is []
+   Remember that i is start
+   Do this k times:
+      Add result to item i in sorted
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> maximum of [-3, -4, 5] and 3
+[-4, -3, 5]
+>>> maximum of [4, -4, 4] and 2
+[4, 4]
+>>> maximum of [-3, 2, 1, 2, -1, -2, 1] and 1
+[2]

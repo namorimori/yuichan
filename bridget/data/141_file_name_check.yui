@@ -1,0 +1,134 @@
+Use the standard library
+This is how to file_name_check of file_name:
+   Remember that length is file_name's length
+   Remember that result is [78, 111]
+   Remember that dots is 0
+   Remember that dot_pos is 0
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in file_name
+      When char is 46, then:
+         Increase dots
+         Remember that dot_pos is i
+      End when
+      Increase i
+   End do
+   When dots is 1, then:
+      When dot_pos is more than 0, then:
+         Remember that first_char is item 0 in file_name
+         Remember that is_letter is 0
+         When first_char is more than 64, then:
+            When first_char is less than 91, then:
+               Remember that is_letter is 1
+            End when
+         End when
+         When first_char is more than 96, then:
+            When first_char is less than 123, then:
+               Remember that is_letter is 1
+            End when
+         End when
+         When is_letter is 1, then:
+            Remember that digits is 0
+            Remember that i is 0
+            Do this dot_pos times:
+               Remember that char is item i in file_name
+               When char is more than 47, then:
+                  When char is less than 58, then:
+                     Increase digits
+                  End when
+               End when
+               Increase i
+            End do
+            When digits is less than 4, then:
+               Remember that ext_start is sum of dot_pos and 1
+               Remember that ext_len is diff of length and ext_start
+               Remember that valid_ext is 0
+               When ext_len is 3, then:
+                  Remember that ext1 is item ext_start in file_name
+                  Remember that ext2 is item sum of ext_start and 1 in file_name
+                  Remember that ext3 is item sum of ext_start and 2 in file_name
+                  When ext1 is 116, then:
+                     When ext2 is 120, then:
+                        When ext3 is 116, then:
+                           Remember that valid_ext is 1
+                        End when
+                     End when
+                  End when
+                  When ext1 is 101, then:
+                     When ext2 is 120, then:
+                        When ext3 is 101, then:
+                           Remember that valid_ext is 1
+                        End when
+                     End when
+                  End when
+                  When ext1 is 100, then:
+                     When ext2 is 108, then:
+                        When ext3 is 108, then:
+                           Remember that valid_ext is 1
+                        End when
+                     End when
+                  End when
+               End when
+               When valid_ext is 1, then:
+                  Remember that result is [89, 101, 115]
+               End when
+            End when
+         End when
+      End when
+   End when
+   The answer is result
+Now you know
+>>> file_name_check of [101, 120, 97, 109, 112, 108, 101, 46, 116, 120, 116] 
+[89, 101, 115]
+>>> file_name_check of "example.txt" 
+"Yes"
+>>> file_name_check of "1example.dll" 
+"No"
+>>> file_name_check of "s1sdf3.asd" 
+"No"
+>>> file_name_check of "K.dll" 
+"Yes"
+>>> file_name_check of "MY16FILE3.exe" 
+"Yes"
+>>> file_name_check of "His12FILE94.exe" 
+"No"
+>>> file_name_check of "_Y.txt" 
+"No"
+>>> file_name_check of "?aREYA.exe" 
+"No"
+>>> file_name_check of "/this_is_valid.dll" 
+"No"
+>>> file_name_check of "this_is_valid.wow" 
+"No"
+>>> file_name_check of "this_is_valid.txt" 
+"Yes"
+>>> file_name_check of "this_is_valid.txtexe" 
+"No"
+>>> file_name_check of "#this2_i4s_5valid.ten" 
+"No"
+>>> file_name_check of "@this1_is6_valid.exe" 
+"No"
+>>> file_name_check of "this_is_12valid.6exe4.txt" 
+"No"
+>>> file_name_check of "all.exe.txt" 
+"No"
+>>> file_name_check of "I563_No.exe" 
+"Yes"
+>>> file_name_check of "Is3youfault.txt" 
+"Yes"
+>>> file_name_check of "no_one#knows.dll" 
+"Yes"
+>>> file_name_check of "1I563_Yes3.exe" 
+"No"
+>>> file_name_check of "I563_Yes3.txtt" 
+"No"
+>>> file_name_check of "final..txt" 
+"No"
+>>> file_name_check of "final132" 
+"No"
+>>> file_name_check of "_f4indsartal132." 
+"No"
+>>> file_name_check of ".txt" 
+"No"
+>>> file_name_check of "s." 
+"No"

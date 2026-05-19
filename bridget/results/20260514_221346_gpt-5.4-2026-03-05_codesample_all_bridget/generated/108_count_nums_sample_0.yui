@@ -1,0 +1,13 @@
+Use the standard library
+This is how to count_nums of arr:
+   Remember that count is 0
+   Remember that n is arr's length
+   Remember that i is 0
+   Do this n times:
+      When item i in arr is in arr, then:
+         Increase count
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know

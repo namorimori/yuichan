@@ -1,0 +1,120 @@
+🗝️ 📚
+🧩 compare_one(a, b) 👉
+   a_val ⬅️ 0.000000
+   a_is_str ⬅️ 文字列判定(a)
+   ❓ a_is_str ⚖️ 👍 👉
+      a_len ⬅️ 📐 a
+      a_int ⬅️ 0
+      a_frac ⬅️ 0.000000
+      found_dec ⬅️ 0
+      dec_places ⬅️ 0
+      i ⬅️ 0
+      🌀 a_len 👉
+         char ⬅️ a[i]
+         is_digit ⬅️ 0
+         digit ⬅️ 0
+         ❓ char 📉 47 👉
+            ❓ char 📈 58 👉
+               is_digit ⬅️ 1
+               digit ⬅️ 差(char, 48)
+            🔚
+         🔚
+         ❓ is_digit ⚖️ 1 👉
+            ❓ found_dec ⚖️ 0 👉
+               a_int ⬅️ 和(積(a_int, 10), digit)
+            🔚
+            ❗ 👉
+               dec_places ⬆️
+               divisor ⬅️ 1.000000
+               j ⬅️ 0
+               🌀 dec_places 👉
+                  divisor ⬅️ 積(divisor, 10.000000)
+                  j ⬆️
+               🔚
+               digit_f ⬅️ 小数化(digit)
+               frac ⬅️ 商(digit_f, divisor)
+               a_frac ⬅️ 和(a_frac, frac)
+            🔚
+         🔚
+         ❓ char ⚖️ 44 👉
+            found_dec ⬅️ 1
+         🔚
+         ❓ char ⚖️ 46 👉
+            found_dec ⬅️ 1
+         🔚
+         i ⬆️
+      🔚
+      a_int_f ⬅️ 小数化(a_int)
+      a_val ⬅️ 和(a_int_f, a_frac)
+   🔚
+   ❗ 👉
+      a_val ⬅️ 小数化(a)
+   🔚
+   b_val ⬅️ 0.000000
+   b_is_str ⬅️ 文字列判定(b)
+   ❓ b_is_str ⚖️ 👍 👉
+      b_len ⬅️ 📐 b
+      b_int ⬅️ 0
+      b_frac ⬅️ 0.000000
+      found_dec ⬅️ 0
+      dec_places ⬅️ 0
+      i ⬅️ 0
+      🌀 b_len 👉
+         char ⬅️ b[i]
+         is_digit ⬅️ 0
+         digit ⬅️ 0
+         ❓ char 📉 47 👉
+            ❓ char 📈 58 👉
+               is_digit ⬅️ 1
+               digit ⬅️ 差(char, 48)
+            🔚
+         🔚
+         ❓ is_digit ⚖️ 1 👉
+            ❓ found_dec ⚖️ 0 👉
+               b_int ⬅️ 和(積(b_int, 10), digit)
+            🔚
+            ❗ 👉
+               dec_places ⬆️
+               divisor ⬅️ 1.000000
+               j ⬅️ 0
+               🌀 dec_places 👉
+                  divisor ⬅️ 積(divisor, 10.000000)
+                  j ⬆️
+               🔚
+               digit_f ⬅️ 小数化(digit)
+               frac ⬅️ 商(digit_f, divisor)
+               b_frac ⬅️ 和(b_frac, frac)
+            🔚
+         🔚
+         ❓ char ⚖️ 44 👉
+            found_dec ⬅️ 1
+         🔚
+         ❓ char ⚖️ 46 👉
+            found_dec ⬅️ 1
+         🔚
+         i ⬆️
+      🔚
+      b_int_f ⬅️ 小数化(b_int)
+      b_val ⬅️ 和(b_int_f, b_frac)
+   🔚
+   ❗ 👉
+      b_val ⬅️ 小数化(b)
+   🔚
+   result ⬅️ []
+   ❓ a_val ⚖️ b_val 👉
+      result ⬅️ []
+   🔚
+   ❗ 👉
+      ❓ a_val 📉 b_val 👉
+         result ⬅️ a
+      🔚
+      ❗ 👉
+         result ⬅️ b
+      🔚
+   🔚
+   ✅ result
+🔚
+>>> compare_one(1, 2) 
+2
+>>> compare_one(1, 1) 
+[]

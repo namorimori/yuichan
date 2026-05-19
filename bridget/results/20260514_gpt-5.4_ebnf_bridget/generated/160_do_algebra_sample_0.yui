@@ -1,0 +1,32 @@
+Use the standard library
+This is how to do_algebra of operator and operand:
+  Remember that result is item 0 in operand
+  Remember that i is 0
+  Do this operator's length times:
+    When i is at least operator's length, then:
+      Leave the loop
+    End when
+    Remember that op is item i in operator
+    Remember that next_value is item sum of i and 1 in operand
+    When op is "+", then:
+      Remember that result is sum of result and next_value
+    End when
+    When op is "-", then:
+      Remember that result is diff of result and next_value
+    End when
+    When op is "*", then:
+      Remember that result is product of result and next_value
+    End when
+    When op is "**", then:
+      Remember that power is 1
+      Remember that count is 0
+      Do this next_value times:
+        Remember that power is product of power and result
+        Increase count
+      End do
+      Remember that result is power
+    End when
+    Increase i
+  End do
+  The answer is result
+Now you know

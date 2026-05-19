@@ -1,0 +1,26 @@
+Use the standard library
+This is how to count_up_to of n:
+   Remember that result is []
+   Remember that candidate is 2
+
+   Do this n times:
+      When candidate is at most n, then:
+         Remember that factors is 0
+         Remember that divisor is 1
+
+         Do this candidate times:
+            When remainder of candidate and divisor is 0, then:
+               Increase factors
+            End when
+            Increase divisor
+         End do
+
+         When factors is 2, then:
+            Add result to candidate
+         End when
+      End when
+      Increase candidate
+   End do
+
+   The answer is result
+Now you know

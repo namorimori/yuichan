@@ -1,0 +1,12 @@
+Use the standard library
+This is how to encrypt of s:
+   Remember that result is []
+   Remember that n is s's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in s
+      Add result to sum of x and 4
+      Increase i
+   End do
+   The answer is result
+Now you know

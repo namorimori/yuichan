@@ -1,0 +1,22 @@
+Use the standard library
+This is how to rounded_avg of n and m:
+   Remember that total is sum of n and m
+   Remember that avg is quotient of total and 2
+   Remember that bits is ""
+   When avg is 0, then:
+      Remember that bits is "0"
+   But, if not:
+      Remember that x is avg
+      Do this 1000 times:
+         When x is 0, then:
+            Leave the loop
+         End when
+         Remember that r is remainder of x and 2
+         Remember that digit is sum of r and 48
+         Add bits to digit
+         Remember that x is quotient of x and 2
+      End do
+      Remember that bits is reverse of bits
+   End when
+   The answer is "0b{bits}"
+Now you know

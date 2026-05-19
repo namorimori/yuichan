@@ -1,0 +1,22 @@
+Use the standard library
+This is how to move_one_ball of arr:
+  Remember that drops is 0
+  Remember that n is arr's length
+  Do this n times:
+    When item 0 in arr is more than item 1 in arr, then:
+      Increase drops by 1
+    End when
+    Add arr to item 0 in arr
+    Remember that i is 0
+    Do this diff of arr's length and 1 times:
+      Remember that item i in arr is item sum of i and 1 in arr
+      Increase i by 1
+    End do
+    Remember that item diff of arr's length and 1 in arr is item 0 in arr
+  End do
+  When drops is at most 1, then:
+    The answer is 1
+  But, if not:
+    The answer is 0
+  End when
+Now you know

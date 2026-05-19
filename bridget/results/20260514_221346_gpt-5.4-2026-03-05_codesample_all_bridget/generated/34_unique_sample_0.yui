@@ -1,0 +1,31 @@
+Use the standard library
+This is how to unique of l:
+   Remember that sorted is bubble_sort of l
+   Remember that result is []
+   Remember that n is sorted's length
+   When n is 0, then:
+      The answer is result
+   End when
+   Remember that last is item 0 in sorted
+   Add result to last
+   Remember that i is 1
+   Do this diff of n and 1 times:
+      Remember that x is item i in sorted
+      When x is not last, then:
+         Add result to x
+         Remember that last is x
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> unique of [5, 3, 5, 2, 3, 3, 9, 0, 123] 
+[0, 2, 3, 5, 9, 123]
+>>> unique of [] 
+[]
+>>> unique of [7] 
+[7]
+>>> unique of [4, 4, 4, 4] 
+[4]
+>>> unique of [3, 1, 2, 1, 3] 
+[1, 2, 3]

@@ -1,0 +1,33 @@
+Use the standard library
+This is how to median of l:
+   Remember that a is []
+   Remember that i is 0
+   Do this l's length times:
+      Add a to item i in l
+      Increase i
+   End do
+
+   Remember that n is a's length
+   Remember that pass is 0
+   Do this n times:
+      Remember that j is 0
+      Do this (diff of n and 1) times:
+         When item j in a is more than item (sum of j and 1) in a, then:
+            Remember that temp is item j in a
+            Remember that item j in a is item (sum of j and 1) in a
+            Remember that item (sum of j and 1) in a is temp
+         End when
+         Increase j
+      End do
+      Increase pass
+   End do
+
+   Remember that r is remainder of n and 2
+   When r is 1, then:
+      The answer is item (quotient of n and 2) in a
+   But, if not:
+      Remember that right is quotient of n and 2
+      Remember that left is diff of right and 1
+      The answer is quotient of (sum of (tofloat of item left in a) and (tofloat of item right in a)) and 2
+   End when
+Now you know

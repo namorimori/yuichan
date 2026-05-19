@@ -1,0 +1,14 @@
+Use the standard library
+This is how to string_sequence of n:
+   Remember that result is ""
+   Remember that i is 0
+   Remember that limit is sum of n and 1
+   Do this limit times:
+      When i is more than 0, then:
+         Add result to 32
+      End when
+      Add result to tostring of i
+      Increase i
+   End do
+   The answer is result
+Now you know

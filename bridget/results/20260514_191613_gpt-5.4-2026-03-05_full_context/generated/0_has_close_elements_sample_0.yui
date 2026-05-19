@@ -1,0 +1,26 @@
+Use the standard library
+This is how to has_close_elements of numbers and threshold:
+   Remember that n is numbers's length
+   Remember that i is 0
+   Do this n times:
+      Remember that j is sum of i and 1
+      Remember that rest is diff of n and j
+      Do this rest times:
+         Remember that a is item i in numbers
+         Remember that b is item j in numbers
+         Remember that d is abs of (diff of a and b)
+         When d is less than threshold, then:
+            The answer is 1
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is 0
+Now you know
+>>> has_close_elements of [1, 2, 3] and 0.500000
+0
+>>> has_close_elements of [1, 2.800000, 3, 4, 5, 2] and 0.300000
+1
+>>> has_close_elements of [1.000000, 2.000000, 3.900000, 4.000000, 5.000000, 2.200000] and 0.300000
+1

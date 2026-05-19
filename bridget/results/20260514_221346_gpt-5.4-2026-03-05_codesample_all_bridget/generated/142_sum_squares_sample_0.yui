@@ -1,0 +1,12 @@
+Use the standard library
+This is how to sum_squares of lst:
+   Remember that total is 0
+   Remember that n is lst's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in lst
+      Remember that total is sum of total and (product of x and x)
+      Increase i
+   End do
+   The answer is diff of 0 and total
+Now you know

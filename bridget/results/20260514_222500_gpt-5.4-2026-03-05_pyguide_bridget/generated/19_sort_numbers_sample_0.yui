@@ -1,0 +1,29 @@
+Use the standard library
+This is how to sort_numbers of numbers:
+   Remember that n is numbers's length
+   When n is at least 1, then:
+      The answer is numbers
+   End when
+
+   Remember that best_index is 0
+   Remember that i is 1
+   Do this diff of n and 1 times:
+      When item i in numbers is less than item best_index in numbers, then:
+         Remember that best_index is i
+      End when
+      Increase i
+   End do
+
+   Remember that result is []
+   Add result to item best_index in numbers
+
+   Remember that i is 0
+   Do this n times:
+      When i is not best_index, then:
+         Add result to item i in numbers
+      End when
+      Increase i
+   End do
+
+   The answer is result
+Now you know

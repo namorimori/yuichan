@@ -1,0 +1,166 @@
+🗝️ 📚
+🧩 odd_count(lst) 👉
+   length ⬅️ 📐 lst
+   result ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      string ⬅️ lst[i]
+      str_len ⬅️ 📐 string
+      odd_cnt ⬅️ 0
+      j ⬅️ 0
+      🌀 str_len 👉
+         char ⬅️ string[j]
+         ❓ char 📉 47 👉
+            ❓ char 📈 58 👉
+               digit ⬅️ 差(char, 48)
+               remainder ⬅️ 剰余(digit, 2)
+               ❓ remainder ⚖️ 1 👉
+                  odd_cnt ⬆️
+               🔚
+            🔚
+         🔚
+         j ⬆️
+      🔚
+      msg ⬅️ []
+      part1 ⬅️ [
+         116,
+         104,
+         101,
+         32,
+         110,
+         117,
+         109,
+         98,
+         101,
+         114,
+         32,
+         111,
+         102,
+         32,
+         111,
+         100,
+         100,
+         32,
+         101,
+         108,
+         101,
+         109,
+         101,
+         110,
+         116,
+         115,
+         32
+      ]
+      k ⬅️ 0
+      🌀 27 👉
+         msg 🧲 part1[k]
+         k ⬆️
+      🔚
+      cnt_char ⬅️ 和(48, odd_cnt)
+      msg 🧲 cnt_char
+      part2 ⬅️ [110, 32, 116, 104, 101, 32, 115, 116, 114]
+      k ⬅️ 0
+      🌀 9 👉
+         msg 🧲 part2[k]
+         k ⬆️
+      🔚
+      msg 🧲 cnt_char
+      part3 ⬅️ [110, 103, 32]
+      k ⬅️ 0
+      🌀 3 👉
+         msg 🧲 part3[k]
+         k ⬆️
+      🔚
+      msg 🧲 cnt_char
+      part4 ⬅️ [32, 111, 102, 32, 116, 104, 101, 32]
+      k ⬅️ 0
+      🌀 8 👉
+         msg 🧲 part4[k]
+         k ⬆️
+      🔚
+      msg 🧲 cnt_char
+      part5 ⬅️ [110, 112, 117, 116, 46]
+      k ⬅️ 0
+      🌀 5 👉
+         msg 🧲 part5[k]
+         k ⬆️
+      🔚
+      result 🧲 msg
+      i ⬆️
+   🔚
+   ✅ result
+🔚
+>>> odd_count([[49, 50, 51, 52, 53, 54, 55]]) 
+[
+   [
+      116,
+      104,
+      101,
+      32,
+      110,
+      117,
+      109,
+      98,
+      101,
+      114,
+      32,
+      111,
+      102,
+      32,
+      111,
+      100,
+      100,
+      32,
+      101,
+      108,
+      101,
+      109,
+      101,
+      110,
+      116,
+      115,
+      32,
+      52,
+      110,
+      32,
+      116,
+      104,
+      101,
+      32,
+      115,
+      116,
+      114,
+      52,
+      110,
+      103,
+      32,
+      52,
+      32,
+      111,
+      102,
+      32,
+      116,
+      104,
+      101,
+      32,
+      52,
+      110,
+      112,
+      117,
+      116,
+      46
+   ]
+]
+>>> odd_count(["1234567"]) 
+["the number of odd elements 4n the str4ng 4 of the 4nput."]
+>>> odd_count(["3", "11111111"]) 
+[
+   "the number of odd elements 1n the str1ng 1 of the 1nput.",
+   "the number of odd elements 8n the str8ng 8 of the 8nput."
+]
+>>> odd_count(["271", "137", "314"]) 
+[
+   "the number of odd elements 2n the str2ng 2 of the 2nput.",
+   "the number of odd elements 3n the str3ng 3 of the 3nput.",
+   "the number of odd elements 2n the str2ng 2 of the 2nput."
+]

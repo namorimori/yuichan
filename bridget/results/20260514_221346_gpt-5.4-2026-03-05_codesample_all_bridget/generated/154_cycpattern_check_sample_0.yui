@@ -1,0 +1,33 @@
+Use the standard library
+This is how to cycpattern_check of a and b:
+   Remember that n is a's length
+   Remember that m is b's length
+   When m is 0, then:
+      The answer is 1
+   End when
+   When n is 0, then:
+      The answer is 0
+   End when
+   Remember that aa is []
+   Remember that i is 0
+   Do this n times:
+      Add aa to item i in a
+      Increase i
+   End do
+   Remember that i is 0
+   Do this n times:
+      Add aa to item i in a
+      Increase i
+   End do
+   Remember that pos is find of aa and b
+   When pos is less than n, then:
+      The answer is 1
+   End when
+   The answer is 0
+Now you know
+>>> cycpattern_check of [97, 98, 99, 100] and [97, 98, 100] 
+0
+>>> cycpattern_check of [104, 101, 108, 108, 111] and [101, 108, 108] 
+1
+>>> cycpattern_check of [119, 104, 97, 115, 115, 117, 112] and [112, 115, 117, 115] 
+0

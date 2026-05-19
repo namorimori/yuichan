@@ -1,0 +1,19 @@
+Use the standard library
+This is how to closest_integer of value:
+   Remember that text is value
+   When isarray of value, then:
+      Remember that text is tostring of value
+   End when
+
+   Remember that number is tofloat of text
+   Remember that lower is toint of number
+   Remember that upper is sum of lower and 1
+   Remember that lower_diff is abs of (diff of number and lower)
+   Remember that upper_diff is abs of (diff of upper and number)
+
+   When lower_diff is at least upper_diff, then:
+      The answer is lower
+   But, if not:
+      The answer is upper
+   End when
+Now you know

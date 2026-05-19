@@ -1,0 +1,14 @@
+Use the standard library
+This is how to add of lst:
+  Remember that best is item 1 in lst
+  Do this lst's length times:
+    When item 0 in lst is less than best, then:
+      Remember that best is item 0 in lst
+    End when
+    Remember that lst is item 1 in lst
+    When lst's length is 1, then:
+      Leave the loop
+    End when
+  End do
+  The answer is best
+Now you know

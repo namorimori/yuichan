@@ -1,0 +1,86 @@
+Use the standard library
+This is how to minPath of grid and k:
+   Remember that n is grid's length
+   Remember that max_value is sum of (product of n and n) and 1
+   Remember that val is max_value
+   Remember that i is 0
+   Do this n times:
+      Remember that j is 0
+      Do this n times:
+         Remember that row is item i in grid
+         When item j in row is 1, then:
+            When i is not 0, then:
+               Remember that prev_i is diff of i and 1
+               Remember that upper_row is item prev_i in grid
+               Remember that upper_val is item j in upper_row
+               When upper_val is less than val, then:
+                  Remember that val is upper_val
+               End when
+            End when
+            When j is not 0, then:
+               Remember that prev_j is diff of j and 1
+               Remember that left_val is item prev_j in row
+               When left_val is less than val, then:
+                  Remember that val is left_val
+               End when
+            End when
+            Remember that limit is diff of n and 1
+            When i is less than limit, then:
+               Remember that next_i is sum of i and 1
+               Remember that lower_row is item next_i in grid
+               Remember that lower_val is item j in lower_row
+               When lower_val is less than val, then:
+                  Remember that val is lower_val
+               End when
+            End when
+            When j is less than limit, then:
+               Remember that next_j is sum of j and 1
+               Remember that right_val is item next_j in row
+               When right_val is less than val, then:
+                  Remember that val is right_val
+               End when
+            End when
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   Remember that ans is []
+   Remember that i is 0
+   Do this k times:
+      Remember that remainder_val is remainder of i and 2
+      When remainder_val is 0, then:
+         Add ans to 1
+      But, if not:
+         Add ans to val
+      End when
+      Increase i
+   End do
+   The answer is ans
+Now you know
+>>> minPath of [[1, 2, 3], [4, 5, 6], [7, 8, 9]] and 3 
+[1, 2, 1]
+>>> minPath of [[5, 9, 3], [4, 1, 6], [7, 8, 2]] and 1 
+[1]
+>>> minPath of [[1, 2, 3], [4, 5, 6], [7, 8, 9]] and 3 
+[1, 2, 1]
+>>> minPath of [[5, 9, 3], [4, 1, 6], [7, 8, 2]] and 1 
+[1]
+>>> minPath of [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]] and 4 
+[1, 2, 1, 2]
+>>> minPath of [[6, 4, 13, 10], [5, 7, 12, 1], [3, 16, 11, 15], [8, 14, 9, 2]] and 7 
+[1, 10, 1, 10, 1, 10, 1]
+>>> minPath of [[8, 14, 9, 2], [6, 4, 13, 15], [5, 7, 1, 12], [3, 10, 11, 16]] and 5 
+[1, 7, 1, 7, 1]
+>>> minPath of [[11, 8, 7, 2], [5, 16, 14, 4], [9, 3, 15, 6], [12, 13, 10, 1]] and 9 
+[1, 6, 1, 6, 1, 6, 1, 6, 1]
+>>> minPath of [[12, 13, 10, 1], [9, 3, 15, 6], [5, 16, 14, 4], [11, 8, 7, 2]] and 12 
+[1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6]
+>>> minPath of [[2, 7, 4], [3, 1, 5], [6, 8, 9]] and 8 
+[1, 3, 1, 3, 1, 3, 1, 3]
+>>> minPath of [[6, 1, 5], [3, 8, 9], [2, 7, 4]] and 8 
+[1, 5, 1, 5, 1, 5, 1, 5]
+>>> minPath of [[1, 2], [3, 4]] and 10 
+[1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
+>>> minPath of [[1, 3], [3, 2]] and 10 
+[1, 3, 1, 3, 1, 3, 1, 3, 1, 3]

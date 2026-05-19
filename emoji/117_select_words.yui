@@ -1,0 +1,134 @@
+🗝️ 📚
+🧩 select_words(s, n) 👉
+   length ⬅️ 📐 s
+   result ⬅️ []
+   current_word ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      char ⬅️ s[i]
+      ❓ char ⚖️ 32 👉
+         ❓ 📐 current_word 📉 0 👉
+            consonants ⬅️ 0
+            j ⬅️ 0
+            cw_len ⬅️ 📐 current_word
+            🌀 cw_len 👉
+               c ⬅️ current_word[j]
+               is_vowel ⬅️ 0
+               ❓ c ⚖️ 97 👉
+                  is_vowel ⬅️ 1
+               🔚
+               ❓ c ⚖️ 101 👉
+                  is_vowel ⬅️ 1
+               🔚
+               ❓ c ⚖️ 105 👉
+                  is_vowel ⬅️ 1
+               🔚
+               ❓ c ⚖️ 111 👉
+                  is_vowel ⬅️ 1
+               🔚
+               ❓ c ⚖️ 117 👉
+                  is_vowel ⬅️ 1
+               🔚
+               ❓ c ⚖️ 65 👉
+                  is_vowel ⬅️ 1
+               🔚
+               ❓ c ⚖️ 69 👉
+                  is_vowel ⬅️ 1
+               🔚
+               ❓ c ⚖️ 73 👉
+                  is_vowel ⬅️ 1
+               🔚
+               ❓ c ⚖️ 79 👉
+                  is_vowel ⬅️ 1
+               🔚
+               ❓ c ⚖️ 85 👉
+                  is_vowel ⬅️ 1
+               🔚
+               ❓ is_vowel ⚖️ 0 👉
+                  consonants ⬆️
+               🔚
+               j ⬆️
+            🔚
+            ❓ consonants ⚖️ n 👉
+               result 🧲 current_word
+            🔚
+            current_word ⬅️ []
+         🔚
+      🔚
+      ❗ 👉
+         current_word 🧲 char
+      🔚
+      i ⬆️
+   🔚
+   ❓ 📐 current_word 📉 0 👉
+      consonants ⬅️ 0
+      j ⬅️ 0
+      cw_len ⬅️ 📐 current_word
+      🌀 cw_len 👉
+         c ⬅️ current_word[j]
+         is_vowel ⬅️ 0
+         ❓ c ⚖️ 97 👉
+            is_vowel ⬅️ 1
+         🔚
+         ❓ c ⚖️ 101 👉
+            is_vowel ⬅️ 1
+         🔚
+         ❓ c ⚖️ 105 👉
+            is_vowel ⬅️ 1
+         🔚
+         ❓ c ⚖️ 111 👉
+            is_vowel ⬅️ 1
+         🔚
+         ❓ c ⚖️ 117 👉
+            is_vowel ⬅️ 1
+         🔚
+         ❓ is_vowel ⚖️ 0 👉
+            consonants ⬆️
+         🔚
+         j ⬆️
+      🔚
+      ❓ consonants ⚖️ n 👉
+         result 🧲 current_word
+      🔚
+   🔚
+   ✅ result
+🔚
+>>> select_words([
+   77,
+   97,
+   114,
+   121,
+   32,
+   104,
+   97,
+   100,
+   32,
+   97,
+   32,
+   108,
+   105,
+   116,
+   116,
+   108,
+   101,
+   32,
+   108,
+   97,
+   109,
+   98
+], 4) 
+[[108, 105, 116, 116, 108, 101]]
+>>> select_words("Mary had a little lamb", 4) 
+["little"]
+>>> select_words("Mary had a little lamb", 3) 
+["Mary", "lamb"]
+>>> select_words("simple white space", 2) 
+[]
+>>> select_words("Hello world", 4) 
+["world"]
+>>> select_words("Uncle sam", 3) 
+["Uncle"]
+>>> select_words("", 4) 
+[]
+>>> select_words("a b c d e f", 1) 
+["b", "c", "d", "f"]

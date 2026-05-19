@@ -1,0 +1,13 @@
+Use the standard library
+This is how to longest of strings:
+  When strings's length is 0, then:
+    The answer is []
+  End when
+  Remember that best is item 0 in strings
+  Do this strings's length times:
+    When item it in strings's length is more than best's length, then:
+      Remember that best is item it in strings
+    End when
+  End do
+  The answer is best
+Now you know

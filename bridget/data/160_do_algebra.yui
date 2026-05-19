@@ -1,0 +1,198 @@
+Use the standard library
+This is how to do_algebra of operator and operand:
+   Remember that ops is operator
+   Remember that vals is operand
+   Remember that ops_len is ops's length
+   Remember that i is 0
+   Do this 100 times:
+      When i is less than ops_len, then:
+         Remember that op is item i in ops
+         Remember that op_len is op's length
+         Remember that is_power is 0
+         When op_len is 2, then:
+            When item 0 in op is 42, then:
+               When item 1 in op is 42, then:
+                  Remember that is_power is 1
+               End when
+            End when
+         End when
+         When is_power is 1, then:
+            Remember that left is item i in vals
+            Remember that right is item sum of i and 1 in vals
+            Remember that power_result is 1
+            Remember that j is 0
+            Do this right times:
+               Remember that power_result is product of power_result and left
+               Increase j
+            End do
+            Remember that item i in vals is power_result
+            Remember that k is sum of i and 1
+            Remember that vals_len is vals's length
+            Remember that limit is diff of vals_len and 1
+            Do this limit times:
+               When k is less than diff of vals_len and 1, then:
+                  Remember that item k in vals is item sum of k and 1 in vals
+               End when
+               Increase k
+            End do
+            Remember that k is i
+            Do this limit times:
+               When k is less than diff of ops_len and 1, then:
+                  Remember that item k in ops is item sum of k and 1 in ops
+               End when
+               Increase k
+            End do
+            Decrease ops_len
+         But, if not:
+            Increase i
+         End when
+      End when
+   End do
+   Remember that i is 0
+   Do this 100 times:
+      When i is less than ops_len, then:
+         Remember that op is item i in ops
+         Remember that op_len is op's length
+         Remember that is_mult is 0
+         Remember that is_div is 0
+         When op_len is 1, then:
+            When item 0 in op is 42, then:
+               Remember that is_mult is 1
+            End when
+         End when
+         When op_len is 2, then:
+            When item 0 in op is 47, then:
+               When item 1 in op is 47, then:
+                  Remember that is_div is 1
+               End when
+            End when
+         End when
+         When is_mult is 1, then:
+            Remember that left is item i in vals
+            Remember that right is item sum of i and 1 in vals
+            Remember that result is product of left and right
+            Remember that item i in vals is result
+            Remember that k is sum of i and 1
+            Remember that vals_len is vals's length
+            Remember that limit is diff of vals_len and 1
+            Do this limit times:
+               When k is less than diff of vals_len and 1, then:
+                  Remember that item k in vals is item sum of k and 1 in vals
+               End when
+               Increase k
+            End do
+            Remember that k is i
+            Do this limit times:
+               When k is less than diff of ops_len and 1, then:
+                  Remember that item k in ops is item sum of k and 1 in ops
+               End when
+               Increase k
+            End do
+            Decrease ops_len
+         But, if not:
+            When is_div is 1, then:
+               Remember that left is item i in vals
+               Remember that right is item sum of i and 1 in vals
+               Remember that result is quotient of left and right
+               Remember that item i in vals is result
+               Remember that k is sum of i and 1
+               Remember that vals_len is vals's length
+               Remember that limit is diff of vals_len and 1
+               Do this limit times:
+                  When k is less than diff of vals_len and 1, then:
+                     Remember that item k in vals is item sum of k and 1 in vals
+                  End when
+                  Increase k
+               End do
+               Remember that k is i
+               Do this limit times:
+                  When k is less than diff of ops_len and 1, then:
+                     Remember that item k in ops is item sum of k and 1 in ops
+                  End when
+                  Increase k
+               End do
+               Decrease ops_len
+            But, if not:
+               Increase i
+            End when
+         End when
+      End when
+   End do
+   Remember that i is 0
+   Do this 100 times:
+      When i is less than ops_len, then:
+         Remember that op is item i in ops
+         Remember that op_len is op's length
+         Remember that is_add is 0
+         Remember that is_sub is 0
+         When op_len is 1, then:
+            When item 0 in op is 43, then:
+               Remember that is_add is 1
+            End when
+         End when
+         When op_len is 1, then:
+            When item 0 in op is 45, then:
+               Remember that is_sub is 1
+            End when
+         End when
+         When is_add is 1, then:
+            Remember that left is item i in vals
+            Remember that right is item sum of i and 1 in vals
+            Remember that result is sum of left and right
+            Remember that item i in vals is result
+            Remember that k is sum of i and 1
+            Remember that vals_len is vals's length
+            Remember that limit is diff of vals_len and 1
+            Do this limit times:
+               When k is less than diff of vals_len and 1, then:
+                  Remember that item k in vals is item sum of k and 1 in vals
+               End when
+               Increase k
+            End do
+            Remember that k is i
+            Do this limit times:
+               When k is less than diff of ops_len and 1, then:
+                  Remember that item k in ops is item sum of k and 1 in ops
+               End when
+               Increase k
+            End do
+            Decrease ops_len
+         But, if not:
+            When is_sub is 1, then:
+               Remember that left is item i in vals
+               Remember that right is item sum of i and 1 in vals
+               Remember that result is diff of left and right
+               Remember that item i in vals is result
+               Remember that k is sum of i and 1
+               Remember that vals_len is vals's length
+               Remember that limit is diff of vals_len and 1
+               Do this limit times:
+                  When k is less than diff of vals_len and 1, then:
+                     Remember that item k in vals is item sum of k and 1 in vals
+                  End when
+                  Increase k
+               End do
+               Remember that k is i
+               Do this limit times:
+                  When k is less than diff of ops_len and 1, then:
+                     Remember that item k in ops is item sum of k and 1 in ops
+                  End when
+                  Increase k
+               End do
+               Decrease ops_len
+            But, if not:
+               Increase i
+            End when
+         End when
+      End when
+   End do
+   The answer is item 0 in vals
+Now you know
+>>> do_algebra of [] and [1] 
+1
+>>> do_algebra of ["**", "*", "+"] and [2, 3, 4, 5] 
+37
+>>> do_algebra of ["+", "*", "-"] and [2, 3, 4, 5] 
+9
+>>> do_algebra of ["//", "*"] and [7, 3, 4] 
+8

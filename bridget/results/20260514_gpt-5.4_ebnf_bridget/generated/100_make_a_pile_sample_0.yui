@@ -1,0 +1,10 @@
+Use the standard library
+This is how to make_a_pile of n:
+  Remember that pile is []
+  Remember that current is n
+  Do this n times:
+    Add pile to current
+    Remember that current is sum of current and 2
+  End do
+  The answer is pile
+Now you know

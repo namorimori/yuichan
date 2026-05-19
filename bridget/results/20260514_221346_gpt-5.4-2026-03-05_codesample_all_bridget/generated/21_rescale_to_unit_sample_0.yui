@@ -1,0 +1,27 @@
+Use the standard library
+This is how to rescale_to_unit of numbers:
+   Remember that n is numbers's length
+   Remember that lo is item 0 in numbers
+   Remember that hi is item 0 in numbers
+   Remember that i is 1
+   Do this diff of n and 1 times:
+      Remember that x is item i in numbers
+      When x is less than lo, then:
+         Remember that lo is x
+      End when
+      When x is more than hi, then:
+         Remember that hi is x
+      End when
+      Increase i
+   End do
+   Remember that span is diff of hi and lo
+   Remember that result is []
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in numbers
+      Remember that y is quotient of (diff of x and lo) and span
+      Add result to y
+      Increase i
+   End do
+   The answer is result
+Now you know

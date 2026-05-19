@@ -1,0 +1,12 @@
+Use the standard library
+This is how to get_positive of l:
+  Remember that result is []
+  Do this l's length times:
+    Remember that i is diff of l's length and l's length
+    Increase i by 1
+    When item i in l is more than 0, then:
+      Add result to item i in l
+    End when
+  End do
+  The answer is result
+Now you know

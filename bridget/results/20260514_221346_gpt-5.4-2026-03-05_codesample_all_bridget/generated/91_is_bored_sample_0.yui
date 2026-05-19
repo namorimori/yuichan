@@ -1,0 +1,18 @@
+Use the standard library
+This is how to is_bored of S:
+   Remember that text is S
+   When isarray of S, then:
+      Remember that text is ""
+      Remember that n is S's length
+      Remember that i is 0
+      Do this n times:
+         Add text to item i in S
+         Increase i
+      End do
+   End when
+   Remember that bored is 0
+   When find of text and "bored" is not (diff of 0 and 1), then:
+      Remember that bored is 1
+   End when
+   The answer is bored
+Now you know

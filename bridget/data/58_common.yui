@@ -1,0 +1,59 @@
+Use the standard library
+This is how to common of l1 and l2:
+   Remember that length1 is l1's length
+   Remember that length2 is l2's length
+   Remember that temp_result is []
+   Remember that i is 0
+   Do this length1 times:
+      Remember that element1 is item i in l1
+      Remember that j is 0
+      Do this length2 times:
+         Remember that element2 is item j in l2
+         When element1 is element2, then:
+            Add temp_result to element1
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   Remember that temp_length is temp_result's length
+   Do this temp_length times:
+      Remember that i is 0
+      Remember that limit is diff of temp_length and 1
+      Do this limit times:
+         Remember that next_idx is sum of i and 1
+         When item i in temp_result is more than item next_idx in temp_result, then:
+            Remember that temp is item i in temp_result
+            Remember that item i in temp_result is item next_idx in temp_result
+            Remember that item next_idx in temp_result is temp
+         End when
+         Increase i
+      End do
+   End do
+   Remember that result is []
+   When temp_length is more than 0, then:
+      Add result to item 0 in temp_result
+      Remember that i is 1
+      Remember that limit is diff of temp_length and 1
+      Do this limit times:
+         Remember that prev_idx is diff of i and 1
+         When item i in temp_result is not item prev_idx in temp_result, then:
+            Add result to item i in temp_result
+         End when
+         Increase i
+      End do
+   End when
+   The answer is result
+Now you know
+>>> common of [1, 4, 3, 34, 653, 2, 5] and [5, 7, 1, 5, 9, 653, 121] 
+[1, 5, 653]
+>>> common of [5, 3, 2, 8] and [3, 2] 
+[2, 3]
+>>> common of [1, 4, 3, 34, 653, 2, 5] and [5, 7, 1, 5, 9, 653, 121] 
+[1, 5, 653]
+>>> common of [5, 3, 2, 8] and [3, 2] 
+[2, 3]
+>>> common of [4, 3, 2, 8] and [3, 2, 4] 
+[2, 3, 4]
+>>> common of [4, 3, 2, 8] and [] 
+[]

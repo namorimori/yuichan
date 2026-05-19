@@ -1,0 +1,10 @@
+>>> largest_divisor of 3 
+1
+>>> largest_divisor of 7 
+1
+>>> largest_divisor of 10 
+5
+>>> largest_divisor of 100 
+50
+>>> largest_divisor of 49 
+7

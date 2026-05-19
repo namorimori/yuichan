@@ -1,0 +1,26 @@
+Use the standard library
+This is how to separate_paren_groups of paren_string:
+  Remember that groups is []
+  Remember that current is []
+  Remember that depth is 0
+  Remember that i is 0
+  Do this paren_string's length times:
+    Remember that ch is item i in paren_string
+    When ch is 32, then:
+      Do nothing
+    But, if not:
+      Add current to ch
+      When ch is 40, then:
+        Increase depth
+      But, if not:
+        Decrease depth
+      End when
+      When depth is 0, then:
+        Add groups to current
+        Remember that current is []
+      End when
+    End when
+    Increase i
+  End do
+  The answer is groups
+Now you know

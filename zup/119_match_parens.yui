@@ -1,0 +1,103 @@
+Nav rem vaz
+Dum match_parens(lst):
+   Kem s1 par lst[0]
+   Kem s2 par lst[1]
+   Kem combined1 par []
+   Kem len1 par s1 @kez
+   Kem i par 0
+   Mup dum len1 pag:
+      Mev combined1 naz s1[i]
+      Rav i
+   Dam mup
+   Kem len2 par s2 @kez
+   Kem i par 0
+   Mup dum len2 pag:
+      Mev combined1 naz s2[i]
+      Rav i
+   Dam mup
+   Kem valid1 par 1
+   Kem depth1 par 0
+   Kem i par 0
+   Kem len_c1 par combined1 @kez
+   Mup dum len_c1 pag:
+      Kem char par combined1[i]
+      Nev char paz 40 ger:
+         Rav depth1
+      Zum:
+         Zar depth1
+      Dam nev
+      Nev depth1 dup 0 ger:
+         Kem valid1 par 0
+      Dam nev
+      Rav i
+   Dam mup
+   Nev depth1 nup 0 ger:
+      Kem valid1 par 0
+   Dam nev
+   Kem combined2 par []
+   Kem i par 0
+   Mup dum len2 pag:
+      Mev combined2 naz s2[i]
+      Rav i
+   Dam mup
+   Kem i par 0
+   Mup dum len1 pag:
+      Mev combined2 naz s1[i]
+      Rav i
+   Dam mup
+   Kem valid2 par 1
+   Kem depth2 par 0
+   Kem i par 0
+   Kem len_c2 par combined2 @kez
+   Mup dum len_c2 pag:
+      Kem char par combined2[i]
+      Nev char paz 40 ger:
+         Rav depth2
+      Zum:
+         Zar depth2
+      Dam nev
+      Nev depth2 dup 0 ger:
+         Kem valid2 par 0
+      Dam nev
+      Rav i
+   Dam mup
+   Nev depth2 nup 0 ger:
+      Kem valid2 par 0
+   Dam nev
+   Kem result par [78, 111]
+   Nev valid1 paz 1 ger:
+      Kem result par [89, 101, 115]
+   Dam nev
+   Nev valid2 paz 1 ger:
+      Kem result par [89, 101, 115]
+   Dam nev
+   Dup vem result
+Pam dum
+>>> match_parens([[40, 41, 40], [41]]) 
+[89, 101, 115]
+>>> match_parens([[41], [41]]) 
+[78, 111]
+>>> match_parens(["()(", ")"]) 
+"Yes"
+>>> match_parens([")", ")"]) 
+"No"
+>>> match_parens(["(()(())", "())())"]) 
+"No"
+>>> match_parens([")())", "(()()("]) 
+"Yes"
+>>> match_parens(["(())))", "(()())(("]) 
+"Yes"
+>>> match_parens(["()", "())"]) 
+"No"
+>>> match_parens(["(()(", "()))()"]) 
+"Yes"
+>>> match_parens(["((((", "((())"]) 
+"No"
+>>> match_parens([")(()", "(()("]) 
+"No"
+>>> match_parens([")(", ")("]) 
+"No"
+>>> match_parens(["(", ")"]) 
+"Yes"
+>>> match_parens([")", "("]) 
+"Yes"

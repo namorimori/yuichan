@@ -1,0 +1,10 @@
+>>> 施數序於「」
+「」
+>>> 施數序於「three」
+「three」
+>>> 施數序於「three five nine」
+「three five nine」
+>>> 施數序於「five zero four seven nine eight」
+「zero four five seven eight nine」
+>>> 施數序於「six five four three two one zero」
+「zero one two three four five six」

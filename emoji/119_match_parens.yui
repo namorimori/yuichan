@@ -1,0 +1,105 @@
+🗝️ 📚
+🧩 match_parens(lst) 👉
+   s1 ⬅️ lst[0]
+   s2 ⬅️ lst[1]
+   combined1 ⬅️ []
+   len1 ⬅️ 📐 s1
+   i ⬅️ 0
+   🌀 len1 👉
+      combined1 🧲 s1[i]
+      i ⬆️
+   🔚
+   len2 ⬅️ 📐 s2
+   i ⬅️ 0
+   🌀 len2 👉
+      combined1 🧲 s2[i]
+      i ⬆️
+   🔚
+   valid1 ⬅️ 1
+   depth1 ⬅️ 0
+   i ⬅️ 0
+   len_c1 ⬅️ 📐 combined1
+   🌀 len_c1 👉
+      char ⬅️ combined1[i]
+      ❓ char ⚖️ 40 👉
+         depth1 ⬆️
+      🔚
+      ❗ 👉
+         depth1 ⬇️
+      🔚
+      ❓ depth1 📈 0 👉
+         valid1 ⬅️ 0
+      🔚
+      i ⬆️
+   🔚
+   ❓ depth1 🚫⚖️ 0 👉
+      valid1 ⬅️ 0
+   🔚
+   combined2 ⬅️ []
+   i ⬅️ 0
+   🌀 len2 👉
+      combined2 🧲 s2[i]
+      i ⬆️
+   🔚
+   i ⬅️ 0
+   🌀 len1 👉
+      combined2 🧲 s1[i]
+      i ⬆️
+   🔚
+   valid2 ⬅️ 1
+   depth2 ⬅️ 0
+   i ⬅️ 0
+   len_c2 ⬅️ 📐 combined2
+   🌀 len_c2 👉
+      char ⬅️ combined2[i]
+      ❓ char ⚖️ 40 👉
+         depth2 ⬆️
+      🔚
+      ❗ 👉
+         depth2 ⬇️
+      🔚
+      ❓ depth2 📈 0 👉
+         valid2 ⬅️ 0
+      🔚
+      i ⬆️
+   🔚
+   ❓ depth2 🚫⚖️ 0 👉
+      valid2 ⬅️ 0
+   🔚
+   result ⬅️ [78, 111]
+   ❓ valid1 ⚖️ 1 👉
+      result ⬅️ [89, 101, 115]
+   🔚
+   ❓ valid2 ⚖️ 1 👉
+      result ⬅️ [89, 101, 115]
+   🔚
+   ✅ result
+🔚
+>>> match_parens([[40, 41, 40], [41]]) 
+[89, 101, 115]
+>>> match_parens([[41], [41]]) 
+[78, 111]
+>>> match_parens(["()(", ")"]) 
+"Yes"
+>>> match_parens([")", ")"]) 
+"No"
+>>> match_parens(["(()(())", "())())"]) 
+"No"
+>>> match_parens([")())", "(()()("]) 
+"Yes"
+>>> match_parens(["(())))", "(()())(("]) 
+"Yes"
+>>> match_parens(["()", "())"]) 
+"No"
+>>> match_parens(["(()(", "()))()"]) 
+"Yes"
+>>> match_parens(["((((", "((())"]) 
+"No"
+>>> match_parens([")(()", "(()("]) 
+"No"
+>>> match_parens([")(", ")("]) 
+"No"
+>>> match_parens(["(", ")"]) 
+"Yes"
+>>> match_parens([")", "("]) 
+"Yes"

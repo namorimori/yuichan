@@ -1,0 +1,12 @@
+>>> double_the_difference of [] 
+0
+>>> double_the_difference of [5, 4] 
+25
+>>> double_the_difference of [0.100000, 0.200000, 0.300000] 
+0
+>>> double_the_difference of [-10, -20, -30] 
+0
+>>> double_the_difference of [-1, -2, 8] 
+0
+>>> double_the_difference of [0.200000, 3, 5] 
+34

@@ -1,0 +1,42 @@
+🗝️ 📚
+🧩 decimal_to_binary(decimal) 👉
+   result ⬅️ [100, 98]
+   digits ⬅️ []
+   temp ⬅️ decimal
+   ❓ temp ⚖️ 0 👉
+      result 🧲 48
+   🔚
+   ❗ 👉
+      🌀 100 👉
+         ❓ temp 📉 0 👉
+            remainder ⬅️ 剰余(temp, 2)
+            digits 🧲 remainder
+            temp ⬅️ 商(temp, 2)
+         🔚
+      🔚
+      length ⬅️ 📐 digits
+      i ⬅️ 0
+      🌀 length 👉
+         idx ⬅️ 差(差(length, i), 1)
+         digit ⬅️ digits[idx]
+         char_code ⬅️ 和(48, digit)
+         result 🧲 char_code
+         i ⬆️
+      🔚
+   🔚
+   result 🧲 100
+   result 🧲 98
+   ✅ result
+🔚
+>>> decimal_to_binary(15) 
+[100, 98, 49, 49, 49, 49, 100, 98]
+>>> decimal_to_binary(32) 
+[100, 98, 49, 48, 48, 48, 48, 48, 100, 98]
+>>> decimal_to_binary(0) 
+"db0db"
+>>> decimal_to_binary(32) 
+"db100000db"
+>>> decimal_to_binary(103) 
+"db1100111db"
+>>> decimal_to_binary(15) 
+"db1111db"

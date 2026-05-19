@@ -1,0 +1,12 @@
+>>> cycpattern_check of "xyzw" and "xyw" 
+0
+>>> cycpattern_check of "yello" and "ell" 
+1
+>>> cycpattern_check of "whattup" and "ptut" 
+0
+>>> cycpattern_check of "efef" and "fee" 
+1
+>>> cycpattern_check of "abab" and "aabb" 
+0
+>>> cycpattern_check of "winemtt" and "tinem" 
+1

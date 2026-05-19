@@ -1,0 +1,16 @@
+Use the standard library
+This is how to right_angle_triangle of a and b and c:
+   Remember that aa is product of a and a
+   Remember that bb is product of b and b
+   Remember that cc is product of c and c
+   When sum of aa and bb is cc, then:
+      The answer is 1
+   End when
+   When sum of aa and cc is bb, then:
+      The answer is 1
+   End when
+   When sum of bb and cc is aa, then:
+      The answer is 1
+   End when
+   The answer is 0
+Now you know

@@ -1,0 +1,29 @@
+Use the standard library
+This is how to flip_case of string:
+   Remember that result is ""
+   Remember that n is string's length
+   Remember that i is 0
+   Do this n times:
+      Remember that c is item i in string
+      Remember that nc is c
+      When c is at least 65, then:
+         When c is at most 90, then:
+            Remember that nc is sum of c and 32
+         End when
+      End when
+      When c is at least 97, then:
+         When c is at most 122, then:
+            Remember that nc is diff of c and 32
+         End when
+      End when
+      Add result to nc
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> flip_case of "Hello"
+"hELLO"
+>>> flip_case of ""
+""
+>>> flip_case of "Hello!"
+"hELLO!"

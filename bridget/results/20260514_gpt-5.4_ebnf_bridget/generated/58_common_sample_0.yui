@@ -1,0 +1,40 @@
+Use the standard library
+This is how to common of l1 and l2:
+  Remember that result is []
+  Remember that i is 0
+  Do this l1's length times:
+    Remember that x is item i in l1
+    When x is in l2, then:
+      When x is not in result, then:
+        Add result to x
+      End when
+    End when
+    Increase i by 1
+  End do
+  Remember that sorted is []
+  Do this result's length times:
+    Remember that min_value is nothing
+    Remember that min_index is 0
+    Remember that j is 0
+    Do this result's length times:
+      Remember that y is item j in result
+      When y is not nothing, then:
+        When min_value is nothing, then:
+          Remember that min_value is y
+          Remember that min_index is j
+        But, if not:
+          When y is less than min_value, then:
+            Remember that min_value is y
+            Remember that min_index is j
+          End when
+        End when
+      End when
+      Increase j by 1
+    End do
+    When min_value is not nothing, then:
+      Add sorted to min_value
+      Remember that item min_index in result is nothing
+    End when
+  End do
+  The answer is sorted
+Now you know

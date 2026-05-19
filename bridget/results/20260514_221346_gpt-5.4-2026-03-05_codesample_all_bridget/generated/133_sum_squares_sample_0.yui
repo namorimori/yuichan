@@ -1,0 +1,21 @@
+Use the standard library
+This is how to ceil of x:
+   Remember that i is toint of x
+   When tofloat of i is less than x, then:
+      The answer is sum of i and 1
+   End when
+   The answer is i
+Now you know
+
+This is how to sum_squares of arr:
+   Remember that total is 0
+   Remember that n is arr's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in arr
+      Remember that y is ceil of x
+      Remember that total is sum of total and (product of y and y)
+      Increase i
+   End do
+   The answer is total
+Now you know

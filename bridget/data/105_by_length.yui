@@ -1,0 +1,123 @@
+Use the standard library
+This is how to by_length of arr:
+   Remember that length is arr's length
+   Remember that filtered is []
+   Remember that i is 0
+   Do this length times:
+      Remember that value is item i in arr
+      Remember that is_valid is 0
+      When value is more than 0, then:
+         When value is less than 10, then:
+            Remember that is_valid is 1
+         End when
+      End when
+      When is_valid is 1, then:
+         Add filtered to value
+      End when
+      Increase i
+   End do
+   Remember that filtered_len is filtered's length
+   Remember that i is 0
+   Do this filtered_len times:
+      Remember that j is 0
+      Remember that limit is diff of (diff of filtered_len and i) and 1
+      Do this limit times:
+         Remember that next_j is sum of j and 1
+         When item j in filtered is less than item next_j in filtered, then:
+            Remember that temp is item j in filtered
+            Remember that item j in filtered is item next_j in filtered
+            Remember that item next_j in filtered is temp
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   Remember that result is []
+   Remember that i is 0
+   Do this filtered_len times:
+      Remember that value is item i in filtered
+      Remember that name is []
+      When value is 1, then:
+         Add name to 79
+         Add name to 110
+         Add name to 101
+      End when
+      When value is 2, then:
+         Add name to 84
+         Add name to 119
+         Add name to 111
+      End when
+      When value is 3, then:
+         Add name to 84
+         Add name to 104
+         Add name to 114
+         Add name to 101
+         Add name to 101
+      End when
+      When value is 4, then:
+         Add name to 70
+         Add name to 111
+         Add name to 117
+         Add name to 114
+      End when
+      When value is 5, then:
+         Add name to 70
+         Add name to 105
+         Add name to 118
+         Add name to 101
+      End when
+      When value is 6, then:
+         Add name to 83
+         Add name to 105
+         Add name to 120
+      End when
+      When value is 7, then:
+         Add name to 83
+         Add name to 101
+         Add name to 118
+         Add name to 101
+         Add name to 110
+      End when
+      When value is 8, then:
+         Add name to 69
+         Add name to 105
+         Add name to 103
+         Add name to 104
+         Add name to 116
+      End when
+      When value is 9, then:
+         Add name to 78
+         Add name to 105
+         Add name to 110
+         Add name to 101
+      End when
+      Add result to name
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> by_length of [2, 1, 1, 4, 5, 8, 2, 3] 
+[
+   [69, 105, 103, 104, 116],
+   [70, 105, 118, 101],
+   [70, 111, 117, 114],
+   [84, 104, 114, 101, 101],
+   [84, 119, 111],
+   [84, 119, 111],
+   [79, 110, 101],
+   [79, 110, 101]
+]
+>>> by_length of [] 
+[]
+>>> by_length of [1, -1, 55] 
+[[79, 110, 101]]
+>>> by_length of [2, 1, 1, 4, 5, 8, 2, 3] 
+["Eight", "Five", "Four", "Three", "Two", "Two", "One", "One"]
+>>> by_length of [] 
+[]
+>>> by_length of [1, -1, 55] 
+["One"]
+>>> by_length of [1, -1, 3, 2] 
+["Three", "Two", "One"]
+>>> by_length of [9, 4, 8] 
+["Nine", "Eight", "Four"]

@@ -1,0 +1,28 @@
+Use the standard library
+This is how to derivative of xs:
+   Remember that length is xs's length
+   Remember that result is []
+   Remember that i is 1
+   Remember that limit is diff of length and 1
+   Do this limit times:
+      Remember that value is item i in xs
+      Remember that deriv_value is product of i and value
+      Add result to deriv_value
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> derivative of [3, 1, 2, 4, 5] 
+[1, 4, 12, 20]
+>>> derivative of [1, 2, 3] 
+[2, 6]
+>>> derivative of [3, 1, 2, 4, 5] 
+[1, 4, 12, 20]
+>>> derivative of [1, 2, 3] 
+[2, 6]
+>>> derivative of [3, 2, 1] 
+[2, 2]
+>>> derivative of [3, 2, 1, 0, 4] 
+[2, 2, 0, 16]
+>>> derivative of [1] 
+[]

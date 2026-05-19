@@ -1,0 +1,36 @@
+Use the standard library
+This is how to do_algebra of operator and operand:
+   Remember that n is operand's length
+   When n is 0, then:
+      The answer is 0
+   End when
+   Remember that result is item 0 in operand
+   Remember that i is 0
+   Do this diff of n and 1 times:
+      Remember that op is item i in operator
+      Remember that x is item (sum of i and 1) in operand
+      When op is "+", then:
+         Remember that result is sum of result and x
+      End when
+      When op is "-", then:
+         Remember that result is diff of result and x
+      End when
+      When op is "*", then:
+         Remember that result is product of result and x
+      End when
+      When op is "/", then:
+         Remember that result is quotient of result and x
+      End when
+      When op is "**", then:
+         Remember that power is 1
+         Remember that j is 0
+         Do this x times:
+            Remember that power is product of power and result
+            Increase j
+         End do
+         Remember that result is power
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know

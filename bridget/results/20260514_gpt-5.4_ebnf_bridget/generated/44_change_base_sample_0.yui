@@ -1,0 +1,18 @@
+Use the standard library
+This is how to change_base of x and base:
+  Remember that digits is "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  Remember that result is ""
+  Remember that n is x
+  When n is 0, then:
+    The answer is "0"
+  End when
+  Do this x times:
+    When n is 0, then:
+      Leave the loop
+    End when
+    Remember that r is remainder of n and base
+    Remember that result is "{item r in digits}{result}"
+    Remember that n is quotient of n and base
+  End do
+  The answer is result
+Now you know

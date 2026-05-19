@@ -1,0 +1,156 @@
+🗝️ 📚
+🧩 get_closest_vowel(word) 👉
+   length ⬅️ 📐 word
+   result ⬅️ []
+   ❓ length 📈 3 👉
+      ✅ result
+   🔚
+   i ⬅️ 差(length, 2)
+   found ⬅️ 0
+   🌀 1000 👉
+      ❓ found ⚖️ 0 👉
+         ❓ i 📉 0 👉
+            char ⬅️ word[i]
+            is_curr_vowel ⬅️ 0
+            ❓ char ⚖️ 97 👉
+               is_curr_vowel ⬅️ 1
+            🔚
+            ❓ char ⚖️ 101 👉
+               is_curr_vowel ⬅️ 1
+            🔚
+            ❓ char ⚖️ 105 👉
+               is_curr_vowel ⬅️ 1
+            🔚
+            ❓ char ⚖️ 111 👉
+               is_curr_vowel ⬅️ 1
+            🔚
+            ❓ char ⚖️ 117 👉
+               is_curr_vowel ⬅️ 1
+            🔚
+            ❓ char ⚖️ 65 👉
+               is_curr_vowel ⬅️ 1
+            🔚
+            ❓ char ⚖️ 69 👉
+               is_curr_vowel ⬅️ 1
+            🔚
+            ❓ char ⚖️ 73 👉
+               is_curr_vowel ⬅️ 1
+            🔚
+            ❓ char ⚖️ 79 👉
+               is_curr_vowel ⬅️ 1
+            🔚
+            ❓ char ⚖️ 85 👉
+               is_curr_vowel ⬅️ 1
+            🔚
+            ❓ is_curr_vowel ⚖️ 1 👉
+               prev_idx ⬅️ 差(i, 1)
+               next_idx ⬅️ 和(i, 1)
+               prev ⬅️ word[prev_idx]
+               next ⬅️ word[next_idx]
+               prev_vowel ⬅️ 0
+               ❓ prev ⚖️ 97 👉
+                  prev_vowel ⬅️ 1
+               🔚
+               ❓ prev ⚖️ 101 👉
+                  prev_vowel ⬅️ 1
+               🔚
+               ❓ prev ⚖️ 105 👉
+                  prev_vowel ⬅️ 1
+               🔚
+               ❓ prev ⚖️ 111 👉
+                  prev_vowel ⬅️ 1
+               🔚
+               ❓ prev ⚖️ 117 👉
+                  prev_vowel ⬅️ 1
+               🔚
+               ❓ prev ⚖️ 65 👉
+                  prev_vowel ⬅️ 1
+               🔚
+               ❓ prev ⚖️ 69 👉
+                  prev_vowel ⬅️ 1
+               🔚
+               ❓ prev ⚖️ 73 👉
+                  prev_vowel ⬅️ 1
+               🔚
+               ❓ prev ⚖️ 79 👉
+                  prev_vowel ⬅️ 1
+               🔚
+               ❓ prev ⚖️ 85 👉
+                  prev_vowel ⬅️ 1
+               🔚
+               next_vowel ⬅️ 0
+               ❓ next ⚖️ 97 👉
+                  next_vowel ⬅️ 1
+               🔚
+               ❓ next ⚖️ 101 👉
+                  next_vowel ⬅️ 1
+               🔚
+               ❓ next ⚖️ 105 👉
+                  next_vowel ⬅️ 1
+               🔚
+               ❓ next ⚖️ 111 👉
+                  next_vowel ⬅️ 1
+               🔚
+               ❓ next ⚖️ 117 👉
+                  next_vowel ⬅️ 1
+               🔚
+               ❓ next ⚖️ 65 👉
+                  next_vowel ⬅️ 1
+               🔚
+               ❓ next ⚖️ 69 👉
+                  next_vowel ⬅️ 1
+               🔚
+               ❓ next ⚖️ 73 👉
+                  next_vowel ⬅️ 1
+               🔚
+               ❓ next ⚖️ 79 👉
+                  next_vowel ⬅️ 1
+               🔚
+               ❓ next ⚖️ 85 👉
+                  next_vowel ⬅️ 1
+               🔚
+               both_consonants ⬅️ 0
+               ❓ prev_vowel ⚖️ 0 👉
+                  ❓ next_vowel ⚖️ 0 👉
+                     both_consonants ⬅️ 1
+                  🔚
+               🔚
+               ❓ both_consonants ⚖️ 1 👉
+                  result 🧲 char
+                  found ⬅️ 1
+               🔚
+            🔚
+            i ⬇️
+         🔚
+      🔚
+   🔚
+   ✅ result
+🔚
+>>> get_closest_vowel([121, 111, 103, 117, 114, 116]) 
+[117]
+>>> get_closest_vowel("yogurt") 
+"u"
+>>> get_closest_vowel("full") 
+"u"
+>>> get_closest_vowel("easy") 
+""
+>>> get_closest_vowel("eAsy") 
+""
+>>> get_closest_vowel("ali") 
+""
+>>> get_closest_vowel("bad") 
+"a"
+>>> get_closest_vowel("most") 
+"o"
+>>> get_closest_vowel("ab") 
+""
+>>> get_closest_vowel("ba") 
+""
+>>> get_closest_vowel("quick") 
+""
+>>> get_closest_vowel("anime") 
+"i"
+>>> get_closest_vowel("Asia") 
+""
+>>> get_closest_vowel("Above") 
+"o"

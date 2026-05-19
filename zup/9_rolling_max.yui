@@ -1,0 +1,32 @@
+Nav rem vaz
+Dum rolling_max(numbers):
+   Kem 長さ par numbers @kez
+   Kem 結果 par []
+   Kem 現在の最大 par 0
+   Kem 初期化済み par 0
+   Kem i par 0
+   Mup dum 長さ pag:
+      Kem 値 par numbers[i]
+      Nev 初期化済み paz 0 ger:
+         Kem 現在の最大 par 値
+         Kem 初期化済み par 1
+      Zum:
+         Nev 値 pep 現在の最大 ger:
+            Kem 現在の最大 par 値
+         Dam nev
+      Dam nev
+      Mev 結果 naz 現在の最大
+      Rav i
+   Dam mup
+   Dup vem 結果
+Pam dum
+>>> rolling_max([1, 2, 3, 2, 3, 4, 2]) 
+[1, 2, 3, 3, 3, 4, 4]
+>>> rolling_max([]) 
+[]
+>>> rolling_max([1, 2, 3, 4]) 
+[1, 2, 3, 4]
+>>> rolling_max([4, 3, 2, 1]) 
+[4, 4, 4, 4]
+>>> rolling_max([3, 2, 3, 100, 3]) 
+[3, 3, 3, 100, 100]

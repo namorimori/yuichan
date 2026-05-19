@@ -1,0 +1,50 @@
+Use the standard library
+This is how to is_bored of S:
+   Remember that length is S's length
+   Remember that count is 0
+   Remember that sentence_start is 1
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in S
+      When sentence_start is 1, then:
+         When char is 32, then:
+            Do nothing
+         But, if not:
+            When char is 73, then:
+               When i is less than diff of length and 1, then:
+                  Remember that next_char is item sum of i and 1 in S
+                  When next_char is 32, then:
+                     Increase count
+                  End when
+               End when
+            End when
+            Remember that sentence_start is 0
+         End when
+      End when
+      When char is 46, then:
+         Remember that sentence_start is 1
+      End when
+      When char is 63, then:
+         Remember that sentence_start is 1
+      End when
+      When char is 33, then:
+         Remember that sentence_start is 1
+      End when
+      Increase i
+   End do
+   The answer is count
+Now you know
+>>> is_bored of [72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100] 
+0
+>>> is_bored of "Hello world" 
+0
+>>> is_bored of "Is the sky blue?" 
+0
+>>> is_bored of "I love It !" 
+1
+>>> is_bored of "bIt" 
+0
+>>> is_bored of "I feel good today. I will be productive. will kill It" 
+2
+>>> is_bored of "You and I are going for a walk" 
+0

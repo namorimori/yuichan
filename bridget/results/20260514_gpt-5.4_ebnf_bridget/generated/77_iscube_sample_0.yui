@@ -1,0 +1,8 @@
+Use the standard library
+This is how to iscube of a:
+  When product of a and product of a and a is a, then:
+    The answer is 1
+  But, if not:
+    The answer is 0
+  End when
+Now you know

@@ -1,0 +1,233 @@
+=== Bridget YuiEval (pass@1) ===
+Model:    claude-haiku-4-5-20251001  (anthropic)
+Template: evaluate_bridget_templates/full_context.md
+Context:  codesample
+Problems: 3
+
+[1/3] 0_has_close_elements
+
+============================================================
+[0_has_close_elements] Sample 1/1
+============================================================
+--- Generated ---
+```bridget
+Use the standard library
+This is how to has_close_elements of numbers and threshold:
+   Remember that n is numbers's length
+   Remember that i is 0
+   Do this n times:
+      Remember that j is sum of i and 1
+      Do this diff of n and j times:
+         Remember that diff_val is abs of (diff of item i in numbers and item j in numbers)
+         When diff_val is less than threshold, then:
+            The answer is 1
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is 0
+Now you know
+```
+
+The function checks all pairs of elements in the array to see if any two elements have a difference smaller than the threshold. It uses nested loops to compare each element with all subsequent elements, and returns 1 (true) if a close pair is found, otherwise returns 0 (false).
+--- Extracted ---
+Use the standard library
+This is how to has_close_elements of numbers and threshold:
+   Remember that n is numbers's length
+   Remember that i is 0
+   Do this n times:
+      Remember that j is sum of i and 1
+      Do this diff of n and j times:
+         Remember that diff_val is abs of (diff of item i in numbers and item j in numbers)
+         When diff_val is less than threshold, then:
+            The answer is 1
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is 0
+Now you know
+  Sample 1/1... ✓ (0.09s)
+--- Result: ✓ PASSED (0.09s) ---
+  Problem result: ✓ (1/1 passed) [3.39s]
+
+[2/3] 1_separate_paren_groups
+
+============================================================
+[1_separate_paren_groups] Sample 1/1
+============================================================
+--- Generated ---
+Looking at this problem, I need to:
+
+1. Handle both array of ASCII codes and string inputs
+2. Group parentheses by matching pairs
+3. Return groups as either arrays or strings (matching input type)
+4. Track opening/closing parentheses to know when a group is complete
+
+The key insight is that a group is complete when the count of opening parentheses equals the count of closing parentheses.
+
+```bridget
+Use the standard library
+This is how to separate_paren_groups of paren_string:
+   Remember that result is []
+   Remember that current is []
+   Remember that n is paren_string's length
+   Remember that i is 0
+   Remember that open_count is 0
+   Remember that is_string is isstring of paren_string
+   
+   Do this n times:
+      Remember that c is item i in paren_string
+      
+      When is_string, then:
+         Remember that code is toint of c
+      But, if not:
+         Remember that code is c
+      End when
+      
+      When code is 40, then:
+         Add current to c
+         Increase open_count
+      End when
+      
+      When code is 41, then:
+         Add current to c
+         Decrease open_count
+         
+         When open_count is 0, then:
+            Add result to current
+            Remember that current is []
+         End when
+      End when
+      
+      Increase i
+   End do
+   
+   The answer is result
+Now you know
+```
+
+The function works as follows:
+
+1. **Initialize**: Create an empty `result` list for groups, an empty `current` list for the current group, and a counter `open_count` to track nesting depth
+2. **Check input type**: Determine if input is a string or array using `isstring`
+3. **Process each character**:
+   - For strings, convert the character to its ASCII code
+   - For arrays, use the code directly
+4. **Handle opening paren (40)**: Add to current group and increment open_count
+5. **Handle closing paren (41)**: Add to current group and decrement open_count
+   - When open_count reaches 0, we have a complete group, so add it to result and reset current
+6. **Return**: The result list containing all groups
+
+This handles both input formats and correctly groups parentheses by their nesting level.
+--- Extracted ---
+Use the standard library
+This is how to separate_paren_groups of paren_string:
+   Remember that result is []
+   Remember that current is []
+   Remember that n is paren_string's length
+   Remember that i is 0
+   Remember that open_count is 0
+   Remember that is_string is isstring of paren_string
+   
+   Do this n times:
+      Remember that c is item i in paren_string
+      
+      When is_string, then:
+         Remember that code is toint of c
+      But, if not:
+         Remember that code is c
+      End when
+      
+      When code is 40, then:
+         Add current to c
+         Increase open_count
+      End when
+      
+      When code is 41, then:
+         Add current to c
+         Decrease open_count
+         
+         When open_count is 0, then:
+            Add result to current
+            Remember that current is []
+         End when
+      End when
+      
+      Increase i
+   End do
+   
+   The answer is result
+Now you know
+  Sample 1/1... ✗ (0.07s)
+--- Result: ✗ FAILED (0.07s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 変数や値が必要です ❌, then ⚠️wrong-name ❌, then line 13, column 21:
+|       When is_string, then:
+|                     ^^^
+    Error: Error occurred:
+[構文エラー/SyntaxError] 変数や値が必要です ❌, then ⚠️wrong-name ❌, then line 13, column 21:
+|       When is_string, then:
+|                     ^^^
+  Problem result: ✗ (0/1 passed) [5.60s]
+
+[3/3] 2_truncate_number
+
+============================================================
+[2_truncate_number] Sample 1/1
+============================================================
+--- Generated ---
+Looking at the expected behavior, I need to understand what `truncate_number` should do:
+
+- `truncate_number of 3.500000` → `0.500000` (the decimal part: 3.5 - 3 = 0.5)
+- `truncate_number of 1.330000` → `0.330000` (the decimal part: 1.33 - 1 = 0.33)
+
+So the function should return the fractional part of a number (the part after the decimal point).
+
+To get the fractional part, I can:
+1. Convert the number to an integer (truncating it)
+2. Subtract that integer from the original number
+
+Here's the implementation:
+
+```bridget
+Use the standard library
+This is how to truncate_number of number:
+   Remember that int_part is toint of number
+   Remember that frac_part is diff of number and int_part
+   The answer is frac_part
+Now you know
+```
+
+This works by:
+1. Converting the input number to an integer using `toint`, which truncates towards zero
+2. Subtracting the integer part from the original number to get the fractional part
+3. Returning the fractional part
+--- Extracted ---
+Use the standard library
+This is how to truncate_number of number:
+   Remember that int_part is toint of number
+   Remember that frac_part is diff of number and int_part
+   The answer is frac_part
+Now you know
+  Sample 1/1... ✓ (0.07s)
+--- Result: ✓ PASSED (0.07s) ---
+  Problem result: ✓ (1/1 passed) [2.87s]
+
+============================================================
+評価結果サマリー
+============================================================
+Total:   3 問題
+Passed:  2 問題
+Failed:  1 問題
+pass@1: 66.67% (2/3)
+
+失敗した問題:
+  - 1_separate_paren_groups
+
+生成コード: results_bridget/20260514_185210_claude-haiku-4-5-20251001_full_context/generated
+詳細結果:   results_bridget/20260514_185210_claude-haiku-4-5-20251001_full_context/result.jsonl
+サマリー:   results_bridget/20260514_185210_claude-haiku-4-5-20251001_full_context/summary.json
+ログ:       results_bridget/20260514_185210_claude-haiku-4-5-20251001_full_context/log.txt

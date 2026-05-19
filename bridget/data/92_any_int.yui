@@ -1,0 +1,52 @@
+Use the standard library
+This is how to any_int of x and y and z:
+   Remember that result is 0
+   Remember that x_int is isint of x
+   Remember that y_int is isint of y
+   Remember that z_int is isint of z
+   When x_int is yes, then:
+      When y_int is yes, then:
+         When z_int is yes, then:
+            Remember that sum_xy is sum of x and y
+            When sum_xy is z, then:
+               Remember that result is 1
+            End when
+            Remember that sum_xz is sum of x and z
+            When sum_xz is y, then:
+               Remember that result is 1
+            End when
+            Remember that sum_yz is sum of y and z
+            When sum_yz is x, then:
+               Remember that result is 1
+            End when
+         End when
+      End when
+   End when
+   The answer is result
+Now you know
+>>> any_int of 5 and 2 and 7 
+1
+>>> any_int of 3 and 2 and 2 
+0
+>>> any_int of 3 and -2 and 1 
+1
+>>> any_int of 2 and 3 and 1 
+1
+>>> any_int of 2.500000 and 2 and 3 
+0
+>>> any_int of 1.500000 and 5 and 3.500000 
+0
+>>> any_int of 2 and 6 and 2 
+0
+>>> any_int of 4 and 2 and 2 
+1
+>>> any_int of 2.200000 and 2.200000 and 2.200000 
+0
+>>> any_int of -4 and 6 and 2 
+1
+>>> any_int of 2 and 1 and 1 
+1
+>>> any_int of 3 and 4 and 7 
+1
+>>> any_int of 3.000000 and 4 and 7 
+0

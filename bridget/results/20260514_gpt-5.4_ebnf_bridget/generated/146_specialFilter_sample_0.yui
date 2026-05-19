@@ -1,0 +1,24 @@
+Use the standard library
+This is how to specialFilter of nums:
+  Remember that count is 0
+  Do this nums's length times:
+    Remember that n is item count in nums
+    When n is more than 0, then:
+      Remember that lastDigit is remainder of n and 10
+      Remember that firstDigit is quotient of n and 10
+      Do this 20 times:
+        When firstDigit is at most 9, then:
+          Leave the loop
+        End when
+        Remember that firstDigit is quotient of firstDigit and 10
+      End do
+      When firstDigit is 5, then:
+        When lastDigit is 5, then:
+          Increase count by 1
+        End when
+      End when
+    End when
+    Increase count by 1
+  End do
+  The answer is diff of count and nums's length
+Now you know

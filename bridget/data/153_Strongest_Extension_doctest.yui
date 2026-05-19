@@ -1,0 +1,18 @@
+>>> Strongest_Extension of "Watashi" and ["tEN", "niNE", "eIGHt8OKe"] 
+"Watashi.eIGHt8OKe"
+>>> Strongest_Extension of "Boku123" and ["nani", "NazeDa", "YEs.WeCaNe", "32145tggg"] 
+"Boku123.YEs.WeCaNe"
+>>> Strongest_Extension of "**YESIMHERE" and ["t", "eMptY", "nothing", "zeR00", "NuLl**", "123NoooneB321"] 
+"**YESIMHERE.NuLl**"
+>>> Strongest_Extension of "K" and ["Ta", "TAR", "t234An", "cosSo"] 
+"K.TAR"
+>>> Strongest_Extension of "__HAHA" and ["Tab", "123", "781345", "-*-"] 
+"__HAHA.123"
+>>> Strongest_Extension of "YameRore" and ["HhAas", "okIWILL123", "WorkOut", "Fails", "-*-"] 
+"YameRore.okIWILL123"
+>>> Strongest_Extension of "finNNalLLly" and ["Die", "NowW", "Wow", "WoW"] 
+"finNNalLLly.WoW"
+>>> Strongest_Extension of "*" and ["Bb", "91245"] 
+"*.Bb"
+>>> Strongest_Extension of "Sp" and ["671235", "Bb"] 
+"Sp.671235"

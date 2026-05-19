@@ -1,0 +1,31 @@
+Use the standard library
+This is how to fib of n:
+   When n is 0, then:
+      The answer is 0
+   End when
+   When n is 1, then:
+      The answer is 1
+   But, if not:
+      Remember that n1 is diff of n and 1
+      Remember that n2 is diff of n and 2
+      Remember that fib1 is fib of n1
+      Remember that fib2 is fib of n2
+      The answer is sum of fib1 and fib2
+   End when
+Now you know
+>>> fib of 10 
+55
+>>> fib of 1 
+1
+>>> fib of 8 
+21
+>>> fib of 10 
+55
+>>> fib of 1 
+1
+>>> fib of 8 
+21
+>>> fib of 11 
+89
+>>> fib of 12 
+144

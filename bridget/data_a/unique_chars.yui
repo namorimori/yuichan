@@ -1,0 +1,26 @@
+This is how to unique_chars of s:
+   Remember that result is ""
+   Remember that i is 0
+   Do this s's length times:
+      Remember that c is item i in s
+      When c is not in result, then:
+         Add result to c
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> unique_chars of "banana" 
+"ban"
+>>> unique_chars of "mississippi" 
+"misp"
+>>> unique_chars of "abcabc" 
+"abc"
+>>> unique_chars of "programming" 
+"progamin"
+>>> unique_chars of "aaaa" 
+"a"
+>>> unique_chars of "" 
+""
+>>> unique_chars of "さくらさくら" 
+"さくら"

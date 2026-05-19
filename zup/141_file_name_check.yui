@@ -1,0 +1,134 @@
+Nav rem vaz
+Dum file_name_check(file_name):
+   Kem length par file_name @kez
+   Kem result par [78, 111]
+   Kem dots par 0
+   Kem dot_pos par 0
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par file_name[i]
+      Nev char paz 46 ger:
+         Rav dots
+         Kem dot_pos par i
+      Dam nev
+      Rav i
+   Dam mup
+   Nev dots paz 1 ger:
+      Nev dot_pos pep 0 ger:
+         Kem first_char par file_name[0]
+         Kem is_letter par 0
+         Nev first_char pep 64 ger:
+            Nev first_char dup 91 ger:
+               Kem is_letter par 1
+            Dam nev
+         Dam nev
+         Nev first_char pep 96 ger:
+            Nev first_char dup 123 ger:
+               Kem is_letter par 1
+            Dam nev
+         Dam nev
+         Nev is_letter paz 1 ger:
+            Kem digits par 0
+            Kem i par 0
+            Mup dum dot_pos pag:
+               Kem char par file_name[i]
+               Nev char pep 47 ger:
+                  Nev char dup 58 ger:
+                     Rav digits
+                  Dam nev
+               Dam nev
+               Rav i
+            Dam mup
+            Nev digits dup 4 ger:
+               Kem ext_start par 和(dot_pos, 1)
+               Kem ext_len par 差(length, ext_start)
+               Kem valid_ext par 0
+               Nev ext_len paz 3 ger:
+                  Kem ext1 par file_name[ext_start]
+                  Kem ext2 par file_name[和(ext_start, 1)]
+                  Kem ext3 par file_name[和(ext_start, 2)]
+                  Nev ext1 paz 116 ger:
+                     Nev ext2 paz 120 ger:
+                        Nev ext3 paz 116 ger:
+                           Kem valid_ext par 1
+                        Dam nev
+                     Dam nev
+                  Dam nev
+                  Nev ext1 paz 101 ger:
+                     Nev ext2 paz 120 ger:
+                        Nev ext3 paz 101 ger:
+                           Kem valid_ext par 1
+                        Dam nev
+                     Dam nev
+                  Dam nev
+                  Nev ext1 paz 100 ger:
+                     Nev ext2 paz 108 ger:
+                        Nev ext3 paz 108 ger:
+                           Kem valid_ext par 1
+                        Dam nev
+                     Dam nev
+                  Dam nev
+               Dam nev
+               Nev valid_ext paz 1 ger:
+                  Kem result par [89, 101, 115]
+               Dam nev
+            Dam nev
+         Dam nev
+      Dam nev
+   Dam nev
+   Dup vem result
+Pam dum
+>>> file_name_check([101, 120, 97, 109, 112, 108, 101, 46, 116, 120, 116]) 
+[89, 101, 115]
+>>> file_name_check("example.txt") 
+"Yes"
+>>> file_name_check("1example.dll") 
+"No"
+>>> file_name_check("s1sdf3.asd") 
+"No"
+>>> file_name_check("K.dll") 
+"Yes"
+>>> file_name_check("MY16FILE3.exe") 
+"Yes"
+>>> file_name_check("His12FILE94.exe") 
+"No"
+>>> file_name_check("_Y.txt") 
+"No"
+>>> file_name_check("?aREYA.exe") 
+"No"
+>>> file_name_check("/this_is_valid.dll") 
+"No"
+>>> file_name_check("this_is_valid.wow") 
+"No"
+>>> file_name_check("this_is_valid.txt") 
+"Yes"
+>>> file_name_check("this_is_valid.txtexe") 
+"No"
+>>> file_name_check("#this2_i4s_5valid.ten") 
+"No"
+>>> file_name_check("@this1_is6_valid.exe") 
+"No"
+>>> file_name_check("this_is_12valid.6exe4.txt") 
+"No"
+>>> file_name_check("all.exe.txt") 
+"No"
+>>> file_name_check("I563_No.exe") 
+"Yes"
+>>> file_name_check("Is3youfault.txt") 
+"Yes"
+>>> file_name_check("no_one#knows.dll") 
+"Yes"
+>>> file_name_check("1I563_Yes3.exe") 
+"No"
+>>> file_name_check("I563_Yes3.txtt") 
+"No"
+>>> file_name_check("final..txt") 
+"No"
+>>> file_name_check("final132") 
+"No"
+>>> file_name_check("_f4indsartal132.") 
+"No"
+>>> file_name_check(".txt") 
+"No"
+>>> file_name_check("s.") 
+"No"

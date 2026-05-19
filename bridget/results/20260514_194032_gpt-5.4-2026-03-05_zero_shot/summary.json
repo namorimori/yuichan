@@ -1,0 +1,19 @@
+{
+  "model": "gpt-5.4-2026-03-05",
+  "template": "templates/bridget/zero_shot.md",
+  "context": "none",
+  "temperature": 0.2,
+  "k": 1,
+  "total_problems": 10,
+  "passed_problems": 0,
+  "failed_problems": 10,
+  "pass_at_k": 0.0,
+  "confidence_interval_95": {
+    "lower": 0.0,
+    "upper": 27.75,
+    "method": "Wilson Score"
+  },
+  "timestamp": "20260514_194032",
+  "total_samples": 10,
+  "passed_samples": 0
+}

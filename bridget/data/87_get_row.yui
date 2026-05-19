@@ -1,0 +1,99 @@
+Use the standard library
+This is how to get_row of lst and x:
+   Remember that length is lst's length
+   Remember that coords is []
+   Remember that i is 0
+   Do this length times:
+      Remember that row is item i in lst
+      Remember that row_len is row's length
+      Remember that j is 0
+      Do this row_len times:
+         When item j in row is x, then:
+            Remember that coord is []
+            Add coord to i
+            Add coord to j
+            Add coords to coord
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   Remember that coord_len is coords's length
+   Remember that i is 0
+   Do this coord_len times:
+      Remember that j is 0
+      Remember that limit is diff of (diff of coord_len and i) and 1
+      Do this limit times:
+         Remember that next_j is sum of j and 1
+         Remember that col_j is item 1 in item j in coords
+         Remember that col_next is item 1 in item next_j in coords
+         When col_j is less than col_next, then:
+            Remember that temp is item j in coords
+            Remember that item j in coords is item next_j in coords
+            Remember that item next_j in coords is temp
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   Remember that i is 0
+   Do this coord_len times:
+      Remember that j is 0
+      Remember that limit is diff of (diff of coord_len and i) and 1
+      Do this limit times:
+         Remember that next_j is sum of j and 1
+         Remember that row_j is item 0 in item j in coords
+         Remember that row_next is item 0 in item next_j in coords
+         When row_j is more than row_next, then:
+            Remember that temp is item j in coords
+            Remember that item j in coords is item next_j in coords
+            Remember that item next_j in coords is temp
+         End when
+         Increase j
+      End do
+      Increase i
+   End do
+   The answer is coords
+Now you know
+>>> get_row of [[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 1, 6], [1, 2, 3, 4, 5, 1]] and 1 
+[[0, 0], [1, 4], [1, 0], [2, 5], [2, 0]]
+>>> get_row of [[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 1, 6], [1, 2, 3, 4, 5, 1]] and 1 
+[[0, 0], [1, 4], [1, 0], [2, 5], [2, 0]]
+>>> get_row of [
+   [1, 2, 3, 4, 5, 6],
+   [1, 2, 3, 4, 5, 6],
+   [1, 2, 3, 4, 5, 6],
+   [1, 2, 3, 4, 5, 6],
+   [1, 2, 3, 4, 5, 6],
+   [1, 2, 3, 4, 5, 6]
+] and 2 
+[[0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1]]
+>>> get_row of [
+   [1, 2, 3, 4, 5, 6],
+   [1, 2, 3, 4, 5, 6],
+   [1, 1, 3, 4, 5, 6],
+   [1, 2, 1, 4, 5, 6],
+   [1, 2, 3, 1, 5, 6],
+   [1, 2, 3, 4, 1, 6],
+   [1, 2, 3, 4, 5, 1]
+] and 1 
+[
+   [0, 0],
+   [1, 0],
+   [2, 1],
+   [2, 0],
+   [3, 2],
+   [3, 0],
+   [4, 3],
+   [4, 0],
+   [5, 4],
+   [5, 0],
+   [6, 5],
+   [6, 0]
+]
+>>> get_row of [] and 1 
+[]
+>>> get_row of [[1]] and 2 
+[]
+>>> get_row of [[], [1], [1, 2, 3]] and 3 
+[[2, 2]]

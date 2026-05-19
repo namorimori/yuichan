@@ -1,0 +1,55 @@
+Nav rem vaz
+Dum correct_bracketing(brackets):
+   Kem depth par 0
+   Kem 長さ par brackets @kez
+   Kem i par 0
+   Kem 結果 par 1
+   Mup dum 長さ pag:
+      Kem 文字 par brackets[i]
+      Nev 文字 paz 40 ger:
+         Rav depth
+      Zum:
+         Zar depth
+      Dam nev
+      Nev depth dup 0 ger:
+         Kem 結果 par 0
+      Dam nev
+      Rav i
+   Dam mup
+   Nev depth nup 0 ger:
+      Kem 結果 par 0
+   Dam nev
+   Dup vem 結果
+Pam dum
+>>> correct_bracketing("(") 
+0
+>>> correct_bracketing("()") 
+1
+>>> correct_bracketing("(()())") 
+1
+>>> correct_bracketing(")(()") 
+0
+>>> correct_bracketing("()") 
+1
+>>> correct_bracketing("(()())") 
+1
+>>> correct_bracketing("()()(()())()") 
+1
+>>> correct_bracketing("()()((()()())())(()()(()))") 
+1
+>>> correct_bracketing("((()())))") 
+0
+>>> correct_bracketing(")(()") 
+0
+>>> correct_bracketing("(") 
+0
+>>> correct_bracketing("((((") 
+0
+>>> correct_bracketing(")") 
+0
+>>> correct_bracketing("(()") 
+0
+>>> correct_bracketing("()()(()())())(()") 
+0
+>>> correct_bracketing("()()(()())()))()") 
+0

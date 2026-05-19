@@ -1,0 +1,109 @@
+Nav rem vaz
+Dum parse_music(music_string):
+   Kem length par music_string @kez
+   Kem result par []
+   Kem current par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par music_string[i]
+      Nev char paz 32 ger:
+         Nev current @kez pep 0 ger:
+            Kem cur_len par current @kez
+            Kem value par 0
+            Nev cur_len paz 1 ger:
+               Nev current[0] paz 111 ger:
+                  Kem value par 4
+               Dam nev
+            Dam nev
+            Nev cur_len paz 2 ger:
+               Nev current[0] paz 111 ger:
+                  Nev current[1] paz 124 ger:
+                     Kem value par 2
+                  Dam nev
+               Dam nev
+            Dam nev
+            Nev cur_len paz 2 ger:
+               Nev current[0] paz 46 ger:
+                  Nev current[1] paz 124 ger:
+                     Kem value par 1
+                  Dam nev
+               Dam nev
+            Dam nev
+            Nev value pep 0 ger:
+               Mev result naz value
+            Dam nev
+            Kem current par []
+         Dam nev
+      Zum:
+         Mev current naz char
+      Dam nev
+      Rav i
+   Dam mup
+   Nev current @kez pep 0 ger:
+      Kem cur_len par current @kez
+      Kem value par 0
+      Nev cur_len paz 1 ger:
+         Nev current[0] paz 111 ger:
+            Kem value par 4
+         Dam nev
+      Dam nev
+      Nev cur_len paz 2 ger:
+         Nev current[0] paz 111 ger:
+            Nev current[1] paz 124 ger:
+               Kem value par 2
+            Dam nev
+         Dam nev
+         Nev current[0] paz 46 ger:
+            Nev current[1] paz 124 ger:
+               Kem value par 1
+            Dam nev
+         Dam nev
+      Dam nev
+      Nev value pep 0 ger:
+         Mev result naz value
+      Dam nev
+   Dam nev
+   Dup vem result
+Pam dum
+>>> parse_music([
+   111,
+   32,
+   111,
+   124,
+   32,
+   46,
+   124,
+   32,
+   111,
+   124,
+   32,
+   111,
+   124,
+   32,
+   46,
+   124,
+   32,
+   46,
+   124,
+   32,
+   46,
+   124,
+   32,
+   46,
+   124,
+   32,
+   111,
+   32,
+   111
+]) 
+[4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]
+>>> parse_music("") 
+[]
+>>> parse_music("o o o o") 
+[4, 4, 4, 4]
+>>> parse_music(".| .| .| .|") 
+[1, 1, 1, 1]
+>>> parse_music("o| o| .| .| o o o o") 
+[2, 2, 1, 1, 4, 4, 4, 4]
+>>> parse_music("o| .| o| .| o o| o o|") 
+[2, 1, 2, 1, 4, 2, 4, 2]

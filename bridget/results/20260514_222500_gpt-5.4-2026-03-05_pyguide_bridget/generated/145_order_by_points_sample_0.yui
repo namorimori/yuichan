@@ -1,0 +1,85 @@
+Use the standard library
+
+This is how to order_by_points of nums:
+   Remember that pairs is []
+   Remember that i is 0
+
+   Do this nums's length times:
+      Remember that n is item i in nums
+      Remember that m is abs of n
+      Remember that points is 0
+
+      When m is 0, then:
+         Remember that points is 0
+      But, if not:
+         Do this 20 times:
+            When m is 0, then:
+               Leave the loop
+            End when
+            Remember that points is sum of points and (remainder of m and 10)
+            Remember that m is quotient of m and 10
+         End do
+      End when
+
+      Add pairs to {"n": n, "points": points}
+      Increase i
+   End do
+
+   Remember that result is []
+   Remember that used is []
+
+   Remember that j is 0
+   Do this pairs's length times:
+      Add used to no
+   End do
+
+   Remember that count is 0
+   Do this pairs's length times:
+      Remember that best_index is -1
+      Remember that best_points is 0
+      Remember that best_value is 0
+
+      Remember that k is 0
+      Do this pairs's length times:
+         When item k in used is no, then:
+            Remember that candidate is item k in pairs
+            Remember that candidate_points is item "points" in candidate
+            Remember that candidate_value is item "n" in candidate
+
+            When best_index is -1, then:
+               Remember that best_index is k
+               Remember that best_points is candidate_points
+               Remember that best_value is candidate_value
+            But, if not:
+               When candidate_points is less than best_points, then:
+                  Remember that best_index is k
+                  Remember that best_points is candidate_points
+                  Remember that best_value is candidate_value
+               But, if not:
+                  When candidate_points is best_points, then:
+                     When candidate_value is less than best_value, then:
+                        Remember that best_index is k
+                        Remember that best_points is candidate_points
+                        Remember that best_value is candidate_value
+                     End when
+                  End when
+               End when
+            End when
+         End when
+         Increase k
+      End do
+
+      Remember that item best_index in used is yes
+      Add result to best_value
+      Increase count
+   End do
+
+   The answer is result
+Now you know
+
+>>> order_by_points of [1, 11, -1, -11, -12]
+[-1, -11, 1, -12, 11]
+>>> order_by_points of [1, 11, -1, -11, -12]
+[-1, -11, 1, -12, 11]
+>>> order_by_points of [1234, 423, 463, 145, 2, 423, 423, 53, 6, 37, 3457, 3, 56, 0, 46]
+[0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]

@@ -1,0 +1,71 @@
+Nav rem vaz
+Dum check_if_last_char_is_a_letter(txt):
+   Kem length par txt @kez
+   Kem result par 0
+   Nev length paz 0 ger:
+      Dup vem result
+   Dam nev
+   Kem words par []
+   Kem current_word par []
+   Kem i par 0
+   Mup dum length pag:
+      Kem char par txt[i]
+      Nev char paz 32 ger:
+         Mev words naz current_word
+         Kem current_word par []
+      Zum:
+         Mev current_word naz char
+      Dam nev
+      Rav i
+   Dam mup
+   Mev words naz current_word
+   Kem num_words par words @kez
+   Kem last_idx par 差(num_words, 1)
+   Kem last_word par words[last_idx]
+   Kem last_word_len par last_word @kez
+   Nev last_word_len paz 1 ger:
+      Kem char par last_word[0]
+      Kem is_letter par 0
+      Nev char pep 64 ger:
+         Nev char dup 91 ger:
+            Kem is_letter par 1
+         Dam nev
+      Dam nev
+      Nev char pep 96 ger:
+         Nev char dup 123 ger:
+            Kem is_letter par 1
+         Dam nev
+      Dam nev
+      Kem result par is_letter
+   Dam nev
+   Dup vem result
+Pam dum
+>>> check_if_last_char_is_a_letter([97, 112, 112, 108, 101, 32, 112, 105, 101]) 
+0
+>>> check_if_last_char_is_a_letter([97, 112, 112, 108, 101, 32, 112, 105, 32, 101]) 
+1
+>>> check_if_last_char_is_a_letter([97, 112, 112, 108, 101, 32, 112, 105, 32, 101, 32]) 
+0
+>>> check_if_last_char_is_a_letter([]) 
+0
+>>> check_if_last_char_is_a_letter("apple") 
+0
+>>> check_if_last_char_is_a_letter("apple pi e") 
+1
+>>> check_if_last_char_is_a_letter("eeeee") 
+0
+>>> check_if_last_char_is_a_letter("A") 
+1
+>>> check_if_last_char_is_a_letter("Pumpkin pie ") 
+0
+>>> check_if_last_char_is_a_letter("Pumpkin pie 1") 
+0
+>>> check_if_last_char_is_a_letter("") 
+0
+>>> check_if_last_char_is_a_letter("eeeee e ") 
+0
+>>> check_if_last_char_is_a_letter("apple pie") 
+0
+>>> check_if_last_char_is_a_letter("apple pi e ") 
+0
+1

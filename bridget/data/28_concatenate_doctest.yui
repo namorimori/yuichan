@@ -1,0 +1,6 @@
+>>> concatenate of [] 
+""
+>>> concatenate of ["x", "y", "z"] 
+"xyz"
+>>> concatenate of ["x", "y", "z", "w", "k"] 
+"xyzwk"

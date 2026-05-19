@@ -1,0 +1,17 @@
+Use the standard library
+This is how to tri of n:
+  Remember that out is [1, 3]
+  When n is at most 2, then:
+    The answer is out
+  End when
+  Remember that i is 3
+  Do this diff of n and 2 times:
+    When remainder of i and 2 is 1, then:
+      Add out to quotient of sum of i and 1 and 2
+    But, if not:
+      Add out to product of i and i
+    End when
+    Increase i by 1
+  End do
+  The answer is out
+Now you know

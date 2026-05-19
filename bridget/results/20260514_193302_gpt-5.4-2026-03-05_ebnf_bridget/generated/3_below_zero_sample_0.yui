@@ -1,0 +1,12 @@
+Use the standard library
+This is how to below_zero of operations:
+  Remember that balance is 0
+  Do this operations's length times:
+    Remember that balance is sum of balance and item balance in operations
+    When balance is less than 0, then:
+      The answer is 1
+    End when
+    Increase balance
+  End do
+  The answer is 0
+Now you know

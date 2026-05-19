@@ -1,0 +1,15 @@
+Use the standard library
+This is how to next_smallest of lst:
+  When lst's length is 0, then:
+    The answer is []
+  End when
+  Remember that smallest is item 0 in lst
+  Do this lst's length times:
+    Remember that current is item 0 in lst
+    When current is less than smallest, then:
+      Remember that smallest is current
+    End when
+    Decrease item 0 in lst by 1
+  End do
+  The answer is [sum of smallest and 1]
+Now you know

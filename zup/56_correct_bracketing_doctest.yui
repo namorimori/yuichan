@@ -1,0 +1,8 @@
+>>> correct_bracketing("<>") 
+1
+>>> correct_bracketing("<<><>>") 
+1
+>>> correct_bracketing("<><><<><>><>") 
+1
+>>> correct_bracketing("<><><<<><><>><>><<><><<>>>") 
+1

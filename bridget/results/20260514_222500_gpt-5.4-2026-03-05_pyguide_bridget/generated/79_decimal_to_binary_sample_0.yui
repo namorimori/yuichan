@@ -1,0 +1,29 @@
+Use the standard library
+This is how to decimal_to_binary of decimal:
+   When decimal is 0, then:
+      The answer is "db0db"
+   End when
+
+   Remember that bits is []
+   Remember that n is decimal
+
+   Do this decimal times:
+      When n is 0, then:
+         Leave the loop
+      End when
+      Add bits to remainder of n and 2
+      Remember that n is quotient of n and 2
+   End do
+
+   Remember that result is "db"
+   Remember that i is diff of bits's length and 1
+
+   Do this bits's length times:
+      Add result to sum of item i in bits and 48
+      Remember that i is diff of i and 1
+   End do
+
+   Add result to item 0 in "d"
+   Add result to item 0 in "b"
+   The answer is result
+Now you know

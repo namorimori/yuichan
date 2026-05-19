@@ -1,0 +1,114 @@
+Use the standard library
+This is how to compare_one of a and b:
+   Remember that a_val is 0.000000
+   Remember that a_is_str is isstring of a
+   When a_is_str is yes, then:
+      Remember that a_len is a's length
+      Remember that a_int is 0
+      Remember that a_frac is 0.000000
+      Remember that found_dec is 0
+      Remember that dec_places is 0
+      Remember that i is 0
+      Do this a_len times:
+         Remember that char is item i in a
+         Remember that is_digit is 0
+         Remember that digit is 0
+         When char is more than 47, then:
+            When char is less than 58, then:
+               Remember that is_digit is 1
+               Remember that digit is diff of char and 48
+            End when
+         End when
+         When is_digit is 1, then:
+            When found_dec is 0, then:
+               Remember that a_int is sum of (product of a_int and 10) and digit
+            But, if not:
+               Increase dec_places
+               Remember that divisor is 1.000000
+               Remember that j is 0
+               Do this dec_places times:
+                  Remember that divisor is product of divisor and 10.000000
+                  Increase j
+               End do
+               Remember that digit_f is tofloat of digit
+               Remember that frac is quotient of digit_f and divisor
+               Remember that a_frac is sum of a_frac and frac
+            End when
+         End when
+         When char is 44, then:
+            Remember that found_dec is 1
+         End when
+         When char is 46, then:
+            Remember that found_dec is 1
+         End when
+         Increase i
+      End do
+      Remember that a_int_f is tofloat of a_int
+      Remember that a_val is sum of a_int_f and a_frac
+   But, if not:
+      Remember that a_val is tofloat of a
+   End when
+   Remember that b_val is 0.000000
+   Remember that b_is_str is isstring of b
+   When b_is_str is yes, then:
+      Remember that b_len is b's length
+      Remember that b_int is 0
+      Remember that b_frac is 0.000000
+      Remember that found_dec is 0
+      Remember that dec_places is 0
+      Remember that i is 0
+      Do this b_len times:
+         Remember that char is item i in b
+         Remember that is_digit is 0
+         Remember that digit is 0
+         When char is more than 47, then:
+            When char is less than 58, then:
+               Remember that is_digit is 1
+               Remember that digit is diff of char and 48
+            End when
+         End when
+         When is_digit is 1, then:
+            When found_dec is 0, then:
+               Remember that b_int is sum of (product of b_int and 10) and digit
+            But, if not:
+               Increase dec_places
+               Remember that divisor is 1.000000
+               Remember that j is 0
+               Do this dec_places times:
+                  Remember that divisor is product of divisor and 10.000000
+                  Increase j
+               End do
+               Remember that digit_f is tofloat of digit
+               Remember that frac is quotient of digit_f and divisor
+               Remember that b_frac is sum of b_frac and frac
+            End when
+         End when
+         When char is 44, then:
+            Remember that found_dec is 1
+         End when
+         When char is 46, then:
+            Remember that found_dec is 1
+         End when
+         Increase i
+      End do
+      Remember that b_int_f is tofloat of b_int
+      Remember that b_val is sum of b_int_f and b_frac
+   But, if not:
+      Remember that b_val is tofloat of b
+   End when
+   Remember that result is []
+   When a_val is b_val, then:
+      Remember that result is []
+   But, if not:
+      When a_val is more than b_val, then:
+         Remember that result is a
+      But, if not:
+         Remember that result is b
+      End when
+   End when
+   The answer is result
+Now you know
+>>> compare_one of 1 and 2 
+2
+>>> compare_one of 1 and 1 
+[]

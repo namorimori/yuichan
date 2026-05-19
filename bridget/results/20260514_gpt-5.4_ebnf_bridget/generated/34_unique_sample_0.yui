@@ -1,0 +1,34 @@
+Use the standard library
+This is how to unique of l:
+  Remember that result is []
+  Remember that i is 0
+  Do this l's length times:
+    Remember that x is item i in l
+    Remember that seen is no
+    Remember that j is 0
+    Do this result's length times:
+      When item j in result is x, then:
+        Remember that seen is yes
+        Leave the loop
+      End when
+      Increase j by 1
+    End do
+    When seen is no, then:
+      Add result to x
+    End when
+    Increase i by 1
+  End do
+  Remember that n is result's length
+  Do this n times:
+    Remember that i is 0
+    Do this diff of n and 1 times:
+      When item i in result is more than item sum of i and 1 in result, then:
+        Remember that temp is item i in result
+        Remember that item i in result is item sum of i and 1 in result
+        Remember that item sum of i and 1 in result is temp
+      End when
+      Increase i by 1
+    End do
+  End do
+  The answer is result
+Now you know

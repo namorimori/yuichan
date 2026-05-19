@@ -1,0 +1,4 @@
+>>> 施篩首於[]與「john」
+[]
+>>> 施篩首於[「xxx」,「asd」,「xxy」,「john doe」,「xxxAAA」,「xxx」]與「xxx」
+[「xxx」,「xxxAAA」,「xxx」]

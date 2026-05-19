@@ -1,0 +1,76 @@
+Use the standard library
+This is how to numerical_letter_grade of grades:
+   Remember that length is grades's length
+   Remember that result is []
+   Remember that i is 0
+   Do this length times:
+      Remember that gpa is item i in grades
+      Remember that letter is []
+      When gpa is 4.000000, then:
+         Remember that letter is [65, 43]
+      But, if not:
+         When gpa is more than 3.700000, then:
+            Remember that letter is [65]
+         But, if not:
+            When gpa is more than 3.300000, then:
+               Remember that letter is [65, 45]
+            But, if not:
+               When gpa is more than 3.000000, then:
+                  Remember that letter is [66, 43]
+               But, if not:
+                  When gpa is more than 2.700000, then:
+                     Remember that letter is [66]
+                  But, if not:
+                     When gpa is more than 2.300000, then:
+                        Remember that letter is [66, 45]
+                     But, if not:
+                        When gpa is more than 2.000000, then:
+                           Remember that letter is [67, 43]
+                        But, if not:
+                           When gpa is more than 1.700000, then:
+                              Remember that letter is [67]
+                           But, if not:
+                              When gpa is more than 1.300000, then:
+                                 Remember that letter is [67, 45]
+                              But, if not:
+                                 When gpa is more than 1.000000, then:
+                                    Remember that letter is [68, 43]
+                                 But, if not:
+                                    When gpa is more than 0.700000, then:
+                                       Remember that letter is [68]
+                                    But, if not:
+                                       When gpa is more than 0.000000, then:
+                                          Remember that letter is [68, 45]
+                                       But, if not:
+                                          Remember that letter is [69]
+                                       End when
+                                    End when
+                                 End when
+                              End when
+                           End when
+                        End when
+                     End when
+                  End when
+               End when
+            End when
+         End when
+      End when
+      Add result to letter
+      Increase i
+   End do
+   The answer is result
+Now you know
+>>> numerical_letter_grade of [4.000000, 3.000000, 2.000000] 
+[[65, 43], [66], [67]]
+>>> numerical_letter_grade of [4.000000, 3, 1.700000, 2, 3.500000] 
+["A+", "B", "C-", "C", "A-"]
+>>> numerical_letter_grade of [1.200000] 
+["D+"]
+>>> numerical_letter_grade of [0.500000] 
+["D-"]
+>>> numerical_letter_grade of [0.000000] 
+["E"]
+>>> numerical_letter_grade of [1, 0.300000, 1.500000, 2.800000, 3.300000] 
+["D", "D-", "C-", "B", "B+"]
+>>> numerical_letter_grade of [0, 0.700000] 
+["E", "D-"]

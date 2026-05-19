@@ -1,0 +1,40 @@
+Nav rem vaz
+Dum factorize(n):
+   Kem fact par []
+   Kem i par 2
+   Kem 残り par n
+   Mup dum n pag:
+      Nev 残り pep 1 ger:
+         Kem 余り par 剰余(残り, i)
+         Nev 余り paz 0 ger:
+            Mev fact naz i
+            Kem 残り par 商(残り, i)
+         Zum:
+            Rav i
+         Dam nev
+      Dam nev
+   Dam mup
+   Dup vem fact
+Pam dum
+>>> factorize(8) 
+[2, 2, 2]
+>>> factorize(25) 
+[5, 5]
+>>> factorize(70) 
+[2, 5, 7]
+>>> factorize(2) 
+[2]
+>>> factorize(4) 
+[2, 2]
+>>> factorize(8) 
+[2, 2, 2]
+>>> factorize(57) 
+[3, 19]
+>>> factorize(3249) 
+[3, 3, 19, 19]
+>>> factorize(185193) 
+[3, 3, 3, 19, 19, 19]
+>>> factorize(20577) 
+[3, 19, 19, 19]
+>>> factorize(18) 
+[2, 3, 3]

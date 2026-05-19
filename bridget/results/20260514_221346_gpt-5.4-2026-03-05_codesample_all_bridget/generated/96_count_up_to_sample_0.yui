@@ -1,0 +1,20 @@
+Use the standard library
+This is how to count_up_to of n:
+   Remember that result is []
+   Remember that x is 2
+   Do this diff of n and 1 times:
+      Remember that prime is 1
+      Remember that d is 2
+      Do this diff of x and 2 times:
+         When remainder of x and d is 0, then:
+            Remember that prime is 0
+         End when
+         Increase d
+      End do
+      When prime is 1, then:
+         Add result to x
+      End when
+      Increase x
+   End do
+   The answer is result
+Now you know

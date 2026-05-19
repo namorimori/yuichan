@@ -1,0 +1,42 @@
+🗝️ 📚
+🧩 digits(n) 👉
+   product ⬅️ 1
+   odd_count ⬅️ 0
+   temp ⬅️ n
+   🌀 100 👉
+      ❓ temp 📉 0 👉
+         digit ⬅️ 剰余(temp, 10)
+         temp ⬅️ 商(temp, 10)
+         remainder ⬅️ 剰余(digit, 2)
+         ❓ remainder ⚖️ 1 👉
+            product ⬅️ 積(product, digit)
+            odd_count ⬆️
+         🔚
+      🔚
+   🔚
+   result ⬅️ product
+   ❓ odd_count ⚖️ 0 👉
+      result ⬅️ 0
+   🔚
+   ✅ result
+🔚
+>>> digits(1) 
+1
+>>> digits(4) 
+0
+>>> digits(235) 
+15
+>>> digits(5) 
+5
+>>> digits(54) 
+5
+>>> digits(120) 
+1
+>>> digits(5014) 
+5
+>>> digits(98765) 
+315
+>>> digits(5576543) 
+2625
+>>> digits(2468) 
+0

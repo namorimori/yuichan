@@ -1,0 +1,104 @@
+Nav rem vaz
+Dum bf(planet1, planet2):
+   Kem mercury par [77, 101, 114, 99, 117, 114, 121]
+   Kem venus par [86, 101, 110, 117, 115]
+   Kem earth par [69, 97, 114, 116, 104]
+   Kem mars par [77, 97, 114, 115]
+   Kem jupiter par [74, 117, 112, 105, 116, 101, 114]
+   Kem saturn par [83, 97, 116, 117, 114, 110]
+   Kem uranus par [85, 114, 97, 110, 117, 115]
+   Kem neptune par [78, 101, 112, 116, 117, 110, 101]
+   Kem planets par [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune]
+   Kem planet1_idx par -1
+   Kem planet2_idx par -1
+   Kem i par 0
+   Mup dum 8 pag:
+      Kem planet par planets[i]
+      Kem len1 par planet1 @kez
+      Kem len_p par planet @kez
+      Kem match1 par 0
+      Nev len1 paz len_p ger:
+         Kem match1 par 1
+         Kem j par 0
+         Mup dum len1 pag:
+            Nev planet1[j] nup planet[j] ger:
+               Kem match1 par 0
+            Dam nev
+            Rav j
+         Dam mup
+      Dam nev
+      Nev match1 paz 1 ger:
+         Kem planet1_idx par i
+      Dam nev
+      Kem len2 par planet2 @kez
+      Kem match2 par 0
+      Nev len2 paz len_p ger:
+         Kem match2 par 1
+         Kem j par 0
+         Mup dum len2 pag:
+            Nev planet2[j] nup planet[j] ger:
+               Kem match2 par 0
+            Dam nev
+            Rav j
+         Dam mup
+      Dam nev
+      Nev match2 paz 1 ger:
+         Kem planet2_idx par i
+      Dam nev
+      Rav i
+   Dam mup
+   Kem result par []
+   Kem invalid par 0
+   Nev planet1_idx paz -1 ger:
+      Kem invalid par 1
+   Dam nev
+   Nev planet2_idx paz -1 ger:
+      Kem invalid par 1
+   Dam nev
+   Nev planet1_idx paz planet2_idx ger:
+      Kem invalid par 1
+   Dam nev
+   Nev invalid paz 1 ger:
+      Dup vem result
+   Dam nev
+   Kem start_idx par planet1_idx
+   Kem end_idx par planet2_idx
+   Nev planet1_idx pep planet2_idx ger:
+      Kem start_idx par planet2_idx
+      Kem end_idx par planet1_idx
+   Dam nev
+   Rav start_idx
+   Kem i par start_idx
+   Kem count par 差(end_idx, start_idx)
+   Mup dum count pag:
+      Mev result naz planets[i]
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> bf([74, 117, 112, 105, 116, 101, 114], [78, 101, 112, 116, 117, 110, 101]) 
+[[83, 97, 116, 117, 114, 110], [85, 114, 97, 110, 117, 115]]
+>>> bf([69, 97, 114, 116, 104], [77, 101, 114, 99, 117, 114, 121]) 
+[[86, 101, 110, 117, 115]]
+>>> bf([77, 101, 114, 99, 117, 114, 121], [85, 114, 97, 110, 117, 115]) 
+[
+   [86, 101, 110, 117, 115],
+   [69, 97, 114, 116, 104],
+   [77, 97, 114, 115],
+   [74, 117, 112, 105, 116, 101, 114],
+   [83, 97, 116, 117, 114, 110]
+]
+>>> bf("Jupiter", "Neptune") 
+["Saturn", "Uranus"]
+>>> bf("Earth", "Mercury") 
+["Venus"]
+>>> bf("Mercury", "Uranus") 
+["Venus", "Earth", "Mars", "Jupiter", "Saturn"]
+>>> bf("Neptune", "Venus") 
+["Earth", "Mars", "Jupiter", "Saturn", "Uranus"]
+>>> bf("Earth", "Earth") 
+[]
+>>> bf("Mars", "Earth") 
+[]
+>>> bf("Jupiter", "Makemake") 
+[]

@@ -1,0 +1,155 @@
+=== Bridget YuiEval (pass@1) ===
+Model:    gpt-5.4-2026-03-05  (openai)
+Template: pro159/pyguide_bridget.md
+Context:  codesample
+Problems: 4
+
+[1/4] 0_has_close_elements
+
+============================================================
+[0_has_close_elements] Sample 1/1
+============================================================
+--- Generated ---
+Sure — what function would you like me to write in Bridget?
+--- Extracted ---
+Sure — what function would you like me to write in Bridget?
+  Sample 1/1... ✗ (0.07s)
+--- Result: ✗ FAILED (0.07s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌Sure — what function would you like me to write in Bridget? line 1, column 1:
+| Sure — what function would you like me to write in Bridget?
+| ^^^
+  Problem result: ✗ (0/1 passed) [3.75s]
+
+[2/4] 1_separate_paren_groups
+
+============================================================
+[1_separate_paren_groups] Sample 1/1
+============================================================
+--- Generated ---
+Sure — tell me the function you want, and I’ll write it in Bridget.
+
+If you want, you can give it in Python like:
+
+```python
+def add_one(x):
+    return x + 1
+```
+
+and I’ll convert it to Bridget.
+--- Extracted ---
+Sure — tell me the function you want, and I’ll write it in Bridget.
+
+If you want, you can give it in Python like:
+
+```python
+def add_one(x):
+    return x + 1
+```
+
+and I’ll convert it to Bridget.
+  Sample 1/1... ✗ (0.07s)
+--- Result: ✗ FAILED (0.07s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌Sure — tell me the function you want, and I’ll write it in Bridget. line 1, column 1:
+| Sure — tell me the function you want, and I’ll write it in Bridget.
+| ^^^
+  Problem result: ✗ (0/1 passed) [1.80s]
+
+[3/4] 2_truncate_number
+
+============================================================
+[2_truncate_number] Sample 1/1
+============================================================
+--- Generated ---
+Sure — tell me the function you want, and I’ll write it in Bridget.
+
+If you want, you can give it in Python like:
+
+```python
+def add_one(x):
+    return x + 1
+```
+
+and I’ll convert it to Bridget.
+--- Extracted ---
+Sure — tell me the function you want, and I’ll write it in Bridget.
+
+If you want, you can give it in Python like:
+
+```python
+def add_one(x):
+    return x + 1
+```
+
+and I’ll convert it to Bridget.
+  Sample 1/1... ✗ (0.07s)
+--- Result: ✗ FAILED (0.07s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌Sure — tell me the function you want, and I’ll write it in Bridget. line 1, column 1:
+| Sure — tell me the function you want, and I’ll write it in Bridget.
+| ^^^
+  Problem result: ✗ (0/1 passed) [1.84s]
+
+[4/4] 3_below_zero
+
+============================================================
+[3_below_zero] Sample 1/1
+============================================================
+--- Generated ---
+Sure — tell me the function you want, and I’ll write it in Bridget.
+
+If you want, you can give it in any of these forms:
+
+- plain English description
+- Python function
+- pseudocode
+- input/output examples
+
+Example:
+
+**Python**
+```python
+def add_one(x):
+    return x + 1
+```
+
+**Bridget**
+```bridget
+Use the standard library
+
+This is how to add_one of x:
+   The answer is sum of x and 1
+Now you know
+```
+
+Send the function you want converted.
+--- Extracted ---
+Use the standard library
+**Bridget**
+  Sample 1/1... ✗ (0.05s)
+--- Result: ✗ FAILED (0.05s) ---
+Error: Error occurred:
+[構文エラー/SyntaxError] 何とも解釈できない書き方です ❌**Bridget** line 2, column 1:
+| **Bridget**
+| ^^^
+  Problem result: ✗ (0/1 passed) [2.33s]
+
+============================================================
+評価結果サマリー
+============================================================
+Total:   4 問題
+Passed:  0 問題
+Failed:  4 問題
+pass@1: 0.00% (0/4)
+
+失敗した問題:
+  - 0_has_close_elements
+  - 1_separate_paren_groups
+  - 2_truncate_number
+  - 3_below_zero
+
+生成コード: results_bridget/20260514_190901_gpt-5.4-2026-03-05_pyguide_bridget/generated
+詳細結果:   results_bridget/20260514_190901_gpt-5.4-2026-03-05_pyguide_bridget/result.jsonl
+サマリー:   results_bridget/20260514_190901_gpt-5.4-2026-03-05_pyguide_bridget/summary.json
+ログ:       results_bridget/20260514_190901_gpt-5.4-2026-03-05_pyguide_bridget/log.txt

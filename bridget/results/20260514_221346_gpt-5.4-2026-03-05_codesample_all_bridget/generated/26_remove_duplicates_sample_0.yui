@@ -1,0 +1,22 @@
+Use the standard library
+This is how to remove_duplicates of numbers:
+   Remember that result is []
+   Remember that n is numbers's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in numbers
+      Remember that count is 0
+      Remember that j is 0
+      Do this n times:
+         When item j in numbers is x, then:
+            Increase count
+         End when
+         Increase j
+      End do
+      When count is 1, then:
+         Add result to x
+      End when
+      Increase i
+   End do
+   The answer is result
+Now you know

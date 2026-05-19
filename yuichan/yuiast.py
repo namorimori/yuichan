@@ -347,6 +347,12 @@ class ReturnNode(StatementNode):
         self.expression = _node(expression)
 
 
+class ReturnNoneNode(StatementNode):
+    """値なしの関数終了（関数から抜ける）を表すノード"""
+    def __init__(self):
+        super().__init__()
+
+
 class FuncDefNode(StatementNode):
     """関数定義を表すノード"""
     name_node: NameNode

@@ -1,0 +1,26 @@
+Nav rem vaz
+Dum decode_cyclic(s):
+   Kem result par []
+   Kem length par s @kez
+   Kem groups par 商(length, 3)
+   Kem i par 0
+   Mup dum groups pag:
+      Kem a par s[i]
+      Rav i
+      Kem b par s[i]
+      Rav i
+      Kem c par s[i]
+      Rav i
+      Mev result naz c
+      Mev result naz a
+      Mev result naz b
+   Dam mup
+   Kem remain par 剰余(length, 3)
+   Mup dum remain pag:
+      Mev result naz s[i]
+      Rav i
+   Dam mup
+   Dup vem result
+Pam dum
+>>> decode_cyclic([98, 99, 97]) 
+[97, 98, 99]

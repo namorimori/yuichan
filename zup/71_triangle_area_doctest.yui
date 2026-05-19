@@ -1,0 +1,18 @@
+>>> triangle_area(3, 4, 5) 
+6.000000
+>>> triangle_area(1, 2, 10) 
+-1
+>>> triangle_area(4, 8, 5) 
+8.180000
+>>> triangle_area(2, 2, 2) 
+1.730000
+>>> triangle_area(1, 2, 3) 
+-1
+>>> triangle_area(10, 5, 7) 
+16.250000
+>>> triangle_area(2, 6, 3) 
+-1
+>>> triangle_area(1, 1, 1) 
+0.430000
+>>> triangle_area(2, 2, 10) 
+-1

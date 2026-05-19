@@ -1,0 +1,50 @@
+Use the standard library
+This is how to x_or_y of n and x and y:
+   Remember that result is y
+   When n is 1, then:
+      The answer is result
+   End when
+   Remember that is_prime is 1
+   When n is 2, then:
+      Remember that is_prime is 1
+   But, if not:
+      Remember that i is 2
+      Do this 1000 times:
+         When i is less than n, then:
+            Remember that remainder is remainder of n and i
+            When remainder is 0, then:
+               Remember that is_prime is 0
+            End when
+            Increase i
+         End when
+      End do
+   End when
+   When is_prime is 1, then:
+      Remember that result is x
+   End when
+   The answer is result
+Now you know
+>>> x_or_y of 7 and 34 and 12 
+34
+>>> x_or_y of 15 and 8 and 5 
+5
+>>> x_or_y of 7 and 34 and 12 
+34
+>>> x_or_y of 15 and 8 and 5 
+5
+>>> x_or_y of 3 and 33 and 5212 
+33
+>>> x_or_y of 1259 and 3 and 52 
+3
+>>> x_or_y of 7919 and -1 and 12 
+-1
+>>> x_or_y of 3609 and 1245 and 583 
+583
+>>> x_or_y of 91 and 56 and 129 
+129
+>>> x_or_y of 6 and 34 and 1234 
+1234
+>>> x_or_y of 1 and 2 and 0 
+0
+>>> x_or_y of 2 and 2 and 0 
+2

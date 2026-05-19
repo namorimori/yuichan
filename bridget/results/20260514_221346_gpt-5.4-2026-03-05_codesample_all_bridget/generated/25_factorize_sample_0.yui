@@ -1,0 +1,31 @@
+Use the standard library
+This is how to factorize of n:
+   Remember that result is []
+   Remember that d is 2
+   Remember that x is n
+   Do this n times:
+      When product of d and d is more than x, then:
+         Leave the loop
+      End when
+      Do this n times:
+         Remember that r is remainder of x and d
+         When r is 0, then:
+            Add result to d
+            Remember that x is quotient of x and d
+         But, if not:
+            Leave the loop
+         End when
+      End do
+      Increase d
+   End do
+   When x is more than 1, then:
+      Add result to x
+   End when
+   The answer is result
+Now you know
+>>> factorize of 8
+[2, 2, 2]
+>>> factorize of 25
+[5, 5]
+>>> factorize of 70
+[2, 5, 7]

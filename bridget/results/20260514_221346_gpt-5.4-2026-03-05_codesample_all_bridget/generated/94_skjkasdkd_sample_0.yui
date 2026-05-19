@@ -1,0 +1,40 @@
+Use the standard library
+This is how to skjkasdkd of lst:
+   Remember that best is 0
+   Remember that bestsum is 0
+   Remember that n is lst's length
+   Remember that i is 0
+   Do this n times:
+      Remember that x is item i in lst
+      When x is at least 2, then:
+         Remember that prime is 1
+         Remember that d is 2
+         Do this diff of x and 2 times:
+            When product of d and d is more than x, then:
+               Leave the loop
+            End when
+            When remainder of x and d is 0, then:
+               Remember that prime is 0
+            End when
+            Increase d
+         End do
+         When prime is 1, then:
+            Remember that s is tostring of x
+            Remember that sumdigits is 0
+            Remember that j is 0
+            Do this s's length times:
+               Remember that c is item j in s
+               Remember that digit is diff of c and 48
+               Remember that sumdigits is sum of sumdigits and digit
+               Increase j
+            End do
+            When x is more than best, then:
+               Remember that best is x
+               Remember that bestsum is sumdigits
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   The answer is bestsum
+Now you know

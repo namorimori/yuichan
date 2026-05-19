@@ -1,0 +1,11 @@
+Use the standard library
+This is how to triangle_area of a and h:
+   The answer is quotient of (product of (tofloat of a) and (tofloat of h)) and 2
+Now you know
+
+>>> triangle_area of 5 and 3
+7.500000
+>>> triangle_area of 2 and 2
+2.000000
+>>> triangle_area of 10 and 8
+40.000000

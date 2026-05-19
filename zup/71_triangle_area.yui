@@ -1,0 +1,63 @@
+Nav rem vaz
+Dum triangle_area(a, b, c):
+   Kem 結果 par -1
+   Kem ab合計 par 和(a, b)
+   Kem ac合計 par 和(a, c)
+   Kem bc合計 par 和(b, c)
+   Kem 有効 par 1
+   Nev ab合計 dur c ger:
+      Kem 有効 par 0
+   Dam nev
+   Nev ac合計 dur b ger:
+      Kem 有効 par 0
+   Dam nev
+   Nev bc合計 dur a ger:
+      Kem 有効 par 0
+   Dam nev
+   Nev 有効 paz 1 ger:
+      Kem abc合計 par 和(a, b, c)
+      Kem s par 商(abc合計, 2.000000)
+      Kem sa par 差(s, a)
+      Kem sb par 差(s, b)
+      Kem sc par 差(s, c)
+      Kem 積1 par 積(s, sa)
+      Kem 積2 par 積(積1, sb)
+      Kem 積3 par 積(積2, sc)
+      Kem x par 商(積3, 2.000000)
+      Nev x dur 0 ger:
+         Kem x par 1.000000
+      Dam nev
+      Kem i par 0
+      Mup dum 30 pag:
+         Nev x pep 0 ger:
+            Kem 商値 par 商(積3, x)
+            Kem 和値 par 和(x, 商値)
+            Kem x par 商(和値, 2.000000)
+         Dam nev
+         Rav i
+      Dam mup
+      Kem scaled par 積(x, 100.000000)
+      Kem rounded_scaled par 和(scaled, 0.500000)
+      Kem truncated par 整数化(rounded_scaled)
+      Kem 結果 par 商(truncated, 100.000000)
+   Dam nev
+   Dup vem 結果
+Pam dum
+>>> triangle_area(3, 4, 5) 
+6.000000
+>>> triangle_area(1, 2, 10) 
+-1
+>>> triangle_area(4, 8, 5) 
+8.180000
+>>> triangle_area(2, 2, 2) 
+1.730000
+>>> triangle_area(1, 2, 3) 
+-1
+>>> triangle_area(10, 5, 7) 
+16.250000
+>>> triangle_area(2, 6, 3) 
+-1
+>>> triangle_area(1, 1, 1) 
+0.430000
+>>> triangle_area(2, 2, 10) 
+-1

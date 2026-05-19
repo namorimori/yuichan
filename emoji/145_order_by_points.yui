@@ -1,0 +1,77 @@
+🗝️ 📚
+🧩 order_by_points(nums) 👉
+   length ⬅️ 📐 nums
+   digit_sums ⬅️ []
+   i ⬅️ 0
+   🌀 length 👉
+      num ⬅️ nums[i]
+      is_negative ⬅️ 0
+      temp ⬅️ num
+      ❓ num 📈 0 👉
+         is_negative ⬅️ 1
+         temp ⬅️ 差(0, num)
+      🔚
+      digits ⬅️ []
+      ❓ temp ⚖️ 0 👉
+         digits 🧲 0
+      🔚
+      ❗ 👉
+         🌀 100 👉
+            ❓ temp 📉 0 👉
+               digit ⬅️ 剰余(temp, 10)
+               digits 🧲 digit
+               temp ⬅️ 商(temp, 10)
+            🔚
+         🔚
+      🔚
+      d_len ⬅️ 📐 digits
+      sum ⬅️ 0
+      j ⬅️ 0
+      last_idx ⬅️ 差(d_len, 1)
+      🌀 d_len 👉
+         digit_val ⬅️ digits[j]
+         ❓ is_negative ⚖️ 1 👉
+            ❓ j ⚖️ last_idx 👉
+               digit_val ⬅️ 差(0, digit_val)
+            🔚
+         🔚
+         sum ⬅️ 和(sum, digit_val)
+         j ⬆️
+      🔚
+      digit_sums 🧲 sum
+      i ⬆️
+   🔚
+   i ⬅️ 0
+   🌀 length 👉
+      j ⬅️ 0
+      limit ⬅️ 差(差(length, i), 1)
+      🌀 limit 👉
+         next_j ⬅️ 和(j, 1)
+         ❓ digit_sums[j] 📉 digit_sums[next_j] 👉
+            temp_num ⬅️ nums[j]
+            nums[j] ⬅️ nums[next_j]
+            nums[next_j] ⬅️ temp_num
+            temp_sum ⬅️ digit_sums[j]
+            digit_sums[j] ⬅️ digit_sums[next_j]
+            digit_sums[next_j] ⬅️ temp_sum
+         🔚
+         j ⬆️
+      🔚
+      i ⬆️
+   🔚
+   ✅ nums
+🔚
+>>> order_by_points([1, 11, -1, -11, -12]) 
+[-1, -11, 1, -12, 11]
+>>> order_by_points([1, 11, -1, -11, -12]) 
+[-1, -11, 1, -12, 11]
+>>> order_by_points([1234, 423, 463, 145, 2, 423, 423, 53, 6, 37, 3457, 3, 56, 0, 46]) 
+[0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+>>> order_by_points([]) 
+[]
+>>> order_by_points([1, -11, -32, 43, 54, -98, 2, -3]) 
+[-3, -32, -98, -11, 1, 2, 43, 54]
+>>> order_by_points([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]) 
+[1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+>>> order_by_points([0, 6, 6, -76, -21, 23, 4]) 
+[-76, -21, 0, 4, 23, 6, 6]

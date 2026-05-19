@@ -1,0 +1,32 @@
+Nav rem vaz
+Dum multiply(a, b):
+   Kem a下1桁 par 剰余(a, 10)
+   Kem b下1桁 par 剰余(b, 10)
+   Kem a絶対値 par 絶対値(a下1桁)
+   Kem b絶対値 par 絶対値(b下1桁)
+   Dup vem 積(a絶対値, b絶対値)
+Pam dum
+>>> multiply(148, 412) 
+16
+>>> multiply(19, 28) 
+72
+>>> multiply(2020, 1851) 
+0
+>>> multiply(14, -15) 
+20
+>>> multiply(148, 412) 
+16
+>>> multiply(19, 28) 
+72
+>>> multiply(2020, 1851) 
+0
+>>> multiply(14, -15) 
+20
+>>> multiply(76, 67) 
+42
+>>> multiply(17, 27) 
+49
+>>> multiply(0, 1) 
+0
+>>> multiply(0, 0) 
+0

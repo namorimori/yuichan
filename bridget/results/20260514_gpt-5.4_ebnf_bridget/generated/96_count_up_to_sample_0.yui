@@ -1,0 +1,25 @@
+Use the standard library
+This is how to count_up_to of n:
+  Remember that primes is []
+  Do this n times:
+    Remember that candidate is primes's length
+    Increase candidate by 2
+    Remember that is_prime is yes
+    Remember that divisor is 2
+    Do this candidate times:
+      When divisor is at most candidate, then:
+        When remainder of candidate and divisor is 0, then:
+          Remember that is_prime is no
+          Leave the loop
+        End when
+        Increase divisor
+      But, if not:
+        Leave the loop
+      End when
+    End do
+    When is_prime is yes, then:
+      Add primes to candidate
+    End when
+  End do
+  The answer is primes
+Now you know

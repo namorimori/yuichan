@@ -1,0 +1,67 @@
+Use the standard library
+This is how to words_string of s:
+   Remember that length is s's length
+   Remember that result is []
+   Remember that current_word is []
+   Remember that i is 0
+   Do this length times:
+      Remember that char is item i in s
+      When char is 32, then:
+         When current_word's length is more than 0, then:
+            Add result to current_word
+            Remember that current_word is []
+         End when
+      End when
+      When char is 44, then:
+         When current_word's length is more than 0, then:
+            Add result to current_word
+            Remember that current_word is []
+         End when
+      But, if not:
+         When char is not 32, then:
+            When char is not 44, then:
+               Add current_word to char
+            End when
+         End when
+      End when
+      Increase i
+   End do
+   When current_word's length is more than 0, then:
+      Add result to current_word
+   End when
+   The answer is result
+Now you know
+>>> words_string of [
+   72,
+   105,
+   44,
+   32,
+   109,
+   121,
+   32,
+   110,
+   97,
+   109,
+   101,
+   32,
+   105,
+   115,
+   32,
+   74,
+   111,
+   104,
+   110
+] 
+[[72, 105], [109, 121], [110, 97, 109, 101], [105, 115], [74, 111, 104, 110]]
+>>> words_string of "Hi, my name is John" 
+["Hi", "my", "name", "is", "John"]
+>>> words_string of "One, two, three, four, five, six" 
+["One", "two", "three", "four", "five", "six"]
+>>> words_string of "Hi, my name" 
+["Hi", "my", "name"]
+>>> words_string of "One,, two, three, four, five, six," 
+["One", "two", "three", "four", "five", "six"]
+>>> words_string of "" 
+[]
+>>> words_string of "ahmed     , gamal" 
+["ahmed", "gamal"]
